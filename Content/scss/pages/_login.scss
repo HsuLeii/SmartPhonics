@@ -1,0 +1,38 @@
+main{
+    .login_area{
+        background-color: $white;
+        width: 80%;
+        margin: 0 auto;
+        .input-group{
+            .input-group-text{
+                border: 0px;
+                &.icon_user{
+                    background-color: $main_color;
+                    background-image: linear-gradient(-45deg, darken($main_color, 10%) 0% , $main_color 75%);
+                    border-radius: 50% !important;
+                    i{
+                        color: $white;
+                    }
+                }
+                &.icon_password{
+                    background-color: $main_color_yellow;
+                    background-image: linear-gradient(-45deg, darken($main_color_yellow, 10%) 0% , $main_color_yellow 75%);
+                    border-radius: 50% !important;
+                    i{
+                        color: $white;
+                    }
+                }
+            }
+            
+            
+            input{
+                border-radius: 50px !important;
+            }
+        }
+    }
+}
+@media screen and (min-width: 576px){}
+@media screen and (min-width: 768px){}
+@media screen and (min-width: 992px){}
+@media screen and (min-width: 1200px){}
+@media screen and (min-width: 1400px){}
