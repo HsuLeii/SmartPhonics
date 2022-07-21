@@ -3,7 +3,7 @@ main{
             .swiper {
                 width: 100%;
                 height: calc(90vh - 64.7px);
-                padding: 0px 5%;
+                padding: 0px 10%;
                 margin: 5vh auto;
                 .swiper-wrapper{
                     .swiper-slide {
@@ -17,8 +17,8 @@ main{
                             height: auto;
                             overflow: hidden;
                             img{
-                                border-radius: 20px;
-                            padding: 10px;
+                                border-radius: 15px;
+                            padding: 5px;
                             width: auto;
                             height: auto;
                             max-width: 100%;
@@ -102,7 +102,7 @@ main{
                 }
         }
         .swiper-pagination{
-            right: 2.5%;
+            right: 5%;
             transform: translate3d(50% , -50% , 0);
             .swiper-pagination-bullet{
                 background: $main_color;
@@ -128,6 +128,20 @@ main{
         .pick_level_area{
                 .swiper {
                     width: 80%;
+                    padding: 0px 5%;
+                    .swiper-wrapper{
+                        .swiper-slide {
+                            .level_img{
+                                img{
+                                    border-radius: 20px;
+                                padding: 10px;
+                                }
+                            }
+                        }
+                    }
+            }
+            .swiper-pagination{
+                right: 2.5%;
             }
         }
     }

@@ -340,7 +340,7 @@ main .login_area .button_login {
 main .pick_level_area .swiper {
   width: 100%;
   height: calc(90vh - 64.7px);
-  padding: 0px 5%;
+  padding: 0px 10%;
   margin: 5vh auto;
 }
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide {
@@ -356,8 +356,8 @@ main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img {
   overflow: hidden;
 }
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img img {
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 5px;
   width: auto;
   height: auto;
   max-width: 100%;
@@ -394,7 +394,7 @@ main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_three .button_
   background-color: #d75298;
 }
 main .pick_level_area .swiper-pagination {
-  right: 2.5%;
+  right: 5%;
   transform: translate3d(50%, -50%, 0);
 }
 main .pick_level_area .swiper-pagination .swiper-pagination-bullet {
@@ -412,6 +412,14 @@ main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active {
 @media screen and (min-width: 768px) {
   main .pick_level_area .swiper {
     width: 80%;
+    padding: 0px 5%;
+  }
+  main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img img {
+    border-radius: 20px;
+    padding: 10px;
+  }
+  main .pick_level_area .swiper-pagination {
+    right: 2.5%;
   }
 }
 @media screen and (min-width: 992px) {
