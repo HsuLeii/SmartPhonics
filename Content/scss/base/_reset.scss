@@ -246,3 +246,19 @@ body {
         font-size: 20px;
     }
 }
+
+@keyframes btnVariety{
+    0%{
+        transform:scale(0.9)
+    }
+    50%{
+        transform:scale(0.95)
+    }
+    100%{
+        transform:scale(0.9)
+    }
+}
+
+.button-animate {
+    animation: btnVariety 2s infinite ease-in-out;
+}

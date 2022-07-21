@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 body {
-  font-family: 'Noto Sans SC', 'Microsoft JhengHei',  'Noto Sans TC', 'Microsoft YaHei',  'PingFang TC', 'PingFang SC',  'Heiti TC', 'Heiti SC',  'LiHei Pro','STXihei', sans-serif;
+  font-family: "Noto Sans SC", "Microsoft JhengHei", "Noto Sans TC", "Microsoft YaHei", "PingFang TC", "PingFang SC", "Heiti TC", "Heiti SC", "LiHei Pro", "STXihei", sans-serif;
 }
 
 /*main*/
@@ -77,14 +77,17 @@ ruby {
 }
 
 rt {
-  -webkit-transform: translateY(-35%);
-          transform: translateY(-35%);
+  transform: translateY(-35%);
 }
 
 input,
 label {
   font-size: 14px;
   line-height: 1.7;
+}
+
+input[type=file]::-webkit-file-upload-button {
+  display: none;
 }
 
 input[type=file]::file-selector-button {
@@ -113,8 +116,7 @@ button:disabled {
 *,
 body {
   letter-spacing: 1.5px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -143,19 +145,18 @@ body {
     font-size: 15px;
   }
   span,
-  th,
-  td {
+th,
+td {
     font-size: 15px;
   }
   a {
     font-size: 15px;
   }
   input,
-  label {
+label {
     font-size: 15px;
   }
 }
-
 @media screen and (min-width: 992px) {
   h1 {
     font-size: 35px;
@@ -170,37 +171,35 @@ body {
     font-size: 17px;
   }
   span,
-  th,
-  td {
+th,
+td {
     font-size: 17px;
   }
   a {
     font-size: 17px;
   }
   input,
-  label {
+label {
     font-size: 17px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   p {
     font-size: 19px;
   }
   span,
-  th,
-  td {
+th,
+td {
     font-size: 19px;
   }
   a {
     font-size: 19px;
   }
   input,
-  label {
+label {
     font-size: 19px;
   }
 }
-
 @media screen and (min-width: 1400px) {
   h1 {
     font-size: 40px;
@@ -215,73 +214,208 @@ body {
     font-size: 20px;
   }
   span,
-  th,
-  td {
+th,
+td {
     font-size: 20px;
   }
   a {
     font-size: 20px;
   }
   input,
-  label {
+label {
     font-size: 20px;
   }
 }
+@-webkit-keyframes btnVariety {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes btnVariety {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.button-animate {
+  -webkit-animation: btnVariety 2s infinite ease-in-out;
+          animation: btnVariety 2s infinite ease-in-out;
+}
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-color: #F2F2F2;
 }
-
 header .navbar .container-fluid .navbar-brand img {
-  max-width: 120px;
+  width: 120px;
 }
 
 @media screen and (min-width: 576px) {
   header .navbar .container-fluid .navbar-brand img {
-    max-width: 160px;
+    width: 160px;
   }
 }
-
 @media screen and (min-width: 992px) {
   header .navbar .container-fluid .navbar-brand img {
-    max-width: 200px;
+    width: 200px;
   }
 }
-
 main .login_area {
   background-color: #fff;
   width: 80%;
-  margin: 0 auto;
+  margin: 120px auto;
+  padding: 50px 40px;
+  max-width: 450px;
+  position: relative;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px 3px rgba(126, 100, 171, 0.25);
+  border-color: rgba(126, 100, 171, 0.4);
 }
-
+main .login_area .login_title {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #00a29a;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+main .login_area .login_title h4 {
+  color: #fff;
+  word-break: keep-all;
+}
+main .login_area .input-group {
+  margin: 30px auto;
+}
 main .login_area .input-group .input-group-text {
   border: 0px;
 }
-
 main .login_area .input-group .input-group-text.icon_user {
-  background-color: #7e64ab;
-  background-image: linear-gradient(-45deg, #654d8f 0%, #7e64ab 75%);
+  background-color: #2194d3;
+  background-image: linear-gradient(-45deg, #1a75a7 0%, #2194d3 75%);
   border-radius: 50% !important;
 }
-
-main .login_area .input-group .input-group-text.icon_user i {
-  color: #fff;
-}
-
 main .login_area .input-group .input-group-text.icon_password {
-  background-color: #e4c934;
-  background-image: linear-gradient(-45deg, #caaf1b 0%, #e4c934 75%);
+  background-color: #f8b62d;
+  background-image: linear-gradient(-45deg, #eaa108 0%, #f8b62d 75%);
   border-radius: 50% !important;
 }
-
-main .login_area .input-group .input-group-text.icon_password i {
+main .login_area .input-group .input-group-text i {
   color: #fff;
 }
-
 main .login_area .input-group input {
   border-radius: 50px !important;
+  margin-left: 10px !important;
 }
-/*# sourceMappingURL=SPhonics.css.map */
+main .login_area .input-group input.form-control:focus {
+  box-shadow: 0 0 6px 2px rgba(126, 100, 171, 0.25);
+  border-color: rgba(126, 100, 171, 0.4);
+}
+main .login_area .button_login {
+  padding: 5px 10px;
+  background-color: #7e64ab;
+  width: 100%;
+  margin: 30px auto;
+  color: #fff;
+  border-radius: 50px;
+  transform: scale(0.8);
+}
+
+@media screen and (min-width: 576px) {
+  main .login_area .button_login {
+    padding: 10px;
+  }
+}
+main .pick_level_area .swiper {
+  width: 100%;
+  height: calc(90vh - 64.7px);
+  padding: 0px 5%;
+  margin: 5vh auto;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img {
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+  overflow: hidden;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img img {
+  border-radius: 20px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level {
+  padding: 5px 10px;
+  background-color: #7e64ab;
+  margin: 30px auto;
+  color: #fff;
+  border-radius: 50px;
+  transform: scale(0.8);
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level a {
+  color: #fff;
+  padding: 5px 30px;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_one .level_img {
+  background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%);
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_one .button_level {
+  background-color: #00a29a;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_two .level_img {
+  background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%);
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_two .button_level {
+  background-color: #2194d3;
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_three .level_img {
+  background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%);
+}
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_three .button_level {
+  background-color: #d75298;
+}
+main .pick_level_area .swiper-pagination {
+  right: 2.5%;
+  transform: translate3d(50%, -50%, 0);
+}
+main .pick_level_area .swiper-pagination .swiper-pagination-bullet {
+  background: #7e64ab;
+}
+main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #7e64ab;
+}
+
+@media screen and (min-width: 576px) {
+  main .pick_level_area .swiper {
+    height: calc(90vh - 77.05px);
+  }
+}
+@media screen and (min-width: 768px) {
+  main .pick_level_area .swiper {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  main .pick_level_area .swiper {
+    height: calc(90vh - 89.81px);
+  }
+}/*# sourceMappingURL=SPhonics.css.map */
