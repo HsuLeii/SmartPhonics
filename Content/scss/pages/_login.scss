@@ -16,12 +16,7 @@ main{
             top: 0%;
             transform: translate(-50% , -50%);
             background-color: $main_color_green;
-            padding: 10px 30px;
-            border-radius: 50px;
-            h4{
-                color: $white;
-                word-break: keep-all;
-            }
+            width: 60%;
         }
         .input-group{
             margin: 30px auto;
