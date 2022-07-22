@@ -267,10 +267,69 @@ label {
 
 header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #F2F2F2;
+  padding: 0px 15px;
+}
+header .navbar .container-fluid {
+  padding: 0px;
 }
 header .navbar .container-fluid .navbar-brand img {
   width: 120px;
+}
+header .nav_name {
+  position: relative;
+  padding: 5px 0px;
+}
+header .nav_name .nav_name_link {
+  padding: 5px 15px;
+  background-color: #7e64ab;
+  border-radius: 50px;
+  color: #fff;
+}
+header .nav_name .nav_name_menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 7px);
+  width: 75%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #7e64ab;
+  display: none;
+}
+header .nav_name .nav_name_menu a {
+  color: #7e64ab;
+}
+header .nav_name .nav_name_menu:before, header .nav_name .nav_name_menu:after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+header .nav_name .nav_name_menu:before {
+  border-width: 0px 8px 8px 8px;
+  top: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #7e64ab;
+}
+header .nav_name .nav_name_menu:after {
+  border-width: 0px 7px 7px 7px;
+  top: -7px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+}
+header .nav_name .nav_name_menu:hover {
+  background-color: #7e64ab;
+}
+header .nav_name .nav_name_menu:hover a {
+  color: #fff;
+}
+header .nav_name .nav_name_menu:hover:after {
+  border-bottom: 7px solid #7e64ab;
 }
 
 @media screen and (min-width: 576px) {
@@ -353,10 +412,49 @@ main .pick_level_area .pick_level_top .avatar_area {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  position: relative;
 }
 main .pick_level_area .pick_level_top .avatar_area .avatar_img {
   width: 8%;
   margin: 15px 1% 0px;
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_img:hover ~ .avatar_explain {
+  display: block;
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_explain {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 15px);
+  width: 85%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid #7e64ab;
+  padding: 5px 12px;
+  display: none;
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_explain p {
+  color: #7e64ab;
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_explain:before, main .pick_level_area .pick_level_top .avatar_area .avatar_explain:after {
+  position: absolute;
+  content: "";
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_explain:before {
+  border-width: 0px 8px 8px 8px;
+  top: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #7e64ab;
+  left: 5%;
+}
+main .pick_level_area .pick_level_top .avatar_area .avatar_explain:after {
+  border-width: 0px 7px 7px 7px;
+  top: -7px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid #fff;
+  left: calc(5% + 1px);
 }
 main .pick_level_area .pick_level_top .pick_level_title {
   margin: 20px auto;
