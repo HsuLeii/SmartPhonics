@@ -763,32 +763,35 @@ main .test_area_bg .QA_area .topic_area .answer_area p {
   }
 }
 @media screen and (orientation: portrait) {
-  .animal_area {
+  main .test_area_bg .QA_area {
+    width: 80%;
+  }
+  main .test_area_bg .animal_area {
     display: flex;
     justify-content: space-around;
     margin: 40px auto 0px;
   }
-  .animal_area .animal_img {
+  main .test_area_bg .animal_area .animal_img {
     width: 35%;
   }
 }
 @media all and (orientation: landscape) {
-  .animal_area {
+  main .test_area_bg .animal_area {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  .animal_area .animal_img {
+  main .test_area_bg .animal_area .animal_img {
     position: absolute;
     width: 15%;
     transform: translate(0%, -50%);
   }
-  .animal_area .animal_img.animal_one {
+  main .test_area_bg .animal_area .animal_img.animal_one {
     left: 2.5%;
     top: calc(100% - 35px);
     transform: translate(0%, -100%);
   }
-  .animal_area .animal_img.animal_two {
+  main .test_area_bg .animal_area .animal_img.animal_two {
     right: 2.5%;
     top: 50%;
   }
