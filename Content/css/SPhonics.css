@@ -612,7 +612,7 @@ main .test_area_bg .QA_area {
   width: 60%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px 10px;
+  padding: 20px 5%;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -643,7 +643,7 @@ main .test_area_bg .QA_area .topic_description_area {
 }
 main .test_area_bg .QA_area .topic_description_area .description_avatar {
   width: 60px;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
 }
 main .test_area_bg .QA_area .topic_description_area .description_text_area {
   width: 100%;
@@ -652,6 +652,19 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 5px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+}
+main .test_area_bg .QA_area .topic_description_area .description_text_area::before {
+  content: "";
+  position: absolute;
+  border-width: 0px 8px 8px 8px;
+  top: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
 }
 main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area {
   display: flex;
@@ -699,23 +712,32 @@ main .test_area_bg .QA_area .topic_area .answer_area p {
     height: calc(100% - 77.05px);
     min-height: calc(100vh - 77.05px);
   }
-}
-@media screen and (min-width: 768px) {
   main .test_area_bg .QA_area .topic_description_area {
     flex-direction: row;
   }
   main .test_area_bg .QA_area .topic_description_area .description_avatar {
     width: 100px;
-    margin: 0 5px;
+    margin: 0 8px;
   }
   main .test_area_bg .QA_area .topic_description_area .description_text_area {
     width: auto;
     align-items: flex-start;
     flex-direction: column;
+    margin: 0 8px;
+  }
+  main .test_area_bg .QA_area .topic_description_area .description_text_area::before {
+    border-width: 8px 0px 8px 8px;
+    top: auto;
+    left: -16px;
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
   }
   main .test_area_bg .QA_area .topic_description_area .description_text_area .description_text {
     width: auto;
   }
+}
+@media screen and (min-width: 768px) {
   main .test_area_bg .QA_area .topic_area .play_area i {
     font-size: 60px;
   }

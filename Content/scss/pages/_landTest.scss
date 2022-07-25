@@ -12,24 +12,27 @@ main {
         align-items: center;
         flex-wrap: wrap;
         position: relative;
-        &.land_test_area{
+
+        &.land_test_area {
             background-image: url(../image/photo/test/bg/test.png);
 
-            .QA_area{
-                .test_progress{
+            .QA_area {
+                .test_progress {
                     .drag-line {
                         .line {
                             background: $main_color_green;
                         }
                     }
                 }
-                .topic_description_area{
-                    .description_text_area{
-                        .animal_name_area{
-                            .animal_name{
+
+                .topic_description_area {
+                    .description_text_area {
+                        .animal_name_area {
+                            .animal_name {
                                 color: $main_color_green;
                             }
-                            .sound_icon{
+
+                            .sound_icon {
                                 background-color: $main_color_green;
                             }
                         }
@@ -37,17 +40,20 @@ main {
                 }
             }
         }
-        .QA_area{
+
+        .QA_area {
             background-color: #ffffff80;
             width: 60%;
             max-width: 800px;
             margin: 0 auto;
-            padding: 20px 10px;
+            padding: 20px 5%;
             border-radius: 10px;
             position: relative;
             z-index: 1;
-            .test_progress{
+
+            .test_progress {
                 margin: 0 auto 35px;
+
                 .drag-line {
                     max-width: 1200px;
                     width: 90%;
@@ -55,6 +61,7 @@ main {
                     background: $white;
                     border-radius: 10px;
                     margin: 0 auto;
+
                     .line {
                         background: $main_color;
                         border-radius: 10px;
@@ -63,27 +70,46 @@ main {
                     }
                 }
             }
-            .topic_description_area{
+
+            .topic_description_area {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 margin: 0 auto 25px;
-                .description_avatar{
+
+                .description_avatar {
                     width: 60px;
-                    margin: 0 auto 10px;
+                    margin: 0 auto 15px;
                 }
-                .description_text_area{
+
+                .description_text_area {
                     width: 100%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
                     margin: 0 5px;
-                    .animal_name_area{
+                    padding: 10px;
+                    position: relative;
+                    background-color: $white;
+                    border-radius: 10px;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-width: 0px 8px 8px 8px;
+                        top: -8px;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 8px solid $white;
+                    }
+
+                    .animal_name_area {
                         display: flex;
                         align-items: center;
-                        .sound_icon{
+
+                        .sound_icon {
                             background-color: $main_color;
                             border-radius: 50%;
                             color: $white;
@@ -92,7 +118,7 @@ main {
                         }
                     }
 
-                    .description_text{
+                    .description_text {
                         width: 100%;
                         text-align: center;
                         margin: 5px auto 0;
@@ -100,11 +126,12 @@ main {
                 }
             }
 
-            .topic_area{
-                .play_area{
+            .topic_area {
+                .play_area {
                     display: block;
                     margin: 0 auto;
-                    i{
+
+                    i {
                         font-size: 50px;
                         color: $white;
                         background-color: $main_color;
@@ -112,11 +139,13 @@ main {
                         border-radius: 10px;
                     }
                 }
-                .answer_area{
+
+                .answer_area {
                     display: flex;
                     justify-content: space-around;
                     margin: 25px auto 0px;
-                    p{
+
+                    p {
                         font-size: 30px;
                         text-align: center;
                         width: calc(30px * 1.7);
@@ -126,109 +155,129 @@ main {
                     }
                 }
             }
-            
+
         }
     }
 }
 
 @media screen and (min-width: 576px) {
     main {
-            .test_area_bg {
-                height: calc(100% - 77.05px);
-                min-height: calc(100vh - 77.05px);
+        .test_area_bg {
+            height: calc(100% - 77.05px);
+            min-height: calc(100vh - 77.05px);
+            .QA_area {
+                .topic_description_area {
+                    flex-direction: row;
+
+                    .description_avatar {
+                        width: 100px;
+                        margin: 0 8px;
+                    }
+
+                    .description_text_area {
+                        width: auto;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        margin: 0 8px;
+
+                        &::before {
+                            border-width: 8px 0px 8px 8px;
+                            top: auto;
+                            left: -16px;
+                            border-right: 8px solid $white;
+                            border-bottom: 8px solid transparent;
+                            border-top: 8px solid transparent;
+                        }
+
+                        .description_text {
+                            width: auto;
+                        }
+                    }
+                }
             }
+        }
     }
 }
 
 @media screen and (min-width: 768px) {
     main {
         .test_area_bg {
-            .QA_area{
-                .topic_description_area{
-                    flex-direction: row;
-                    .description_avatar{
-                        width: 100px;
-                        margin: 0 5px;
-                    }
-                    .description_text_area{
-                        width: auto;
-                        align-items: flex-start;
-                        flex-direction: column;
+            .QA_area {
 
-                        .description_text{
-                            width: auto;
-                        }
-                    }
-                }
-    
-                .topic_area{
-                    .play_area{
-                        i{
+                .topic_area {
+                    .play_area {
+                        i {
                             font-size: 60px;
                         }
                     }
-                    .answer_area{
-                        p{
+
+                    .answer_area {
+                        p {
                             font-size: 40px;
                             width: calc(40px * 1.7);
                         }
                     }
                 }
-                
+
             }
         }
-}
+    }
 }
 
 @media screen and (min-width: 992px) {
     main {
-            .test_area_bg {
-                height: calc(100% - 89.81px);
-                min-height: calc(100vh - 89.81px);
+        .test_area_bg {
+            height: calc(100% - 89.81px);
+            min-height: calc(100vh - 89.81px);
 
-                .animal_area{
-                    .animal_img {
-                        width: calc(35% / 2);
-                    }
-                }
-
-                .QA_area{
-                    width: 55%;
-                    padding: 30px 20px;
-                    .topic_description_area{
-                        margin: 0 auto 35px;
-                        .description_avatar{
-                            width: 100px;
-                            margin: 0 5px;
-                        }
-                        .description_text_area{
-                            width: auto;
-                            align-items: flex-start;
-                            flex-direction: column;
-    
-                            .description_text{
-                                width: auto;
-                            }
-                        }
-                    }
-        
-                    .topic_area{
-                        .play_area{
-                            i{
-                                font-size: 70px;
-                            }
-                        }
-                        .answer_area{
-                            margin: 35px auto 0px;
-                            p{
-                                font-size: 50px;
-                                width: calc(50px * 1.7);
-                            }
-                        }
-                    }
-                    
+            .animal_area {
+                .animal_img {
+                    width: calc(35% / 2);
                 }
             }
+
+            .QA_area {
+                width: 55%;
+                padding: 30px 20px;
+
+                .topic_description_area {
+                    margin: 0 auto 35px;
+
+                    .description_avatar {
+                        width: 100px;
+                        margin: 0 5px;
+                    }
+
+                    .description_text_area {
+                        width: auto;
+                        align-items: flex-start;
+                        flex-direction: column;
+
+                        .description_text {
+                            width: auto;
+                        }
+                    }
+                }
+
+                .topic_area {
+                    .play_area {
+                        i {
+                            font-size: 70px;
+                        }
+                    }
+
+                    .answer_area {
+                        margin: 35px auto 0px;
+
+                        p {
+                            font-size: 50px;
+                            width: calc(50px * 1.7);
+                        }
+                    }
+                }
+
+            }
+        }
     }
 }
 
@@ -236,41 +285,47 @@ main {
 
 @media screen and (min-width: 1400px) {}
 
-@media screen and (orientation:portrait) { 
-    main{
-        .test_area_bg{
-            .QA_area{
+@media screen and (orientation:portrait) {
+    main {
+        .test_area_bg {
+            .QA_area {
                 width: 80%;
             }
-            .animal_area{
+
+            .animal_area {
                 display: flex;
                 justify-content: space-around;
                 margin: 40px auto 0px;
+
                 .animal_img {
                     width: 35%;
-                    
+
                 }
             }
         }
-    }  
+    }
 }
-@media all and (orientation:landscape) { 
-    main{
-        .test_area_bg{
-            .animal_area{
+
+@media all and (orientation:landscape) {
+    main {
+        .test_area_bg {
+            .animal_area {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+
                 .animal_img {
                     position: absolute;
                     width: 15%;
-                    transform: translate(0% , -50%);
-                    &.animal_one{
+                    transform: translate(0%, -50%);
+
+                    &.animal_one {
                         left: 2.5%;
                         top: calc(100% - 35px);
-                        transform: translate(0% , -100%);
+                        transform: translate(0%, -100%);
                     }
-                    &.animal_two{
+
+                    &.animal_two {
                         right: 2.5%;
                         top: 50%;
                     }
