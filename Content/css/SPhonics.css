@@ -590,6 +590,7 @@ main .test_area_bg {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   position: relative;
   z-index: -1;
 }
@@ -604,25 +605,6 @@ main .test_area_bg.land_test_area .QA_area .topic_description_area .description_
 }
 main .test_area_bg.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
   background-color: #00a29a;
-}
-main .test_area_bg .animal_area {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-main .test_area_bg .animal_area .animal_img {
-  position: absolute;
-  width: 15%;
-  transform: translate(0%, -50%);
-}
-main .test_area_bg .animal_area .animal_img.animal_one {
-  left: 2.5%;
-  top: calc(100% - 35px);
-  transform: translate(0%, -100%);
-}
-main .test_area_bg .animal_area .animal_img.animal_two {
-  right: 2.5%;
-  top: 50%;
 }
 main .test_area_bg .QA_area {
   background-color: rgba(255, 255, 255, 0.5019607843);
@@ -777,5 +759,36 @@ main .test_area_bg .QA_area .topic_area .answer_area p {
   main .test_area_bg .QA_area .topic_area .answer_area p {
     font-size: 50px;
     width: 85px;
+  }
+}
+@media screen and (orientation: portrait) {
+  .animal_area {
+    display: flex;
+    justify-content: space-around;
+    margin: 40px auto 0px;
+  }
+  .animal_area .animal_img {
+    width: 35%;
+  }
+}
+@media all and (orientation: landscape) {
+  .animal_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .animal_area .animal_img {
+    position: absolute;
+    width: 15%;
+    transform: translate(0%, -50%);
+  }
+  .animal_area .animal_img.animal_one {
+    left: 2.5%;
+    top: calc(100% - 35px);
+    transform: translate(0%, -100%);
+  }
+  .animal_area .animal_img.animal_two {
+    right: 2.5%;
+    top: 50%;
   }
 }/*# sourceMappingURL=SPhonics.css.map */
