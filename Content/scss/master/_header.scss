@@ -4,6 +4,8 @@ header {
     justify-content: space-between;
     background-color: $header_bg;
     padding: 0px 15px;
+    position: relative;
+    z-index: 2;
 
     .navbar {
         .container-fluid {

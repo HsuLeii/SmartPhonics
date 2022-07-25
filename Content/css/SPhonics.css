@@ -271,6 +271,8 @@ header {
   justify-content: space-between;
   background-color: #F2F2F2;
   padding: 0px 15px;
+  position: relative;
+  z-index: 2;
 }
 header .navbar .container-fluid {
   padding: 0px;
@@ -592,7 +594,6 @@ main .test_area_bg {
   align-items: center;
   flex-wrap: wrap;
   position: relative;
-  z-index: -1;
 }
 main .test_area_bg.land_test_area {
   background-image: url(../image/photo/test/bg/test.png);
@@ -661,7 +662,6 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area .anim
   border-radius: 50%;
   color: #fff;
   padding: 5px;
-  cursor: pointer;
   margin: 0 0 0 5px;
 }
 main .test_area_bg .QA_area .topic_description_area .description_text_area .description_text {
@@ -670,7 +670,8 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area .desc
   margin: 5px auto 0;
 }
 main .test_area_bg .QA_area .topic_area .play_area {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 main .test_area_bg .QA_area .topic_area .play_area i {
   font-size: 50px;
