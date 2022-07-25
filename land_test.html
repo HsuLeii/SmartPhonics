@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="SmartPhonics英語字母拼讀" />
     <title>SmartPhonics英語字母拼讀</title>
-    <link rel="shortcut icon" type="image/x-icon" href="Content/image/favicon.ico" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="Content/image/favicon.ico"
+    />
     <link
       rel="stylesheet"
       type="text/css"
@@ -20,44 +24,87 @@
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-        <!-- my core CSS -->
-        <link rel="stylesheet" href="Content/css/SPhonics.css" />
-
+    <!-- my core CSS -->
+    <link rel="stylesheet" href="Content/css/SPhonics.css" />
   </head>
 
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img
-                src="Content/image/logo/logo.svg"
-                alt="SmartPhonics|英語字母拼讀"
-              />
-            </a>
-          </div>
-        </nav>
-        <div class="nav_name">
-          <a href="#" class="nav_name_link">王美美</a>
-          <ul class="nav_name_menu">
-            <li class="text-center">
-                <a href="">登出</a>
-            </li>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="Content/image/logo/logo.svg"
+              alt="SmartPhonics|英語字母拼讀"
+            />
+          </a>
+        </div>
+      </nav>
+      <div class="nav_name">
+        <a href="#" class="nav_name_link">王美美</a>
+        <ul class="nav_name_menu">
+          <li class="text-center">
+            <a href="">登出</a>
+          </li>
         </ul>
+      </div>
+    </header>
+    <!-- ------- ------- ------- ------- ------- ------- ------- -->
+    <main>
+      <div class="test_area_bg land_test_area">
+        <div class="animal_area">
+          <div class="animal_img animal_one">
+            <img src="Content/image/photo/test/animal/test.png" alt="">
+          </div>
+          <div class="animal_img animal_two">
+            <img src="Content/image/photo/test/animal/test.png" alt="">
+          </div>
         </div>
-      </header>
-      <!-- ------- ------- ------- ------- ------- ------- ------- -->
-      <main>
-        <div class="test_area_bg land_test_area">
-            <div class="test_progress">
-                <div class="drag-line">
-                <div class="line" style="width: 40%; height: 10px;"></div>
+        <div class="QA_area">
+          <div class="test_progress">
+            <div class="drag-line">
+              <div class="line" style="width: 40%; height: 10px"></div>
             </div>
-        </div>
+          </div>
 
-        <i class="fa-solid fa-volume-high"></i>
-          </main>
-                
+          <div class="topic_description_area">
+            <div class="description_avatar">
+              <img src="Content/image/photo/avatar/test.png" alt="" />
+            </div>
+            <div class="description_text_area">
+              <div class="animal_name_area">
+                <div class="animal_name">
+                  <p>giraffe</p>
+                </div>
+                <div class="sound_icon">
+                  <i class="fa-solid fa-volume-high"></i>
+                </div>
+              </div>
+              <div class="description_text">
+                <p>請選出聽到的字母。</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="topic_area">
+            <div class="play_area">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+            <div class="answer_area">
+              <div class="answer_option answer_one">
+                <p>B</p>
+              </div>
+              <div class="answer_option answer_one">
+                <p>A</p>
+              </div>
+              <div class="answer_option answer_one">
+                <p>D</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- ------- ------- ------- ------- ------- ------- ------- -->
     <footer class="footer"></footer>
@@ -70,13 +117,11 @@
       crossorigin="anonymous"
     ></script>
 
-
-
     <!-- 顯示登出按鈕 -->
     <script>
-      $(".nav_name").click(function(){
-  $(".nav_name_menu").toggle();
-});
-      </script>
+      $(".nav_name").click(function () {
+        $(".nav_name_menu").toggle();
+      });
+    </script>
   </body>
 </html>
