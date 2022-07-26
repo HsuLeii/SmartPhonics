@@ -38,13 +38,13 @@ h1 {
 h3 {
     font-size: 21px;
     line-height: 1.7;
-    
+
 }
 
 h4 {
     font-size: 20px;
     line-height: 1.5;
-    
+
 }
 
 p {
@@ -66,12 +66,12 @@ a {
     line-height: 1.7;
 }
 
-ruby{
+ruby {
     letter-spacing: 1.8px;
     line-height: 3;
 }
 
-rt{
+rt {
     transform: translateY(-35%);
 }
 
@@ -99,7 +99,7 @@ button {
 }
 
 button:disabled {
-    background-color: $grey;
+    background-color: $grey !important;
     opacity: 0.5;
     cursor: auto;
 }
@@ -114,19 +114,17 @@ body {
     background-color: $body_bg;
 }
 
-.cursor{
+.cursor {
     cursor: pointer;
 }
 
-.text_center{
+.text_center {
     text-align: center;
 }
 
-@media screen and (min-width: 576px){
+@media screen and (min-width: 576px) {}
 
-}
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     h1 {
         font-size: 32px;
     }
@@ -159,7 +157,7 @@ body {
     }
 }
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
     h1 {
         font-size: 35px;
     }
@@ -192,7 +190,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1200px) {
 
     p {
         font-size: 19px;
@@ -214,7 +212,7 @@ body {
     }
 }
 
-@media screen and (min-width: 1400px){
+@media screen and (min-width: 1400px) {
     h1 {
         font-size: 40px;
     }
@@ -244,5 +242,47 @@ body {
     input,
     label {
         font-size: 20px;
+    }
+}
+
+@keyframes btnVariety {
+    0% {
+        transform: scale(0.9)
+    }
+
+    50% {
+        transform: scale(0.95)
+    }
+
+    100% {
+        transform: scale(0.9)
+    }
+}
+
+@keyframes sound {
+    0% {
+       opacity: .55;
+        height: 3px; 
+    }
+    100% {
+        opacity: 1;       
+        height: 60px;        
+    }
+}
+
+.button-animate {
+    animation: btnVariety 2s infinite ease-in-out;
+}
+
+.page_title {
+    padding: 10px 30px;
+    border-radius: 50px;
+    width: 80%;
+    max-width: 450px;
+    margin: 0 auto;
+
+    h4 {
+        color: $white;
+        word-break: keep-all;
     }
 }

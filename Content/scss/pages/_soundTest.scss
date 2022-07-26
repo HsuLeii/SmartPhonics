@@ -1,0 +1,156 @@
+main {
+    .sound_test_area {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin: 30px auto;
+        padding: 20px 5%;
+        background-color: $white50;
+        border-radius: 10px;
+
+        .sound_test_text{
+            display: flex;
+            justify-content: center;
+        }
+
+        .sound_bar_area {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            margin: 25px auto 0px;
+            &.play_animation{
+                .bar{
+                    animation: sound 0ms -800ms linear infinite alternate;
+                }
+            }
+
+            .bar {
+                background-color: $main-color;
+                height: 3px;
+                width: 3px;
+                margin: 0px 1px;
+                
+                &:nth-child(1) {
+                    animation-duration: 474ms;
+                }
+    
+                &:nth-child(2) {
+                    animation-duration: 433ms;
+                }
+    
+                &:nth-child(3) {
+                    animation-duration: 407ms;
+                }
+    
+                &:nth-child(4) {
+                    animation-duration: 458ms;
+                }
+    
+                &:nth-child(5) {
+                    animation-duration: 400ms;
+                }
+    
+                &:nth-child(6) {
+                    animation-duration: 427ms;
+                }
+    
+                &:nth-child(7) {
+                    animation-duration: 441ms;
+                }
+    
+                &:nth-child(8) {
+                    animation-duration: 419ms;
+                }
+    
+                &:nth-child(9) {
+                    animation-duration: 487ms;
+                }
+    
+                &:nth-child(10) {
+                    animation-duration: 442ms;
+                }
+            }
+        }
+
+        .sound_play_area{
+            margin: 25px auto 0px;
+            .play_area{
+                background-color: $main-color;
+                display: block;
+                margin: 0 auto;
+                i {
+                    font-size: 50px;
+                    color: $white;
+                    padding: 10px;
+                    border-radius: 10px;
+                }
+            }
+        }
+        .sound_test_img{
+            margin: 40px auto 0px;
+            width: 40%;
+            max-width: 120px;
+        }
+    }
+    .leave_next_btn{
+        margin: 30px auto;
+        display: flex;
+        justify-content: flex-end;
+        button{
+            padding: 10px 15px;
+            background-color: $white;
+            border: 1px solid $main-color;
+            p{
+                color: $main-color;
+            }
+            &:hover{
+                background-color: $main_color;
+                p{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .sound_test_area {
+            
+            .sound_play_area{
+                .play_area{
+                    i {
+                        font-size: 60px;
+                    }
+                }
+            }
+        }
+        .leave_next_btn{
+            margin: 50px auto;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        .sound_test_area {
+            
+            .sound_play_area{
+                .play_area{
+                    i {
+                        font-size: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}
