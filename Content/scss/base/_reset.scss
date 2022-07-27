@@ -261,12 +261,45 @@ body {
 
 @keyframes sound {
     0% {
-       opacity: .55;
-        height: 3px; 
+        opacity: .55;
+        height: 3px;
     }
+
     100% {
-        opacity: 1;       
-        height: 60px;        
+        opacity: 1;
+        height: 60px;
+    }
+}
+
+@keyframes fingers {
+    0% {
+        transform: translate(-100% , -50%);
+    }
+
+    50% {
+        transform: translate(-150% , -50%);
+    }
+
+    100% {
+        transform: translate(-100% , -50%);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px $glow_color
+    }
+
+    40% {
+        box-shadow: 0 0 20px $glow_color
+    }
+
+    60% {
+        box-shadow: 0 0 20px $glow_color
+    }
+
+    100% {
+        box-shadow: 0 0 0px $glow_color
     }
 }
 

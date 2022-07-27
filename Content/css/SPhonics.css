@@ -269,6 +269,56 @@ label {
     height: 60px;
   }
 }
+@-webkit-keyframes fingers {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+  50% {
+    transform: translate(-150%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%);
+  }
+}
+@keyframes fingers {
+  0% {
+    transform: translate(-100%, -50%);
+  }
+  50% {
+    transform: translate(-150%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%);
+  }
+}
+@-webkit-keyframes glowing {
+  0% {
+    box-shadow: 0 0 0px #fcff50;
+  }
+  40% {
+    box-shadow: 0 0 20px #fcff50;
+  }
+  60% {
+    box-shadow: 0 0 20px #fcff50;
+  }
+  100% {
+    box-shadow: 0 0 0px #fcff50;
+  }
+}
+@keyframes glowing {
+  0% {
+    box-shadow: 0 0 0px #fcff50;
+  }
+  40% {
+    box-shadow: 0 0 20px #fcff50;
+  }
+  60% {
+    box-shadow: 0 0 20px #fcff50;
+  }
+  100% {
+    box-shadow: 0 0 0px #fcff50;
+  }
+}
 .button-animate {
   -webkit-animation: btnVariety 2s infinite ease-in-out;
           animation: btnVariety 2s infinite ease-in-out;
@@ -727,12 +777,25 @@ main .sound_test_area .sound_play_area .play_area {
   background-color: #ed710e;
   display: block;
   margin: 0 auto;
+  position: relative;
 }
 main .sound_test_area .sound_play_area .play_area i {
   font-size: 50px;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
+}
+main .sound_test_area .sound_play_area .play_area .finger_icon {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  -webkit-animation: fingers 1000ms infinite;
+          animation: fingers 1000ms infinite;
+}
+main .sound_test_area .sound_play_area .play_area .finger_icon i {
+  color: #ed710e;
+  font-size: 30px;
 }
 main .sound_test_area .sound_test_img {
   margin: 40px auto 0px;
@@ -749,19 +812,26 @@ main .leave_next_btn button {
   background-color: #fff;
   border: 1px solid #ed710e;
 }
-main .leave_next_btn button p {
+main .leave_next_btn button a {
   color: #ed710e;
 }
 main .leave_next_btn button:hover {
   background-color: #ed710e;
 }
-main .leave_next_btn button:hover p {
+main .leave_next_btn button:hover a {
   color: #fff;
+}
+main .leave_next_btn.go_btn_area .go_btn.button_glow {
+  -webkit-animation: glowing 1500ms infinite;
+          animation: glowing 1500ms infinite;
 }
 
 @media screen and (min-width: 768px) {
   main .sound_test_area .sound_play_area .play_area i {
     font-size: 60px;
+  }
+  main .sound_test_area .sound_play_area .play_area .finger_icon i {
+    font-size: 40px;
   }
   main .leave_next_btn {
     margin: 50px auto;
@@ -770,6 +840,9 @@ main .leave_next_btn button:hover p {
 @media screen and (min-width: 992px) {
   main .sound_test_area .sound_play_area .play_area i {
     font-size: 70px;
+  }
+  main .sound_test_area .sound_play_area .play_area .finger_icon i {
+    font-size: 50px;
   }
 }
 main .test_area_bg {
