@@ -79,24 +79,13 @@ main {
                 background-color: $main-color;
                 display: block;
                 margin: 0 auto;
-                position: relative;
                 i {
                     font-size: 50px;
                     color: $white;
                     padding: 10px;
                     border-radius: 10px;
                 }
-                .finger_icon{
-                    position: absolute;
-                    left: -10px;
-                    top: 50%;
-                    transform: translate(-100% , -50%);
-                    animation: fingers 1000ms infinite;
-                    i{
-                        color: $main-color;
-                        font-size: 30px;
-                    }
-                }
+                
             }
         }
         .sound_test_img{
@@ -110,11 +99,12 @@ main {
         display: flex;
         justify-content: flex-end;
         button{
-            padding: 10px 15px;
+            padding: 10px 0px;
             background-color: $white;
             border: 1px solid $main-color;
             a{
                 color: $main-color;
+                padding: 10px 15px;
             }
             &:hover{
                 background-color: $main_color;
@@ -129,6 +119,20 @@ main {
                     animation: glowing 1500ms infinite;
                   }
                 }
+        }
+    }
+    .finger_btn{
+        position: relative;
+        .finger_icon{
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translate(-100% , -50%);
+            animation: fingers 1000ms infinite;
+            i{
+                color: $main-color !important;
+                font-size: 30px;
+            }
         }
     }
 }
@@ -146,16 +150,18 @@ main {
                     i {
                         font-size: 60px;
                     }
-                    .finger_icon{
-                        i{
-                            font-size: 40px;
-                        }
-                    }
                 }
             }
         }
         .leave_next_btn{
             margin: 50px auto;
+        }
+        .finger_btn{
+            .finger_icon{
+                i{
+                    font-size: 40px;
+                }
+            }
         }
     }
 }
@@ -169,11 +175,13 @@ main {
                     i {
                         font-size: 70px;
                     }
-                    .finger_icon{
-                        i{
-                            font-size: 50px;
-                        }
-                    }
+                }
+            }
+        }
+        .finger_btn{
+            .finger_icon{
+                i{
+                    font-size: 50px;
                 }
             }
         }

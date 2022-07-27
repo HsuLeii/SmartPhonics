@@ -48,8 +48,8 @@
     <main>
       <div class="test_area land_test_area">
         <div class="test_area_bg">
-          <img src="Content/image/photo/bg/land_g1.png" alt="">
-      </div>
+          <img src="Content/image/photo/bg/land_g2.png" alt="" />
+        </div>
         <div class="QA_area">
           <div class="test_progress">
             <div class="drag-line">
@@ -59,14 +59,15 @@
 
           <div class="topic_description_area">
             <div class="description_avatar">
-              <img src="Content/image/photo/avatar/color/land_g1.png" alt="" />
+              <img src="Content/image/photo/avatar/color/land_g2.png" alt="" />
             </div>
             <div class="description_text_area">
               <div class="animal_name_area">
                 <div class="animal_name">
                   <p>animal</p>
                 </div>
-                <button class="sound_icon" disabled> <!-- 試題播放按鈕5秒後仍尚未作答取消disabled -->
+                <button class="sound_icon">
+                  <!-- 試題播放按鈕5秒後仍尚未作答取消disabled -->
                   <i class="fa-solid fa-volume-high"></i>
                   <p>請聽題目說明</p>
                 </button>
@@ -78,23 +79,24 @@
           </div>
 
           <div class="topic_area">
-            <button class="play_area"> <!-- 試題音檔2遍後加入disabled -->
+            <button class="play_area" disabled>
+              <!-- 試題音檔2遍後加入disabled -->
               <i class="fa-solid fa-volume-high"></i>
             </button>
             <div class="answer_area">
               <button class="answer_option answer_one">
-                <p>B</p>
+                <p class="alphabet">o</p>
+                <!-- 單一字母class加上"answer_option" -->
               </button>
               <button class="answer_option answer_one">
-                <p>A</p>
-              </button>
-              <button class="answer_option answer_one">
-                <p>D</p>
+                <p class="alphabet">a</p>
+                <!-- 單一字母class加上"answer_option" -->
               </button>
             </div>
           </div>
 
-          <div class="sound_area">
+          <div class="sound_area sound_disabled">
+            <!-- 試題音檔2遍後class加上"sound_disabled" -->
             <button class="sound_icon">
               <i class="fa-solid fa-volume-high icon_volume"></i>
             </button>
@@ -106,27 +108,30 @@
               min="0"
               max="100"
               value="100"
+              disabled
             />
+            <!-- 試題音檔2遍後加入disabled -->
           </div>
 
           <div class="leave_next_btn go_btn_area">
             <button class="finger_btn go_btn">
-                <a href="land_test_animation.html">
-                    下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-                <div class="finger_icon" style="display: none;"><!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-                  <i class="fa-solid fa-hand-point-right"></i>
-                </div>
-              </button>
-        </div>
+              <a href="land_test_g2_three_options.html">
+                下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
+              </a>
+              <div class="finger_icon" style="display: block">
+                <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
+                <i class="fa-solid fa-hand-point-right"></i>
+              </div>
+            </button>
+          </div>
         </div>
 
         <div class="animal_area">
           <div class="animal_img animal_one">
-            <img src="Content/image/photo/animal/land_g1.png" alt="" />
+            <img src="Content/image/photo/animal/land_g2.png" alt="" />
           </div>
           <div class="animal_img animal_two">
-            <img src="Content/image/photo/animal/land_g1.png" alt="" />
+            <img src="Content/image/photo/animal/land_g2.png" alt="" />
           </div>
         </div>
       </div>

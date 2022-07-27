@@ -363,8 +363,22 @@ input[type=range]::-webkit-slider-thumb {
   transform: translate(0%, -50%);
   top: 50%;
 }
+input[type=range]:disabled {
+  cursor: auto;
+  /* input range 線條樣式 */
+  /* input range 原點樣式 */
+}
+input[type=range]:disabled::-webkit-slider-runnable-track {
+  background-color: grey;
+}
+input[type=range]:disabled::-webkit-slider-thumb {
+  background-color: grey;
+}
 
 /* input range 聲音樣式 */
+input[name=soundRange] {
+  /* input range 線條樣式 */
+}
 input[name=soundRange]:hover ~ .icon_hand_pointer {
   opacity: 0;
 }
@@ -510,13 +524,14 @@ main .login_area .input-group input.form-control:focus {
   border-color: rgba(126, 100, 171, 0.4);
 }
 main .login_area .button_login {
-  padding: 5px 10px;
+  padding: 8px 10px;
   background-color: #ed710e;
   width: 100%;
   margin: 30px auto;
   color: #fff;
   border-radius: 50px;
   transform: scale(0.8);
+  border: 0;
 }
 
 @media screen and (min-width: 576px) {
@@ -777,25 +792,12 @@ main .sound_test_area .sound_play_area .play_area {
   background-color: #ed710e;
   display: block;
   margin: 0 auto;
-  position: relative;
 }
 main .sound_test_area .sound_play_area .play_area i {
   font-size: 50px;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
-}
-main .sound_test_area .sound_play_area .play_area .finger_icon {
-  position: absolute;
-  left: -10px;
-  top: 50%;
-  transform: translate(-100%, -50%);
-  -webkit-animation: fingers 1000ms infinite;
-          animation: fingers 1000ms infinite;
-}
-main .sound_test_area .sound_play_area .play_area .finger_icon i {
-  color: #ed710e;
-  font-size: 30px;
 }
 main .sound_test_area .sound_test_img {
   margin: 40px auto 0px;
@@ -808,12 +810,13 @@ main .leave_next_btn {
   justify-content: flex-end;
 }
 main .leave_next_btn button {
-  padding: 10px 15px;
+  padding: 10px 0px;
   background-color: #fff;
   border: 1px solid #ed710e;
 }
 main .leave_next_btn button a {
   color: #ed710e;
+  padding: 10px 15px;
 }
 main .leave_next_btn button:hover {
   background-color: #ed710e;
@@ -825,27 +828,42 @@ main .leave_next_btn.go_btn_area .go_btn.button_glow {
   -webkit-animation: glowing 1500ms infinite;
           animation: glowing 1500ms infinite;
 }
+main .finger_btn {
+  position: relative;
+}
+main .finger_btn .finger_icon {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  -webkit-animation: fingers 1000ms infinite;
+          animation: fingers 1000ms infinite;
+}
+main .finger_btn .finger_icon i {
+  color: #ed710e !important;
+  font-size: 30px;
+}
 
 @media screen and (min-width: 768px) {
   main .sound_test_area .sound_play_area .play_area i {
     font-size: 60px;
   }
-  main .sound_test_area .sound_play_area .play_area .finger_icon i {
-    font-size: 40px;
-  }
   main .leave_next_btn {
     margin: 50px auto;
+  }
+  main .finger_btn .finger_icon i {
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 992px) {
   main .sound_test_area .sound_play_area .play_area i {
     font-size: 70px;
   }
-  main .sound_test_area .sound_play_area .play_area .finger_icon i {
+  main .finger_btn .finger_icon i {
     font-size: 50px;
   }
 }
-main .test_area_bg {
+main .test_area {
   width: 100%;
   height: calc(100% - 64.7px);
   min-height: calc(100vh - 64.7px);
@@ -859,25 +877,35 @@ main .test_area_bg {
   flex-wrap: wrap;
   position: relative;
 }
-main .test_area_bg.land_test_area {
-  background-image: url(../image/photo/test/bg/test.png);
-}
-main .test_area_bg.land_test_area .QA_area .test_progress .drag-line .line {
+main .test_area.land_test_area .QA_area .test_progress .drag-line .line {
   background: #00a29a;
 }
-main .test_area_bg.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
   color: #00a29a;
 }
-main .test_area_bg.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
   background-color: #00a29a;
 }
-main .test_area_bg.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
   background-color: #00a29a;
 }
-main .test_area_bg.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
   border-top: 8px solid #00a29a;
 }
-main .test_area_bg .QA_area {
+main .test_area .test_area_bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+main .test_area .test_area_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .test_area .QA_area {
   background-color: rgba(255, 255, 255, 0.5019607843);
   width: 60%;
   max-width: 800px;
@@ -887,10 +915,10 @@ main .test_area_bg .QA_area {
   position: relative;
   z-index: 1;
 }
-main .test_area_bg .QA_area .test_progress {
+main .test_area .QA_area .test_progress {
   margin: 0 auto 35px;
 }
-main .test_area_bg .QA_area .test_progress .drag-line {
+main .test_area .QA_area .test_progress .drag-line {
   max-width: 1200px;
   width: 90%;
   height: 10px;
@@ -898,24 +926,24 @@ main .test_area_bg .QA_area .test_progress .drag-line {
   border-radius: 10px;
   margin: 0 auto;
 }
-main .test_area_bg .QA_area .test_progress .drag-line .line {
+main .test_area .QA_area .test_progress .drag-line .line {
   background: #ed710e;
   border-radius: 10px;
   margin-top: 0px;
   margin-left: 0px;
 }
-main .test_area_bg .QA_area .topic_description_area {
+main .test_area .QA_area .topic_description_area {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto 25px;
 }
-main .test_area_bg .QA_area .topic_description_area .description_avatar {
+main .test_area .QA_area .topic_description_area .description_avatar {
   width: 60px;
   margin: 0 auto 15px;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area {
+main .test_area .QA_area .topic_description_area .description_text_area {
   width: 100%;
   display: flex;
   align-items: center;
@@ -928,7 +956,7 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area {
   border-radius: 10px;
   box-shadow: 5px 5px 15px 3px rgba(128, 128, 128, 0.5);
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area::before {
+main .test_area .QA_area .topic_description_area .description_text_area::before {
   content: "";
   position: absolute;
   border-width: 0px 8px 8px 8px;
@@ -937,11 +965,11 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area::befo
   border-right: 8px solid transparent;
   border-bottom: 8px solid #fff;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area {
   display: flex;
   align-items: center;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
   background-color: #ed710e;
   border-radius: 50%;
   color: #fff;
@@ -949,7 +977,7 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area .anim
   margin: 0 0 0 5px;
   position: relative;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
   position: absolute;
   word-break: keep-all;
   cursor: auto;
@@ -960,7 +988,7 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area .anim
   border-radius: 10px;
   display: none;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
   position: absolute;
   content: "";
   border-width: 0px 8px 8px 8px;
@@ -971,39 +999,46 @@ main .test_area_bg .QA_area .topic_description_area .description_text_area .anim
   border-left: 8px solid transparent;
   border-bottom: 8px solid transparent;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon:not(:disabled) p {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon:not(:disabled) p {
   display: block;
 }
-main .test_area_bg .QA_area .topic_description_area .description_text_area .description_text {
+main .test_area .QA_area .topic_description_area .description_text_area .description_text {
   width: 100%;
   text-align: center;
   margin: 5px auto 0;
 }
-main .test_area_bg .QA_area .topic_area .play_area {
+main .test_area .QA_area .topic_area .play_area {
   display: block;
   margin: 0 auto;
   background-color: #ed710e;
 }
-main .test_area_bg .QA_area .topic_area .play_area i {
+main .test_area .QA_area .topic_area .play_area i {
   font-size: 50px;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
-main .test_area_bg .QA_area .topic_area .answer_area {
+main .test_area .QA_area .topic_area .answer_area {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 25px auto 0px;
 }
-main .test_area_bg .QA_area .topic_area .answer_area p {
+main .test_area .QA_area .topic_area .answer_area .answer_option {
+  margin: 10px;
+}
+main .test_area .QA_area .topic_area .answer_area .answer_option p {
   font-size: 30px;
   text-align: center;
-  width: 51px;
+  padding: 0 10px;
   border-radius: 10px;
   background-color: #f38d3b;
   color: #fff;
 }
-main .test_area_bg .QA_area .sound_area {
+main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
+  width: 51px;
+}
+main .test_area .QA_area .sound_area {
   display: flex;
   align-items: center;
   background-color: #fce1cb;
@@ -1013,39 +1048,48 @@ main .test_area_bg .QA_area .sound_area {
   width: 80%;
   max-width: 250px;
 }
-main .test_area_bg .QA_area .sound_area .sound_icon {
+main .test_area .QA_area .sound_area .sound_icon {
   margin: 0px 5px;
   width: 25px;
 }
-main .test_area_bg .QA_area .sound_area .sound_icon i {
+main .test_area .QA_area .sound_area .sound_icon i {
   color: #ed710e;
 }
-main .test_area_bg .QA_area .sound_area input {
+main .test_area .QA_area .sound_area input {
   margin: 0px 5px;
 }
-main .test_area_bg .leave_next_btn {
+main .test_area .QA_area .sound_area.sound_disabled {
+  opacity: 0.5;
+}
+main .test_area .QA_area .sound_area.sound_disabled .sound_icon {
+  cursor: auto;
+}
+main .test_area .QA_area .sound_area.sound_disabled .sound_icon i {
+  color: grey;
+}
+main .test_area .leave_next_btn {
   margin: 30px auto 0px;
 }
 
 @media screen and (min-width: 576px) {
-  main .test_area_bg {
+  main .test_area {
     height: calc(100% - 77.05px);
     min-height: calc(100vh - 77.05px);
   }
-  main .test_area_bg .QA_area .topic_description_area {
+  main .test_area .QA_area .topic_description_area {
     flex-direction: row;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_avatar {
+  main .test_area .QA_area .topic_description_area .description_avatar {
     width: 100px;
     margin: 0 8px;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_text_area {
+  main .test_area .QA_area .topic_description_area .description_text_area {
     width: auto;
     align-items: flex-start;
     flex-direction: column;
     margin: 0 8px;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_text_area::before {
+  main .test_area .QA_area .topic_description_area .description_text_area::before {
     border-width: 8px 0px 8px 8px;
     top: auto;
     left: -16px;
@@ -1053,87 +1097,91 @@ main .test_area_bg .leave_next_btn {
     border-bottom: 8px solid transparent;
     border-top: 8px solid transparent;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_text_area .description_text {
+  main .test_area .QA_area .topic_description_area .description_text_area .description_text {
     width: auto;
   }
 }
 @media screen and (min-width: 768px) {
-  main .test_area_bg .QA_area .topic_area .play_area i {
+  main .test_area .QA_area .topic_area .play_area i {
     font-size: 60px;
   }
-  main .test_area_bg .QA_area .topic_area .answer_area p {
+  main .test_area .QA_area .topic_area .answer_area .answer_option p {
     font-size: 40px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
     width: 68px;
   }
 }
 @media screen and (min-width: 992px) {
-  main .test_area_bg {
+  main .test_area {
     height: calc(100% - 89.81px);
     min-height: calc(100vh - 89.81px);
   }
-  main .test_area_bg .animal_area .animal_img {
+  main .test_area .animal_area .animal_img {
     width: 17.5%;
   }
-  main .test_area_bg .QA_area {
+  main .test_area .QA_area {
     width: 55%;
     padding: 30px 20px;
   }
-  main .test_area_bg .QA_area .topic_description_area {
+  main .test_area .QA_area .topic_description_area {
     margin: 0 auto 35px;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_avatar {
+  main .test_area .QA_area .topic_description_area .description_avatar {
     width: 100px;
     margin: 0 5px;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_text_area {
+  main .test_area .QA_area .topic_description_area .description_text_area {
     width: auto;
     align-items: flex-start;
     flex-direction: column;
   }
-  main .test_area_bg .QA_area .topic_description_area .description_text_area .description_text {
+  main .test_area .QA_area .topic_description_area .description_text_area .description_text {
     width: auto;
   }
-  main .test_area_bg .QA_area .topic_area .play_area i {
+  main .test_area .QA_area .topic_area .play_area i {
     font-size: 70px;
   }
-  main .test_area_bg .QA_area .topic_area .answer_area {
+  main .test_area .QA_area .topic_area .answer_area {
     margin: 35px auto 0px;
   }
-  main .test_area_bg .QA_area .topic_area .answer_area p {
+  main .test_area .QA_area .topic_area .answer_area .answer_option p {
     font-size: 50px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
     width: 85px;
   }
 }
 @media screen and (orientation: portrait) {
-  main .test_area_bg .QA_area {
+  main .test_area .QA_area {
     width: 80%;
   }
-  main .test_area_bg .animal_area {
+  main .test_area .animal_area {
     display: flex;
     justify-content: space-around;
     margin: 40px auto 0px;
   }
-  main .test_area_bg .animal_area .animal_img {
+  main .test_area .animal_area .animal_img {
     width: 35%;
   }
 }
 @media all and (orientation: landscape) {
-  main .test_area_bg .animal_area {
+  main .test_area .animal_area {
     position: absolute;
     width: 100%;
     height: 100%;
   }
-  main .test_area_bg .animal_area .animal_img {
+  main .test_area .animal_area .animal_img {
     position: absolute;
     width: 15%;
     transform: translate(0%, -50%);
   }
-  main .test_area_bg .animal_area .animal_img.animal_one {
+  main .test_area .animal_area .animal_img.animal_one {
     left: 2.5%;
     top: calc(100% - 35px);
     transform: translate(0%, -100%);
   }
-  main .test_area_bg .animal_area .animal_img.animal_two {
+  main .test_area .animal_area .animal_img.animal_two {
     right: 2.5%;
     top: 50%;
   }

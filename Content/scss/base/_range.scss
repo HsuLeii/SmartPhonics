@@ -27,6 +27,20 @@
          transform: translate(0%, -50%);
          top: 50%;
      }
+
+     &:disabled {
+         cursor: auto;
+
+         /* input range 線條樣式 */
+         &::-webkit-slider-runnable-track {
+             background-color: $grey;
+         }
+
+         /* input range 原點樣式 */
+         &::-webkit-slider-thumb {
+             background-color: $grey;
+         }
+     }
  }
 
  /* input range 聲音樣式 */
@@ -49,6 +63,7 @@
          height: 5px;
      }
 
+     /* input range 線條樣式 */
      &::-webkit-slider-runnable-track {
          background-color: $main_color;
          height: 5px;
