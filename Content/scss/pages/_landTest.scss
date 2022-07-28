@@ -64,7 +64,7 @@ main {
         }
 
         .QA_area {
-            background-color: $white50;
+            background-color: $white_50;
             width: 60%;
             max-width: 800px;
             margin: 0 auto;
@@ -116,7 +116,7 @@ main {
                     position: relative;
                     background-color: $white;
                     border-radius: 10px;
-                    box-shadow: 5px 5px 15px 3px rgb(128 128 128 / 50%);
+                    box-shadow: 5px 5px 15px 3px $white_50;
 
                     &::before {
                         content: "";

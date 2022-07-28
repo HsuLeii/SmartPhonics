@@ -2,7 +2,6 @@ $header_bg: #F2F2F2;
 $body_bg: #fff1d4;
 
 /*main*/
-// $main_color:             #7e64ab; 
 $main_color:             #ed710e;
 $main_color_red:	  	 #d75298; 
 $main_color_black:	     #2e3233; 
@@ -15,12 +14,13 @@ $main_color_purpleDarken:#654d8f;
 $main_color_orangeLight: #f6a96b;
 $main_color_purpleDarken:#bd5a0b;
 
-
-
+/*transparency*/
+$main_color_40:#ed710e40;
+$main_color_25:#ed710e25;
+$white_50:#ffffff80;
 
 
 /*other*/
 $white:#fff;
-$white50:#ffffff80;
 $grey: grey;
 $glow_color:#fcff50;
