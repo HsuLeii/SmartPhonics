@@ -1259,6 +1259,8 @@ main .test_area .QA_area .topic_area .answer_area {
 
 main .test_area .QA_area .topic_area .answer_area .answer_option {
   margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #f38d3b;
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option p {
@@ -1272,6 +1274,16 @@ main .test_area .QA_area .topic_area .answer_area .answer_option p {
 
 main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
   width: calc(30px * 1.7);
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option.active {
+  border: 1px dashed #ed710e;
+}
+
+main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+  width: calc(50px * 1.7);
+  background-color: grey;
+  border: 0px solid grey;
 }
 
 main .test_area .QA_area .sound_area {

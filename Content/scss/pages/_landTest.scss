@@ -2,7 +2,7 @@ main {
     .test_area {
         width: 100%;
         height: calc(100% - 64.7px);
-            min-height: calc(100vh - 64.7px);
+        min-height: calc(100vh - 64.7px);
         padding: 30px 0px;
         background-position: center;
         background-repeat: no-repeat;
@@ -12,7 +12,7 @@ main {
         align-items: center;
         flex-wrap: wrap;
         position: relative;
-        
+
 
         &.land_test_area {
 
@@ -202,6 +202,8 @@ main {
 
                     .answer_option {
                         margin: 10px;
+                        border-radius: 10px;
+                        border: 1px solid lighten($main_color_orange, 10%);
 
                         p {
                             font-size: 30px;
@@ -211,10 +213,23 @@ main {
                             background-color: lighten($main_color_orange, 10%);
                             color: $white;
 
-                            &.alphabet{
+                            &.alphabet {
                                 width: calc(30px * 1.7);
                             }
                         }
+
+                        &.active {
+                            border: 1px dashed $main_color;
+                        }
+                    }
+
+                    &.target {
+                        .answer_option {
+                            width: calc(50px * 1.7);
+                            background-color: $grey;
+                            border: 0px solid $grey;
+                        }
+
                     }
                 }
             }
@@ -320,7 +335,7 @@ main {
                             p {
                                 font-size: 40px;
 
-                                &.alphabet{
+                                &.alphabet {
                                     width: calc(40px * 1.7);
                                 }
                             }
@@ -338,7 +353,7 @@ main {
     main {
         .test_area {
             height: calc(100% - 89.81px);
-                min-height: calc(100vh - 89.81px);
+            min-height: calc(100vh - 89.81px);
 
             .animal_area {
                 .animal_img {
@@ -383,7 +398,7 @@ main {
                             p {
                                 font-size: 50px;
 
-                                &.alphabet{
+                                &.alphabet {
                                     width: calc(50px * 1.7);
                                 }
                             }
