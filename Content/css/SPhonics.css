@@ -934,6 +934,9 @@ main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active {
     width: 28%;
     margin: 0px 2.5% 20px;
   }
+  main .pick_level_area .pick_level_main .level_options .button_level {
+    margin: 30px auto;
+  }
 }
 
 main .sound_test_area {
