@@ -1369,6 +1369,10 @@ main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
   width: calc(30px * 1.7);
 }
 
+main .test_area .QA_area .topic_area .answer_area .answer_option p:hover {
+  background-color: #ed710e;
+}
+
 main .test_area .QA_area .topic_area .answer_area .answer_option.active {
   border: 1px dashed #ed710e;
 }

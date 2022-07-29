@@ -216,6 +216,10 @@ main {
                             &.alphabet {
                                 width: calc(30px * 1.7);
                             }
+
+                            &:hover{
+                                background-color: $main_color;
+                            }
                         }
 
                         &.active {
