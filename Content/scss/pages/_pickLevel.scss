@@ -98,6 +98,9 @@ main {
                                 $white 80% 85%, $main_color_green 85% 90%,
                                 $white 90% 95%, $main_color_green 95% 100%);
                     }
+                    .level_name{
+                        background-color: $main_color_green_70;
+                    }
                     .button_level {
                         background-color: $main_color_green;
                     }
@@ -116,6 +119,9 @@ main {
                                 $white 70% 75%, $main_color_blue 75% 80%,
                                 $white 80% 85%, $main_color_blue 85% 90%,
                                 $white 90% 95%, $main_color_blue 95% 100%);
+                    }
+                    .level_name{
+                        background-color: $main_color_blue_70;
                     }
                     .button_level {
                         background-color: $main_color_blue;
@@ -136,6 +142,9 @@ main {
                                 $white 80% 85%, $main_color_red 85% 90%,
                                 $white 90% 95%, $main_color_red 95% 100%);
                     }
+                    .level_name{
+                        background-color: $main_color_red_70;
+                    }
                     .button_level {
                         background-color: $main_color_red;
                     }
@@ -143,9 +152,18 @@ main {
 
                 .level_img {
                     border-radius: 15px;
+                    position: relative;
                     img {
                         border-radius: 15px;
                         padding: 5px;
+                    }
+                    .level_name{
+                        width: calc(100% - 10px);
+                        position: absolute;
+                        left: 5px;
+                        bottom: 5px;
+                        padding: 5px 20px;
+                        color: $white;
                     }
                 }
 

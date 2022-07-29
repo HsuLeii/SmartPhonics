@@ -712,12 +712,20 @@ main .pick_level_area .pick_level_main .level_options.level_one .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%);
 }
 
+main .pick_level_area .pick_level_main .level_options.level_one .level_name {
+  background-color: #00a29ab3;
+}
+
 main .pick_level_area .pick_level_main .level_options.level_one .button_level {
   background-color: #00a29a;
 }
 
 main .pick_level_area .pick_level_main .level_options.level_two .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%);
+}
+
+main .pick_level_area .pick_level_main .level_options.level_two .level_name {
+  background-color: #2194d3b3;
 }
 
 main .pick_level_area .pick_level_main .level_options.level_two .button_level {
@@ -728,17 +736,31 @@ main .pick_level_area .pick_level_main .level_options.level_three .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%);
 }
 
+main .pick_level_area .pick_level_main .level_options.level_three .level_name {
+  background-color: #d75298b3;
+}
+
 main .pick_level_area .pick_level_main .level_options.level_three .button_level {
   background-color: #d75298;
 }
 
 main .pick_level_area .pick_level_main .level_options .level_img {
   border-radius: 15px;
+  position: relative;
 }
 
 main .pick_level_area .pick_level_main .level_options .level_img img {
   border-radius: 15px;
   padding: 5px;
+}
+
+main .pick_level_area .pick_level_main .level_options .level_img .level_name {
+  width: calc(100% - 10px);
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  padding: 5px 20px;
+  color: #fff;
 }
 
 main .pick_level_area .pick_level_main .level_options .button_level {
