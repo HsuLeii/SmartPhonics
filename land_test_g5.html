@@ -18,21 +18,6 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="Content/image/logo/logo.svg" alt="SmartPhonics|英語字母拼讀" />
-        </a>
-      </div>
-    </nav>
-    <div class="nav_name">
-      <a href="#" class="nav_name_link">王美美</a>
-      <ul class="nav_name_menu">
-        <li class="text-center">
-          <a href="">登出</a>
-        </li>
-      </ul>
-    </div>
   </header>
   <!-- ------- ------- ------- ------- ------- ------- ------- -->
   <main>
@@ -151,6 +136,12 @@
   <script src="Content/js/bootstrap-5.1.1.min.js"></script>
   <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
+  <script>
+    $(document).ready(function () {
+      $('header').load('header.html');
+    });
+  </script>
+
   <!-- 顯示登出按鈕 -->
   <script>
     $(".nav_name").click(function () {
@@ -158,7 +149,7 @@
     });
   </script>
 
-<!-- 拖曳效果 -->
+  <!-- 拖曳效果 -->
   <script>
     $(".drag").on({
       "dragstart": function (event) {
@@ -170,24 +161,24 @@
     })
 
     $(".target").on({
-  "dragenter": function(event){
-    event.preventDefault();
-    $(this).addClass("active")
-  },
-  "dragover": function(event){
-    event.preventDefault();
-    
-  },
-  "dragleave": function(){
-    $(".target").removeClass("active")
-  },
-  "drop": function(event){
-    event.preventDefault();
-    // event.stopPropagation(); //停止事件氣泡現象
-    let id = event.originalEvent.dataTransfer.getData('text/plain');
-    $("#"+id).appendTo(event.target);
-  }
-})
+      "dragenter": function (event) {
+        event.preventDefault();
+        $(this).addClass("active")
+      },
+      "dragover": function (event) {
+        event.preventDefault();
+
+      },
+      "dragleave": function () {
+        $(".target").removeClass("active")
+      },
+      "drop": function (event) {
+        event.preventDefault();
+        // event.stopPropagation(); //停止事件氣泡現象
+        let id = event.originalEvent.dataTransfer.getData('text/plain');
+        $("#" + id).appendTo(event.target);
+      }
+    })
   </script>
 </body>
 
