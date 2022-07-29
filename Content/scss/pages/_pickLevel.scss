@@ -33,6 +33,7 @@ main {
                     border: 1px solid $main_color;
                     padding: 5px 12px;
                     display: none;
+                    z-index: 1;
 
                     p {
                         color: $main_color;

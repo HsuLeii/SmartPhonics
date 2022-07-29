@@ -658,6 +658,7 @@ main .pick_level_area .pick_level_top .avatar_area .avatar_explain {
   border: 1px solid #ed710e;
   padding: 5px 12px;
   display: none;
+  z-index: 1;
 }
 
 main .pick_level_area .pick_level_top .avatar_area .avatar_explain p {
