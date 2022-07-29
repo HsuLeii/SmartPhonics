@@ -1281,7 +1281,7 @@ main .test_area .QA_area .topic_area .answer_area .answer_option.active {
 }
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option {
-  width: calc(50px * 1.7);
+  width: calc(30px * 1.7);
   background-color: grey;
   border: 0px solid grey;
 }
@@ -1379,6 +1379,9 @@ main .test_area .leave_next_btn {
   main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
     width: calc(40px * 1.7);
   }
+  main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+    width: calc(40px * 1.7);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1423,6 +1426,9 @@ main .test_area .leave_next_btn {
     font-size: 50px;
   }
   main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
+    width: calc(50px * 1.7);
+  }
+  main .test_area .QA_area .topic_area .answer_area.target .answer_option {
     width: calc(50px * 1.7);
   }
 }
