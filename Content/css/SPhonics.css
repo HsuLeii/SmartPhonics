@@ -920,6 +920,11 @@ main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active {
     border-radius: 20px;
     padding: 10px;
   }
+  main .pick_level_area .pick_level_main .level_options .level_img .level_name {
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 10px;
+  }
   main .pick_level_area .swiper {
     width: 80%;
     padding: 0px 5%;
