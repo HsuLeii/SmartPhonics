@@ -1,109 +1,161 @@
-main{
-    
-.button-animate {
-    animation: btnVariety 2s infinite ease-in-out;
-}
+main {
 
-.page_title {
-    padding: 10px 30px;
-    border-radius: 50px;
-    width: 80%;
-    max-width: 450px;
-    margin: 20px auto 0px;
-
-    h4 {
-        color: $white;
-        word-break: keep-all;
+    .button-animate {
+        animation: btnVariety 2s infinite ease-in-out;
     }
-}
-.pick_level_top {
-    display: flex;
-    flex-direction: column;
-    margin: 30px auto;
-    width: 100%;
 
-    .avatar_area {
+    .page_title {
+        padding: 10px 30px;
+        border-radius: 50px;
         width: 80%;
+        max-width: 450px;
+        margin: 20px auto 0px;
+
+        h4 {
+            color: $white;
+            word-break: keep-all;
+        }
+    }
+
+    .pick_level_top {
         display: flex;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        position: relative;
-        z-index: 2;
+        flex-direction: column;
+        margin: 30px auto;
+        width: 100%;
 
-        .avatar_img {
-            width: 8%;
-            margin: 0px 1%;
+        .avatar_area {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
 
-            &:hover {
-                &~.avatar_explain {
-                    display: block;
+            .avatar_img {
+                width: 8%;
+                margin: 0px 1%;
+
+                &:hover {
+                    &~.avatar_explain {
+                        display: block;
+                    }
+                }
+            }
+
+            .avatar_explain {
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translate(-50%, 15px);
+                width: 85%;
+                background-color: $white;
+                border-radius: 10px;
+                border: 1px solid $main_color;
+                padding: 5px 12px;
+                display: none;
+                z-index: 1;
+
+                p {
+                    color: $main_color;
+                }
+
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: "";
+                }
+
+                &:before {
+                    border-width: 0px 8px 8px 8px;
+                    top: -8px;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 8px solid $main_color;
+                    left: 5%;
+
+                }
+
+                &:after {
+                    border-width: 0px 7px 7px 7px;
+                    top: -7px;
+                    border-left: 7px solid transparent;
+                    border-right: 7px solid transparent;
+                    border-bottom: 7px solid $white;
+                    left: calc(5% + 1px);
+
                 }
             }
         }
 
-        .avatar_explain {
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translate(-50%, 15px);
-            width: 85%;
-            background-color: $white;
-            border-radius: 10px;
-            border: 1px solid $main_color;
-            padding: 5px 12px;
-            display: none;
-            z-index: 1;
+        .pick_level_title {
 
             p {
                 color: $main_color;
             }
+        }
 
-            &:before,
-            &:after {
-                position: absolute;
-                content: "";
+        .page_logo {
+            display: none;
+        }
+    }
+
+    .leave_next_btn {
+        margin: 30px auto;
+        display: flex;
+        justify-content: flex-end;
+
+        button {
+            padding: 10px 0px;
+            background-color: $white;
+            border: 1px solid $main-color;
+
+            a {
+                color: $main-color;
+                padding: 10px 15px;
             }
 
-            &:before {
-                border-width: 0px 8px 8px 8px;
-                top: -8px;
-                border-left: 8px solid transparent;
-                border-right: 8px solid transparent;
-                border-bottom: 8px solid $main_color;
-                left: 5%;
+            &:hover {
+                background-color: $main_color;
 
+                a {
+                    color: $white;
+                }
             }
+        }
 
-            &:after {
-                border-width: 0px 7px 7px 7px;
-                top: -7px;
-                border-left: 7px solid transparent;
-                border-right: 7px solid transparent;
-                border-bottom: 7px solid $white;
-                left: calc(5% + 1px);
-
+        &.go_btn_area {
+            .go_btn {
+                &.button_glow {
+                    animation: glowing 1500ms infinite;
+                }
             }
         }
     }
 
-    .pick_level_title {
+    .finger_btn {
+        position: relative;
 
-        p {
-            color: $main_color;
+        .finger_icon {
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translate(-100%, -50%);
+            animation: fingers 1000ms infinite;
+
+            i {
+                color: $main-color !important;
+                font-size: 30px;
+            }
         }
     }
 
-    .page_logo{
-        display: none;
-    }
-}
 }
 
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
-    main{
-        
+    main {
+
         .page_title {
             margin: 0px auto;
         }
@@ -131,23 +183,43 @@ main{
 
             }
 
-            .page_logo{
+            .page_logo {
                 display: block;
                 width: calc(100% - 550px);
                 max-width: 280px;
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50% , -50%);
+                transform: translate(-50%, -50%);
             }
         }
+
+        .leave_next_btn {
+            margin: 50px auto;
         }
+
+        .finger_btn {
+            .finger_icon {
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
-    main{
+    main {
         .pick_level_top {
             margin: 30px auto;
+        }
+
+        .finger_btn {
+            .finger_icon {
+                i {
+                    font-size: 50px;
+                }
+            }
         }
     }
 }
@@ -184,15 +256,15 @@ main{
 
 @keyframes fingers {
     0% {
-        transform: translate(-100% , -50%);
+        transform: translate(-100%, -50%);
     }
 
     50% {
-        transform: translate(-150% , -50%);
+        transform: translate(-150%, -50%);
     }
 
     100% {
-        transform: translate(-100% , -50%);
+        transform: translate(-100%, -50%);
     }
 }
 

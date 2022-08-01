@@ -1,0 +1,91 @@
+main {
+    .test_end_area {
+
+        &.land_test_area {
+            .test_end_text {
+                p {
+                    color: $main_color_green;
+                }
+
+                .sound_icon {
+                    background-color: $main_color_green;
+                }
+            }
+        }
+
+        .test_end_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            p {
+                margin: 0px 5px;
+            }
+
+            .sound_icon {
+                background-color: #ed710e;
+                border-radius: 50%;
+                color: #fff;
+                padding: 5px;
+                margin: 0px 5px;
+            }
+        }
+
+        .get_avatar_area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 80%;
+            margin: 20px auto;
+
+            .avatar_img {
+                width: 18%;
+                margin: 5px 1%;
+            }
+        }
+
+        .gift_box {
+            width: 80%;
+            margin: 0 auto;
+            max-width: 200px;
+        }
+
+        .leave_next_btn {
+            justify-content: center;
+
+            .score_btn {
+                padding: 10px 0px;
+                background-color: $white;
+                border: 1px solid $main-color;
+
+                &:hover{
+                    background-color: $main-color;
+                    border: 1px solid $white;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {}
+
+@media screen and (min-width: 768px) {
+    main {
+        .test_end_area {
+            .get_avatar_area {
+                width: 60%;
+                margin: 40px auto;
+                max-width: 800px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {}
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

@@ -215,6 +215,7 @@ main {
 
                             &.alphabet {
                                 width: calc(30px * 1.7);
+                                
                             }
 
                             &:hover{
@@ -232,6 +233,7 @@ main {
                             width: calc(30px * 1.7);
                             background-color: $grey;
                             border: 0px solid $grey;
+                            cursor: pointer;
                         }
                     }
                 }
