@@ -3,7 +3,7 @@ main {
         width: 100%;
         height: calc(100% - 64.7px);
         min-height: calc(100vh - 64.7px);
-        padding: 30px 0px;
+        padding: 0px 0px 30px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -363,6 +363,7 @@ main {
         .test_area {
             height: calc(100% - 89.81px);
             min-height: calc(100vh - 89.81px);
+            padding: 0px 0px 40px;
 
             .animal_area {
                 .animal_img {

@@ -1,80 +1,7 @@
 main {
+
     .pick_level_area {
-        .pick_level_top {
-            display: flex;
-            flex-direction: column;
-
-            .avatar_area {
-                width: 80%;
-                display: flex;
-                flex-wrap: wrap;
-                margin: 0 auto;
-                position: relative;
-
-                .avatar_img {
-                    width: 8%;
-                    margin: 15px 1% 0px;
-
-                    &:hover {
-                        &~.avatar_explain {
-                            display: block;
-                        }
-                    }
-                }
-
-                .avatar_explain {
-                    position: absolute;
-                    top: 100%;
-                    left: 50%;
-                    transform: translate(-50%, 15px);
-                    width: 85%;
-                    background-color: $white;
-                    border-radius: 10px;
-                    border: 1px solid $main_color;
-                    padding: 5px 12px;
-                    display: none;
-                    z-index: 1;
-
-                    p {
-                        color: $main_color;
-                    }
-
-                    &:before,
-                    &:after {
-                        position: absolute;
-                        content: "";
-                    }
-
-                    &:before {
-                        border-width: 0px 8px 8px 8px;
-                        top: -8px;
-                        border-left: 8px solid transparent;
-                        border-right: 8px solid transparent;
-                        border-bottom: 8px solid $main_color;
-                        left: 5%;
-
-                    }
-
-                    &:after {
-                        border-width: 0px 7px 7px 7px;
-                        top: -7px;
-                        border-left: 7px solid transparent;
-                        border-right: 7px solid transparent;
-                        border-bottom: 7px solid $white;
-                        left: calc(5% + 1px);
-
-                    }
-                }
-            }
-
-            .pick_level_title {
-
-                p {
-                    color: $main_color;
-                }
-            }
-        }
-
+        
         .pick_level_main {
             display: flex;
             flex-direction: column;
@@ -323,30 +250,9 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
+
         .pick_level_area {
-            .pick_level_top {
-                position: relative;
-                margin: 20px auto;
-
-                .avatar_area {
-                    margin: 0px 5px 0px auto;
-                    max-width: 250px;
-                    order: 2;
-
-                    .avatar_img {
-                        width: 18%;
-                    }
-                }
-
-                .pick_level_title {
-                    position: absolute;
-                    left: 50%;
-                    top: 100%;
-                    transform: translate(-50%, -100%);
-
-                }
-            }
-
+            
             .pick_level_main {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -401,11 +307,9 @@ main {
 
 @media screen and (min-width: 992px) {
     main {
+        
         .pick_level_area {
-            .pick_level_top {
-                margin: 40px auto;
-            }
-
+            
             .swiper {
                 height: calc(90vh - 89.81px - 200px);
             }
