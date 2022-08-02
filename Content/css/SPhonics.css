@@ -1725,7 +1725,7 @@ main .test_end_area.test_end_answer .answer_display_area {
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
   padding: 30px 15px;
-  width: calc(33% - 20px);
+  width: calc(100% - 20px);
   position: relative;
   margin: 10px 10px;
   border-radius: 10px;
@@ -1764,6 +1764,10 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
   position: absolute;
   right: 5px;
   bottom: 5px;
+  cursor: auto;
+}
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_icon .fa-volume-high {
   cursor: pointer;
 }
 
@@ -1816,6 +1820,12 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
           transform: translate(0%, -50%);
 }
 
+@media screen and (min-width: 576px) {
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
+    width: calc(50% - 20px);
+  }
+}
+
 @media screen and (min-width: 768px) {
   main .test_end_area .get_avatar_area {
     width: 60%;
@@ -1830,7 +1840,7 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
             transform: translate(0, 0);
   }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
-    width: calc(25% - 20px);
+    width: calc(33% - 20px);
   }
   main .test_end_area.test_end_answer .test_end_page .page {
     margin: 40px auto;
@@ -1846,9 +1856,6 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 992px) {
-  main .test_end_area .answer_display_area .answer_display_item {
-    width: calc(20% - 20px);
-  }
   main .test_end_area.test_end_answer .test_end_page {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1864,7 +1871,7 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 
 @media screen and (min-width: 1200px) {
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
-    width: calc(16.6% - 20px);
+    width: calc(25% - 20px);
   }
 }
 /*# sourceMappingURL=SPhonics.css.map */
