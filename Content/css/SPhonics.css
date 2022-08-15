@@ -319,6 +319,10 @@ main .page_title h4 {
   word-break: keep-all;
 }
 
+main .page_title h3 {
+  color: #ed710e;
+}
+
 main .pick_level_top {
   display: -webkit-box;
   display: -ms-flexbox;
