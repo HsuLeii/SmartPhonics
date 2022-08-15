@@ -1655,6 +1655,10 @@ main .test_area .leave_next_btn {
   }
 }
 
+main .test_end_area {
+  margin: 30px auto;
+}
+
 main .test_end_area.land_test_area .test_end_text p {
   color: #00a29a;
 }
