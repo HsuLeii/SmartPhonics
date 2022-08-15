@@ -161,18 +161,9 @@ main {
         }
 
         .pick_level_top {
-            position: relative;
-            margin: 20px 0px 20px auto;
 
-            .avatar_area {
-                margin: 0px 5px 0px auto;
-                max-width: 250px;
-                order: 2;
-
-                .avatar_img {
-                    width: 18%;
-                    margin: 7px 5px 7px auto;
-                }
+            .avatar_area{
+                width: 60%;
             }
 
             .pick_level_title {
@@ -210,8 +201,34 @@ main {
 
 @media screen and (min-width: 992px) {
     main {
-        .pick_level_top {
-            margin: 30px auto;
+        .finger_btn {
+            .finger_icon {
+                i {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+
+        .pick_level_top{
+            position: absolute;
+            max-width: 250px;
+            top: 0;
+            right: 5px;
+            .avatar_area {
+                margin: 0px 5px;
+                order: 2;
+                width: 100%;
+
+                .avatar_img {
+                    width: calc(20% - 10px);
+                    margin: 7px 5px;
+                }
+            }
         }
 
         .finger_btn {
@@ -223,8 +240,6 @@ main {
         }
     }
 }
-
-@media screen and (min-width: 1200px) {}
 
 @media screen and (min-width: 1400px) {}
 

@@ -459,20 +459,8 @@ main .finger_btn .finger_icon i {
   main .page_title {
     margin: 0px auto;
   }
-  main .pick_level_top {
-    position: relative;
-    margin: 20px 0px 20px auto;
-  }
   main .pick_level_top .avatar_area {
-    margin: 0px 5px 0px auto;
-    max-width: 250px;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  main .pick_level_top .avatar_area .avatar_img {
-    width: 18%;
-    margin: 7px 5px 7px auto;
+    width: 60%;
   }
   main .pick_level_top .pick_level_title {
     position: absolute;
@@ -500,8 +488,28 @@ main .finger_btn .finger_icon i {
 }
 
 @media screen and (min-width: 992px) {
+  main .finger_btn .finger_icon i {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   main .pick_level_top {
-    margin: 30px auto;
+    position: absolute;
+    max-width: 250px;
+    top: 0;
+    right: 5px;
+  }
+  main .pick_level_top .avatar_area {
+    margin: 0px 5px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  main .pick_level_top .avatar_area .avatar_img {
+    width: calc(20% - 10px);
+    margin: 7px 5px;
   }
   main .finger_btn .finger_icon i {
     font-size: 50px;
