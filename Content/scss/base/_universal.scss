@@ -166,14 +166,6 @@ main {
                 width: 60%;
             }
 
-            .pick_level_title {
-                position: absolute;
-                left: 50%;
-                top: 0%;
-                transform: translate(-50%, 100%);
-
-            }
-
             .page_logo {
                 display: block;
                 width: calc(100% - 550px);
@@ -217,7 +209,7 @@ main {
         .pick_level_top{
             width: 100%;
             .avatar_area {
-                margin: 0px 5px;
+                margin: 5px;
                 order: 2;
                 max-width: 250px;
                 position: absolute;

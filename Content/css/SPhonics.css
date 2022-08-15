@@ -462,13 +462,6 @@ main .finger_btn .finger_icon i {
   main .pick_level_top .avatar_area {
     width: 60%;
   }
-  main .pick_level_top .pick_level_title {
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    -webkit-transform: translate(-50%, 100%);
-            transform: translate(-50%, 100%);
-  }
   main .pick_level_top .page_logo {
     display: block;
     width: calc(100% - 550px);
@@ -498,7 +491,7 @@ main .finger_btn .finger_icon i {
     width: 100%;
   }
   main .pick_level_top .avatar_area {
-    margin: 0px 5px;
+    margin: 5px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -649,7 +642,7 @@ header {
   background-color: #F2F2F2;
   padding: 0px 15px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 header .navbar .container-fluid {
