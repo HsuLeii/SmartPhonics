@@ -835,7 +835,7 @@ main .pick_level_area .pick_level_main .level_options.level_one .level_img {
 }
 
 main .pick_level_area .pick_level_main .level_options.level_one .level_name {
-  background-color: #00a29ab3;
+  color: #00a29ab3;
 }
 
 main .pick_level_area .pick_level_main .level_options.level_one .button_level {
@@ -847,7 +847,7 @@ main .pick_level_area .pick_level_main .level_options.level_two .level_img {
 }
 
 main .pick_level_area .pick_level_main .level_options.level_two .level_name {
-  background-color: #2194d3b3;
+  color: #2194d3b3;
 }
 
 main .pick_level_area .pick_level_main .level_options.level_two .button_level {
@@ -859,11 +859,18 @@ main .pick_level_area .pick_level_main .level_options.level_three .level_img {
 }
 
 main .pick_level_area .pick_level_main .level_options.level_three .level_name {
-  background-color: #d75298b3;
+  color: #d75298b3;
 }
 
 main .pick_level_area .pick_level_main .level_options.level_three .button_level {
   background-color: #d75298;
+}
+
+main .pick_level_area .pick_level_main .level_options .level_name {
+  width: calc(100% - 10px);
+  padding: 5px 20px;
+  color: #2e3233;
+  margin: 5px;
 }
 
 main .pick_level_area .pick_level_main .level_options .level_img {
@@ -874,15 +881,6 @@ main .pick_level_area .pick_level_main .level_options .level_img {
 main .pick_level_area .pick_level_main .level_options .level_img img {
   border-radius: 15px;
   padding: 5px;
-}
-
-main .pick_level_area .pick_level_main .level_options .level_img .level_name {
-  width: calc(100% - 10px);
-  position: absolute;
-  left: 5px;
-  bottom: 5px;
-  padding: 5px 20px;
-  color: #fff;
 }
 
 main .pick_level_area .pick_level_main .level_options .button_level {
