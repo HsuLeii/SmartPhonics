@@ -429,7 +429,13 @@ main {
     }
 }
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    main {
+        .test_area {
+            padding: 40px 0px;
+        }
+    }
+}
 
 @media screen and (min-width: 1400px) {}
 

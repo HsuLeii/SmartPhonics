@@ -1593,6 +1593,12 @@ main .test_area .leave_next_btn {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  main .test_area {
+    padding: 40px 0px;
+  }
+}
+
 @media screen and (orientation: portrait) {
   main .test_area .QA_area {
     width: 80%;
