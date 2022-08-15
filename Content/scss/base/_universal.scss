@@ -155,11 +155,7 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-
-        .page_title {
-            margin: 0px auto;
-        }
-
+        
         .pick_level_top {
 
             .avatar_area{
@@ -209,7 +205,16 @@ main {
         .pick_level_top{
             width: 100%;
             margin: 0 auto;
-            
+            position: relative;
+
+            .page_title {
+                margin: 0px auto;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50% , -50%);
+            }
+
             .avatar_area {
                 margin: 5px;
                 order: 2;
@@ -221,6 +226,11 @@ main {
                 .avatar_img {
                     width: calc(20% - 10px);
                     margin: 7px 5px;
+                }
+
+                &.pick_level_avatar_area{
+                    position: relative;
+                    margin: 5px 5px 5px auto;
                 }
             }
         }

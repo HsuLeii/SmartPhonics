@@ -456,9 +456,6 @@ main .finger_btn .finger_icon i {
 }
 
 @media screen and (min-width: 768px) {
-  main .page_title {
-    margin: 0px auto;
-  }
   main .pick_level_top .avatar_area {
     width: 60%;
   }
@@ -490,6 +487,15 @@ main .finger_btn .finger_icon i {
   main .pick_level_top {
     width: 100%;
     margin: 0 auto;
+    position: relative;
+  }
+  main .pick_level_top .page_title {
+    margin: 0px auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
   main .pick_level_top .avatar_area {
     margin: 5px;
@@ -504,6 +510,10 @@ main .finger_btn .finger_icon i {
   main .pick_level_top .avatar_area .avatar_img {
     width: calc(20% - 10px);
     margin: 7px 5px;
+  }
+  main .pick_level_top .avatar_area.pick_level_avatar_area {
+    position: relative;
+    margin: 5px 5px 5px auto;
   }
   main .finger_btn .finger_icon i {
     font-size: 50px;
