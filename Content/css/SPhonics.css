@@ -465,9 +465,9 @@ main .finger_btn .finger_icon i {
   main .pick_level_top .pick_level_title {
     position: absolute;
     left: 50%;
-    top: 100%;
-    -webkit-transform: translate(-50%, -100%);
-            transform: translate(-50%, -100%);
+    top: 0%;
+    -webkit-transform: translate(-50%, 100%);
+            transform: translate(-50%, 100%);
   }
   main .pick_level_top .page_logo {
     display: block;
@@ -495,17 +495,17 @@ main .finger_btn .finger_icon i {
 
 @media screen and (min-width: 1200px) {
   main .pick_level_top {
-    position: absolute;
-    max-width: 250px;
-    top: 0;
-    right: 5px;
+    width: 100%;
   }
   main .pick_level_top .avatar_area {
     margin: 0px 5px;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 100%;
+    max-width: 250px;
+    position: absolute;
+    top: 0;
+    right: 5px;
   }
   main .pick_level_top .avatar_area .avatar_img {
     width: calc(20% - 10px);
@@ -811,6 +811,10 @@ main .login_area .button_login {
   main .login_area .button_login {
     padding: 10px;
   }
+}
+
+main .pick_level_area {
+  position: relative;
 }
 
 main .pick_level_area .pick_level_main {

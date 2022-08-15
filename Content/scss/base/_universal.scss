@@ -169,8 +169,8 @@ main {
             .pick_level_title {
                 position: absolute;
                 left: 50%;
-                top: 100%;
-                transform: translate(-50%, -100%);
+                top: 0%;
+                transform: translate(-50%, 100%);
 
             }
 
@@ -215,14 +215,14 @@ main {
     main {
 
         .pick_level_top{
-            position: absolute;
-            max-width: 250px;
-            top: 0;
-            right: 5px;
+            width: 100%;
             .avatar_area {
                 margin: 0px 5px;
                 order: 2;
-                width: 100%;
+                max-width: 250px;
+                position: absolute;
+                top: 0;
+                right: 5px;
 
                 .avatar_img {
                     width: calc(20% - 10px);
