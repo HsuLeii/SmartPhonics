@@ -1115,7 +1115,7 @@ main .sound_test_area .sound_bar_area.play_animation .bar {
 
 main .sound_test_area .sound_bar_area .bar {
   background-color: #ed710e;
-  height: 3px;
+  height: 0px;
   width: 3px;
   margin: 0px 1px;
 }
