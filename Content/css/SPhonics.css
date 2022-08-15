@@ -489,6 +489,7 @@ main .finger_btn .finger_icon i {
 @media screen and (min-width: 1200px) {
   main .pick_level_top {
     width: 100%;
+    margin: 0 auto;
   }
   main .pick_level_top .avatar_area {
     margin: 5px;
