@@ -8,7 +8,7 @@ main {
         background-color: $white_50;
         border-radius: 10px;
 
-        .sound_test_text{
+        .sound_test_text {
             display: flex;
             justify-content: center;
         }
@@ -19,8 +19,9 @@ main {
             display: flex;
             align-items: center;
             margin: 25px auto 0px;
-            &.play_animation{
-                .bar{
+
+            &.play_animation {
+                .bar {
                     animation: sound 0ms -800ms linear infinite alternate;
                 }
             }
@@ -30,85 +31,205 @@ main {
                 height: 0px;
                 width: 3px;
                 margin: 0px 1px;
-                
+
                 &:nth-child(1) {
                     animation-duration: 474ms;
                 }
-    
+
                 &:nth-child(2) {
                     animation-duration: 433ms;
                 }
-    
+
                 &:nth-child(3) {
                     animation-duration: 407ms;
                 }
-    
+
                 &:nth-child(4) {
                     animation-duration: 458ms;
                 }
-    
+
                 &:nth-child(5) {
                     animation-duration: 400ms;
                 }
-    
+
                 &:nth-child(6) {
                     animation-duration: 427ms;
                 }
-    
+
                 &:nth-child(7) {
                     animation-duration: 441ms;
                 }
-    
+
                 &:nth-child(8) {
                     animation-duration: 419ms;
                 }
-    
+
                 &:nth-child(9) {
                     animation-duration: 487ms;
                 }
-    
+
                 &:nth-child(10) {
                     animation-duration: 442ms;
                 }
             }
         }
 
-        .sound_play_area{
-            margin: 25px auto 0px;
-            .play_area{
+        .sound_play_area,
+        .recording_button_area,
+        .stop_button_area,
+        .play_button_area {
+            margin: 40px auto 0px;
+
+            .sound_area,
+            .recording_area,
+            .stop_area,
+            .play_area {
                 background-color: $main-color;
                 display: block;
                 margin: 0 auto;
                 i {
-                    font-size: 50px;
+                    font-size: 40px;
                     color: $white;
                     padding: 10px;
                     border-radius: 10px;
                 }
-                
+            }  
+
+            
+            .button_text{
+                text-align: center;
+                margin: 10px auto 0px;
+                color: $white;
+                padding: 5px 10px;
+                border-radius: 10px;
+                width: 100%;
+                cursor: pointer;
+            }
+
+            .recording_seconds{
+                margin: 10px auto 0px;
+                text-align: center;
+            }
+
+            .recording_area,
+            .stop_area,
+            .play_area {
+                width: 60px;
             }
         }
-        .sound_test_img{
+
+        .recording_button_area{
+
+            .recording_area {
+                background-color: $main_color_blue;
+                &.finger_btn{
+                    .finger_icon{
+                        i{
+                            color: $main_color_blue !important;
+                        }
+                    }
+                }
+            }
+
+            .button_text{
+                background-color: $main_color_blue;
+            }
+
+        }
+
+        .stop_button_area{
+
+            .stop_area {
+                background-color: $main_color_yellow;
+            }
+
+            .button_text{
+                background-color: $main_color_yellow;
+            }
+
+        }
+
+        .play_button_area{
+
+            .play_area {
+                background-color: $main_color_green;
+            }
+
+            .button_text{
+                background-color: $main_color_green;
+            }
+
+        }
+
+        .sound_test_img {
             margin: 40px auto 0px;
             width: 40%;
             max-width: 200px;
         }
+
+        .recording_stop_play_area {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 40px auto 0px;
+
+            .recording_button_item {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 10px 15px;
+
+                .recording_button_instructions{
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .recording_button_area,
+                .stop_button_area,
+                .play_button_area {
+                    margin: 20px 10px 0px;
+                }
+            }
+        }
+
+
     }
 }
 
-@media screen and (min-width: 576px) {
-    
-}
+@media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
     main {
         .sound_test_area {
-            
-            .sound_play_area{
-                .play_area{
+
+            .sound_play_area,
+            .recording_button_area,
+            .stop_button_area,
+            .play_button_area {
+                margin: 40px auto 0px;
+
+                .sound_area,
+                .recording_area,
+                .stop_area,
+                .play_area {
+
                     i {
-                        font-size: 60px;
+                        font-size: 50px;
                     }
+
+                }
+
+                .recording_area,
+                .stop_area,
+                .play_area {
+                    width: 70px;
+                }
+            }
+
+            .recording_stop_play_area {
+                flex-direction: row;
+                .recording_button_item {
+                    margin: 0 40px;
                 }
             }
         }
@@ -118,12 +239,34 @@ main {
 @media screen and (min-width: 992px) {
     main {
         .sound_test_area {
-            
-            .sound_play_area{
-                .play_area{
+
+            .sound_play_area,
+            .recording_button_area,
+            .stop_button_area,
+            .play_button_area {
+                margin: 40px auto 0px;
+
+                .sound_area,
+                .recording_area,
+                .stop_area,
+                .play_area {
+
                     i {
-                        font-size: 70px;
+                        font-size: 60px;
                     }
+
+                }
+
+                .recording_area,
+                .stop_area,
+                .play_area {
+                    width: 80px;
+                }
+            }
+
+            .recording_stop_play_area {
+                .recording_button_item {
+                    margin: 0 60px;
                 }
             }
         }

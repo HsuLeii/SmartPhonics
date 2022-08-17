@@ -109,7 +109,7 @@ main {
         justify-content: flex-end;
 
         button {
-            padding: 10px 0px;
+            padding: 5px 0px;
             background-color: $white;
             border: 1px solid $main-color;
 
@@ -141,14 +141,15 @@ main {
 
         .finger_icon {
             position: absolute;
-            left: -10px;
+            left: 0px;
             top: 50%;
             transform: translate(-100%, -50%);
             animation: fingers 1000ms infinite;
 
             i {
                 color: $main-color !important;
-                font-size: 30px;
+                font-size: 40px;
+                padding: 5px;
             }
         }
     }
@@ -283,11 +284,25 @@ main {
     }
 
     50% {
-        transform: translate(-150%, -50%);
+        transform: translate(-140%, -50%);
     }
 
     100% {
         transform: translate(-100%, -50%);
+    }
+}
+
+@keyframes recording_fingers {
+    0% {
+        transform: translate(0%, -50%);
+    }
+
+    50% {
+        transform: translate(0%, -90%);
+    }
+
+    100% {
+        transform: translate(0%, -50%);
     }
 }
 

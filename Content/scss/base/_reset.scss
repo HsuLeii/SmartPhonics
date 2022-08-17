@@ -100,8 +100,13 @@ button {
 
 button:disabled {
     background-color: $grey !important;
+    border: 1px solid $grey !important;
     opacity: 0.5;
-    cursor: auto;
+    cursor: auto !important;
+    a{
+        color: $white !important;
+        cursor: auto;
+    }
 }
 
 *,

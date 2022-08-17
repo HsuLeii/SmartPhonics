@@ -108,7 +108,13 @@ button {
 
 button:disabled {
   background-color: grey !important;
+  border: 1px solid grey !important;
   opacity: 0.5;
+  cursor: auto !important;
+}
+
+button:disabled a {
+  color: #fff !important;
   cursor: auto;
 }
 
@@ -417,7 +423,7 @@ main .leave_next_btn {
 }
 
 main .leave_next_btn button {
-  padding: 10px 0px;
+  padding: 5px 0px;
   background-color: #fff;
   border: 1px solid #ed710e;
 }
@@ -446,7 +452,7 @@ main .finger_btn {
 
 main .finger_btn .finger_icon {
   position: absolute;
-  left: -10px;
+  left: 0px;
   top: 50%;
   -webkit-transform: translate(-100%, -50%);
           transform: translate(-100%, -50%);
@@ -456,7 +462,8 @@ main .finger_btn .finger_icon {
 
 main .finger_btn .finger_icon i {
   color: #ed710e !important;
-  font-size: 30px;
+  font-size: 40px;
+  padding: 5px;
 }
 
 @media screen and (min-width: 768px) {
@@ -582,8 +589,8 @@ main .finger_btn .finger_icon i {
             transform: translate(-100%, -50%);
   }
   50% {
-    -webkit-transform: translate(-150%, -50%);
-            transform: translate(-150%, -50%);
+    -webkit-transform: translate(-140%, -50%);
+            transform: translate(-140%, -50%);
   }
   100% {
     -webkit-transform: translate(-100%, -50%);
@@ -597,12 +604,42 @@ main .finger_btn .finger_icon i {
             transform: translate(-100%, -50%);
   }
   50% {
-    -webkit-transform: translate(-150%, -50%);
-            transform: translate(-150%, -50%);
+    -webkit-transform: translate(-140%, -50%);
+            transform: translate(-140%, -50%);
   }
   100% {
     -webkit-transform: translate(-100%, -50%);
             transform: translate(-100%, -50%);
+  }
+}
+
+@-webkit-keyframes recording_fingers {
+  0% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -90%);
+            transform: translate(0%, -90%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+}
+
+@keyframes recording_fingers {
+  0% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  50% {
+    -webkit-transform: translate(0%, -90%);
+            transform: translate(0%, -90%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
   }
 }
 
@@ -842,39 +879,39 @@ main .pick_level_area .pick_level_main .level_options {
   margin: 0px auto 20px;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_one .level_img {
+main .pick_level_area .pick_level_main .level_options.level_land .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%);
 }
 
-main .pick_level_area .pick_level_main .level_options.level_one .level_name {
+main .pick_level_area .pick_level_main .level_options.level_land .level_name {
   color: #00a29ab3;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_one .button_level {
+main .pick_level_area .pick_level_main .level_options.level_land .button_level {
   background-color: #00a29a;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_two .level_img {
+main .pick_level_area .pick_level_main .level_options.level_ocean .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%);
 }
 
-main .pick_level_area .pick_level_main .level_options.level_two .level_name {
+main .pick_level_area .pick_level_main .level_options.level_ocean .level_name {
   color: #2194d3b3;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_two .button_level {
+main .pick_level_area .pick_level_main .level_options.level_ocean .button_level {
   background-color: #2194d3;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_three .level_img {
+main .pick_level_area .pick_level_main .level_options.level_sky .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%);
 }
 
-main .pick_level_area .pick_level_main .level_options.level_three .level_name {
+main .pick_level_area .pick_level_main .level_options.level_sky .level_name {
   color: #d75298b3;
 }
 
-main .pick_level_area .pick_level_main .level_options.level_three .button_level {
+main .pick_level_area .pick_level_main .level_options.level_sky .button_level {
   background-color: #d75298;
 }
 
@@ -965,27 +1002,27 @@ main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level a {
   padding: 5px 30px;
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_one .level_img {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%);
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_one .button_level {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .button_level {
   background-color: #00a29a;
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_two .level_img {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_ocean .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%);
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_two .button_level {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_ocean .button_level {
   background-color: #2194d3;
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_three .level_img {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .level_img {
   background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%);
 }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_three .button_level {
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .button_level {
   background-color: #d75298;
 }
 
@@ -1170,21 +1207,118 @@ main .sound_test_area .sound_bar_area .bar:nth-child(10) {
           animation-duration: 442ms;
 }
 
-main .sound_test_area .sound_play_area {
-  margin: 25px auto 0px;
+main .sound_test_area .sound_play_area,
+main .sound_test_area .recording_button_area,
+main .sound_test_area .stop_button_area,
+main .sound_test_area .play_button_area {
+  margin: 40px auto 0px;
 }
 
-main .sound_test_area .sound_play_area .play_area {
+main .sound_test_area .sound_play_area .sound_area,
+main .sound_test_area .sound_play_area .recording_area,
+main .sound_test_area .sound_play_area .stop_area,
+main .sound_test_area .sound_play_area .play_area,
+main .sound_test_area .recording_button_area .sound_area,
+main .sound_test_area .recording_button_area .recording_area,
+main .sound_test_area .recording_button_area .stop_area,
+main .sound_test_area .recording_button_area .play_area,
+main .sound_test_area .stop_button_area .sound_area,
+main .sound_test_area .stop_button_area .recording_area,
+main .sound_test_area .stop_button_area .stop_area,
+main .sound_test_area .stop_button_area .play_area,
+main .sound_test_area .play_button_area .sound_area,
+main .sound_test_area .play_button_area .recording_area,
+main .sound_test_area .play_button_area .stop_area,
+main .sound_test_area .play_button_area .play_area {
   background-color: #ed710e;
   display: block;
   margin: 0 auto;
 }
 
-main .sound_test_area .sound_play_area .play_area i {
-  font-size: 50px;
+main .sound_test_area .sound_play_area .sound_area i,
+main .sound_test_area .sound_play_area .recording_area i,
+main .sound_test_area .sound_play_area .stop_area i,
+main .sound_test_area .sound_play_area .play_area i,
+main .sound_test_area .recording_button_area .sound_area i,
+main .sound_test_area .recording_button_area .recording_area i,
+main .sound_test_area .recording_button_area .stop_area i,
+main .sound_test_area .recording_button_area .play_area i,
+main .sound_test_area .stop_button_area .sound_area i,
+main .sound_test_area .stop_button_area .recording_area i,
+main .sound_test_area .stop_button_area .stop_area i,
+main .sound_test_area .stop_button_area .play_area i,
+main .sound_test_area .play_button_area .sound_area i,
+main .sound_test_area .play_button_area .recording_area i,
+main .sound_test_area .play_button_area .stop_area i,
+main .sound_test_area .play_button_area .play_area i {
+  font-size: 40px;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
+}
+
+main .sound_test_area .sound_play_area .button_text,
+main .sound_test_area .recording_button_area .button_text,
+main .sound_test_area .stop_button_area .button_text,
+main .sound_test_area .play_button_area .button_text {
+  text-align: center;
+  margin: 10px auto 0px;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+main .sound_test_area .sound_play_area .recording_seconds,
+main .sound_test_area .recording_button_area .recording_seconds,
+main .sound_test_area .stop_button_area .recording_seconds,
+main .sound_test_area .play_button_area .recording_seconds {
+  margin: 10px auto 0px;
+  text-align: center;
+}
+
+main .sound_test_area .sound_play_area .recording_area,
+main .sound_test_area .sound_play_area .stop_area,
+main .sound_test_area .sound_play_area .play_area,
+main .sound_test_area .recording_button_area .recording_area,
+main .sound_test_area .recording_button_area .stop_area,
+main .sound_test_area .recording_button_area .play_area,
+main .sound_test_area .stop_button_area .recording_area,
+main .sound_test_area .stop_button_area .stop_area,
+main .sound_test_area .stop_button_area .play_area,
+main .sound_test_area .play_button_area .recording_area,
+main .sound_test_area .play_button_area .stop_area,
+main .sound_test_area .play_button_area .play_area {
+  width: 60px;
+}
+
+main .sound_test_area .recording_button_area .recording_area {
+  background-color: #2194d3;
+}
+
+main .sound_test_area .recording_button_area .recording_area.finger_btn .finger_icon i {
+  color: #2194d3 !important;
+}
+
+main .sound_test_area .recording_button_area .button_text {
+  background-color: #2194d3;
+}
+
+main .sound_test_area .stop_button_area .stop_area {
+  background-color: #f8b62d;
+}
+
+main .sound_test_area .stop_button_area .button_text {
+  background-color: #f8b62d;
+}
+
+main .sound_test_area .play_button_area .play_area {
+  background-color: #00a29a;
+}
+
+main .sound_test_area .play_button_area .button_text {
+  background-color: #00a29a;
 }
 
 main .sound_test_area .sound_test_img {
@@ -1193,15 +1327,134 @@ main .sound_test_area .sound_test_img {
   max-width: 200px;
 }
 
+main .sound_test_area .recording_stop_play_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 40px auto 0px;
+}
+
+main .sound_test_area .recording_stop_play_area .recording_button_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 15px;
+}
+
+main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button_instructions {
+  width: 100%;
+  text-align: center;
+}
+
+main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button_area,
+main .sound_test_area .recording_stop_play_area .recording_button_item .stop_button_area,
+main .sound_test_area .recording_stop_play_area .recording_button_item .play_button_area {
+  margin: 20px 10px 0px;
+}
+
 @media screen and (min-width: 768px) {
-  main .sound_test_area .sound_play_area .play_area i {
-    font-size: 60px;
+  main .sound_test_area .sound_play_area,
+  main .sound_test_area .recording_button_area,
+  main .sound_test_area .stop_button_area,
+  main .sound_test_area .play_button_area {
+    margin: 40px auto 0px;
+  }
+  main .sound_test_area .sound_play_area .sound_area i,
+  main .sound_test_area .sound_play_area .recording_area i,
+  main .sound_test_area .sound_play_area .stop_area i,
+  main .sound_test_area .sound_play_area .play_area i,
+  main .sound_test_area .recording_button_area .sound_area i,
+  main .sound_test_area .recording_button_area .recording_area i,
+  main .sound_test_area .recording_button_area .stop_area i,
+  main .sound_test_area .recording_button_area .play_area i,
+  main .sound_test_area .stop_button_area .sound_area i,
+  main .sound_test_area .stop_button_area .recording_area i,
+  main .sound_test_area .stop_button_area .stop_area i,
+  main .sound_test_area .stop_button_area .play_area i,
+  main .sound_test_area .play_button_area .sound_area i,
+  main .sound_test_area .play_button_area .recording_area i,
+  main .sound_test_area .play_button_area .stop_area i,
+  main .sound_test_area .play_button_area .play_area i {
+    font-size: 50px;
+  }
+  main .sound_test_area .sound_play_area .recording_area,
+  main .sound_test_area .sound_play_area .stop_area,
+  main .sound_test_area .sound_play_area .play_area,
+  main .sound_test_area .recording_button_area .recording_area,
+  main .sound_test_area .recording_button_area .stop_area,
+  main .sound_test_area .recording_button_area .play_area,
+  main .sound_test_area .stop_button_area .recording_area,
+  main .sound_test_area .stop_button_area .stop_area,
+  main .sound_test_area .stop_button_area .play_area,
+  main .sound_test_area .play_button_area .recording_area,
+  main .sound_test_area .play_button_area .stop_area,
+  main .sound_test_area .play_button_area .play_area {
+    width: 70px;
+  }
+  main .sound_test_area .recording_stop_play_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .sound_test_area .recording_stop_play_area .recording_button_item {
+    margin: 0 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  main .sound_test_area .sound_play_area .play_area i {
-    font-size: 70px;
+  main .sound_test_area .sound_play_area,
+  main .sound_test_area .recording_button_area,
+  main .sound_test_area .stop_button_area,
+  main .sound_test_area .play_button_area {
+    margin: 40px auto 0px;
+  }
+  main .sound_test_area .sound_play_area .sound_area i,
+  main .sound_test_area .sound_play_area .recording_area i,
+  main .sound_test_area .sound_play_area .stop_area i,
+  main .sound_test_area .sound_play_area .play_area i,
+  main .sound_test_area .recording_button_area .sound_area i,
+  main .sound_test_area .recording_button_area .recording_area i,
+  main .sound_test_area .recording_button_area .stop_area i,
+  main .sound_test_area .recording_button_area .play_area i,
+  main .sound_test_area .stop_button_area .sound_area i,
+  main .sound_test_area .stop_button_area .recording_area i,
+  main .sound_test_area .stop_button_area .stop_area i,
+  main .sound_test_area .stop_button_area .play_area i,
+  main .sound_test_area .play_button_area .sound_area i,
+  main .sound_test_area .play_button_area .recording_area i,
+  main .sound_test_area .play_button_area .stop_area i,
+  main .sound_test_area .play_button_area .play_area i {
+    font-size: 60px;
+  }
+  main .sound_test_area .sound_play_area .recording_area,
+  main .sound_test_area .sound_play_area .stop_area,
+  main .sound_test_area .sound_play_area .play_area,
+  main .sound_test_area .recording_button_area .recording_area,
+  main .sound_test_area .recording_button_area .stop_area,
+  main .sound_test_area .recording_button_area .play_area,
+  main .sound_test_area .stop_button_area .recording_area,
+  main .sound_test_area .stop_button_area .stop_area,
+  main .sound_test_area .stop_button_area .play_area,
+  main .sound_test_area .play_button_area .recording_area,
+  main .sound_test_area .play_button_area .stop_area,
+  main .sound_test_area .play_button_area .play_area {
+    width: 80px;
+  }
+  main .sound_test_area .recording_stop_play_area .recording_button_item {
+    margin: 0 60px;
   }
 }
 
