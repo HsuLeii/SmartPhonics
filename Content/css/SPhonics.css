@@ -118,6 +118,10 @@ button:disabled a {
   cursor: auto;
 }
 
+button:disabled p {
+  color: #fff !important;
+}
+
 *,
 body {
   letter-spacing: 1.5px;
@@ -1262,8 +1266,7 @@ main .sound_test_area .recording_button_area .button_text,
 main .sound_test_area .stop_button_area .button_text,
 main .sound_test_area .play_button_area .button_text {
   text-align: center;
-  margin: 10px auto 0px;
-  color: #fff;
+  margin: 5px auto 0px;
   padding: 5px 10px;
   border-radius: 10px;
   width: 100%;
@@ -1274,7 +1277,7 @@ main .sound_test_area .sound_play_area .recording_seconds,
 main .sound_test_area .recording_button_area .recording_seconds,
 main .sound_test_area .stop_button_area .recording_seconds,
 main .sound_test_area .play_button_area .recording_seconds {
-  margin: 10px auto 0px;
+  margin: 5px auto 0px;
   text-align: center;
 }
 
@@ -1301,24 +1304,24 @@ main .sound_test_area .recording_button_area .recording_area.finger_btn .finger_
   color: #2194d3 !important;
 }
 
-main .sound_test_area .recording_button_area .button_text {
-  background-color: #2194d3;
+main .sound_test_area .recording_button_area .button_text p {
+  color: #2194d3;
 }
 
 main .sound_test_area .stop_button_area .stop_area {
-  background-color: #f8b62d;
+  background-color: #d75298;
 }
 
-main .sound_test_area .stop_button_area .button_text {
-  background-color: #f8b62d;
+main .sound_test_area .stop_button_area .button_text p {
+  color: #d75298;
 }
 
 main .sound_test_area .play_button_area .play_area {
   background-color: #00a29a;
 }
 
-main .sound_test_area .play_button_area .button_text {
-  background-color: #00a29a;
+main .sound_test_area .play_button_area .button_text p {
+  color: #00a29a;
 }
 
 main .sound_test_area .sound_test_img {

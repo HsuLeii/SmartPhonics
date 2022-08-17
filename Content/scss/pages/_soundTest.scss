@@ -98,8 +98,7 @@ main {
             
             .button_text{
                 text-align: center;
-                margin: 10px auto 0px;
-                color: $white;
+                margin: 5px auto 0px;
                 padding: 5px 10px;
                 border-radius: 10px;
                 width: 100%;
@@ -107,7 +106,7 @@ main {
             }
 
             .recording_seconds{
-                margin: 10px auto 0px;
+                margin: 5px auto 0px;
                 text-align: center;
             }
 
@@ -132,7 +131,9 @@ main {
             }
 
             .button_text{
-                background-color: $main_color_blue;
+                p{
+                    color: $main_color_blue;
+                }
             }
 
         }
@@ -140,11 +141,13 @@ main {
         .stop_button_area{
 
             .stop_area {
-                background-color: $main_color_yellow;
+                background-color: $main_color_red;
             }
 
             .button_text{
-                background-color: $main_color_yellow;
+                p{
+                    color: $main_color_red;
+                }
             }
 
         }
@@ -156,7 +159,9 @@ main {
             }
 
             .button_text{
-                background-color: $main_color_green;
+                p{
+                    color: $main_color_green;
+                }
             }
 
         }
