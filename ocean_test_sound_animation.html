@@ -42,15 +42,14 @@
         <div class="recording_button_item">
           <p class="recording_button_instructions">1.開始 / 停止錄音</p>
           <div class="recording_button_area">
-            <button class="finger_btn recording_area" onclick="location.href='ocean_test_sound_animation.html'">
-              <!-- 點選錄音class加上"recording_button-animate" -->
-              <i class="fa-solid fa-microphone-lines recording_button-animate"></i>
-              <div class="finger_icon" style="display: none;">
+            <button class="finger_btn recording_area">
+              <i class="fa-solid fa-microphone-lines"></i>
+              <div class="finger_icon" style="display: block;">
                 <!-- 10秒後未按下「錄音」鍵在顯示 -->
                 <i class="fa-solid fa-hand-point-right"></i>
               </div>
             </button>
-            <button class="button_text" onclick="location.href='ocean_test_sound_animation.html'">
+            <button class="button_text">
               <p>錄音</p>
             </button>
             <p class="recording_seconds">60S</p>
@@ -68,10 +67,11 @@
         <div class="recording_button_item">
           <p class="recording_button_instructions">2.檢查自己說話的聲音</p>
           <div class="play_button_area">
-            <button class="finger_btn play_area" disabled>
-              <i class="fa-solid fa-play"></i>
+            <button class="finger_btn play_area">
+              <!-- 點選播放class加上"recording_button-animate" -->
+              <i class="fa-solid fa-play recording_button-animate"></i>
             </button>
-            <button class="button_text" disabled>
+            <button class="button_text">
               <p>播放</p>
             </button>
           </div>
@@ -84,7 +84,7 @@
         <img src="Content/image/photo/avatar/figure/level_ocean_kid.png" alt="">
       </div>
       <div class="leave_next_btn go_btn_area">
-        <button class="go_btn" disabled>
+        <button class="go_btn button_glow">
           <!-- 聲音播放class加上"button_glow" -->
           <a href="land_test_sound_test_animation.html">
             GO&ensp;<i class="fa-solid fa-arrow-right-long"></i>

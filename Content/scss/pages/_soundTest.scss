@@ -170,6 +170,7 @@ main {
         .recording_stop_play_area {
             display: flex;
             justify-content: center;
+            align-items: flex-start;
             flex-direction: column;
             margin: 40px auto 0px;
 
@@ -188,6 +189,10 @@ main {
                 .stop_button_area,
                 .play_button_area {
                     margin: 20px 10px 0px;
+                }
+
+                .recording_button-animate{
+                    animation: recording 1500ms infinite;
                 }
             }
         }

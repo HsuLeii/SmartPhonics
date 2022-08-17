@@ -561,6 +561,36 @@ main .finger_btn .finger_icon i {
   }
 }
 
+@-webkit-keyframes recording {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
+@keyframes recording {
+  0% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
+
 @-webkit-keyframes sound {
   0% {
     opacity: .55;
@@ -610,36 +640,6 @@ main .finger_btn .finger_icon i {
   100% {
     -webkit-transform: translate(-100%, -50%);
             transform: translate(-100%, -50%);
-  }
-}
-
-@-webkit-keyframes recording_fingers {
-  0% {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
-  }
-  50% {
-    -webkit-transform: translate(0%, -90%);
-            transform: translate(0%, -90%);
-  }
-  100% {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
-  }
-}
-
-@keyframes recording_fingers {
-  0% {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
-  }
-  50% {
-    -webkit-transform: translate(0%, -90%);
-            transform: translate(0%, -90%);
-  }
-  100% {
-    -webkit-transform: translate(0%, -50%);
-            transform: translate(0%, -50%);
   }
 }
 
@@ -1334,6 +1334,9 @@ main .sound_test_area .recording_stop_play_area {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1362,6 +1365,11 @@ main .sound_test_area .recording_stop_play_area .recording_button_item .recordin
 main .sound_test_area .recording_stop_play_area .recording_button_item .stop_button_area,
 main .sound_test_area .recording_stop_play_area .recording_button_item .play_button_area {
   margin: 20px 10px 0px;
+}
+
+main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button-animate {
+  -webkit-animation: recording 1500ms infinite;
+          animation: recording 1500ms infinite;
 }
 
 @media screen and (min-width: 768px) {
