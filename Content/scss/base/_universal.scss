@@ -147,8 +147,8 @@ main {
             animation: fingers 1000ms infinite;
 
             i {
-                color: $main-color !important;
-                font-size: 40px;
+                color: $main-color;
+                font-size: 40px !important;
                 padding: 5px;
             }
         }
@@ -181,27 +181,10 @@ main {
         .leave_next_btn {
             margin: 50px auto;
         }
-
-        .finger_btn {
-            .finger_icon {
-                i {
-                    font-size: 40px;
-                }
-            }
-        }
     }
 }
 
 @media screen and (min-width: 992px) {
-    main {
-        .finger_btn {
-            .finger_icon {
-                i {
-                    font-size: 50px;
-                }
-            }
-        }
-    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -240,13 +223,6 @@ main {
             }
         }
 
-        .finger_btn {
-            .finger_icon {
-                i {
-                    font-size: 50px;
-                }
-            }
-        }
     }
 }
 
@@ -298,7 +274,7 @@ main {
     }
 
     50% {
-        transform: translate(-140%, -50%);
+        transform: translate(-125%, -50%);
     }
 
     100% {

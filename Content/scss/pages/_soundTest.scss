@@ -170,6 +170,31 @@ main {
 
     }
 
+    .sound_button_area {
+
+        .sound_area {
+
+            &.finger_btn {
+                .finger_icon {
+                    i {
+                        color: $main_color_yellow !important;
+                    }
+                }
+            }
+        }
+
+        .recording_button_animate {
+            animation: recording 1500ms infinite;
+        }
+
+        .button_text {
+            p {
+                color: $main_color_yellow;
+            }
+        }
+
+    }
+
     .sound_test_img {
         margin: 40px auto 0px;
         width: 40%;
@@ -194,14 +219,17 @@ main {
                 text-align: center;
             }
 
+            .sound_button_area,
             .recording_button_area,
             .stop_button_area,
             .play_button_area {
                 margin: 20px 10px 0px;
             }
 
-            .recording_button-animate {
-                animation: recording 1500ms infinite;
+            .sound_button_area{
+                .sound_area{
+                    background-color: $main_color_yellow;
+                }
             }
         }
     }
@@ -216,7 +244,6 @@ main {
         .recording_button_area,
         .stop_button_area,
         .play_button_area {
-            margin: 40px auto 0px;
 
             .sound_area,
             .recording_area,
@@ -254,7 +281,6 @@ main {
         .recording_button_area,
         .stop_button_area,
         .play_button_area {
-            margin: 40px auto 0px;
 
             .sound_area,
             .recording_area,

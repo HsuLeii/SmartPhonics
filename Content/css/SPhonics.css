@@ -465,8 +465,8 @@ main .finger_btn .finger_icon {
 }
 
 main .finger_btn .finger_icon i {
-  color: #ed710e !important;
-  font-size: 40px;
+  color: #ed710e;
+  font-size: 40px !important;
   padding: 5px;
 }
 
@@ -486,15 +486,6 @@ main .finger_btn .finger_icon i {
   }
   main .leave_next_btn {
     margin: 50px auto;
-  }
-  main .finger_btn .finger_icon i {
-    font-size: 40px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  main .finger_btn .finger_icon i {
-    font-size: 50px;
   }
 }
 
@@ -529,9 +520,6 @@ main .finger_btn .finger_icon i {
   main .pick_level_top .avatar_area.pick_level_avatar_area {
     position: relative;
     margin: 5px 5px 5px auto;
-  }
-  main .finger_btn .finger_icon i {
-    font-size: 50px;
   }
 }
 
@@ -617,8 +605,8 @@ main .finger_btn .finger_icon i {
             transform: translate(-100%, -50%);
   }
   50% {
-    -webkit-transform: translate(-140%, -50%);
-            transform: translate(-140%, -50%);
+    -webkit-transform: translate(-125%, -50%);
+            transform: translate(-125%, -50%);
   }
   100% {
     -webkit-transform: translate(-100%, -50%);
@@ -632,8 +620,8 @@ main .finger_btn .finger_icon i {
             transform: translate(-100%, -50%);
   }
   50% {
-    -webkit-transform: translate(-140%, -50%);
-            transform: translate(-140%, -50%);
+    -webkit-transform: translate(-125%, -50%);
+            transform: translate(-125%, -50%);
   }
   100% {
     -webkit-transform: translate(-100%, -50%);
@@ -1318,6 +1306,19 @@ main .play_button_area .button_text p {
   color: #00a29a;
 }
 
+main .sound_button_area .sound_area.finger_btn .finger_icon i {
+  color: #f8b62d !important;
+}
+
+main .sound_button_area .recording_button_animate {
+  -webkit-animation: recording 1500ms infinite;
+          animation: recording 1500ms infinite;
+}
+
+main .sound_button_area .button_text p {
+  color: #f8b62d;
+}
+
 main .sound_test_img {
   margin: 40px auto 0px;
   width: 40%;
@@ -1358,24 +1359,18 @@ main .recording_stop_play_area .recording_button_item .recording_button_instruct
   text-align: center;
 }
 
+main .recording_stop_play_area .recording_button_item .sound_button_area,
 main .recording_stop_play_area .recording_button_item .recording_button_area,
 main .recording_stop_play_area .recording_button_item .stop_button_area,
 main .recording_stop_play_area .recording_button_item .play_button_area {
   margin: 20px 10px 0px;
 }
 
-main .recording_stop_play_area .recording_button_item .recording_button-animate {
-  -webkit-animation: recording 1500ms infinite;
-          animation: recording 1500ms infinite;
+main .recording_stop_play_area .recording_button_item .sound_button_area .sound_area {
+  background-color: #f8b62d;
 }
 
 @media screen and (min-width: 768px) {
-  main .sound_button_area,
-  main .recording_button_area,
-  main .stop_button_area,
-  main .play_button_area {
-    margin: 40px auto 0px;
-  }
   main .sound_button_area .sound_area i,
   main .sound_button_area .recording_area i,
   main .sound_button_area .stop_area i,
@@ -1423,12 +1418,6 @@ main .recording_stop_play_area .recording_button_item .recording_button-animate 
 }
 
 @media screen and (min-width: 992px) {
-  main .sound_button_area,
-  main .recording_button_area,
-  main .stop_button_area,
-  main .play_button_area {
-    margin: 40px auto 0px;
-  }
   main .sound_button_area .sound_area i,
   main .sound_button_area .recording_area i,
   main .sound_button_area .stop_area i,
@@ -1488,26 +1477,6 @@ main .test_area {
   position: relative;
 }
 
-main .test_area.land_test_area .QA_area .test_progress .drag-line .line {
-  background: #00a29a;
-}
-
-main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
-  color: #00a29a;
-}
-
-main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
-  background-color: #00a29a;
-}
-
-main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
-  background-color: #00a29a;
-}
-
-main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
-  border-top: 8px solid #00a29a;
-}
-
 main .test_area .test_area_bg {
   height: 100%;
   position: absolute;
@@ -1536,6 +1505,10 @@ main .test_area .QA_area {
 
 main .test_area .QA_area .test_progress {
   margin: 0 auto 35px;
+}
+
+main .test_area .QA_area .test_progress .drag-line .line {
+  background: #ed710e;
 }
 
 main .test_area .QA_area .test_progress .drag-line {
@@ -1617,16 +1590,28 @@ main .test_area .QA_area .topic_description_area .description_text_area .animal_
           align-items: center;
 }
 
-main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
+  color: #ed710e;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area {
+  margin: 0 auto;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon {
   background-color: #ed710e;
   border-radius: 50%;
   color: #fff;
-  padding: 5px;
   margin: 0 0 0 5px;
   position: relative;
 }
 
-main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon i {
+  font-size: initial;
+  padding: 5px;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon p {
   position: absolute;
   word-break: keep-all;
   cursor: auto;
@@ -1636,10 +1621,11 @@ main .test_area .QA_area .topic_description_area .description_text_area .animal_
           transform: translate(0px, calc(-100% - 16px));
   padding: 5px 10px;
   border-radius: 10px;
+  background-color: #ed710e;
   display: none;
 }
 
-main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon p::before {
   position: absolute;
   content: "";
   border-width: 0px 8px 8px 8px;
@@ -1650,9 +1636,10 @@ main .test_area .QA_area .topic_description_area .description_text_area .animal_
   border-right: 8px solid transparent;
   border-left: 8px solid transparent;
   border-bottom: 8px solid transparent;
+  border-top: 8px solid #ed710e;
 }
 
-main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon:not(:disabled) p {
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon:not(:disabled) p {
   display: block;
 }
 
@@ -1737,7 +1724,7 @@ main .test_area .QA_area .sound_adjustment_area input {
 }
 
 main .test_area .QA_area .sound_adjustment_area.sound_disabled {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 main .test_area .QA_area .sound_adjustment_area.sound_disabled .sound_icon {
@@ -1897,24 +1884,36 @@ main .test_area .leave_next_btn {
   }
 }
 
-main .test_area.ocean_test_area .QA_area .test_progress .drag-line .line {
-  background: #2194d3;
+main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
-  color: #2194d3;
+main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
+  margin: 10px 15px;
 }
 
-main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
-  background-color: #2194d3;
-}
-
-main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
-  background-color: #2194d3;
-}
-
-main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
-  border-top: 8px solid #2194d3;
+@media screen and (min-width: 1200px) {
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
+    margin: 0px 25px;
+  }
 }
 
 main .test_end_area {

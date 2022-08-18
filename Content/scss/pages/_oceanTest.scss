@@ -1,41 +1,22 @@
 main {
     .test_area {
 
-
         &.ocean_test_area {
 
             .QA_area {
-                .test_progress {
-                    .drag-line {
-                        .line {
-                            background: $main_color_blue;
+
+
+
+                .topic_area {
+                    .recording_stop_play_area {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .recording_button_item{
+                            margin: 10px 15px;
                         }
                     }
                 }
-
-                .topic_description_area {
-                    .description_text_area {
-                        .animal_name_area {
-                            .animal_name {
-                                color: $main_color_blue;
-                            }
-
-                            .sound_icon {
-                                background-color: $main_color_blue;
-
-                                p {
-                                    background-color: $main_color_blue;
-
-                                    &::before {
-                                        border-top: 8px solid $main_color_blue;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-
-                
             }
         }
 
@@ -44,29 +25,38 @@ main {
 
 @media screen and (min-width: 576px) {
     main {
-        .test_area {
-
-        }
+        .test_area {}
     }
 }
 
 @media screen and (min-width: 768px) {
     main {
-        .test_area {
-        }
+        .test_area {}
     }
 }
 
 @media screen and (min-width: 992px) {
-    main {
-        .test_area {
-        }
-    }
+
 }
 
 @media screen and (min-width: 1200px) {
     main {
         .test_area {
+            &.ocean_test_area {
+
+                .QA_area {
+
+                    .topic_area {
+                        .recording_stop_play_area {
+                            flex-direction: row;
+                            align-items: flex-start;
+                            .recording_button_item{
+                                margin: 0px 25px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -75,14 +65,12 @@ main {
 
 @media screen and (orientation:portrait) {
     main {
-        .test_area {
-        }
+        .test_area {}
     }
 }
 
 @media all and (orientation:landscape) {
     main {
-        .test_area {
-        }
+        .test_area {}
     }
 }

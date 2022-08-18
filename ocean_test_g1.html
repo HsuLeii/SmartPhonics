@@ -81,79 +81,102 @@
               <div class="animal_name">
                 <p>animal</p>
               </div>
-              <button class="sound_icon">
-                <!-- 試題播放按鈕5秒後仍尚未作答取消disabled -->
-                <i class="fa-solid fa-volume-high"></i>
-                <p>請聽題目說明</p>
-              </button>
+              <div class="sound_button_area">
+                <!-- 試題音檔2遍後加入disabled -->
+                <button class="sound_icon sound_area" disabled>
+                  <!-- 點選播放class加上"recording_button_animate" -->
+                  <i class="fa-solid fa-volume-high"></i>
+                  <p>請聽題目說明</p>
+                </button>
+              </div>
             </div>
             <div class="description_text">
               <p>請依據聽到的聲音，將兩個聲音組起來說出單字。
-            </p>
+              </p>
             </div>
           </div>
         </div>
 
         <div class="topic_area">
-            <div class="recording_stop_play_area">
+          <div class="recording_stop_play_area">
 
-                <div class="recording_button_item">
-                  <p class="recording_button_instructions">1.開始 / 停止錄音</p>
-                  <div class="recording_button_area">
-                    <button class="finger_btn recording_area">
-                      <i class="fa-solid fa-microphone-lines"></i>
-                      <div class="finger_icon" style="display: block;">
-                        <!-- 10秒後未按下「錄音」鍵在顯示 -->
-                        <i class="fa-solid fa-hand-point-right"></i>
-                      </div>
-                    </button>
-                    <button class="button_text">
-                      <p>錄音</p>
-                    </button>
-                    <p class="recording_seconds">60S</p>
+            <div class="recording_button_item">
+              <p class="recording_button_instructions">
+                1.聽音檔
+              </p>
+              <div class="sound_button_area">
+                <button class="finger_btn sound_area">
+                  <!-- 點選播放class加上"recording_button_animate" -->
+                  <i class="fa-solid fa-volume-high"></i>
+                  <div class="finger_icon" style="display: none;">
+                    <!-- 10秒後未按下「播放」鍵在顯示 -->
+                    <i class="fa-solid fa-hand-point-right"></i>
                   </div>
-                  <div class="stop_button_area">
-                    <button class="stop_area">
-                      <i class="fa-solid fa-stop"></i>
-                    </button>
-                    <button class="button_text">
-                      <p>停止</p>
-                    </button>
-                  </div>
-                </div>
-          
-                <div class="recording_button_item">
-                  <p class="recording_button_instructions">2.檢查自己說話的聲音</p>
-                  <div class="play_button_area">
-                    <button class="finger_btn play_area">
-                      <!-- 點選播放class加上"recording_button-animate" -->
-                      <i class="fa-solid fa-play recording_button-animate"></i>
-                    </button>
-                    <button class="button_text">
-                      <p>播放</p>
-                    </button>
-                  </div>
-                </div>
-        
+                </button>
               </div>
+            </div>
+
+            <div class="recording_button_item">
+              <p class="recording_button_instructions">
+                2.開始 /停止錄音
+              </p>
+              <div class="recording_button_area">
+                <button class="finger_btn recording_area">
+                  <i class="fa-solid fa-microphone-lines"></i>
+                  <div class="finger_icon" style="display: none;">
+                    <!-- 5秒後未按下「錄音」鍵在顯示 -->
+                    <i class="fa-solid fa-hand-point-right"></i>
+                  </div>
+                </button>
+                <button class="button_text">
+                  <p>錄音</p>
+                </button>
+                <p class="recording_seconds">60S</p>
+              </div>
+              <div class="stop_button_area">
+                <button class="stop_area">
+                  <i class="fa-solid fa-stop"></i>
+                </button>
+                <button class="button_text">
+                  <p>停止</p>
+                </button>
+              </div>
+            </div>
+
+            <div class="recording_button_item">
+              <p class="recording_button_instructions">
+                3.檢查錄音
+              </p>
+              <div class="play_button_area">
+                <button class="finger_btn play_area" disabled>
+                  <!-- 點選播放class加上"recording_button_animate" -->
+                  <i class="fa-solid fa-play"></i>
+                </button>
+                <button class="button_text" disabled>
+                  <p>播放</p>
+                </button>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        <div class="sound_adjustment_area sound_disabled">
+        <div class="sound_adjustment_area">
           <!-- 試題音檔2遍後class加上"sound_disabled" -->
           <button class="sound_icon">
             <i class="fa-solid fa-volume-high icon_volume"></i>
           </button>
           <label for="soundRange" class="form-label"> </label>
-          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" disabled />
+          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" />
           <!-- 試題音檔2遍後加入disabled -->
         </div>
 
         <div class="leave_next_btn go_btn_area">
           <button class="finger_btn go_btn">
-            <a href="land_test_g2_two_options.html">
+            <a href="ocean_test_animation_g1.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <div class="finger_icon" style="display: block">
+            <div class="finger_icon" style="display: none">
               <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
               <i class="fa-solid fa-hand-point-right"></i>
             </div>

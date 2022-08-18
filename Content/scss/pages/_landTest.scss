@@ -13,42 +13,6 @@ main {
         flex-wrap: wrap;
         position: relative;
 
-
-        &.land_test_area {
-
-            .QA_area {
-                .test_progress {
-                    .drag-line {
-                        .line {
-                            background: $main_color_green;
-                        }
-                    }
-                }
-
-                .topic_description_area {
-                    .description_text_area {
-                        .animal_name_area {
-                            .animal_name {
-                                color: $main_color_green;
-                            }
-
-                            .sound_icon {
-                                background-color: $main_color_green;
-
-                                p {
-                                    background-color: $main_color_green;
-
-                                    &::before {
-                                        border-top: 8px solid $main_color_green;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
         .test_area_bg {
             height: 100%;
             position: absolute;
@@ -75,6 +39,11 @@ main {
 
             .test_progress {
                 margin: 0 auto 35px;
+                .drag-line {
+                    .line {
+                        background: $main_color;
+                    }
+                }
 
                 .drag-line {
                     max-width: 1200px;
@@ -132,44 +101,58 @@ main {
                         display: flex;
                         align-items: center;
 
-                        .sound_icon {
-                            background-color: $main_color;
-                            border-radius: 50%;
-                            color: $white;
-                            padding: 5px;
-                            margin: 0 0 0 5px;
-                            position: relative;
+                        .animal_name {
+                            color: $main_color;
+                        }
 
-                            p {
-                                position: absolute;
-                                word-break: keep-all;
-                                cursor: auto;
-                                top: 0;
-                                left: 0;
-                                transform: translate(0px, calc(-100% - 16px));
-                                padding: 5px 10px;
-                                border-radius: 10px;
-                                display: none;
+                        .sound_button_area{
+                            margin: 0 auto;
+                            .sound_icon {
+                                background-color: $main_color;
+                                border-radius: 50%;
+                                color: $white;
+                                margin: 0 0 0 5px;
+                                position: relative;
 
-                                &::before {
-                                    position: absolute;
-                                    content: "";
-                                    border-width: 0px 8px 8px 8px;
-                                    bottom: 0;
-                                    left: 10%;
-                                    transform: translate(0px, 100%);
-                                    border-right: 8px solid transparent;
-                                    border-left: 8px solid transparent;
-                                    border-bottom: 8px solid transparent;
+                                i{
+                                    font-size: initial;
+                                    padding: 5px;
                                 }
-                            }
-
-                            &:not(:disabled) {
+    
                                 p {
-                                    display: block;
+                                    position: absolute;
+                                    word-break: keep-all;
+                                    cursor: auto;
+                                    top: 0;
+                                    left: 0;
+                                    transform: translate(0px, calc(-100% - 16px));
+                                    padding: 5px 10px;
+                                    border-radius: 10px;
+                                    background-color: $main_color;
+                                    display: none;
+    
+                                    &::before {
+                                        position: absolute;
+                                        content: "";
+                                        border-width: 0px 8px 8px 8px;
+                                        bottom: 0;
+                                        left: 10%;
+                                        transform: translate(0px, 100%);
+                                        border-right: 8px solid transparent;
+                                        border-left: 8px solid transparent;
+                                        border-bottom: 8px solid transparent;
+                                        border-top: 8px solid $main_color;
+                                    }
+                                }
+    
+                                &:not(:disabled) {
+                                    p {
+                                        display: block;
+                                    }
                                 }
                             }
                         }
+                        
                     }
 
                     .description_text {
@@ -181,18 +164,6 @@ main {
             }
 
             .topic_area {
-                // .play_area {
-                //     display: block;
-                //     margin: 0 auto;
-                //     background-color: $main_color;
-
-                //     i {
-                //         font-size: 50px;
-                //         color: $white;
-                //         padding: 10px;
-                //         border-radius: 10px;
-                //     }
-                // }
 
                 .answer_area {
                     display: flex;
@@ -263,7 +234,7 @@ main {
                 }
 
                 &.sound_disabled {
-                    opacity: 0.5;
+                    opacity: 0.8;
 
                     .sound_icon {
                         cursor: auto;
