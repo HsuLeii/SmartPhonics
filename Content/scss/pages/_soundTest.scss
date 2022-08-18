@@ -74,7 +74,9 @@ main {
             }
         }
 
-        .sound_play_area,
+    }
+
+    .sound_play_area,
         .recording_button_area,
         .stop_button_area,
         .play_button_area {
@@ -175,7 +177,7 @@ main {
         .recording_stop_play_area {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
             flex-direction: column;
             margin: 40px auto 0px;
 
@@ -201,18 +203,13 @@ main {
                 }
             }
         }
-
-
-    }
 }
 
 @media screen and (min-width: 576px) {}
 
 @media screen and (min-width: 768px) {
     main {
-        .sound_test_area {
-
-            .sound_play_area,
+        .sound_play_area,
             .recording_button_area,
             .stop_button_area,
             .play_button_area {
@@ -238,19 +235,17 @@ main {
 
             .recording_stop_play_area {
                 flex-direction: row;
+                align-items: flex-start;
                 .recording_button_item {
                     margin: 0 40px;
                 }
             }
-        }
     }
 }
 
 @media screen and (min-width: 992px) {
     main {
-        .sound_test_area {
-
-            .sound_play_area,
+        .sound_play_area,
             .recording_button_area,
             .stop_button_area,
             .play_button_area {
@@ -279,7 +274,6 @@ main {
                     margin: 0 60px;
                 }
             }
-        }
     }
 }
 

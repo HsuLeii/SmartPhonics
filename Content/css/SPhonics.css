@@ -567,31 +567,25 @@ main .finger_btn .finger_icon i {
 
 @-webkit-keyframes recording {
   0% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    opacity: .55;
   }
   100% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 1;
   }
 }
 
 @keyframes recording {
   0% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 1;
   }
   50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    opacity: .55;
   }
   100% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    opacity: 1;
   }
 }
 
@@ -1211,60 +1205,60 @@ main .sound_test_area .sound_bar_area .bar:nth-child(10) {
           animation-duration: 442ms;
 }
 
-main .sound_test_area .sound_play_area,
-main .sound_test_area .recording_button_area,
-main .sound_test_area .stop_button_area,
-main .sound_test_area .play_button_area {
+main .sound_play_area,
+main .recording_button_area,
+main .stop_button_area,
+main .play_button_area {
   margin: 40px auto 0px;
 }
 
-main .sound_test_area .sound_play_area .sound_area,
-main .sound_test_area .sound_play_area .recording_area,
-main .sound_test_area .sound_play_area .stop_area,
-main .sound_test_area .sound_play_area .play_area,
-main .sound_test_area .recording_button_area .sound_area,
-main .sound_test_area .recording_button_area .recording_area,
-main .sound_test_area .recording_button_area .stop_area,
-main .sound_test_area .recording_button_area .play_area,
-main .sound_test_area .stop_button_area .sound_area,
-main .sound_test_area .stop_button_area .recording_area,
-main .sound_test_area .stop_button_area .stop_area,
-main .sound_test_area .stop_button_area .play_area,
-main .sound_test_area .play_button_area .sound_area,
-main .sound_test_area .play_button_area .recording_area,
-main .sound_test_area .play_button_area .stop_area,
-main .sound_test_area .play_button_area .play_area {
+main .sound_play_area .sound_area,
+main .sound_play_area .recording_area,
+main .sound_play_area .stop_area,
+main .sound_play_area .play_area,
+main .recording_button_area .sound_area,
+main .recording_button_area .recording_area,
+main .recording_button_area .stop_area,
+main .recording_button_area .play_area,
+main .stop_button_area .sound_area,
+main .stop_button_area .recording_area,
+main .stop_button_area .stop_area,
+main .stop_button_area .play_area,
+main .play_button_area .sound_area,
+main .play_button_area .recording_area,
+main .play_button_area .stop_area,
+main .play_button_area .play_area {
   background-color: #ed710e;
   display: block;
   margin: 0 auto;
 }
 
-main .sound_test_area .sound_play_area .sound_area i,
-main .sound_test_area .sound_play_area .recording_area i,
-main .sound_test_area .sound_play_area .stop_area i,
-main .sound_test_area .sound_play_area .play_area i,
-main .sound_test_area .recording_button_area .sound_area i,
-main .sound_test_area .recording_button_area .recording_area i,
-main .sound_test_area .recording_button_area .stop_area i,
-main .sound_test_area .recording_button_area .play_area i,
-main .sound_test_area .stop_button_area .sound_area i,
-main .sound_test_area .stop_button_area .recording_area i,
-main .sound_test_area .stop_button_area .stop_area i,
-main .sound_test_area .stop_button_area .play_area i,
-main .sound_test_area .play_button_area .sound_area i,
-main .sound_test_area .play_button_area .recording_area i,
-main .sound_test_area .play_button_area .stop_area i,
-main .sound_test_area .play_button_area .play_area i {
+main .sound_play_area .sound_area i,
+main .sound_play_area .recording_area i,
+main .sound_play_area .stop_area i,
+main .sound_play_area .play_area i,
+main .recording_button_area .sound_area i,
+main .recording_button_area .recording_area i,
+main .recording_button_area .stop_area i,
+main .recording_button_area .play_area i,
+main .stop_button_area .sound_area i,
+main .stop_button_area .recording_area i,
+main .stop_button_area .stop_area i,
+main .stop_button_area .play_area i,
+main .play_button_area .sound_area i,
+main .play_button_area .recording_area i,
+main .play_button_area .stop_area i,
+main .play_button_area .play_area i {
   font-size: 40px;
   color: #fff;
   padding: 10px;
   border-radius: 10px;
 }
 
-main .sound_test_area .sound_play_area .button_text,
-main .sound_test_area .recording_button_area .button_text,
-main .sound_test_area .stop_button_area .button_text,
-main .sound_test_area .play_button_area .button_text {
+main .sound_play_area .button_text,
+main .recording_button_area .button_text,
+main .stop_button_area .button_text,
+main .play_button_area .button_text {
   text-align: center;
   margin: 5px auto 0px;
   padding: 5px 10px;
@@ -1273,73 +1267,73 @@ main .sound_test_area .play_button_area .button_text {
   cursor: pointer;
 }
 
-main .sound_test_area .sound_play_area .recording_seconds,
-main .sound_test_area .recording_button_area .recording_seconds,
-main .sound_test_area .stop_button_area .recording_seconds,
-main .sound_test_area .play_button_area .recording_seconds {
+main .sound_play_area .recording_seconds,
+main .recording_button_area .recording_seconds,
+main .stop_button_area .recording_seconds,
+main .play_button_area .recording_seconds {
   margin: 5px auto 0px;
   text-align: center;
 }
 
-main .sound_test_area .sound_play_area .recording_area,
-main .sound_test_area .sound_play_area .stop_area,
-main .sound_test_area .sound_play_area .play_area,
-main .sound_test_area .recording_button_area .recording_area,
-main .sound_test_area .recording_button_area .stop_area,
-main .sound_test_area .recording_button_area .play_area,
-main .sound_test_area .stop_button_area .recording_area,
-main .sound_test_area .stop_button_area .stop_area,
-main .sound_test_area .stop_button_area .play_area,
-main .sound_test_area .play_button_area .recording_area,
-main .sound_test_area .play_button_area .stop_area,
-main .sound_test_area .play_button_area .play_area {
+main .sound_play_area .recording_area,
+main .sound_play_area .stop_area,
+main .sound_play_area .play_area,
+main .recording_button_area .recording_area,
+main .recording_button_area .stop_area,
+main .recording_button_area .play_area,
+main .stop_button_area .recording_area,
+main .stop_button_area .stop_area,
+main .stop_button_area .play_area,
+main .play_button_area .recording_area,
+main .play_button_area .stop_area,
+main .play_button_area .play_area {
   width: 60px;
 }
 
-main .sound_test_area .recording_button_area .recording_area {
+main .recording_button_area .recording_area {
   background-color: #2194d3;
 }
 
-main .sound_test_area .recording_button_area .recording_area.finger_btn .finger_icon i {
+main .recording_button_area .recording_area.finger_btn .finger_icon i {
   color: #2194d3 !important;
 }
 
-main .sound_test_area .recording_button_area .button_text p {
+main .recording_button_area .button_text p {
   color: #2194d3;
 }
 
-main .sound_test_area .stop_button_area .stop_area {
+main .stop_button_area .stop_area {
   background-color: #d75298;
 }
 
-main .sound_test_area .stop_button_area .button_text p {
+main .stop_button_area .button_text p {
   color: #d75298;
 }
 
-main .sound_test_area .play_button_area .play_area {
+main .play_button_area .play_area {
   background-color: #00a29a;
 }
 
-main .sound_test_area .play_button_area .button_text p {
+main .play_button_area .button_text p {
   color: #00a29a;
 }
 
-main .sound_test_area .sound_test_img {
+main .sound_test_img {
   margin: 40px auto 0px;
   width: 40%;
   max-width: 200px;
 }
 
-main .sound_test_area .recording_stop_play_area {
+main .recording_stop_play_area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1347,7 +1341,7 @@ main .sound_test_area .recording_stop_play_area {
   margin: 40px auto 0px;
 }
 
-main .sound_test_area .recording_stop_play_area .recording_button_item {
+main .recording_stop_play_area .recording_button_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1359,112 +1353,115 @@ main .sound_test_area .recording_stop_play_area .recording_button_item {
   margin: 10px 15px;
 }
 
-main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button_instructions {
+main .recording_stop_play_area .recording_button_item .recording_button_instructions {
   width: 100%;
   text-align: center;
 }
 
-main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button_area,
-main .sound_test_area .recording_stop_play_area .recording_button_item .stop_button_area,
-main .sound_test_area .recording_stop_play_area .recording_button_item .play_button_area {
+main .recording_stop_play_area .recording_button_item .recording_button_area,
+main .recording_stop_play_area .recording_button_item .stop_button_area,
+main .recording_stop_play_area .recording_button_item .play_button_area {
   margin: 20px 10px 0px;
 }
 
-main .sound_test_area .recording_stop_play_area .recording_button_item .recording_button-animate {
+main .recording_stop_play_area .recording_button_item .recording_button-animate {
   -webkit-animation: recording 1500ms infinite;
           animation: recording 1500ms infinite;
 }
 
 @media screen and (min-width: 768px) {
-  main .sound_test_area .sound_play_area,
-  main .sound_test_area .recording_button_area,
-  main .sound_test_area .stop_button_area,
-  main .sound_test_area .play_button_area {
+  main .sound_play_area,
+  main .recording_button_area,
+  main .stop_button_area,
+  main .play_button_area {
     margin: 40px auto 0px;
   }
-  main .sound_test_area .sound_play_area .sound_area i,
-  main .sound_test_area .sound_play_area .recording_area i,
-  main .sound_test_area .sound_play_area .stop_area i,
-  main .sound_test_area .sound_play_area .play_area i,
-  main .sound_test_area .recording_button_area .sound_area i,
-  main .sound_test_area .recording_button_area .recording_area i,
-  main .sound_test_area .recording_button_area .stop_area i,
-  main .sound_test_area .recording_button_area .play_area i,
-  main .sound_test_area .stop_button_area .sound_area i,
-  main .sound_test_area .stop_button_area .recording_area i,
-  main .sound_test_area .stop_button_area .stop_area i,
-  main .sound_test_area .stop_button_area .play_area i,
-  main .sound_test_area .play_button_area .sound_area i,
-  main .sound_test_area .play_button_area .recording_area i,
-  main .sound_test_area .play_button_area .stop_area i,
-  main .sound_test_area .play_button_area .play_area i {
+  main .sound_play_area .sound_area i,
+  main .sound_play_area .recording_area i,
+  main .sound_play_area .stop_area i,
+  main .sound_play_area .play_area i,
+  main .recording_button_area .sound_area i,
+  main .recording_button_area .recording_area i,
+  main .recording_button_area .stop_area i,
+  main .recording_button_area .play_area i,
+  main .stop_button_area .sound_area i,
+  main .stop_button_area .recording_area i,
+  main .stop_button_area .stop_area i,
+  main .stop_button_area .play_area i,
+  main .play_button_area .sound_area i,
+  main .play_button_area .recording_area i,
+  main .play_button_area .stop_area i,
+  main .play_button_area .play_area i {
     font-size: 50px;
   }
-  main .sound_test_area .sound_play_area .recording_area,
-  main .sound_test_area .sound_play_area .stop_area,
-  main .sound_test_area .sound_play_area .play_area,
-  main .sound_test_area .recording_button_area .recording_area,
-  main .sound_test_area .recording_button_area .stop_area,
-  main .sound_test_area .recording_button_area .play_area,
-  main .sound_test_area .stop_button_area .recording_area,
-  main .sound_test_area .stop_button_area .stop_area,
-  main .sound_test_area .stop_button_area .play_area,
-  main .sound_test_area .play_button_area .recording_area,
-  main .sound_test_area .play_button_area .stop_area,
-  main .sound_test_area .play_button_area .play_area {
+  main .sound_play_area .recording_area,
+  main .sound_play_area .stop_area,
+  main .sound_play_area .play_area,
+  main .recording_button_area .recording_area,
+  main .recording_button_area .stop_area,
+  main .recording_button_area .play_area,
+  main .stop_button_area .recording_area,
+  main .stop_button_area .stop_area,
+  main .stop_button_area .play_area,
+  main .play_button_area .recording_area,
+  main .play_button_area .stop_area,
+  main .play_button_area .play_area {
     width: 70px;
   }
-  main .sound_test_area .recording_stop_play_area {
+  main .recording_stop_play_area {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  main .sound_test_area .recording_stop_play_area .recording_button_item {
+  main .recording_stop_play_area .recording_button_item {
     margin: 0 40px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  main .sound_test_area .sound_play_area,
-  main .sound_test_area .recording_button_area,
-  main .sound_test_area .stop_button_area,
-  main .sound_test_area .play_button_area {
+  main .sound_play_area,
+  main .recording_button_area,
+  main .stop_button_area,
+  main .play_button_area {
     margin: 40px auto 0px;
   }
-  main .sound_test_area .sound_play_area .sound_area i,
-  main .sound_test_area .sound_play_area .recording_area i,
-  main .sound_test_area .sound_play_area .stop_area i,
-  main .sound_test_area .sound_play_area .play_area i,
-  main .sound_test_area .recording_button_area .sound_area i,
-  main .sound_test_area .recording_button_area .recording_area i,
-  main .sound_test_area .recording_button_area .stop_area i,
-  main .sound_test_area .recording_button_area .play_area i,
-  main .sound_test_area .stop_button_area .sound_area i,
-  main .sound_test_area .stop_button_area .recording_area i,
-  main .sound_test_area .stop_button_area .stop_area i,
-  main .sound_test_area .stop_button_area .play_area i,
-  main .sound_test_area .play_button_area .sound_area i,
-  main .sound_test_area .play_button_area .recording_area i,
-  main .sound_test_area .play_button_area .stop_area i,
-  main .sound_test_area .play_button_area .play_area i {
+  main .sound_play_area .sound_area i,
+  main .sound_play_area .recording_area i,
+  main .sound_play_area .stop_area i,
+  main .sound_play_area .play_area i,
+  main .recording_button_area .sound_area i,
+  main .recording_button_area .recording_area i,
+  main .recording_button_area .stop_area i,
+  main .recording_button_area .play_area i,
+  main .stop_button_area .sound_area i,
+  main .stop_button_area .recording_area i,
+  main .stop_button_area .stop_area i,
+  main .stop_button_area .play_area i,
+  main .play_button_area .sound_area i,
+  main .play_button_area .recording_area i,
+  main .play_button_area .stop_area i,
+  main .play_button_area .play_area i {
     font-size: 60px;
   }
-  main .sound_test_area .sound_play_area .recording_area,
-  main .sound_test_area .sound_play_area .stop_area,
-  main .sound_test_area .sound_play_area .play_area,
-  main .sound_test_area .recording_button_area .recording_area,
-  main .sound_test_area .recording_button_area .stop_area,
-  main .sound_test_area .recording_button_area .play_area,
-  main .sound_test_area .stop_button_area .recording_area,
-  main .sound_test_area .stop_button_area .stop_area,
-  main .sound_test_area .stop_button_area .play_area,
-  main .sound_test_area .play_button_area .recording_area,
-  main .sound_test_area .play_button_area .stop_area,
-  main .sound_test_area .play_button_area .play_area {
+  main .sound_play_area .recording_area,
+  main .sound_play_area .stop_area,
+  main .sound_play_area .play_area,
+  main .recording_button_area .recording_area,
+  main .recording_button_area .stop_area,
+  main .recording_button_area .play_area,
+  main .stop_button_area .recording_area,
+  main .stop_button_area .stop_area,
+  main .stop_button_area .play_area,
+  main .play_button_area .recording_area,
+  main .play_button_area .stop_area,
+  main .play_button_area .play_area {
     width: 80px;
   }
-  main .sound_test_area .recording_stop_play_area .recording_button_item {
+  main .recording_stop_play_area .recording_button_item {
     margin: 0 60px;
   }
 }
@@ -1509,6 +1506,470 @@ main .test_area.land_test_area .QA_area .topic_description_area .description_tex
 
 main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
   border-top: 8px solid #00a29a;
+}
+
+main .test_area .test_area_bg {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+main .test_area .test_area_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .test_area .QA_area {
+  background-color: #ffffff80;
+  width: 60%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 5%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+main .test_area .QA_area .test_progress {
+  margin: 0 auto 35px;
+}
+
+main .test_area .QA_area .test_progress .drag-line {
+  max-width: 1200px;
+  width: 90%;
+  height: 10px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+main .test_area .QA_area .test_progress .drag-line .line {
+  background: #ed710e;
+  border-radius: 10px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+main .test_area .QA_area .topic_description_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto 25px;
+}
+
+main .test_area .QA_area .topic_description_area .description_avatar {
+  width: 60px;
+  margin: 0 auto 15px;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 5px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 15px 3px #ffffff80;
+          box-shadow: 5px 5px 15px 3px #ffffff80;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area::before {
+  content: "";
+  position: absolute;
+  border-width: 0px 8px 8px 8px;
+  top: -8px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+  background-color: #ed710e;
+  border-radius: 50%;
+  color: #fff;
+  padding: 5px;
+  margin: 0 0 0 5px;
+  position: relative;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+  position: absolute;
+  word-break: keep-all;
+  cursor: auto;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(0px, calc(-100% - 16px));
+          transform: translate(0px, calc(-100% - 16px));
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+  position: absolute;
+  content: "";
+  border-width: 0px 8px 8px 8px;
+  bottom: 0;
+  left: 10%;
+  -webkit-transform: translate(0px, 100%);
+          transform: translate(0px, 100%);
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon:not(:disabled) p {
+  display: block;
+}
+
+main .test_area .QA_area .topic_description_area .description_text_area .description_text {
+  width: 100%;
+  text-align: center;
+  margin: 5px auto 0;
+}
+
+main .test_area .QA_area .topic_area .play_area {
+  display: block;
+  margin: 0 auto;
+  background-color: #ed710e;
+}
+
+main .test_area .QA_area .topic_area .play_area i {
+  font-size: 50px;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+main .test_area .QA_area .topic_area .answer_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 25px auto 0px;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option {
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #f38d3b;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option p {
+  font-size: 30px;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  background-color: #f38d3b;
+  color: #fff;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
+  width: calc(30px * 1.7);
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option p:hover {
+  background-color: #ed710e;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option.active {
+  border: 1px dashed #ed710e;
+}
+
+main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+  width: calc(30px * 1.7);
+  background-color: grey;
+  border: 0px solid grey;
+  cursor: pointer;
+}
+
+main .test_area .QA_area .sound_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fce1cb;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 30px auto 0px;
+  width: 80%;
+  max-width: 250px;
+}
+
+main .test_area .QA_area .sound_area .sound_icon {
+  margin: 0px 5px;
+  width: 25px;
+}
+
+main .test_area .QA_area .sound_area .sound_icon i {
+  color: #ed710e;
+}
+
+main .test_area .QA_area .sound_area input {
+  margin: 0px 5px;
+}
+
+main .test_area .QA_area .sound_area.sound_disabled {
+  opacity: 0.5;
+}
+
+main .test_area .QA_area .sound_area.sound_disabled .sound_icon {
+  cursor: auto;
+}
+
+main .test_area .QA_area .sound_area.sound_disabled .sound_icon i {
+  color: grey;
+}
+
+main .test_area .leave_next_btn {
+  margin: 30px auto 0px;
+}
+
+@media screen and (min-width: 576px) {
+  main .test_area {
+    height: calc(100% - 77.05px);
+    min-height: calc(100vh - 77.05px);
+  }
+  main .test_area .QA_area .topic_description_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .test_area .QA_area .topic_description_area .description_avatar {
+    width: 100px;
+    margin: 0 8px;
+  }
+  main .test_area .QA_area .topic_description_area .description_text_area {
+    width: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 8px;
+  }
+  main .test_area .QA_area .topic_description_area .description_text_area::before {
+    border-width: 8px 0px 8px 8px;
+    top: auto;
+    left: -16px;
+    border-right: 8px solid #fff;
+    border-bottom: 8px solid transparent;
+    border-top: 8px solid transparent;
+  }
+  main .test_area .QA_area .topic_description_area .description_text_area .description_text {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .test_area .QA_area .topic_area .answer_area .answer_option p {
+    font-size: 40px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
+    width: calc(40px * 1.7);
+  }
+  main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+    width: calc(40px * 1.7);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  main .test_area {
+    height: calc(100% - 89.81px);
+    min-height: calc(100vh - 89.81px);
+    padding: 0px 0px 40px;
+  }
+  main .test_area .animal_area .animal_img {
+    width: calc(35% / 2);
+  }
+  main .test_area .QA_area {
+    width: 55%;
+    padding: 30px 20px;
+  }
+  main .test_area .QA_area .topic_description_area {
+    margin: 0 auto 35px;
+  }
+  main .test_area .QA_area .topic_description_area .description_avatar {
+    width: 100px;
+    margin: 0 5px;
+  }
+  main .test_area .QA_area .topic_description_area .description_text_area {
+    width: auto;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .test_area .QA_area .topic_description_area .description_text_area .description_text {
+    width: auto;
+  }
+  main .test_area .QA_area .topic_area .answer_area {
+    margin: 35px auto 0px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_option p {
+    font-size: 50px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
+    width: calc(50px * 1.7);
+  }
+  main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+    width: calc(50px * 1.7);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .test_area {
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  main .test_area .QA_area {
+    width: 80%;
+  }
+  main .test_area .animal_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 40px auto 0px;
+  }
+  main .test_area .animal_area .animal_img {
+    width: 35%;
+  }
+}
+
+@media all and (orientation: landscape) {
+  main .test_area .animal_area {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  main .test_area .animal_area .animal_img {
+    position: absolute;
+    width: 15%;
+    -webkit-transform: translate(0%, -50%);
+            transform: translate(0%, -50%);
+  }
+  main .test_area .animal_area .animal_img.animal_one {
+    left: 2.5%;
+    top: calc(100% - 35px);
+    -webkit-transform: translate(0%, -100%);
+            transform: translate(0%, -100%);
+  }
+  main .test_area .animal_area .animal_img.animal_two {
+    right: 2.5%;
+    top: 50%;
+  }
+}
+
+main .test_area {
+  width: 100%;
+  height: calc(100% - 64.7px);
+  min-height: calc(100vh - 64.7px);
+  padding: 0px 0px 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+main .test_area.land_test_area .QA_area .test_progress .drag-line .line {
+  background: #00a29a;
+}
+
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
+  color: #00a29a;
+}
+
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+  background-color: #00a29a;
+}
+
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+  background-color: #00a29a;
+}
+
+main .test_area.land_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+  border-top: 8px solid #00a29a;
+}
+
+main .test_area.ocean_test_area .QA_area .test_progress .drag-line .line {
+  background: #2194d3;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .animal_name {
+  color: #2194d3;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon {
+  background-color: #2194d3;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p {
+  background-color: #2194d3;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_icon p::before {
+  border-top: 8px solid #2194d3;
 }
 
 main .test_area .test_area_bg {
