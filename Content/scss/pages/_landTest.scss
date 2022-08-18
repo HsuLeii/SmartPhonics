@@ -215,10 +215,10 @@ main {
 
                             &.alphabet {
                                 width: calc(30px * 1.7);
-                                
+
                             }
 
-                            &:hover{
+                            &:hover {
                                 background-color: $main_color;
                             }
                         }
@@ -239,7 +239,7 @@ main {
                 }
             }
 
-            .sound_area {
+            .sound_adjustment_area {
                 display: flex;
                 align-items: center;
                 background-color: lighten($main-color, 40%);
@@ -329,11 +329,6 @@ main {
             .QA_area {
 
                 .topic_area {
-                    // .play_area {
-                    //     i {
-                    //         font-size: 60px;
-                    //     }
-                    // }
 
                     .answer_area {
                         .answer_option {
@@ -397,11 +392,6 @@ main {
                 }
 
                 .topic_area {
-                    // .play_area {
-                    //     i {
-                    //         font-size: 70px;
-                    //     }
-                    // }
 
                     .answer_area {
                         margin: 35px auto 0px;
