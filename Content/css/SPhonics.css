@@ -1662,19 +1662,6 @@ main .test_area .QA_area .topic_description_area .description_text_area .descrip
   margin: 5px auto 0;
 }
 
-main .test_area .QA_area .topic_area .play_area {
-  display: block;
-  margin: 0 auto;
-  background-color: #ed710e;
-}
-
-main .test_area .QA_area .topic_area .play_area i {
-  font-size: 50px;
-  color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-}
-
 main .test_area .QA_area .topic_area .answer_area {
   display: -webkit-box;
   display: -ms-flexbox;

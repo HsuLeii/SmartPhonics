@@ -181,18 +181,18 @@ main {
             }
 
             .topic_area {
-                .play_area {
-                    display: block;
-                    margin: 0 auto;
-                    background-color: $main_color;
+                // .play_area {
+                //     display: block;
+                //     margin: 0 auto;
+                //     background-color: $main_color;
 
-                    i {
-                        font-size: 50px;
-                        color: $white;
-                        padding: 10px;
-                        border-radius: 10px;
-                    }
-                }
+                //     i {
+                //         font-size: 50px;
+                //         color: $white;
+                //         padding: 10px;
+                //         border-radius: 10px;
+                //     }
+                // }
 
                 .answer_area {
                     display: flex;
