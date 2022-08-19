@@ -20,10 +20,16 @@ main {
                             .recording_button_item{
                                 margin: 10px 0px;
                                 width: 100%;
+                                padding: 0px 5px 10px;
+                                border-bottom: 1px dotted lighten($main-color, 20%);
+                                &:nth-last-child(1){
+                                    border-bottom: 0px;
+                                }
                             }
                             .recording_title_area{
                                 width: 100%;
-                                text-align: center;
+                                display: flex;
+                                justify-content: center;
                             }
                         }
                     }
@@ -80,9 +86,10 @@ main {
                                 .recording_button_item{
                                     width: auto;
                                     margin: 20px 0px 10px;
-                                    padding: 0px 10px;
+                                    padding: 10px;
                                     flex-direction: column;
-                                    border-right: 1px solid $white;
+                                    border-right: 1px dotted lighten($main-color, 20%);
+                                    border-bottom: 0px;
 
                                     &:nth-last-child(1){
                                         border-right: 0px;
@@ -97,7 +104,27 @@ main {
     }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+    main {
+        .test_area {
+            &.ocean_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            
+                            .recording_playback_area{
+                                
+                                .recording_button_item{
+                                    padding: 10px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (orientation:portrait) {
     main {

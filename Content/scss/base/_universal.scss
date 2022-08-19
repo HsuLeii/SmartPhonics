@@ -148,8 +148,8 @@ main {
 
             i {
                 color: $main-color;
-                font-size: 40px !important;
-                padding: 5px;
+                font-size: 30px !important;
+                padding: 0px 5px 0px 0px !important;
             }
         }
     }
@@ -274,7 +274,7 @@ main {
     }
 
     50% {
-        transform: translate(-125%, -50%);
+        transform: translate(calc(-100% - 10px), -50%);
     }
 
     100% {

@@ -398,7 +398,17 @@ main {
     }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+    main {
+        .test_area {
+
+            .QA_area {
+                width: 60%;
+                max-width: 1200px;
+            }
+        }
+    }
+}
 
 @media screen and (orientation:portrait) {
     main {
