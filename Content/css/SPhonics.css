@@ -1945,7 +1945,7 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .
   margin: 10px 0px;
   width: 100%;
   padding: 0px 5px 10px;
-  border-bottom: 1px dotted #f6a96b;
+  border-bottom: 1px dotted #fff;
 }
 
 main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
@@ -1999,7 +1999,7 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    border-right: 1px dotted #f6a96b;
+    border-right: 1px dotted #fff;
     border-bottom: 0px;
   }
   main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
