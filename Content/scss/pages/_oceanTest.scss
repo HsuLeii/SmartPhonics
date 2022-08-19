@@ -4,9 +4,6 @@ main {
         &.ocean_test_area {
 
             .QA_area {
-
-
-
                 .topic_area {
                     .recording_stop_play_area {
                         display: flex;
@@ -14,6 +11,20 @@ main {
                         align-items: center;
                         .recording_button_item{
                             margin: 10px 15px;
+                        }
+                        .recording_playback_area{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            margin: 10px 15px;
+                            .recording_button_item{
+                                margin: 10px 0px;
+                                width: 100%;
+                            }
+                            .recording_title_area{
+                                width: 100%;
+                                text-align: center;
+                            }
                         }
                     }
                 }
@@ -36,22 +47,47 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-
+    main {
+        .test_area {
+            &.ocean_test_area {
+                .QA_area {
+                    padding: 30px 10px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1200px) {
     main {
         .test_area {
             &.ocean_test_area {
-
                 .QA_area {
-
                     .topic_area {
                         .recording_stop_play_area {
                             flex-direction: row;
                             align-items: flex-start;
+                            flex-wrap: wrap;
                             .recording_button_item{
-                                margin: 0px 25px;
+                                margin: 0px 25px 25px;
+                                width: 100%;
+                            }
+                            .recording_playback_area{
+                                width: 100%;
+                                justify-content:center;
+                                margin: 10px auto;
+                                
+                                .recording_button_item{
+                                    width: auto;
+                                    margin: 20px 0px 10px;
+                                    padding: 0px 10px;
+                                    flex-direction: column;
+                                    border-right: 1px solid $white;
+
+                                    &:nth-last-child(1){
+                                        border-right: 0px;
+                                    }
+                                }
                             }
                         }
                     }

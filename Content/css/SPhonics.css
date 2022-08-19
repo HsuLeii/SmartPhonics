@@ -1249,7 +1249,7 @@ main .stop_button_area .button_text,
 main .play_button_area .button_text {
   text-align: center;
   margin: 5px auto 0px;
-  padding: 5px 10px;
+  padding: 0px 10px;
   border-radius: 10px;
   width: 100%;
   cursor: pointer;
@@ -1259,7 +1259,7 @@ main .sound_button_area .recording_seconds,
 main .recording_button_area .recording_seconds,
 main .stop_button_area .recording_seconds,
 main .play_button_area .recording_seconds {
-  margin: 5px auto 0px;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -1286,6 +1286,11 @@ main .recording_button_area .recording_area.finger_btn .finger_icon i {
   color: #2194d3 !important;
 }
 
+main .recording_button_area .recording_button_animate {
+  -webkit-animation: recording 1500ms infinite;
+          animation: recording 1500ms infinite;
+}
+
 main .recording_button_area .button_text p {
   color: #2194d3;
 }
@@ -1300,6 +1305,11 @@ main .stop_button_area .button_text p {
 
 main .play_button_area .play_area {
   background-color: #00a29a;
+}
+
+main .play_button_area .recording_button_animate {
+  -webkit-animation: recording 1500ms infinite;
+          animation: recording 1500ms infinite;
 }
 
 main .play_button_area .button_text p {
@@ -1901,6 +1911,34 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .
   margin: 10px 15px;
 }
 
+main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 15px;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_title_area {
+  width: 100%;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  main .test_area.ocean_test_area .QA_area {
+    padding: 30px 10px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
     -webkit-box-orient: horizontal;
@@ -1910,9 +1948,32 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
-    margin: 0px 25px;
+    margin: 0px 25px 25px;
+    width: 100%;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
+    width: auto;
+    margin: 20px 0px 10px;
+    padding: 0px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 1px solid #fff;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
+    border-right: 0px;
   }
 }
 
