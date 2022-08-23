@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@300;500;700&family=Noto+Sans+SC:wght@100;300;400;500;700;900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
 body {
-  font-family: 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
+  font-family: 'Lexend', 'Noto Sans SC', 'Microsoft JhengHei', 'Noto Sans TC', 'Microsoft YaHei', 'PingFang TC', 'PingFang SC', 'Heiti TC', 'Heiti SC', 'LiHei Pro', 'STXihei', sans-serif;
 }
 
 /*main*/
@@ -1666,7 +1666,6 @@ main .test_area .QA_area .topic_description_area .description_text_area .animal_
 
 main .test_area .QA_area .topic_description_area .description_text_area .description_text {
   width: 100%;
-  text-align: center;
   margin: 5px auto 0;
 }
 
@@ -1926,7 +1925,7 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
 }
 
 main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
-  margin: 10px 15px;
+  margin: 10px 0px;
 }
 
 main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
@@ -1953,6 +1952,173 @@ main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .
 }
 
 main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_title_area {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 992px) {
+  main .test_area.ocean_test_area .QA_area {
+    padding: 30px 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
+    margin: 0px 25px 25px;
+    width: 100%;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 10px auto;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
+    width: auto;
+    margin: 20px 0px 10px;
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-right: 1px dotted #fff;
+    border-bottom: 0px;
+  }
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
+    border-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
+    padding: 10px 20px;
+  }
+}
+
+main .test_area.sky_test_area .QA_area .test_progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .drag-line {
+  width: calc(90% - 100px);
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .quiz_progress {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .quiz_progress .quiz_progress_value {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+  transform: translate(-50%, -50%) rotate(-90deg);
+  overflow: initial;
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg .quiz_progress_background {
+  fill: none;
+  stroke: #f6a96b;
+  stroke-width: 3px;
+}
+
+main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg .quiz_progress_bar {
+  fill: none;
+  stroke: #bd5a0b;
+  stroke-dasharray: 100 100;
+  stroke-dashoffset: 100;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  stroke-width: 3px;
+  -webkit-transition: stroke-dashoffset 1s ease-in-out;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
+  margin: 10px 0px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item {
+  margin: 5px 5px 0px 5px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content {
+  padding: 5px;
+  border: 1px solid #2e3233;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 10px 15px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
+  margin: 10px 0px;
+  width: 100%;
+  padding: 0px 5px 10px;
+  border-bottom: 1px dotted #fff;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
+  border-bottom: 0px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_title_area {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
