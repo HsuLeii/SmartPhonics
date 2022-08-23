@@ -39,13 +39,13 @@ main {
 
             .test_progress {
                 margin: 0 auto 35px;
-                .drag-line {
+                .drag_line {
                     .line {
                         background: $main_color;
                     }
                 }
 
-                .drag-line {
+                .drag_line {
                     max-width: 1200px;
                     width: 90%;
                     height: 10px;

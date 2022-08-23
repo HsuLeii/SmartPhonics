@@ -74,6 +74,16 @@ main {
             }
         }
 
+        .sound_button_area{
+            .sound_area{
+                &.finger_btn{
+                    .finger_icon{
+                        color: $main-color !important;
+                    }
+                }
+            } 
+        }
+
     }
 
     .sound_button_area,
@@ -135,9 +145,7 @@ main {
 
             &.finger_btn {
                 .finger_icon {
-                    i {
                         color: $main_color_blue !important;
-                    }
                 }
             }
         }
@@ -192,9 +200,7 @@ main {
 
             &.finger_btn {
                 .finger_icon {
-                    i {
                         color: $main_color_yellow !important;
-                    }
                 }
             }
         }

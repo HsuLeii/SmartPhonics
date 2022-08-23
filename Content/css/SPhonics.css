@@ -458,9 +458,6 @@ main .finger_btn .finger_icon {
           transform: translate(0%, -50%);
   -webkit-animation: fingers 1000ms infinite;
           animation: fingers 1000ms infinite;
-}
-
-main .finger_btn .finger_icon i {
   color: #ed710e;
   font-size: 30px !important;
   padding: 0px 5px 0px 0px !important;
@@ -1189,6 +1186,10 @@ main .sound_test_area .sound_bar_area .bar:nth-child(10) {
           animation-duration: 442ms;
 }
 
+main .sound_test_area .sound_button_area .sound_area.finger_btn .finger_icon {
+  color: #ed710e !important;
+}
+
 main .sound_button_area,
 main .recording_button_area,
 main .stop_button_area,
@@ -1293,7 +1294,7 @@ main .recording_button_area .recording_area {
   background-color: #2194d3;
 }
 
-main .recording_button_area .recording_area.finger_btn .finger_icon i {
+main .recording_button_area .recording_area.finger_btn .finger_icon {
   color: #2194d3 !important;
 }
 
@@ -1327,7 +1328,7 @@ main .play_button_area .button_text p {
   color: #00a29a;
 }
 
-main .sound_button_area .sound_area.finger_btn .finger_icon i {
+main .sound_button_area .sound_area.finger_btn .finger_icon {
   color: #f8b62d !important;
 }
 
@@ -1528,11 +1529,11 @@ main .test_area .QA_area .test_progress {
   margin: 0 auto 35px;
 }
 
-main .test_area .QA_area .test_progress .drag-line .line {
+main .test_area .QA_area .test_progress .drag_line .line {
   background: #ed710e;
 }
 
-main .test_area .QA_area .test_progress .drag-line {
+main .test_area .QA_area .test_progress .drag_line {
   max-width: 1200px;
   width: 90%;
   height: 10px;
@@ -1541,7 +1542,7 @@ main .test_area .QA_area .test_progress .drag-line {
   margin: 0 auto;
 }
 
-main .test_area .QA_area .test_progress .drag-line .line {
+main .test_area .QA_area .test_progress .drag_line .line {
   background: #ed710e;
   border-radius: 10px;
   margin-top: 0px;

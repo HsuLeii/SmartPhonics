@@ -16,7 +16,7 @@ main {
             word-break: keep-all;
         }
 
-        h3{
+        h3 {
             color: $main_color;
         }
     }
@@ -145,12 +145,10 @@ main {
             top: 50%;
             transform: translate(0%, -50%);
             animation: fingers 1000ms infinite;
+            color: $main-color;
+            font-size: 30px !important;
+            padding: 0px 5px 0px 0px !important;
 
-            i {
-                color: $main-color;
-                font-size: 30px !important;
-                padding: 0px 5px 0px 0px !important;
-            }
         }
     }
 
@@ -160,10 +158,10 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
-        
+
         .pick_level_top {
 
-            .avatar_area{
+            .avatar_area {
                 width: 60%;
             }
 
@@ -184,13 +182,12 @@ main {
     }
 }
 
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 992px) {}
 
 @media screen and (min-width: 1200px) {
     main {
 
-        .pick_level_top{
+        .pick_level_top {
             width: 100%;
             margin: 0 auto;
             position: relative;
@@ -200,7 +197,7 @@ main {
                 position: absolute;
                 left: 50%;
                 top: 50%;
-                transform: translate(-50% , -50%);
+                transform: translate(-50%, -50%);
             }
 
             .avatar_area {
@@ -216,7 +213,7 @@ main {
                     margin: 7px 5px;
                 }
 
-                &.pick_level_avatar_area{
+                &.pick_level_avatar_area {
                     position: relative;
                     margin: 5px 5px 5px auto;
                 }

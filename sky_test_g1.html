@@ -140,10 +140,12 @@
               <div class="recording_button_area">
                 <button class="finger_btn recording_area">
                   <i class="fa-solid fa-microphone-lines"></i>
-                  <div class="finger_icon" style="display: none;">
-                    <!-- 5秒後未按下「錄音」鍵在顯示 -->
-                    <i class="fa-solid fa-hand-point-right"></i>
-                  </div>
+                    <!-- 
+                        1.點按錄音按鈕後，學生需在20秒內，一次唸出六個字母名稱。
+                        2.10秒後未按下「錄音」鍵在顯示
+                        3.點選播放class加上"recording_button_animate"
+                     -->
+                    <i class="fa-solid fa-hand-point-right finger_icon" style="display: none;"></i>
                 </button>
                 <button class="button_text">
                   <p>錄音</p>
@@ -185,13 +187,11 @@
 
         <div class="leave_next_btn go_btn_area">
           <button class="finger_btn go_btn">
-            <a href="ocean_test_animation_g1.html">
+            <a href="sky_test_animation_g1.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <div class="finger_icon" style="display: none">
               <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right"></i>
-            </div>
+              <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
           </button>
         </div>
       </div>
