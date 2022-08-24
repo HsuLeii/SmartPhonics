@@ -63,11 +63,11 @@
       </div>
 
       <div class="test_area_bg">
-        <img src="Content/image/photo/bg/ocean_g2.png" alt="" />
+        <img src="Content/image/photo/bg/land_g2.png" alt="" />
       </div>
       <div class="QA_area">
         <div class="test_progress">
-          <div class="drag-line">
+          <div class="drag_line">
             <div class="line" style="width: 40%; height: 10px"></div>
           </div>
           <div class="quiz_progress">
@@ -81,7 +81,7 @@
 
         <div class="topic_description_area">
           <div class="description_avatar">
-            <img src="Content/image/photo/avatar/color/ocean_g1.png" alt="" />
+            <img src="Content/image/photo/avatar/color/sky_g1.png" alt="" />
           </div>
           <div class="description_text_area">
             <div class="animal_name_area">
@@ -89,16 +89,18 @@
                 <p>animal</p>
               </div>
               <div class="sound_button_area">
-                <!-- 學生點按播放按鈕後加入disabled -->
-                <button class="sound_icon sound_area">
+                <!-- 試題音檔2遍後加入disabled -->
+                <button class="sound_icon sound_area" disabled>
                   <!-- 點選播放class加上"recording_button_animate" -->
-                  <i class="fa-solid fa-volume-high recording_button_animate"></i>
+                  <i class="fa-solid fa-volume-high"></i>
                   <p>請聽題目說明</p>
                 </button>
               </div>
             </div>
             <div class="description_text">
-              <p>請依據聽到的聲音，將兩個聲音組起來說出單字。</p>
+              <p>請由左至右念出以下全部字母。<br/>
+                注意: 若遇到不會唸的字母，可以先跳過喔。
+              </p>
             </div>
           </div>
         </div>
@@ -136,6 +138,7 @@
                 2.開始 /停止錄音
               </p>
               <div class="recording_button_area">
+                <!-- 20秒後，加入disabled -->
                 <button class="finger_btn recording_area">
                   <i class="fa-solid fa-microphone-lines"></i>
                     <!-- 
@@ -143,66 +146,65 @@
                         2.10秒後未按下「錄音」鍵在顯示
                         3.點選播放class加上"recording_button_animate"
                      -->
-                     <i class="fa-solid fa-hand-point-right finger_icon" style="display: block;"></i>
+                    <i class="fa-solid fa-hand-point-right finger_icon" style="display: none;"></i>
                 </button>
+                <!-- 20秒後，加入disabled -->
                 <button class="button_text">
                   <p>錄音</p>
                 </button>
-                <p class="recording_seconds">60S</p>
               </div>
               <div class="stop_button_area">
+                <!-- 20秒後，加入disabled -->
                 <button class="stop_area">
                   <i class="fa-solid fa-stop"></i>
                 </button>
+                <!-- 20秒後，加入disabled -->
                 <button class="button_text">
                   <p>停止</p>
                 </button>
               </div>
               <div class="play_button_area">
                 <!-- 點選錄音後，取消disabled -->
-                <button class="finger_btn play_area">
+                <button class="finger_btn play_area" disabled>
                   <!-- 點選播放class加上"recording_button_animate" -->
-                  <i class="fa-solid fa-play recording_button_animate"></i>
+                  <i class="fa-solid fa-play"></i>
                 </button>
                 <!-- 點選錄音後，取消disabled -->
-                <button class="button_text">
+                <button class="button_text" disabled>
                   <p>播放</p>
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 
-        <div class="sound_adjustment_area sound_disabled">
+        <div class="sound_adjustment_area">
           <!-- 試題音檔2遍後class加上"sound_disabled" -->
           <button class="sound_icon">
             <i class="fa-solid fa-volume-high icon_volume"></i>
           </button>
           <label for="soundRange" class="form-label"> </label>
-          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" disabled />
+          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" />
           <!-- 試題音檔2遍後加入disabled -->
         </div>
 
         <div class="leave_next_btn go_btn_area">
           <button class="finger_btn go_btn">
-            <a href="ocean_test_g2_two_options.html">
+            <a href="sky_test_animation_g1_capital.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <div class="finger_icon" style="display: block">
               <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right"></i>
-            </div>
+              <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
           </button>
         </div>
       </div>
 
       <div class="animal_area">
         <div class="animal_img animal_one">
-          <img src="Content/image/photo/animal/ocean_g1.png" alt="" />
+          <img src="Content/image/photo/animal/sky_g1.png" alt="" />
         </div>
         <div class="animal_img animal_two">
-          <img src="Content/image/photo/animal/ocean_g1.png" alt="" />
+          <img src="Content/image/photo/animal/sky_g1.png" alt="" />
         </div>
       </div>
     </div>

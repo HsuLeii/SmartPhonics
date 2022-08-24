@@ -47,7 +47,7 @@ main {
 
                 .drag_line {
                     max-width: 1200px;
-                    width: 90%;
+                    width: calc(90% - 100px);
                     height: 10px;
                     background: $white;
                     border-radius: 10px;

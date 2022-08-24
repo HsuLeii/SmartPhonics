@@ -1535,7 +1535,7 @@ main .test_area .QA_area .test_progress .drag_line .line {
 
 main .test_area .QA_area .test_progress .drag_line {
   max-width: 1200px;
-  width: 90%;
+  width: calc(90% - 100px);
   height: 10px;
   background: #fff;
   border-radius: 10px;
@@ -2054,13 +2054,13 @@ main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg {
 
 main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg .quiz_progress_background {
   fill: none;
-  stroke: #f6a96b;
+  stroke: #fff;
   stroke-width: 3px;
 }
 
 main .test_area.sky_test_area .QA_area .test_progress .quiz_progress svg .quiz_progress_bar {
   fill: none;
-  stroke: #bd5a0b;
+  stroke: #ed710e;
   stroke-dasharray: 100 100;
   stroke-dashoffset: 100;
   stroke-dashoffset: 0px;
@@ -2088,12 +2088,19 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item {
-  margin: 5px 5px 0px 5px;
+  margin: 15px 5px 0px 5px;
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content {
-  padding: 5px;
-  border: 1px solid #2e3233;
+  padding: 10px 5px;
+  border: 1px solid #ed710e;
+  font-size: 30px;
+  color: #ed710e;
+  line-height: 1;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
+  font-size: 20px;
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
@@ -2129,54 +2136,21 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
           justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content {
+    font-size: 40px;
+  }
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
+    font-size: 30px;
+  }
+}
+
 @media screen and (min-width: 992px) {
-  main .test_area.ocean_test_area .QA_area {
-    padding: 30px 10px;
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content {
+    font-size: 50px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item {
-    margin: 0px 25px 25px;
-    width: 100%;
-  }
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 10px auto;
-  }
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
-    width: auto;
-    margin: 20px 0px 10px;
-    padding: 10px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    border-right: 1px dotted #fff;
-    border-bottom: 0px;
-  }
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item:nth-last-child(1) {
-    border-right: 0px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area .recording_button_item {
-    padding: 10px 20px;
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
+    font-size: 40px;
   }
 }
 

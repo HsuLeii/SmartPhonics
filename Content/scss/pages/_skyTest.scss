@@ -37,13 +37,13 @@ main {
 
                             .quiz_progress_background {
                                 fill: none;
-                                stroke: $main_color_orangeLight;
+                                stroke: $white;
                                 stroke-width: 3px;
                             }
 
                             .quiz_progress_bar {
                                 fill: none;
-                                stroke: darken($main-color, 10%);
+                                stroke: $main-color;
                                 stroke-dasharray: 100 100;
                                 stroke-dashoffset: 100;
                                 stroke-dashoffset: 0px;
@@ -65,10 +65,17 @@ main {
 
                             &.sky_topic{
                                 .sky_topic_item{
-                                    margin: 5px 5px 0px 5px;
+                                    margin: 15px 5px 0px 5px;
                                     .topic_item_content{
-                                        padding: 5px;
-                                        border: 1px solid $main_color_black;
+                                        padding: 10px 5px;
+                                        border: 1px solid $main-color;
+                                        font-size: 30px;
+                                        color: $main-color;
+                                        line-height: 1;
+
+                                        &.single_word{
+                                            font-size: 20px;
+                                        }
                                     }
                                 }
                             }
@@ -102,58 +109,26 @@ main {
 }
 
 @media screen and (min-width: 576px) {
-    main {
-        .test_area {}
-    }
+    
 }
 
 @media screen and (min-width: 768px) {
     main {
-        .test_area {}
-    }
-}
-
-@media screen and (min-width: 992px) {
-    main {
         .test_area {
-            &.ocean_test_area {
-                .QA_area {
-                    padding: 30px 10px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    main {
-        .test_area {
-            &.ocean_test_area {
+            &.sky_test_area {
                 .QA_area {
                     .topic_area {
                         .recording_stop_play_area {
-                            flex-direction: row;
-                            align-items: flex-start;
-                            flex-wrap: wrap;
                             .recording_button_item{
-                                margin: 0px 25px 25px;
-                                width: 100%;
-                            }
-                            .recording_playback_area{
-                                width: 100%;
-                                justify-content:center;
-                                margin: 10px auto;
-                                
-                                .recording_button_item{
-                                    width: auto;
-                                    margin: 20px 0px 10px;
-                                    padding: 10px;
-                                    flex-direction: column;
-                                    border-right: 1px dotted $white;
-                                    border-bottom: 0px;
-
-                                    &:nth-last-child(1){
-                                        border-right: 0px;
+    
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        .topic_item_content{
+                                            font-size: 40px;
+                                            &.single_word{
+                                                font-size: 30px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -161,40 +136,48 @@ main {
                     }
                 }
             }
+    
         }
     }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 992px) {
     main {
         .test_area {
-            &.ocean_test_area {
+            &.sky_test_area {
                 .QA_area {
                     .topic_area {
                         .recording_stop_play_area {
-
-                            .recording_playback_area{
-                                
-                                .recording_button_item{
-                                    padding: 10px 20px;
+                            .recording_button_item{
+    
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        .topic_item_content{
+                                            font-size: 50px;
+                                            &.single_word{
+                                                font-size: 40px;
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 }
             }
+    
         }
-    }
+    }      
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
 }
 
 @media screen and (orientation:portrait) {
-    main {
-        .test_area {}
-    }
 }
 
 @media all and (orientation:landscape) {
-    main {
-        .test_area {}
-    }
 }
