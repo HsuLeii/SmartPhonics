@@ -68,6 +68,18 @@ main {
             
         }
 
+        .sky_answer_display_area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .sky_answer_selection{
+                width: 80%;
+                max-width: 1200px;
+                margin: 20px auto 0px;
+            }
+        }
+
         &.test_end_answer{
             .pick_level_top{
                 .page_logo{

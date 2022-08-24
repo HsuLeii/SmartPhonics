@@ -2103,6 +2103,14 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
   font-size: 20px;
 }
 
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence {
+  width: 100%;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
+  font-size: 17px;
+}
+
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2143,6 +2151,9 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
     font-size: 30px;
   }
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -2151,6 +2162,21 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
   }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
     font-size: 40px;
+  }
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
+    font-size: 23px;
   }
 }
 
@@ -2230,6 +2256,25 @@ main .test_end_area .leave_next_btn .score_btn {
 main .test_end_area .leave_next_btn .score_btn:hover {
   background-color: #ed710e;
   border: 1px solid #fff;
+}
+
+main .test_end_area .sky_answer_display_area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .test_end_area .sky_answer_display_area .sky_answer_selection {
+  width: 80%;
+  max-width: 1200px;
+  margin: 20px auto 0px;
 }
 
 main .test_end_area.test_end_answer .pick_level_top .page_logo {

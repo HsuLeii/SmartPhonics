@@ -76,6 +76,15 @@ main {
                                         &.single_word{
                                             font-size: 20px;
                                         }
+                                        
+                                    }
+                                    &.topic_item_sentence{
+                                        width: 100%;
+                                        .topic_item_content{
+                                            &.sentence{
+                                                font-size: 17px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -129,6 +138,13 @@ main {
                                                 font-size: 30px;
                                             }
                                         }
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -158,6 +174,13 @@ main {
                                                 font-size: 40px;
                                             }
                                         }
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 20px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -171,9 +194,59 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 22px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
+    main {
+        .test_area {
+            &.sky_test_area {
+                .QA_area {
+                    .topic_area {
+                        .recording_stop_play_area {
+                            .recording_button_item{
+                                &.sky_topic{
+                                    .sky_topic_item{
+                                        &.topic_item_sentence{
+                                            .topic_item_content{
+                                                &.sentence{
+                                                    font-size: 23px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (orientation:portrait) {

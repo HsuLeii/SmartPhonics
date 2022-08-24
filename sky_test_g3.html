@@ -81,7 +81,7 @@
 
         <div class="topic_description_area">
           <div class="description_avatar">
-            <img src="Content/image/photo/avatar/color/sky_g2.png" alt="" />
+            <img src="Content/image/photo/avatar/color/sky_g3.png" alt="" />
           </div>
           <div class="description_text_area">
             <div class="animal_name_area">
@@ -89,18 +89,18 @@
                 <p>animal</p>
               </div>
               <div class="sound_button_area">
-                <!-- 學生點按播放按鈕後加入disabled -->
-                <button class="sound_icon sound_area">
+                <!-- 試題音檔2遍後加入disabled -->
+                <button class="sound_icon sound_area" disabled>
                   <!-- 點選播放class加上"recording_button_animate" -->
-                  <i class="fa-solid fa-volume-high recording_button_animate"></i>
+                  <i class="fa-solid fa-volume-high"></i>
                   <p>請聽題目說明</p>
                 </button>
               </div>
             </div>
             <div class="description_text">
-                <p>請由左至右唸出以下全部單字。<br/>
-                    注意: 若遇到不會唸的單字，可以先跳過喔。                
-                  </p>
+              <p>請由左至右念出以下全部句子。<br/>
+                注意:若遇到不會唸的句子，可以先跳過喔。                                
+              </p>
             </div>
           </div>
         </div>
@@ -110,27 +110,20 @@
 
             <div class="recording_button_item sky_topic">
                 <p class="recording_button_instructions">
-                    1.看六個英文單字
+                    1.看英文句子
                 </p>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">pick</p>
+                <div class="sky_topic_item topic_item_sentence">
+                    <p class="topic_item_content sentence">It is sunny.</p>
                 </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">cat</p>
+                <div class="sky_topic_item topic_item_sentence">
+                    <p class="topic_item_content sentence">Welcome to our zoo, boys and girls.</p>
                 </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">turn</p>
+                <div class="sky_topic_item topic_item_sentence">
+                    <p class="topic_item_content sentence">There are bears, lions, birds and monkeys in our zoo.</p>
                 </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">sing</p>
+                <div class="sky_topic_item topic_item_sentence">
+                    <p class="topic_item_content sentence">There are bears, lions, birds and monkeys in our zoo.</p>
                 </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">cup</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content single_word">moon</p>
-                </div>
-                
               </div>
 
             <div class="recording_button_item">
@@ -140,13 +133,13 @@
               <div class="recording_button_area">
                 <!-- 20秒後，加入disabled -->
                 <button class="finger_btn recording_area">
-                  <i class="fa-solid fa-microphone-lines recording_button_animate"></i>
+                  <i class="fa-solid fa-microphone-lines"></i>
                     <!-- 
                         1.點按錄音按鈕後，學生需在20秒內，一次唸出六個字母名稱。
                         2.10秒後未按下「錄音」鍵在顯示
                         3.點選播放class加上"recording_button_animate"
                      -->
-                     <i class="fa-solid fa-hand-point-right finger_icon" style="display: block;"></i>
+                    <i class="fa-solid fa-hand-point-right finger_icon" style="display: none;"></i>
                 </button>
                 <!-- 20秒後，加入disabled -->
                 <button class="button_text">
@@ -165,49 +158,46 @@
               </div>
               <div class="play_button_area">
                 <!-- 點選錄音後，取消disabled -->
-                <button class="finger_btn play_area">
+                <button class="finger_btn play_area" disabled>
                   <!-- 點選播放class加上"recording_button_animate" -->
-                  <i class="fa-solid fa-play recording_button_animate"></i>
+                  <i class="fa-solid fa-play"></i>
                 </button>
                 <!-- 點選錄音後，取消disabled -->
-                <button class="button_text">
+                <button class="button_text" disabled>
                   <p>播放</p>
                 </button>
               </div>
             </div>
-
           </div>
         </div>
 
-        <div class="sound_adjustment_area sound_disabled">
+        <div class="sound_adjustment_area">
           <!-- 試題音檔2遍後class加上"sound_disabled" -->
           <button class="sound_icon">
             <i class="fa-solid fa-volume-high icon_volume"></i>
           </button>
           <label for="soundRange" class="form-label"> </label>
-          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" disabled />
+          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" />
           <!-- 試題音檔2遍後加入disabled -->
         </div>
 
         <div class="leave_next_btn go_btn_area">
           <button class="finger_btn go_btn">
-            <a href="sky_test_disabled_g2.html">
+            <a href="sky_test_animation_g3.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <div class="finger_icon" style="display: block">
               <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right"></i>
-            </div>
+              <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
           </button>
         </div>
       </div>
 
       <div class="animal_area">
         <div class="animal_img animal_one">
-          <img src="Content/image/photo/animal/sky_g2.png" alt="" />
+          <img src="Content/image/photo/animal/sky_g3.png" alt="" />
         </div>
         <div class="animal_img animal_two">
-          <img src="Content/image/photo/animal/sky_g2.png" alt="" />
+          <img src="Content/image/photo/animal/sky_g3.png" alt="" />
         </div>
       </div>
     </div>
