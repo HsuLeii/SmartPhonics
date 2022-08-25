@@ -1,7 +1,7 @@
 main {
     .test_end_area {
         margin: 30px auto;
-        
+
         &.land_test_area {
             .test_end_text {
                 p {
@@ -28,8 +28,12 @@ main {
                 background-color: #ed710e;
                 border-radius: 50%;
                 color: #fff;
-                padding: 5px;
+                padding: 2px 4px;
                 margin: 0px 5px;
+
+                i{
+                    line-height: 1.3;
+                }
             }
         }
 
@@ -45,7 +49,7 @@ main {
                 margin: 5px 1%;
             }
         }
-        
+
         .gift_box {
             width: 80%;
             margin: 0 auto;
@@ -60,29 +64,100 @@ main {
                 background-color: $white;
                 border: 1px solid $main-color;
 
-                &:hover{
+                &:hover {
                     background-color: $main-color;
                     border: 1px solid $white;
                 }
             }
-            
+
         }
 
-        .sky_answer_display_area{
+        .sky_answer_display_area {
             display: flex;
             flex-direction: column;
             justify-content: center;
 
-            .sky_answer_selection{
+            .sky_answer_selection {
                 width: 80%;
                 max-width: 1200px;
                 margin: 20px auto 0px;
+
+                .sky_answer_btn{
+                    border: 1px solid $main-color;
+                    border-radius: 10px;
+                    background-color: $white;
+                    margin: 0px 10px;
+                    padding: 5px 15px;
+                    p{
+                        color: $main-color;
+                        font-weight: normal;
+                    }
+                    &:hover,
+                    &.active{
+                        background-color: $main-color;
+                        p{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .answer_display_area {
+                .test_end_text{
+                    margin: 0px auto 20px;
+                    width: 100%;
+                }
+                &.sky_sentence {
+                    .answer_display_item {
+                        width: calc(100% - 20px);
+                        display: flex;
+                        align-items: center;
+
+                        .answer_display_text {
+                            text-align: left;
+                            font-size: 17px;
+                        }
+
+                        .answer_display_icon {
+                            position: relative;
+                            right: auto;
+                            bottom: auto;
+                            margin: 0 10px;
+                            padding: 2px 4px;
+                            border-radius: 50%;
+                        }
+
+                        &.correct_answer {
+    
+                            .answer_display_icon {
+                                background-color: $correct_text;
+                                color: $white;
+                            }
+                        }
+    
+                        &.wrong_answer {
+    
+                            .answer_display_text{
+                                span{
+                                    color: $main_color_red;
+                                }
+                                & ~ .answer_display_icon {
+                                    background-color: $main_color_red;
+                                }
+                            }
+                            .answer_display_icon {
+                                background-color: $wrong_text;
+                                color: $white;
+                            }
+                        }
+                    }
+                }
             }
         }
 
-        &.test_end_answer{
-            .pick_level_top{
-                .page_logo{
+        &.test_end_answer {
+            .pick_level_top {
+                .page_logo {
                     display: block;
                     width: 60%;
                     max-width: 280px;
@@ -90,62 +165,64 @@ main {
                 }
             }
 
-            .answer_display_area{
+            .answer_display_area {
                 width: 80%;
                 max-width: 1200px;
                 margin: 20px auto;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: flex-start;
-                .answer_display_item{
+
+                .answer_display_item {
                     padding: 30px 15px;
                     width: calc(100% - 20px);
                     position: relative;
                     margin: 10px 10px;
                     border-radius: 10px;
-    
-                    &.correct_answer{
+
+                    &.correct_answer {
                         background-color: $correct_answer;
-    
-                        .answer_display_text{
+
+                        .answer_display_text {
                             color: $correct_text;
                         }
-    
-                        .answer_display_icon{
+
+                        .answer_display_icon {
                             color: $correct_text;
                         }
                     }
-    
-                    &.wrong_answer{
+
+                    &.wrong_answer {
                         background-color: $wrong_answer;
-    
-                        .answer_display_text{
+
+                        .answer_display_text {
                             color: $wrong_text;
                         }
-    
-                        .answer_display_icon{
+
+                        .answer_display_icon {
                             color: $wrong_text;
                         }
                     }
-    
-                    .answer_display_text{
+
+                    .answer_display_text {
                         text-align: center;
                         font-size: 30px;
                     }
-    
-                    .answer_display_icon{
+
+                    .answer_display_icon {
                         position: absolute;
                         right: 5px;
                         bottom: 5px;
                         cursor: auto;
-                        .fa-volume-high{
+
+                        .fa-volume-high {
                             cursor: pointer;
                         }
                     }
                 }
             }
 
-            .test_end_page{
+            .test_end_page {
                 position: relative;
                 display: flex;
                 flex-direction: column;
@@ -153,18 +230,21 @@ main {
                 max-width: calc(1200px - 20px);
                 padding: 0px 10px;
                 margin: 0 auto;
-    
+
                 .page {
                     display: flex;
                     justify-content: center;
                     margin: 20px auto;
+
                     .pagination {
+
                         a,
                         span {
                             padding: 5px 0.4rem;
                             border-radius: 10px;
                             margin: 0px 2px;
                             color: $grey;
+
                             &:hover,
                             &:active,
                             &.active {
@@ -174,16 +254,16 @@ main {
                         }
                     }
                 }
-    
-                .leave_next_btn{
+
+                .leave_next_btn {
                     position: relative;
                     right: 0;
                     top: 50%;
-                    transform: translate(0% , -50%);
+                    transform: translate(0%, -50%);
                 }
             }
         }
-        
+
     }
 }
 
@@ -191,9 +271,9 @@ main {
     main {
         .test_end_area {
 
-            &.test_end_answer{
-                .answer_display_area{
-                    .answer_display_item{
+            &.test_end_answer {
+                .answer_display_area {
+                    .answer_display_item {
                         width: calc(50% - 20px);
                     }
                 }
@@ -212,25 +292,40 @@ main {
                 max-width: 800px;
             }
 
-            &.test_end_answer{
-                .pick_level_top{
-                    .page_logo{
+            .sky_answer_display_area {
+                .answer_display_area {
+                    &.sky_sentence {
+                        .answer_display_item {
+                            .answer_display_text {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.test_end_answer {
+                .pick_level_top {
+                    .page_logo {
                         position: relative;
                         left: auto;
                         top: auto;
-                        transform: translate(0 , 0);
+                        transform: translate(0, 0);
                     }
                 }
-                .answer_display_area{
-                    .answer_display_item{
+
+                .answer_display_area {
+                    .answer_display_item {
                         width: calc(33% - 20px);
                     }
                 }
-    
-                .test_end_page{
+
+                .test_end_page {
                     .page {
                         margin: 40px auto;
+
                         .pagination {
+
                             a,
                             span {
                                 padding: 5px 0.5rem;
@@ -238,7 +333,8 @@ main {
                             }
                         }
                     }
-                    .leave_next_btn{
+
+                    .leave_next_btn {
                         margin: 30px auto;
                     }
                 }
@@ -252,12 +348,24 @@ main {
     main {
         .test_end_area {
 
-            &.test_end_answer{
-                .test_end_page{
+            .sky_answer_display_area {
+                .answer_display_area {
+                    &.sky_sentence {
+                        .answer_display_item {
+                            .answer_display_text {
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.test_end_answer {
+                .test_end_page {
                     flex-direction: row;
                     position: relative;
-        
-                    .leave_next_btn{
+
+                    .leave_next_btn {
                         position: absolute;
                         margin: 0;
                     }
@@ -272,16 +380,46 @@ main {
     main {
         .test_end_area {
 
-            &.test_end_answer{
-                .answer_display_area{
-                    .answer_display_item{
+            .sky_answer_display_area {
+                .answer_display_area {
+                    &.sky_sentence {
+                        .answer_display_item {
+                            .answer_display_text {
+                                font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &.test_end_answer {
+                .answer_display_area {
+                    .answer_display_item {
                         width: calc(25% - 20px);
                     }
                 }
             }
-            
+
         }
     }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+    main {
+        .test_end_area {
+
+            .sky_answer_display_area {
+                .answer_display_area {
+                    &.sky_sentence {
+                        .answer_display_item {
+                            .answer_display_text {
+                                font-size: 23px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

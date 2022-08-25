@@ -1626,11 +1626,13 @@ main .test_area .QA_area .topic_description_area .description_text_area .animal_
   color: #fff;
   margin: 0 0 0 5px;
   position: relative;
+  padding: 2px 4px;
 }
 
 main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon i {
   font-size: initial;
-  padding: 5px;
+  padding: 0px;
+  line-height: 1.3;
 }
 
 main .test_area .QA_area .topic_description_area .description_text_area .animal_name_area .sound_button_area .sound_icon p {
@@ -2213,8 +2215,12 @@ main .test_end_area .test_end_text .sound_icon {
   background-color: #ed710e;
   border-radius: 50%;
   color: #fff;
-  padding: 5px;
+  padding: 2px 4px;
   margin: 0px 5px;
+}
+
+main .test_end_area .test_end_text .sound_icon i {
+  line-height: 1.3;
 }
 
 main .test_end_area .get_avatar_area {
@@ -2275,6 +2281,74 @@ main .test_end_area .sky_answer_display_area .sky_answer_selection {
   width: 80%;
   max-width: 1200px;
   margin: 20px auto 0px;
+}
+
+main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn {
+  border: 1px solid #ed710e;
+  border-radius: 10px;
+  background-color: #fff;
+  margin: 0px 10px;
+  padding: 5px 15px;
+}
+
+main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn p {
+  color: #ed710e;
+  font-weight: normal;
+}
+
+main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn:hover, main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn.active {
+  background-color: #ed710e;
+}
+
+main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn:hover p, main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_btn.active p {
+  color: #fff;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area .test_end_text {
+  margin: 0px auto 20px;
+  width: 100%;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item {
+  width: calc(100% - 20px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+  text-align: left;
+  font-size: 17px;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_icon {
+  position: relative;
+  right: auto;
+  bottom: auto;
+  margin: 0 10px;
+  padding: 2px 4px;
+  border-radius: 50%;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item.correct_answer .answer_display_icon {
+  background-color: #375e1e;
+  color: #fff;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text span {
+  color: #d75298;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text ~ .answer_display_icon {
+  background-color: #d75298;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_icon {
+  background-color: #1c4ca3;
+  color: #fff;
 }
 
 main .test_end_area.test_end_answer .pick_level_top .page_logo {
@@ -2407,6 +2481,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
     margin: 40px auto;
     max-width: 800px;
   }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+    font-size: 18px;
+  }
   main .test_end_area.test_end_answer .pick_level_top .page_logo {
     position: relative;
     left: auto;
@@ -2431,6 +2508,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 992px) {
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+    font-size: 20px;
+  }
   main .test_end_area.test_end_answer .test_end_page {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2445,8 +2525,17 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 1200px) {
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+    font-size: 22px;
+  }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
     width: calc(25% - 20px);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+    font-size: 23px;
   }
 }
 /*# sourceMappingURL=SPhonics.css.map */
