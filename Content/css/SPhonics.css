@@ -914,7 +914,7 @@ main .pick_level_area .pick_level_main .level_options .level_img img {
 main .pick_level_area .pick_level_main .level_options .button_level {
   padding: 5px 10px;
   background-color: #ed710e;
-  margin: 15px auto;
+  margin: 15px auto 0px;
   color: #fff;
   border-radius: 50px;
   -webkit-transform: scale(0.8);
@@ -926,6 +926,18 @@ main .pick_level_area .pick_level_main .level_options .button_level a {
   width: 100%;
   color: #fff;
   padding: 0px 30px;
+}
+
+main .pick_level_area .pick_level_main .level_options .button_level.button_finish {
+  background-color: #ed710e !important;
+}
+
+main .pick_level_area .pick_level_main .level_options .button_level.button_score {
+  background-color: #f8b62d !important;
+}
+
+main .pick_level_area .pick_level_main .level_options .button_level.button_score a {
+  color: #2e3233;
 }
 
 main .pick_level_area .swiper {
@@ -969,7 +981,7 @@ main .pick_level_area .swiper .swiper-wrapper .swiper-slide .level_img img {
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level {
   padding: 5px 10px;
   background-color: #ed710e;
-  margin: 30px auto;
+  margin: 20px auto;
   color: #fff;
   border-radius: 50px;
   -webkit-transform: scale(0.8);
@@ -1089,7 +1101,7 @@ main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active {
     margin: 0px 2.5% 20px;
   }
   main .pick_level_area .pick_level_main .level_options .button_level {
-    margin: 30px auto;
+    margin: 20px auto 0px;
   }
 }
 
