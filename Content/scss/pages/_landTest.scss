@@ -260,8 +260,8 @@ main {
                     &.target {
                         .answer_option {
                             width: calc(30px * 1.7);
-                            background-color: $grey;
-                            border: 0px dashed $grey;
+                            // background-color: $grey;
+                            // border: 0px dashed $grey;
                             cursor: pointer;
                         }
                     }

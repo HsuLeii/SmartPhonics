@@ -1770,8 +1770,6 @@ main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_are
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option {
   width: calc(30px * 1.7);
-  background-color: grey;
-  border: 0px dashed grey;
   cursor: pointer;
 }
 
