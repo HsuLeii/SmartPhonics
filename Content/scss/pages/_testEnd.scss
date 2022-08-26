@@ -2,18 +2,6 @@ main {
     .test_end_area {
         margin: 30px auto;
 
-        &.land_test_area {
-            .test_end_text {
-                p {
-                    color: $main_color_green;
-                }
-
-                .sound_icon {
-                    background-color: $main_color_green;
-                }
-            }
-        }
-
         .test_end_text {
             display: flex;
             justify-content: center;
@@ -86,7 +74,7 @@ main {
                     border: 1px solid $main-color;
                     border-radius: 10px;
                     background-color: $white;
-                    margin: 0px 10px;
+                    margin: 0px 0px 0px 10px;
                     padding: 5px 15px;
                     p{
                         color: $main-color;
@@ -116,6 +104,9 @@ main {
                         .answer_display_text {
                             text-align: left;
                             font-size: 17px;
+                            span{
+                                font-size: 17px;
+                            }
                         }
 
                         .answer_display_icon {
@@ -298,6 +289,9 @@ main {
                         .answer_display_item {
                             .answer_display_text {
                                 font-size: 18px;
+                                span{
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }
@@ -354,6 +348,9 @@ main {
                         .answer_display_item {
                             .answer_display_text {
                                 font-size: 20px;
+                                span{
+                                    font-size: 20px;
+                                }
                             }
                         }
                     }
@@ -386,6 +383,9 @@ main {
                         .answer_display_item {
                             .answer_display_text {
                                 font-size: 22px;
+                                span{
+                                    font-size: 22px;
+                                }
                             }
                         }
                     }
@@ -414,6 +414,9 @@ main {
                         .answer_display_item {
                             .answer_display_text {
                                 font-size: 23px;
+                                span{
+                                    font-size: 23px;
+                                }
                             }
                         }
                     }

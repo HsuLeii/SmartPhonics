@@ -121,15 +121,15 @@
           </div>
 
           <div class="answer_area">
-            <div class="answer_option">
+            <div class="answer_cloze">
               <p class="alphabet">c</p>
               <!-- 單一字母class加上"alphabet -->
             </div>
-            <div id="click" class="answer_option">
+            <div id="cloze" class="answer_cloze answer_cloze_area">
               <p class="alphabet"></p>
               <!-- 單一字母class加上"alphabet -->
             </div>
-            <div class="answer_option">
+            <div class="answer_cloze">
               <p class="alphabet">t</p>
               <!-- 單一字母class加上"alphabet -->
             </div>
@@ -185,12 +185,12 @@
     var buttonValue1 = document.getElementById('land_g5_btn1').innerHTML;
     var buttonValue2 = document.getElementById('land_g5_btn2').innerHTML;
     $("#land_g5_btn1").click(function () {
-      document.getElementById("click").innerHTML = buttonValue1;
+      document.getElementById("cloze").innerHTML = buttonValue1;
       $(this).siblings().removeClass("active");
       $(this).addClass("active");
     });
     $("#land_g5_btn2").click(function () {
-      document.getElementById("click").innerHTML = buttonValue2;
+      document.getElementById("cloze").innerHTML = buttonValue2;
       $(this).siblings().removeClass("active");
       $(this).addClass("active");
     });

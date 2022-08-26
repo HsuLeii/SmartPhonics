@@ -1710,6 +1710,62 @@ main .test_area .QA_area .topic_area .answer_area .answer_option:hover {
 main .test_area .QA_area .topic_area .answer_area .answer_option.active {
   border: 1px dashed #d5660d;
   background-color: #d5660d;
+  position: relative;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option.active::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border: 2px dotted #ed710e;
+  border-radius: 10px;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze {
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid #ed710e;
+  background-color: #ed710e;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
+  font-size: 30px;
+  text-align: center;
+  padding: 0 10px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze p.alphabet {
+  width: calc(30px * 1.7);
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area {
+  position: relative;
+  background-color: #f59b53;
+  border: 0px;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area p {
+  background-color: #ed710e;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border: 2px dotted #ed710e;
+  border-radius: 10px;
 }
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option {
@@ -1812,6 +1868,12 @@ main .test_area .leave_next_btn {
   main .test_area .QA_area .topic_area .answer_area.target .answer_option {
     width: calc(40px * 1.7);
   }
+  main .test_area .QA_area .topic_area .answer_cloze p {
+    font-size: 40px;
+  }
+  main .test_area .QA_area .topic_area .answer_cloze p.alphabet {
+    width: calc(40px * 1.7);
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -1857,6 +1919,12 @@ main .test_area .leave_next_btn {
     width: calc(50px * 1.7);
   }
   main .test_area .QA_area .topic_area .answer_area.target .answer_option {
+    width: calc(50px * 1.7);
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
+    font-size: 50px;
+  }
+  main .test_area .QA_area .topic_area .answer_area .answer_cloze p.alphabet {
     width: calc(50px * 1.7);
   }
 }
@@ -2187,14 +2255,6 @@ main .test_end_area {
   margin: 30px auto;
 }
 
-main .test_end_area.land_test_area .test_end_text p {
-  color: #00a29a;
-}
-
-main .test_end_area.land_test_area .test_end_text .sound_icon {
-  background-color: #00a29a;
-}
-
 main .test_end_area .test_end_text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2288,7 +2348,7 @@ main .test_end_area .sky_answer_display_area .sky_answer_selection .sky_answer_b
   border: 1px solid #ed710e;
   border-radius: 10px;
   background-color: #fff;
-  margin: 0px 10px;
+  margin: 0px 0px 0px 10px;
   padding: 5px 15px;
 }
 
@@ -2322,6 +2382,10 @@ main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .
 
 main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
   text-align: left;
+  font-size: 17px;
+}
+
+main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
   font-size: 17px;
 }
 
@@ -2485,6 +2549,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 18px;
   }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
+    font-size: 18px;
+  }
   main .test_end_area.test_end_answer .pick_level_top .page_logo {
     position: relative;
     left: auto;
@@ -2512,6 +2579,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 20px;
   }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
+    font-size: 20px;
+  }
   main .test_end_area.test_end_answer .test_end_page {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2529,6 +2599,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 22px;
   }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
+    font-size: 22px;
+  }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
     width: calc(25% - 20px);
   }
@@ -2536,6 +2609,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 
 @media screen and (min-width: 1400px) {
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
+    font-size: 23px;
+  }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
     font-size: 23px;
   }
 }
