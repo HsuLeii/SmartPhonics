@@ -83,9 +83,9 @@
               </div>
               <div class="sound_button_area">
                 <!-- 試題音檔2遍後加入disabled -->
-                <button class="sound_icon sound_area" disabled>
+                <button class="sound_icon sound_area">
                   <!-- 點選播放class加上"recording_button_animate" -->
-                  <i class="fa-solid fa-volume-high"></i>
+                  <i class="fa-solid fa-volume-high recording_button_animate"></i>
                   <p>請聽題目說明</p>
                 </button>
               </div>
@@ -98,25 +98,24 @@
 
         <div class="topic_area">
           <div class="sound_button_area">
-            <button class="sound_area">
+            <button class="sound_area" disabled>
+              <!-- 點選播放class加上"recording_button_animate" -->
               <!-- 試題音檔2遍後加入disabled -->
-              <i class="fa-solid fa-volume-high recording_button_animate"></i>
+              <i class="fa-solid fa-volume-high"></i>
             </button>
           </div>
 
-          <div class="answer_area">
+          <div class="answer_area target">
 
-            <button id="land_g5_btn1" class="answer_option">
-              <p class="alphabet">
-                a
-              </p>
-            </button>
+            <div class="answer_option drag">
 
-            <button id="land_g5_btn2" class="answer_option">
-              <p class="alphabet">
+            </div>
+
+            <div class="answer_option drag">
+              <p class="alphabet" id="drag2" draggable="true">
                 i
               </p>
-            </button>
+            </div>
 
           </div>
 
@@ -125,8 +124,11 @@
               <p class="alphabet">c</p>
               <!-- 單一字母class加上"alphabet -->
             </div>
-            <div id="click" class="answer_option">
+            <div class="answer_option target">
               <p class="alphabet"></p>
+              <p class="alphabet" id="drag1" draggable="true">
+                a
+              </p>
               <!-- 單一字母class加上"alphabet -->
             </div>
             <div class="answer_option">
@@ -136,23 +138,23 @@
           </div>
         </div>
 
-        <div class="sound_adjustment_area">
+        <div class="sound_adjustment_area sound_disabled">
           <!-- 試題音檔2遍後class加上"sound_disabled" -->
           <button class="sound_icon">
             <i class="fa-solid fa-volume-high icon_volume"></i>
           </button>
           <label for="soundRange" class="form-label"> </label>
-          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" />
+          <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100" disabled />
           <!-- 試題音檔2遍後加入disabled -->
         </div>
 
         <div class="leave_next_btn go_btn_area">
           <button class="finger_btn go_btn">
-            <a href="land_test_animation_g5.html">
+            <a href="land_test_end.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-            <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-            <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
+              <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
+              <i class="fa-solid fa-hand-point-right finger_icon" style="display: block"></i>
           </button>
         </div>
       </div>
@@ -192,30 +194,36 @@
     });
   </script>
 
+  <!-- 拖曳效果 -->
   <script>
-    $(document).ready(function () {
-      if ($('.answer_option').children().length > 1) {
-        // $(".answer_option").removeClass("target");
-        $('.target').attr('draggable', 'false');
+    $(".drag").on({
+      "dragstart": function (event) {
+        event.originalEvent.dataTransfer.setData('text', event.target.id)
+      },
+      "dragend": function () {
+        $(".target").removeClass("active")
       }
-    });
-  </script>
+    })
 
-  <script>
-    var buttonValue1= document.getElementById('land_g5_btn1').innerHTML;
-    var buttonValue2= document.getElementById('land_g5_btn2').innerHTML;
-$("#land_g5_btn1").click(function(){
-	document.getElementById("click").innerHTML = buttonValue1;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
-$("#land_g5_btn2").click(function(){
-	document.getElementById("click").innerHTML = buttonValue2;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
+    $(".target").on({
+      "dragenter": function (event) {
+        event.preventDefault();
+        $(this).addClass("active")
+      },
+      "dragover": function (event) {
+        event.preventDefault();
 
-
+      },
+      "dragleave": function () {
+        $(".target").removeClass("active")
+      },
+      "drop": function (event) {
+        event.preventDefault();
+        // event.stopPropagation(); //停止事件氣泡現象
+        let id = event.originalEvent.dataTransfer.getData('text/plain');
+        $("#" + id).appendTo(event.target);
+      }
+    })
   </script>
 </body>
 

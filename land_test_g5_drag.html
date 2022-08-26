@@ -104,19 +104,19 @@
             </button>
           </div>
 
-          <div class="answer_area">
+          <div class="answer_area target">
 
-            <button id="land_g5_btn1" class="answer_option">
-              <p class="alphabet">
+            <div class="answer_option drag">
+              <p class="alphabet" id="drag1" draggable="true">
                 a
               </p>
-            </button>
+            </div>
 
-            <button id="land_g5_btn2" class="answer_option">
-              <p class="alphabet">
+            <div class="answer_option drag">
+              <p class="alphabet" id="drag2" draggable="true">
                 i
               </p>
-            </button>
+            </div>
 
           </div>
 
@@ -125,7 +125,7 @@
               <p class="alphabet">c</p>
               <!-- 單一字母class加上"alphabet -->
             </div>
-            <div id="click" class="answer_option">
+            <div class="answer_option target drag">
               <p class="alphabet"></p>
               <!-- 單一字母class加上"alphabet -->
             </div>
@@ -192,30 +192,36 @@
     });
   </script>
 
+  <!-- 拖曳效果 -->
   <script>
-    $(document).ready(function () {
-      if ($('.answer_option').children().length > 1) {
-        // $(".answer_option").removeClass("target");
-        $('.target').attr('draggable', 'false');
+    $(".drag").on({
+      "dragstart": function (event) {
+        event.originalEvent.dataTransfer.setData('text', event.target.id)
+      },
+      "dragend": function () {
+        $(".target").removeClass("active")
       }
-    });
-  </script>
+    })
 
-  <script>
-    var buttonValue1= document.getElementById('land_g5_btn1').innerHTML;
-    var buttonValue2= document.getElementById('land_g5_btn2').innerHTML;
-$("#land_g5_btn1").click(function(){
-	document.getElementById("click").innerHTML = buttonValue1;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
-$("#land_g5_btn2").click(function(){
-	document.getElementById("click").innerHTML = buttonValue2;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
+    $(".target").on({
+      "dragenter": function (event) {
+        event.preventDefault();
+        $(this).addClass("active")
+      },
+      "dragover": function (event) {
+        event.preventDefault();
 
-
+      },
+      "dragleave": function () {
+        $(".target").removeClass("active")
+      },
+      "drop": function (event) {
+        event.preventDefault();
+        // event.stopPropagation(); //停止事件氣泡現象
+        let id = event.originalEvent.dataTransfer.getData('text/plain');
+        $("#" + id).appendTo(event.target);
+      }
+    })
   </script>
 </body>
 

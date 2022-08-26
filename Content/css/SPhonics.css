@@ -1708,13 +1708,18 @@ main .test_area .QA_area .topic_area .answer_area .answer_option p:hover {
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option.active {
-  border: 1px dashed #ed710e;
+  border: 0px dashed grey;
+}
+
+main .test_area .QA_area .topic_area .answer_area .answer_option.active p {
+  color: transparent;
+  background-color: grey;
 }
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option {
   width: calc(30px * 1.7);
   background-color: grey;
-  border: 0px solid grey;
+  border: 0px dashed grey;
   cursor: pointer;
 }
 

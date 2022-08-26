@@ -196,7 +196,13 @@ main {
                         }
 
                         &.active {
-                            border: 1px dashed $main_color;
+                            border: 0px dashed $grey;
+                            
+
+                            p{
+                                color: transparent;
+                                background-color: $grey;
+                            }
                         }
                     }
 
@@ -204,7 +210,7 @@ main {
                         .answer_option {
                             width: calc(30px * 1.7);
                             background-color: $grey;
-                            border: 0px solid $grey;
+                            border: 0px dashed $grey;
                             cursor: pointer;
                         }
                     }
