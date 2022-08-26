@@ -125,7 +125,7 @@
               <p class="alphabet">c</p>
               <!-- 單一字母class加上"alphabet -->
             </div>
-            <div class="answer_option target">
+            <div class="answer_option target drag">
               <p class="alphabet"></p>
               <!-- 單一字母class加上"alphabet -->
             </div>
@@ -151,8 +151,8 @@
             <a href="land_test_animation_g5.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-              <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
+            <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
+            <i class="fa-solid fa-hand-point-right finger_icon" style="display: none"></i>
           </button>
         </div>
       </div>
@@ -222,6 +222,15 @@
         $("#" + id).appendTo(event.target);
       }
     })
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      if ($('.answer_option').children().length > 1) {
+        // $(".answer_option").removeClass("target");
+        $('.target').attr('draggable', 'false');
+      }
+    });
   </script>
 </body>
 
