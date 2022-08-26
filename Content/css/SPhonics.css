@@ -2092,13 +2092,13 @@ main .test_area.sky_test_area .QA_area .test_progress {
 }
 
 main .test_area.sky_test_area .QA_area .test_progress .drag-line {
-  width: calc(90% - 100px);
+  width: calc(90% - 70px);
 }
 
 main .test_area.sky_test_area .QA_area .test_progress .quiz_progress {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   margin: 0 auto;
 }
 
@@ -2214,6 +2214,13 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
 }
 
 @media screen and (min-width: 768px) {
+  main .test_area.sky_test_area .QA_area .test_progress .drag-line {
+    width: calc(90% - 100px);
+  }
+  main .test_area.sky_test_area .QA_area .test_progress .quiz_progress {
+    width: 100px;
+    height: 100px;
+  }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content {
     font-size: 40px;
   }
