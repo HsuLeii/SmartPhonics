@@ -1687,7 +1687,8 @@ main .test_area .QA_area .topic_area .answer_area {
 main .test_area .QA_area .topic_area .answer_area .answer_option {
   margin: 10px;
   border-radius: 10px;
-  border: 1px solid #f38d3b;
+  border: 1px solid #f59b53;
+  background-color: #f59b53;
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option p {
@@ -1695,7 +1696,6 @@ main .test_area .QA_area .topic_area .answer_area .answer_option p {
   text-align: center;
   padding: 0 10px;
   border-radius: 10px;
-  background-color: #f38d3b;
   color: #fff;
 }
 
@@ -1703,17 +1703,13 @@ main .test_area .QA_area .topic_area .answer_area .answer_option p.alphabet {
   width: calc(30px * 1.7);
 }
 
-main .test_area .QA_area .topic_area .answer_area .answer_option p:hover {
-  background-color: #ed710e;
+main .test_area .QA_area .topic_area .answer_area .answer_option:hover {
+  background-color: #d5660d;
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option.active {
-  border: 0px dashed grey;
-}
-
-main .test_area .QA_area .topic_area .answer_area .answer_option.active p {
-  color: transparent;
-  background-color: grey;
+  border: 1px dashed #d5660d;
+  background-color: #d5660d;
 }
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option {
