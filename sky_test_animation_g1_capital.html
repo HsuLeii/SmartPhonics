@@ -73,10 +73,11 @@
           <div class="quiz_progress">
             <p id="progress_value" class="quiz_progress_value">20s</p>
             <svg viewBox="-1 -1 35 35">
-                <circle cx="16" cy="16" r="15.9155" class="quiz_progress_background"></circle>
-                <circle cx="16" cy="16" r="15.9155" id="progress_bar" class="quiz_progress_bar" style="stroke-dasharray: 10 100;"></circle>
+              <circle cx="16" cy="16" r="15.9155" class="quiz_progress_background"></circle>
+              <circle cx="16" cy="16" r="15.9155" id="progress_bar" class="quiz_progress_bar"
+                style="stroke-dasharray: 10 100;"></circle>
             </svg>
-        </div>
+          </div>
         </div>
 
         <div class="topic_description_area">
@@ -98,7 +99,7 @@
               </div>
             </div>
             <div class="description_text">
-              <p>請由左至右念出以下全部字母。<br/>
+              <p>請由左至右念出以下全部字母。<br />
                 注意: 若遇到不會唸的字母，可以先跳過喔。
               </p>
             </div>
@@ -109,29 +110,29 @@
           <div class="recording_stop_play_area">
 
             <div class="recording_button_item sky_topic">
-                <p class="recording_button_instructions">
-                    1.看六個大寫英文字母
-                </p>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">K</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">P</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">L</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">Z</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">B</p>
-                </div>
-                <div class="sky_topic_item">
-                    <p class="topic_item_content">I</p>
-                </div>
-                
+              <p class="recording_button_instructions">
+                1.看六個大寫英文字母
+              </p>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">K</p>
               </div>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">P</p>
+              </div>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">L</p>
+              </div>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">Z</p>
+              </div>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">B</p>
+              </div>
+              <div class="sky_topic_item">
+                <p class="topic_item_content">I</p>
+              </div>
+
+            </div>
 
             <div class="recording_button_item">
               <p class="recording_button_instructions">
@@ -141,12 +142,12 @@
                 <!-- 20秒後，加入disabled -->
                 <button class="finger_btn recording_area">
                   <i class="fa-solid fa-microphone-lines recording_button_animate"></i>
-                    <!-- 
+                  <!-- 
                         1.點按錄音按鈕後，學生需在20秒內，一次唸出六個字母名稱。
                         2.10秒後未按下「錄音」鍵在顯示
                         3.點選播放class加上"recording_button_animate"
                      -->
-                     <i class="fa-solid fa-hand-point-right finger_icon" style="display: block;"></i>
+                  <i class="fa-solid fa-hand-point-right finger_icon" style="display: block;"></i>
                 </button>
                 <!-- 20秒後，加入disabled -->
                 <button class="button_text">
@@ -224,18 +225,7 @@
   <script src="Content/js/bootstrap-5.1.1.min.js"></script>
   <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('header').load('header.html');
-    });
-  </script>
-
-  <!-- 顯示登出按鈕 -->
-  <script>
-    $(".nav_name").click(function () {
-      $(".nav_name_menu").toggle();
-    });
-  </script>
+  <script src="Content/js/all.js"></script>
 </body>
 
 </html>

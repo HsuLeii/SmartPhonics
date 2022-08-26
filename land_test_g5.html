@@ -179,49 +179,26 @@
   <script src="Content/js/bootstrap-5.1.1.min.js"></script>
   <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
+  <script src="Content/js/all.js"></script>
+
   <script>
-    $(document).ready(function () {
-      $('header').load('header.html');
+    var buttonValue1 = document.getElementById('land_g5_btn1').innerHTML;
+    var buttonValue2 = document.getElementById('land_g5_btn2').innerHTML;
+    $("#land_g5_btn1").click(function () {
+      document.getElementById("click").innerHTML = buttonValue1;
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
     });
-  </script>
-
-  <!-- 顯示登出按鈕 -->
-  <script>
-    $(".nav_name").click(function () {
-      $(".nav_name_menu").toggle();
+    $("#land_g5_btn2").click(function () {
+      document.getElementById("click").innerHTML = buttonValue2;
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
     });
-  </script>
 
-  <script>
-    $(document).ready(function () {
-      if ($('.answer_option').children().length > 1) {
-        // $(".answer_option").removeClass("target");
-        $('.target').attr('draggable', 'false');
-      }
+    $(".answer_option").click(function () {
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
     });
-  </script>
-
-  <script>
-    var buttonValue1= document.getElementById('land_g5_btn1').innerHTML;
-    var buttonValue2= document.getElementById('land_g5_btn2').innerHTML;
-$("#land_g5_btn1").click(function(){
-	document.getElementById("click").innerHTML = buttonValue1;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
-$("#land_g5_btn2").click(function(){
-	document.getElementById("click").innerHTML = buttonValue2;
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
-
-$(".answer_option").click(function(){
-  $(this).siblings().removeClass("active");
-  $(this).addClass("active");
-});
-
-
-
   </script>
 </body>
 

@@ -34,7 +34,7 @@
     <main>
         <div class="test_end_area test_end_answer">
 
-            
+
 
 
             <div class="sky_answer_display_area">
@@ -50,9 +50,9 @@
                         </p>
                     </button>
                     <button class="sky_answer_btn" onclick="filterSelection('sky_sentence')">
-                    <p>
-                        句子
-                    </p>
+                        <p>
+                            句子
+                        </p>
                     </button>
                 </div>
 
@@ -71,119 +71,119 @@
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Bb</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Cc</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Dd</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Ee</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Ff</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Gg</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Hh</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Ii</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Jj</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Kk</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Ll</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Mm</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Nn</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Oo</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Pp</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Qq</p>
                         <button class="answer_display_icon">
                             <i class="fa-regular fa-face-smile"></i>
                         </button>
                     </div>
-    
+
                     <div class="answer_display_item correct_answer">
                         <p class="answer_display_text">Rr</p>
                         <button class="answer_display_icon">
@@ -414,18 +414,7 @@
     <script src="Content/js/bootstrap-5.1.1.min.js"></script>
     <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('header').load('header.html');
-        });
-    </script>
-
-    <!-- 顯示登出按鈕 -->
-    <script>
-        $(".nav_name").click(function () {
-            $(".nav_name_menu").toggle();
-        });
-    </script>
+    <script src="Content/js/all.js"></script>
 
     <!-- 最終挑戰選擇器 -->
     <script>
@@ -465,13 +454,13 @@
         }
 
         var btns = document.getElementsByClassName("sky_answer_btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
     </script>
 
 </body>

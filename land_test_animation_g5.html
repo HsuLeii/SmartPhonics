@@ -153,8 +153,8 @@
             <a href="land_test_end.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-              <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right finger_icon" style="display: block"></i>
+            <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
+            <i class="fa-solid fa-hand-point-right finger_icon" style="display: block"></i>
           </button>
         </div>
       </div>
@@ -181,50 +181,7 @@
   <script src="Content/js/bootstrap-5.1.1.min.js"></script>
   <script src="Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
-  <script>
-    $(document).ready(function () {
-      $('header').load('header.html');
-    });
-  </script>
-
-  <!-- 顯示登出按鈕 -->
-  <script>
-    $(".nav_name").click(function () {
-      $(".nav_name_menu").toggle();
-    });
-  </script>
-
-  <!-- 拖曳效果 -->
-  <script>
-    $(".drag").on({
-      "dragstart": function (event) {
-        event.originalEvent.dataTransfer.setData('text', event.target.id)
-      },
-      "dragend": function () {
-        $(".target").removeClass("active")
-      }
-    })
-
-    $(".target").on({
-      "dragenter": function (event) {
-        event.preventDefault();
-        $(this).addClass("active")
-      },
-      "dragover": function (event) {
-        event.preventDefault();
-
-      },
-      "dragleave": function () {
-        $(".target").removeClass("active")
-      },
-      "drop": function (event) {
-        event.preventDefault();
-        // event.stopPropagation(); //停止事件氣泡現象
-        let id = event.originalEvent.dataTransfer.getData('text/plain');
-        $("#" + id).appendTo(event.target);
-      }
-    })
-  </script>
+  <script src="Content/js/all.js"></script>
 </body>
 
 </html>
