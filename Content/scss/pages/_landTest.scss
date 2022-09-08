@@ -39,6 +39,9 @@ main {
 
             .test_progress {
                 margin: 0 auto 35px;
+                max-width: 1200px;
+                width: 100%;
+
                 .drag_line {
                     .line {
                         background: $main_color;
@@ -46,8 +49,7 @@ main {
                 }
 
                 .drag_line {
-                    max-width: 1200px;
-                    width: calc(90% - 100px);
+                    width: 100%;
                     height: 10px;
                     background: $white;
                     border-radius: 10px;
@@ -64,14 +66,15 @@ main {
 
             .topic_description_area {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
                 margin: 0 auto 25px;
+                width: 100%;
 
                 .description_avatar {
                     width: 60px;
-                    margin: 0 auto 15px;
+                    margin: 0 5px 15px 0;
                 }
 
                 .description_text_area {
@@ -111,7 +114,6 @@ main {
                                 background-color: $main_color;
                                 border-radius: 50%;
                                 color: $white;
-                                margin: 0 0 0 5px;
                                 position: relative;
                                 padding: 2px 4px;
 
@@ -160,6 +162,7 @@ main {
                     .description_text {
                         width: 100%;
                         margin: 5px auto 0;
+                        text-align: center;
                     }
                 }
             }
@@ -324,14 +327,18 @@ main {
 
                     .description_avatar {
                         width: 100px;
-                        margin: 0 8px;
+                        margin: 0 8px 0 0;
                     }
 
                     .description_text_area {
-                        width: auto;
+                        width: calc(100% - 121px);
                         align-items: flex-start;
                         flex-direction: column;
                         margin: 0 8px;
+
+                        .description_text{
+                            text-align: left;
+                        }
 
                         &::before {
                             border-width: 8px 0px 8px 8px;
@@ -340,10 +347,6 @@ main {
                             border-right: 8px solid $white;
                             border-bottom: 8px solid transparent;
                             border-top: 8px solid transparent;
-                        }
-
-                        .description_text {
-                            width: auto;
                         }
                     }
                 }
@@ -410,22 +413,17 @@ main {
                 width: 55%;
                 padding: 30px 20px;
 
+                .test_progress {
+                    width: 80%
+                }
+
                 .topic_description_area {
                     margin: 0 auto 35px;
+                    width: 80%;
 
                     .description_avatar {
                         width: 100px;
-                        margin: 0 5px;
-                    }
-
-                    .description_text_area {
-                        width: auto;
-                        align-items: flex-start;
-                        flex-direction: column;
-
-                        .description_text {
-                            width: auto;
-                        }
+                        margin: 0 5px 0 0;
                     }
                 }
 

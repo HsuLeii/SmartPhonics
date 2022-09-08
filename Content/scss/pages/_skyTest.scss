@@ -8,15 +8,15 @@ main {
                     display: flex;
                     align-items: center;
 
-                    .drag-line{
-                        width: calc(90% - 70px);
+                    .drag_line{
+                        width: calc(100% - 85px);
                     }
 
                     .quiz_progress{
                         position: relative;
                         width: 70px;
                         height: 70px;
-                        margin: 0 auto;
+                        margin: 0 0 0 15px;
                         .quiz_progress_value{
                             position: absolute;
                             left: 50%;
@@ -64,14 +64,23 @@ main {
                             margin: 10px 0px;
 
                             &.sky_topic{
+                                .recording_button_instructions{
+                                    margin: 0 0 15px;
+                                }
                                 .sky_topic_item{
                                     margin: 15px 5px 0px 5px;
+                                    background-color: $white;
                                     .topic_item_content{
                                         padding: 10px 5px;
-                                        border: 1px solid $main-color;
+                                        border: 2px solid $main-color;
                                         font-size: 30px;
                                         color: $main-color;
                                         line-height: 1;
+
+                                        &.alphabet{
+                                            width: calc(30px * 1 + 20px);
+                                            text-align: center;
+                                        }
 
                                         &.single_word{
                                             font-size: 20px;
@@ -80,6 +89,7 @@ main {
                                     }
                                     &.topic_item_sentence{
                                         width: 100%;
+                                        margin: -2px 5px 0px 5px;
                                         .topic_item_content{
                                             &.sentence{
                                                 font-size: 17px;
@@ -128,13 +138,14 @@ main {
                 .QA_area {
                     .test_progress{
     
-                        .drag-line{
-                            width: calc(90% - 100px);
+                        .drag_line{
+                            width: calc(100% - 125px);
                         }
     
                         .quiz_progress{
                             width: 100px;
                             height: 100px;
+                            margin: 0 0 0 25px;
                         }
                     }
                     .topic_area {
@@ -145,6 +156,11 @@ main {
                                     .sky_topic_item{
                                         .topic_item_content{
                                             font-size: 40px;
+
+                                            &.alphabet{
+                                                width: calc(40px * 1 + 20px);
+                                            }
+
                                             &.single_word{
                                                 font-size: 30px;
                                             }
@@ -181,6 +197,11 @@ main {
                                     .sky_topic_item{
                                         .topic_item_content{
                                             font-size: 50px;
+
+                                            &.alphabet{
+                                                width: calc(50px * 1 + 20px);
+                                            }
+
                                             &.single_word{
                                                 font-size: 40px;
                                             }
