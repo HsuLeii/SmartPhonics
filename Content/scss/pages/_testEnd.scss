@@ -1,6 +1,7 @@
 main {
     .test_end_area {
         margin: 30px auto;
+        position: relative;
 
         .test_end_text {
             display: flex;
@@ -41,7 +42,22 @@ main {
         .gift_box {
             width: 80%;
             margin: 0 auto;
-            max-width: 200px;
+            max-width: 150px;
+        }
+
+        .animal_area{
+            position: relative;
+            transform: translate(0px , -200px);
+            .animal_img{
+                &.animal_one{
+                    left: 50%;
+                    transform: translate(calc(-50% - 200px) , 0px);
+                }
+                &.animal_two{
+                    left: 50%;
+                    transform: translate(calc(-50% + 200px) , 0px);
+                }
+            }
         }
 
         .leave_next_btn {
@@ -281,6 +297,10 @@ main {
                 width: 60%;
                 margin: 40px auto;
                 max-width: 800px;
+            }
+
+            .gift_box {
+                max-width: 200px;
             }
 
             .sky_answer_display_area {

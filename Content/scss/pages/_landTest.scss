@@ -493,15 +493,16 @@ main {
                 width: 80%;
             }
 
-            .animal_area {
-                display: flex;
-                justify-content: space-around;
-                margin: 40px auto 0px;
+            
+        }
+        .animal_area {
+            display: flex;
+            justify-content: space-around;
+            margin: 40px auto 0px;
 
-                .animal_img {
-                    width: 35%;
+            .animal_img {
+                width: 35%;
 
-                }
             }
         }
     }
@@ -509,9 +510,9 @@ main {
 
 @media all and (orientation:landscape) {
     main {
-        .test_area {
             .animal_area {
                 position: absolute;
+                top: 0;
                 width: 100%;
                 height: 100%;
 
@@ -532,6 +533,5 @@ main {
                     }
                 }
             }
-        }
     }
 }
