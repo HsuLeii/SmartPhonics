@@ -2185,7 +2185,7 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence {
@@ -2246,7 +2246,7 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
     width: calc(40px * 1 + 20px);
   }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
-    font-size: 30px;
+    font-size: 18px;
   }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
     font-size: 18px;
@@ -2261,7 +2261,7 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
     width: calc(50px * 1 + 20px);
   }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item .topic_item_content.single_word {
-    font-size: 40px;
+    font-size: 20px;
   }
   main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
     font-size: 20px;
