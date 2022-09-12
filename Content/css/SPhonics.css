@@ -2048,34 +2048,41 @@ main .test_end_area .animal_animation_area .gift_box {
   max-width: 150px;
 }
 
+main .test_end_area .animal_animation_area .animal_area {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .test_end_area .animal_animation_area .animal_area .animal_img {
+  top: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  transform: translate(0%, 0%);
+  width: calc((50% - 100px) / 3);
+  padding: 30px;
+}
+
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
-  left: calc(((20% - 100px) / 4) * 1);
-  transform: translate(0px, 0px);
-  top: 0;
+  transform: translate(0%, 0%);
+  order: 3;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
-  left: calc(((20% - 100px) / 4) * 3 + 15%);
-  transform: translate(0px, 100%);
-  top: 0;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
-  left: calc(((20% - 100px) / 4) * 2);
-  transform: translate(0px, 100%);
-  top: 0;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
-  left: calc(((20% + 100px) / 3) * 1 + 50%);
-  transform: translate(0px, 0%);
-  top: 0;
+  transform: translate(0%, 30%);
+  order: 2;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
-  left: calc(((20% + 100px) / 3) * 2 + 65%);
-  transform: translate(0px, 0%);
-  top: 0;
+  transform: translate(0%, 0%);
+  order: 5;
+}
+
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  transform: translate(0%, 30%);
+  order: 4;
 }
 
 main .test_end_area .leave_next_btn {
