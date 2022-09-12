@@ -2050,16 +2050,19 @@ main .test_end_area .animal_animation_area .gift_box {
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
   left: calc(((20% - 100px) / 3) * 1);
   transform: translate(0px, 0px);
+  top: 0;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
   left: calc(((20% - 100px) / 3) * 2 + 15%);
-  transform: translate(0px, 0px);
+  transform: translate(0px, 100%);
+  top: 0;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
-  left: calc(((20% - 100px) / 3) * 1%);
-  transform: translate(0px, 0px);
+  left: calc(((20% - 100px) / 3) * 1);
+  transform: translate(0px, 100%);
+  top: 0;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img.animal_two {
