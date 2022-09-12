@@ -61,23 +61,82 @@ main {
                     transform: translate(0% , 0%);
                     width: calc((50% - 100px) / 3);
                     padding: 30px;
-                    &:nth-child(1){
+                    &.animal_one{
                         transform: translate(0% , 0%);
                         order: 3;
                     }
-                    &:nth-child(3){
+                    &.animal_three{
                         transform: translate(0% , 30%);
                         order: 2;
                     }
-                    &:nth-child(4){
+                    &.animal_four{
                         transform: translate(0% , 0%);
                         order: 5;
                     }
-                    &:nth-child(2){
+                    &.animal_two{
                         transform: translate(0% , 30%);
                         order: 4;
                     }
                 }
+                &.two{
+                    position: absolute;
+                    .animal_img{
+                        position: absolute;
+                        transform: translate(0% , 0%);
+                        width: 15%;
+                        top: 0;
+                        &.animal_one{
+                            left: calc(((5% - 100px) / 3) * 1);
+                        }
+                        &.animal_two{
+                            left: calc(((5% - 100px) / 3) * 2 + 15%);
+                        }
+                        &.animal_three{
+                            left: calc(((5% - 100px) / 3) * 3 + 30%);
+                        }
+                        &.animal_four{
+                            left: calc(50% + 100px + ((5% - 100px) / 3) * 1 + 0%);
+                        }
+                        &.animal_five{
+                            left: calc(50% + 100px + ((5% - 100px) / 3) * 2 + 15%);
+                        }
+                    }
+                }
+            }
+
+            &.three{
+                position: initial;
+                .animal_area{
+                    position: absolute;
+                    .animal_img{
+                        bottom: 0;
+                        top: auto;
+                        position: absolute;
+                        width: 20%;
+
+                        &.animal_one{
+                            left: calc(40% / 2);
+                            transform: translate(-50%, 0px);
+                        }
+                        &.animal_two{
+                            left: calc(40% / 2 + 20%);
+                            transform: translate(0%, 100%);
+                        }
+                        &.animal_three{
+                            left: calc(40% / 2);
+                            transform: translate(0%, 100%);
+                        }
+                        &.animal_four{
+                            left: calc(40% / 2 + 40%);
+                            transform: translate(0%, 100%);
+                        }
+                        &.animal_five{
+                            left: calc(40% / 2 + 60%);
+                            transform: translate(-50%, 0px);
+                        }
+                    }
+                }
+                
             }
         }
         
