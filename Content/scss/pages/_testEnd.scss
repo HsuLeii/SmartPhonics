@@ -114,23 +114,23 @@ main {
                         position: absolute;
                         width: 20%;
 
-                        &.animal_one{
+                        &:nth-child(1){
                             left: calc(40% / 2);
                             transform: translate(-50%, 0px);
                         }
-                        &.animal_two{
+                        &:nth-child(5){
                             left: calc(40% / 2 + 20%);
                             transform: translate(0%, 100%);
                         }
-                        &.animal_three{
+                        &:nth-child(3){
                             left: calc(40% / 2);
                             transform: translate(0%, 100%);
                         }
-                        &.animal_four{
+                        &:nth-child(4){
                             left: calc(40% / 2 + 40%);
                             transform: translate(0%, 100%);
                         }
-                        &.animal_five{
+                        &:nth-child(2){
                             left: calc(40% / 2 + 60%);
                             transform: translate(-50%, 0px);
                         }

@@ -2131,27 +2131,27 @@ main .test_end_area .animal_animation_area.three .animal_area .animal_img {
   width: 20%;
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img.animal_one {
+main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(1) {
   left: calc(40% / 2);
   transform: translate(-50%, 0px);
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img.animal_two {
+main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(5) {
   left: calc(40% / 2 + 20%);
   transform: translate(0%, 100%);
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img.animal_three {
+main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(3) {
   left: calc(40% / 2);
   transform: translate(0%, 100%);
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img.animal_four {
+main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(4) {
   left: calc(40% / 2 + 40%);
   transform: translate(0%, 100%);
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img.animal_five {
+main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(2) {
   left: calc(40% / 2 + 60%);
   transform: translate(-50%, 0px);
 }
