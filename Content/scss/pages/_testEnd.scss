@@ -50,35 +50,56 @@ main {
                 display: block;
                 margin: 0 auto;
 
-                .animal_img {
-                    bottom: 0;
-                    position: absolute;
-                    width: 25%;
-                    padding: 5px;
-
-                    &:nth-child(1) {
-                        left: calc(25% / 2);
-                        transform: translate(-50%, -100%);
+                &.land_animal_area{
+                    .animal_img {
+                        bottom: 0;
+                        position: absolute;
+                        width: 25%;
+                        padding: 5px;
+    
+                        &:nth-child(1) {
+                            left: calc(25% / 2);
+                            transform: translate(-50%, -100%);
+                        }
+    
+                        &:nth-child(2) {
+                            left: calc(25% / 2 + 75%);
+                            transform: translate(-50%, -100%);
+                        }
+    
+                        &:nth-child(3) {
+                            left: calc(25% / 2);
+                            transform: translate(-25%, 0%);
+                        }
+    
+                        &:nth-child(4) {
+                            left: calc(25% / 2 + 50%);
+                            transform: translate(25%, 0%);
+                        }
+    
+                        &:nth-child(5) {
+                            left: calc(25% / 2 + 25%);
+                            transform: translate(0%, 100%);
+                        }
                     }
-
-                    &:nth-child(2) {
-                        left: calc(25% / 2 + 75%);
-                        transform: translate(-50%, -100%);
-                    }
-
-                    &:nth-child(3) {
-                        left: calc(25% / 2);
-                        transform: translate(-25%, 0%);
-                    }
-
-                    &:nth-child(4) {
-                        left: calc(25% / 2 + 50%);
-                        transform: translate(25%, 0%);
-                    }
-
-                    &:nth-child(5) {
-                        left: calc(25% / 2 + 25%);
-                        transform: translate(0%, 100%);
+                }
+                
+                &.ocean_animal_area{
+                    .animal_img {
+                        bottom: 0;
+                        position: absolute;
+                        width: calc(50% - 75px);
+                        padding: 5px;
+    
+                        &:nth-child(1) {
+                            left: 0;
+                            transform: translate(0%, -50%);
+                        }
+    
+                        &:nth-child(2) {
+                            left: calc(50% + 75px);
+                            transform: translate(0%, -50%);
+                        }
                     }
                 }
             }
@@ -312,23 +333,38 @@ main {
             .animal_animation_area {
     
                 .animal_area {
+
+                    &.land_animal_area{
+                        .animal_img {
     
-                    .animal_img {
-    
-                        &:nth-child(1) {
-                            transform: translate(-50%, -50%);
+                            &:nth-child(1) {
+                                transform: translate(-50%, -50%);
+                            }
+        
+                            &:nth-child(2) {
+                                transform: translate(-50%, -50%);
+                            }
+        
+                            &:nth-child(3) {
+                                transform: translate(-25%, 50%);
+                            }
+        
+                            &:nth-child(4) {
+                                transform: translate(25%, 50%);
+                            }
                         }
+                    }
     
-                        &:nth-child(2) {
-                            transform: translate(-50%, -50%);
-                        }
-    
-                        &:nth-child(3) {
-                            transform: translate(-25%, 50%);
-                        }
-    
-                        &:nth-child(4) {
-                            transform: translate(25%, 50%);
+                    &.ocean_animal_area{
+                        .animal_img {
+                            width: calc(35% - 75px);
+                            &:nth-child(1) {
+                                left: 7.5%;
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(57.5% + 75px);
+                            }
                         }
                     }
                 }
@@ -361,35 +397,38 @@ main {
                 }
 
                 .animal_area {
-    
-                    .animal_img {
-                        width: 20%;
-    
-                        &:nth-child(1) {
-                            left: calc(40% / 2);
-                            transform: translate(-100%, -50%);
-                        }
-    
-                        &:nth-child(2) {
-                            left: calc(40% / 2 + 60%);
-                            transform: translate(0%, -50%);
-                        }
-    
-                        &:nth-child(3) {
-                            left: calc(40% / 2);
-                            transform: translate(-25%, 50%);
-                        }
-    
-                        &:nth-child(4) {
-                            left: calc(40% / 2 + 40%);
-                            transform: translate(25%, 50%);
-                        }
 
-                        &:nth-child(5) {
-                            left: calc(40% / 2 + 20%);
-                            transform: translate(0%, 100%);
+                    &.land_animal_area{
+                        .animal_img {
+                            width: 20%;
+        
+                            &:nth-child(1) {
+                                left: calc(40% / 2);
+                                transform: translate(-100%, -50%);
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(40% / 2 + 60%);
+                                transform: translate(0%, -50%);
+                            }
+        
+                            &:nth-child(3) {
+                                left: calc(40% / 2);
+                                transform: translate(-25%, 50%);
+                            }
+        
+                            &:nth-child(4) {
+                                left: calc(40% / 2 + 40%);
+                                transform: translate(25%, 50%);
+                            }
+    
+                            &:nth-child(5) {
+                                left: calc(40% / 2 + 20%);
+                                transform: translate(0%, 100%);
+                            }
                         }
                     }
+                    
                 }
             }
 
@@ -457,6 +496,21 @@ main {
                 .gift_box {
                     max-width: 200px;
                 }
+
+                .animal_area{
+                    &.ocean_animal_area{
+                        .animal_img {
+                            width: calc(35% - 100px);
+                            &:nth-child(1) {
+                                left: 7.5%;
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(57.5% + 100px);
+                            }
+                        }
+                    }
+                }
             }
 
             .sky_answer_display_area {
@@ -498,33 +552,48 @@ main {
             .animal_animation_area {
 
                 .animal_area {
-    
-                    .animal_img {
-                        width: 18%;
-    
-                        &:nth-child(1) {
-                            left: calc(46% / 2);
-                            transform: translate(-100%, -50%);
-                        }
-    
-                        &:nth-child(2) {
-                            left: calc(46% / 2 + 54%);
-                            transform: translate(0%, -50%);
-                        }
-    
-                        &:nth-child(3) {
-                            left: calc(46% / 2);
-                            transform: translate(-25%, 50%);
-                        }
-    
-                        &:nth-child(4) {
-                            left: calc(46% / 2 + 36%);
-                            transform: translate(25%, 50%);
-                        }
 
-                        &:nth-child(5) {
-                            left: calc(46% / 2 + 18%);
-                            transform: translate(0%, 100%);
+                    &.land_animal_area{
+                        .animal_img {
+                            width: 18%;
+        
+                            &:nth-child(1) {
+                                left: calc(46% / 2);
+                                transform: translate(-100%, -50%);
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(46% / 2 + 54%);
+                                transform: translate(0%, -50%);
+                            }
+        
+                            &:nth-child(3) {
+                                left: calc(46% / 2);
+                                transform: translate(-25%, 50%);
+                            }
+        
+                            &:nth-child(4) {
+                                left: calc(46% / 2 + 36%);
+                                transform: translate(25%, 50%);
+                            }
+    
+                            &:nth-child(5) {
+                                left: calc(46% / 2 + 18%);
+                                transform: translate(0%, 100%);
+                            }
+                        }
+                    }
+
+                    &.ocean_animal_area{
+                        .animal_img {
+                            width: calc(30% - 100px);
+                            &:nth-child(1) {
+                                left: 10%;
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(60% + 100px);
+                            }
                         }
                     }
                 }
@@ -575,32 +644,47 @@ main {
 
                 .animal_area {
 
-                    .animal_img {
-                        width: 15%;
-
-                        &:nth-child(1) {
-                            left: calc(55% / 2);
-                            transform: translate(-100%, 0%);
+                    &.land_animal_area{
+                        .animal_img {
+                            width: 15%;
+    
+                            &:nth-child(1) {
+                                left: calc(55% / 2);
+                                transform: translate(-100%, 0%);
+                            }
+    
+                            &:nth-child(2) {
+                                left: calc(55% / 2 + 45%);
+                                transform: translate(0%, 0%);
+                            }
+    
+                            &:nth-child(3) {
+                                left: calc(55% / 2);
+                                transform: translate(-20%, 100%);
+                            }
+    
+                            &:nth-child(4) {
+                                left: calc(55% / 2 + 30%);
+                                transform: translate(20%, 100%);
+                            }
+    
+                            &:nth-child(5) {
+                                left: calc(55% / 2 + 15%);
+                                transform: translate(0%, 100%);
+                            }
                         }
-
-                        &:nth-child(2) {
-                            left: calc(55% / 2 + 45%);
-                            transform: translate(0%, 0%);
-                        }
-
-                        &:nth-child(3) {
-                            left: calc(55% / 2);
-                            transform: translate(-20%, 100%);
-                        }
-
-                        &:nth-child(4) {
-                            left: calc(55% / 2 + 30%);
-                            transform: translate(20%, 100%);
-                        }
-
-                        &:nth-child(5) {
-                            left: calc(55% / 2 + 15%);
-                            transform: translate(0%, 100%);
+                    }
+                    
+                    &.ocean_animal_area{
+                        .animal_img {
+                            width: calc(25% - 100px);
+                            &:nth-child(1) {
+                                left: 12.5%;
+                            }
+        
+                            &:nth-child(2) {
+                                left: calc(62.5% + 100px);
+                            }
                         }
                     }
                 }

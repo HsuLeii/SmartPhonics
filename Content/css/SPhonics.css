@@ -2049,36 +2049,53 @@ main .test_end_area .animal_animation_area .animal_area {
   margin: 0 auto;
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img {
   bottom: 0;
   position: absolute;
   width: 25%;
   padding: 5px;
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) {
   left: calc(25% / 2);
   transform: translate(-50%, -100%);
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) {
   left: calc(25% / 2 + 75%);
   transform: translate(-50%, -100%);
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) {
   left: calc(25% / 2);
   transform: translate(-25%, 0%);
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) {
   left: calc(25% / 2 + 50%);
   transform: translate(25%, 0%);
 }
 
-main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) {
   left: calc(25% / 2 + 25%);
   transform: translate(0%, 100%);
+}
+
+main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img {
+  bottom: 0;
+  position: absolute;
+  width: calc(50% - 75px);
+  padding: 5px;
+}
+
+main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(1) {
+  left: 0;
+  transform: translate(0%, -50%);
+}
+
+main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(2) {
+  left: calc(50% + 75px);
+  transform: translate(0%, -50%);
 }
 
 main .test_end_area .leave_next_btn {
@@ -2280,17 +2297,26 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 576px) {
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) {
     transform: translate(-50%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) {
     transform: translate(-50%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) {
     transform: translate(-25%, 50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) {
     transform: translate(25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img {
+    width: calc(35% - 75px);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(1) {
+    left: 7.5%;
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(2) {
+    left: calc(57.5% + 75px);
   }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
     width: calc(50% - 20px);
@@ -2306,26 +2332,26 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   main .test_end_area .animal_animation_area .gift_box {
     max-width: 200px;
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img {
     width: 20%;
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) {
     left: calc(40% / 2);
     transform: translate(-100%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) {
     left: calc(40% / 2 + 60%);
     transform: translate(0%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) {
     left: calc(40% / 2);
     transform: translate(-25%, 50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) {
     left: calc(40% / 2 + 40%);
     transform: translate(25%, 50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) {
     left: calc(40% / 2 + 20%);
     transform: translate(0%, 100%);
   }
@@ -2361,6 +2387,15 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   main .test_end_area .animal_animation_area .gift_box {
     max-width: 200px;
   }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img {
+    width: calc(35% - 100px);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(1) {
+    left: 7.5%;
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(2) {
+    left: calc(57.5% + 100px);
+  }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 20px;
   }
@@ -2378,28 +2413,37 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 1200px) {
-  main .test_end_area .animal_animation_area .animal_area .animal_img {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img {
     width: 18%;
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) {
     left: calc(46% / 2);
     transform: translate(-100%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) {
     left: calc(46% / 2 + 54%);
     transform: translate(0%, -50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) {
     left: calc(46% / 2);
     transform: translate(-25%, 50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) {
     left: calc(46% / 2 + 36%);
     transform: translate(25%, 50%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) {
     left: calc(46% / 2 + 18%);
     transform: translate(0%, 100%);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img {
+    width: calc(30% - 100px);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(1) {
+    left: 10%;
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(2) {
+    left: calc(60% + 100px);
   }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 22px;
@@ -2421,28 +2465,37 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
     margin: 0 auto;
     max-width: 150px;
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img {
     width: 15%;
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) {
     left: calc(55% / 2);
     transform: translate(-100%, 0%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) {
     left: calc(55% / 2 + 45%);
     transform: translate(0%, 0%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) {
     left: calc(55% / 2);
     transform: translate(-20%, 100%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) {
     left: calc(55% / 2 + 30%);
     transform: translate(20%, 100%);
   }
-  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+  main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) {
     left: calc(55% / 2 + 15%);
     transform: translate(0%, 100%);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img {
+    width: calc(25% - 100px);
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(1) {
+    left: 12.5%;
+  }
+  main .test_end_area .animal_animation_area .animal_area.ocean_animal_area .animal_img:nth-child(2) {
+    left: calc(62.5% + 100px);
   }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 23px;
