@@ -2079,6 +2079,7 @@ main .test_end_area .animal_animation_area .gift_box {
 main .test_end_area .animal_animation_area .animal_area {
   display: block;
   margin: 0 auto;
+  z-index: -1;
 }
 
 main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img {
