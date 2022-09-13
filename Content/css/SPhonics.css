@@ -2029,17 +2029,13 @@ main .test_end_area .get_avatar_area {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
+  width: 50%;
   margin: 20px auto;
 }
 
 main .test_end_area .get_avatar_area .avatar_img {
   width: 18%;
   margin: 5px 1%;
-}
-
-main .test_end_area .animal_animation_area {
-  position: relative;
 }
 
 main .test_end_area .animal_animation_area .gift_box {
@@ -2049,111 +2045,40 @@ main .test_end_area .animal_animation_area .gift_box {
 }
 
 main .test_end_area .animal_animation_area .animal_area {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: block;
+  margin: 0 auto;
 }
 
 main .test_end_area .animal_animation_area .animal_area .animal_img {
-  top: auto;
-  left: auto;
-  right: auto;
-  position: relative;
-  transform: translate(0%, 0%);
-  width: calc((50% - 100px) / 3);
-  padding: 30px;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img.animal_one {
-  transform: translate(0%, 0%);
-  order: 3;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img.animal_three {
-  transform: translate(0%, 30%);
-  order: 2;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img.animal_four {
-  transform: translate(0%, 0%);
-  order: 5;
-}
-
-main .test_end_area .animal_animation_area .animal_area .animal_img.animal_two {
-  transform: translate(0%, 30%);
-  order: 4;
-}
-
-main .test_end_area .animal_animation_area .animal_area.two {
-  position: absolute;
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img {
-  position: absolute;
-  transform: translate(0%, 0%);
-  width: 15%;
-  top: 0;
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img.animal_one {
-  left: calc(((5% - 100px) / 3) * 1);
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img.animal_two {
-  left: calc(((5% - 100px) / 3) * 2 + 15%);
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img.animal_three {
-  left: calc(((5% - 100px) / 3) * 3 + 30%);
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img.animal_four {
-  left: calc(50% + 100px + ((5% - 100px) / 3) * 1 + 0%);
-}
-
-main .test_end_area .animal_animation_area .animal_area.two .animal_img.animal_five {
-  left: calc(50% + 100px + ((5% - 100px) / 3) * 2 + 15%);
-}
-
-main .test_end_area .animal_animation_area.three {
-  position: initial;
-}
-
-main .test_end_area .animal_animation_area.three .animal_area {
-  position: absolute;
-}
-
-main .test_end_area .animal_animation_area.three .animal_area .animal_img {
   bottom: 0;
-  top: auto;
   position: absolute;
-  width: 15%;
+  width: 25%;
+  padding: 5px;
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(1) {
-  left: calc(55% / 2);
-  transform: translate(-50%, 0px);
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+  left: calc(25% / 2);
+  transform: translate(-50%, -100%);
 }
 
-main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(5) {
-  left: calc(55% / 2 + 15%);
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+  left: calc(25% / 2 + 75%);
+  transform: translate(-50%, -100%);
+}
+
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+  left: calc(25% / 2);
+  transform: translate(-25%, 0%);
+}
+
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+  left: calc(25% / 2 + 50%);
+  transform: translate(25%, 0%);
+}
+
+main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+  left: calc(25% / 2 + 25%);
   transform: translate(0%, 100%);
-}
-
-main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(3) {
-  left: calc(55% / 2);
-  transform: translate(0%, 100%);
-}
-
-main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(4) {
-  left: calc(55% / 2 + 30%);
-  transform: translate(0%, 100%);
-}
-
-main .test_end_area .animal_animation_area.three .animal_area .animal_img:nth-child(2) {
-  left: calc(55% / 2 + 45%);
-  transform: translate(-50%, 0px);
 }
 
 main .test_end_area .leave_next_btn {
@@ -2355,6 +2280,18 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 576px) {
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+    transform: translate(-50%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+    transform: translate(-50%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+    transform: translate(-25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+    transform: translate(25%, 50%);
+  }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
     width: calc(50% - 20px);
   }
@@ -2368,6 +2305,29 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   }
   main .test_end_area .animal_animation_area .gift_box {
     max-width: 200px;
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img {
+    width: 20%;
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+    left: calc(40% / 2);
+    transform: translate(-100%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+    left: calc(40% / 2 + 60%);
+    transform: translate(0%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+    left: calc(40% / 2);
+    transform: translate(-25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+    left: calc(40% / 2 + 40%);
+    transform: translate(25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+    left: calc(40% / 2 + 20%);
+    transform: translate(0%, 100%);
   }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 18px;
@@ -2398,6 +2358,9 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 992px) {
+  main .test_end_area .animal_animation_area .gift_box {
+    max-width: 200px;
+  }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 20px;
   }
@@ -2415,6 +2378,29 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 1200px) {
+  main .test_end_area .animal_animation_area .animal_area .animal_img {
+    width: 18%;
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+    left: calc(46% / 2);
+    transform: translate(-100%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+    left: calc(46% / 2 + 54%);
+    transform: translate(0%, -50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+    left: calc(46% / 2);
+    transform: translate(-25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+    left: calc(46% / 2 + 36%);
+    transform: translate(25%, 50%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+    left: calc(46% / 2 + 18%);
+    transform: translate(0%, 100%);
+  }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 22px;
   }
@@ -2427,6 +2413,37 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
 }
 
 @media screen and (min-width: 1400px) {
+  main .test_end_area .get_avatar_area {
+    width: 45%;
+  }
+  main .test_end_area .animal_animation_area .gift_box {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 150px;
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img {
+    width: 15%;
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(1) {
+    left: calc(55% / 2);
+    transform: translate(-100%, 0%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(2) {
+    left: calc(55% / 2 + 45%);
+    transform: translate(0%, 0%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(3) {
+    left: calc(55% / 2);
+    transform: translate(-20%, 100%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(4) {
+    left: calc(55% / 2 + 30%);
+    transform: translate(20%, 100%);
+  }
+  main .test_end_area .animal_animation_area .animal_area .animal_img:nth-child(5) {
+    left: calc(55% / 2 + 15%);
+    transform: translate(0%, 100%);
+  }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text {
     font-size: 23px;
   }
