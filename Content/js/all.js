@@ -13,3 +13,9 @@ $(".answer_option").click(function () {
     $(this).siblings().removeClass("active");
     $(this).addClass("active");
 });
+
+//朗讀星星
+$(document).ready(function () {
+    $(".get_star").find('i').removeClass( "fa-regular" );
+    $(".get_star").find('i').addClass( "fa-solid" );
+});

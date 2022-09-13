@@ -26,6 +26,30 @@ main {
             }
         }
 
+        .star_rating{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 12.5px 5px;
+
+            .star_area{
+                display: flex;
+                .star_item{
+                    i{
+                        color: $main_color_black;
+                    }
+
+                    &.get_star{
+                        i{
+                            color: $main_color_yellow;
+                        }
+                    }
+                }
+                
+            }
+        }
+
         .get_avatar_area {
             display: flex;
             flex-wrap: wrap;
@@ -155,6 +179,13 @@ main {
             }
 
             .answer_display_area {
+                &.filterDiv {
+                    display: none !important;
+                }
+        
+                &.show {
+                    display: flex !important;
+                }
                 .test_end_text {
                     margin: 0px auto 20px;
                     width: 100%;
@@ -290,6 +321,20 @@ main {
                 padding: 0px 10px;
                 margin: 0 auto;
 
+                .note_area{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .note_icon{
+                        margin: 0px 5px 0px 0px;
+                        i{
+                            color: $main_color_yellow;
+                            font-size: 30px;
+                        }
+                    }
+                }
+
                 .page {
                     display: flex;
                     justify-content: center;
@@ -385,6 +430,9 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .test_end_area {
+            .star_rating{
+                justify-content: flex-end;
+            }
             .get_avatar_area {
                 width: 60%;
                 margin: 40px auto;
@@ -529,10 +577,34 @@ main {
                 }
             }
 
+            
+
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        .test_end_area {
+
             &.test_end_answer {
+                
                 .test_end_page {
                     flex-direction: row;
                     position: relative;
+
+                    .note_area{
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translate(0px, -50%);
+    
+                        .note_icon{
+                            i{
+                                font-size: 25px;
+                            }
+                        }
+                    }
 
                     .leave_next_btn {
                         position: absolute;
@@ -616,6 +688,18 @@ main {
             }
 
             &.test_end_answer {
+
+                .test_end_page {
+
+                    .note_area{
+    
+                        .note_icon{
+                            i{
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
                 .answer_display_area {
                     .answer_display_item {
                         width: calc(25% - 20px);

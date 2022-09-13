@@ -30,7 +30,11 @@ main {
                         color: $main_color_green_70;
                     }
                     .button_level {
-                        background-color: $main_color_green;
+                        background-color: lighten($main_color_green, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_green, 10%);
+                        }
                     }
                 }
 
@@ -52,7 +56,11 @@ main {
                         color: $main_color_blue_70;
                     }
                     .button_level {
-                        background-color: $main_color_blue;
+                        background-color: lighten($main_color_blue, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_blue, 10%);
+                        }
                     }
                 }
 
@@ -74,7 +82,11 @@ main {
                         color: $main_color_red_70;
                     }
                     .button_level {
-                        background-color: $main_color_red;
+                        background-color: lighten($main_color_red, 5%);
+
+                        &.button_try{
+                            background-color: darken($main_color_red, 10%);
+                        }
                     }
                 }
                 .level_name{
