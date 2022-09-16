@@ -16,3 +16,10 @@
 拖曳題型(不知道怎麼設定只能拖曳一個答案，備案點選題型檔案land_test_g5.html)
 5.檔名：land_test_g5_drag.html-拖曳題型
 6..檔名：land_test_animation_g5_drag.html-拖曳動態題型
+
+<head>
+<!-- 之後改成正式網址的連結 -->
+<meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+<meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg"/>
+<meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+</head>
