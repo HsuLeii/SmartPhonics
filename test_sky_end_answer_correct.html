@@ -31,7 +31,7 @@
                             字母
                         </p>
                     </button>
-                    <button class="sky_answer_btn" onclick="filterSelection('sky_word')">
+                    <button class="sky_answer_btn" onclick="filterSelection('sky_word_filter')">
                         <p>
                             單字
                         </p>
@@ -43,337 +43,376 @@
                     </button>
                 </div>
 
-                <div class="answer_display_area filterDiv sky_alphabet">
+                <div class="filterDiv sky_alphabet_filter sky_test_filter">
 
                     <div class="test_end_text">
                         <p>好棒喔，你會說全部字母了!</p>
                         <button class="sound_icon">
                             <i class="fa-solid fa-volume-high"></i>
                         </button>
+                        <div class="fireworks fireworks_left">
+                            <img src="Content/image/photo/fireworks/fireworks_left.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_right">
+                            <img src="Content/image/photo/fireworks/fireworks_right.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_bottom">
+                            <img src="Content/image/photo/fireworks/fireworks_bottom.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Aa</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Bb</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Cc</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Dd</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Ee</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Ff</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Gg</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Hh</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Ii</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Jj</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Kk</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Ll</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Mm</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Nn</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Oo</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Pp</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Qq</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Rr</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
+                    <div class="answer_display_area sky_alphabet">
+                    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Aa</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Bb</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Cc</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Dd</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Ee</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Ff</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Gg</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Hh</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Ii</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Jj</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Kk</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Ll</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Mm</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Nn</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Oo</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Pp</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Qq</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Rr</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
                     </div>
 
                 </div>
-
-                <div class="answer_display_area filterDiv sky_word">
+                
+                <div class="filterDiv sky_word_filter sky_test_filter">
 
                     <div class="test_end_text">
                         <p>好棒喔，你會說全部的單字了。</p>
                         <button class="sound_icon">
                             <i class="fa-solid fa-volume-high"></i>
                         </button>
+                        <div class="fireworks fireworks_left">
+                            <img src="Content/image/photo/fireworks/fireworks_left.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_right">
+                            <img src="Content/image/photo/fireworks/fireworks_right.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_bottom">
+                            <img src="Content/image/photo/fireworks/fireworks_bottom.png" alt="">
+                        </div>
                     </div>
 
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">pick</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
+                    <div class="answer_display_area sky_word">
+                    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">pick</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">cat</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">turn</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">sing</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">cup</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">moon</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">look</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">thin</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">jet</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">fine</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">card</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">write</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">boy</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">draw</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">nose</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">girl</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">phone</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">big</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">cat</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">turn</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">sing</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">cup</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">moon</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">look</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">thin</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">jet</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">fine</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">card</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">write</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">boy</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">draw</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">nose</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">girl</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">phone</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">big</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-regular fa-face-smile"></i>
-                        </button>
-                    </div>
                 </div>
 
-                <div class="answer_display_area filterDiv sky_sentence">
-
+                <div class="filterDiv sky_sentence_filter sky_test_filter">
                     <div class="test_end_text">
                         <p>好棒喔，你會說全部的句子了!</p>
                         <button class="sound_icon">
                             <i class="fa-solid fa-volume-high"></i>
                         </button>
-                    </div>
-
-                    <div class="star_rating">
-                        <p>朗讀流暢度：</p>
-                        <div class="star_area">
-                            <div class="star_item get_star">
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="star_item get_star">
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="star_item get_star">
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="star_item get_star">
-                                <i class="fa-regular fa-star"></i>
-                            </div>
-                            <div class="star_item get_star">
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                        <div class="fireworks fireworks_left">
+                            <img src="Content/image/photo/fireworks/fireworks_left.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_right">
+                            <img src="Content/image/photo/fireworks/fireworks_right.png" alt="">
+                        </div>
+                        <div class="fireworks fireworks_bottom">
+                            <img src="Content/image/photo/fireworks/fireworks_bottom.png" alt="">
                         </div>
                     </div>
 
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Look at the monkeys.</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-solid fa-volume-high"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">They have big mouths.</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-solid fa-volume-high"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">They are hungry.</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-solid fa-volume-high"></i>
-                        </button>
-                    </div>
-
-                    <div class="answer_display_item correct_answer">
-                        <p class="answer_display_text">Listen, the birds are singing.</p>
-                        <button class="answer_display_icon">
-                            <i class="fa-solid fa-volume-high"></i>
-                        </button>
-                    </div>
+                    <div class="answer_display_area sky_sentence">
+                    
+                        <div class="star_rating">
+                            <p>朗讀流暢度：</p>
+                            <div class="star_area">
+                                <div class="star_item get_star">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="star_item get_star">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="star_item get_star">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="star_item get_star">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                                <div class="star_item get_star">
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Look at the monkeys.</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">They have big mouths.</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">They are hungry.</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+    
+                        <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Listen, the birds are singing.</p>
+                            <button class="answer_display_icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button>
+                        </div>
+                    </div
                 </div>
+
+                >
 
             </div>
 

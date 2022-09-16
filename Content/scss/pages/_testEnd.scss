@@ -2,11 +2,24 @@ main {
     .test_end_area {
         margin: 30px auto;
         position: relative;
+        overflow: hidden;
+
+        .sky_test_filter {
+            &.filterDiv {
+                display: none !important;
+            }
+
+            &.show {
+                display: flex !important;
+            }
+        }
+
 
         .test_end_text {
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
 
             p {
                 margin: 0px 5px;
@@ -24,29 +37,53 @@ main {
                     line-height: 1.3;
                 }
             }
+
+            .fireworks {
+                position: absolute;
+                width: 80px;
+                z-index: -1;
+
+                &.fireworks_left {
+                    left: 0;
+                    transform: translate(-100%, 0%);
+                }
+
+                &.fireworks_right {
+                    right: 0;
+                    transform: translate(calc(100% + 0px), -50%);
+                    max-width: 60px;
+                }
+
+                &.fireworks_bottom {
+                    right: 0;
+                    transform: translate(80%, 50%);
+                    max-width: 40px;
+                }
+            }
         }
 
-        .star_rating{
+        .star_rating {
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 12.5px 5px;
 
-            .star_area{
+            .star_area {
                 display: flex;
-                .star_item{
-                    i{
+
+                .star_item {
+                    i {
                         color: $main_color_black;
                     }
 
-                    &.get_star{
-                        i{
+                    &.get_star {
+                        i {
                             color: $main_color_yellow;
                         }
                     }
                 }
-                
+
             }
         }
 
@@ -75,52 +112,52 @@ main {
                 margin: 0 auto;
                 z-index: -1;
 
-                &.land_animal_area{
+                &.land_animal_area {
                     .animal_img {
                         bottom: 0;
                         position: absolute;
                         width: 25%;
                         padding: 5px;
-    
+
                         &:nth-child(1) {
                             left: calc(25% / 2);
                             transform: translate(-50%, -100%);
                         }
-    
+
                         &:nth-child(2) {
                             left: calc(25% / 2 + 75%);
                             transform: translate(-50%, -100%);
                         }
-    
+
                         &:nth-child(3) {
                             left: calc(25% / 2);
                             transform: translate(-25%, 0%);
                         }
-    
+
                         &:nth-child(4) {
                             left: calc(25% / 2 + 50%);
                             transform: translate(25%, 0%);
                         }
-    
+
                         &:nth-child(5) {
                             left: calc(25% / 2 + 25%);
                             transform: translate(0%, 100%);
                         }
                     }
                 }
-                
-                &.ocean_animal_area{
+
+                &.ocean_animal_area {
                     .animal_img {
                         bottom: 0;
                         position: absolute;
                         width: calc(50% - 75px);
                         padding: 5px;
-    
+
                         &:nth-child(1) {
                             left: 0;
                             transform: translate(0%, -50%);
                         }
-    
+
                         &:nth-child(2) {
                             left: calc(50% + 75px);
                             transform: translate(0%, -50%);
@@ -155,12 +192,14 @@ main {
                 width: 80%;
                 max-width: 1200px;
                 margin: 20px auto 0px;
+                display: flex;
+                justify-content: center;
 
                 .sky_answer_btn {
                     border: 1px solid $main-color;
                     border-radius: 10px;
                     background-color: $white;
-                    margin: 0px 0px 0px 10px;
+                    margin: 0px 10px;
                     padding: 5px 15px;
 
                     p {
@@ -179,71 +218,71 @@ main {
                 }
             }
 
-            .answer_display_area {
-                &.filterDiv {
-                    display: none !important;
-                }
-        
-                &.show {
-                    display: flex !important;
-                }
+            .sky_test_filter {
+                flex-direction: column;
+
                 .test_end_text {
-                    margin: 0px auto 20px;
-                    width: 100%;
+                    margin: 20px auto 0px;
                 }
 
-                &.sky_sentence {
-                    .answer_display_item {
-                        width: calc(100% - 20px);
-                        display: flex;
-                        align-items: center;
+                .answer_display_area {
 
-                        .answer_display_text {
-                            text-align: left;
-                            font-size: 17px;
 
-                            span {
-                                font-size: 17px;
-                            }
-                        }
-
-                        .answer_display_icon {
-                            position: relative;
-                            right: auto;
-                            bottom: auto;
-                            margin: 0 10px;
-                            padding: 2px 4px;
-                            border-radius: 50%;
-                        }
-
-                        &.correct_answer {
-
-                            .answer_display_icon {
-                                background-color: $correct_text;
-                                color: $white;
-                            }
-                        }
-
-                        &.wrong_answer {
+                    &.sky_sentence {
+                        .answer_display_item {
+                            width: calc(100% - 20px);
+                            display: flex;
+                            align-items: center;
 
                             .answer_display_text {
-                                span {
-                                    color: $main_color_red;
-                                }
+                                text-align: left;
+                                font-size: 17px;
 
-                                &~.answer_display_icon {
-                                    background-color: $main_color_red;
+                                span {
+                                    font-size: 17px;
                                 }
                             }
 
                             .answer_display_icon {
-                                background-color: $wrong_text;
-                                color: $white;
+                                position: relative;
+                                right: auto;
+                                bottom: auto;
+                                margin: 0 10px;
+                                padding: 2px 4px;
+                                border-radius: 50%;
+                            }
+
+                            &.correct_answer {
+
+                                .answer_display_icon {
+                                    background-color: $correct_text;
+                                    color: $white;
+                                }
+                            }
+
+                            &.wrong_answer {
+
+                                .answer_display_text {
+                                    span {
+                                        color: $main_color_red;
+                                    }
+
+                                    &~.answer_display_icon {
+                                        background-color: $main_color_red;
+                                    }
+                                }
+
+                                .answer_display_icon {
+                                    background-color: $wrong_text;
+                                    color: $white;
+                                }
                             }
                         }
                     }
                 }
             }
+
+
         }
 
         &.test_end_answer {
@@ -322,14 +361,15 @@ main {
                 padding: 0px 10px;
                 margin: 0 auto;
 
-                .note_area{
+                .note_area {
                     display: flex;
                     align-items: center;
                     justify-content: center;
 
-                    .note_icon{
+                    .note_icon {
                         margin: 0px 5px 0px 0px;
-                        i{
+
+                        i {
                             color: $main_color_yellow;
                             font-size: 30px;
                         }
@@ -377,37 +417,38 @@ main {
         .test_end_area {
 
             .animal_animation_area {
-    
+
                 .animal_area {
 
-                    &.land_animal_area{
+                    &.land_animal_area {
                         .animal_img {
-    
+
                             &:nth-child(1) {
                                 transform: translate(-50%, -50%);
                             }
-        
+
                             &:nth-child(2) {
                                 transform: translate(-50%, -50%);
                             }
-        
+
                             &:nth-child(3) {
                                 transform: translate(-25%, 50%);
                             }
-        
+
                             &:nth-child(4) {
                                 transform: translate(25%, 50%);
                             }
                         }
                     }
-    
-                    &.ocean_animal_area{
+
+                    &.ocean_animal_area {
                         .animal_img {
                             width: calc(35% - 75px);
+
                             &:nth-child(1) {
                                 left: 7.5%;
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(57.5% + 75px);
                             }
@@ -431,9 +472,26 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .test_end_area {
-            .star_rating{
+
+            .test_end_text {
+    
+                .fireworks {
+                    width: 120px;
+    
+                    &.fireworks_right {
+                        max-width: 80px;
+                    }
+    
+                    &.fireworks_bottom {
+                        max-width: 60px;
+                    }
+                }
+            }
+
+            .star_rating {
                 justify-content: flex-end;
             }
+
             .get_avatar_area {
                 width: 60%;
                 margin: 40px auto;
@@ -447,41 +505,44 @@ main {
 
                 .animal_area {
 
-                    &.land_animal_area{
+                    &.land_animal_area {
                         .animal_img {
                             width: 20%;
-        
+
                             &:nth-child(1) {
                                 left: calc(40% / 2);
                                 transform: translate(-100%, -50%);
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(40% / 2 + 60%);
                                 transform: translate(0%, -50%);
                             }
-        
+
                             &:nth-child(3) {
                                 left: calc(40% / 2);
                                 transform: translate(-25%, 50%);
                             }
-        
+
                             &:nth-child(4) {
                                 left: calc(40% / 2 + 40%);
                                 transform: translate(25%, 50%);
                             }
-    
+
                             &:nth-child(5) {
                                 left: calc(40% / 2 + 20%);
                                 transform: translate(0%, 100%);
                             }
                         }
                     }
-                    
+
                 }
             }
 
             .sky_answer_display_area {
+                .sky_answer_selection {
+                    justify-content: flex-start;
+                }
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
@@ -546,14 +607,15 @@ main {
                     max-width: 200px;
                 }
 
-                .animal_area{
-                    &.ocean_animal_area{
+                .animal_area {
+                    &.ocean_animal_area {
                         .animal_img {
                             width: calc(35% - 100px);
+
                             &:nth-child(1) {
                                 left: 7.5%;
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(57.5% + 100px);
                             }
@@ -578,7 +640,7 @@ main {
                 }
             }
 
-            
+
 
         }
     }
@@ -589,19 +651,19 @@ main {
         .test_end_area {
 
             &.test_end_answer {
-                
+
                 .test_end_page {
                     flex-direction: row;
                     position: relative;
 
-                    .note_area{
+                    .note_area {
                         position: absolute;
                         left: 0;
                         top: 50%;
                         transform: translate(0px, -50%);
-    
-                        .note_icon{
-                            i{
+
+                        .note_icon {
+                            i {
                                 font-size: 25px;
                             }
                         }
@@ -626,30 +688,30 @@ main {
 
                 .animal_area {
 
-                    &.land_animal_area{
+                    &.land_animal_area {
                         .animal_img {
                             width: 18%;
-        
+
                             &:nth-child(1) {
                                 left: calc(46% / 2);
                                 transform: translate(-100%, -50%);
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(46% / 2 + 54%);
                                 transform: translate(0%, -50%);
                             }
-        
+
                             &:nth-child(3) {
                                 left: calc(46% / 2);
                                 transform: translate(-25%, 50%);
                             }
-        
+
                             &:nth-child(4) {
                                 left: calc(46% / 2 + 36%);
                                 transform: translate(25%, 50%);
                             }
-    
+
                             &:nth-child(5) {
                                 left: calc(46% / 2 + 18%);
                                 transform: translate(0%, 100%);
@@ -657,13 +719,14 @@ main {
                         }
                     }
 
-                    &.ocean_animal_area{
+                    &.ocean_animal_area {
                         .animal_img {
                             width: calc(30% - 100px);
+
                             &:nth-child(1) {
                                 left: 10%;
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(60% + 100px);
                             }
@@ -692,15 +755,16 @@ main {
 
                 .test_end_page {
 
-                    .note_area{
-    
-                        .note_icon{
-                            i{
+                    .note_area {
+
+                        .note_icon {
+                            i {
                                 font-size: 35px;
                             }
                         }
                     }
                 }
+
                 .answer_display_area {
                     .answer_display_item {
                         width: calc(25% - 20px);
@@ -716,7 +780,7 @@ main {
     main {
         .test_end_area {
 
-            .get_avatar_area{
+            .get_avatar_area {
                 width: 45%;
             }
 
@@ -729,44 +793,45 @@ main {
 
                 .animal_area {
 
-                    &.land_animal_area{
+                    &.land_animal_area {
                         .animal_img {
                             width: 15%;
-    
+
                             &:nth-child(1) {
                                 left: calc(55% / 2);
                                 transform: translate(-100%, 0%);
                             }
-    
+
                             &:nth-child(2) {
                                 left: calc(55% / 2 + 45%);
                                 transform: translate(0%, 0%);
                             }
-    
+
                             &:nth-child(3) {
                                 left: calc(55% / 2);
                                 transform: translate(-20%, 100%);
                             }
-    
+
                             &:nth-child(4) {
                                 left: calc(55% / 2 + 30%);
                                 transform: translate(20%, 100%);
                             }
-    
+
                             &:nth-child(5) {
                                 left: calc(55% / 2 + 15%);
                                 transform: translate(0%, 100%);
                             }
                         }
                     }
-                    
-                    &.ocean_animal_area{
+
+                    &.ocean_animal_area {
                         .animal_img {
                             width: calc(25% - 100px);
+
                             &:nth-child(1) {
                                 left: 12.5%;
                             }
-        
+
                             &:nth-child(2) {
                                 left: calc(62.5% + 100px);
                             }
