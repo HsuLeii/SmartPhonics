@@ -3,9 +3,6 @@ main {
         margin: 0px auto;
         padding: 30px 0 0;
         position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
 
         .sky_test_filter {
             &.filterDiv {
@@ -290,6 +287,10 @@ main {
         }
 
         &.test_end_answer {
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+
             .pick_level_top {
                 .page_logo {
                     display: block;
@@ -478,14 +479,14 @@ main {
         .test_end_area {
 
             .test_end_text {
-    
+
                 .fireworks {
                     width: 120px;
-    
+
                     &.fireworks_right {
                         max-width: 80px;
                     }
-    
+
                     &.fireworks_bottom {
                         max-width: 60px;
                     }
@@ -547,6 +548,7 @@ main {
                 .sky_answer_selection {
                     justify-content: flex-start;
                 }
+
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
