@@ -1,8 +1,11 @@
 main {
     .test_end_area {
-        margin: 30px auto;
+        margin: 0px auto;
+        padding: 30px 0 0;
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
 
         .sky_test_filter {
             &.filterDiv {
@@ -20,6 +23,7 @@ main {
             justify-content: center;
             align-items: center;
             position: relative;
+            margin: 0 auto;
 
             p {
                 margin: 0px 5px;
