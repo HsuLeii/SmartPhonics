@@ -181,6 +181,7 @@ main {
                         border-radius: 10px;
                         border: 1px solid lighten($main_color_orange, 15%);
                         background-color: lighten($main_color_orange, 15%);
+                        max-width: 100%;
                         
                         p {
                             font-size: 30px;
@@ -188,11 +189,8 @@ main {
                             padding: 0 10px;
                             border-radius: 10px;
                             color: $white;
-
-                            &.alphabet {
-                                width: calc(30px * 1.7);
-                            }
-
+                            word-wrap: break-word;
+                            min-width: calc(30px * 1.7);
                             
                         }
 
@@ -225,15 +223,14 @@ main {
                         border-radius: 10px;
                         border: 1px solid $main_color;
                         background-color: $main_color;
+                        max-width: 100%;
                         p {
                             font-size: 30px;
                             text-align: center;
                             padding: 0 10px;
                             border-radius: 10px;
                             color: $white;
-                            &.alphabet {
-                                width: calc(30px * 1.7);
-                            }
+                            word-wrap: break-word;
                             
                         }
 
@@ -263,9 +260,6 @@ main {
 
                     &.target {
                         .answer_option {
-                            width: calc(30px * 1.7);
-                            // background-color: $grey;
-                            // border: 0px dashed $grey;
                             cursor: pointer;
                         }
                     }
@@ -367,16 +361,7 @@ main {
                         .answer_option {
                             p {
                                 font-size: 40px;
-
-                                &.alphabet {
-                                    width: calc(40px * 1.7);
-                                }
-                            }
-                        }
-
-                        &.target {
-                            .answer_option {
-                                width: calc(40px * 1.7);
+                                min-width: calc(40px * 1.7);
                             }
                         }
 
@@ -385,9 +370,7 @@ main {
                     .answer_cloze{
                         p {
                             font-size: 40px;
-                                &.alphabet {
-                                    width: calc(40px * 1.7);
-                                }
+                            min-width: calc(40px * 1.7);
                         }
                     }
                 }
@@ -438,26 +421,14 @@ main {
                         .answer_option {
                             p {
                                 font-size: 50px;
-
-                                &.alphabet {
-                                    width: calc(50px * 1.7);
-                                }
-                            }
-                        }
-
-                        &.target {
-                            .answer_option {
-                                width: calc(50px * 1.7);
+                                min-width: calc(50px * 1.7);
                             }
                         }
 
                         .answer_cloze{
                             p {
                                 font-size: 50px;
-
-                                &.alphabet {
-                                    width: calc(50px * 1.7);
-                                }
+                                min-width: calc(50px * 1.7);
                             }
                         }
                     }
