@@ -191,7 +191,6 @@ main {
                             color: $white;
                             word-wrap: break-word;
                             min-width: calc(30px * 1.7);
-                            
                         }
 
                         &:hover {
@@ -231,7 +230,7 @@ main {
                             border-radius: 10px;
                             color: $white;
                             word-wrap: break-word;
-                            
+                            min-width: calc(30px * 1.7);
                         }
 
                         &.answer_cloze_area{

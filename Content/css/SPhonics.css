@@ -1546,6 +1546,7 @@ main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
   border-radius: 10px;
   color: #fff;
   word-wrap: break-word;
+  min-width: calc(30px * 1.7);
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area {
