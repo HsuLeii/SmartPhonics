@@ -1497,6 +1497,8 @@ main .test_area .QA_area .topic_area .answer_area .answer_option {
   border: 1px solid #f59b53;
   background-color: #f59b53;
   max-width: 100%;
+  min-width: calc(30px * 1.7);
+  min-height: calc(30px * 1.7);
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option p {
@@ -1547,6 +1549,7 @@ main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
   color: #fff;
   word-wrap: break-word;
   min-width: calc(30px * 1.7);
+  min-height: calc(30px * 1.7);
 }
 
 main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area {
@@ -1647,6 +1650,10 @@ main .test_area .leave_next_btn {
 }
 
 @media screen and (min-width: 768px) {
+  main .test_area .QA_area .topic_area .answer_area .answer_option {
+    min-width: calc(40px * 1.7);
+    min-height: calc(40px * 1.7);
+  }
   main .test_area .QA_area .topic_area .answer_area .answer_option p {
     font-size: 40px;
     min-width: calc(40px * 1.7);
@@ -1654,6 +1661,7 @@ main .test_area .leave_next_btn {
   main .test_area .QA_area .topic_area .answer_cloze p {
     font-size: 40px;
     min-width: calc(40px * 1.7);
+    min-height: calc(40px * 1.7);
   }
 }
 
@@ -1686,6 +1694,10 @@ main .test_area .leave_next_btn {
   main .test_area .QA_area .topic_area .answer_area {
     margin: 35px auto 0px;
   }
+  main .test_area .QA_area .topic_area .answer_area .answer_option {
+    min-width: calc(50px * 1.7);
+    min-height: calc(50px * 1.7);
+  }
   main .test_area .QA_area .topic_area .answer_area .answer_option p {
     font-size: 50px;
     min-width: calc(50px * 1.7);
@@ -1693,6 +1705,7 @@ main .test_area .leave_next_btn {
   main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
     font-size: 50px;
     min-width: calc(50px * 1.7);
+    min-height: calc(50px * 1.7);
   }
 }
 
