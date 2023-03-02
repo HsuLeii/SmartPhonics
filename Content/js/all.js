@@ -19,3 +19,4 @@ $(document).ready(function () {
     $(".get_star").find('i').removeClass( "fa-regular" );
     $(".get_star").find('i').addClass( "fa-solid" );
 });
+
