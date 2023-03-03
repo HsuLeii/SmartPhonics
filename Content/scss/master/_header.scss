@@ -6,9 +6,10 @@ header {
     padding: 0px 15px;
     position: relative;
     z-index: 3;
+    border-bottom: 1px solid $main_color_orangeLight;
 
     .navbar {
-        padding: 10px 0;
+        padding: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -17,7 +18,7 @@ header {
             margin: 0;
 
             .navbar-brand {
-                padding: 0;
+                padding: 10px 0;
                 img {
                     width: 120px;
                 }
@@ -106,8 +107,8 @@ header {
                 ul {
                     li {
                         &.nav-item {
-
-                            &.active,
+                            
+                            &.nowPage,
                             &:hover {
                                 color: $main_color;
 
@@ -127,7 +128,6 @@ header {
                                 color: $main_color_black;
                                 padding: 5px 10px;
                                 font-size: 16px;
-                                padding: 10px 0;
 
                                 &.dropdown-toggle{
                                     &::after{
@@ -164,6 +164,10 @@ header {
                                         &:hover{
                                             color: $main-color;
                                             background-color:transparent;
+                                        }
+
+                                        &.nowPage{
+                                            color: $main-color;
                                         }
                                     }
                                 }
@@ -260,6 +264,7 @@ header {
         .navbar {
             .container-fluid {
                 .navbar-brand {
+                    padding: 20px 0;
                     img {
                         width: 200px;
                     }
@@ -270,13 +275,12 @@ header {
                     margin: 0;
                     ul {
                         li {
-                            margin: 0 20px ;
+                            margin: 0 10px ;
+                            padding: 10px 0;
                             &.nav-item{
                                 .nav-link {
                                     font-size: 17px;
-                                    padding: 20px 0;
                                 }
-
                                 &.dropdown{
                                     
                                     &:hover{
@@ -294,6 +298,7 @@ header {
                                         display: block;
                                         background-color: $white;
                                         right: 0;
+                                        top: auto;
                                         left: auto;
                                         padding: 10px 5px;
                                         li {
@@ -308,6 +313,10 @@ header {
                                             }
                                         }
                                     }
+                                }
+
+                                &.nowPage{
+                                    border-bottom: 2px solid $main-color;
                                 }
                             }
                         }

@@ -1,4 +1,5 @@
 main {
+    position: relative;
 
     .button-animate {
         animation: btnVariety 2s infinite ease-in-out;
@@ -152,7 +153,7 @@ main {
         }
     }
 
-    &.publicity{
+    .main_publicity{
         width: 80%;
         max-width: 1200px;
         padding: 40px 0;
@@ -161,9 +162,41 @@ main {
             display: flex;
             justify-content: center;
             color: $main_color_black;
+            margin: 0 0 40px;
+        }
+
+        .main_publicity_content{
+            padding: 25px;
+            background-color: $white;
+            border-radius: 5px;
+            @extend %boxShadow;
+
+            &.hide{
+                padding: 0;
+            background-color: transparent;
+            border-radius: 0px;
+            box-shadow: none;
+            }
         }
     }
 
+    
+.shape_area{
+    background-color: #fddfa2;
+    max-height: 20%;
+    height: 500px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+    .shape_svg{
+        transform: translate(0 , -100%);
+        .shape_svg_polygon{
+            fill: #fddfa2;
+
+        }
+    }
+}
 }
 
 @media screen and (min-width: 576px) {}
@@ -190,6 +223,16 @@ main {
 
         .leave_next_btn {
             margin: 50px auto;
+        }
+
+        .main_publicity{
+            .tittle{
+                margin: 0 0 80px;
+            }
+
+            .main_publicity_content{
+                padding: 40px 80px;
+            }
         }
     }
 }

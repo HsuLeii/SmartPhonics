@@ -1,0 +1,96 @@
+main {
+    .main_publicity{
+        .main_publicity_content{
+            .about_content_area{
+                margin: 40px 0;
+                .about_content_item{
+                    margin: 40px 0;
+                    padding: 25px 30px;
+                    display: flex;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    background-color: $white;
+                    border-radius: 5px;
+                    border: 1px solid;
+                    @extend %boxShadow;
+                    .about_content_index{
+                        h4{
+                            font-size: 45px;
+                            padding: 0 15px 0 0;
+                            border-right: 1px solid;    
+                            color: $main-color;
+                        }
+                    }
+        
+                    .about_content_body{
+                        margin: 25px 0 0;
+                        .about_content_tittle{
+                            color: $main-color;
+                        }
+                        .about_content_text{
+                            margin: 15px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    
+}
+
+
+
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .main_publicity{
+            .main_publicity_content{
+                .about_content_area{
+                    .about_content_item{
+                        margin: 60px 0;
+                        align-items: center;
+                        flex-direction: row;
+                        
+                        .about_content_index{
+                            
+                            h4{
+                                font-size: 55px;
+                                padding: 0 25px 0 0;
+                            }
+                        }
+            
+                        .about_content_body{
+                            margin: 0 0 0 25px;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        .main_publicity{
+            .main_publicity_content{
+                .about_content_area{
+                    .about_content_item{
+                        padding: 45px 60px;
+                    }
+                }
+            }
+            
+        }
+
+        
+    }
+}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}
