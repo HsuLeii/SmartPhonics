@@ -264,7 +264,7 @@ header {
         .navbar {
             .container-fluid {
                 .navbar-brand {
-                    padding: 20px 0;
+                    padding: 0;
                     img {
                         width: 200px;
                     }
@@ -276,7 +276,7 @@ header {
                     ul {
                         li {
                             margin: 0 10px ;
-                            padding: 10px 0;
+                            padding: 20px 0;
                             &.nav-item{
                                 .nav-link {
                                     font-size: 17px;
@@ -316,7 +316,7 @@ header {
                                 }
 
                                 &.nowPage{
-                                    border-bottom: 2px solid $main-color;
+                                    border-bottom: 4px solid $main-color;
                                 }
                             }
                         }

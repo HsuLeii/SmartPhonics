@@ -54,11 +54,12 @@
                                 測驗內容
                             </h4>
                             <p class="about_content_text">
-                                以字母拼讀教學理論基礎，針對與閱讀能力具有高度相關的三大英語拼讀能力：字形字音對應能力 (Grapheme-phoneme correspondence)、音素覺識能力 (Phonemic awareness) 和朗讀能力 (Reading fluency) ，設計對應之聽力、發音和朗讀測驗，完整評估學習者的拼讀程度。
+                                以字母拼讀教學理論基礎，針對與閱讀能力具有高度相關的三大英語拼讀能力：字形字音對應能力 (Grapheme-phoneme correspondence)、音素覺識能力
+                                (Phonemic awareness) 和朗讀能力 (Reading fluency) ，設計對應之聽力、發音和朗讀測驗，完整評估學習者的拼讀程度。
                             </p>
                         </div>
                     </div>
-    
+
                     <div class="about_content_item about_border_colorGreen">
                         <div class="about_content_index">
                             <h4 class="about_content_colorGreen">02</h4>
@@ -72,7 +73,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                     <div class="about_content_item about_border_colorRed">
                         <div class="about_content_index">
                             <h4 class="about_content_colorRed">03</h4>
@@ -88,19 +89,16 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="shape_area">
             <svg class="shape_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 300"
                 style="enable-background:new 0 0 1920 300;" xml:space="preserve">
-                <polygon class="shape_svg_polygon" points="1920,300 0,300 0,300 1920,0 " />
+                <path class="shape_svg_polygon" d="M1920,0v300H0C0,300,1578,276.6,1920,0z" />
             </svg>
         </div>
     </main>
-
-
-
 
     <!-- ------- ------- ------- ------- ------- ------- ------- -->
     <footer class="footer"></footer>
@@ -121,11 +119,11 @@
         $(document).ready(function () {
             //nowPage (此頁必留)
 
-
             $('header').load('header.html', function () {
                 $('.navTab-About').addClass('nowPage'); //nowPage
                 $('.dropdown-item_about_test').addClass('nowPage');
             });
+            $("footer").load("footer.html");
         });
     </script>
 

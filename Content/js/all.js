@@ -1,6 +1,5 @@
-//導入header
 $(document).ready(function () {
-    $('header').load('header.html');
+    $("header").load("header.html");
 });
 
 //顯示登出按鈕

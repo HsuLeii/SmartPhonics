@@ -54,11 +54,13 @@
                                 教材架構介紹
                             </h4>
                             <p class="about_content_text">
-                                本教材參閱國立編譯館審定通過之教科書內容，發展10個字母主題，依序包含26個字母、字母發音、長母音、複合子母音(digraphs)、雙子母音(consonant blends)、受R控制的母音(R-controlled vowel)、特殊母發音和字尾s發音。本教材適用任何年齡的英語初學者(尤以英語為外語學習者) ，或欲加強自身英語發音能力者，皆可透過SmartPhonics學習教材學習英語字母知識。
+                                本教材參閱國立編譯館審定通過之教科書內容，發展10個字母主題，依序包含26個字母、字母發音、長母音、複合子母音(digraphs)、雙子母音(consonant
+                                blends)、受R控制的母音(R-controlled vowel)、特殊母發音和字尾s發音。本教材適用任何年齡的英語初學者(尤以英語為外語學習者)
+                                ，或欲加強自身英語發音能力者，皆可透過SmartPhonics學習教材學習英語字母知識。
                             </p>
                         </div>
                     </div>
-    
+
                     <div class="about_content_item about_border_colorGreen">
                         <div class="about_content_index">
                             <h4 class="about_content_colorGreen">02</h4>
@@ -72,7 +74,7 @@
                             </p>
                         </div>
                     </div>
-    
+
                     <div class="about_content_item about_border_colorRed">
                         <div class="about_content_index">
                             <h4 class="about_content_colorRed">03</h4>
@@ -88,19 +90,16 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
 
         <div class="shape_area">
             <svg class="shape_svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 300"
                 style="enable-background:new 0 0 1920 300;" xml:space="preserve">
-                <polygon class="shape_svg_polygon" points="1920,300 0,300 0,300 1920,0 " />
+                <path class="shape_svg_polygon" d="M1920,0v300H0C0,300,1578,276.6,1920,0z" />
             </svg>
         </div>
     </main>
-
-
-
 
     <!-- ------- ------- ------- ------- ------- ------- ------- -->
     <footer class="footer"></footer>
@@ -121,11 +120,11 @@
         $(document).ready(function () {
             //nowPage (此頁必留)
 
-
             $('header').load('header.html', function () {
                 $('.navTab-About').addClass('nowPage'); //nowPage
                 $('.dropdown-item_about_study').addClass('nowPage');
             });
+            $("footer").load("footer.html");
         });
     </script>
 
