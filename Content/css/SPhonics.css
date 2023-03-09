@@ -165,6 +165,11 @@ body {
   text-align: center;
 }
 
+::selection {
+  background: #fff1d4;
+  color: #ed710e;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 32px;
@@ -1080,9 +1085,8 @@ header .nav_name .nav_name_menu:hover:after {
 
 main .login_area {
   background-color: #fff;
-  width: 80%;
   margin: 120px auto;
-  padding: 50px 40px;
+  padding: 50px 20px;
   max-width: 450px;
   position: relative;
   border-radius: 50px;
@@ -1133,6 +1137,63 @@ main .login_area .input-group input.form-control:focus {
   border-color: #ed710e40;
 }
 
+main .login_area .forget_password {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .login_area .forget_password .forget_psw {
+  color: #ed710e;
+}
+
+main .login_area .forget_password .remember_me {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+main .login_area .forget_password .remember_me input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+main .login_area .forget_password .remember_me input:checked ~ .checkmark {
+  background-color: #ed710e;
+}
+
+main .login_area .forget_password .remember_me input:checked ~ .checkmark::after {
+  display: block;
+}
+
+main .login_area .forget_password .remember_me .checkmark {
+  position: relative;
+  top: 0.5em;
+  height: 1em;
+  width: 1em;
+  border: 1px solid #ed710e;
+  transform: translate(0px, -0.2em);
+}
+
+main .login_area .forget_password .remember_me .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+  block-size: 9px;
+  inline-size: 9px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  top: 35%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0px) rotate(-45deg);
+}
+
+main .login_area .forget_password .remember_me p {
+  margin: 0 0 0 5px;
+}
+
 main .login_area .button_login {
   padding: 8px 10px;
   background-color: #ed710e;
@@ -1147,6 +1208,12 @@ main .login_area .button_login {
 @media screen and (min-width: 576px) {
   main .login_area .button_login {
     padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .login_area {
+    padding: 50px 40px;
   }
 }
 
