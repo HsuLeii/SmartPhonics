@@ -1,8 +1,8 @@
 main {
     .test_area {
         width: 100%;
-        height: calc(100% - 64.7px);
-        min-height: calc(100vh - 64.7px);
+        height: calc(100% - 83.58px);
+        min-height: calc(100vh - 83.58px);
         padding: 0px 0px 30px;
         background-position: center;
         background-repeat: no-repeat;
@@ -29,7 +29,7 @@ main {
         }
 
         .QA_area {
-            background-color: $white_50;
+            background-color: $QA_area;
             width: 60%;
             max-width: 800px;
             margin: 0 auto;
@@ -89,7 +89,6 @@ main {
                     position: relative;
                     background-color: $white;
                     border-radius: 10px;
-                    box-shadow: 5px 5px 15px 3px $white_50;
 
                     &::before {
                         content: "";
@@ -179,8 +178,8 @@ main {
                     .answer_option {
                         margin: 10px;
                         border-radius: 10px;
-                        border: 1px solid lighten($main_color_orange, 15%);
-                        background-color: lighten($main_color_orange, 15%);
+                        border: 1px solid $main_color;
+                        background-color: $main_color;
                         max-width: 100%;
                         min-width: calc(30px * 1.7);
                         min-height: calc(30px * 1.7);
@@ -238,7 +237,7 @@ main {
 
                         &.answer_cloze_area{
                             position: relative;
-                            background-color: lighten($main_color_orange, 15%);
+                            background-color: $main_color;
                             border: 0px;
 
                             p {
@@ -315,8 +314,8 @@ main {
 @media screen and (min-width: 576px) {
     main {
         .test_area {
-            height: calc(100% - 77.05px);
-            min-height: calc(100vh - 77.05px);
+            height: calc(100% - 92.05px);
+            min-height: calc(100vh - 92.05px);
 
             .QA_area {
                 .topic_description_area {
@@ -388,8 +387,8 @@ main {
 @media screen and (min-width: 992px) {
     main {
         .test_area {
-            height: calc(100% - 89.81px);
-            min-height: calc(100vh - 89.81px);
+            height: calc(100% - 113.97px);
+            min-height: calc(100vh - 113.97px);
             padding: 0px 0px 40px;
 
             .animal_area {

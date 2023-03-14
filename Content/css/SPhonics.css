@@ -73,7 +73,7 @@ h1 {
 }
 
 h3 {
-  font-size: 21px;
+  font-size: 26px;
   line-height: 1.7;
   font-weight: bold;
 }
@@ -154,7 +154,7 @@ body {
 }
 
 body {
-  background-color: #fff1d4;
+  background-color: #ffe699;
 }
 
 .cursor {
@@ -166,7 +166,7 @@ body {
 }
 
 ::selection {
-  background: #fff1d4;
+  background: #ffe699;
   color: #ed710e;
 }
 
@@ -175,7 +175,7 @@ body {
     font-size: 32px;
   }
   h3 {
-    font-size: 22px;
+    font-size: 27px;
   }
   h4 {
     font-size: 21px;
@@ -202,7 +202,7 @@ body {
     font-size: 35px;
   }
   h3 {
-    font-size: 24px;
+    font-size: 29px;
   }
   h4 {
     font-size: 23px;
@@ -247,7 +247,7 @@ body {
     font-size: 40px;
   }
   h3 {
-    font-size: 28px;
+    font-size: 33px;
   }
   h4 {
     font-size: 27px;
@@ -648,7 +648,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: #F2F2F2;
-  padding: 0px 15px;
+  padding: 10px 15px;
   position: relative;
   z-index: 3;
   border-bottom: 1px solid #f6a96b;
@@ -878,11 +878,14 @@ header .nav_name .nav_name_menu:hover:after {
 }
 
 @media screen and (min-width: 992px) {
+  header {
+    padding: 15px 20px;
+  }
   header .navbar .container-fluid .navbar-brand {
     padding: 0;
   }
   header .navbar .container-fluid .navbar-brand img {
-    width: 200px;
+    width: 260px;
   }
   header .navbar .container-fluid .navbar-collapse {
     justify-content: flex-end;
@@ -1818,8 +1821,8 @@ main .recording_stop_play_area .recording_button_item .sound_button_area .sound_
 
 main .test_area {
   width: 100%;
-  height: calc(100% - 64.7px);
-  min-height: calc(100vh - 64.7px);
+  height: calc(100% - 83.58px);
+  min-height: calc(100vh - 83.58px);
   padding: 0px 0px 30px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1847,7 +1850,7 @@ main .test_area .test_area_bg img {
 }
 
 main .test_area .QA_area {
-  background-color: #ffffff80;
+  background-color: #f2f1f1;
   width: 60%;
   max-width: 800px;
   margin: 0 auto;
@@ -1907,7 +1910,6 @@ main .test_area .QA_area .topic_description_area .description_text_area {
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px 3px #ffffff80;
 }
 
 main .test_area .QA_area .topic_description_area .description_text_area::before {
@@ -1993,8 +1995,8 @@ main .test_area .QA_area .topic_area .answer_area {
 main .test_area .QA_area .topic_area .answer_area .answer_option {
   margin: 10px;
   border-radius: 10px;
-  border: 1px solid #f59b53;
-  background-color: #f59b53;
+  border: 1px solid #ed710e;
+  background-color: #ed710e;
   max-width: 100%;
   min-width: calc(30px * 1.7);
   min-height: calc(30px * 1.7);
@@ -2053,7 +2055,7 @@ main .test_area .QA_area .topic_area .answer_area .answer_cloze p {
 
 main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area {
   position: relative;
-  background-color: #f59b53;
+  background-color: #ed710e;
   border: 0px;
 }
 
@@ -2119,8 +2121,8 @@ main .test_area .leave_next_btn {
 
 @media screen and (min-width: 576px) {
   main .test_area {
-    height: calc(100% - 77.05px);
-    min-height: calc(100vh - 77.05px);
+    height: calc(100% - 92.05px);
+    min-height: calc(100vh - 92.05px);
   }
   main .test_area .QA_area .topic_description_area {
     flex-direction: row;
@@ -2166,8 +2168,8 @@ main .test_area .leave_next_btn {
 
 @media screen and (min-width: 992px) {
   main .test_area {
-    height: calc(100% - 89.81px);
-    min-height: calc(100vh - 89.81px);
+    height: calc(100% - 113.97px);
+    min-height: calc(100vh - 113.97px);
     padding: 0px 0px 40px;
   }
   main .test_area .animal_area .animal_img {
@@ -2420,11 +2422,25 @@ main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .re
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence {
   width: 100%;
-  margin: -2px 5px 0px 5px;
+  margin: 0px 5px;
+  border: 2px solid #ed710e;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence:nth-child(2) {
+  border: 2px solid #ed710e;
+  border-bottom: 0px;
+}
+
+main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence:nth-last-child(1) {
+  border: 2px solid #ed710e;
+  border-top: 0px;
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_button_item.sky_topic .sky_topic_item.topic_item_sentence .topic_item_content.sentence {
   font-size: 17px;
+  border: 0px;
 }
 
 main .test_area.sky_test_area .QA_area .topic_area .recording_stop_play_area .recording_playback_area {
@@ -2526,7 +2542,7 @@ main .test_end_area .test_end_text {
   margin: 0 auto;
 }
 
-main .test_end_area .test_end_text p {
+main .test_end_area .test_end_text h3 {
   margin: 0px 5px;
   color: #ed710e;
 }

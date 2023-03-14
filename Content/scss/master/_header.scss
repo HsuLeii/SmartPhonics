@@ -3,7 +3,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: $header_bg;
-    padding: 0px 15px;
+    padding: 10px 15px;
     position: relative;
     z-index: 3;
     border-bottom: 1px solid $main_color_orangeLight;
@@ -261,12 +261,14 @@ header {
 
 @media screen and (min-width: 992px) {
     header {
+        padding: 15px 20px;
+
         .navbar {
             .container-fluid {
                 .navbar-brand {
                     padding: 0;
                     img {
-                        width: 200px;
+                        width: 260px;
                     }
                 }
 
