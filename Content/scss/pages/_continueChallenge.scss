@@ -60,13 +60,14 @@ main {
                     .item_box_content {
                         text-align: center;
                         &.item_box_content_link{
-                            padding: 5px 10px;
                             background-color: $main-color;
                             border-radius: 10px;
                             width: 100%;
                             margin: 15px auto 0;
                             a{
+                                display: block;
                                 color: $white;
+                                padding: 5px 10px;
                             }
                             &:hover{
                                 background-color: darken($main-color, 5%);

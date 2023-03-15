@@ -3207,7 +3207,6 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
 }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
-  padding: 5px 10px;
   background-color: #ed710e;
   border-radius: 10px;
   width: 100%;
@@ -3215,7 +3214,9 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
 }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a {
+  display: block;
   color: #fff;
+  padding: 5px 10px;
 }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link:hover {
