@@ -3603,10 +3603,11 @@ main .test_area.continue_challenge_area {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 40px auto;
 }
 
 main .test_area.continue_challenge_area .continue_challenge_text {
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 main .test_area.continue_challenge_area .continue_challenge_text h3 {
@@ -3624,7 +3625,8 @@ main .test_area.continue_challenge_area .continue_challenge_text p span {
 }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area {
-  background-color: #f2f1f1;
+  background-color: #fff;
+  border: 1.5px solid #ed710e;
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
@@ -3646,7 +3648,7 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
   border-top: 1px solid #2e3233;
 }
 
-main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(1), main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(2) {
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(1), main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(2), main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(3) {
   border-top: 0;
 }
 
@@ -3695,7 +3697,7 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
 }
 
 @media screen and (min-width: 576px) {
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(2) {
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(3) {
     border-top: 1px solid #2e3233;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
@@ -3724,6 +3726,28 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
+    width: calc(90% - 110px);
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
+    width: calc(90% - 110px);
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
+    width: 110px;
+    margin: 0 auto;
   }
 }
 

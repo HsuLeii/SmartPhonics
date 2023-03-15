@@ -3,9 +3,10 @@ main {
         &.continue_challenge_area {
             display: flex;
             flex-direction: column;
+            margin: 40px auto;
 
             .continue_challenge_text {
-                margin: 40px auto;
+                margin: 20px auto;
 
                 h3 {
                     color: $main-color;
@@ -23,7 +24,8 @@ main {
             }
 
             .continue_challenge_item_area {
-                background-color: $QA_area;
+                background-color: $white;
+                border: 1.5px solid $main-color;
                 width: 80%;
                 max-width: 800px;
                 margin: 0 auto;
@@ -38,7 +40,8 @@ main {
                     padding: 20px 0;
                     border-top: 1px solid $main_color_black;
                     &:nth-child(1),
-                    &:nth-child(2){
+                    &:nth-child(2),
+                    &:nth-child(3){
                         border-top: 0;
                     }
                     &.item_box_title{
@@ -88,7 +91,7 @@ main {
                 .continue_challenge_item_area {
     
                     .item_box {
-                    &:nth-child(2){
+                    &:nth-child(3){
                         border-top: 1px solid $main_color_black;
                     }
                         &.item_box_title{
@@ -122,34 +125,48 @@ main {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    main {
+        .test_area {
+            &.continue_challenge_area {
+    
+                .continue_challenge_item_area {
+    
+                    .item_box {
+                        align-items: center;
+                        &.item_box_title{
+                            width: calc(90% - 110px);
+    justify-content: flex-start;
+    margin: 0;
+                        }
+                        .item_box_content_area{
+                            
+    width: calc(90% - 110px);
+                        }
+                        .item_box_content {
+                            &.item_box_content_link{
+                                width: 110px;
+                                margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 992px) {
-    main {
-        .test_area {}
-    }
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        .test_area {}
-    }
 }
 
 @media screen and (min-width: 1400px) {
-    main {
-        .test_area {}
-    }
 }
 
 @media screen and (orientation:portrait) {
-    main {
-        .test_area {}
-    }
 }
 
 @media all and (orientation:landscape) {
-    main {
-        .test_area {}
-    }
 }
