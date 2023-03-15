@@ -131,8 +131,8 @@ body {
 }
 
 ::selection {
-    background: $body_bg;
-    color: $main-color;
+    background: $main-color;
+    color: $white;
 }
 
 @media screen and (min-width: 576px) {}

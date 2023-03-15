@@ -1,0 +1,154 @@
+main {
+    .test_area {
+        &.continue_challenge_area {
+            display: flex;
+            flex-direction: column;
+
+            .continue_challenge_text {
+                margin: 40px auto;
+
+                h3 {
+                    color: $main-color;
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+
+                    span {
+                        color: $main-color;
+                        font-weight: bold;
+                    }
+                }
+            }
+
+            .continue_challenge_item_area {
+                background-color: $QA_area;
+                width: 80%;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px 5%;
+                border-radius: 10px;
+
+                .item_box {
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    margin: 0 auto;
+                    padding: 20px 0;
+                    border-top: 1px solid $main_color_black;
+                    &:nth-child(1),
+                    &:nth-child(2){
+                        border-top: 0;
+                    }
+                    &.item_box_title{
+                        display: none;
+                    }
+                    .item_box_content_title{
+                        width: 100px;
+                        .item_box_content{
+                            p{
+                                text-align: left;
+                            }
+                        }
+                    }
+                    .item_box_content_area{
+                        display: flex;
+                        flex-direction: column;
+                        width: calc(100% - 100px);
+                    }
+                    .item_box_content {
+                        text-align: center;
+                        &.item_box_content_link{
+                            padding: 5px 10px;
+                            background-color: $main-color;
+                            border-radius: 10px;
+                            width: 100%;
+                            margin: 15px auto 0;
+                            a{
+                                color: $white;
+                            }
+                            &:hover{
+                                background-color: darken($main-color, 5%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        .test_area {
+            &.continue_challenge_area {
+    
+                .continue_challenge_item_area {
+    
+                    .item_box {
+                    &:nth-child(2){
+                        border-top: 1px solid $main_color_black;
+                    }
+                        &.item_box_title{
+                            display: flex;
+                        }
+                        .item_box_content_title{
+                            display: none;
+                        }
+                        .item_box_content_area{
+                            flex-direction: row;
+                            width: 100%;
+                        }
+                        .item_box_content {
+                            &:nth-child(1){
+                                width: 100px;
+                            }
+                            &:nth-child(2){
+                                width: calc(100% - 200px);
+                            }
+                            &:nth-child(3){
+                                width: 100px;
+                            }
+                            &.item_box_content_link{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {}
+
+@media screen and (min-width: 992px) {
+    main {
+        .test_area {}
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .test_area {}
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+        .test_area {}
+    }
+}
+
+@media screen and (orientation:portrait) {
+    main {
+        .test_area {}
+    }
+}
+
+@media all and (orientation:landscape) {
+    main {
+        .test_area {}
+    }
+}

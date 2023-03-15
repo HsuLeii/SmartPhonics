@@ -166,8 +166,8 @@ body {
 }
 
 ::selection {
-  background: #ffe699;
-  color: #ed710e;
+  background: #ed710e;
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -1482,7 +1482,7 @@ main .sound_test_area {
   margin: 0 auto;
   margin: 30px auto;
   padding: 20px 5%;
-  background-color: #ffffff80;
+  background-color: #f2f1f1;
   border-radius: 10px;
 }
 
@@ -3136,6 +3136,117 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn {
   }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span {
     font-size: 23px;
+  }
+}
+
+main .test_area.continue_challenge_area {
+  display: flex;
+  flex-direction: column;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_text {
+  margin: 40px auto;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_text h3 {
+  color: #ed710e;
+  text-align: center;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_text p {
+  text-align: center;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_text p span {
+  color: #ed710e;
+  font-weight: bold;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area {
+  background-color: #f2f1f1;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 5%;
+  border-radius: 10px;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px 0;
+  border-top: 1px solid #2e3233;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(1), main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(2) {
+  border-top: 0;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
+  display: none;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_title {
+  width: 100px;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_title .item_box_content p {
+  text-align: left;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 100px);
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content {
+  text-align: center;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
+  padding: 5px 10px;
+  background-color: #ed710e;
+  border-radius: 10px;
+  width: 100%;
+  margin: 15px auto 0;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a {
+  color: #fff;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link:hover {
+  background-color: #d5660d;
+}
+
+@media screen and (min-width: 576px) {
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:nth-child(2) {
+    border-top: 1px solid #2e3233;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
+    display: flex;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_title {
+    display: none;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
+    flex-direction: row;
+    width: 100%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(1) {
+    width: 100px;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(2) {
+    width: calc(100% - 200px);
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(3) {
+    width: 100px;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
+    width: 100%;
   }
 }
 
