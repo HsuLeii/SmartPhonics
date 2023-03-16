@@ -745,6 +745,10 @@ header .navbar .container-fluid .navbar-toggler:hover .icon-bar {
 
 header .navbar .container-fluid .navbar-collapse {
   justify-content: center;
+  margin: 0;
+}
+
+header .navbar .container-fluid .navbar-collapse ul {
   margin: 40px 0;
 }
 
@@ -899,9 +903,12 @@ header .nav_name .nav_name_menu:hover:after {
     justify-content: flex-end;
     margin: 0;
   }
+  header .navbar .container-fluid .navbar-collapse ul {
+    margin: 0;
+  }
   header .navbar .container-fluid .navbar-collapse ul li {
     margin: 0 10px;
-    padding: 20px 0;
+    padding: 0;
   }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
     font-size: 17px;
@@ -1490,7 +1497,7 @@ main .sound_test_area {
   margin: 0 auto;
   margin: 30px auto;
   padding: 20px 5%;
-  background-color: #f2f1f1;
+  background-color: #f2f1f199;
   border-radius: 10px;
 }
 
@@ -1849,7 +1856,6 @@ main .test_area .test_area_bg {
   top: 0;
   left: 0;
   z-index: -1;
-  filter: saturate(1.5);
 }
 
 main .test_area .test_area_bg img {
@@ -1859,7 +1865,7 @@ main .test_area .test_area_bg img {
 }
 
 main .test_area .QA_area {
-  background-color: #f2f1f1;
+  background-color: #f2f1f199;
   width: 60%;
   max-width: 800px;
   margin: 0 auto;
@@ -2243,7 +2249,6 @@ main .test_area .leave_next_btn {
   }
   main .animal_area .animal_img {
     width: 35%;
-    filter: saturate(1.5);
   }
 }
 

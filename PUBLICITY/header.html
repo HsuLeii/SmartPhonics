@@ -29,10 +29,10 @@
         </li>
         <li class="nav-item dropdown navTab-Lang">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">繁體中文 <i class="fa-solid fa-chevron-down"></i></a>
+            aria-expanded="false"><i class="fa-solid fa-globe"></i> 語言 <i class="fa-solid fa-chevron-down"></i></a>
           <div class="dropdownBg"></div>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">繁體中文</a></li>
+            <li><a class="dropdown-item check" href="#">繁體中文 <i class="fa-regular fa-circle-check"></i></a></li>
             <li><a class="dropdown-item" href="#">简体中文</a></li>
             <li><a class="dropdown-item" href="#">English(U.S.)</a></li>
           </ul>
@@ -48,6 +48,5 @@
   //選單按鈕
   $(".navbar-toggler").click(function () {
     $(this).toggleClass("open");
-    $("body").toggleClass("fixed");
   });
 </script>

@@ -20,7 +20,7 @@ main {
             top: 0;
             left: 0;
             z-index: -1;
-            filter:saturate(1.5);
+            // filter:saturate(1.5);
 
             img {
                 width: 100%;
@@ -484,7 +484,7 @@ main {
 
             .animal_img {
                 width: 35%;
-                filter: saturate(1.5);
+                // filter: saturate(1.5);
 
             }
         }
