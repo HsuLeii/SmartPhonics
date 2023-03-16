@@ -154,7 +154,7 @@ body {
 }
 
 body {
-  background-color: #ffe699;
+  background-color: #EFE8E0;
 }
 
 .cursor {
@@ -647,7 +647,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #F2F2F2;
+  background-color: #EFE8E0;
   padding: 10px 15px;
   position: relative;
   z-index: 3;
