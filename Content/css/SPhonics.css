@@ -3172,7 +3172,7 @@ main .test_area.continue_challenge_area .continue_challenge_item_area {
   width: 80%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px 5%;
+  padding: 40px 5%;
   border-radius: 10px;
 }
 
@@ -3191,6 +3191,10 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
   display: none;
+}
+
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box:hover {
+  background-color: #f6a96b;
 }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_title {
