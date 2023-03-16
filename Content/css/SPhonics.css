@@ -762,7 +762,7 @@ header .navbar .container-fluid .navbar-collapse ul li.nav-item.nowPage p.nav-li
 
 header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
   color: #2e3233;
-  padding: 5px 10px;
+  padding: 15px 10px;
   font-size: 16px;
 }
 
@@ -785,6 +785,10 @@ header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdo
   background-color: transparent;
 }
 
+header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdown-menu li {
+  padding: 0;
+}
+
 header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdown-menu.show {
   display: block;
   opacity: 1;
@@ -802,6 +806,10 @@ header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdo
 }
 
 header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdown-menu .dropdown-item.nowPage {
+  color: #ed710e;
+}
+
+header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdown-menu .dropdown-item.check {
   color: #ed710e;
 }
 
