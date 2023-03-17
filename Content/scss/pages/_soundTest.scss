@@ -2,10 +2,9 @@ main {
     .sound_test_area {
         width: 80%;
         max-width: 1200px;
-        margin: 0 auto;
-        margin: 30px auto;
+        margin: 40px auto;
         padding: 20px 5%;
-        background-color: $QA_area;
+        background-color: $white;
         border-radius: 10px;
 
         .sound_test_text {
@@ -298,6 +297,10 @@ main {
 
 @media screen and (min-width: 992px) {
     main {
+
+        .sound_test_area {
+            margin: 80px auto;
+        }
 
         .sound_button_area,
         .recording_button_area,

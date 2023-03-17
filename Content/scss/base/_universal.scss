@@ -156,7 +156,7 @@ main {
     .main_publicity{
         width: 80%;
         max-width: 1200px;
-        padding: 40px 0;
+        padding: 40px 0 80px;
         margin: 0 auto;
         .tittle{
             display: flex;
@@ -182,9 +182,9 @@ main {
 
     
 .shape_area{
-    background-color: #fddfa2;
+    background-color:$shape_color;
     max-height: 20%;
-    height: 500px;
+    height: 200px;
     position: absolute;
     width: 100%;
     bottom: 0;
@@ -192,11 +192,20 @@ main {
     .shape_svg{
         transform: translate(0 , -100%);
         .shape_svg_polygon{
-            fill: #fddfa2;
+            fill:$shape_color;
 
         }
     }
 }
+}
+.filter13{
+    filter:saturate(1.3);
+}
+.filter14{
+    filter:saturate(1.4);
+}
+.filter15{
+    filter:saturate(1.5);
 }
 
 @media screen and (min-width: 576px) {}
@@ -244,7 +253,7 @@ main {
 
         .pick_level_top {
             width: 100%;
-            margin: 0 auto;
+            margin: 30px auto 0;
             position: relative;
 
             .page_title {
@@ -273,6 +282,10 @@ main {
                     margin: 5px 5px 5px auto;
                 }
             }
+        }
+
+        .main_publicity{
+            padding: 80px 0 120px;
         }
 
     }

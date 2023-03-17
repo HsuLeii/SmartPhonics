@@ -1,7 +1,7 @@
 main {
     .test_end_area {
-        margin: 0px auto;
-        padding: 30px 0 0;
+        margin: 40px auto;
+        padding: 20px 0 0;
         position: relative;
 
         .sky_test_filter {
@@ -20,7 +20,7 @@ main {
             justify-content: center;
             align-items: center;
             position: relative;
-            margin: 0 auto;
+            margin: 40px auto;
 
             h3 {
                 margin: 0px 5px;
@@ -607,7 +607,7 @@ main {
 @media screen and (min-width: 992px) {
     main {
         .test_end_area {
-
+            margin: 80px auto;
             .animal_animation_area {
                 .gift_box {
                     max-width: 200px;

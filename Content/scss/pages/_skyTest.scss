@@ -71,7 +71,7 @@ main {
                                     margin: 15px 5px 0px 5px;
                                     background-color: $white;
                                     .topic_item_content{
-                                        padding: 10px 5px;
+                                        padding: 15px 10px;
                                         border: 2px solid $main-color;
                                         font-size: 30px;
                                         color: $main-color;
@@ -209,6 +209,7 @@ main {
                                 &.sky_topic{
                                     .sky_topic_item{
                                         .topic_item_content{
+                                            padding: 20px 15px;
                                             font-size: 50px;
 
                                             &.alphabet{

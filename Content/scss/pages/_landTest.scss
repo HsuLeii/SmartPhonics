@@ -484,7 +484,6 @@ main {
 
             .animal_img {
                 width: 35%;
-                // filter: saturate(1.5);
 
             }
         }
@@ -503,7 +502,6 @@ main {
                     position: absolute;
                     width: 15%;
                     transform: translate(0%, -50%);
-                    filter: saturate(1.5);
 
                     &.animal_one {
                         left: 2.5%;
