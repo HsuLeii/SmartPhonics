@@ -6,7 +6,7 @@ main {
         max-width: 450px;
         position: relative;
         border-radius: 50px;
-        box-shadow: 5px 5px 10px 3px $main_color_40;
+        @extend %boxShadow;
         border-color: $main_color_40;
 
         .login_title {
@@ -62,6 +62,9 @@ main {
 
             .forget_psw {
                 color: $main-color;
+                &:hover{
+                    border-bottom: 1px solid $main-color;
+                }
             }
 
             .remember_me {

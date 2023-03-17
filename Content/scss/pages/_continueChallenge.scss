@@ -11,6 +11,7 @@ main {
                 h3 {
                     color: $main-color;
                     text-align: center;
+                    margin: 0 0 20px;
                 }
 
                 p {
@@ -27,57 +28,125 @@ main {
                 background-color: $white;
                 border: 1.5px solid $main-color;
                 width: 80%;
-                max-width: 800px;
+                max-width: 1200px;
                 margin: 0 auto;
                 padding: 40px 5%;
                 border-radius: 10px;
+                @extend %boxShadow;
+
 
                 .item_box {
                     display: flex;
                     align-items: flex-start;
                     flex-wrap: wrap;
                     margin: 0 auto;
-                    padding: 20px 0;
+                    padding: 20px 10px;
                     border-top: 1px solid $main_color_black;
+
                     &:nth-child(1),
                     &:nth-child(2),
-                    &:nth-child(3){
+                    &:nth-child(3) {
                         border-top: 0;
                     }
-                    &.item_box_title{
-                        display: none;
-                    }
 
-                    &:hover{
-                        background-color: $main_color_orangeLight;
-                    }
-                    .item_box_content_title{
-                        width: 100px;
-                        .item_box_content{
-                            p{
-                                text-align: left;
-                            }
+                    &.item_box_title {
+                        display: none;
+
+                        &:hover {
+                            background-color: transparent;
                         }
                     }
-                    .item_box_content_area{
+
+                    &:hover {
+                        background-color: $body_bg;
+                    }
+
+                    .item_box_content_area {
                         display: flex;
                         flex-direction: column;
-                        width: calc(100% - 100px);
+                        width: 100%;
                     }
+
                     .item_box_content {
+                        display: flex;
+                        align-items: center;
                         text-align: center;
-                        &.item_box_content_link{
-                            background-color: $main-color;
-                            border-radius: 10px;
+                        margin: 10px 0;
+
+                        &.item_box_content_link {
                             width: 100%;
                             margin: 15px auto 0;
-                            a{
+
+                            a {
                                 display: block;
                                 color: $white;
-                                padding: 5px 10px;
+                                background-color: $main-color;
+                                border-radius: 10px;    
+                                padding: 10px 20px;
+                                width: auto;
                             }
-                            &:hover{
-                                background-color: darken($main-color, 5%);
+
+                            &:hover {
+                                a{
+                                    background-color: darken($main-color, 5%);
+                                }
+                            }
+                        }
+
+                        .quiz_progress {
+                            position: relative;
+                            width: 70px;
+                            height: 70px;
+                            margin: 0 auto;
+
+                            .quiz_progress_value {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);
+                            }
+
+                            svg {
+                                position: absolute;
+                                width: 100%;
+                                z-index: 1;
+                                left: 50%;
+                                top: 50%;
+                                -webkit-transform: translate(-50%, -50%) rotate(-90deg);
+                                transform: translate(-50%, -50%) rotate(-90deg);
+                                overflow: initial;
+
+                                .quiz_progress_background {
+                                    fill: none;
+                                    stroke: $main_color_orangeLight;
+                                    stroke-width: 3px;
+                                }
+
+                                .quiz_progress_bar {
+                                    fill: none;
+                                    stroke: $main-color;
+                                    stroke-dasharray: 100 100;
+                                    stroke-dashoffset: 100;
+                                    stroke-dashoffset: 0px;
+                                    stroke-linecap: round;
+                                    stroke-width: 3px;
+                                    -webkit-transition: stroke-dashoffset 1s ease-in-out;
+                                    transition: stroke-dashoffset 1s ease-in-out;
+                                }
+                            }
+                        }
+
+                        .item_box_content_tittle {
+                            width: 100px;
+                            text-align: left;
+                        }
+
+                        .item_box_content_data {
+                            width: calc(100% - 100px);
+
+                            p {
+                                text-align: center;
                             }
                         }
                     }
@@ -91,34 +160,48 @@ main {
     main {
         .test_area {
             &.continue_challenge_area {
-    
+
                 .continue_challenge_item_area {
-    
+
                     .item_box {
-                    &:nth-child(3){
-                        border-top: 1px solid $main_color_black;
-                    }
-                        &.item_box_title{
+                        &:nth-child(3) {
+                            border-top: 1px solid $main_color_black;
+                        }
+
+                        &.item_box_title {
                             display: flex;
                         }
-                        .item_box_content_title{
-                            display: none;
-                        }
-                        .item_box_content_area{
+
+                        .item_box_content_area {
                             flex-direction: row;
                             width: 100%;
                         }
+
                         .item_box_content {
-                            &:nth-child(1){
+                            justify-content: center;
+                            margin: 0;
+
+                            &:nth-child(1) {
                                 width: 100px;
                             }
-                            &:nth-child(2){
+
+                            &:nth-child(2) {
                                 width: calc(100% - 200px);
                             }
-                            &:nth-child(3){
+
+                            &:nth-child(3) {
                                 width: 100px;
                             }
-                            &.item_box_content_link{
+
+                            &.item_box_content_link {
+                                width: 100%;
+                            }
+
+                            .item_box_content_tittle {
+                                display: none;
+                            }
+
+                            .item_box_content_data {
                                 width: 100%;
                             }
                         }
@@ -129,28 +212,37 @@ main {
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
     main {
         .test_area {
             &.continue_challenge_area {
-    
+
                 .continue_challenge_item_area {
-    
+
                     .item_box {
                         align-items: center;
-                        &.item_box_title{
+
+                        &.item_box_title {
                             width: calc(90% - 110px);
-    justify-content: flex-start;
-    margin: 0;
+                            justify-content: flex-start;
+                            margin: 0;
                         }
-                        .item_box_content_area{
-                            
-    width: calc(90% - 110px);
+
+                        .item_box_content_area {
+                            width: calc(90% - 110px);
                         }
+
                         .item_box_content {
-                            &.item_box_content_link{
+                            margin: 0;
+
+                            &.item_box_content_link {
                                 width: 110px;
                                 margin: 0 auto;
+                            }
+
+                            .quiz_progress {
+                                width: 90px;
+                                height: 90px;
                             }
                         }
                     }
@@ -160,17 +252,75 @@ main {
     }
 }
 
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 1024px) {
+    main {
+        .test_area {
+            &.continue_challenge_area {
 
-@media screen and (min-width: 1200px) {
+                .continue_challenge_item_area {
+
+                    .item_box {
+
+                        &.item_box_title {
+                            width: auto;
+                        }
+
+                        .item_box_content_area {
+                            width: auto;
+                        }
+                        .item_box_content {
+
+                            &:nth-child(2) {
+                                width: 200px;
+                            }
+
+                            &:nth-child(3) {
+                                width: 200px;
+                            }
+
+                            &.item_box_content_link {
+                                width: calc(100% - 520px);
+                                a{
+                                    width: auto;
+                                    padding: 10px 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
+    main {
+        .test_area {
+            &.continue_challenge_area {
+
+                .continue_challenge_item_area {
+
+                    .item_box {
+                        justify-content: center;
+
+                        &.item_box_title {
+                            margin: 0 350px 0 0;
+                            justify-content: center;
+                        }
+                        .item_box_content {
+                            &.item_box_content_link {
+                                width: 350px;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-@media screen and (orientation:portrait) {
-}
 
-@media all and (orientation:landscape) {
-}
+@media screen and (orientation:portrait) {}
+
+@media all and (orientation:landscape) {}
