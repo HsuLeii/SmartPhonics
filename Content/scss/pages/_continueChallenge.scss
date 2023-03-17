@@ -83,7 +83,7 @@ main {
                                 background-color: $main-color;
                                 border-radius: 10px;    
                                 padding: 10px 20px;
-                                width: auto;
+                                width: 100%;
                             }
 
                             &:hover {
@@ -195,6 +195,9 @@ main {
 
                             &.item_box_content_link {
                                 width: 100%;
+                                a{
+                                    width: auto;
+                                }
                             }
 
                             .item_box_content_tittle {

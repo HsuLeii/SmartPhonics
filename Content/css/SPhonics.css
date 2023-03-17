@@ -1033,7 +1033,7 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link { width: 100%; margin: 15px auto 0; }
 
-main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a { display: block; color: #fff; background-color: #ed710e; border-radius: 10px; padding: 10px 20px; width: auto; }
+main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a { display: block; color: #fff; background-color: #ed710e; border-radius: 10px; padding: 10px 20px; width: 100%; }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link:hover a { background-color: #d5660d; }
 
@@ -1061,6 +1061,7 @@ main .test_area.continue_challenge_area .continue_challenge_item_area .item_box 
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(2) { width: calc(100% - 200px); }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(3) { width: 100px; }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link { width: 100%; }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a { width: auto; }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content .item_box_content_tittle { display: none; }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content .item_box_content_data { width: 100%; } }
 
