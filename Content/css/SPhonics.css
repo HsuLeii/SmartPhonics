@@ -1111,7 +1111,7 @@ main .level_selection_area .level_selection_item_area:hover .level_selection_ite
 
 main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name h4 { color: #fff; }
 
-@media screen and (min-width: 768px) { main .level_selection_area { width: 100%; flex-direction: row; justify-content: center; align-items: center; margin: 0; }
+@media screen and (min-width: 768px) { main .level_selection_area { width: 100%; flex-direction: row; justify-content: space-around; align-items: center; margin: 0; }
   main .level_selection_area .level_selection_item_area { width: 40%; } }
 
 main .main_publicity .main_publicity_content .item_question_selection { border-bottom: 1px solid #2e3233; padding: 0 0 20px; }

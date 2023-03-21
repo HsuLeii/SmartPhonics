@@ -66,19 +66,11 @@ main {
         .level_selection_area{
             width: 100%;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             margin: 0;
             .level_selection_item_area{
                 width: 40%;
-    
-                .level_selection_item_content{
-                    .level_selection_item_name{
-                    }
-    
-                    .level_selection_item_animal{
-                    }
-                }
             }
         }
     }
