@@ -1,0 +1,101 @@
+main {
+    .level_selection_area{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0 0;
+        .level_selection_item_area{
+
+            .level_selection_item_content{
+                width: 80%;
+                margin: 30px auto;
+                .level_selection_item_name{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    padding: 10px;
+                    position: relative;
+                    background-color: $white;
+                    border-radius: 10px;
+                    margin: 0 0 30px;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        border-width: 0px 8px 8px 8px;
+                        bottom: -8px;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-top: 8px solid $white;
+                    }
+
+                    h4{
+                        color: $main_color_black;
+                    }
+                }
+
+                .level_selection_item_animal{
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+
+            &:hover{
+                .level_selection_item_content{
+                    .level_selection_item_name{
+
+                        background-color: $main_color;
+
+                    &::before{
+                        border-top: 8px solid $main_color;
+                    }
+    
+                        h4{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .level_selection_area{
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            .level_selection_item_area{
+                width: 40%;
+    
+                .level_selection_item_content{
+                    .level_selection_item_name{
+                    }
+    
+                    .level_selection_item_animal{
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    main {
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+    }
+}
