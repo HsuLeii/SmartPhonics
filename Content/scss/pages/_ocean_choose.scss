@@ -18,16 +18,16 @@ main {
                     position: relative;
                     background-color: $white;
                     border-radius: 10px;
-                    margin: 0 0 30px;
+                    margin: 30px 0 0;
 
                     &::before{
                         content: "";
                         position: absolute;
                         border-width: 0px 8px 8px 8px;
-                        bottom: -8px;
+                        top: -8px;
                         border-left: 8px solid transparent;
                         border-right: 8px solid transparent;
-                        border-top: 8px solid $white;
+                        border-bottom: 8px solid $white;
                     }
 
                     h4{
@@ -48,7 +48,7 @@ main {
                         background-color: $main_color;
 
                     &::before{
-                        border-top: 8px solid $main_color;
+                        border-bottom: 8px solid $main_color;
                     }
     
                         h4{

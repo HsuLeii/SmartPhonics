@@ -1097,9 +1097,9 @@ main .level_selection_area { display: flex; flex-direction: column; margin: 20px
 
 main .level_selection_area .level_selection_item_area .level_selection_item_content { width: 80%; margin: 30px auto; }
 
-main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name { width: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; padding: 10px; position: relative; background-color: #fff; border-radius: 10px; margin: 0 0 30px; }
+main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name { width: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; padding: 10px; position: relative; background-color: #fff; border-radius: 10px; margin: 30px 0 0; }
 
-main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name::before { content: ""; position: absolute; border-width: 0px 8px 8px 8px; bottom: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 8px solid #fff; }
+main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name::before { content: ""; position: absolute; border-width: 0px 8px 8px 8px; top: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #fff; }
 
 main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name h4 { color: #2e3233; }
 
@@ -1107,7 +1107,7 @@ main .level_selection_area .level_selection_item_area .level_selection_item_cont
 
 main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name { background-color: #ed710e; }
 
-main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name::before { border-top: 8px solid #ed710e; }
+main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name::before { border-bottom: 8px solid #ed710e; }
 
 main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name h4 { color: #fff; }
 
