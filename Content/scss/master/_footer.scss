@@ -1,7 +1,15 @@
 .footer{
     padding: 40px 10%;
-    border-top: 5px solid $main-color;
     background-color: $main_color_black;
+    position: relative;
+
+    .footer_decorate{
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(0 , -100%);
+        fill: $main_color_black;
+    }
 
     .footer_area{
         display: flex;
@@ -61,6 +69,12 @@
                 color: $white;
             }
         }
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        background-image: url(../../Content/image/photo/section-parts02.svg);
     }
 }
 @media screen and (min-width: 576px){

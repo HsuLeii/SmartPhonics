@@ -154,15 +154,15 @@ main {
     }
 
     .main_publicity{
-        width: 80%;
-        max-width: 1200px;
         padding: 40px 0 80px;
         margin: 0 auto;
         .tittle{
+            max-width: 1200px;
+            width: 80%;
             display: flex;
             justify-content: center;
             color: $main_color_black;
-            margin: 0 0 40px;
+            margin: 0 auto 40px;
         }
 
         .main_publicity_content{
@@ -176,6 +176,20 @@ main {
             background-color: transparent;
             border-radius: 0px;
             box-shadow: none;
+            }
+
+            .main_section{
+                margin: 80px 0;
+
+                &.body_bg_two{
+                    padding: 40px 0;
+                    background-color: $body_bg_two;
+                }
+                .main_section_area{
+                    max-width: 1200px;
+                    width: 80%;
+                    margin: 0 auto;
+                }
             }
         }
     }
@@ -195,6 +209,19 @@ main {
             fill:$shape_color;
 
         }
+    }
+}
+
+.title_dot{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        transform: translate(0px, 10px);
+        background-image: url(../../Content/image/photo/title_dot.svg);
+        width: 50px;
+        height: 7px;
     }
 }
 }
@@ -236,7 +263,7 @@ main {
 
         .main_publicity{
             .tittle{
-                margin: 0 0 80px;
+                margin: 0 auto 80px;
             }
 
             .main_publicity_content{
@@ -285,7 +312,18 @@ main {
         }
 
         .main_publicity{
-            padding: 80px 0 120px;
+            padding: 120px 0 160px;
+
+            .main_publicity_content{
+    
+                .main_section{
+                    margin: 120px 0;
+
+                    &.body_bg_two{
+                        padding: 80px 0;
+                    }
+                }
+            }
         }
 
     }
