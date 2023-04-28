@@ -1186,7 +1186,7 @@ main .main_publicity .main_publicity_content .contact_box { padding: 20px 40px; 
 
 main .main_publicity .main_publicity_content .contact_box p { text-align: center; }
 
-main .main_publicity .main_publicity_content .contact_box .login_button { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 50px; border-radius: 30px; margin: 20px auto 0; background-color: #ed710e; transition: opacity 390ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+main .main_publicity .main_publicity_content .contact_box .login_button { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 50px; border-radius: 30px; margin: 20px auto 0; background-color: #ed710e; border: 1.5px solid #ed710e; transition: opacity 390ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 main .main_publicity .main_publicity_content .contact_box .login_button .login_button_icon { position: absolute; left: 14px; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; background-color: #fff; color: #ed710e; border-radius: 50%; }
 
