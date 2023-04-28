@@ -231,7 +231,7 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; transform: 
   main .pick_level_top .avatar_area { margin: 0px 5px; order: 2; max-width: 250px; position: absolute; top: 0; right: 5px; }
   main .pick_level_top .avatar_area .avatar_img { width: calc(20% - 10px); margin: 7px 5px; }
   main .pick_level_top .avatar_area.pick_level_avatar_area { position: relative; margin: 5px 5px 5px auto; }
-  main .main_publicity { padding: 120px 0 160px; }
+  main .main_publicity { padding: 80px 0 120px; }
   main .main_publicity .main_publicity_content .main_section { margin: 120px 0; }
   main .main_publicity .main_publicity_content .main_section.body_bg_two { padding: 80px 0; } }
 
