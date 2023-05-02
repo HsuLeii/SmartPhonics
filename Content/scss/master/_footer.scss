@@ -1,15 +1,15 @@
 .footer{
     padding: 40px 10%;
-    background-color: $main_color_black;
+    background-color: $footer_bg;
     position: relative;
 
-    .footer_decorate{
-        position: absolute;
-        left: 0;
-        top: 0;
-        transform: translate(0 , -100%);
-        fill: $main_color_black;
-    }
+    // .footer_decorate{
+    //     position: absolute;
+    //     left: 0;
+    //     top: 0;
+    //     transform: translate(0 , -100%);
+    //     fill: $footer_bg;
+    // }
 
     .footer_area{
         display: flex;

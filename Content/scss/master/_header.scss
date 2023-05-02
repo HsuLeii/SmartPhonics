@@ -8,6 +8,12 @@ header {
     z-index: 3;
     border-bottom: 2px solid $main_color_orangeLight;
 
+    .header_decorate{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        fill: $header_bg;
+    }
     .navbar {
         padding: 0;
         width: 100%;
@@ -324,10 +330,6 @@ header {
                                             }
                                         }
                                     }
-                                }
-
-                                &.nowPage{
-                                    border-bottom: 4px solid $main-color;
                                 }
                             }
                         }

@@ -218,12 +218,21 @@ main {
         content: "";
         position: absolute;
         bottom: 0;
-        transform: translate(0px, 10px);
+        left: 50%;
+        transform: translate(-50% , 10px);
         background-image: url(../../Content/image/photo/title_dot.svg);
         width: 50px;
         height: 7px;
     }
 }
+}
+
+.slide{
+    margin: 40px 20px;
+
+    img{
+        border-radius: 40px;
+    }
 }
 .filter13{
     filter:saturate(1.3);

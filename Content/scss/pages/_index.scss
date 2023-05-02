@@ -104,6 +104,10 @@ main {
                         p {
                             color: $main-color;
                         }
+
+                        .login_button_icon {
+                            background-color: transparent;
+                        }
                     }
                 }
             }
