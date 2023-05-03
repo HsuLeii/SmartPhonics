@@ -99,6 +99,25 @@ main {
                     }
                 }
             }
+
+            .contact_box_qr {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin: 40px 0 0;
+                p{
+                    text-align: center;
+                }
+                .contact_box_qr_img{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 40%;
+                        margin: 20px 10px;
+                        max-width: 200px;
+                    }
+                }
+            }
         }
     }
     

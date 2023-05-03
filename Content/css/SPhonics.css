@@ -198,7 +198,7 @@ main .main_publicity .main_publicity_content { padding: 25px; background-color: 
 
 main .main_publicity .main_publicity_content.hide { padding: 0; background-color: transparent; border-radius: 0px; box-shadow: none; }
 
-main .main_publicity .main_publicity_content .main_section { margin: 80px 0; }
+main .main_publicity .main_publicity_content .main_section { margin: 40px 0; }
 
 main .main_publicity .main_publicity_content .main_section.body_bg_two { padding: 40px 0; background-color: #eeebe3; }
 
@@ -236,7 +236,7 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
   main .pick_level_top .avatar_area .avatar_img { width: calc(20% - 10px); margin: 7px 5px; }
   main .pick_level_top .avatar_area.pick_level_avatar_area { position: relative; margin: 5px 5px 5px auto; }
   main .main_publicity { padding: 80px 0 120px; }
-  main .main_publicity .main_publicity_content .main_section { margin: 120px 0; }
+  main .main_publicity .main_publicity_content .main_section { margin: 80px 0; }
   main .main_publicity .main_publicity_content .main_section.body_bg_two { padding: 80px 0; } }
 
 @keyframes btnVariety { 0% { transform: scale(0.9); }
@@ -1185,11 +1185,11 @@ main .main_publicity .main_publicity_content .feature .feature_content .feature_
 
 main .main_publicity .main_publicity_content .feature .feature_content p { text-align: center; }
 
-main .main_publicity .main_publicity_content .contact_box { padding: 20px 40px; margin: 40px 0 0; display: flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 30px; background-color: #fff; }
+main .main_publicity .main_publicity_content .contact_box { padding: 20px 0px; margin: 40px 0 0; display: flex; justify-content: center; align-items: center; flex-direction: column; border-radius: 30px; }
 
 main .main_publicity .main_publicity_content .contact_box p { text-align: center; }
 
-main .main_publicity .main_publicity_content .contact_box .login_button { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 50px; border-radius: 30px; margin: 20px auto 0; background-color: #ed710e; border: 1.5px solid #ed710e; transition: opacity 390ms cubic-bezier(0.215, 0.61, 0.355, 1); }
+main .main_publicity .main_publicity_content .contact_box .login_button { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; padding: 10px 20px; border-radius: 30px; margin: 20px auto 0; background-color: #ed710e; border: 1.5px solid #ed710e; transition: opacity 390ms cubic-bezier(0.215, 0.61, 0.355, 1); }
 
 main .main_publicity .main_publicity_content .contact_box .login_button .login_button_icon { position: absolute; left: 14px; display: flex; justify-content: center; align-items: center; width: 30px; height: 30px; background-color: #fff; color: #ed710e; border-radius: 50%; }
 
@@ -1288,6 +1288,14 @@ main .main_publicity .main_publicity_content .about_test_contact_button { displa
 main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { padding: 20px 40px; border-radius: 50px; color: #fff; background-color: #ed710e; border: 1px solid #ed710e; }
 
 main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area:hover a { color: #ed710e; background-color: #fff; }
+
+main .main_publicity .main_publicity_content .contact_box_qr { display: flex; justify-content: center; flex-direction: column; margin: 40px 0 0; }
+
+main .main_publicity .main_publicity_content .contact_box_qr p { text-align: center; }
+
+main .main_publicity .main_publicity_content .contact_box_qr .contact_box_qr_img { display: flex; justify-content: center; }
+
+main .main_publicity .main_publicity_content .contact_box_qr .contact_box_qr_img img { width: 40%; margin: 20px 10px; max-width: 200px; }
 
 @media screen and (min-width: 576px) { main .main_publicity .main_publicity_content .three_features { display: flex; justify-content: flex-start; flex-wrap: wrap; }
   main .main_publicity .main_publicity_content .three_features .three_features_item { width: 45%; margin: 0 2.5% 30px; } }

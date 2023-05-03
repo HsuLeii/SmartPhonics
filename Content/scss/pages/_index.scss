@@ -54,14 +54,13 @@ main {
             }
 
             .contact_box {
-                padding: 20px 40px;
+                padding: 20px 0px;
                 margin: 40px 0 0;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 border-radius: 30px;
-                background-color: $white;
 
                 p {
                     text-align: center;
@@ -73,7 +72,7 @@ main {
                     align-items: center;
                     justify-content: center;
                     width: 100%;
-                    padding: 10px 50px;
+                    padding: 10px 20px;
                     border-radius: 30px;
                     margin: 20px auto 0;
                     background-color: $main_color;
