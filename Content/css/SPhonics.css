@@ -1312,4 +1312,4 @@ main .main_publicity .main_publicity_content .contact_box_qr .contact_box_qr_img
 
 @media screen and (min-width: 1400px) { main .main_publicity .main_publicity_content .swiper_area { margin: 0 0 80px; }
   main .main_publicity .main_publicity_content .swiper_area .mySwiper .swiper-wrapper .swiper-slide { transform: scale(0.85); }
-  main .main_publicity .main_publicity_content .swiper_area .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-next { transform: scale(1); } }
+  main .main_publicity .main_publicity_content .swiper_area .mySwiper .swiper-wrapper .swiper-slide.swiper-slide-next { transform: scale(1); box-shadow: 5px 5px 10px 3px #ed710e40; } }
