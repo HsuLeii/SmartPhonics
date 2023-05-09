@@ -589,21 +589,27 @@ main .sound_test_area .sound_bar_area .bar:nth-child(10) { animation-duration: 4
 
 main .sound_test_area .sound_button_area .sound_area.finger_btn .finger_icon { color: #ed710e !important; }
 
-main .sound_button_area, main .recording_button_area, main .stop_button_area, main .play_button_area { margin: 40px auto 0px; }
+main .sound_button_area { margin: 40px auto 0px; }
 
-main .sound_button_area .sound_area, main .sound_button_area .recording_area, main .sound_button_area .stop_area, main .sound_button_area .play_area, main .recording_button_area .sound_area, main .recording_button_area .recording_area, main .recording_button_area .stop_area, main .recording_button_area .play_area, main .stop_button_area .sound_area, main .stop_button_area .recording_area, main .stop_button_area .stop_area, main .stop_button_area .play_area, main .play_button_area .sound_area, main .play_button_area .recording_area, main .play_button_area .stop_area, main .play_button_area .play_area { background-color: #ed710e; display: block; margin: 0 auto; }
+main .sound_button_area .sound_area { background-color: #2194d3; display: block; margin: 0 auto; }
 
-main .sound_button_area .sound_area i, main .sound_button_area .recording_area i, main .sound_button_area .stop_area i, main .sound_button_area .play_area i, main .recording_button_area .sound_area i, main .recording_button_area .recording_area i, main .recording_button_area .stop_area i, main .recording_button_area .play_area i, main .stop_button_area .sound_area i, main .stop_button_area .recording_area i, main .stop_button_area .stop_area i, main .stop_button_area .play_area i, main .play_button_area .sound_area i, main .play_button_area .recording_area i, main .play_button_area .stop_area i, main .play_button_area .play_area i { font-size: 40px; color: #fff; padding: 10px; border-radius: 10px; }
+main .sound_button_area .sound_area i { font-size: 40px; color: #fff; padding: 10px; border-radius: 10px; }
 
-main .sound_button_area .button_text, main .recording_button_area .button_text, main .stop_button_area .button_text, main .play_button_area .button_text { text-align: center; margin: 5px auto 0px; padding: 0px 10px; border-radius: 10px; width: 100%; cursor: pointer; }
+main .recording_button_area, main .stop_button_area, main .play_button_area { margin: 40px auto 0px; }
 
-main .sound_button_area .button_text:disabled, main .recording_button_area .button_text:disabled, main .stop_button_area .button_text:disabled, main .play_button_area .button_text:disabled { background-color: transparent !important; border: 1px solid transparent !important; }
+main .recording_button_area .recording_area, main .recording_button_area .stop_area, main .recording_button_area .play_area, main .stop_button_area .recording_area, main .stop_button_area .stop_area, main .stop_button_area .play_area, main .play_button_area .recording_area, main .play_button_area .stop_area, main .play_button_area .play_area { background-color: #ed710e; display: block; margin: 0 auto; }
 
-main .sound_button_area .button_text:disabled p, main .recording_button_area .button_text:disabled p, main .stop_button_area .button_text:disabled p, main .play_button_area .button_text:disabled p { color: grey; }
+main .recording_button_area .recording_area i, main .recording_button_area .stop_area i, main .recording_button_area .play_area i, main .stop_button_area .recording_area i, main .stop_button_area .stop_area i, main .stop_button_area .play_area i, main .play_button_area .recording_area i, main .play_button_area .stop_area i, main .play_button_area .play_area i { font-size: 40px; color: #fff; padding: 10px; border-radius: 10px; }
 
-main .sound_button_area .recording_seconds, main .recording_button_area .recording_seconds, main .stop_button_area .recording_seconds, main .play_button_area .recording_seconds { margin: 0px auto; text-align: center; }
+main .recording_button_area .button_text, main .stop_button_area .button_text, main .play_button_area .button_text { text-align: center; margin: 5px auto 0px; padding: 0px 10px; border-radius: 10px; width: 100%; cursor: pointer; }
 
-main .sound_button_area .recording_area, main .sound_button_area .stop_area, main .sound_button_area .play_area, main .recording_button_area .recording_area, main .recording_button_area .stop_area, main .recording_button_area .play_area, main .stop_button_area .recording_area, main .stop_button_area .stop_area, main .stop_button_area .play_area, main .play_button_area .recording_area, main .play_button_area .stop_area, main .play_button_area .play_area { width: 60px; }
+main .recording_button_area .button_text:disabled, main .stop_button_area .button_text:disabled, main .play_button_area .button_text:disabled { background-color: transparent !important; border: 1px solid transparent !important; }
+
+main .recording_button_area .button_text:disabled p, main .stop_button_area .button_text:disabled p, main .play_button_area .button_text:disabled p { color: grey; }
+
+main .recording_button_area .recording_seconds, main .stop_button_area .recording_seconds, main .play_button_area .recording_seconds { margin: 0px auto; text-align: center; }
+
+main .recording_button_area .recording_area, main .recording_button_area .stop_area, main .recording_button_area .play_area, main .stop_button_area .recording_area, main .stop_button_area .stop_area, main .stop_button_area .play_area, main .play_button_area .recording_area, main .play_button_area .stop_area, main .play_button_area .play_area { width: 60px; }
 
 main .recording_button_area .recording_area { background-color: #2194d3; }
 
@@ -694,25 +700,25 @@ main .test_area .QA_area .topic_description_area .description_text_area .descrip
 
 main .test_area .QA_area .topic_area .answer_area { display: flex; flex-wrap: wrap; justify-content: center; margin: 25px auto 0px; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_option { margin: 10px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; min-width: calc(30px * 1.7); min-height: calc(30px * 1.7); }
+main .test_area .QA_area .topic_area .answer_area .answer_option { margin: 10px; border-radius: 10px; border: 1px solid #2194d3; background-color: #2194d3; max-width: 100%; min-width: calc(30px * 1.7); min-height: calc(30px * 1.7); }
 
 main .test_area .QA_area .topic_area .answer_area .answer_option p { font-size: 30px; text-align: center; padding: 0 10px; border-radius: 10px; color: #fff; word-wrap: break-word; min-width: calc(30px * 1.7); }
 
-main .test_area .QA_area .topic_area .answer_area .answer_option:hover { background-color: #d5660d; }
+main .test_area .QA_area .topic_area .answer_area .answer_option:hover { background-color: #1a75a7; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_option.active { border: 1px dashed #d5660d; background-color: #d5660d; position: relative; }
+main .test_area .QA_area .topic_area .answer_area .answer_option.active { border: 1px dashed #1a75a7; background-color: #1a75a7; position: relative; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_option.active::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 12px); height: calc(100% + 12px); border: 2px dotted #ed710e; border-radius: 10px; }
+main .test_area .QA_area .topic_area .answer_area .answer_option.active::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 12px); height: calc(100% + 12px); border: 2px dotted #2194d3; border-radius: 10px; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_cloze { margin: 10px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; }
+main .test_area .QA_area .topic_area .answer_area .answer_cloze { margin: 10px; border-radius: 10px; border: 1px solid #2194d3; background-color: #2194d3; max-width: 100%; }
 
 main .test_area .QA_area .topic_area .answer_area .answer_cloze p { font-size: 30px; text-align: center; padding: 0 10px; border-radius: 10px; color: #fff; word-wrap: break-word; min-width: calc(30px * 1.7); min-height: calc(30px * 1.7); }
 
-main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area { position: relative; background-color: #ed710e; border: 0px; }
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area { position: relative; background-color: #2194d3; border: 0px; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area p { background-color: #ed710e; }
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area p { background-color: #2194d3; }
 
-main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 12px); height: calc(100% + 12px); border: 2px dotted #ed710e; border-radius: 10px; }
+main .test_area .QA_area .topic_area .answer_area .answer_cloze.answer_cloze_area::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 12px); height: calc(100% + 12px); border: 2px dotted #2194d3; border-radius: 10px; }
 
 main .test_area .QA_area .topic_area .answer_area.target .answer_option { cursor: pointer; }
 
@@ -745,6 +751,7 @@ main .test_area .leave_next_btn { margin: 30px auto 0px; }
 
 @media screen and (min-width: 992px) { main .test_area { height: calc(100% - 114.97px); min-height: calc(100vh - 114.97px); padding: 0px 0px 40px; }
   main .test_area .animal_area .animal_img { width: calc(35% / 2); max-width: 190px; }
+  main .test_area .animal_area .animal_img.animal_ocean { max-width: 300px; }
   main .test_area .QA_area { width: 55%; padding: 30px 20px; }
   main .test_area .QA_area .test_progress { margin: 0 auto 80px; width: 80%; }
   main .test_area .QA_area .topic_description_area { margin: 0 auto 35px; width: 80%; }
@@ -765,7 +772,26 @@ main .test_area .leave_next_btn { margin: 30px auto 0px; }
 @media all and (orientation: landscape) { main .animal_area { position: absolute; top: 0; width: 100%; height: 100%; }
   main .animal_area .animal_img { position: absolute; width: 15%; transform: translate(0%, -50%); }
   main .animal_area .animal_img.animal_one { left: 2.5%; top: calc(100% - 35px); transform: translate(0%, -100%); }
-  main .animal_area .animal_img.animal_two { right: 2.5%; top: 50%; } }
+  main .animal_area .animal_img.animal_one.animal_zebra { top: 80%; }
+  main .animal_area .animal_img.animal_one.animal_monkey { top: 80%; transform: translate(0%, -100%); }
+  main .animal_area .animal_img.animal_one.animal_camel { left: 50%; top: 100%; transform: translate(-50%, -100%); }
+  main .animal_area .animal_img.animal_one.animal_penguin { left: auto; right: 5%; top: 65%; transform: translate(0%, 0%); }
+  main .animal_area .animal_img.animal_one.animal_dolphin { top: 30%; transform: translate(0%, 0%); }
+  main .animal_area .animal_img.animal_two { right: 2.5%; top: 50%; }
+  main .animal_area .animal_img.animal_two.animal_monkey { top: 80%; transform: translate(0%, -100%); }
+  main .animal_area .animal_img.animal_two.animal_camel { top: 75%; }
+  main .animal_area .animal_img.animal_two.animal_penguin { right: 0%; top: 95%; transform: translate(0%, 0%); } }
+
+@media all and (min-width: 768px) and (orientation: landscape) { main .animal_area .animal_img.animal_one.animal_penguin { left: 2.5%; right: auto; top: 65%; transform: translate(0%, 0%); }
+  main .animal_area .animal_img.animal_two.animal_penguin { right: 2.5%; top: 65%; transform: translate(0%, 0%); } }
+
+@media all and (min-width: 1024px) and (orientation: landscape) { main .animal_area .animal_img.animal_one.animal_penguin { top: 60%; }
+  main .animal_area .animal_img.animal_two.animal_penguin { top: 60%; } }
+
+@media all and (min-width: 1400px) and (orientation: landscape) { main .animal_area .animal_img.animal_one.animal_penguin { left: 10%; }
+  main .animal_area .animal_img.animal_two.animal_penguin { top: 70%; } }
+
+@media all and (min-width: 1600px) and (orientation: landscape) { main .animal_area .animal_img.animal_one.animal_penguin { left: 15%; top: 65%; } }
 
 main .test_area.ocean_test_area .QA_area .topic_area .recording_stop_play_area { display: flex; flex-direction: column; align-items: center; }
 

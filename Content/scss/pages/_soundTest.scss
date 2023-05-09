@@ -85,13 +85,28 @@ main {
 
     }
 
-    .sound_button_area,
+    .sound_button_area {
+        margin: 40px auto 0px;
+
+        .sound_area {
+            background-color: $main_color_blue;
+            display: block;
+            margin: 0 auto;
+
+            i {
+                font-size: 40px;
+                color: $white;
+                padding: 10px;
+                border-radius: 10px;
+            }
+        }
+    }
+
     .recording_button_area,
     .stop_button_area,
     .play_button_area {
         margin: 40px auto 0px;
 
-        .sound_area,
         .recording_area,
         .stop_area,
         .play_area {
