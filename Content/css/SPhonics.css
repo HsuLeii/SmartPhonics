@@ -7,15 +7,15 @@ body { font-family: 'Lexend', 'Noto Sans SC', 'Noto Sans TC'; }
 /*other*/
 .about_content_colorBlue { color: #2194d3 !important; }
 
-.about_content_colorGreen { color: #00a29a !important; }
+.about_content_colorGreen { color: #4e9a36 !important; }
 
-.about_content_colorRed { color: #d75298 !important; }
+.about_content_colorRed { color: #db4a49 !important; }
 
 .about_border_colorBlue { border-color: #2194d3 !important; }
 
-.about_border_colorGreen { border-color: #00a29a !important; }
+.about_border_colorGreen { border-color: #4e9a36 !important; }
 
-.about_border_colorRed { border-color: #d75298 !important; }
+.about_border_colorRed { border-color: #db4a49 !important; }
 
 main .main_publicity .main_publicity_content, main .login_area, main .test_area.continue_challenge_area .continue_challenge_item_area, main .main_publicity .main_publicity_content .about_content_area .about_content_item, main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { box-shadow: 5px 5px 10px 3px #ed710e40; }
 
@@ -421,7 +421,7 @@ header .nav_name .nav_name_menu:hover:after { border-bottom: 7px solid #ed710e; 
 
 main .login_area { background-color: #fff; margin: 40px auto; padding: 50px 20px; max-width: 450px; position: relative; border-radius: 50px; border-color: #ed710e40; }
 
-main .login_area .login_title { position: absolute; left: 50%; top: 0%; transform: translate(-50%, -50%); background-color: #00a29a; width: 60%; margin: 0; }
+main .login_area .login_title { position: absolute; left: 50%; top: 0%; transform: translate(-50%, -50%); background-color: #4e9a36; width: 60%; margin: 0; }
 
 main .login_area .input-group { margin: 30px auto; }
 
@@ -429,7 +429,7 @@ main .login_area .input-group .input-group-text { border: 0px; }
 
 main .login_area .input-group .input-group-text.icon_user { background-color: #2194d3; background-image: linear-gradient(-45deg, #1a75a7 0%, #2194d3 75%); border-radius: 50% !important; }
 
-main .login_area .input-group .input-group-text.icon_password { background-color: #f8b62d; background-image: linear-gradient(-45deg, #eaa108 0%, #f8b62d 75%); border-radius: 50% !important; }
+main .login_area .input-group .input-group-text.icon_password { background-color: #f7b62d; background-image: linear-gradient(-45deg, #e8a009 0%, #f7b62d 75%); border-radius: 50% !important; }
 
 main .login_area .input-group .input-group-text i { color: #fff; }
 
@@ -469,13 +469,13 @@ main .pick_level_area .pick_level_main { display: flex; flex-direction: column; 
 
 main .pick_level_area .pick_level_main .level_options { width: 100%; margin: 0px auto 20px; }
 
-main .pick_level_area .pick_level_main .level_options.level_land .level_img { background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%); }
+main .pick_level_area .pick_level_main .level_options.level_land .level_img { background: linear-gradient(135deg, #fff 0% 5%, #4e9a36 5% 10%, #fff 10% 15%, #4e9a36 15% 20%, #fff 20% 25%, #4e9a36 25% 30%, #fff 30% 35%, #4e9a36 35% 40%, #fff 40% 45%, #4e9a36 45% 50%, #fff 50% 55%, #4e9a36 55% 60%, #fff 60% 65%, #4e9a36 65% 70%, #fff 70% 75%, #4e9a36 75% 80%, #fff 80% 85%, #4e9a36 85% 90%, #fff 90% 95%, #4e9a36 95% 100%); }
 
-main .pick_level_area .pick_level_main .level_options.level_land .level_name { color: #00a29ab3; }
+main .pick_level_area .pick_level_main .level_options.level_land .level_name { color: #4e9a36b3; }
 
-main .pick_level_area .pick_level_main .level_options.level_land .button_level { background-color: #00bcb2; }
+main .pick_level_area .pick_level_main .level_options.level_land .button_level { background-color: #58ad3d; }
 
-main .pick_level_area .pick_level_main .level_options.level_land .button_level.button_try { background-color: #006f6a; }
+main .pick_level_area .pick_level_main .level_options.level_land .button_level.button_try { background-color: #3b7429; }
 
 main .pick_level_area .pick_level_main .level_options.level_ocean .level_img { background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%); }
 
@@ -485,13 +485,13 @@ main .pick_level_area .pick_level_main .level_options.level_ocean .button_level 
 
 main .pick_level_area .pick_level_main .level_options.level_ocean .button_level.button_try { background-color: #1a75a7; }
 
-main .pick_level_area .pick_level_main .level_options.level_sky .level_img { background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%); }
+main .pick_level_area .pick_level_main .level_options.level_sky .level_img { background: linear-gradient(135deg, #fff 0% 5%, #db4a49 5% 10%, #fff 10% 15%, #db4a49 15% 20%, #fff 20% 25%, #db4a49 25% 30%, #fff 30% 35%, #db4a49 35% 40%, #fff 40% 45%, #db4a49 45% 50%, #fff 50% 55%, #db4a49 55% 60%, #fff 60% 65%, #db4a49 65% 70%, #fff 70% 75%, #db4a49 75% 80%, #fff 80% 85%, #db4a49 85% 90%, #fff 90% 95%, #db4a49 95% 100%); }
 
-main .pick_level_area .pick_level_main .level_options.level_sky .level_name { color: #d75298b3; }
+main .pick_level_area .pick_level_main .level_options.level_sky .level_name { color: #db4a49b3; }
 
-main .pick_level_area .pick_level_main .level_options.level_sky .button_level { background-color: #dc67a4; }
+main .pick_level_area .pick_level_main .level_options.level_sky .button_level { background-color: #df5f5e; }
 
-main .pick_level_area .pick_level_main .level_options.level_sky .button_level.button_try { background-color: #c82e7f; }
+main .pick_level_area .pick_level_main .level_options.level_sky .button_level.button_try { background-color: #c92928; }
 
 main .pick_level_area .pick_level_main .level_options .level_name { width: calc(100% - 10px); padding: 5px 20px; color: #2e3233; margin: 5px; }
 
@@ -505,7 +505,7 @@ main .pick_level_area .pick_level_main .level_options .button_level a { display:
 
 main .pick_level_area .pick_level_main .level_options .button_level.button_finish { background-color: #ed710e !important; }
 
-main .pick_level_area .pick_level_main .level_options .button_level.button_score { background-color: #f8b62d !important; }
+main .pick_level_area .pick_level_main .level_options .button_level.button_score { background-color: #f7b62d !important; }
 
 main .pick_level_area .pick_level_main .level_options .button_level.button_score a { color: #2e3233; }
 
@@ -521,17 +521,17 @@ main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level { padd
 
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide .button_level a { color: #fff; padding: 5px 30px; }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .level_img { background: linear-gradient(135deg, #fff 0% 5%, #00a29a 5% 10%, #fff 10% 15%, #00a29a 15% 20%, #fff 20% 25%, #00a29a 25% 30%, #fff 30% 35%, #00a29a 35% 40%, #fff 40% 45%, #00a29a 45% 50%, #fff 50% 55%, #00a29a 55% 60%, #fff 60% 65%, #00a29a 65% 70%, #fff 70% 75%, #00a29a 75% 80%, #fff 80% 85%, #00a29a 85% 90%, #fff 90% 95%, #00a29a 95% 100%); }
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .level_img { background: linear-gradient(135deg, #fff 0% 5%, #4e9a36 5% 10%, #fff 10% 15%, #4e9a36 15% 20%, #fff 20% 25%, #4e9a36 25% 30%, #fff 30% 35%, #4e9a36 35% 40%, #fff 40% 45%, #4e9a36 45% 50%, #fff 50% 55%, #4e9a36 55% 60%, #fff 60% 65%, #4e9a36 65% 70%, #fff 70% 75%, #4e9a36 75% 80%, #fff 80% 85%, #4e9a36 85% 90%, #fff 90% 95%, #4e9a36 95% 100%); }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .button_level { background-color: #00a29a; }
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_land .button_level { background-color: #4e9a36; }
 
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_ocean .level_img { background: linear-gradient(135deg, #fff 0% 5%, #2194d3 5% 10%, #fff 10% 15%, #2194d3 15% 20%, #fff 20% 25%, #2194d3 25% 30%, #fff 30% 35%, #2194d3 35% 40%, #fff 40% 45%, #2194d3 45% 50%, #fff 50% 55%, #2194d3 55% 60%, #fff 60% 65%, #2194d3 65% 70%, #fff 70% 75%, #2194d3 75% 80%, #fff 80% 85%, #2194d3 85% 90%, #fff 90% 95%, #2194d3 95% 100%); }
 
 main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_ocean .button_level { background-color: #2194d3; }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .level_img { background: linear-gradient(135deg, #fff 0% 5%, #d75298 5% 10%, #fff 10% 15%, #d75298 15% 20%, #fff 20% 25%, #d75298 25% 30%, #fff 30% 35%, #d75298 35% 40%, #fff 40% 45%, #d75298 45% 50%, #fff 50% 55%, #d75298 55% 60%, #fff 60% 65%, #d75298 65% 70%, #fff 70% 75%, #d75298 75% 80%, #fff 80% 85%, #d75298 85% 90%, #fff 90% 95%, #d75298 95% 100%); }
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .level_img { background: linear-gradient(135deg, #fff 0% 5%, #db4a49 5% 10%, #fff 10% 15%, #db4a49 15% 20%, #fff 20% 25%, #db4a49 25% 30%, #fff 30% 35%, #db4a49 35% 40%, #fff 40% 45%, #db4a49 45% 50%, #fff 50% 55%, #db4a49 55% 60%, #fff 60% 65%, #db4a49 65% 70%, #fff 70% 75%, #db4a49 75% 80%, #fff 80% 85%, #db4a49 85% 90%, #fff 90% 95%, #db4a49 95% 100%); }
 
-main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .button_level { background-color: #d75298; }
+main .pick_level_area .swiper .swiper-wrapper .swiper-slide.level_sky .button_level { background-color: #db4a49; }
 
 main .pick_level_area .swiper-pagination { right: 5%; top: 0; transform: translate3d(50%, 100%, 0); }
 
@@ -565,7 +565,7 @@ main .sound_test_area .sound_bar_area { width: 60px; height: 60px; display: flex
 
 main .sound_test_area .sound_bar_area.play_animation .bar { animation: sound 0ms -800ms linear infinite alternate; }
 
-main .sound_test_area .sound_bar_area .bar { background-color: #ed710e; height: 0px; width: 3px; margin: 0px 1px; }
+main .sound_test_area .sound_bar_area .bar { background-color: #2194d3; height: 0px; width: 3px; margin: 0px 1px; }
 
 main .sound_test_area .sound_bar_area .bar:nth-child(1) { animation-duration: 474ms; }
 
@@ -587,7 +587,7 @@ main .sound_test_area .sound_bar_area .bar:nth-child(9) { animation-duration: 48
 
 main .sound_test_area .sound_bar_area .bar:nth-child(10) { animation-duration: 442ms; }
 
-main .sound_test_area .sound_button_area .sound_area.finger_btn .finger_icon { color: #ed710e !important; }
+main .sound_test_area .sound_button_area .sound_area.finger_btn .finger_icon { color: #2194d3 !important; }
 
 main .sound_button_area { margin: 40px auto 0px; }
 
@@ -619,21 +619,21 @@ main .recording_button_area .recording_button_animate { animation: recording 150
 
 main .recording_button_area .button_text p { color: #2194d3; }
 
-main .stop_button_area .stop_area { background-color: #d75298; }
+main .stop_button_area .stop_area { background-color: #db4a49; }
 
-main .stop_button_area .button_text p { color: #d75298; }
+main .stop_button_area .button_text p { color: #db4a49; }
 
-main .play_button_area .play_area { background-color: #00a29a; }
+main .play_button_area .play_area { background-color: #4e9a36; }
 
 main .play_button_area .recording_button_animate { animation: recording 1500ms infinite; }
 
-main .play_button_area .button_text p { color: #00a29a; }
+main .play_button_area .button_text p { color: #4e9a36; }
 
-main .sound_button_area .sound_area.finger_btn .finger_icon { color: #f8b62d !important; }
+main .sound_button_area .sound_area.finger_btn .finger_icon { color: #f7b62d !important; }
 
 main .sound_button_area .recording_button_animate { animation: recording 1500ms infinite; }
 
-main .sound_button_area .button_text p { color: #f8b62d; }
+main .sound_button_area .button_text p { color: #f7b62d; }
 
 main .sound_test_img { margin: 40px auto 0px; width: 40%; max-width: 200px; }
 
@@ -645,7 +645,7 @@ main .recording_stop_play_area .recording_button_item .recording_button_instruct
 
 main .recording_stop_play_area .recording_button_item .sound_button_area, main .recording_stop_play_area .recording_button_item .recording_button_area, main .recording_stop_play_area .recording_button_item .stop_button_area, main .recording_stop_play_area .recording_button_item .play_button_area { margin: 20px 10px 0px; }
 
-main .recording_stop_play_area .recording_button_item .sound_button_area .sound_area { background-color: #f8b62d; }
+main .recording_stop_play_area .recording_button_item .sound_button_area .sound_area { background-color: #f7b62d; }
 
 @media screen and (min-width: 768px) { main .sound_button_area .sound_area i, main .sound_button_area .recording_area i, main .sound_button_area .stop_area i, main .sound_button_area .play_area i, main .recording_button_area .sound_area i, main .recording_button_area .recording_area i, main .recording_button_area .stop_area i, main .recording_button_area .play_area i, main .stop_button_area .sound_area i, main .stop_button_area .recording_area i, main .stop_button_area .stop_area i, main .stop_button_area .play_area i, main .play_button_area .sound_area i, main .play_button_area .recording_area i, main .play_button_area .stop_area i, main .play_button_area .play_area i { font-size: 50px; }
   main .sound_button_area .recording_area, main .sound_button_area .stop_area, main .sound_button_area .play_area, main .recording_button_area .recording_area, main .recording_button_area .stop_area, main .recording_button_area .play_area, main .stop_button_area .recording_area, main .stop_button_area .stop_area, main .stop_button_area .play_area, main .play_button_area .recording_area, main .play_button_area .stop_area, main .play_button_area .play_area { width: 70px; }
@@ -904,7 +904,7 @@ main .test_end_area .star_rating .star_area { display: flex; }
 
 main .test_end_area .star_rating .star_area .star_item i { color: #2e3233; }
 
-main .test_end_area .star_rating .star_area .star_item.get_star i { color: #f8b62d; }
+main .test_end_area .star_rating .star_area .star_item.get_star i { color: #f7b62d; }
 
 main .test_end_area .get_avatar_area { display: flex; flex-wrap: wrap; justify-content: center; width: 50%; margin: 20px auto; }
 
@@ -964,9 +964,9 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_ar
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.correct_answer .answer_display_icon { background-color: #375e1e; color: #fff; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text span { color: #d75298; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text span { color: #db4a49; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text ~ .answer_display_icon { background-color: #d75298; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text ~ .answer_display_icon { background-color: #db4a49; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_icon { background-color: #c82e7f; color: #fff; }
 
@@ -1002,7 +1002,7 @@ main .test_end_area.test_end_answer .test_end_page .note_area { display: flex; a
 
 main .test_end_area.test_end_answer .test_end_page .note_area .note_icon { margin: 0px 5px 0px 0px; }
 
-main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { color: #f8b62d; font-size: 30px; }
+main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { color: #f7b62d; font-size: 30px; }
 
 main .test_end_area.test_end_answer .test_end_page .page { display: flex; justify-content: center; margin: 20px auto; }
 
@@ -1201,9 +1201,9 @@ main .main_publicity .main_publicity_content .feature .feature_content .feature_
 
 main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_blue { background-color: #2194d3; }
 
-main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_green { background-color: #00a29a; }
+main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_green { background-color: #4e9a36; }
 
-main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_red { background-color: #d75298; }
+main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_red { background-color: #db4a49; }
 
 main .main_publicity .main_publicity_content .feature .feature_content img { display: block; margin: 0 auto 20px; width: 80%; }
 
@@ -1307,7 +1307,7 @@ main .main_publicity .main_publicity_content .three_features .three_features_ite
 
 main .main_publicity .main_publicity_content .three_features .three_features_item .three_features_item_text h4 { text-align: center; margin: 0 0 10px; color: #ed710e; }
 
-main .main_publicity .main_publicity_content .three_features .three_features_item .three_features_item_text h4 i { color: #f8b62d; }
+main .main_publicity .main_publicity_content .three_features .three_features_item .three_features_item_text h4 i { color: #f7b62d; }
 
 main .main_publicity .main_publicity_content .about_test_contact_button { display: flex; justify-content: center; }
 
