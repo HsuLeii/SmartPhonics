@@ -543,6 +543,11 @@ main {
                         right: 2.5%;
                         top: 50%;
 
+                        &.animal_hipopo{
+                            top: calc(100% - 35px);
+                            transform: translate(0%, -100%);
+                        }
+
                         &.animal_monkey{
                             top: 80%;
                             transform: translate(0%, -100%);
