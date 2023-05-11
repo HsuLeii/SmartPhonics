@@ -146,25 +146,6 @@ main {
                         }
                     }
                 }
-
-                &.ocean_animal_area {
-                    .animal_img {
-                        bottom: 0;
-                        position: absolute;
-                        width: calc(50% - 75px);
-                        padding: 5px;
-
-                        &:nth-child(1) {
-                            left: 0;
-                            transform: translate(0%, -50%);
-                        }
-
-                        &:nth-child(2) {
-                            left: calc(50% + 75px);
-                            transform: translate(0%, -50%);
-                        }
-                    }
-                }
             }
         }
 
@@ -280,9 +261,9 @@ main {
                             &.wrong_answer {
 
                                 .answer_display_text {
-                                    span {
-                                        color: $main_color_red;
-                                    }
+                                    // span {
+                                    //     color: $main_color_red;
+                                    // }
 
                                     &~.answer_display_icon {
                                         background-color: $main_color_red;
@@ -458,20 +439,6 @@ main {
                             }
                         }
                     }
-
-                    &.ocean_animal_area {
-                        .animal_img {
-                            width: calc(35% - 75px);
-
-                            &:nth-child(1) {
-                                left: 7.5%;
-                            }
-
-                            &:nth-child(2) {
-                                left: calc(57.5% + 75px);
-                            }
-                        }
-                    }
                 }
             }
 
@@ -624,22 +591,6 @@ main {
                 .gift_box {
                     max-width: 200px;
                 }
-
-                .animal_area {
-                    &.ocean_animal_area {
-                        .animal_img {
-                            width: calc(35% - 100px);
-
-                            &:nth-child(1) {
-                                left: 7.5%;
-                            }
-
-                            &:nth-child(2) {
-                                left: calc(57.5% + 100px);
-                            }
-                        }
-                    }
-                }
             }
 
             .sky_answer_display_area {
@@ -736,20 +687,6 @@ main {
                             }
                         }
                     }
-
-                    &.ocean_animal_area {
-                        .animal_img {
-                            width: calc(30% - 100px);
-
-                            &:nth-child(1) {
-                                left: 10%;
-                            }
-
-                            &:nth-child(2) {
-                                left: calc(60% + 100px);
-                            }
-                        }
-                    }
                 }
             }
 
@@ -838,20 +775,6 @@ main {
                             &:nth-child(5) {
                                 left: calc(55% / 2 + 15%);
                                 transform: translate(0%, 100%);
-                            }
-                        }
-                    }
-
-                    &.ocean_animal_area {
-                        .animal_img {
-                            width: calc(25% - 100px);
-
-                            &:nth-child(1) {
-                                left: 12.5%;
-                            }
-
-                            &:nth-child(2) {
-                                left: calc(62.5% + 100px);
                             }
                         }
                     }
