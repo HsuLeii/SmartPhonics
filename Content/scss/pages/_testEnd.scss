@@ -68,7 +68,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 0 12.5px 5px;
+            margin: 0 12.5px 20px;
 
             .star_area {
                 display: flex;
@@ -234,6 +234,8 @@ main {
                             width: calc(100% - 20px);
                             display: flex;
                             align-items: center;
+                            border-radius: 0;
+                            margin: 0 auto;
 
                             .answer_display_text {
                                 text-align: left;
@@ -253,14 +255,28 @@ main {
                                 border-radius: 50%;
                             }
 
-                            &.correct_answer {
-
-                                .answer_display_icon {
-                                    background-color: $correct_text;
-                                    color: $white;
+                            &.answer_display_item_icon{
+                                flex-wrap: wrap;
+                                .answer_display_icon_area{
+                                    display: flex;
+                                    align-items: center;
+                                    margin: 10px 50px 10px 0;
+                                    .answer_display_icon {
+                                        margin: 0 10px 0 0;
+                                        &.wrong_answer{
+                                            background-color: $wrong_text;
+                                            color: $white;
+                                        }
+                                        &.correct_answer{
+                                            background-color: $correct_text;
+                                        color: $white;
+                                        }
+                                        
+                                    }
                                 }
                             }
-
+                            
+                                
                             &.wrong_answer {
 
                                 .answer_display_text {
@@ -273,10 +289,7 @@ main {
                                     }
                                 }
 
-                                .answer_display_icon {
-                                    background-color: $wrong_text;
-                                    color: $white;
-                                }
+                                
                             }
                         }
                     }

@@ -899,7 +899,7 @@ main .test_end_area .test_end_text .fireworks.fireworks_right { right: 0; transf
 
 main .test_end_area .test_end_text .fireworks.fireworks_bottom { right: 0; transform: translate(80%, 50%); max-width: 40px; }
 
-main .test_end_area .star_rating { width: 100%; display: flex; align-items: center; justify-content: center; margin: 0 12.5px 5px; }
+main .test_end_area .star_rating { width: 100%; display: flex; align-items: center; justify-content: center; margin: 0 12.5px 20px; }
 
 main .test_end_area .star_rating .star_area { display: flex; }
 
@@ -955,7 +955,7 @@ main .test_end_area .sky_answer_display_area .sky_test_filter { flex-direction: 
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .test_end_text { margin: 20px auto 0px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item { width: calc(100% - 20px); display: flex; align-items: center; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item { width: calc(100% - 20px); display: flex; align-items: center; border-radius: 0; margin: 0 auto; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_text { text-align: left; font-size: 17px; }
 
@@ -963,13 +963,19 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_ar
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_icon { position: relative; right: auto; bottom: auto; margin: 0 10px; padding: 2px 4px; border-radius: 50%; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.correct_answer .answer_display_icon { background-color: #375e1e; color: #fff; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon { flex-wrap: wrap; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area { display: flex; align-items: center; margin: 10px 50px 10px 0; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon { margin: 0 10px 0 0; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon.wrong_answer { background-color: #c82e7f; color: #fff; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon.correct_answer { background-color: #375e1e; color: #fff; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text span { color: #db4a49; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_text ~ .answer_display_icon { background-color: #db4a49; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.wrong_answer .answer_display_icon { background-color: #c82e7f; color: #fff; }
 
 main .test_end_area.test_end_answer { overflow: hidden; display: flex; flex-direction: column; }
 
@@ -1181,7 +1187,7 @@ main .level_selection_area .level_selection_item_area .level_selection_item_cont
 
 main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_name h4 { color: #2e3233; }
 
-main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_animal { width: 80%; margin: 0 auto; }
+main .level_selection_area .level_selection_item_area .level_selection_item_content .level_selection_item_animal { width: 65%; margin: 0 auto; }
 
 main .level_selection_area .level_selection_item_area:hover .level_selection_item_content .level_selection_item_name { background-color: #ed710e; }
 
