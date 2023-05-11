@@ -19,6 +19,7 @@ main {
                     background-color: $white;
                     border-radius: 10px;
                     margin: 30px 0 0;
+                    border: 1px solid $main-color;
 
                     &::before{
                         content: "";
@@ -27,11 +28,11 @@ main {
                         top: -8px;
                         border-left: 8px solid transparent;
                         border-right: 8px solid transparent;
-                        border-bottom: 8px solid $white;
+                        border-bottom: 8px solid $main-color;
                     }
 
                     h4{
-                        color: $main_color_black;
+                        color: $main_color;
                     }
                 }
 
