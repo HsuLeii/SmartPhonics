@@ -521,7 +521,9 @@ main {
                         }
 
                         &.animal_camel{
-                            top: calc(50% - 35px);
+                            left: 50%;
+                            top: 100%;
+                            transform: translate(-50% , -100%);
                         }
 
                         &.animal_penguin{
