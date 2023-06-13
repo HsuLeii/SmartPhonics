@@ -6,19 +6,11 @@ var soundRange = document.getElementById("soundRange");
 var soundRangeWidth = (value) => {
     document.documentElement.style.setProperty("--soundRange", 100 - value + "%");
     if (value < 1) {
-        $(".icon_volume").removeClass("fa-volume-high");
-        $(".icon_volume").removeClass("fa-volume-low");
-        $(".icon_volume").addClass("fa-volume-xmark");
-
+        $(".icon_volume").attr('data-icon', 'volume-xmark');
     } else if (value < 45) {
-        $(".icon_volume").removeClass("fa-volume-xmark");
-        $(".icon_volume").removeClass("fa-volume-high");
-        $(".icon_volume").addClass(" fa-volume-low");
-
+        $(".icon_volume").attr('data-icon', 'volume-low');
     } else {
-        $(".icon_volume").removeClass("fa-volume-low");
-        $(".icon_volume").removeClass("fa-volume-xmark");
-        $(".icon_volume").addClass("fa-volume-high");
+        $(".icon_volume").attr('data-icon', 'volume-high');
     }
 }
 

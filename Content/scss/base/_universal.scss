@@ -37,7 +37,7 @@ main {
             z-index: 2;
 
             .avatar_img {
-                width: 8%;
+                width: calc(100% / 8 - 2%);
                 margin: 0px 1%;
 
                 &:hover {
