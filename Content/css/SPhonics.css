@@ -17,7 +17,7 @@ body { font-family: 'Lexend', 'Noto Sans SC', 'Noto Sans TC'; }
 
 .about_border_colorRed { border-color: #db4a49 !important; }
 
-main .main_publicity .main_publicity_content, main .login_area, main .test_area.continue_challenge_area .continue_challenge_item_area, main .information_area .input_area .form-control:focus, main .main_publicity .main_publicity_content .about_content_area .about_content_item, main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { box-shadow: 5px 5px 10px 3px #ed710e40; }
+main .main_publicity .main_publicity_content, .input_area .form-control:focus, main .login_area, main .test_area.continue_challenge_area .continue_challenge_item_area, main .main_publicity .main_publicity_content .about_content_area .about_content_item, main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { box-shadow: 5px 5px 10px 3px #ed710e40; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, figure { margin: 0; padding: 0; list-style: none; }
 
@@ -225,6 +225,44 @@ main .shape_area .shape_svg .shape_svg_polygon { fill: #EADBCE; }
 main .title_dot { position: relative; }
 
 main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 10px); background-image: url(../../Content/image/photo/title_dot.svg); width: 50px; height: 7px; }
+
+.input_area .form-control.form-control-gender { display: flex; }
+
+.input_area .form-control.form-control-gender .radio-item { margin: 0 20px 0 0; }
+
+.input_area .form-control.form-control-gender .radio-item label { display: flex; align-items: center; color: #2e3233; font-weight: normal; position: relative; cursor: pointer; }
+
+.input_area .form-control.form-control-gender .radio-item label:before { content: " "; display: inline-block; top: 0; margin: 0 8px 0 0; width: 16px; height: 16px; border-radius: 50%; position: relative; border: 2px solid #2e3233; }
+
+.input_area .form-control.form-control-gender .radio-item input[type="radio"] { display: none; }
+
+.input_area .form-control.form-control-gender .radio-item input[type="radio"]:checked + label { color: #ed710e; }
+
+.input_area .form-control.form-control-gender .radio-item input[type="radio"]:checked + label:before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
+
+.input_area .form-control.form-control-birthday { position: relative; }
+
+.input_area .form-control.form-control-birthday svg { position: absolute; right: 15px; top: 50%; transform: translate(0, -50%); color: #2e3233; }
+
+.input_area .form-control.form-control-birthday .birthday_input { color: #2e3233; width: 100%; outline: 0; background-color: transparent; position: relative; z-index: 1; }
+
+.input_area .form-control.form-control-birthday .birthday_input:valid { border: 0; }
+
+.input_area .form-control.form-control-birthday .birthday_input:required:invalid::-webkit-datetime-edit { color: transparent; }
+
+.input_area .form-control.form-control-birthday .birthday_input::-webkit-calendar-picker-indicator { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
+
+.input_area .form-control.form-control-birthday .birthday_input:focus ~ svg { color: #ed710e; }
+
+.input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-text, .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-day-field, .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-month-field, .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-year-field { background-color: #ed710e; color: #fff; }
+
+.input_area .form-control::placeholder { color: #2e3233; }
+
+.input_area .form-control:focus { outline: none; border-color: #ed710e; border-radius: 5px; color: #ed710e; }
+
+.input_area .form-control:focus::placeholder { color: transparent; }
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus { border: 1px solid #2e3233; -webkit-text-fill-color: #2e3233; -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; }
 
 .slide { margin: 40px 20px; }
 
@@ -435,19 +473,21 @@ main .login_area { background-color: #fff; margin: 40px auto; padding: 50px 20px
 
 main .login_area .login_title { position: absolute; left: 50%; top: 0%; transform: translate(-50%, -50%); background-color: #4e9a36; width: 60%; margin: 0; }
 
-main .login_area .input_group { margin: 30px auto; align-items: center; }
+main .login_area .input_area { margin: 30px auto; align-items: center; display: flex; justify-content: space-between; }
 
-main .login_area .input_group .input-group-text { border: 0px; }
+main .login_area .input_area .input-group-text { border: 0px; }
 
-main .login_area .input_group .input-group-text.icon_user { background-color: #2194d3; background-image: linear-gradient(-45deg, #1a75a7 0%, #2194d3 75%); border-radius: 50% !important; width: 40px; height: 40px; justify-content: center; }
+main .login_area .input_area .input-group-text.icon_user { background-color: #2194d3; background-image: linear-gradient(-45deg, #1a75a7 0%, #2194d3 75%); border-radius: 50% !important; width: 40px; height: 40px; justify-content: center; }
 
-main .login_area .input_group .input-group-text.icon_password { background-color: #f7b62d; background-image: linear-gradient(-45deg, #e8a009 0%, #f7b62d 75%); border-radius: 50% !important; width: 40px; height: 40px; justify-content: center; }
+main .login_area .input_area .input-group-text.icon_password { background-color: #f7b62d; background-image: linear-gradient(-45deg, #e8a009 0%, #f7b62d 75%); border-radius: 50% !important; width: 40px; height: 40px; justify-content: center; }
 
-main .login_area .input_group .input-group-text i { color: #fff; }
+main .login_area .input_area .input-group-text i, main .login_area .input_area .input-group-text svg { color: #fff; }
 
-main .login_area .input_group input { border-radius: 50px !important; margin-left: 10px !important; }
+main .login_area .input_area input { border-radius: 50px !important; margin-left: 10px !important; }
 
-main .login_area .input_group input.form-control:focus { box-shadow: 0 0 6px 2px #ed710e25; border-color: #ed710e40; }
+main .login_area .input_area input.form-control { width: calc(100% - 60px); }
+
+main .login_area .input_area input.form-control:focus { box-shadow: 0 0 6px 2px #ed710e25; border-color: #ed710e40; }
 
 main .login_area .forget_password { display: flex; justify-content: space-between; }
 
@@ -1193,42 +1233,6 @@ main .information_area .input_area { margin: 30px auto; display: flex; align-ite
 main .information_area .input_area .input-group-label { padding: 10px 15px; color: #2e3233; width: 100%; }
 
 main .information_area .input_area .form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border-color: #2e3233; color: #2e3233; width: 100%; }
-
-main .information_area .input_area .form-control.form-control-gender { display: flex; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item { margin: 0 20px 0 0; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item label { display: flex; align-items: center; color: #2e3233; font-weight: normal; position: relative; cursor: pointer; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item label:before { content: " "; display: inline-block; top: 0; margin: 0 8px 0 0; width: 16px; height: 16px; border-radius: 50%; position: relative; border: 2px solid #2e3233; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item input[type="radio"] { display: none; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item input[type="radio"]:checked + label { color: #ed710e; }
-
-main .information_area .input_area .form-control.form-control-gender .radio-item input[type="radio"]:checked + label:before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
-
-main .information_area .input_area .form-control.form-control-birthday { position: relative; }
-
-main .information_area .input_area .form-control.form-control-birthday::before { content: "\f133"; }
-
-main .information_area .input_area .form-control.form-control-birthday svg { position: absolute; right: 15px; top: 50%; transform: translate(0, -50%); }
-
-main .information_area .input_area .form-control.form-control-birthday .birthday_input { color: #2e3233; width: 100%; outline: 0; background-color: transparent; position: relative; z-index: 1; }
-
-main .information_area .input_area .form-control.form-control-birthday .birthday_input:valid { border: 0; }
-
-main .information_area .input_area .form-control.form-control-birthday .birthday_input:required:invalid::-webkit-datetime-edit { color: transparent; }
-
-main .information_area .input_area .form-control.form-control-birthday .birthday_input::-webkit-calendar-picker-indicator { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
-
-main .information_area .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-text, main .information_area .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-day-field, main .information_area .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-month-field, main .information_area .input_area .form-control.form-control-birthday .birthday_input:focus::-webkit-datetime-edit-year-field { background-color: #ed710e; color: #fff; }
-
-main .information_area .input_area .form-control::placeholder { color: #2e3233; }
-
-main .information_area .input_area .form-control:focus { outline: none; border-color: #ed710e; border-radius: 5px; }
-
-main .information_area .input_area .form-control:focus::placeholder { color: transparent; }
 
 main .information_area .input_area.input-group-submit { display: flex; justify-content: center; align-items: center; margin: 60px auto 30px; }
 
