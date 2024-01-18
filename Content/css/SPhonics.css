@@ -1245,6 +1245,49 @@ main .information_area .input_area.input-group-submit .input-group-submit-btn:ho
   main .information_area .input_area .form-control { width: 80%; }
   main .information_area .input_area.input-group-submit { margin: 90px auto 45px; } }
 
+main .study_area { width: 80%; max-width: 230px; margin: 0 auto; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { width: 100%; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { display: flex; align-items: center; margin: 20px auto; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .sound_button_area { margin: 0 auto; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .sound_button_area .sound_area { background-color: #ed710e; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .sound_button_area .sound_area svg { display: flex; font-size: 20px; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img { position: relative; margin: 0 0 0 20px; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img img { border-radius: 10px; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img .exercises_gif_letter_link { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; margin: 40px auto; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img img { border-radius: 10px; }
+
+@media screen and (min-width: 576px) { main .study_area { max-width: 1200px; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 60%; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 80%; } }
+
+@media screen and (min-width: 768px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 47.5%; margin: 40px auto; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; } }
+
+@media screen and (min-width: 992px) { main .study_area.exercises_area .exercises_area_img { display: flex; align-items: center; justify-content: center; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { flex-direction: column; width: 25%; margin: 0 5% 0 0; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 100%; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 70%; max-width: 700px; margin: 80px 0; } }
+
+@media screen and (orientation: landscape) and (min-width: 700px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; justify-content: space-between; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 40%; margin: 20px 5%; max-width: 350px; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { max-width: 400px; } }
+
+@media screen and (orientation: landscape) and (min-width: 992px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { margin: 80px 5% 80px 0; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 100%; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { max-width: 700px; } }
+
 main .main_publicity .main_publicity_content .feature { display: flex; flex-wrap: wrap; }
 
 main .main_publicity .main_publicity_content .feature .feature_content { width: 100%; margin: 0 0 40px 0; }
