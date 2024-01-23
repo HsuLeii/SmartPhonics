@@ -5,6 +5,7 @@ body { font-family: 'Lexend', 'Noto Sans SC', 'Noto Sans TC'; }
 /*main*/
 /*transparency*/
 /*other*/
+/*STUDY*/
 .about_content_colorBlue { color: #2194d3 !important; }
 
 .about_content_colorGreen { color: #4e9a36 !important; }
@@ -1245,7 +1246,9 @@ main .information_area .input_area.input-group-submit .input-group-submit-btn:ho
   main .information_area .input_area .form-control { width: 80%; }
   main .information_area .input_area.input-group-submit { margin: 90px auto 45px; } }
 
-main .study_area { width: 80%; max-width: 230px; margin: 0 auto; }
+main .study_area { width: 80%; margin: 0 auto; }
+
+main .study_area.exercises_area { max-width: 230px; }
 
 main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { width: 100%; }
 
@@ -1259,15 +1262,119 @@ main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .ex
 
 main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img { position: relative; margin: 0 0 0 20px; }
 
-main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img img { border-radius: 10px; }
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img img { border-radius: 10px; border: 3px solid; }
 
 main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img .exercises_gif_letter_link { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
 
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_A img { border-color: #e60b32; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_B img { border-color: #475476; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_C img { border-color: #e25d33; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_D img { border-color: #3a4875; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_E img { border-color: #77482c; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_F img { border-color: #fc6a05; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_G img { border-color: #e49354; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_H img { border-color: #ffbb17; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_I img { border-color: #78533a; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_J img { border-color: #1a07a0; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_K img { border-color: #d22e30; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_L img { border-color: #ffbb17; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_M img { border-color: #f74b4b; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_N img { border-color: #a25b23; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_O img { border-color: #036fb8; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_P img { border-color: #f21c2f; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_Q img { border-color: #a0132b; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_R img { border-color: #e86d01; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_S img { border-color: #825236; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_T img { border-color: #ffbe23; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_U img { border-color: #e49354; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_V img { border-color: #652d90; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_W img { border-color: #4d2a52; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_X img { border-color: #cc2628; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_Y img { border-color: #42567c; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item .exercises_left_item_img.letter_Z img { border-color: #ffbb17; }
+
 main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; margin: 40px auto; }
 
-main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img img { border-radius: 10px; }
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img img { border-radius: 10px; border: 5px solid; }
 
-@media screen and (min-width: 576px) { main .study_area { max-width: 1200px; }
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_A img { border-color: #e60b32; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_B img { border-color: #475476; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_C img { border-color: #e25d33; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_D img { border-color: #3a4875; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_E img { border-color: #77482c; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_F img { border-color: #fc6a05; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_G img { border-color: #e49354; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_H img { border-color: #ffbb17; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_I img { border-color: #78533a; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_J img { border-color: #1a07a0; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_K img { border-color: #d22e30; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_L img { border-color: #ffbb17; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_M img { border-color: #f74b4b; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_N img { border-color: #a25b23; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_O img { border-color: #036fb8; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_P img { border-color: #f21c2f; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_Q img { border-color: #a0132b; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_R img { border-color: #e86d01; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_S img { border-color: #825236; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_T img { border-color: #ffbe23; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_U img { border-color: #e49354; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_V img { border-color: #652d90; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_W img { border-color: #4d2a52; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_X img { border-color: #cc2628; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_Y img { border-color: #42567c; }
+
+main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .exercises_left_item .exercises_left_item_img.letter_Z img { border-color: #ffbb17; }
+
+@media screen and (min-width: 576px) { main .study_area.exercises_area { max-width: 1200px; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 60%; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 80%; } }
 
@@ -1281,12 +1388,22 @@ main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .e
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 70%; max-width: 700px; margin: 80px 0; } }
 
 @media screen and (orientation: landscape) and (min-width: 700px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; justify-content: space-between; }
-  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 40%; margin: 20px 5%; max-width: 350px; }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 40%; margin: 20px 0; max-width: 350px; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { max-width: 400px; } }
 
 @media screen and (orientation: landscape) and (min-width: 992px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { margin: 80px 5% 80px 0; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 100%; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { max-width: 700px; } }
+
+main .study_area.select_page_area .select_page_content { display: flex; flex-wrap: wrap; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item { width: 40%; margin: 20px 5%; }
+
+@media screen and (min-width: 500px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 28%; margin: 20px 2.6%; } }
+
+@media screen and (min-width: 576px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 20%; margin: 20px 2.5%; } }
+
+@media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
 
 main .main_publicity .main_publicity_content .feature { display: flex; flex-wrap: wrap; }
 

@@ -1,0 +1,78 @@
+main {
+    .study_area {
+        &.select_page_area {
+            .select_page_content{
+                display: flex;
+                flex-wrap: wrap;
+
+                .select_page_content_item{
+                    width: 40%;
+                    margin: 20px 5%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+        .study_area {
+    
+            &.select_page_area {
+                .select_page_content{
+    
+                    .select_page_content_item{
+                        width: 28%;
+                        margin: 20px 2.6%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    main {
+        .study_area {
+    
+            &.select_page_area {
+                .select_page_content{
+    
+                    .select_page_content_item{
+                        width: 20%;
+                        margin: 20px 2.5%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    main {
+        .study_area {
+    
+            &.select_page_area {
+                .select_page_content{
+    
+                    .select_page_content_item{
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 992px) {
+
+}
+
+@media screen and (min-width: 1400px) {}

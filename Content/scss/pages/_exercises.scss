@@ -1,10 +1,11 @@
 main {
     .study_area {
         width: 80%;
-        max-width: 230px;
         margin: 0 auto;
 
         &.exercises_area {
+            max-width: 230px;
+
             .exercises_area_img {
 
                 .exercises_area_img_left {
@@ -34,6 +35,7 @@ main {
 
                             img{
                                 border-radius: 10px;
+                                border: 3px solid;
                             }
 
                             .exercises_gif_letter_link {
@@ -42,6 +44,137 @@ main {
                                 top: 0;
                                 width: 100%;
                                 height: 100%;
+                            }
+
+                            &.letter_A{
+                                img{
+                                    border-color: $letter_A;
+                                }
+                            }
+                            &.letter_B{
+                                img{
+                                    border-color: $letter_B;
+                                }
+                            }
+                            &.letter_C{
+                                img{
+                                    border-color: $letter_C;
+                                }
+                            }
+                            &.letter_D{
+                                img{
+                                    border-color: $letter_D;
+                                }
+                            }
+                            &.letter_E{
+                                img{
+                                    border-color: $letter_E;
+                                }
+                            }
+                            &.letter_F{
+                                img{
+                                    border-color: $letter_F;
+                                }
+                            }
+                            &.letter_G{
+                                img{
+                                    border-color: $letter_G;
+                                }
+                            }
+                            &.letter_H{
+                                img{
+                                    border-color: $letter_H;
+                                }
+                            }
+                            &.letter_I{
+                                img{
+                                    border-color: $letter_I;
+                                }
+                            }
+                            &.letter_J{
+                                img{
+                                    border-color: $letter_J;
+                                }
+                            }
+                            &.letter_K{
+                                img{
+                                    border-color: $letter_K;
+                                }
+                            }
+                            &.letter_L{
+                                img{
+                                    border-color: $letter_L;
+                                }
+                            }
+                            &.letter_M{
+                                img{
+                                    border-color: $letter_M;
+                                }
+                            }
+                            &.letter_N{
+                                img{
+                                    border-color: $letter_N;
+                                }
+                            }
+                            &.letter_O{
+                                img{
+                                    border-color: $letter_O;
+                                }
+                            }
+                            &.letter_P{
+                                img{
+                                    border-color: $letter_P;
+                                }
+                            }
+                            &.letter_Q{
+                                img{
+                                    border-color: $letter_Q;
+                                }
+                            }
+                            &.letter_R{
+                                img{
+                                    border-color: $letter_R;
+                                }
+                            }
+                            &.letter_S{
+                                img{
+                                    border-color: $letter_S;
+                                }
+                            }
+                            &.letter_T{
+                                img{
+                                    border-color: $letter_T;
+                                }
+                            }
+                            &.letter_U{
+                                img{
+                                    border-color: $letter_U;
+                                }
+                            }
+                            &.letter_V{
+                                img{
+                                    border-color: $letter_V;
+                                }
+                            }
+                            &.letter_W{
+                                img{
+                                    border-color: $letter_W;
+                                }
+                            }
+                            &.letter_X{
+                                img{
+                                    border-color: $letter_X;
+                                }
+                            }
+                            &.letter_Y{
+                                img{
+                                    border-color: $letter_Y;
+                                }
+                            }
+                            &.letter_Z{
+                                img{
+                                    border-color: $letter_Z;
+                                }
                             }
                         }
                     }
@@ -55,6 +188,138 @@ main {
                         .exercises_left_item_img{
                             img{
                                 border-radius: 10px;
+                                border: 5px solid;
+                            }
+
+                            &.letter_A{
+                                img{
+                                    border-color: $letter_A;
+                                }
+                            }
+                            &.letter_B{
+                                img{
+                                    border-color: $letter_B;
+                                }
+                            }
+                            &.letter_C{
+                                img{
+                                    border-color: $letter_C;
+                                }
+                            }
+                            &.letter_D{
+                                img{
+                                    border-color: $letter_D;
+                                }
+                            }
+                            &.letter_E{
+                                img{
+                                    border-color: $letter_E;
+                                }
+                            }
+                            &.letter_F{
+                                img{
+                                    border-color: $letter_F;
+                                }
+                            }
+                            &.letter_G{
+                                img{
+                                    border-color: $letter_G;
+                                }
+                            }
+                            &.letter_H{
+                                img{
+                                    border-color: $letter_H;
+                                }
+                            }
+                            &.letter_I{
+                                img{
+                                    border-color: $letter_I;
+                                }
+                            }
+                            &.letter_J{
+                                img{
+                                    border-color: $letter_J;
+                                }
+                            }
+                            &.letter_K{
+                                img{
+                                    border-color: $letter_K;
+                                }
+                            }
+                            &.letter_L{
+                                img{
+                                    border-color: $letter_L;
+                                }
+                            }
+                            &.letter_M{
+                                img{
+                                    border-color: $letter_M;
+                                }
+                            }
+                            &.letter_N{
+                                img{
+                                    border-color: $letter_N;
+                                }
+                            }
+                            &.letter_O{
+                                img{
+                                    border-color: $letter_O;
+                                }
+                            }
+                            &.letter_P{
+                                img{
+                                    border-color: $letter_P;
+                                }
+                            }
+                            &.letter_Q{
+                                img{
+                                    border-color: $letter_Q;
+                                }
+                            }
+                            &.letter_R{
+                                img{
+                                    border-color: $letter_R;
+                                }
+                            }
+                            &.letter_S{
+                                img{
+                                    border-color: $letter_S;
+                                }
+                            }
+                            &.letter_T{
+                                img{
+                                    border-color: $letter_T;
+                                }
+                            }
+                            &.letter_U{
+                                img{
+                                    border-color: $letter_U;
+                                }
+                            }
+                            &.letter_V{
+                                img{
+                                    border-color: $letter_V;
+                                }
+                            }
+                            &.letter_W{
+                                img{
+                                    border-color: $letter_W;
+                                }
+                            }
+                            &.letter_X{
+                                img{
+                                    border-color: $letter_X;
+                                }
+                            }
+                            &.letter_Y{
+                                img{
+                                    border-color: $letter_Y;
+                                }
+                            }
+                            &.letter_Z{
+                                img{
+                                    border-color: $letter_Z;
+                                }
                             }
                         }
                     }
@@ -67,9 +332,10 @@ main {
 @media screen and (min-width: 576px) {
     main {
         .study_area {
-            max-width: 1200px;
     
             &.exercises_area {
+                max-width: 1200px;
+
                 .exercises_area_img {
     
                     .exercises_area_img_left {
@@ -165,7 +431,7 @@ main {
         
                             .exercises_left_item {
                                 width: 40%;
-                                margin: 20px 5%;
+                                margin: 20px 0;
                                 max-width: 350px;
                             }
                         }
