@@ -1405,6 +1405,38 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 
 @media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
 
+main .map_slide { position: relative; }
+
+main .map_slide .map_slide_item_area { position: absolute; width: calc(100% - 40px); height: 100%; top: 0; left: 50%; transform: translate(-50%, 0); }
+
+main .map_slide .map_slide_item_area .map_slide_item { position: absolute; z-index: 1; width: 16.66666%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_eleven { top: 9.3%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_ten { top: 34.5%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_nine { top: 72.5%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_twelve { top: 23.8%; left: 17%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_eight { top: 65.1%; left: 17%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_thirteen { top: 3.75%; left: 33.1%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_six { top: 35.9%; left: 33.1%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_seven { top: 70.1%; left: 33.1%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_five { top: 61.1%; left: 48.8%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_one { top: 38.6%; left: 64.5%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_four { top: 67%; left: 64.5%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_two { top: 25.4%; left: 80.4%; }
+
+main .map_slide .map_slide_item_area .map_slide_item.map_slide_item_three { top: 55.4%; left: 80.4%; }
+
 main .main_publicity .main_publicity_content .feature { display: flex; flex-wrap: wrap; }
 
 main .main_publicity .main_publicity_content .feature .feature_content { width: 100%; margin: 0 0 40px 0; }
