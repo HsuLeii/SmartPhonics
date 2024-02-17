@@ -68,30 +68,4 @@ $letter_X:#cc2628;
 $letter_Y:#42567c;
 $letter_Z:#ffbb17;
 
-// 顏色選擇
-$text_color: (
-    colorBlue: $main_color_blue,
-    colorGreen: $main_color_green,
-    colorRed: $main_color_red,
-);
-
-@mixin mainTextColor($parent, $text_color) {
-    #{$parent} {
-      color: $text_color !important;
-    }
-  }
-  
-  @each $text_color, $value in $text_color {
-      @include mainTextColor(".about_content_#{$text_color}", $value);
-    }
-
-    @mixin mainBorderColor($parent, $text_color) {
-        #{$parent} {
-          border-color: $text_color !important;
-        }
-      }
-      
-      @each $text_color, $value in $text_color {
-          @include mainBorderColor(".about_border_#{$text_color}", $value);
-        }
-
+$color_one: #41aeb3;
