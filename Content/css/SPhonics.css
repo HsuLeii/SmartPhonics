@@ -1435,15 +1435,15 @@ main .map_road .map_route_item::before { content: ""; width: 3px; height: 100%; 
 
 main .map_road .map_route_item .map_item_project { position: relative; margin: 40px auto; }
 
-main .map_road .map_route_item .map_item_project .timeline-num { background: #fff; width: 30px; height: 30px; position: absolute; top: 0; left: 0; margin: 0 0 0 -12px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 3px solid #514223; }
+main .map_road .map_route_item .map_item_project .timeline-num { background: #fff; width: 40px; height: 40px; position: absolute; top: 0; left: 0; margin: 0 0 0 -17px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 3px solid #514223; }
 
-main .map_road .map_route_item .map_item_project .timeline-num p { color: #514223; font-weight: bold; }
+main .map_road .map_route_item .map_item_project .timeline-num p { color: #514223; font-weight: bold; font-size: 20px; }
 
-main .map_road .map_route_item .map_item_project .map_route_item_link { margin: 0 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; width: calc(100% - 30px); }
+main .map_road .map_route_item .map_item_project .map_route_item_link { margin: 0 0 0 auto; display: flex; flex-direction: column; width: calc(100% - 30px); }
 
-main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 100%; }
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 100%; max-width: 300px; margin: 0 0 10px 0; }
 
-main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 100%; border-radius: 0 0 20px 20px; padding: 10px; }
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 100%; border-radius: 20px; padding: 10px; }
 
 main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text p { display: flex; flex-direction: column; color: #2e3233; }
 
@@ -1451,34 +1451,105 @@ main .map_road .map_route_item .map_item_project .map_route_item_link .map_route
 
 main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_introduce p { margin: 5px auto; }
 
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_introduce p .map_route_item_span_one { min-width: 65px; }
+
 main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_tittle { font-weight: bold; }
 
-main .map_road .map_route_item .map_item_project.item_project_one .map_route_item_text { background-color: #41aeb3; }
+main .map_road .map_route_item .map_item_project.item_project_one .map_route_item_text { background-color: #ffa2c4; }
 
-main .map_road .map_route_item .map_item_project.item_project_two .map_route_item_text { background-color: #ffc501; }
+main .map_road .map_route_item .map_item_project.item_project_two .map_route_item_text { background-color: #ff6983; }
+
+main .map_road .map_route_item .map_item_project.item_project_three .map_route_item_text { background-color: #E48E58; }
+
+main .map_road .map_route_item .map_item_project.item_project_four .map_route_item_text { background-color: #ea6640; }
+
+main .map_road .map_route_item .map_item_project.item_project_five .map_route_item_text { background-color: #ffce5a; }
+
+main .map_road .map_route_item .map_item_project.item_project_two .map_route_item_text { background-color: #ff6983; }
+
+main .map_road .map_route_item .map_item_project.item_project_six .map_route_item_text { background-color: #ffcf2c; }
+
+main .map_road .map_route_item .map_item_project.item_project_seven .map_route_item_text { background-color: #A8C879; }
+
+main .map_road .map_route_item .map_item_project.item_project_eight .map_route_item_text { background-color: #5AA08D; }
+
+main .map_road .map_route_item .map_item_project.item_project_nine .map_route_item_text { background-color: #68deff; }
+
+main .map_road .map_route_item .map_item_project.item_project_ten .map_route_item_text { background-color: #70b9da; }
+
+main .map_road .map_route_item .map_item_project.item_project_eleven .map_route_item_text { background-color: #b992cf; }
+
+main .map_road .map_route_item .map_item_project.item_project_twelve .map_route_item_text { background-color: #9a65b9; }
+
+main .map_road .map_route_item .map_item_project.item_project_thirteen .map_route_item_text { background-color: #bf8473; }
 
 @media screen and (min-width: 500px) { main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text p { flex-direction: row; } }
 
 @media screen and (min-width: 576px) { main .map_road .map_route_item .map_item_project .map_route_item_link { flex-direction: row; align-items: center; }
-  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 30%; padding: 10px; }
-  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 70%; border-radius: 20px; } }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 40%; padding: 10px; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 60%; } }
 
 @media screen and (min-width: 768px) { main .map_road .map_route_item .map_item_project .map_route_item_link { justify-content: space-between; }
-  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 40%; }
   main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 55%; } }
 
-@media screen and (min-width: 992px) { main .map_road .map_road_route { display: block; }
-  main .map_road .map_road_route .square { position: relative; height: 280px; height: calc(300px * 0.67); }
-  main .map_road .map_road_route .square.square_right::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 300px; height: 15px; background-color: #ed710e; transform: translate(-50%, -50%) rotate(45deg); }
-  main .map_road .map_road_route .square.square_left::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 300px; height: 15px; background-color: #ed710e; transform: translate(-50%, -50%) rotate(-45deg); }
+@media screen and (min-width: 992px) { main .map_road .map_road_route { display: block; margin: calc(350px * 0.83) auto; }
+  main .map_road .map_road_route .square { position: relative; height: calc(350px * 0.83); }
+  main .map_road .map_road_route .square.square_right::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 350px; height: 15px; background-color: #ed710e; transform: translate(-50%, -50%) rotate(60deg); border-radius: 50px; }
+  main .map_road .map_road_route .square.square_left::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 350px; height: 15px; background-color: #ed710e; transform: translate(-50%, -50%) rotate(-60deg); border-radius: 50px; }
   main .map_road .map_route_item { width: 90%; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); }
-  main .map_road .map_route_item .map_item_project { position: absolute; transform: translate(0, -50%); width: calc(50% - 150px); }
+  main .map_road .map_route_item .map_item_project { position: absolute; transform: translate(0, -50%); width: calc(50% - 150px); margin: 0 auto; }
+  main .map_road .map_route_item .map_item_project .timeline-num { width: 45px; height: 45px; top: 50%; margin: 0; }
+  main .map_road .map_route_item .map_item_project .timeline-num p { font-size: 25px; }
   main .map_road .map_route_item .map_item_project .map_route_item_link { flex-direction: column; width: 100%; }
-  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 100%; }
-  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 100%; border-radius: 0 0 50px 50px; padding: 10px 10px 25px; }
-  main .map_road .map_route_item .map_item_project.item_project_one { top: calc(300px * 0.655 * 0); right: 2.5%; }
-  main .map_road .map_route_item .map_item_project.item_project_two { top: calc(300px * 0.655 * 1); left: 2.5%; }
-  main .map_road .map_route_item .map_item_project.item_project_three { top: calc(300px * 0.655 * 2); right: 2.5%; } }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 100%; padding: 0; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 100%; }
+  main .map_road .map_route_item .map_item_project.map_item_project_right { right: 0; }
+  main .map_road .map_route_item .map_item_project.map_item_project_right .timeline-num { transform: translate(calc(-75px - 7.5px - 25%), -50%); }
+  main .map_road .map_route_item .map_item_project.map_item_project_left { left: 0; }
+  main .map_road .map_route_item .map_item_project.map_item_project_left .timeline-num { left: auto; right: 0; transform: translate(calc(75px + 7.5px + 25%), -50%); }
+  main .map_road .map_route_item .map_item_project.item_project_one { top: calc(350px * 0.83 * 0); }
+  main .map_road .map_route_item .map_item_project.item_project_two { top: calc(350px * 0.83 * 1); }
+  main .map_road .map_route_item .map_item_project.item_project_three { top: calc(350px * 0.83 * 2); }
+  main .map_road .map_route_item .map_item_project.item_project_four { top: calc(350px * 0.83 * 3); }
+  main .map_road .map_route_item .map_item_project.item_project_five { top: calc(350px * 0.83 * 4); }
+  main .map_road .map_route_item .map_item_project.item_project_six { top: calc(350px * 0.83 * 5); }
+  main .map_road .map_route_item .map_item_project.item_project_seven { top: calc(350px * 0.83 * 6); }
+  main .map_road .map_route_item .map_item_project.item_project_eight { top: calc(350px * 0.83 * 7); }
+  main .map_road .map_route_item .map_item_project.item_project_nine { top: calc(350px * 0.83 * 8); }
+  main .map_road .map_route_item .map_item_project.item_project_ten { top: calc(350px * 0.83 * 9); }
+  main .map_road .map_route_item .map_item_project.item_project_eleven { top: calc(350px * 0.83 * 10); }
+  main .map_road .map_route_item .map_item_project.item_project_twelve { top: calc(350px * 0.83 * 11); }
+  main .map_road .map_route_item .map_item_project.item_project_thirteen { top: calc(350px * 0.83 * 12); } }
+
+@media screen and (min-width: 1200px) { main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_introduce p .map_route_item_span_one { min-width: 80px; } }
+
+@media screen and (min-width: 1400px) { main .map_road .map_road_route { margin: calc(220px * 0.83) auto; }
+  main .map_road .map_road_route .square { position: relative; height: calc(220px * 0.83); }
+  main .map_road .map_road_route .square.square_right::before { width: 220px; }
+  main .map_road .map_road_route .square.square_left::before { width: 220px; }
+  main .map_road .map_route_item .map_item_project { width: calc(50% - 80px); }
+  main .map_road .map_route_item .map_item_project .map_route_item_link { flex-direction: row; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 40%; padding: 0; margin: 0; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 55%; }
+  main .map_road .map_route_item .map_item_project.map_item_project_right .timeline-num { transform: translate(calc(-40px - 7.5px - 25%), -50%); }
+  main .map_road .map_route_item .map_item_project.map_item_project_left .timeline-num { left: auto; right: 0; transform: translate(calc(40px + 7.5px + 25%), -50%); }
+  main .map_road .map_route_item .map_item_project.map_item_project_left .map_route_item_link { display: flex; flex-direction: row-reverse; }
+  main .map_road .map_route_item .map_item_project.item_project_one { top: calc(220px * 0.83 * 0); }
+  main .map_road .map_route_item .map_item_project.item_project_two { top: calc(220px * 0.83 * 1); }
+  main .map_road .map_route_item .map_item_project.item_project_three { top: calc(220px * 0.83 * 2); }
+  main .map_road .map_route_item .map_item_project.item_project_four { top: calc(220px * 0.83 * 3); }
+  main .map_road .map_route_item .map_item_project.item_project_five { top: calc(220px * 0.83 * 4); }
+  main .map_road .map_route_item .map_item_project.item_project_six { top: calc(220px * 0.83 * 5); }
+  main .map_road .map_route_item .map_item_project.item_project_seven { top: calc(220px * 0.83 * 6); }
+  main .map_road .map_route_item .map_item_project.item_project_eight { top: calc(220px * 0.83 * 7); }
+  main .map_road .map_route_item .map_item_project.item_project_nine { top: calc(220px * 0.83 * 8); }
+  main .map_road .map_route_item .map_item_project.item_project_ten { top: calc(220px * 0.83 * 9); }
+  main .map_road .map_route_item .map_item_project.item_project_eleven { top: calc(220px * 0.83 * 10); }
+  main .map_road .map_route_item .map_item_project.item_project_twelve { top: calc(220px * 0.83 * 11); }
+  main .map_road .map_route_item .map_item_project.item_project_thirteen { top: calc(220px * 0.83 * 12); } }
+
+@media screen and (min-width: 1600px) { main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_img { width: 35%; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text { width: 60%; } }
 
 main .main_publicity .main_publicity_content .feature { display: flex; flex-wrap: wrap; }
 
