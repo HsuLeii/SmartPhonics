@@ -1,4 +1,7 @@
 main {
+    .map_slide_area{
+        background-color: $map_slide_bg;
+    }
     .map_slide {
         position: relative;
 
@@ -110,6 +113,7 @@ main {
 
     .map_road {
         position: relative;
+        
 
         .map_road_route {
             display: none;
@@ -384,7 +388,8 @@ main {
 
             .map_road_route {
                 display: block;
-                margin: calc(350px * 0.83 ) auto;
+                padding: 0 0 calc(350px * 0.83 );
+                margin: calc(350px * 0.83 ) auto 0;
 
                 .square {
                     position: relative;
@@ -661,7 +666,8 @@ main {
 
         .map_road {
             .map_road_route {
-                margin: calc(220px * 0.83 ) auto;
+                padding: 0 0 calc(220px * 0.83 );
+                margin: calc(220px * 0.83 ) auto 0;
 
                 .square {
                     position: relative;

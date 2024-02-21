@@ -6,6 +6,7 @@ body { font-family: 'Lexend', 'Noto Sans SC', 'Noto Sans TC'; }
 /*transparency*/
 /*other*/
 /*STUDY*/
+/*MAP*/
 main .main_publicity .main_publicity_content, .input_area .form-control:focus, main .login_area, main .test_area.continue_challenge_area .continue_challenge_item_area, main .main_publicity .main_publicity_content .about_content_area .about_content_item, main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { box-shadow: 5px 5px 10px 3px #ed710e40; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, figure { margin: 0; padding: 0; list-style: none; }
@@ -1393,6 +1394,8 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 
 @media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
 
+main .map_slide_area { background-color: #fffbd4; }
+
 main .map_slide { position: relative; }
 
 main .map_slide .map_slide_item_area { position: absolute; width: calc(100% - 35px); height: 100%; top: 0; left: 50%; transform: translate(-50%, 0); }
@@ -1501,7 +1504,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 
 @media screen and (min-width: 992px) { main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num { width: 35px; height: 35px; }
   main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num p { font-size: 17px; }
-  main .map_road .map_road_route { display: block; margin: calc(350px * 0.83) auto; }
+  main .map_road .map_road_route { display: block; padding: 0 0 calc(350px * 0.83); margin: calc(350px * 0.83) auto 0; }
   main .map_road .map_road_route .square { position: relative; height: calc(350px * 0.83); }
   main .map_road .map_road_route .square.square_right::before { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 350px; height: 15px; background-color: #ed710e; transform: translate(-50%, -50%) rotate(60deg); border-radius: 50px; }
   main .map_road .map_road_route .square.square_right.square_right_two::before { background-color: #ff6983; }
@@ -1547,7 +1550,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
   main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num p { font-size: 19px; }
   main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_introduce p .map_route_item_span_one { min-width: 80px; } }
 
-@media screen and (min-width: 1400px) { main .map_road .map_road_route { margin: calc(220px * 0.83) auto; }
+@media screen and (min-width: 1400px) { main .map_road .map_road_route { padding: 0 0 calc(220px * 0.83); margin: calc(220px * 0.83) auto 0; }
   main .map_road .map_road_route .square { position: relative; height: calc(220px * 0.83); }
   main .map_road .map_road_route .square.square_right::before { width: 220px; }
   main .map_road .map_road_route .square.square_left::before { width: 220px; }
