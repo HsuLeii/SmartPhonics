@@ -96,7 +96,7 @@ main {
                 content: "";
                 width: 3px;
                 height: 100%;
-                background: $brown;
+                background-color: $brown;
                 left: 0;
                 top: 0;
                 position: absolute;
@@ -142,7 +142,7 @@ main {
                     .map_route_item_text {
                         width: 100%;
                         border-radius: 20px;
-                        padding: 10px;
+                        padding: 10px 15px;
 
                         p {
                             display: flex;
@@ -312,9 +312,6 @@ main {
                     .map_route_item_link {
                         justify-content: space-between;
 
-                        .map_route_item_img {
-                        }
-
                         .map_route_item_text {
                             width: 55%;
                         }
@@ -351,6 +348,42 @@ main {
                             transform: translate(-50%, -50%) rotate(60deg);
                             border-radius: 50px;
                         }
+
+                        &.square_right_two{
+                            &::before{
+                                background: linear-gradient(0deg, $color_two 50%, $color_three 50%);
+                            }
+                        }
+
+                        &.square_right_four{
+                            &::before{
+                                background: linear-gradient(0deg, $color_four 50%, $color_five 50%);
+                            }
+                        }
+
+                        &.square_right_six{
+                            &::before{
+                                background: linear-gradient(0deg, $color_six 50%, $color_seven 50%);
+                            }
+                        }
+
+                        &.square_right_eight{
+                            &::before{
+                                background: linear-gradient(0deg, $color_eight 50%, $color_nine 50%);
+                            }
+                        }
+
+                        &.square_right_ten{
+                            &::before{
+                                background: linear-gradient(0deg, $color_ten 50%, $color_eleven 50%);
+                            }
+                        }
+
+                        &.square_right_twelve{
+                            &::before{
+                                background: linear-gradient(0deg, $color_twelve 50%, $color_thirteen 50%);
+                            }
+                        }
                     }
 
                     &.square_left {
@@ -366,6 +399,42 @@ main {
                             transform: translate(-50%, -50%) rotate(-60deg);
                             border-radius: 50px;
                         }
+
+                        &.square_left_one{
+                            &::before{
+                                background: linear-gradient(0deg, $color_one 50%, $color_two 50%);
+                            }
+                        }
+
+                        &.square_left_three{
+                            &::before{
+                                background: linear-gradient(0deg, $color_three 50%, $color_four 50%);
+                            }
+                        }
+
+                        &.square_left_five{
+                            &::before{
+                                background: linear-gradient(0deg, $color_five 50%, $color_six 50%);
+                            }
+                        }
+
+                        &.square_left_seven{
+                            &::before{
+                                background: linear-gradient(0deg, $color_seven 50%, $color_eight 50%);
+                            }
+                        }
+
+                        &.square_left_nine{
+                            &::before{
+                                background: linear-gradient(0deg, $color_nine 50%, $color_ten 50%);
+                            }
+                        }
+
+                        &.square_left_eleven{
+                            &::before{
+                                background: linear-gradient(0deg, $color_eleven 50%, $color_twelve 50%);
+                            }
+                        }
                     }
                 }
             }
@@ -376,6 +445,10 @@ main {
                 top: 0;
                 left: 50%;
                 transform: translate(-50%, 0);
+
+                &::before {
+                    display: none;
+                }
 
                 .map_item_project {
                     position: absolute;
@@ -412,7 +485,7 @@ main {
                         right: 0;
 
                         .timeline-num{
-                            transform: translate(calc(-75px - 7.5px - 25%) , -50%);
+                            transform: translate(calc(-75px - 25%) , -50%);
                         }
                     }
 
@@ -422,7 +495,7 @@ main {
                         .timeline-num{
                             left: auto;
                             right: 0;
-                            transform: translate(calc(75px + 7.5px + 25%) , -50%);
+                            transform: translate(calc(75px + 25%) , -50%);
                         }
                     }
 
@@ -626,31 +699,6 @@ main {
 
                     &.item_project_thirteen {
                         top: calc(220px * 0.83 * 12);
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width: 1600px) {
-    main {
-
-        .map_road {
-
-            .map_route_item {
-
-                .map_item_project {
-
-                    .map_route_item_link {
-
-                        .map_route_item_img{
-                            width: 35%;
-                        }
-
-                        .map_route_item_text{
-                            width: 60%;
-                        }
                     }
                 }
             }
