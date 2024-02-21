@@ -4,7 +4,7 @@ main {
 
         .map_slide_item_area {
             position: absolute;
-            width: calc(100% - 40px);
+            width: calc(100% - 35px);
             height: 100%;
             top: 0;
             left: 50%;
@@ -15,66 +15,94 @@ main {
                 z-index: 1;
                 width: 16.66666%;
 
+                .map_slide_item_link{
+                    display: block;
+                    position: relative;
+                    height: 100%;
+
+                    .map_slide_num{
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translate(-50% , 50%);
+                        width: 25px;
+                        height: 25px;
+                    border: 2px solid $brown;
+                    border-radius: 50%;
+                    background-color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    display: none;
+
+                    p {
+                        color: $brown;
+                        font-weight: bold;
+                        font-size: 10px;
+                    }
+                    }
+                }
+
                 &.map_slide_item_eleven {
-                    top: 9.3%;
+                    top: 9.19841%;
                 }
 
                 &.map_slide_item_ten {
-                    top: 34.5%;
+                    top: 34.36719%;
                 }
 
                 &.map_slide_item_nine {
-                    top: 72.5%;
+                    top: 72.18141%;
                 }
 
                 &.map_slide_item_twelve {
-                    top: 23.8%;
-                    left: 17%;
+                    top: 23.80765%;
+                    left: 17.14593%;
                 }
 
                 &.map_slide_item_eight {
-                    top: 65.1%;
-                    left: 17%;
+                    top: 53.00568%;
+                    left: 17.14593%;
                 }
 
                 &.map_slide_item_thirteen {
-                    top: 3.75%;
-                    left: 33.1%;
+                    top: 3.53101%;
+                    left: 33.07859%;
                 }
 
                 &.map_slide_item_six {
                     top: 35.9%;
-                    left: 33.1%;
+                    left: 35.96155%;
                 }
 
                 &.map_slide_item_seven {
-                    top: 70.1%;
-                    left: 33.1%;
+                    top: 70.56579%;
+                    left: 33.07859%;
                 }
 
                 &.map_slide_item_five {
-                    top: 61.1%;
-                    left: 48.8%;
+                    top: 60.90074%;
+                    left: 48.88148%;
                 }
 
                 &.map_slide_item_one {
-                    top: 38.6%;
-                    left: 64.5%;
+                    top: 38.60446%;
+                    left: 64.62619%;
                 }
 
                 &.map_slide_item_four {
-                    top: 67%;
-                    left: 64.5%;
+                    top: 67.23438%;
+                    left: 64.62619%;
                 }
 
                 &.map_slide_item_two {
-                    top: 25.4%;
-                    left: 80.4%;
+                    top: 25.75532%;
+                    left: 80.42909%;
                 }
 
                 &.map_slide_item_three {
-                    top: 55.4%;
-                    left: 80.4%;
+                    top: 55.69440%;
+                    left: 80.42909%;
                 }
             }
         }
@@ -107,7 +135,7 @@ main {
                 margin: 40px auto;
 
                 .timeline-num {
-                    background: $white;
+                    background-color: $white;
                     width: 40px;
                     height: 40px;
                     position: absolute;
@@ -304,6 +332,17 @@ main {
 
 @media screen and (min-width: 768px) {
     main {
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
         .map_road {
             .map_route_item {
 
@@ -324,6 +363,22 @@ main {
 
 @media screen and (min-width: 992px) {
     main {
+
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            width: 35px;
+                            height: 35px;
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
         .map_road {
 
@@ -351,37 +406,37 @@ main {
 
                         &.square_right_two{
                             &::before{
-                                background: linear-gradient(0deg, $color_two 50%, $color_three 50%);
+                                background-color: $color_two;
                             }
                         }
 
                         &.square_right_four{
                             &::before{
-                                background: linear-gradient(0deg, $color_four 50%, $color_five 50%);
+                                background-color: $color_four;
                             }
                         }
 
                         &.square_right_six{
                             &::before{
-                                background: linear-gradient(0deg, $color_six 50%, $color_seven 50%);
+                                background-color: $color_six;
                             }
                         }
 
                         &.square_right_eight{
                             &::before{
-                                background: linear-gradient(0deg, $color_eight 50%, $color_nine 50%);
+                                background-color: $color_eight;
                             }
                         }
 
                         &.square_right_ten{
                             &::before{
-                                background: linear-gradient(0deg, $color_ten 50%, $color_eleven 50%);
+                                background-color: $color_ten;
                             }
                         }
 
                         &.square_right_twelve{
                             &::before{
-                                background: linear-gradient(0deg, $color_twelve 50%, $color_thirteen 50%);
+                                background-color: $color_twelve;
                             }
                         }
                     }
@@ -402,37 +457,37 @@ main {
 
                         &.square_left_one{
                             &::before{
-                                background: linear-gradient(0deg, $color_one 50%, $color_two 50%);
+                                background-color: $color_one;
                             }
                         }
 
                         &.square_left_three{
                             &::before{
-                                background: linear-gradient(0deg, $color_three 50%, $color_four 50%);
+                                background-color: $color_three;
                             }
                         }
 
                         &.square_left_five{
                             &::before{
-                                background: linear-gradient(0deg, $color_five 50%, $color_six 50%);
+                                background-color: $color_five;
                             }
                         }
 
                         &.square_left_seven{
                             &::before{
-                                background: linear-gradient(0deg, $color_seven 50%, $color_eight 50%);
+                                background-color: $color_seven;
                             }
                         }
 
                         &.square_left_nine{
                             &::before{
-                                background: linear-gradient(0deg, $color_nine 50%, $color_ten 50%);
+                                background-color: $color_nine;
                             }
                         }
 
                         &.square_left_eleven{
                             &::before{
-                                background: linear-gradient(0deg, $color_eleven 50%, $color_twelve 50%);
+                                background-color: $color_eleven;
                             }
                         }
                     }
@@ -560,7 +615,22 @@ main {
 
 @media screen and (min-width: 1200px) {
     main {
-
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            width: 40px;
+                            height: 40px;
+                            border: 3px solid $brown;
+                            p {
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .map_road {
 
             .map_route_item {
@@ -632,7 +702,7 @@ main {
 
                     &.map_item_project_right{
                         .timeline-num{
-                            transform: translate(calc(-40px - 7.5px - 25%) , -50%);
+                            transform: translate(calc(-40px - 25%) , -50%);
                         }
                     }
 
@@ -640,7 +710,7 @@ main {
                         .timeline-num{
                             left: auto;
                             right: 0;
-                            transform: translate(calc(40px + 7.5px + 25%) , -50%);
+                            transform: translate(calc(40px + 25%) , -50%);
                         }
 
                         .map_route_item_link{
