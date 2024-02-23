@@ -1402,6 +1402,8 @@ main .map_slide .map_slide_item_area { position: absolute; width: calc(100% - 35
 
 main .map_slide .map_slide_item_area .map_slide_item { position: absolute; z-index: 1; width: 16.66666%; }
 
+main .map_slide .map_slide_item_area .map_slide_item:hover { transform: scale(1.05); }
+
 main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link { display: block; position: relative; height: 100%; }
 
 main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%); width: 25px; height: 25px; border: 2px solid #514223; border-radius: 50%; background-color: #fff; display: flex; justify-content: center; align-items: center; display: none; }
