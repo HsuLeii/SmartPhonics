@@ -306,9 +306,9 @@ main {
 
         .modal-content{
             position: relative;
-            border: 15px solid #A36039;
+            border: 15px solid $map_brown;
             border-radius: 5px;
-            background-color: #A36039;
+            background-color: $map_brown;
             
             .wood_frame{
                 position: absolute;
@@ -331,12 +331,14 @@ main {
 
                     &.wood_grain_left{
                         width: 10px;
+                        height: 100%;
                         left: 0;
                         top: 0;
                     }
 
                     &.wood_grain_right{
                         width: 10px;
+                        height: 100%;
                         right: 0;
                         top: 0;
                     }
@@ -347,6 +349,11 @@ main {
                         bottom: 0;
                         transform: translate(0 , 9px);
                     }
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
 
@@ -355,7 +362,6 @@ main {
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                border: 8px solid #895123;
                 border-radius: 5px;
                 background-color: $map_slide_bg;
             }
@@ -366,9 +372,28 @@ main {
                 position: relative;
                 z-index: 1;
                 border: 0;
+
+                .modal_close{
+                    margin: 0 0 0 auto;
+                    p{
+                        font-size: 25px;
+                        line-height: 1;
+                        svg{
+                            color: $map_brown;
+                        }
+
+
+                        &:hover{
+                            svg{
+                                color: $main_color;
+                            }
+                        }
+                    }
+                }
             }
 
             .modal-body{
+                padding: 20px;
                 .modal_body_img{
                     width: 70%;
                     margin: 0 auto 20px;
@@ -389,6 +414,21 @@ main {
                             margin: 5px auto;
                             display: flex;
                             flex-direction: column;
+                        }
+                    }
+                }
+
+                .modal_body_link{
+                    display: flex;
+                    justify-content: center;
+                    a{
+                        background-color: $map_brown;
+                        color: $white;
+                        padding: 5px 15px;
+                        border-radius: 5px;
+                        
+                        &:hover{
+                            background-color: $main_color;
                         }
                     }
                 }
@@ -786,6 +826,30 @@ main {
             }
         }
     }
+
+    .modal{
+        .modal-dialog{
+    
+            .modal-content{
+    
+                .modal-body{
+    
+                    .modal_body_text{
+                        .modal_body_name,
+                        .modal_body_introduce{
+                            p{
+                                flex-direction: row;
+
+                                .modal_body_text_span_one{
+                                    min-width: 73px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1400px) {
@@ -902,6 +966,29 @@ main {
 
                     &.item_project_thirteen {
                         top: calc(220px * 0.83 * 12);
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+    
+            .modal-content{
+    
+                .modal-body{
+    
+                    .modal_body_text{
+                        .modal_body_name,
+                        .modal_body_introduce{
+                            p{
+
+                                .modal_body_text_span_one{
+                                    min-width: 78px;
+                                }
+                            }
+                        }
                     }
                 }
             }
