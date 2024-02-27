@@ -1406,7 +1406,7 @@ main .map_slide .map_slide_item_area .map_slide_item:hover { transform: scale(1.
 
 main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link { display: block; position: relative; height: 100%; }
 
-main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%); width: 25px; height: 25px; border: 2px solid #514223; border-radius: 50%; background-color: #fff; display: flex; justify-content: center; align-items: center; display: none; }
+main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num { position: absolute; left: 50%; bottom: 0; transform: translate(-50%, 50%); width: 20px; height: 20px; border: 2px solid #514223; border-radius: 50%; background-color: #fff; display: flex; justify-content: center; align-items: center; }
 
 main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num p { color: #514223; font-weight: bold; font-size: 10px; }
 
@@ -1464,6 +1464,12 @@ main .map_road .map_route_item .map_item_project .map_route_item_link .map_route
 
 main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_introduce p .map_route_item_span_one { min-width: 65px; }
 
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_btn { margin: 20px 0; }
+
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_btn a { background-color: #514223; color: #fff; padding: 10px 15px; border-radius: 5px; }
+
+main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_btn a:hover { background-color: #ed710e; }
+
 main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text .map_route_item_tittle { font-weight: bold; }
 
 main .map_road .map_route_item .map_item_project.item_project_one .map_route_item_text { background-color: #ffa2c4; }
@@ -1498,7 +1504,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 
 .modal .modal-dialog.modal-dialog-centered { justify-content: center; }
 
-.modal .modal-dialog .modal-content { position: relative; border: 15px solid #8e521d; border-radius: 5px; background-color: #8e521d; }
+.modal .modal-dialog .modal-content { position: relative; border: 15px solid #514223; border-radius: 5px; background-color: #514223; }
 
 .modal .modal-dialog .modal-content .wood_frame { position: absolute; width: calc(100% + 25px); height: calc(100% + 25px); overflow: hidden; left: 50%; top: 50%; transform: translate(-50%, -50%); }
 
@@ -1522,7 +1528,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 
 .modal .modal-dialog .modal-content .modal-header .modal_close p { font-size: 25px; line-height: 1; }
 
-.modal .modal-dialog .modal-content .modal-header .modal_close p svg { color: #8e521d; }
+.modal .modal-dialog .modal-content .modal-header .modal_close p svg { color: #514223; }
 
 .modal .modal-dialog .modal-content .modal-header .modal_close p:hover svg { color: #ed710e; }
 
@@ -1536,13 +1542,15 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_name p, .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_introduce p { margin: 5px auto; display: flex; flex-direction: column; }
 
-.modal .modal-dialog .modal-content .modal-body .modal_body_link { display: flex; justify-content: center; }
+.modal .modal-dialog .modal-content .modal-body .modal_body_link { display: flex; justify-content: center; margin: 20px 0; }
 
-.modal .modal-dialog .modal-content .modal-body .modal_body_link a { background-color: #8e521d; color: #fff; padding: 5px 15px; border-radius: 5px; }
+.modal .modal-dialog .modal-content .modal-body .modal_body_link a { background-color: #514223; color: #fff; padding: 10px 15px; border-radius: 5px; }
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_link a:hover { background-color: #ed710e; }
 
-@media screen and (min-width: 500px) { main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text p { flex-direction: row; }
+@media screen and (min-width: 500px) { main .map_slide { position: relative; }
+  main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link .map_slide_num { width: 25px; height: 25px; }
+  main .map_road .map_route_item .map_item_project .map_route_item_link .map_route_item_text p { flex-direction: row; }
   .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_name p, .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_introduce p { flex-direction: row; } }
 
 @media screen and (min-width: 576px) { main .map_road .map_route_item .map_item_project .map_route_item_link { flex-direction: row; align-items: center; }

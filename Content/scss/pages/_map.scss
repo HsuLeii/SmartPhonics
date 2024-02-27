@@ -33,15 +33,14 @@ main {
                         left: 50%;
                         bottom: 0;
                         transform: translate(-50% , 50%);
-                        width: 25px;
-                        height: 25px;
+                        width: 20px;
+                        height: 20px;
                     border: 2px solid $brown;
                     border-radius: 50%;
                     background-color: $white;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    display: none;
 
                     p {
                         color: $brown;
@@ -201,6 +200,20 @@ main {
                             }
                         }
 
+                        .map_route_item_btn{
+                            margin: 20px 0;
+                            a{
+                                background-color: $brown;
+                                color: $white;
+                                padding: 10px 15px;
+                                border-radius: 5px;
+
+                                &:hover{
+                                    background-color: $main_color;
+                                }
+                            }
+                        }
+
                         .map_route_item_tittle {
                             font-weight: bold;
                         }
@@ -306,9 +319,9 @@ main {
 
         .modal-content{
             position: relative;
-            border: 15px solid $map_brown;
+            border: 15px solid $brown;
             border-radius: 5px;
-            background-color: $map_brown;
+            background-color: $brown;
             
             .wood_frame{
                 position: absolute;
@@ -379,7 +392,7 @@ main {
                         font-size: 25px;
                         line-height: 1;
                         svg{
-                            color: $map_brown;
+                            color: $brown;
                         }
 
 
@@ -421,10 +434,11 @@ main {
                 .modal_body_link{
                     display: flex;
                     justify-content: center;
+                    margin: 20px 0;
                     a{
-                        background-color: $map_brown;
+                        background-color: $brown;
                         color: $white;
-                        padding: 5px 15px;
+                        padding: 10px 15px;
                         border-radius: 5px;
                         
                         &:hover{
@@ -439,6 +453,25 @@ main {
 
 @media screen and (min-width: 500px) {
     main {
+
+        .map_slide {
+            position: relative;
+    
+            .map_slide_item_area {
+    
+                .map_slide_item {
+    
+                    .map_slide_item_link{
+    
+                        .map_slide_num{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
         .map_road {
             .map_route_item {
                 .map_item_project {
