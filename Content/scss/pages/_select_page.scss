@@ -1,9 +1,222 @@
 main {
     .study_area {
+        max-width: 1200px;
         &.select_page_area {
+            .select_page_head{
+                .grade_link_btn{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    padding: 60px 0 30px;
+                    margin: 0 auto;
+
+                    .grade_link{
+                        width: calc(100% / 5.5 - 10px);
+                        border-radius: 50%;
+                        background-color: $main_color;
+                        margin: 5px;
+
+                        &.active {
+                            width: calc((100% / 5.5 - 10px) * 1.3 );
+                            .grade_link_marker{
+                                .grade_link_marker_inner{
+                                    &::after {
+                                        display: block;
+                                      }
+                                }
+                            }
+                            
+                          }
+
+                        .grade_link_marker {
+                            padding: 5px;
+                        
+                            &::before {
+                              display: none;
+                            }
+                        
+                            .grade_link_marker_inner {
+                                position: relative;
+                        
+                              &::before {
+                                content: "";
+                                background-image: url(../image/photo/study/map/map_magic_wand.png);
+                                background-size: cover;
+                                width: 58px;
+                                height: 58px;
+                                position: absolute;
+                                left: 50%;
+                                top: 0;
+                                transform: translate(-50%, calc(-100% - 10px));
+                                display: none;
+                              }
+                        
+                              &::after {
+                                content: "";
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50% , -50%);
+                                width: calc(100% + 15px);
+                                height: calc(100% + 15px);
+                                border: 1.5px solid;
+                                border-radius: 50%;
+                                display: none;
+                                background-color: transparent;
+                              }
+                        
+                              &:hover {
+                                &::after {
+                                  display: block;
+                                }
+                              }
+                        
+                              &.this_grade {
+                                &::before {
+                                  display: block;
+                                }
+                              }
+                        
+                              &.one_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_one;
+                                }
+                              }
+                        
+                              &.two_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_two;
+                                }
+                              }
+                        
+                              &.three_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_three;
+                                }
+                              }
+                        
+                              &.four_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_four;
+                                }
+                              }
+                        
+                              &.five_grade_marker_inner {
+                                &::after {
+                                    border-color: $color_five;
+                                }
+                              }
+                        
+                              &.six_grade_marker_inner {
+                                &::after {
+                                    border-color: $color_six;
+                                }
+                              }
+                        
+                              &.seven_grade_marker_inner {
+                                &::after {
+                                    border-color: $color_seven;
+                                }
+                              }
+                        
+                              &.eight_grade_marker_inner {
+                                &::after {
+                                    border-color: $color_eight;
+                                }
+                              }
+                        
+                              &.nine_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_nine;
+                                }
+                              }
+                        
+                              &.ten_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_ten;
+                                }
+                              }
+                        
+                              &.eleven_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_eleven;
+                                }
+                              }
+                        
+                              &.twelve_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_twelve;
+                                }
+                              }
+    
+                              &.thirteen_grade_marker_inner {
+                                &::after {
+                                  border-color: $color_thirteen;
+                                }
+                              }
+                            }
+                          }
+
+                          &.one_grade_link {
+                              background-color: $color_one;
+                          }
+                    
+                          &.two_grade_link {
+                              background-color: $color_two;
+                          }
+                    
+                          &.three_grade_link {
+                              background-color: $color_three;
+                          }
+                    
+                          &.four_grade_link {
+                              background-color: $color_four;
+                          }
+                    
+                          &.five_grade_link {
+                                background-color: $color_five;
+                          }
+                    
+                          &.six_grade_link {
+                                background-color: $color_six;
+                          }
+                    
+                          &.seven_grade_link {
+                                background-color: $color_seven;
+                          }
+                    
+                          &.eight_grade_link {
+                                background-color: $color_eight;
+                          }
+                    
+                          &.nine_grade_link {
+                              background-color: $color_nine;
+                          }
+                    
+                          &.ten_grade_link {
+                              background-color: $color_ten;
+                          }
+                    
+                          &.eleven_grade_link {
+                              background-color: $color_eleven;
+                          }
+                    
+                          &.twelve_grade_link {
+                              background-color: $color_twelve;
+                          }
+
+                          &.thirteen_grade_link {
+                              background-color: $color_thirteen;
+                          }
+                    }
+
+                    
+                }
+            }
             .select_page_content{
                 display: flex;
                 flex-wrap: wrap;
+                margin: 0px auto 60px;
 
                 .select_page_content_item{
                     width: 40%;
@@ -37,6 +250,21 @@ main {
         .study_area {
     
             &.select_page_area {
+                .select_page_head{
+                    .grade_link_btn{
+    
+                        .grade_link{
+                            width: calc(100% / 7.5 - 16px);
+                            margin: 8px;
+
+                            &.active {
+                                width: calc((100% / 7.5 - 16px) * 1.3 );
+                              }
+                        }
+    
+                        
+                    }
+                }
                 .select_page_content{
     
                     .select_page_content_item{
@@ -55,6 +283,20 @@ main {
         .study_area {
     
             &.select_page_area {
+                .select_page_head{
+                    .grade_link_btn{
+    
+                        .grade_link{
+                            width: calc(100% / 8.5 - 16px);
+
+                            &.active {
+                                width: calc((100% / 8.5 - 16px) * 1.3 );
+                              }
+                        }
+    
+                        
+                    }
+                }
                 .select_page_content{
     
                     .select_page_content_item{
@@ -67,11 +309,64 @@ main {
 
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    main {
+        .study_area {
+    
+            &.select_page_area {
+                .select_page_head{
+                    .grade_link_btn{
+    
+                        .grade_link{
+                            width: calc(100% / 10.5 - 16px);
+
+                            &.active {
+                                width: calc((100% / 10.5 - 16px) * 1.3 );
+                              }
+
+                            .grade_link_marker{
+                                .grade_link_marker_inner {
+                                    &::after {
+                                        width: calc(100% + 20px);
+                                height: calc(100% + 20px);
+                                    }
+                                }
+                            }
+                        }
+    
+                        
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (min-width: 1024px) {}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
+    main {
+        .study_area {
+    
+            &.select_page_area {
+                .select_page_head{
+                    .grade_link_btn{
+    
+                        .grade_link{
+                            width: calc(100% / 13.5 - 10px);
+                            margin: 5px;
+
+                            &.active {
+                                width: calc((100% / 13.5 - 16px) * 1.3 );
+                              }
+                        }
+    
+                        
+                    }
+                }
+            }
+        }
+    }
 
 }
 

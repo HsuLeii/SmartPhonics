@@ -1384,15 +1384,102 @@ main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .e
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 100%; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { max-width: 700px; } }
 
-main .study_area.select_page_area .select_page_content { display: flex; flex-wrap: wrap; }
+main .study_area { max-width: 1200px; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn { display: flex; align-items: center; flex-wrap: wrap; padding: 60px 0 30px; margin: 0 auto; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 5.5 - 10px); border-radius: 50%; background-color: #ed710e; margin: 5px; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 5.5 - 10px) * 1.3); }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active .grade_link_marker .grade_link_marker_inner::after { display: block; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker { padding: 5px; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker::before { display: none; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner { position: relative; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::before { content: ""; background-image: url(../image/photo/study/map/map_magic_wand.png); background-size: cover; width: 58px; height: 58px; position: absolute; left: 50%; top: 0; transform: translate(-50%, calc(-100% - 10px)); display: none; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::after { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 15px); height: calc(100% + 15px); border: 1.5px solid; border-radius: 50%; display: none; background-color: transparent; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner:hover::after { display: block; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.this_grade::before { display: block; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.one_grade_marker_inner::after { border-color: #ffa2c4; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.two_grade_marker_inner::after { border-color: #ff6983; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.three_grade_marker_inner::after { border-color: #E48E58; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.four_grade_marker_inner::after { border-color: #ea6640; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.five_grade_marker_inner::after { border-color: #ffce5a; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.six_grade_marker_inner::after { border-color: #ffcf2c; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.seven_grade_marker_inner::after { border-color: #A8C879; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.eight_grade_marker_inner::after { border-color: #5AA08D; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.nine_grade_marker_inner::after { border-color: #68deff; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.ten_grade_marker_inner::after { border-color: #70b9da; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.eleven_grade_marker_inner::after { border-color: #b992cf; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.twelve_grade_marker_inner::after { border-color: #9a65b9; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.thirteen_grade_marker_inner::after { border-color: #bf8473; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.one_grade_link { background-color: #ffa2c4; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.two_grade_link { background-color: #ff6983; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.three_grade_link { background-color: #E48E58; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.four_grade_link { background-color: #ea6640; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.five_grade_link { background-color: #ffce5a; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.six_grade_link { background-color: #ffcf2c; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.seven_grade_link { background-color: #A8C879; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.eight_grade_link { background-color: #5AA08D; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.nine_grade_link { background-color: #68deff; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.ten_grade_link { background-color: #70b9da; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.eleven_grade_link { background-color: #b992cf; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.twelve_grade_link { background-color: #9a65b9; }
+
+main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.thirteen_grade_link { background-color: #bf8473; }
+
+main .study_area.select_page_area .select_page_content { display: flex; flex-wrap: wrap; margin: 0px auto 60px; }
 
 main .study_area.select_page_area .select_page_content .select_page_content_item { width: 40%; margin: 20px 5%; }
 
 @media screen and (min-width: 500px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 28%; margin: 20px 2.6%; } }
 
-@media screen and (min-width: 576px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 20%; margin: 20px 2.5%; } }
+@media screen and (min-width: 576px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 7.5 - 16px); margin: 8px; }
+  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 7.5 - 16px) * 1.3); }
+  main .study_area.select_page_area .select_page_content .select_page_content_item { width: 20%; margin: 20px 2.5%; } }
 
-@media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
+@media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 8.5 - 16px); }
+  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 8.5 - 16px) * 1.3); }
+  main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
+
+@media screen and (min-width: 992px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 10.5 - 16px); }
+  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 10.5 - 16px) * 1.3); }
+  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::after { width: calc(100% + 20px); height: calc(100% + 20px); } }
+
+@media screen and (min-width: 1200px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 13.5 - 10px); margin: 5px; }
+  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 13.5 - 16px) * 1.3); } }
 
 main .map_slide_area { background-color: #fffbd4; }
 
