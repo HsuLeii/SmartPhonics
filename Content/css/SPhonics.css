@@ -1386,100 +1386,193 @@ main .study_area.exercises_area .exercises_area_img .exercises_area_img_right .e
 
 main .study_area { max-width: 1200px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn { display: flex; align-items: center; flex-wrap: wrap; padding: 60px 0 30px; margin: 0 auto; }
+main .study_area.select_page_area { max-width: none; width: 100%; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 5.5 - 10px); border-radius: 50%; background-color: #ed710e; margin: 5px; }
+main .study_area.select_page_area .select_page_head { width: 80%; max-width: 1200px; margin: 40px auto 0; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 5.5 - 10px) * 1.3); }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area { display: flex; flex-wrap: wrap; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active .grade_link_marker .grade_link_marker_inner::after { display: block; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap { width: 33.33333%; background-color: #fdf2dd; position: relative; display: flex; align-items: center; /* 波浪線 */ /* 波浪線 */ }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker { padding: 5px; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap:before, main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap:after { content: ""; position: absolute; display: block; width: 10px; height: 10px; background: #F9F8F3; border-radius: 50%; right: -5px; z-index: 1; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker::before { display: none; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap:before { top: -5px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner { position: relative; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap:after { bottom: -5px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::before { content: ""; background-image: url(../image/photo/study/map/map_magic_wand.png); background-size: cover; width: 58px; height: 58px; position: absolute; left: 50%; top: 0; transform: translate(-50%, calc(-100% - 10px)); display: none; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .ticket { width: 100%; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::after { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 15px); height: calc(100% + 15px); border: 1.5px solid; border-radius: 50%; display: none; background-color: transparent; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .ticket .redeem { display: none; width: 30%; position: absolute; right: 10px; top: 50%; transform: translate(0px, -50%) rotate(45deg); }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner:hover::after { display: block; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .ticket.redeem_ticket .redeem { display: block; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.this_grade::before { display: block; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .ticket.redeem_ticket .ticket_right .receive { display: none; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.one_grade_marker_inner::after { border-color: #ffa2c4; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .ticket .ticket_object { line-height: 0; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.two_grade_marker_inner::after { border-color: #ff6983; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_left { position: absolute; top: 0; left: 0; height: 100%; display: flex; min-width: 5px; max-width: 5px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.three_grade_marker_inner::after { border-color: #E48E58; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_left .wave_line_internal { height: 100%; width: 100%; background: radial-gradient(circle at 0 50%, #F9F8F3 50%, #fdf2dd 0); background-size: 0.3rem 0.7rem; background-repeat: repeat-y; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.four_grade_marker_inner::after { border-color: #ea6640; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_right { position: absolute; top: 0; right: 0; height: 100%; display: flex; min-width: 5px; max-width: 5px; transform: rotate(180deg); }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.five_grade_marker_inner::after { border-color: #ffce5a; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap .wave_line.wave_line_right .wave_line_internal { height: 100%; width: 100%; background: radial-gradient(circle at 0 50%, #F9F8F3 50%, #fdf2dd 0); background-size: 0.3rem 0.7rem; background-repeat: repeat-y; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.six_grade_marker_inner::after { border-color: #ffcf2c; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area { position: relative; width: 100%; margin: 20px auto; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.seven_grade_marker_inner::after { border-color: #A8C879; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_button { color: #2e3233; cursor: pointer; display: flex; justify-content: flex-end; align-items: center; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.eight_grade_marker_inner::after { border-color: #5AA08D; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_button .fa-circle-info { color: #2e3233; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.nine_grade_marker_inner::after { border-color: #68deff; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_button svg { color: #f7b62d; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.ten_grade_marker_inner::after { border-color: #70b9da; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_explain { position: absolute; right: 0; transform: translate(0%, 10px); width: auto; max-width: 90%; background-color: #ed710e; border-radius: 10px; padding: 5px 10px; display: none; z-index: 3; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.eleven_grade_marker_inner::after { border-color: #b992cf; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_explain p { display: flex; align-items: center; flex-wrap: wrap; color: #fff; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.twelve_grade_marker_inner::after { border-color: #9a65b9; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_explain p svg { color: #f7b62d; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner.thirteen_grade_marker_inner::after { border-color: #bf8473; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area .medal_area_explain:before { content: ""; width: 0; height: 0; border-right: 10px solid transparent; border-left: 10px solid transparent; border-top: 12px solid transparent; border-bottom: 12px solid #ed710e; position: absolute; z-index: 1; top: 0%; right: 0; transform: translate(-50%, -90%); }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.one_grade_link { background-color: #ffa2c4; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area:hover .medal_area_button { color: #ed710e; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.two_grade_link { background-color: #ff6983; }
+main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .medal_area:hover .medal_area_button .fa-circle-info { color: #ed710e; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.three_grade_link { background-color: #E48E58; }
+main .study_area.select_page_area .select_page_head .unit_link_btn { display: flex; align-items: center; flex-wrap: wrap; padding: 80px 0 30px; margin: 0 auto; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.four_grade_link { background-color: #ea6640; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 5.5 - 10px); border-radius: 50%; background-color: #ed710e; margin: 5px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.five_grade_link { background-color: #ffce5a; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 5.5 - 10px) * 1.3); }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.six_grade_link { background-color: #ffcf2c; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active .unit_link_marker .unit_link_marker_inner::after { display: block; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.seven_grade_link { background-color: #A8C879; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker { padding: 5px; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.eight_grade_link { background-color: #5AA08D; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker::before { display: none; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.nine_grade_link { background-color: #68deff; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner { position: relative; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.ten_grade_link { background-color: #70b9da; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::before { content: ""; background-image: url(../image/photo/study/map/hot_air_balloon.png); background-size: cover; width: 40px; height: 40px; position: absolute; left: 50%; top: 0; transform: translate(-50%, calc(-100% - 10px)); display: none; animation: jump .5s linear alternate infinite; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.eleven_grade_link { background-color: #b992cf; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::after { content: ""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: calc(100% + 15px); height: calc(100% + 15px); border: 1.5px solid; border-radius: 50%; display: none; background-color: transparent; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.twelve_grade_link { background-color: #9a65b9; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner:hover::after { display: block; }
 
-main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.thirteen_grade_link { background-color: #bf8473; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.this_unit::before { display: block; }
 
-main .study_area.select_page_area .select_page_content { display: flex; flex-wrap: wrap; margin: 0px auto 60px; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_one_marker_inner::after { border-color: #ffa2c4; }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item { width: 40%; margin: 20px 5%; }
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_two_marker_inner::after { border-color: #ff6983; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_three_marker_inner::after { border-color: #E48E58; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_four_marker_inner::after { border-color: #ea6640; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_five_marker_inner::after { border-color: #ffce5a; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_six_marker_inner::after { border-color: #ffcf2c; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_seven_marker_inner::after { border-color: #A8C879; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_eight_marker_inner::after { border-color: #5AA08D; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_nine_marker_inner::after { border-color: #68deff; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_ten_marker_inner::after { border-color: #70b9da; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_eleven_marker_inner::after { border-color: #b992cf; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_twelve_marker_inner::after { border-color: #9a65b9; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner.unit_thirteen_marker_inner::after { border-color: #bf8473; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_one_link { background-color: #ffa2c4; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_two_link { background-color: #ff6983; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_three_link { background-color: #E48E58; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_four_link { background-color: #ea6640; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_five_link { background-color: #ffce5a; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_six_link { background-color: #ffcf2c; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_seven_link { background-color: #A8C879; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_eight_link { background-color: #5AA08D; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_nine_link { background-color: #68deff; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_ten_link { background-color: #70b9da; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_eleven_link { background-color: #b992cf; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_twelve_link { background-color: #9a65b9; }
+
+main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.unit_thirteen_link { background-color: #bf8473; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction { display: flex; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 1200px; margin: 0 auto 40px; border-radius: 50px; padding: 5px 10px; display: none; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.active { display: flex; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction p { color: #fff; padding: 3px 0px; margin: 0px 10px; max-width: 90%; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.other_unit_introduction { margin: 60px auto 0px; background-color: #514223; display: none; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_one { background-color: #ffa2c4; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_two { background-color: #ff6983; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_three { background-color: #E48E58; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_four { background-color: #ea6640; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_five { background-color: #ffce5a; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_six { background-color: #ffcf2c; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_seven { background-color: #A8C879; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_eight { background-color: #5AA08D; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_nine { background-color: #68deff; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_ten { background-color: #70b9da; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_eleven { background-color: #b992cf; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_twelve { background-color: #9a65b9; }
+
+main .study_area.select_page_area .select_page_head .unit_introduction.unit_introduction_thirteen { background-color: #bf8473; }
+
+main .study_area.select_page_area .select_page_content { width: 80%; max-width: 1200px; display: flex; flex-wrap: wrap; margin: 0px auto 60px; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item { width: 40%; margin: 20px 5%; transform: scale(0.9); }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item:hover { transform: scale(1); }
+
+@keyframes jump { 0% { transform: translate(-50%, calc(-100% - 10px)); }
+  50% { transform: translate(-50%, calc(-100% - 30%)); }
+  100% { transform: translate(-50%, calc(-100% - 50%)); } }
 
 @media screen and (min-width: 500px) { main .study_area.select_page_area .select_page_content .select_page_content_item { width: 28%; margin: 20px 2.6%; } }
 
-@media screen and (min-width: 576px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 7.5 - 16px); margin: 8px; }
-  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 7.5 - 16px) * 1.3); }
+@media screen and (min-width: 576px) { main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 7.5 - 16px); margin: 8px; }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 7.5 - 16px) * 1.3); }
   main .study_area.select_page_area .select_page_content .select_page_content_item { width: 20%; margin: 20px 2.5%; } }
 
-@media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 8.5 - 16px); }
-  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 8.5 - 16px) * 1.3); }
+@media screen and (min-width: 768px) { main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 8.5 - 16px); }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 8.5 - 16px) * 1.3); }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::before { width: 60px; height: 60px; }
   main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
 
-@media screen and (min-width: 992px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 10.5 - 16px); }
-  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 10.5 - 16px) * 1.3); }
-  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link .grade_link_marker .grade_link_marker_inner::after { width: calc(100% + 20px); height: calc(100% + 20px); } }
+@media screen and (min-width: 992px) { main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 10.5 - 16px); }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 10.5 - 16px) * 1.3); }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::after { width: calc(100% + 18px); height: calc(100% + 18px); } }
 
-@media screen and (min-width: 1200px) { main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link { width: calc(100% / 13.5 - 10px); margin: 5px; }
-  main .study_area.select_page_area .select_page_head .grade_link_btn .grade_link.active { width: calc((100% / 13.5 - 16px) * 1.3); } }
+@media screen and (min-width: 1200px) { main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 13.5 - 10px); margin: 5px; }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 13.5 - 16px) * 1.3); } }
 
 main .map_slide_area { background-color: #fffbd4; }
 
