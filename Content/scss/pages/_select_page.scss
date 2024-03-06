@@ -4,6 +4,22 @@ main {
         &.select_page_area {
           max-width: none;
           width: 100%;
+          .map_slide{
+            position: relative;
+            .map_slide_change{
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+
+              img{
+                position: absolute;
+                z-index: 1;
+              }
+            }
+          }
             .select_page_head{
               width: 80%;
               max-width: 1200px;
@@ -156,7 +172,7 @@ main {
                       justify-content: flex-end;
                       align-items: center;
                       
-                      .fa-circle-info{
+                      .fa-circle-question{
                         color: $main_color_black;
                       }
 
@@ -208,7 +224,7 @@ main {
                       .medal_area_button{
                         color: $main_color;
 
-                        .fa-circle-info{
+                        .fa-circle-question{
                           color: $main_color;
                         }
                       }
@@ -520,10 +536,39 @@ main {
                 .select_page_content_item{
                     width: 40%;
                     margin: 20px 5%;
-                    transform: scale(0.9);
+                    
+                    .star_item{
+                      display: flex;
+                      justify-content: center;
+                      margin: 0 auto 5px;
+                      svg{
+                        color: $main_color_yellow;
+                        font-size: 20px;
+                      }
+                      .get_star{
+                        display: none;
+                      }
+                      .notget_star{
+                        display: block;
+                      }
+                    }
 
-                    &:hover{
-                      transform: scale(1);;
+                    .balloon_item{
+                      transform: scale(0.9);
+
+                      &:hover{
+                          transform: scale(1);;
+                        
+                      }
+                    }
+
+                    &.get{
+                      .get_star{
+                        display: block;
+                      }
+                      .notget_star{
+                        display: none;
+                      }
                     }
                 }
             }
@@ -580,6 +625,12 @@ main {
                     .select_page_content_item{
                         width: 20%;
                         margin: 20px 2.5%;
+
+                        .star_item{
+                          svg{
+                            font-size: 30px;
+                          }
+                        }
                     }
                 }
             }
