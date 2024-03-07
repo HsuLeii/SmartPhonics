@@ -365,6 +365,12 @@ header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdo
 
 header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown .dropdown-menu .dropdown-item.check { color: #ed710e; }
 
+header .navbar .container-fluid .navbar-close a { line-height: 1; }
+
+header .navbar .container-fluid .navbar-close a svg { font-size: 25px; color: #2e3233; }
+
+header .navbar .container-fluid .navbar-close a svg:hover { color: #ed710e; }
+
 header .nav_name { position: relative; padding: 5px 0px; }
 
 header .nav_name .nav_name_link { padding: 5px 15px; background-color: #ed710e; border-radius: 50px; color: #fff; }
@@ -386,7 +392,10 @@ header .nav_name .nav_name_menu:hover a { color: #fff; }
 header .nav_name .nav_name_menu:hover:after { border-bottom: 7px solid #ed710e; }
 
 @media screen and (min-width: 576px) { header .navbar .container-fluid .navbar-brand img { width: 160px; }
-  header .navbar .container-fluid .navbar-toggler { top: 35px; } }
+  header .navbar .container-fluid .navbar-toggler { top: 35px; }
+  header .navbar .container-fluid .navbar-close a svg { font-size: 30px; } }
+
+@media screen and (min-width: 768px) { header .navbar .container-fluid .navbar-close a svg { font-size: 40px; } }
 
 @media screen and (min-width: 992px) { header { padding: 15px 20px; }
   header .navbar .container-fluid .navbar-brand { padding: 0; }
@@ -1237,7 +1246,7 @@ main .information_area .input_area.input-group-submit .input-group-submit-btn:ho
 
 main .study_area { width: 80%; margin: 0 auto; }
 
-main .study_area.exercises_area { max-width: 230px; }
+main .study_area.exercises_area { max-width: 230px; min-height: 100vh; }
 
 main .study_area.exercises_area .exercises_area_img { margin: 40px auto; }
 
@@ -1593,7 +1602,7 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 
 main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item { transform: scale(0.9); }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item:hover { transform: scale(1); }
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item:hover { transform: scale(0.95); }
 
 main .study_area.select_page_area .select_page_content .select_page_content_item.get .get_star { display: block; }
 
@@ -1683,7 +1692,7 @@ main .map_road .map_route_item { position: relative; width: 80%; margin: 0 auto;
 
 main .map_road .map_route_item::before { content: ""; width: 3px; height: 100%; background-color: #514223; left: 0; top: 0; position: absolute; }
 
-main .map_road .map_route_item .map_item_project { position: relative; margin: 40px auto; }
+main .map_road .map_route_item .map_item_project { position: relative; margin: 0 auto; padding: 40px 0; }
 
 main .map_road .map_route_item .map_item_project .timeline-num { background-color: #fff; width: 40px; height: 40px; position: absolute; top: 0; left: 0; margin: 0 0 0 -17px; border-radius: 50%; display: flex; justify-content: center; align-items: center; border: 3px solid #514223; }
 
@@ -1820,7 +1829,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
   main .map_road .map_road_route .square.square_left.square_left_eleven::before { background-color: #b992cf; }
   main .map_road .map_route_item { width: 90%; position: absolute; top: 0; left: 50%; transform: translate(-50%, 0); }
   main .map_road .map_route_item::before { display: none; }
-  main .map_road .map_route_item .map_item_project { position: absolute; transform: translate(0, -50%); width: calc(50% - 150px); margin: 0 auto; }
+  main .map_road .map_route_item .map_item_project { position: absolute; transform: translate(0, -50%); width: calc(50% - 150px); margin: 0 auto; padding: 0; }
   main .map_road .map_route_item .map_item_project .timeline-num { width: 45px; height: 45px; top: 50%; margin: 0; }
   main .map_road .map_route_item .map_item_project .timeline-num p { font-size: 25px; }
   main .map_road .map_route_item .map_item_project .map_route_item_link { flex-direction: column; width: 100%; }

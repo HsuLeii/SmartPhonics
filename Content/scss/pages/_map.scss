@@ -140,7 +140,8 @@ main {
 
             .map_item_project {
                 position: relative;
-                margin: 40px auto;
+                margin: 0 auto;
+                padding: 40px 0;
 
                 .timeline-num {
                     background-color: $white;
@@ -715,6 +716,7 @@ main {
                     transform: translate(0, -50%);
                     width: calc(50% - 150px);
                     margin: 0 auto;
+                    padding: 0;
 
                     .timeline-num{
                         width: 45px;

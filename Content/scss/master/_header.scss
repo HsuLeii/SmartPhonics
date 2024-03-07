@@ -190,6 +190,20 @@ header {
                     }
                 }
             }
+
+            .navbar-close{
+                a{
+                    line-height: 1;
+                    svg{
+                        font-size: 25px;
+                        color: $main_color_black;
+
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -265,13 +279,37 @@ header {
                 .navbar-toggler {
                     top: 35px;
             }
+
+            .navbar-close{
+                a{
+                    svg{
+                        font-size: 30px;
+                    }
+                }
+            }
         }
     }
 
 }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    header {
+        .navbar {
+            .container-fluid {
+
+            .navbar-close{
+                a{
+                    svg{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+}
 
 @media screen and (min-width: 992px) {
     header {

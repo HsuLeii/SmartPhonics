@@ -5,6 +5,7 @@ main {
 
         &.exercises_area {
             max-width: 230px;
+            min-height: 100vh;
 
             .exercises_area_img {
                 margin: 40px auto;
@@ -20,10 +21,10 @@ main {
                         .sound_button_area {
                             margin: 0 auto;
 
-                            .sound_area{
+                            .sound_area {
                                 background-color: $main_color;
 
-                                svg{
+                                svg {
                                     display: flex;
                                     font-size: 20px;
                                 }
@@ -34,138 +35,163 @@ main {
                             position: relative;
                             margin: 0 0 0 20px;
 
-                            img{
+                            img {
                                 border-radius: 10px;
                                 border: 3px solid;
                             }
 
-                            &.letter_A{
-                                img{
+                            &.letter_A {
+                                img {
                                     border-color: $letter_A;
                                 }
                             }
-                            &.letter_B{
-                                img{
+
+                            &.letter_B {
+                                img {
                                     border-color: $letter_B;
                                 }
                             }
-                            &.letter_C{
-                                img{
+
+                            &.letter_C {
+                                img {
                                     border-color: $letter_C;
                                 }
                             }
-                            &.letter_D{
-                                img{
+
+                            &.letter_D {
+                                img {
                                     border-color: $letter_D;
                                 }
                             }
-                            &.letter_E{
-                                img{
+
+                            &.letter_E {
+                                img {
                                     border-color: $letter_E;
                                 }
                             }
-                            &.letter_F{
-                                img{
+
+                            &.letter_F {
+                                img {
                                     border-color: $letter_F;
                                 }
                             }
-                            &.letter_G{
-                                img{
+
+                            &.letter_G {
+                                img {
                                     border-color: $letter_G;
                                 }
                             }
-                            &.letter_H{
-                                img{
+
+                            &.letter_H {
+                                img {
                                     border-color: $letter_H;
                                 }
                             }
-                            &.letter_I{
-                                img{
+
+                            &.letter_I {
+                                img {
                                     border-color: $letter_I;
                                 }
                             }
-                            &.letter_J{
-                                img{
+
+                            &.letter_J {
+                                img {
                                     border-color: $letter_J;
                                 }
                             }
-                            &.letter_K{
-                                img{
+
+                            &.letter_K {
+                                img {
                                     border-color: $letter_K;
                                 }
                             }
-                            &.letter_L{
-                                img{
+
+                            &.letter_L {
+                                img {
                                     border-color: $letter_L;
                                 }
                             }
-                            &.letter_M{
-                                img{
+
+                            &.letter_M {
+                                img {
                                     border-color: $letter_M;
                                 }
                             }
-                            &.letter_N{
-                                img{
+
+                            &.letter_N {
+                                img {
                                     border-color: $letter_N;
                                 }
                             }
-                            &.letter_O{
-                                img{
+
+                            &.letter_O {
+                                img {
                                     border-color: $letter_O;
                                 }
                             }
-                            &.letter_P{
-                                img{
+
+                            &.letter_P {
+                                img {
                                     border-color: $letter_P;
                                 }
                             }
-                            &.letter_Q{
-                                img{
+
+                            &.letter_Q {
+                                img {
                                     border-color: $letter_Q;
                                 }
                             }
-                            &.letter_R{
-                                img{
+
+                            &.letter_R {
+                                img {
                                     border-color: $letter_R;
                                 }
                             }
-                            &.letter_S{
-                                img{
+
+                            &.letter_S {
+                                img {
                                     border-color: $letter_S;
                                 }
                             }
-                            &.letter_T{
-                                img{
+
+                            &.letter_T {
+                                img {
                                     border-color: $letter_T;
                                 }
                             }
-                            &.letter_U{
-                                img{
+
+                            &.letter_U {
+                                img {
                                     border-color: $letter_U;
                                 }
                             }
-                            &.letter_V{
-                                img{
+
+                            &.letter_V {
+                                img {
                                     border-color: $letter_V;
                                 }
                             }
-                            &.letter_W{
-                                img{
+
+                            &.letter_W {
+                                img {
                                     border-color: $letter_W;
                                 }
                             }
-                            &.letter_X{
-                                img{
+
+                            &.letter_X {
+                                img {
                                     border-color: $letter_X;
                                 }
                             }
-                            &.letter_Y{
-                                img{
+
+                            &.letter_Y {
+                                img {
                                     border-color: $letter_Y;
                                 }
                             }
-                            &.letter_Z{
-                                img{
+
+                            &.letter_Z {
+                                img {
                                     border-color: $letter_Z;
                                 }
                             }
@@ -177,140 +203,165 @@ main {
                     width: 100%;
                     margin: 40px auto;
 
-                    .exercises_left_item{
-                        .exercises_left_item_img{
-                            img{
+                    .exercises_left_item {
+                        .exercises_left_item_img {
+                            img {
                                 border-radius: 10px;
                                 border: 5px solid;
                             }
 
-                            &.letter_A{
-                                img{
+                            &.letter_A {
+                                img {
                                     border-color: $letter_A;
                                 }
                             }
-                            &.letter_B{
-                                img{
+
+                            &.letter_B {
+                                img {
                                     border-color: $letter_B;
                                 }
                             }
-                            &.letter_C{
-                                img{
+
+                            &.letter_C {
+                                img {
                                     border-color: $letter_C;
                                 }
                             }
-                            &.letter_D{
-                                img{
+
+                            &.letter_D {
+                                img {
                                     border-color: $letter_D;
                                 }
                             }
-                            &.letter_E{
-                                img{
+
+                            &.letter_E {
+                                img {
                                     border-color: $letter_E;
                                 }
                             }
-                            &.letter_F{
-                                img{
+
+                            &.letter_F {
+                                img {
                                     border-color: $letter_F;
                                 }
                             }
-                            &.letter_G{
-                                img{
+
+                            &.letter_G {
+                                img {
                                     border-color: $letter_G;
                                 }
                             }
-                            &.letter_H{
-                                img{
+
+                            &.letter_H {
+                                img {
                                     border-color: $letter_H;
                                 }
                             }
-                            &.letter_I{
-                                img{
+
+                            &.letter_I {
+                                img {
                                     border-color: $letter_I;
                                 }
                             }
-                            &.letter_J{
-                                img{
+
+                            &.letter_J {
+                                img {
                                     border-color: $letter_J;
                                 }
                             }
-                            &.letter_K{
-                                img{
+
+                            &.letter_K {
+                                img {
                                     border-color: $letter_K;
                                 }
                             }
-                            &.letter_L{
-                                img{
+
+                            &.letter_L {
+                                img {
                                     border-color: $letter_L;
                                 }
                             }
-                            &.letter_M{
-                                img{
+
+                            &.letter_M {
+                                img {
                                     border-color: $letter_M;
                                 }
                             }
-                            &.letter_N{
-                                img{
+
+                            &.letter_N {
+                                img {
                                     border-color: $letter_N;
                                 }
                             }
-                            &.letter_O{
-                                img{
+
+                            &.letter_O {
+                                img {
                                     border-color: $letter_O;
                                 }
                             }
-                            &.letter_P{
-                                img{
+
+                            &.letter_P {
+                                img {
                                     border-color: $letter_P;
                                 }
                             }
-                            &.letter_Q{
-                                img{
+
+                            &.letter_Q {
+                                img {
                                     border-color: $letter_Q;
                                 }
                             }
-                            &.letter_R{
-                                img{
+
+                            &.letter_R {
+                                img {
                                     border-color: $letter_R;
                                 }
                             }
-                            &.letter_S{
-                                img{
+
+                            &.letter_S {
+                                img {
                                     border-color: $letter_S;
                                 }
                             }
-                            &.letter_T{
-                                img{
+
+                            &.letter_T {
+                                img {
                                     border-color: $letter_T;
                                 }
                             }
-                            &.letter_U{
-                                img{
+
+                            &.letter_U {
+                                img {
                                     border-color: $letter_U;
                                 }
                             }
-                            &.letter_V{
-                                img{
+
+                            &.letter_V {
+                                img {
                                     border-color: $letter_V;
                                 }
                             }
-                            &.letter_W{
-                                img{
+
+                            &.letter_W {
+                                img {
                                     border-color: $letter_W;
                                 }
                             }
-                            &.letter_X{
-                                img{
+
+                            &.letter_X {
+                                img {
                                     border-color: $letter_X;
                                 }
                             }
-                            &.letter_Y{
-                                img{
+
+                            &.letter_Y {
+                                img {
                                     border-color: $letter_Y;
                                 }
                             }
-                            &.letter_Z{
-                                img{
+
+                            &.letter_Z {
+                                img {
                                     border-color: $letter_Z;
                                 }
                             }
@@ -319,18 +370,20 @@ main {
                 }
             }
 
-            .exercises_arrow{
+            .exercises_arrow {
                 display: flex;
                 justify-content: flex-end;
                 margin: 40px auto;
-                svg{
+
+                svg {
                     font-size: 30px;
                     color: $main_color_black;
-                    &:hover{
-                            color: $main_color;
+
+                    &:hover {
+                        color: $main_color;
                     }
                 }
-                
+
             }
         }
     }
@@ -339,19 +392,19 @@ main {
 @media screen and (min-width: 576px) {
     main {
         .study_area {
-    
+
             &.exercises_area {
                 max-width: 1200px;
 
                 .exercises_area_img {
-    
+
                     .exercises_area_img_left {
-    
+
                         .exercises_left_item {
                             width: 60%;
                         }
                     }
-    
+
                     .exercises_area_img_right {
                         width: 80%;
                     }
@@ -364,19 +417,19 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .study_area {
-    
+
             &.exercises_area {
                 .exercises_area_img {
-    
+
                     .exercises_area_img_left {
                         display: flex;
-    
+
                         .exercises_left_item {
                             width: 47.5%;
                             margin: 40px auto;
                         }
                     }
-    
+
                     .exercises_area_img_right {
                         width: 100%;
                     }
@@ -392,14 +445,15 @@ main {
             &.exercises_area {
                 display: flex;
                 align-items: flex-end;
-                .exercises_area_img{
+
+                .exercises_area_img {
                     margin: 0 auto;
                 }
 
-                .exercises_arrow{
+                .exercises_arrow {
                     margin: 80px 20px;
 
-                    svg{
+                    svg {
                         font-size: 40px;
                     }
                 }
@@ -413,23 +467,23 @@ main {
 @media screen and (min-width: 992px) {
     main {
         .study_area {
-    
+
             &.exercises_area {
                 .exercises_area_img {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
+
                     .exercises_area_img_left {
                         flex-direction: column;
                         width: 25%;
                         margin: 0 5% 0 0;
-    
+
                         .exercises_left_item {
                             width: 100%;
                         }
                     }
-    
+
                     .exercises_area_img_right {
                         width: 70%;
                         max-width: 700px;
@@ -445,24 +499,24 @@ main {
 
 // 橫的
 @media (orientation: landscape) {
-    @media screen and (min-width: 700px){
+    @media screen and (min-width: 700px) {
         main {
             .study_area {
-        
+
                 &.exercises_area {
                     .exercises_area_img {
-        
+
                         .exercises_area_img_left {
                             display: flex;
                             justify-content: space-between;
-        
+
                             .exercises_left_item {
                                 width: 40%;
                                 margin: 20px 0;
                                 max-width: 350px;
                             }
                         }
-        
+
                         .exercises_area_img_right {
                             max-width: 400px;
                         }
@@ -472,22 +526,22 @@ main {
         }
     }
 
-    @media screen and (min-width: 992px){
+    @media screen and (min-width: 992px) {
         main {
             .study_area {
-        
+
                 &.exercises_area {
                     .exercises_area_img {
-        
+
                         .exercises_area_img_left {
                             margin: 80px 5% 80px 0;
-        
+
                             .exercises_left_item {
                                 width: 100%;
                             }
                         }
 
-                        .exercises_area_img_right{
+                        .exercises_area_img_right {
                             max-width: 700px;
                         }
                     }
@@ -495,9 +549,7 @@ main {
             }
         }
     }
-  }
-  
-  // 直的
-  @media (orientation: portrait) {
+}
 
-  }
+// 直的
+@media (orientation: portrait) {}
