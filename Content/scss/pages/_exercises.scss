@@ -7,12 +7,176 @@ main {
             max-width: 230px;
             min-height: 100vh;
 
-            &.unit2_area{
+            &.unit2_area {
                 max-width: 600px;
-                min-height: 500px;
-                max-height: calc(100vh - 82.58px);
-                height: 100vh;
+                // min-height: 500px;
+                // max-height: calc(100vh - 82.58px);
+                // height: 100vh;
+                height: calc(100vh - 82.58px);
+                min-height: auto;
+                // height: 500px;
                 position: relative;
+
+                .pagination_main_area {
+                    width: 100%;
+                    height: calc(100% - 157.55px);
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 0;
+
+                    &.pagination_main_drag_area{
+                        height: auto;
+                        min-height: calc(100% - 157.55px - 40px);
+
+                        &~.play_area{
+                            position: relative;
+                            bottom: auto;
+                            left: auto;
+                            transform: translate(0 , 0);
+                        }
+                    }
+    
+                    .pagination_main {
+                        padding: 20px 0;
+    
+                        &.pagination_main_drag {
+                            background-color: $drag_bg;
+                            padding: 20px 10px;
+                            width: 100%;
+                            height: 100%;
+    
+                            .drag_cloze_area {
+                                display: flex;
+                                justify-content: center;
+                                .drag_cloze_item{
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: flex-start;
+                                    .drag_cloze {
+                                        display: flex;
+                                        margin: 5px 3px;
+                                        border-radius: 10px;
+                                        border: 1px solid $main_color;
+                                        background-color: $main_color;
+                                        max-width: 100%;
+                                        min-width: calc(30px* 1.7);
+                                        min-height: calc(30px* 1.7);
+                                        text-align: center;
+                                        cursor: pointer;
+        
+                                        .alphabet {
+                                            font-size: 30px;
+                                            min-width: calc(30px* 1.7);
+                                            color: $white;
+                                        }
+                                    }
+                                }
+                                
+    
+                                &.drag_cloze_topic_area{
+                                    justify-content: center;
+                                }
+    
+                                
+                            }
+    
+                            .drag_answer_area {
+                                height: calc(100% - 63px);
+    
+                                .drag_answer_area_img {
+                                    margin: 0 auto;
+                                    padding: 10px 0;
+                                    height: calc(100% - 63px * 2);
+    
+                                    img {
+                                        height: 100%;
+                                        max-height: 350px;
+                                        object-fit: contain;
+                                    }
+                                }
+                            }
+    
+    
+                            
+                        }
+                    }
+    
+                    
+                }
+
+                .play_area {
+                    max-width: 300px;
+                    margin: 10px auto;
+                    padding: 10px 0;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translate(-50% , 0);
+
+                    .progress_area {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        margin: 0 auto 20px;
+
+                        .progress {
+                            width: 100%;
+                            height: 12px;
+                            background-color: $white;
+                            border-radius: 10px;
+                            border: 1px solid $main_color;
+                            margin: 15px auto;
+
+                            .progress_bar {
+                                background-color: $main_color_orangeDarken;
+                                height: 10px;
+                                border-radius: 10px;
+                                background-size: 1rem 1rem;
+                                background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+                            }
+                        }
+
+                        .number_page {
+                            p {
+                                color: $main_color_black;
+                            }
+                        }
+                    }
+
+                    .play_area_btn {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .play_btn_item {
+                            margin: 0 5px;
+                            cursor: pointer;
+
+                            svg {
+                                font-size: 35px;
+                                color: $main_color;
+                            }
+
+                            &.play_btn {
+                                svg {
+                                    font-size: 50px;
+                                }
+                            }
+
+                            &:hover {
+                                svg {
+                                    color: $main_color_orangeDarken;
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             .exercises_area_img {
@@ -394,115 +558,7 @@ main {
 
             }
 
-            .pagination_main_area {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 40px 0;
-                .pagination_main{
-                    padding: 40px 0;
-                    height: calc(100% - 137.55px);
-                    img{
-                        height: 100%;
-                    }
-
-                    &.pagination_main_drag{
-                        background-color: $drag_bg;
-
-                        .drag_cloze_area{
-                            display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 25px auto 0px;
-                            .drag_cloze{
-                                text-align: center;
-                                cursor: pointer;
-                                margin: 10px;
-                                border-radius: 10px;
-                                border: 1px solid $main_color;
-                                background-color: $main_color;
-                                max-width: 100%;
-                                min-width: calc(30px* 1.7);
-                                min-height: calc(30px* 1.7);
-                            }
-                        }
-                        
-
-                        .alphabet{
-                            font-size: 30px;
-                            min-width: calc(30px* 1.7);
-                            color: $white;
-                        }
-                    }
-                }
-                .play_area {
-                    max-width: 300px;
-                    margin: 20px auto;
-                    width: 100%;
-                    .progress_area {
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-wrap: wrap;
-                        margin: 0 auto 20px;
-
-                        .progress {
-                            width: 100%;
-                            height: 12px;
-                            background-color: $white;
-                            border-radius: 10px;
-                            border: 1px solid $main_color;
-                            margin: 15px auto;
-
-                            .progress_bar {
-                                background-color: $main_color_orangeDarken;
-                                height: 10px;
-                                border-radius: 10px;
-                                background-size: 1rem 1rem;
-                                background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
-                            }
-                        }
-
-                        .number_page{
-                            p{
-                                color: $main_color_black;
-                            }
-                        }
-                    }
-
-                    .play_area_btn {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-
-                        .play_btn_item{
-                            margin: 0 5px;
-                            cursor: pointer;
-                            svg{
-                                font-size: 35px;
-                                color: $main_color;
-                            }
-
-                            &.play_btn{
-                                svg{
-                                    font-size: 50px;
-                                }
-                            }
-
-                            &:hover{
-                                svg{
-                                    color: $main_color_orangeDarken;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            
         }
     }
 }
@@ -514,8 +570,8 @@ main {
             &.exercises_area {
                 max-width: 1200px;
 
-                &.unit2_area{
-                    max-height: calc(100vh - 93.05px);
+                &.unit2_area {
+                    min-height: calc(100vh - 93.05px);
                 }
 
                 .exercises_area_img {
@@ -568,8 +624,8 @@ main {
                 display: flex;
                 align-items: flex-end;
 
-                &.unit2_area{
-                    max-height: calc(100vh - 114.97px);
+                &.unit2_area {
+                    min-height: calc(100vh - 114.97px);
                 }
 
                 .exercises_area_img {
