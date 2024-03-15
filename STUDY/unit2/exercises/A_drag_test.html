@@ -41,7 +41,7 @@
                     <div class="pagination_main_drag_item">
                         <div class="drag_cloze_area drag_cloze_topic_area">
                             <div class="drag_cloze_item">
-                                <div class="drag_cloze target drag">
+                                <div id="dragTopic" class="drag_cloze target drag">
                                     <p class="alphabet" id="drag1" draggable="true">
                                         a
                                     </p>
@@ -57,7 +57,7 @@
 
                             <div class="drag_cloze_area">
                                 <div class="drag_cloze_item">
-                                    <div class="drag_cloze target drag" style="position: static;">
+                                    <div id="dragAnswer" class="drag_cloze target drag" style="position: static;">
                                         <p class="alphabet">
 
                                         </p>
@@ -134,6 +134,10 @@
                 </div>
             </div>
         </div>
+
+        <div id="drag_pointer">
+            <i class="fa-regular fa-hand-pointer"></i>
+        </div>
     </main>
 
     <!-- ------- ------- ------- ------- ------- ------- ------- -->
@@ -188,37 +192,62 @@
         soundRange.addEventListener("input", updateSoundRangeProperty);
     </script>
 
-      <!-- 拖曳效果 -->
-  <script>
-    $(".drag").on({
-      "dragstart": function (event) {
-        event.originalEvent.dataTransfer.setData('text', event.target.id)
-      },
-      "dragend": function () {
-        $(".target").removeClass("active")
-      }
-    })
+    <!-- 拖曳效果 -->
+    <script>
+        $(".drag").on({
+            "dragstart": function (event) {
+                event.originalEvent.dataTransfer.setData('text', event.target.id)
+            },
+            "dragend": function () {
+                $(".target").removeClass("active")
+            }
+        })
 
-    $(".target").on({
-      "dragenter": function (event) {
-        event.preventDefault();
-        $(this).addClass("active")
-      },
-      "dragover": function (event) {
-        event.preventDefault();
+        $(".target").on({
+            "dragenter": function (event) {
+                event.preventDefault();
+                $(this).addClass("active")
+            },
+            "dragover": function (event) {
+                event.preventDefault();
 
-      },
-      "dragleave": function () {
-        $(".target").removeClass("active")
-      },
-      "drop": function (event) {
-        event.preventDefault();
-        // event.stopPropagation(); //停止事件氣泡現象
-        let id = event.originalEvent.dataTransfer.getData('text/plain');
-        $("#" + id).appendTo(event.target);
-      }
-    })
-  </script>
+            },
+            "dragleave": function () {
+                $(".target").removeClass("active")
+            },
+            "drop": function (event) {
+                event.preventDefault();
+                // event.stopPropagation(); //停止事件氣泡現象
+                let id = event.originalEvent.dataTransfer.getData('text/plain');
+                $("#" + id).appendTo(event.target);
+            }
+        })
+    </script>
+
+    <script>
+        var dragTopic = $("#dragTopic").offset();
+        var dragAnswer = $("#dragAnswer").offset();
+        $("#drag_pointer").css({
+            left: dragTopic.left,
+            top: dragTopic.top
+        });
+
+        function dragPointer() {
+            $("#drag_pointer").animate({
+                left: dragAnswer.left,
+                top: dragAnswer.top,
+            }, 1500);
+            $('#drag_pointer').animate({
+                left: dragTopic.left,
+                top: dragTopic.top,
+            }, 0);
+        }
+        var myInterval = setInterval(dragPointer, 1000);
+
+        $("body").click(function () {
+            clearInterval(myInterval);
+        });
+    </script>
 
 </body>
 
