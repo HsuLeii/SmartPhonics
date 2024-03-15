@@ -41,46 +41,46 @@
                     <div class="pagination_main_drag_item">
                         <div class="drag_cloze_area drag_cloze_topic_area">
                             <div class="drag_cloze_item">
-                                <div class="drag_cloze">
-                                    <p class="alphabet">
+                                <div class="drag_cloze target drag">
+                                    <p class="alphabet" id="drag1" draggable="true">
                                         a
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        
-                        
+
+
                         <div class="drag_answer_area">
                             <div class="drag_answer_area_img">
                                 <img src="../../../Content/image/photo/study/unit2/object/a1.png" alt="">
                             </div>
-    
+
                             <div class="drag_cloze_area">
                                 <div class="drag_cloze_item">
-                                    <div class="drag_cloze">
+                                    <div class="drag_cloze target drag" style="position: static;">
                                         <p class="alphabet">
-                                            
+
                                         </p>
                                     </div>
-        
+
                                     <div class="drag_cloze">
                                         <p class="alphabet">
                                             n
                                         </p>
                                     </div>
-        
+
                                     <div class="drag_cloze">
                                         <p class="alphabet">
                                             t
                                         </p>
                                     </div>
-        
+
                                     <div class="drag_cloze">
                                         <p class="alphabet">
                                             t
                                         </p>
                                     </div>
-        
+
                                     <div class="drag_cloze">
                                         <p class="alphabet">
                                             t
@@ -89,43 +89,49 @@
                                 </div>
                             </div>
 
-                            
-                            
-                        </div>  
+
+
+                        </div>
                     </div>
                 </div>
 
-                
+
             </div>
 
             <div class="play_area">
                 <div class="progress_area">
                     <div class="progress">
-                        <div id="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" class="progress_bar" style="width: 60%;"></div>
+                        <div id="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                            class="progress_bar" style="width: 60%;"></div>
                     </div>
                     <div class="number_page">
                         <p>
                             6/10
                         </p>
                     </div>
-        
+
                 </div>
 
                 <div class="play_area_btn">
                     <div class="play_btn_item prev_btn">
                         <i class="fa-solid fa-caret-left"></i>
                     </div>
-    
+
                     <div class="play_btn_item play_btn">
                         <i class="fa-regular fa-circle-play"></i>
                     </div>
-    
+
                     <div class="play_btn_item next_btn">
                         <i class="fa-solid fa-caret-right"></i>
                     </div>
                 </div>
 
-                
+                <div class="sound_area">
+                    <i class="fa-solid fa-volume-high icon_volume"></i>
+                    <label for="soundRange" class="form-label">
+                    </label>
+                    <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100">
+                </div>
             </div>
         </div>
     </main>
@@ -148,6 +154,71 @@
             });
         });
     </script>
+
+    <script>
+        //取得聲音range
+        var soundRange = document.getElementById("soundRange");
+
+        //取得聲音距離
+        var soundRangeWidth = (value) => {
+            document.documentElement.style.setProperty("--soundRange", 100 - value + "%");
+            if (value < 1) {
+                $(".icon_volume").removeClass("fa-volume-high");
+                $(".icon_volume").removeClass("fa-volume-low");
+                $(".icon_volume").addClass("fa-volume-xmark");
+
+            } else if (value < 45) {
+                $(".icon_volume").removeClass("fa-volume-xmark");
+                $(".icon_volume").removeClass("fa-volume-high");
+                $(".icon_volume").addClass(" fa-volume-low");
+
+            } else {
+                $(".icon_volume").removeClass("fa-volume-low");
+                $(".icon_volume").removeClass("fa-volume-xmark");
+                $(".icon_volume").addClass("fa-volume-high");
+            }
+        }
+
+        //更改播放距離顏色
+
+        function updateSoundRangeProperty() {
+            soundRangeWidth(soundRange.value);
+        }
+
+        soundRange.addEventListener("input", updateSoundRangeProperty);
+    </script>
+
+      <!-- 拖曳效果 -->
+  <script>
+    $(".drag").on({
+      "dragstart": function (event) {
+        event.originalEvent.dataTransfer.setData('text', event.target.id)
+      },
+      "dragend": function () {
+        $(".target").removeClass("active")
+      }
+    })
+
+    $(".target").on({
+      "dragenter": function (event) {
+        event.preventDefault();
+        $(this).addClass("active")
+      },
+      "dragover": function (event) {
+        event.preventDefault();
+
+      },
+      "dragleave": function () {
+        $(".target").removeClass("active")
+      },
+      "drop": function (event) {
+        event.preventDefault();
+        // event.stopPropagation(); //停止事件氣泡現象
+        let id = event.originalEvent.dataTransfer.getData('text/plain');
+        $("#" + id).appendTo(event.target);
+      }
+    })
+  </script>
 
 </body>
 
