@@ -1244,8 +1244,6 @@ main .information_area .input_area.input-group-submit .input-group-submit-btn:ho
   main .information_area .input_area .form-control { width: 80%; }
   main .information_area .input_area.input-group-submit { margin: 90px auto 45px; } }
 
-main #drag_pointer { position: absolute; }
-
 main .study_area { width: 80%; margin: 0 auto; }
 
 main .study_area.exercises_area { max-width: 230px; min-height: 100vh; }
@@ -1262,21 +1260,21 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag { background-color: #FFF4DE; padding: 20px 10px; width: 100%; height: 100%; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area { display: flex; justify-content: center; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area { display: flex; justify-content: center; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item { display: flex; flex-wrap: wrap; justify-content: flex-start; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item { display: flex; flex-wrap: wrap; justify-content: flex-start; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze { display: flex; margin: 5px 3px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); text-align: center; cursor: pointer; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze { display: flex; margin: 5px 3px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); text-align: center; cursor: pointer; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); color: #fff; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); color: #fff; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area.drag_cloze_topic_area { justify-content: center; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area.drag_cloze_topic_area { justify-content: center; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area { height: calc(100% - 63px); }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area { height: calc(100% - 63px); }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img { margin: 0 auto; padding: 10px 0; height: calc(100% - 63px * 2); }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { margin: 0 auto; padding: 10px 0; height: calc(100% - 63px * 2); }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { height: 100%; object-fit: contain; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img img { height: 100%; object-fit: contain; }
 
 main .study_area.exercises_area.unit2_area .play_area { display: flex; justify-content: center; flex-wrap: wrap; margin: 10px auto; padding: 10px 0; width: 100%; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); }
 
@@ -1440,54 +1438,55 @@ main .study_area.exercises_area .exercises_arrow svg { font-size: 30px; color: #
 
 main .study_area.exercises_area .exercises_arrow svg:hover { color: #ed710e; }
 
+main .drag_pointer { position: absolute; transform: translate(calc(53px / 2 - 50%), 0); }
+
 @media screen and (min-width: 576px) { main .study_area.exercises_area { max-width: 1200px; }
   main .study_area.exercises_area.unit2_area { height: calc(100vh - 93.05px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area { height: calc(100% - 133.75px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_drag_area { min-height: calc(100% - 133.75px - 40px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main { padding: 20px 0; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag { background-color: #FFF4DE; padding: 20px 10px; width: 100%; height: 100%; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area { display: flex; justify-content: center; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item { display: flex; flex-wrap: wrap; justify-content: flex-start; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze { display: flex; margin: 5px 3px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); text-align: center; cursor: pointer; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); color: #fff; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area.drag_cloze_topic_area { justify-content: center; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area { height: calc(100% - 63px); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img { padding: 20px 0; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { height: 100%; object-fit: contain; }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { padding: 20px 0; }
   main .study_area.exercises_area.unit2_area .play_area .progress_area { flex-direction: row; }
   main .study_area.exercises_area.unit2_area .play_area .progress_area .progress { margin: 15px 25px; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 60%; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 80%; } }
 
-@media screen and (min-width: 768px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 10px 5px; min-width: calc(40px* 1.7); min-height: calc(40px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 40px; min-width: calc(40px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area { height: calc(100% - 90px); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img { height: calc(100% - 90px * 2); }
+@media screen and (min-width: 768px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item { display: flex; align-items: center; justify-content: center; }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 10px 5px; min-width: calc(40px* 1.7); min-height: calc(40px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 40px; min-width: calc(40px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area { height: calc(100% - 90px); width: calc(100% - 90px); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { height: calc(100% - 90px * 2); }
   main .study_area.exercises_area.unit2_area .play_area .sound_area { display: flex; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 47.5%; margin: 40px auto; }
-  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; } }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; }
+  main .drag_pointer { transform: translate(calc(70px / 2 - 50%), 0); } }
 
 @media screen and (min-width: 992px) { main .study_area.exercises_area { display: flex; align-items: flex-end; }
   main .study_area.exercises_area.unit2_area { height: calc(100vh - 114.97px); display: block; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze { min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area { height: calc(100% - 107px); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img { height: calc(100% - 107px * 2); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area { height: calc(100% - 134.64px); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze { min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area { height: calc(100% - 107px); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { height: calc(100% - 107px * 2); }
   main .study_area.exercises_area .exercises_area_img { display: flex; align-items: center; justify-content: center; margin: 0 auto; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { flex-direction: column; width: 25%; margin: 0 5% 0 0; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 100%; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 70%; max-width: 700px; margin: 80px 0; }
   main .study_area.exercises_area .exercises_arrow { margin: 80px 20px; }
-  main .study_area.exercises_area .exercises_arrow svg { font-size: 40px; } }
+  main .study_area.exercises_area .exercises_arrow svg { font-size: 40px; }
+  main .drag_pointer { transform: translate(calc(87px / 2 - 50%), 0); } }
 
-@media screen and (min-height: 1px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { max-height: 120px; } }
+@media screen and (min-width: 1400px) { main .study_area.exercises_area.unit2_area .pagination_main_area { height: calc(100% - 135.05px); } }
 
-@media screen and (min-height: 750px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { max-height: 230px; } }
+@media screen and (min-height: 1px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img img { max-height: 120px; } }
 
-@media screen and (min-height: 850px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { max-height: 270px; } }
+@media screen and (min-height: 750px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img img { max-height: 230px; } }
 
-@media screen and (min-height: 900px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .drag_answer_area .drag_answer_area_img img { max-height: 300px; } }
+@media screen and (min-height: 850px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img img { max-height: 270px; } }
+
+@media screen and (min-height: 900px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img img { max-height: 300px; } }
 
 @media screen and (orientation: landscape) and (min-width: 700px) { main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; justify-content: space-between; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 40%; margin: 20px 0; max-width: 350px; }

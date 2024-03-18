@@ -135,7 +135,7 @@
             </div>
         </div>
 
-        <div id="drag_pointer">
+        <div id="drag_pointer" class="drag_pointer">
             <i class="fa-regular fa-hand-pointer"></i>
         </div>
     </main>
@@ -246,6 +246,7 @@
 
         $("body").click(function () {
             clearInterval(myInterval);
+            $('#drag_pointer').hide();
         });
     </script>
 
