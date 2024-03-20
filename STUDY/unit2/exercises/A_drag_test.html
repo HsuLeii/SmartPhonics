@@ -135,6 +135,7 @@
             </div>
         </div>
 
+        <!-- 拖曳提示手勢 -->
         <div id="drag_pointer" class="drag_pointer">
             <i class="fa-regular fa-hand-pointer"></i>
         </div>
@@ -224,6 +225,7 @@
         })
     </script>
 
+    <!-- 拖曳提示手勢效果 -->
     <script>
         var dragTopic = $("#dragTopic").offset();
         var dragAnswer = $("#dragAnswer").offset();
@@ -244,7 +246,7 @@
         }
         var myInterval = setInterval(dragPointer, 1000);
 
-        $("body").click(function () {
+        $("body").mousedown(function () {
             clearInterval(myInterval);
             $('#drag_pointer').hide();
         });
