@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF4DE;}
+	.st1{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;stroke-dasharray:3.5667,3.5667;}
+	.st2{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;}
+	.st3{fill:#E25D33;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:9.8131;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:0.9813,29.4393;}
+</style>
+<g id="圖層_3">
+	<rect class="st0" width="1024" height="1024"/>
+</g>
+<g id="Grid">
+	<g>
+		<line class="st1" x1="0" y1="512" x2="1024" y2="512"/>
+		<line class="st2" x1="0" y1="204.5" x2="1024" y2="204.5"/>
+		<line class="st2" x1="0" y1="819.5" x2="1024" y2="819.5"/>
+	</g>
+</g>
+<g id="C">
+	<g>
+		<path class="st3" d="M629.2,769.5c-29.3,33.4-64.7,50.1-106.3,50.1c-41.4,0-76.7-14.2-105.9-42.6c-29.3-28.4-43.9-63.8-43.9-106.1
+			c0-42.3,14.6-78.9,43.9-109.8c29.3-30.8,64.6-46.3,105.9-46.3c41.6,0,77,14.1,106.3,42.4c8.5,9.7,15.7,20.1,21.8,31.2l-46.8,27.9
+			c-1.5-2.7-3-5.3-4.7-8c-2.7-4.6-5.7-8.9-9.1-13.1c-18.6-17.7-41.1-26.5-67.5-26.5c-26.4,0-48.9,10.1-67.5,30.3
+			c-18.6,20.2-27.9,44.1-27.9,71.7c0,27.6,9.3,50.2,27.9,67.8c18.6,17.7,41.1,26.5,67.5,26.5c26.4,0,48.9-11.2,67.5-33.7
+			c3.6-4.4,6.9-8.8,9.8-13.4l50.4,21.8C644.6,750.4,637.4,760.3,629.2,769.5z"/>
+	</g>
+	<g>
+		<path class="st4" d="M629.5,601.2c-1.8-3.4-24.1-53.2-108.6-55.7c-33.3-1-61.8,12.8-85.4,38.3c-23.6,25.5-35.3,55.8-35.3,90.6
+			s11.8,63.5,35.3,85.8c23.6,22.3,52,33.5,85.4,33.5c52,0,88.2-42.3,108.6-63.2"/>
+	</g>
+</g>
+</svg>

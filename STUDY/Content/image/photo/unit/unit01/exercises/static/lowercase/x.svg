@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF4DE;}
+	.st1{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;stroke-dasharray:3.5667,3.5667;}
+	.st2{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;}
+	.st3{fill:#CC2628;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:11.0185;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.1019,33.0553;}
+	.st5{fill:#CC2628;stroke:#CC2628;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g id="圖層_3">
+	<rect class="st0" width="1024" height="1024"/>
+</g>
+<g id="Grid">
+	<g>
+		<line class="st1" x1="0" y1="512" x2="1024" y2="512"/>
+		<line class="st2" x1="0" y1="204.5" x2="1024" y2="204.5"/>
+		<line class="st2" x1="0" y1="819.5" x2="1024" y2="819.5"/>
+	</g>
+</g>
+<g id="x">
+	<path class="st3" d="M341.8,512h70.3l270.1,307.5h-70.7L341.8,512z"/>
+	<line class="st4" x1="380.9" y1="512" x2="646.3" y2="819.5"/>
+	<path class="st5" d="M611.9,512L341.8,819.5h70.7L682.2,512H611.9z"/>
+	<line class="st4" x1="646.3" y1="511.5" x2="380.9" y2="818.6"/>
+</g>
+</svg>
