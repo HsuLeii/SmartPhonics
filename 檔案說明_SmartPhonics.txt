@@ -1,0 +1,25 @@
+關卡選擇-pick_level.html
+登入頁-login.html
+聲音測試頁-(land、ocean、sky)_test_sound.html
+聲音測試動態頁-(land、ocean、sky)_test_sound.html
+測驗結束頁-(land、ocean、sky)_test_end.html
+半對半錯結果頁-test_(land、ocean、sky)_end_answer_correct_wrong.html
+全對結果頁test_(land、ocean、sky)_end_answer_correct.html
+全錯結果頁test_(land、ocean、sky)_end_answer_wrong.html
+
+題型部分
+1.檔名：(land、ocean、sky)_test(g1-5).html-測驗頁
+2.檔名：(land、ocean、sky)_animation_test(g1-5).html-測驗動態顯示頁
+3.檔名：ocean_test_g2_(two-five)_options.html-一到五個聲音題型
+4.檔名：sky_test_g1_(capital、small).html-(大寫、小寫)字母題型
+
+拖曳題型(不知道怎麼設定只能拖曳一個答案，備案點選題型檔案land_test_g5.html)
+5.檔名：land_test_g5_drag.html-拖曳題型
+6..檔名：land_test_animation_g5_drag.html-拖曳動態題型
+
+<head>
+<!-- 之後改成正式網址的連結 -->
+<meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+<meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg"/>
+<meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+</head>

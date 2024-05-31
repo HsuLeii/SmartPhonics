@@ -1,0 +1,222 @@
+1. Content/css、js、image 裡面的檔案全都覆蓋
+2. 新增兩個頁面(繼續挑戰：continue_challenge.html、拼音練習關卡選擇頁面：ocean_choose.html)
+3. 新版的頁面放在TEST資料夾
+4. 秒數的S改成小寫的s
+5. 頭像原本10個改成8個
+6. 原本灰色的圖檔連結全部改成<img src="Content/image/photo/avatar/grey/grey.png" alt="">
+7. 每關的背景跟動物圖更換
+
+聽力練習第一關G1(斑馬)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/land_g1.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_zebra">
+          <img src="Content/image/photo/animal/land_g1_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two">
+          <img src="Content/image/photo/animal/land_g1_2.png" alt="">
+        </div>
+</div>
+
+聽力練習第二關G2(河馬)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/land_g2.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one">
+          <img src="Content/image/photo/animal/land_g2_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two">
+          <img src="Content/image/photo/animal/land_g2_2.png" alt="">
+        </div>
+</div>
+
+聽力練習第三關G3(猴子)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/land_g3.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_monkey">
+          <img src="Content/image/photo/animal/land_g3_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two animal_monkey">
+          <img src="Content/image/photo/animal/land_g3_2.png" alt="">
+        </div>
+</div>
+
+聽力練習第四關G4(駱駝)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/land_g4.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_camel">
+          <img src="Content/image/photo/animal/land_g4_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two animal_camel">
+          <img src="Content/image/photo/animal/land_g4_2.png" alt="">
+        </div>
+</div>
+
+聽力練習第五關G5(企鵝)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/land_g5.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_penguin">
+          <img src="Content/image/photo/animal/land_g5_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two animal_penguin">
+          <img src="Content/image/photo/animal/land_g5_2.png" alt="">
+        </div>
+</div>
+
+
+
+拼音練習第一關G1(海豚)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/ocean_g1.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_ocean animal_dolphin">
+          <img src="Content/image/photo/animal/ocean_g1_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two animal_ocean">
+          <img src="Content/image/photo/animal/ocean_g1_2.png" alt="">
+        </div>
+</div>
+
+拼音練習第二關G2(章魚)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/ocean_g2.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one animal_ocean">
+          <img src="Content/image/photo/animal/ocean_g2_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two animal_ocean">
+          <img src="Content/image/photo/animal/ocean_g2_2.png" alt="">
+        </div>
+</div>
+
+
+
+朗讀練習第一關G1(貓頭鷹)
+背景圖
+<div class="test_area_bg">
+        <img src="Content/image/photo/bg/sky_g1.png" alt="">
+</div>
+動物圖
+<div class="animal_area">
+        <div class="animal_img animal_one">
+          <img src="Content/image/photo/animal/sky_g1_1.png" alt="">
+        </div>
+        <div class="animal_img animal_two">
+          <img src="Content/image/photo/animal/sky_g1_2.png" alt="">
+        </div>
+</div>
+
+
+8. 朗讀練習測驗結果的句子頁面文字調整
+   朗讀流暢度改成朗讀能力
+
+
+9. 朗讀練習測驗結果DEMO頁：
+https://hsuleii.github.io/SmartPhonics/TEST/test_sky_end_answer_correct_wrong.html
+https://hsuleii.github.io/SmartPhonics/TEST/test_sky_end_answer_correct.html
+https://hsuleii.github.io/SmartPhonics/TEST/test_sky_end_answer_wrong.html
+
+朗讀練習測驗結果的句子頁面喇叭位子調整
+   原本如下
+   <div class="answer_display_item correct_answer">
+                            <p class="answer_display_text">Look at the monkeys.</p>
+
+                            <!-- 此段刪除<button class="answer_display_icon">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </button> 此段刪除-->
+   </div>
+
+   新增一塊喇叭的區域
+   <div class="answer_display_item answer_display_item_icon">
+                            <button class="answer_display_icon_area">
+                                <div class="answer_display_icon wrong_answer">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </div>
+                                <p>你的聲音</p>
+                            </button>
+                            <button class="answer_display_icon_area">
+                                <div class="answer_display_icon correct_answer">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </div>
+                                <p>老師的聲音</p>
+                            </button>
+                            
+   </div>
+
+
+
+10. 聽力練習測驗結果動物圖DEMO頁：
+https://hsuleii.github.io/SmartPhonics/TEST/land_test_end.html
+
+聽力練習測驗結果動物圖調整
+<div class="animal_area land_animal_area">
+                <div class="animal_img">
+                    <img src="Content/image/photo/animal/land_g1_1.png" alt="">
+                </div>
+                <div class="animal_img">
+                    <img src="Content/image/photo/animal/land_g2_1.png" alt="">
+                </div>
+                <div class="animal_img">
+                    <img src="Content/image/photo/animal/land_g3_1.png" alt="">
+                </div>
+                <div class="animal_img">
+                    <img src="Content/image/photo/animal/land_g4_1.png" alt="">
+                </div>
+                <div class="animal_img">
+                    <img src="Content/image/photo/animal/land_g5_1.png" alt="">
+                </div>
+</div>
+
+11. 聽力練習測驗結果動物圖DEMO頁：
+https://hsuleii.github.io/SmartPhonics/TEST/land_test_end.html
+
+聽力練習測驗結果動物圖調整
+<div class="animal_area ocean_animal_area">
+                    <div class="animal_img">
+                        <img src="Content/image/photo/animal/ocean_g1_1.png" alt="">
+                    </div>
+                    <div class="animal_img">
+                        <img src="Content/image/photo/animal/ocean_g2_1.png" alt="">
+                    </div>
+</div>
+
+12. 朗讀練習測驗結果動物圖DEMO頁：
+https://hsuleii.github.io/SmartPhonics/TEST/land_test_end.html
+
+朗讀練習測驗結果動物圖調整
+<div class="animal_area land_animal_area">
+                    <div class="animal_img">
+                        <img src="Content/image/photo/animal/sky_g1_1.png" alt="">
+                    </div>
+                    <div class="animal_img">
+                        <img src="Content/image/photo/animal/sky_g1_2.png" alt="">
+                    </div>
+</div>
+   
+
+
+   

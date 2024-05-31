@@ -1,0 +1,56 @@
+<div class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="navbar-brand">
+            <img src="../Content/image/logo/logo.svg" alt="">
+          </div>
+
+          <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="avatar_img">
+        <!-- 男女生分別的頭像 -->
+        <!-- <img src="../Content/image/photo/avatar/women.png" alt="" srcset=""> -->
+        <img src="../Content/image/photo/avatar/man.png" alt="" srcset="">
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item navTab-Login">
+          <a class="nav-link" href="https://beta.smartphonics.net/Login/?ReturnUrl=%2FConsole" target="_blank">診斷測驗</a>
+        </li>
+        <li class="nav-item navTab-Login">
+          <a class="nav-link" href="../map.html">學習動物園</a>
+        </li>
+
+        <li class="nav-item dropdown navTab-Lang">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fa-solid fa-globe"></i> 語言 <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="dropdownBg"></div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item check" href="#">繁體中文 <i class="fa-regular fa-circle-check"></i></a></li>
+            <li><a class="dropdown-item" href="#">简体中文</a></li>
+            <li><a class="dropdown-item" href="#">English(U.S.)</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item navTab-Login">
+          <a class="nav-link" href="https://hsuleii.github.io/SmartPhonics/PUBLICITY/index.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> 登出</a>
+        </li>
+      </ul>
+    </div>
+          <!-- <div class="navbar-close">
+            <a href="javascript:window.close();">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </a>
+      </div> -->
+    </div>
+</div>
+
+<script>
+  //選單按鈕
+  $(".navbar-toggler").click(function () {
+    $(this).toggleClass("open");
+  });
+</script>

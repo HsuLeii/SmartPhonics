@@ -1,0 +1,167 @@
+main {
+    .login_area {
+        background-color: $white;
+        margin: 40px auto;
+        padding: 50px 20px;
+        width: 85%;
+        max-width: 450px;
+        position: relative;
+        border-radius: 50px;
+        @extend %boxShadow;
+        border-color: $main_color_40;
+
+        .login_title {
+            position: absolute;
+            left: 50%;
+            top: 0%;
+            transform: translate(-50%, -50%);
+            background-color: $main_color_green;
+            width: 60%;
+            margin: 0;
+        }
+
+        .input_area {
+            margin: 30px auto;
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+
+            .input-group-text {
+                border: 0px;
+
+                &.icon_user {
+                    background-color: $main_color_blue;
+                    background-image: linear-gradient(-45deg, darken($main_color_blue, 10%) 0%, $main_color_blue 75%);
+                    border-radius: 50% !important;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                }
+
+                &.icon_password {
+                    background-color: $main_color_yellow;
+                    background-image: linear-gradient(-45deg, darken($main_color_yellow, 10%) 0%, $main_color_yellow 75%);
+                    border-radius: 50% !important;
+                    width: 40px;
+                    height: 40px;
+                    justify-content: center;
+                }
+
+                i,svg {
+                    color: $white;
+                }
+            }
+
+
+            input {
+                border-radius: 50px !important;
+                margin-left: 10px !important;
+
+                &.form-control {
+                    width: calc(100% - 60px);
+                    &:focus {
+                        box-shadow: 0 0 6px 2px $main_color_25;
+                        border-color: $main_color_40;
+                    }
+                }
+            }
+        }
+
+        .forget_password {
+            display: flex;
+            justify-content: space-between;
+
+            .forget_psw {
+                color: $main-color;
+                &:hover{
+                    border-bottom: 1px solid $main-color;
+                }
+            }
+
+            .remember_me {
+                display: flex;
+                position: relative;
+                cursor: pointer;
+
+                input {
+                    position: absolute;
+                    opacity: 0;
+                    height: 0;
+                    width: 0;
+                    cursor: pointer;
+
+                    &:checked {
+                        &~.checkmark {
+                            background-color: $main-color;
+
+                            &::after {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                .checkmark {
+                    position: relative;
+                    top: 0.5em;
+                    height: 1em;
+                    width: 1em;
+                    border: 1px solid $main-color;
+                    transform: translate(0px, -0.2em);
+
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                        block-size: 9px;
+                        inline-size: 9px;
+                        border-bottom: 2px solid $white;
+                        border-left: 2px solid $white;
+                        top: 35%;
+                        left: 50%;
+                        transform: translate3d(-50%, -50%, 0px) rotate(-45deg);
+                    }
+                }
+
+                p {
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+
+        .button_login {
+            padding: 8px 10px;
+            background-color: $main_color;
+            width: 100%;
+            margin: 30px auto;
+            color: $white;
+            border-radius: 50px;
+            transform: scale(0.8);
+            border: 0;
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        .login_area {
+            .button_login {
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .login_area {
+            padding: 50px 40px;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1200px) {}
+
+@media screen and (min-width: 1400px) {}

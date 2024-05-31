@@ -1,0 +1,100 @@
+.swiper_area {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        right: 0;
+        left: auto;
+        transform: translate(calc(100% + 0px), 0);
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        left: 0;
+        right: auto;
+        transform: translate(calc(-100% - 0px), 0);
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 30px;
+        height: 30px;
+
+        &:after {
+            content: "";
+        }
+
+        &:hover {
+            .about_test_slide_circle {
+                circle {
+                    stroke-dasharray: 214 214;
+                }
+            }
+            
+            .about_test_slide_arrow {
+                i,svg {
+                    .arrow {
+                        fill: $main_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.about_test_slide_circle {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    i,svg {
+        transform: rotate(-90deg);
+        width: 100%;
+        height: 100%;
+    }
+    circle {
+        fill: transparent;
+        stroke: $main_color;
+        stroke-width: 2;
+        transform-origin: center center;
+        stroke-dasharray: 0 214;
+        transition: stroke-dasharray var(--v-transition);
+    }
+}
+
+.about_test_slide_arrow {
+    position: absolute;
+    z-index: 0;
+    i,svg {
+        width: 100%;
+        .arrow {
+            fill: $main_color_black;
+        }
+    }
+}
+
+:root {
+    --v-transition: .35s cubic-bezier(.39, .575, .565, 1.000);
+}
+
+@media screen and (min-width: 768px) {
+    .swiper_area {
+    
+        .swiper-button-next,
+        .swiper-rtl .swiper-button-prev {
+            transform: translate(calc(100% + 20px), 0);
+        }
+    
+        .swiper-button-prev,
+        .swiper-rtl .swiper-button-next {
+            transform: translate(calc(-100% - 20px), 0);
+        }
+    
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

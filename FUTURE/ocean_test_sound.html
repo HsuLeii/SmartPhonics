@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartPhonics英語字母拼讀</title>
+    <meta name="description" content="SmartPhonics英語字母拼讀" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SmartPhonics英語字母拼讀" />
+    <meta property="og:site_name" content="SmartPhonics英語字母拼讀"/>
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- 之後改成正式網址的連結 -->
+    <meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="SmartPhonics英語字母拼讀"/>
+    <!-- 之後改成正式網址的連結 -->
+    <meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg"/>
+    <meta itemprop="name" content="SmartPhonics英語字母拼讀">
+    <!-- 之後改成正式網址的連結 -->
+    <meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="../Content/image/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../Content/css/bootstrap-5.1.1.min.css" />
+
+  <!-- this page widgets CSS -->
+
+  <!-- my core CSS -->
+  <link rel="stylesheet" href="../Content/css/SPhonics.css" />
+</head>
+
+<body>
+  <header>
+  </header>
+  <!-- ------- ------- ------- ------- ------- ------- ------- -->
+  <main>
+    <div class="sound_test_area">
+      <div class="leave_next_btn leave_btn_area">
+        <button class="leave_btn">
+          <a href="pick_level.html">
+            返回
+          </a>
+        </button>
+      </div>
+      <div class="sound_test_text">
+        <p>
+          請在安靜的地方戴上耳機，點錄音按鈕，對著耳機說話後，再點停止按鈕。<br/>
+          接著，點播放按鈕，聽到自己的說話聲音。<br/>
+          如果你沒有聽到聲音，請檢查自己的耳機和麥克風!
+        </p>
+      </div>
+
+      <div class="recording_stop_play_area">
+
+        <div class="recording_button_item">
+          <p class="recording_button_instructions">
+            1.開始 / 停止錄音
+          </p>
+          <div class="recording_button_area">
+            <button class="finger_btn recording_area" onclick="location.href='ocean_test_sound_animation.html'">
+              <!-- 點選錄音class加上"recording_button_animate" -->
+              <i class="fa-solid fa-microphone-lines"></i>
+              <!-- 10秒後未按下「錄音」鍵在顯示 -->
+              <i class="fa-solid fa-hand-point-right finger_icon" style="display: none;"></i>
+            </button>
+            <button class="button_text" onclick="location.href='ocean_test_sound_animation.html'">
+              <p>錄音</p>
+            </button>
+            <p class="recording_seconds">60S</p>
+          </div>
+          <div class="stop_button_area">
+            <button class="stop_area">
+              <i class="fa-solid fa-stop"></i>
+            </button>
+            <button class="button_text">
+              <p>停止</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="recording_button_item">
+          <p class="recording_button_instructions">
+            2.檢查自己說話的聲音
+          </p>
+          <div class="play_button_area">
+            <!-- 點選錄音後，取消disabled -->
+            <button class="finger_btn play_area" disabled>
+              <!-- 點選播放class加上"recording_button_animate" -->
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <!-- 點選錄音後，取消disabled -->
+            <button class="button_text" disabled>
+              <p>播放</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="sound_test_img">
+        <img src="Content/image/photo/avatar/figure/level_ocean_kid.png" alt="">
+      </div>
+      <div class="leave_next_btn go_btn_area">
+        <button class="go_btn" disabled>
+          <!-- 聲音播放class加上"button_glow" -->
+          <a href="ocean_test_sound_animation.html">
+            GO&ensp;<i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </button>
+      </div>
+    </div>
+  </main>
+  <!-- this page widgets CSS -->
+
+  <script src="../Content/js/jquery-3.5.1.min.js"></script>
+  <script src="../Content/js/bootstrap-5.1.1.min.js"></script>
+  <script src="../Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
+
+  <script src="../Content/js/all.js"></script>
+</body>
+
+</html>

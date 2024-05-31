@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img
+        src="../Content/image/logo/logo.svg"
+        alt="SmartPhonics|英語字母拼讀"
+      />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown navTab-Lang">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fa-solid fa-globe"></i> 語言 <i class="fa-solid fa-chevron-down"></i></a>
+          <div class="dropdownBg"></div>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item check" href="#">繁體中文 <i class="fa-regular fa-circle-check"></i></a></li>
+            <li><a class="dropdown-item" href="#">简体中文</a></li>
+            <li><a class="dropdown-item" href="#">English(U.S.)</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item navTab-Login">
+          <a class="nav-link" href="../PUBLICITY/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i> 登出</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="nav_name">
+      <a href="#" class="nav_name_link">王美美</a>
+      <ul class="nav_name_menu">
+        <li class="text-center">
+          <a href="login.html">登出</a>
+        </li>
+      </ul>
+    </div> -->
+  </div>
+</nav>
+
+<script>
+  //選單按鈕
+  $(".navbar-toggler").click(function () {
+    $(this).toggleClass("open");
+  });
+</script>
+
+ <!-- 顯示登出按鈕 -->
+ <!-- <script>
+    $(".nav_name").click(function () {
+      $(".nav_name_menu").toggle();
+    });
+  </script> -->

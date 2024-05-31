@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.5.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFF4DE;}
+	.st1{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;stroke-dasharray:3.5667,3.5667;}
+	.st2{fill:none;stroke:#D3D3D3;stroke-width:4;stroke-miterlimit:16;}
+	.st3{fill:#4D2A52;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:11.0185;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1.1019,33.0553;}
+</style>
+<g id="圖層_3">
+	<rect class="st0" width="1024" height="1024"/>
+</g>
+<g id="Grid">
+	<g>
+		<line class="st1" x1="0" y1="512" x2="1024" y2="512"/>
+		<line class="st2" x1="0" y1="204.5" x2="1024" y2="204.5"/>
+		<line class="st2" x1="0" y1="819.5" x2="1024" y2="819.5"/>
+	</g>
+</g>
+<g id="w">
+	<path class="st3" d="M545.1,512l78.6,233.5L709.3,512h62.4L644.6,819.5h-42.4l-89-229.3l-92.1,229.3h-42.4L252.3,512h62.4
+		l85.6,233.5L482.7,512H545.1z"/>
+	<polyline class="st4" points="282.5,512 398.9,819.5 516.2,512 625.2,819.5 740.6,512 	"/>
+</g>
+</svg>

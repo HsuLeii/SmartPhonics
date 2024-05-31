@@ -1,0 +1,1023 @@
+main {
+    .map_slide_area{
+        background-color: $map_slide_bg
+        ;
+    }
+    .map_slide {
+        position: relative;
+
+        .map_slide_item_area {
+            position: absolute;
+            width: calc(100% - 35px);
+            height: 100%;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+
+            .map_slide_item {
+                position: absolute;
+                z-index: 1;
+                width: 16.66666%;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+
+                .map_slide_item_link{
+                    display: block;
+                    position: relative;
+                    height: 100%;
+
+                    .map_slide_num{
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translate(-50% , 50%);
+                        width: 20px;
+                        height: 20px;
+                    border: 2px solid $brown;
+                    border-radius: 50%;
+                    background-color: $white;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        color: $brown;
+                        font-weight: bold;
+                        font-size: 10px;
+                    }
+                    }
+                }
+
+                &.map_slide_item_eleven {
+                    top: 9.19841%;
+                }
+
+                &.map_slide_item_ten {
+                    top: 34.36719%;
+                }
+
+                &.map_slide_item_nine {
+                    top: 72.18141%;
+                }
+
+                &.map_slide_item_twelve {
+                    top: 23.80765%;
+                    left: 17.14593%;
+                }
+
+                &.map_slide_item_eight {
+                    top: 53.00568%;
+                    left: 17.14593%;
+                }
+
+                &.map_slide_item_thirteen {
+                    top: 3.53101%;
+                    left: 33.07859%;
+                }
+
+                &.map_slide_item_six {
+                    top: 35.9%;
+                    left: 35.96155%;
+                }
+
+                &.map_slide_item_seven {
+                    top: 70.56579%;
+                    left: 33.07859%;
+                }
+
+                &.map_slide_item_five {
+                    top: 60.90074%;
+                    left: 48.88148%;
+                }
+
+                &.map_slide_item_one {
+                    top: 38.60446%;
+                    left: 64.62619%;
+                }
+
+                &.map_slide_item_four {
+                    top: 67.23438%;
+                    left: 64.62619%;
+                }
+
+                &.map_slide_item_two {
+                    top: 25.75532%;
+                    left: 80.42909%;
+                }
+
+                &.map_slide_item_three {
+                    top: 55.69440%;
+                    left: 80.42909%;
+                }
+            }
+        }
+    }
+
+    .map_road {
+        position: relative;
+        margin: 40px auto 0;
+
+        .map_road_route {
+            display: none;
+        }
+
+        .map_route_item {
+            position: relative;
+            width: 80%;
+            margin: 0 auto;
+
+            &::before {
+                content: "";
+                width: 3px;
+                height: 100%;
+                background-color: $brown;
+                left: 0;
+                top: 0;
+                position: absolute;
+            }
+
+            .map_item_project {
+                position: relative;
+                margin: 0 auto;
+                padding: 40px 0;
+
+                .timeline-num {
+                    background-color: $white;
+                    width: 40px;
+                    height: 40px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin: 0 0 0 -17px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 3px solid $brown;
+
+                    p {
+                        color: $brown;
+                        font-weight: bold;
+                        font-size: 20px;
+                    }
+                }
+
+                .map_route_item_link {
+                    margin: 0 0 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    width: calc(100% - 30px);
+
+                    .map_route_item_img {
+                        width: 100%;
+                        max-width: 300px;
+                        margin: 0 0 10px 0;
+                    }
+
+                    .map_route_item_text {
+                        width: 100%;
+                        border-radius: 20px;
+                        padding: 10px 15px;
+
+                        p {
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            color: $main_color_black;
+                            font-weight: bold;
+                        }
+
+                        .map_route_item_name {
+                            margin: 10px 0;
+                        }
+
+                        .map_route_item_btn{
+                            margin: 20px 0;
+                            a{
+                                background-color: $brown;
+                                color: $white;
+                                padding: 10px 15px;
+                                border-radius: 5px;
+
+                                &:hover{
+                                    background-color: $main_color;
+                                }
+                            }
+                        }
+
+                        .map_route_item_tittle {
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                &.item_project_one {
+                    .map_route_item_text {
+                        background-color: $color_one;
+                    }
+                }
+
+                &.item_project_two {
+                    .map_route_item_text {
+                        background-color: $color_two;
+                    }
+                }
+
+                &.item_project_three {
+                    .map_route_item_text {
+                        background-color: $color_three;
+                    }
+                }
+
+                &.item_project_four {
+                    .map_route_item_text {
+                        background-color: $color_four;
+                    }
+                }
+
+                &.item_project_five {
+                    .map_route_item_text {
+                        background-color: $color_five;
+                    }
+                }
+
+                &.item_project_six {
+                    .map_route_item_text {
+                        background-color: $color_six;
+                    }
+                }
+
+                &.item_project_seven {
+                    .map_route_item_text {
+                        background-color: $color_seven;
+                    }
+                }
+
+                &.item_project_eight {
+                    .map_route_item_text {
+                        background-color: $color_eight;
+                    }
+                }
+
+                &.item_project_nine {
+                    .map_route_item_text {
+                        background-color: $color_nine;
+                    }
+                }
+
+                &.item_project_ten {
+                    .map_route_item_text {
+                        background-color: $color_ten;
+                    }
+                }
+
+                &.item_project_eleven {
+                    .map_route_item_text {
+                        background-color: $color_eleven;
+                    }
+                }
+
+                &.item_project_twelve {
+                    .map_route_item_text {
+                        background-color: $color_twelve;
+                    }
+                }
+
+                &.item_project_thirteen {
+                    .map_route_item_text {
+                        background-color: $color_thirteen;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal{
+    .modal-dialog{
+        width: 85%;
+        margin: 0 auto;
+
+            &.modal-dialog-centered{
+                justify-content: center;
+            }
+
+        .modal-content{
+            position: relative;
+            border: 15px solid $brown;
+            border-radius: 5px;
+            background-color: $brown;
+            
+            .wood_frame{
+                position: absolute;
+                width: calc(100% + 25px);
+                height: calc(100% + 25px);
+                overflow: hidden;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+
+                .wood_grain{
+                    position: absolute;
+
+                    &.wood_grain_top{
+                        width: 100%;
+                        left: 0;
+                        top: 0;
+                        transform: translate(0 , -9px);
+                    }
+
+                    &.wood_grain_left{
+                        width: 10px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                    }
+
+                    &.wood_grain_right{
+                        width: 10px;
+                        height: 100%;
+                        right: 0;
+                        top: 0;
+                    }
+
+                    &.wood_grain_bottom{
+                        width: 100%;
+                        left: 0;
+                        bottom: 0;
+                        transform: translate(0 , 9px);
+                    }
+
+                    img{
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                background-color: $map_slide_bg;
+            }
+
+            .modal-header{
+                padding: 20px;
+                border-radius: 5px 5px 0 0;
+                position: relative;
+                z-index: 1;
+                border: 0;
+
+                .modal_close{
+                    margin: 0 0 0 auto;
+                    p{
+                        line-height: 1;
+                        svg{
+                            color: $brown;
+                            font-size: 25px;
+                        }
+
+
+                        &:hover{
+                            svg{
+                                color: $main_color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .modal-body{
+                padding: 20px;
+                .modal_body_img{
+                    width: 70%;
+                    margin: 0 auto 20px;
+                }
+
+                .modal_body_text{
+                    width: 80%;
+                    margin: 20px auto 20px;
+                    font-weight: bold;
+
+                    .modal_body_name{
+                        margin: 10px auto;
+
+                        p{
+                            margin: 5px auto;
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                        }
+                    }
+                }
+
+                .modal_body_link{
+                    display: flex;
+                    justify-content: center;
+                    margin: 20px 0;
+                    a{
+                        background-color: $brown;
+                        color: $white;
+                        padding: 10px 15px;
+                        border-radius: 5px;
+                        
+                        &:hover{
+                            background-color: $main_color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px) {
+    main {
+
+        .map_slide {
+            position: relative;
+    
+            .map_slide_item_area {
+    
+                .map_slide_item {
+    
+                    .map_slide_item_link{
+    
+                        .map_slide_num{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .map_road {
+            .map_route_item {
+                .map_item_project {
+                    .map_route_item_link {
+                        .map_route_item_text {
+                            p {
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+    
+            .modal-content{
+    
+                .modal-body{
+    
+                    .modal_body_text{
+                        .modal_body_name{
+                            p{
+                                flex-direction: row;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 576px) {
+    main {
+        .map_road {
+            .map_route_item {
+
+                .map_item_project {
+
+                    .map_route_item_link {
+                        flex-direction: row;
+                        align-items: center;
+
+                        .map_route_item_img {
+                            width: 40%;
+                            padding: 10px;
+                        }
+
+                        .map_route_item_text {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-header{
+                    .modal_close{
+                        p{
+                            svg{
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        .map_road {
+            .map_route_item {
+
+                .map_item_project {
+
+                    .map_route_item_link {
+                        justify-content: space-between;
+
+                        .map_route_item_text {
+                            width: 55%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                .modal-header{
+                    .modal_close{
+                        p{
+                            svg{
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main {
+
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            width: 35px;
+                            height: 35px;
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .map_road {
+
+            .map_road_route {
+                display: block;
+                padding: 0 0 calc(350px * 0.83 );
+                margin: calc(350px * 0.83 ) auto 0;
+
+                .square {
+                    position: relative;
+                    height: calc(350px * 0.83);
+
+                    &.square_right {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 350px;
+                            height: 15px;
+                            background-color: $main_color;
+                            transform: translate(-50%, -50%) rotate(60deg);
+                            border-radius: 50px;
+                        }
+
+                        &.square_right_two{
+                            &::before{
+                                background-color: $color_two;
+                            }
+                        }
+
+                        &.square_right_four{
+                            &::before{
+                                background-color: $color_four;
+                            }
+                        }
+
+                        &.square_right_six{
+                            &::before{
+                                background-color: $color_six;
+                            }
+                        }
+
+                        &.square_right_eight{
+                            &::before{
+                                background-color: $color_eight;
+                            }
+                        }
+
+                        &.square_right_ten{
+                            &::before{
+                                background-color: $color_ten;
+                            }
+                        }
+
+                        &.square_right_twelve{
+                            &::before{
+                                background-color: $color_twelve;
+                            }
+                        }
+                    }
+
+                    &.square_left {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            width: 350px;
+                            height: 15px;
+                            background-color: $main_color;
+                            transform: translate(-50%, -50%) rotate(-60deg);
+                            border-radius: 50px;
+                        }
+
+                        &.square_left_one{
+                            &::before{
+                                background-color: $color_one;
+                            }
+                        }
+
+                        &.square_left_three{
+                            &::before{
+                                background-color: $color_three;
+                            }
+                        }
+
+                        &.square_left_five{
+                            &::before{
+                                background-color: $color_five;
+                            }
+                        }
+
+                        &.square_left_seven{
+                            &::before{
+                                background-color: $color_seven;
+                            }
+                        }
+
+                        &.square_left_nine{
+                            &::before{
+                                background-color: $color_nine;
+                            }
+                        }
+
+                        &.square_left_eleven{
+                            &::before{
+                                background-color: $color_eleven;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .map_route_item {
+                width: 90%;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, 0);
+
+                &::before {
+                    display: none;
+                }
+
+                .map_item_project {
+                    position: absolute;
+                    transform: translate(0, -50%);
+                    width: calc(50% - 150px);
+                    margin: 0 auto;
+                    padding: 0;
+
+                    .timeline-num{
+                        width: 45px;
+                        height: 45px;
+                        top: 50%;
+                        margin: 0;
+
+                        p{
+                            font-size: 25px;
+                        }
+                    }
+
+                    .map_route_item_link {
+                        flex-direction: column;
+                        width: 100%;
+
+                        .map_route_item_img {
+                            width: 100%;
+                            padding: 0;
+                        }
+
+                        .map_route_item_text {
+                            width: 100%;
+                        }
+                    }
+
+                    &.map_item_project_right{
+                        right: 0;
+
+                        .timeline-num{
+                            transform: translate(calc(-75px - 25%) , -50%);
+                        }
+                    }
+
+                    &.map_item_project_left{
+                        left: 0;
+
+                        .timeline-num{
+                            left: auto;
+                            right: 0;
+                            transform: translate(calc(75px + 25%) , -50%);
+                        }
+                    }
+
+                    &.item_project_one {
+                        top: calc(350px * 0.83 * 0);
+                    }
+
+                    &.item_project_two {
+                        top: calc(350px * 0.83 * 1);
+                    }
+
+                    &.item_project_three {
+                        top: calc(350px * 0.83 * 2);
+                    }
+
+                    &.item_project_four {
+                        top: calc(350px * 0.83 * 3);
+                    }
+
+                    &.item_project_five {
+                        top: calc(350px * 0.83 * 4);
+                    }
+
+                    &.item_project_six {
+                        top: calc(350px * 0.83 * 5);
+                    }
+
+                    &.item_project_seven {
+                        top: calc(350px * 0.83 * 6);
+                    }
+
+                    &.item_project_eight {
+                        top: calc(350px * 0.83 * 7);
+                    }
+
+                    &.item_project_nine {
+                        top: calc(350px * 0.83 * 8);
+                    }
+
+                    &.item_project_ten {
+                        top: calc(350px * 0.83 * 9);
+                    }
+
+                    &.item_project_eleven {
+                        top: calc(350px * 0.83 * 10);
+                    }
+
+                    &.item_project_twelve {
+                        top: calc(350px * 0.83 * 11);
+                    }
+
+                    &.item_project_thirteen {
+                        top: calc(350px * 0.83 * 12);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .map_slide {
+            .map_slide_item_area{
+                .map_slide_item{
+                    .map_slide_item_link{
+                        .map_slide_num{
+                            width: 40px;
+                            height: 40px;
+                            border: 3px solid $brown;
+                            p {
+                                font-size: 19px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+    
+            .modal-content{
+    
+                .modal-body{
+    
+                    .modal_body_text{
+                        .modal_body_name{
+                            p{
+                                flex-direction: row;
+
+                                .modal_body_text_span_one{
+                                    min-width: 73px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    main {
+
+        .map_road {
+            .map_road_route {
+                padding: 0 0 calc(220px * 0.83 );
+                margin: calc(220px * 0.83 ) auto 0;
+
+                .square {
+                    position: relative;
+                    height: calc(220px * 0.83);
+
+                    &.square_right {
+                        &::before {
+                            width: 220px;
+                        }
+                    }
+
+                    &.square_left {
+                        &::before {
+                            width: 220px;
+                        }
+                    }
+                }
+            }
+
+            .map_route_item {
+
+                .map_item_project {
+                    width: calc(50% - 80px);
+
+                    .map_route_item_link {
+                        flex-direction: row;
+
+                        .map_route_item_img{
+                            width: 40%;
+                            padding: 0;
+                            margin: 0;
+                        }
+
+                        .map_route_item_text{
+                            width: 55%;
+                        }
+                    }
+
+                    &.map_item_project_right{
+                        .timeline-num{
+                            transform: translate(calc(-40px - 25%) , -50%);
+                        }
+                    }
+
+                    &.map_item_project_left{
+                        .timeline-num{
+                            left: auto;
+                            right: 0;
+                            transform: translate(calc(40px + 25%) , -50%);
+                        }
+
+                        .map_route_item_link{
+                            display: flex;
+                            flex-direction: row-reverse;
+                        }
+                    }
+
+                    &.item_project_one {
+                        top: calc(220px * 0.83 * 0);
+                    }
+
+                    &.item_project_two {
+                        top: calc(220px * 0.83 * 1);
+                    }
+
+                    &.item_project_three {
+                        top: calc(220px * 0.83 * 2);
+                    }
+
+                    &.item_project_four {
+                        top: calc(220px * 0.83 * 3);
+                    }
+
+                    &.item_project_five {
+                        top: calc(220px * 0.83 * 4);
+                    }
+
+                    &.item_project_six {
+                        top: calc(220px * 0.83 * 5);
+                    }
+
+                    &.item_project_seven {
+                        top: calc(220px * 0.83 * 6);
+                    }
+
+                    &.item_project_eight {
+                        top: calc(220px * 0.83 * 7);
+                    }
+
+                    &.item_project_nine {
+                        top: calc(220px * 0.83 * 8);
+                    }
+
+                    &.item_project_ten {
+                        top: calc(220px * 0.83 * 9);
+                    }
+
+                    &.item_project_eleven {
+                        top: calc(220px * 0.83 * 10);
+                    }
+
+                    &.item_project_twelve {
+                        top: calc(220px * 0.83 * 11);
+                    }
+
+                    &.item_project_thirteen {
+                        top: calc(220px * 0.83 * 12);
+                    }
+                }
+            }
+        }
+    }
+
+    .modal{
+        .modal-dialog{
+    
+            .modal-content{
+    
+                .modal-body{
+    
+                    .modal_body_text{
+                        .modal_body_name{
+                            p{
+
+                                .modal_body_text_span_one{
+                                    min-width: 78px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

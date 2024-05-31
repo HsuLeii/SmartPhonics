@@ -1,0 +1,419 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $header_bg;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 3;
+    border-bottom: 2px solid $main_color_orangeLight;
+
+    .header_decorate{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        fill: $header_bg;
+    }
+    .navbar {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .container-fluid {
+            padding: 0;
+            margin: 0;
+
+            .navbar-brand {
+                padding: 10px 0;
+                img {
+                    width: 120px;
+                }
+            }
+
+            .navbar-toggler {
+                position: absolute;
+                cursor: pointer;
+                right: 10px;
+                top: 31px;
+                transform: translate(0px, -50%);
+                z-index: 5;
+                border: 0px;
+
+                span{
+                    position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 30px;
+                height: 3px;
+                margin: 0px;
+                background: $main_color;
+                transition: 350ms ease all;
+                z-index: 5;
+            
+                &::before,
+                &::after{
+                    content: " ";
+                    position: absolute;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: $main_color;
+                    transition: 350ms ease all;
+                }
+            
+                &::before{
+                    margin: -10px 0 0 0;
+                }
+            
+                
+                &::after{
+                    margin: 10px 0 0 0;
+                }
+                }
+            
+                &.open {
+                    span{
+                        background-color: rgba(0, 0, 0, 0);
+                
+                        &::before{
+                            transform: rotate(45deg);
+                            margin: 0;
+                        }
+                
+                        &::after{
+                            transform: rotate(-45deg);
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .icon-bar {
+                    display: block;
+                    width: 22px;
+                    height: 2px;
+                    border-radius: 1px;
+                    background-color: $main_color;
+
+                    &+.icon-bar {
+                        margin-top: 4px;
+                    }
+                }
+
+                &:hover {
+
+                    .icon-bar {
+                        background-color: $white;
+                    }
+                }
+
+                &:focus{
+                    box-shadow: none;
+                }
+            }
+
+            .navbar-collapse {
+                justify-content: center;
+                margin: 0;
+
+                ul {
+                    margin: 40px 0;
+                    li {
+                        &.nav-item {
+                            
+                            &.nowPage,
+                            &:hover {
+                                color: $main_color;
+
+                                .nav-link {
+                                    color: $main_color;
+                                }
+
+                                p{
+                                    &.nav-link {
+                                        color: $main_color_black;
+                                    }
+                                }
+                                
+                            }
+
+                            .nav-link {
+                                color: $main_color_black;
+                                padding: 15px 10px;
+                                font-size: 16px;
+
+                                &.dropdown-toggle{
+                                    &::after{
+                                        display: none;
+                                    }
+                                }
+                            }
+
+                            &.dropdown{
+                                .nav-link{
+                                    &.show{
+                                        color: $main-color;
+                                    }
+                                }
+    
+                                .dropdown-menu{
+                                    display: none;
+                                    opacity: 0;
+                                    visibility: hidden;
+                                    border-radius: 5px;
+                                    border: 0px;
+                                    padding: 0;
+                                    position: relative;
+                                    background-color: transparent;
+                                    li{
+                                        padding: 0;
+                                    }
+                                    &.show{
+                                        display: block;
+                                        opacity: 1;
+                                        visibility: visible;
+                                        margin-top: 0;
+                                    }
+                                    .dropdown-item{
+                                        font-size: 16px;
+                                        &:focus,
+                                        &:hover{
+                                            color: $main-color;
+                                            background-color:transparent;
+                                        }
+
+                                        &.nowPage{
+                                            color: $main-color;
+                                        }
+
+                                        &.check{
+                                            color: $main-color;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navbar-close{
+                a{
+                    line-height: 1;
+                    svg{
+                        font-size: 25px;
+                        color: $main_color_black;
+
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .nav_name {
+        position: relative;
+        padding: 5px 0px;
+        .nav_name_link {
+            padding: 5px 15px;
+            background-color: $main_color;
+            border-radius: 50px;
+            color: $white;
+        }
+        .nav_name_menu {
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%, 7px);
+            width: 75%;
+            background-color: $white;
+            border-radius: 10px;
+            border: 1px solid $main_color;
+            display: none;
+            a{
+                color: $main_color;
+            }
+            &:before,
+            &:after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                transform: translate(-50%, 0px);
+            }
+            &:before {
+                border-width: 0px 8px 8px 8px;
+                top: -8px;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 8px solid $main_color;
+            }
+            &:after {
+                border-width: 0px 7px 7px 7px;
+                top: -7px;
+                border-left: 7px solid transparent;
+                border-right: 7px solid transparent;
+                border-bottom: 7px solid $white;
+            }
+            &:hover{
+                background-color: $main_color;
+                a{
+                    color: $white;
+                }
+                &:after {
+                    border-bottom: 7px solid $main_color;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (min-width: 576px) {
+    header {
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    img {
+                        width: 160px;
+                    }
+                }
+
+                .navbar-toggler {
+                    top: 35px;
+            }
+
+            .navbar-close{
+                a{
+                    svg{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        .navbar {
+            .container-fluid {
+
+            .navbar-close{
+                a{
+                    svg{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        padding: 15px 20px;
+
+        .navbar {
+            .container-fluid {
+                .navbar-brand {
+                    padding: 0;
+                    img {
+                        width: 260px;
+                    }
+                }
+
+                .navbar-collapse {
+                    justify-content: flex-end;
+                    margin: 0;
+                    ul {
+                        margin: 0;
+                        li {
+                            margin: 0 10px ;
+                            padding: 0;
+                            &.nav-item{
+                                .nav-link {
+                                    font-size: 17px;
+                                }
+                                &.dropdown{
+                                    
+                                    &:hover{
+                                        .nav-link{
+                                        &~.dropdown-menu{
+                                            opacity: 1;
+                                            visibility: visible;
+                                        }
+                                    }
+                                }
+                                
+        
+                                    .dropdown-menu{
+                                        position: absolute;
+                                        display: block;
+                                        background-color: $white;
+                                        right: 0;
+                                        top: auto;
+                                        left: auto;
+                                        padding: 10px 5px;
+                                        li {
+                                            margin: 0 ;
+                                        }
+                                        .dropdown-item{
+                                            font-size: 17px;
+                                            &:focus,
+                                            &:hover{
+                                                color: $main-color;
+                                                background-color:transparent;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    header {
+        .navbar {
+            .container-fluid {
+
+                .navbar-collapse {
+                    ul {
+                        li {
+                            &.nav-item{
+                                .nav-link {
+                                    font-size: 20px;
+                                }
+
+                                &.dropdown{
+                                
+                                    .dropdown-menu{
+                                        .dropdown-item{
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {}

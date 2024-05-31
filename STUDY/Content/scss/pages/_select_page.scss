@@ -1,0 +1,948 @@
+main {
+  .study_area {
+    max-width: 1200px;
+
+    &.select_page_area {
+      max-width: none;
+      width: 100%;
+
+      .map_slide {
+        position: relative;
+
+        .map_slide_change {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+
+          img {
+            position: absolute;
+            z-index: 1;
+          }
+        }
+
+        .map_slide_arrow{
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+
+          .slide_arrow_item{
+            position: absolute;
+            top: 50%;
+            background-color: $main_color;
+            line-height: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: $white;
+
+            &:hover{
+              &.next_arrow{
+                transform: translate(0, -50%) scale(1.2);
+              }
+  
+              &.prev_arrow{
+                transform: translate(0, -50%) scale(1.2);
+              }
+            }
+
+            svg{
+              width: 14px;
+              padding: 5px;
+            }
+
+            &.next_arrow{
+              right: 10px;
+              transform: translate(0, -50%);
+            }
+
+            &.prev_arrow{
+              left: 10px;
+              transform: translate(0, -50%);
+            }
+          }
+          
+        }
+      }
+
+      .select_page_head {
+        width: 80%;
+        max-width: 1200px;
+        margin: 40px auto 0;
+
+        .ticket_bg {
+          .ticket_area {
+            display: flex;
+            flex-wrap: wrap;
+
+            .ticket_wrap {
+              width: 33.33333%;
+              background-color: $ticket_bg;
+              position: relative;
+              display: flex;
+              align-items: center;
+              position: relative;
+
+              &.notget {
+                &:hover {
+                  &:after {
+                    opacity: 1;
+                  }
+                }
+
+                &:after {
+                  content: attr(data-des);
+                  width: 80%;
+                  position: absolute;
+                  bottom: 10px;
+                  left: 50%;
+                  font-size: 15px;
+                  text-align: center;
+                  transform: translate(-50%, 0px);
+                  height: auto;
+                  opacity: 0;
+                  z-index: 1;
+                  -webkit-transition: .5s;
+                  transition: .5s;
+                  color: $white;
+                  background-color: $brown;
+                  padding: 5px;
+                  border-radius: 10px;
+                }
+              }
+
+              &.star_area {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                padding: 10px;
+
+                .star_item {
+                  margin: 2px 5px;
+
+                  &.star_img {
+                    svg {
+                      color: $main_color_yellow;
+                      font-size: 20px;
+                    }
+                  }
+
+                  &.star_text {
+                    color: $main_color_black;
+                  }
+
+                  &.star_question {
+                    position: absolute;
+                    top: 10px;
+                    right: 20px;
+                    line-height: 0;
+                    margin: 0;
+                    cursor: pointer;
+                  }
+                }
+
+              }
+
+              &:before,
+              &:after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 10px;
+                height: 10px;
+                background: $body_bg;
+                border-radius: 50%;
+                right: -5px;
+                z-index: 1;
+              }
+
+              &:before {
+                top: -5px;
+              }
+
+              &:after {
+                bottom: -5px;
+              }
+
+              .ticket {
+                width: 100%;
+
+                .ticket_object {
+                  line-height: 0;
+                }
+              }
+
+              /* 波浪線 */
+              .wave_line {
+                &.wave_line_left {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 100%;
+                  display: flex;
+                  min-width: 5px;
+                  max-width: 5px;
+
+                  .wave_line_internal {
+                    height: 100%;
+                    width: 100%;
+                    background: radial-gradient(circle at 0 50%,
+                        $body_bg 50%,
+                        $ticket_bg 0);
+                    background-size: 0.3rem 0.7rem;
+                    background-repeat: repeat-y;
+                  }
+                }
+
+                &.wave_line_right {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  height: 100%;
+                  display: flex;
+                  min-width: 5px;
+                  max-width: 5px;
+                  transform: rotate(180deg);
+
+                  .wave_line_internal {
+                    height: 100%;
+                    width: 100%;
+                    background: radial-gradient(circle at 0 50%,
+                        $body_bg 50%,
+                        $ticket_bg 0);
+                    background-size: 0.3rem 0.7rem;
+                    background-repeat: repeat-y;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .unit_link_btn {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 80px 0 30px;
+          margin: 0 auto;
+
+          .unit_link {
+            width: calc(100% / 5.5 - 10px);
+            border-radius: 50%;
+            background-color: $main_color;
+            margin: 5px;
+
+            &.active {
+              width: calc((100% / 5.5 - 10px) * 1.3);
+
+              .unit_link_marker {
+                .unit_link_marker_inner {
+                  &::after {
+                    display: block;
+                  }
+                }
+              }
+
+            }
+
+            .unit_link_marker {
+              padding: 5px;
+
+              &::before {
+                display: none;
+              }
+
+              .unit_link_marker_inner {
+                position: relative;
+
+                &::before {
+                  content: "";
+                  background-image: url(../image/photo/map/hot_air_balloon.png);
+                  background-size: cover;
+                  width: 40px;
+                  height: 40px;
+                  position: absolute;
+                  left: 50%;
+                  top: 0;
+                  transform: translate(-50%, calc(-100% - 10px));
+                  display: none;
+                  animation: jump .5s linear alternate infinite;
+                }
+
+                &::after {
+                  content: "";
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  transform: translate(-50%, -50%);
+                  width: calc(100% + 15px);
+                  height: calc(100% + 15px);
+                  border: 1.5px solid;
+                  border-radius: 50%;
+                  display: none;
+                  background-color: transparent;
+                }
+
+                &:hover {
+                  &::after {
+                    display: block;
+                  }
+                }
+
+                &.this_unit {
+                  &::before {
+                    display: block;
+                  }
+                }
+
+                &.unit_one_marker_inner {
+                  &::after {
+                    border-color: $color_one;
+                  }
+                }
+
+                &.unit_two_marker_inner {
+                  &::after {
+                    border-color: $color_two;
+                  }
+                }
+
+                &.unit_three_marker_inner {
+                  &::after {
+                    border-color: $color_three;
+                  }
+                }
+
+                &.unit_four_marker_inner {
+                  &::after {
+                    border-color: $color_four;
+                  }
+                }
+
+                &.unit_five_marker_inner {
+                  &::after {
+                    border-color: $color_five;
+                  }
+                }
+
+                &.unit_six_marker_inner {
+                  &::after {
+                    border-color: $color_six;
+                  }
+                }
+
+                &.unit_seven_marker_inner {
+                  &::after {
+                    border-color: $color_seven;
+                  }
+                }
+
+                &.unit_eight_marker_inner {
+                  &::after {
+                    border-color: $color_eight;
+                  }
+                }
+
+                &.unit_nine_marker_inner {
+                  &::after {
+                    border-color: $color_nine;
+                  }
+                }
+
+                &.unit_ten_marker_inner {
+                  &::after {
+                    border-color: $color_ten;
+                  }
+                }
+
+                &.unit_eleven_marker_inner {
+                  &::after {
+                    border-color: $color_eleven;
+                  }
+                }
+
+                &.unit_twelve_marker_inner {
+                  &::after {
+                    border-color: $color_twelve;
+                  }
+                }
+
+                &.unit_thirteen_marker_inner {
+                  &::after {
+                    border-color: $color_thirteen;
+                  }
+                }
+              }
+            }
+
+            &.unit_one_link {
+              background-color: $color_one;
+            }
+
+            &.unit_two_link {
+              background-color: $color_two;
+            }
+
+            &.unit_three_link {
+              background-color: $color_three;
+            }
+
+            &.unit_four_link {
+              background-color: $color_four;
+            }
+
+            &.unit_five_link {
+              background-color: $color_five;
+            }
+
+            &.unit_six_link {
+              background-color: $color_six;
+            }
+
+            &.unit_seven_link {
+              background-color: $color_seven;
+            }
+
+            &.unit_eight_link {
+              background-color: $color_eight;
+            }
+
+            &.unit_nine_link {
+              background-color: $color_nine;
+            }
+
+            &.unit_ten_link {
+              background-color: $color_ten;
+            }
+
+            &.unit_eleven_link {
+              background-color: $color_eleven;
+            }
+
+            &.unit_twelve_link {
+              background-color: $color_twelve;
+            }
+
+            &.unit_thirteen_link {
+              background-color: $color_thirteen;
+            }
+          }
+
+
+        }
+
+        .unit_introduction {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          width: 80%;
+          max-width: 1200px;
+          margin: 40px auto;
+          border-radius: 50px;
+          padding: 5px 10px;
+
+          p {
+            color: $main_color_black;
+            font-weight: bold;
+            padding: 3px 0px;
+            margin: 0px 10px;
+            max-width: 90%;
+          }
+
+          &.unit_introduction_one {
+            background-color: $color_one;
+          }
+
+          &.unit_introduction_two {
+            background-color: $color_two;
+          }
+
+          &.unit_introduction_three {
+            background-color: $color_three;
+          }
+
+          &.unit_introduction_four {
+            background-color: $color_four;
+          }
+
+          &.unit_introduction_five {
+            background-color: $color_five;
+          }
+
+          &.unit_introduction_six {
+            background-color: $color_six;
+          }
+
+          &.unit_introduction_seven {
+            background-color: $color_seven;
+          }
+
+          &.unit_introduction_eight {
+            background-color: $color_eight;
+          }
+
+          &.unit_introduction_nine {
+            background-color: $color_nine;
+          }
+
+          &.unit_introduction_ten {
+            background-color: $color_ten;
+          }
+
+          &.unit_introduction_eleven {
+            background-color: $color_eleven;
+          }
+
+          &.unit_introduction_twelve {
+            background-color: $color_twelve;
+          }
+
+          &.unit_introduction_thirteen {
+            background-color: $color_thirteen;
+          }
+
+        }
+      }
+
+      .select_page_content {
+        width: 80%;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto 60px;
+
+        .select_page_content_item {
+          position: relative;
+          width: 40%;
+          margin: 20px 5%;
+
+          .star_item {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto 5px;
+
+            svg {
+              color: $main_color_yellow;
+              font-size: 20px;
+            }
+
+            .get_star {
+              display: none;
+            }
+
+            .notget_star {
+              display: block;
+            }
+          }
+
+          .balloon_item {
+            transform: scale(0.9);
+
+            &:hover {
+              transform: scale(0.95);
+              ;
+
+            }
+          }
+
+          &.get {
+            .get_star {
+              display: block;
+            }
+
+            .notget_star {
+              display: none;
+            }
+          }
+
+          .gift_text{
+            display: flex;
+            justify-content: center;
+          }
+
+          .gift_hint{
+            display: none;
+            justify-content: center;
+            width: 100%;
+                  position: absolute;
+                  top: 100%;
+                  left: 50%;
+                  transform: translate(-50%, -20px);
+                  z-index: 1;
+                  -webkit-transition: .5s;
+                  transition: .5s;
+                  color: $white;
+                  background-color: $brown;
+                  padding: 5px;
+                  border-radius: 10px;
+          }
+
+          &:hover{
+            .gift_hint{
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal{
+  .modal-dialog{
+      .modal-content{
+          .modal-body{
+              .modal_star_explain{
+                display: flex;
+                justify-content: center;
+                p{
+                  span{
+                    svg{
+                      color: $main_color_yellow;
+                    }
+                  }
+                }
+              }
+          }
+      }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(-50%, calc(-100% - 10px));
+  }
+
+  50% {
+    transform: translate(-50%, calc(-100% - 30%));
+  }
+
+  100% {
+    transform: translate(-50%, calc(-100% - 50%));
+  }
+}
+
+@media screen and (min-width: 500px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .select_page_content {
+
+          .select_page_content_item {
+            width: 28%;
+            margin: 20px 2.6%;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 576px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .select_page_head {
+          .ticket_bg {
+            .ticket_area {
+
+              .ticket_wrap {
+
+                &.star_area {
+
+                  .star_item {
+
+                    &.star_img {
+                      svg {
+                        font-size: 30px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .unit_link_btn {
+
+            .unit_link {
+              width: calc(100% / 7.5 - 16px);
+              margin: 8px;
+
+              &.active {
+                width: calc((100% / 7.5 - 16px) * 1.3);
+              }
+            }
+
+
+          }
+        }
+
+        .select_page_content {
+
+          .select_page_content_item {
+            width: 20%;
+            margin: 20px 2.5%;
+
+            .star_item {
+              svg {
+                font-size: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .map_slide {
+  
+          .map_slide_arrow{
+
+            .slide_arrow_item{
+  
+              svg{
+                width: 15px;
+                padding: 10px;
+              }
+
+              &.next_arrow{
+                right: 15px;
+              }
+  
+              &.prev_arrow{
+                left: 15px;
+              }
+            }
+            
+          }
+        }
+        
+        .select_page_head {
+          .ticket_bg {
+            .ticket_area {
+
+              .ticket_wrap {
+                width: calc((100% - 180px) / 3);
+
+                &.star_area {
+                  width: 180px;
+                  flex-direction: column;
+
+                  .star_item {
+
+                    &.star_img {
+                      svg {
+                        font-size: 40px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .unit_link_btn {
+
+            .unit_link {
+              width: calc(100% / 8.5 - 16px);
+
+              &.active {
+                width: calc((100% / 8.5 - 16px) * 1.3);
+              }
+
+              .unit_link_marker {
+                .unit_link_marker_inner {
+                  &::before {
+                    width: 60px;
+                    height: 60px;
+                  }
+                }
+              }
+            }
+
+
+          }
+        }
+
+        .select_page_content {
+
+          .select_page_content_item {
+            width: 15%;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .map_slide {
+  
+          .map_slide_arrow{
+
+            .slide_arrow_item{
+  
+              svg{
+                width: 17px;
+              }
+            }
+            
+          }
+        }
+        .select_page_head {
+          .ticket_bg {
+            .ticket_area {
+
+              .ticket_wrap {
+                width: calc((100% - 200px) / 3);
+
+                &.star_area {
+                  width: 200px;
+                }
+              }
+            }
+          }
+
+          .unit_link_btn {
+
+            .unit_link {
+              width: calc(100% / 10.5 - 16px);
+
+              &.active {
+                width: calc((100% / 10.5 - 16px) * 1.3);
+              }
+
+              .unit_link_marker {
+                .unit_link_marker_inner {
+                  &::after {
+                    width: calc(100% + 18px);
+                    height: calc(100% + 18px);
+                  }
+                }
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1200px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .map_slide {
+  
+          .map_slide_arrow{
+
+            .slide_arrow_item{
+  
+              svg{
+                width: 19px;
+              }
+            }
+            
+          }
+        }
+
+        .select_page_head {
+          .ticket_bg {
+            .ticket_area {
+
+              .ticket_wrap {
+                width: calc((100% - 215px) / 3);
+
+                &.star_area {
+                  width: 215px;
+                }
+              }
+            }
+          }
+
+          .unit_link_btn {
+
+            .unit_link {
+              width: calc(100% / 13.5 - 10px);
+              margin: 5px;
+
+              &.active {
+                width: calc((100% / 13.5 - 16px) * 1.3);
+              }
+            }
+
+
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 1400px) {
+  main {
+    .study_area {
+
+      &.select_page_area {
+        .map_slide {
+  
+          .map_slide_arrow{
+
+            .slide_arrow_item{
+  
+              svg{
+                width: 20px;
+              }
+            }
+            
+          }
+        }
+
+        .select_page_head {
+          .ticket_bg {
+            .ticket_area {
+
+              .ticket_wrap {
+                width: calc((100% - 225px) / 3);
+
+                &.star_area {
+                  width: 225px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
