@@ -161,8 +161,8 @@ main {
                                             display: flex;
                                             margin: 5px 3px;
                                             border-radius: 10px;
-                                            border: 1px solid $main_color;
-                                            background-color: $main_color;
+                                            border: 1px solid $drag_cloze;
+                                            background-color: $drag_cloze;
                                             max-width: 100%;
                                             min-width: calc(30px* 1.7);
                                             min-height: calc(30px* 1.7);
@@ -203,6 +203,19 @@ main {
                                         .drag_cloze_item{
                                             .drag_cloze{
                                                 margin: 5px 3px;
+                                                border: 1px solid $main_color;
+                                                background-color: $main_color;
+                                                padding: 15px 5px;
+                                                &.target{
+                                                    cursor: auto;
+                                                    background-color: transparent;
+    
+                                                    &.active,
+                                                    &.done{
+                                                        background-color: $main_color;
+                                                    }
+    
+                                                }
                                             }
                                         }
                                     }
@@ -1258,7 +1271,7 @@ main {
                                         .drag_cloze_item {
                                             .drag_cloze {
                                                 min-width: calc(50px* 1.7);
-                                                height: calc(50px* 1.7);
+                                                min-height: calc(50px* 1.7);
 
                                                 .alphabet {
                                                     font-size: 50px;
