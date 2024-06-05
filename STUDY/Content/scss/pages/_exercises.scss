@@ -224,6 +224,16 @@ main {
                     &.pagination_main_img_area{
                         height: calc(100% - 157.55px);
                         min-height: 300px;
+
+                        &.context{
+                            .pagination_main {
+        
+                                &.pagination_main_img{
+                                    height: 50%;
+                                    padding: 20px 10px;
+                                }
+                            }
+                        }
                     }
 
                     // unit1、unit2
@@ -1511,6 +1521,33 @@ main {
 
 // 橫的
 @media (orientation: landscape) {
+    @media screen and (min-height: 300px) {
+        main {
+            .study_area {
+    
+                &.exercises_area {
+                    &.unit2_area {
+                        .pagination_main_area {
+                            &.pagination_main_img_area{
+    
+                                &.context{
+                                    flex-direction: row;
+                                    justify-content: center;
+                                    .pagination_main {
+                
+                                        &.pagination_main_img{
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     @media screen and (min-height: 500px) {
         main {
             .study_area {
