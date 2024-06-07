@@ -310,7 +310,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze { display: flex; margin: 5px 3px; border-radius: 10px; border: 1px solid #ed710e; background-color: #ed710e; max-width: 100%; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); text-align: center; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); color: #fff; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); color: #fff; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze.target { background-color: transparent; }
 
@@ -340,7 +340,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze { display: flex; margin: 5px 3px; border-radius: 10px; border: 1px solid #70ace3; background-color: #70ace3; max-width: 100%; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); text-align: center; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); color: #fff; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 30px; min-width: calc(30px* 1.7); min-height: calc(30px* 1.7); color: #fff; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.target { cursor: auto; background-color: transparent; }
 
@@ -661,7 +661,7 @@ main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { height: calc(100% - 90px * 2); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img { height: calc(100% - 70px * 2); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze { margin: 10px 5px; min-width: calc(40px* 1.7); min-height: calc(40px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 40px; min-width: calc(40px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 40px; min-width: calc(40px* 1.7); min-height: calc(40px* 1.7); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 10px 5px; }
   main .study_area.exercises_area.unit2_area .play_area .sound_area { display: flex; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { display: flex; }
@@ -675,14 +675,14 @@ main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_drag_area { min-height: calc(100% - 134.64px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item { display: flex; align-items: center; justify-content: center; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze { min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area { height: calc(100% - 107px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_answer_area .drag_answer_area_img { height: calc(100% - 107px * 2); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area { width: 30%; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img { height: auto; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area { width: 65%; }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze { min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 50px; min-width: calc(50px* 1.7); min-height: calc(50px* 1.7); }
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_img_area { height: calc(100% - 134.64px); }
   main .study_area.exercises_area .exercises_arrow { margin: 80px 20px; }
   main .study_area.exercises_area .exercises_arrow svg { font-size: 55px; }
