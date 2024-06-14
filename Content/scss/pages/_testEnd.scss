@@ -14,7 +14,6 @@ main {
             }
         }
 
-
         .test_end_text {
             display: flex;
             justify-content: center;
@@ -207,7 +206,7 @@ main {
                     margin: 20px auto 0px;
                 }
 
-                .scoring_area{
+                .scoring_area {
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -217,79 +216,90 @@ main {
                     margin: 20px auto;
 
 
-                    .rainbowBar{
+                    .rainbowBar {
                         display: flex;
                         width: 100%;
                         max-width: 600px;
-                        .rainbow_item{
+
+                        .rainbow_item {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
                             width: 20%;
-                            .rainbow_icon{
+
+                            .rainbow_icon {
                                 font-size: 30px;
                                 color: transparent;
                             }
 
-                            .rainbow_block{
+                            .rainbow_block {
                                 height: 30px;
                                 width: 100%;
                                 margin: 5px 0;
                             }
 
-                            .rainbow_text{
+                            .rainbow_text {
                                 display: flex;
                                 justify-content: center;
                             }
-                            &.level_one{
-                                .rainbow_block{
+
+                            &.level_one {
+                                .rainbow_block {
                                     background-color: $rainbow_item_one;
                                 }
                             }
-                            &.level_two{
-                                .rainbow_block{
+
+                            &.level_two {
+                                .rainbow_block {
                                     background-color: $rainbow_item_two;
                                 }
                             }
-                            &.level_three{
-                                .rainbow_block{
+
+                            &.level_three {
+                                .rainbow_block {
                                     background-color: $rainbow_item_three;
                                 }
                             }
-                            &.level_four{
-                                .rainbow_block{
+
+                            &.level_four {
+                                .rainbow_block {
                                     background-color: $rainbow_item_four;
                                 }
                             }
-                            &.level_five{
-                                .rainbow_block{
+
+                            &.level_five {
+                                .rainbow_block {
                                     background-color: $rainbow_item_five;
                                 }
                             }
 
-                            &.thisLevel{
-                                &.level_one{
-                                    .rainbow_icon{
+                            &.thisLevel {
+                                &.level_one {
+                                    .rainbow_icon {
                                         color: $rainbow_item_one;
                                     }
                                 }
-                                &.level_two{
-                                    .rainbow_icon{
+
+                                &.level_two {
+                                    .rainbow_icon {
                                         color: $rainbow_item_two;
                                     }
                                 }
-                                &.level_three{
-                                    .rainbow_icon{
+
+                                &.level_three {
+                                    .rainbow_icon {
                                         color: $rainbow_item_three;
                                     }
                                 }
-                                &.level_four{
-                                    .rainbow_icon{
+
+                                &.level_four {
+                                    .rainbow_icon {
                                         color: $rainbow_item_four;
                                     }
                                 }
-                                &.level_five{
-                                    .rainbow_icon{
+
+                                &.level_five {
+                                    .rainbow_icon {
                                         color: $rainbow_item_five;
                                     }
                                 }
@@ -330,21 +340,23 @@ main {
                                 border-radius: 50%;
                             }
 
-                            .answer_display_item_icon{
+                            .answer_display_item_icon {
                                 position: absolute;
                                 right: 0;
-                                transform: translate(calc(100% + 10px) , 0);
+                                transform: translate(calc(100% + 10px), 0);
                                 display: flex;
                                 flex-direction: column;
 
-                                .answer_display_icon_area{
-                                    .answer_display_icon{
+                                .answer_display_icon_area {
+                                    .answer_display_icon {
                                         margin: 5px;
-                                        &.YourVoice{
+
+                                        &.YourVoice {
                                             background-color: $correct_text;
                                             color: $white;
                                         }
-                                        &.teacherVoice{
+
+                                        &.teacherVoice {
                                             background-color: $teacherVoice;
                                             color: $white;
                                         }
@@ -352,36 +364,41 @@ main {
                                 }
                             }
 
-                            &.answer_display_item_icon{
+                            &.answer_display_item_icon {
                                 flex-wrap: wrap;
                                 background-color: transparent;
-                                .answer_display_icon_area{
+
+                                .answer_display_icon_area {
                                     display: flex;
                                     align-items: center;
                                     margin: 10px 50px 10px 0;
+
                                     .answer_display_icon {
                                         margin: 0 10px 0 0;
-                                        &.YourVoice{
+
+                                        &.YourVoice {
                                             background-color: $correct_text;
                                             color: $white;
                                         }
-                                        &.teacherVoice{
+
+                                        &.teacherVoice {
                                             background-color: $teacherVoice;
                                             color: $white;
                                         }
-                                        
+
                                     }
                                 }
 
-                                .Tryagain_text{
+                                .Tryagain_text {
                                     margin: 10px 50px 10px 0;
-                                    p{
+
+                                    p {
                                         color: $wrong_text;
                                     }
                                 }
                             }
-                            
-                                
+
+
                             &.wrong_answer {
 
                                 .answer_display_text {
@@ -394,7 +411,7 @@ main {
                                     }
                                 }
 
-                                
+
                             }
                         }
                     }
@@ -474,13 +491,15 @@ main {
                 }
 
                 //20240613新版
-
+                max-width: none;
+                margin: 20px auto 80px;
                 .answer_display_item {
                     padding: 15px;
                     width: calc(100% - 20px);
 
                     &.correct_answer {
                         background-color: $white;
+                        border: 1px solid $correct_text;
 
                         .answer_display_text {
                             color: $correct_text;
@@ -492,14 +511,15 @@ main {
                     }
 
                     &.wrong_answer {
+                        border: 1px solid $wrong_text;
 
-                        .answer_display_item_btn{
+                        .answer_display_item_btn {
                             display: flex;
                             align-items: center;
                             justify-content: flex-end;
                             margin: 15px 0 0;
-    
-                            .answer_display_link{
+
+                            .answer_display_link {
                                 background-color: $answer_display_link;
                                 color: $white;
                                 display: flex;
@@ -508,28 +528,28 @@ main {
                                 padding: 0 10px;
                                 border-radius: 10px;
                                 margin: 0 auto 0 0;
-    
-                                svg{
+
+                                svg {
                                     padding: 10px;
                                 }
-    
-                                &:hover{
+
+                                &:hover {
                                     background-color: darken($answer_display_link, 10%);
                                 }
                             }
-    
+
                             .answer_display_icon {
-                                svg{
+                                svg {
                                     color: $white;
                                 }
                             }
                         }
 
                         .answer_display_icon {
-                            background-color: $answer_display_icon_bg;
+                            background-color: $answer_sound_bg;
 
-                            &:hover{
-                                background-color: darken($answer_display_icon_bg, 10%);
+                            &:hover {
+                                background-color: darken($answer_sound_bg, 10%);
                             }
                         }
                     }
@@ -538,7 +558,7 @@ main {
                         text-align: left;
                     }
 
-                    .answer_display_item_btn{
+                    .answer_display_item_btn {
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
@@ -548,7 +568,8 @@ main {
                             position: relative;
                             right: auto;
                             bottom: auto;
-                            svg{
+
+                            svg {
                                 display: flex;
                                 font-size: 20px;
                                 padding: 10px;
@@ -557,6 +578,7 @@ main {
                         }
                     }
                 }
+                //20240613新版
             }
 
             .test_end_page {
@@ -614,6 +636,60 @@ main {
                     transform: translate(0%, -50%);
                 }
             }
+
+            //20240613新版
+            .icon_area{
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 10%;
+                background-color: $body_bg;
+                border-radius: 10px 10px 0 0;
+
+                .icon_item{
+                    padding: 10px;
+                    border-radius: 10px;
+
+                    &.icon_correct{
+                        background-color: $white;
+                        color: $correct_text;
+                        border: 1px solid $correct_text;
+                    }
+                    
+                    &.icon_wrong{
+                        background-color: $wrong_answer;
+                        color: $wrong_text;
+                        border: 1px solid $wrong_text;
+                    }
+
+                    &.icon_sound{
+                        background-color: $answer_sound_bg;
+                        color: $white;
+                    }
+                }
+            }
+            //20240613新版
+        }
+
+        //20240613新版
+        .leave_link{
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-end;
+            
+            a{
+                color: $white;
+                background-color: $main_color;
+                padding: 10px 15px;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: darken($main_color, 5%);
+                }
+            }
         }
 
     }
@@ -655,7 +731,23 @@ main {
                     .answer_display_item {
                         width: calc(50% - 20px);
                     }
+
+                    //20240613新版
+                    .answer_display_item {
+                        width: calc(100% / 2 - 20px);
+                    }
+                    //20240613新版
                 }
+
+                //20240613新版
+            .icon_area{
+                justify-content: center;
+
+                .icon_item{
+                    margin: 0 10px;
+                }
+            }
+            //20240613新版
             }
 
         }
@@ -766,6 +858,12 @@ main {
                     .answer_display_item {
                         width: calc(33% - 20px);
                     }
+
+                    //20240613新版
+                    .answer_display_item {
+                        width: calc(100% / 2 - 20px);
+                    }
+                    //20240613新版
                 }
 
                 .test_end_page {
@@ -817,8 +915,18 @@ main {
                 }
             }
 
+            &.test_end_answer {
+                .answer_display_area {
+
+                    //20240613新版
+                    .answer_display_item {
+                        width: calc(100% / 3 - 20px);
+                    }
+                    //20240613新版
+                }
 
 
+            }
         }
     }
 }
@@ -846,13 +954,13 @@ main {
                         }
                     }
 
-                    .page{
+                    .page {
                         width: calc(100% - 171px* 2);
 
-                    .pagination {
-                        display: flex;
-                        flex-wrap: wrap;
-                    }
+                        .pagination {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
                     }
 
                     .leave_next_btn {
@@ -860,6 +968,28 @@ main {
                         margin: 0;
                     }
                 }
+
+                .answer_display_area {
+                    //20240613新版
+                    width: 70%;
+                    //20240613新版
+                }
+
+                //20240613新版
+            .icon_area{
+                right: 5px;
+                width: calc(15% - 5px);
+                padding: 10px 0%;
+                border-radius: 10px 0 0 10px;
+                flex-direction: column;
+                max-width: 165px;
+
+                .icon_item{
+                    margin: 5px 0;
+                    text-align: center;
+                }
+            }
+            //20240613新版
             }
 
         }
@@ -941,6 +1071,13 @@ main {
                     .answer_display_item {
                         width: calc(25% - 20px);
                     }
+
+                    //20240613新版
+                    width: calc(80% - 82.5px - 20px);
+                    .answer_display_item {
+                        width: calc(100% / 3 - 20px);
+                    }
+                    //20240613新版
                 }
             }
 
@@ -1011,6 +1148,56 @@ main {
                             }
                         }
                     }
+                }
+            }
+
+            &.test_end_answer {
+                .answer_display_area {
+
+                    //20240613新版
+                    .answer_display_item {
+                        width: calc(100% / 4 - 20px);
+                    }
+                    //20240613新版
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    main {
+        .test_end_area {
+
+            &.test_end_answer {
+                .answer_display_area {
+
+                    //20240613新版
+                    .answer_display_item {
+                        width: calc(100% / 5 - 20px);
+                    }
+                    //20240613新版
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    main {
+        .test_end_area {
+
+            &.test_end_answer {
+                .answer_display_area {
+
+                    //20240613新版
+                    width: 80%;
+                    .answer_display_item {
+                        width: calc(100% / 6 - 20px);
+                    }
+                    //20240613新版
                 }
             }
 
