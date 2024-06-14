@@ -161,23 +161,28 @@ main {
                                         .drag_cloze {
                                             display: flex;
                                             margin: 5px 3px;
-                                            border-radius: 10px;
-                                            border: 1px solid $drag_cloze;
-                                            background-color: $drag_cloze;
+                                            
+                                            
                                             max-width: 100%;
                                             min-width: calc(30px* 1.7);
                                             min-height: calc(30px* 1.7);
                                             text-align: center;
+                                            cursor: default;
     
                                             .alphabet {
                                                 font-size: 30px;
                                                 min-width: calc(30px* 1.7);
                                                 min-height: calc(30px* 1.7);
                                                 color: $white;
+
+                                                border-radius: 10px;
+                                                border: 1px solid $drag_cloze;
+                                                background-color: $drag_cloze;
+                                                cursor: pointer;
                                             }
 
                                             &.target{
-                                                cursor: auto;
+                                                
                                                 background-color: transparent;
 
                                                 &.active,
@@ -188,8 +193,7 @@ main {
                                             }
 
                                             &.drag{
-                                                cursor: pointer;
-
+                                                
                                                 &:disabled{
                                                     border: 1px solid $main_color !important;
                                                     background-color: transparent !important;
@@ -208,8 +212,13 @@ main {
                                                 border: 1px solid $main_color;
                                                 background-color: $main_color;
                                                 padding: 15px 5px;
+                                                .alphabet {
+                                                    background-color: transparent;
+                                                    border: 0px;
+                                                    cursor: default;
+                                                }
                                                 &.target{
-                                                    cursor: auto;
+                                                    
                                                     background-color: transparent;
     
                                                     &.active,
