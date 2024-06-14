@@ -216,25 +216,6 @@ main {
                     max-width: 1200px;
                     margin: 20px auto;
 
-                    .smiley_face{
-                        font-size: 50px;
-                        margin: 0 10px;
-                        &.level_one{
-                                color: $rainbow_item_one;
-                        }
-                        &.level_two{
-                                color: $rainbow_item_two;
-                        }
-                        &.level_three{
-                                color: $rainbow_item_three;
-                        }
-                        &.level_four{
-                                color: $rainbow_item_four;
-                        }
-                        &.level_five{
-                                color: $rainbow_item_five;
-                        }
-                    }
 
                     .rainbowBar{
                         display: flex;
@@ -310,47 +291,6 @@ main {
                                 &.level_five{
                                     .rainbow_icon{
                                         color: $rainbow_item_five;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .scoring_star_area{
-                        display: flex;
-                        justify-content: center;
-                        flex-wrap: wrap;
-                        width: 100%;
-                        margin: 10px auto;
-
-                        .scoring_star_item{
-                            width: 100%;
-                            max-width: 200px;
-                            background-color: $sentenceBg;
-                            border-radius: 10px;
-                            padding: 5px 10px;
-                            margin: 10px 15px;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            align-items: center;
-
-                            .scoring_star_icon_area{
-                                display: flex;
-
-                                .scoring_star_icon{
-                                    color: $main-color;
-                                    .solid_star{
-                                        display: none;
-                                    }
-
-                                    &.get_star{
-                                        .solid_star{
-                                            display: block;
-                                        }
-                                        .regular_star{
-                                            display: none;
-                                        }
                                     }
                                 }
                             }
@@ -529,6 +469,91 @@ main {
 
                         .fa-volume-high {
                             cursor: pointer;
+                        }
+                    }
+                }
+
+                //20240613新版
+
+                .answer_display_item {
+                    padding: 15px;
+                    width: calc(100% - 20px);
+
+                    &.correct_answer {
+                        background-color: $white;
+
+                        .answer_display_text {
+                            color: $correct_text;
+                        }
+
+                        .answer_display_icon {
+                            color: $correct_text;
+                        }
+                    }
+
+                    &.wrong_answer {
+
+                        .answer_display_item_btn{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-end;
+                            margin: 15px 0 0;
+    
+                            .answer_display_link{
+                                background-color: $answer_display_link;
+                                color: $white;
+                                display: flex;
+                                align-items: center;
+                                line-height: 1;
+                                padding: 0 10px;
+                                border-radius: 10px;
+                                margin: 0 auto 0 0;
+    
+                                svg{
+                                    padding: 10px;
+                                }
+    
+                                &:hover{
+                                    background-color: darken($answer_display_link, 10%);
+                                }
+                            }
+    
+                            .answer_display_icon {
+                                svg{
+                                    color: $white;
+                                }
+                            }
+                        }
+
+                        .answer_display_icon {
+                            background-color: $answer_display_icon_bg;
+
+                            &:hover{
+                                background-color: darken($answer_display_icon_bg, 10%);
+                            }
+                        }
+                    }
+
+                    .answer_display_text {
+                        text-align: left;
+                    }
+
+                    .answer_display_item_btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        margin: 15px 0 0;
+
+                        .answer_display_icon {
+                            position: relative;
+                            right: auto;
+                            bottom: auto;
+                            svg{
+                                display: flex;
+                                font-size: 20px;
+                                padding: 10px;
+                                border-radius: 10px;
+                            }
                         }
                     }
                 }

@@ -1009,18 +1009,6 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .test_end_text { m
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 1200px; margin: 20px auto; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face { font-size: 50px; margin: 0 10px; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face.level_one { color: #00b050; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face.level_two { color: #66ff33; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face.level_three { color: #ffff00; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face.level_four { color: #ffc000; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .smiley_face.level_five { color: #ff0000; }
-
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar { display: flex; width: 100%; max-width: 600px; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item { display: flex; flex-direction: column; align-items: center; width: 20%; }
@@ -1051,20 +1039,6 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rai
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_five .rainbow_icon { color: #ff0000; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area { display: flex; justify-content: center; flex-wrap: wrap; width: 100%; margin: 10px auto; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item { width: 100%; max-width: 200px; background-color: #faebd7; border-radius: 10px; padding: 5px 10px; margin: 10px 15px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item .scoring_star_icon_area { display: flex; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item .scoring_star_icon_area .scoring_star_icon { color: #ed710e; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item .scoring_star_icon_area .scoring_star_icon .solid_star { display: none; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item .scoring_star_icon_area .scoring_star_icon.get_star .solid_star { display: block; }
-
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_star_area .scoring_star_item .scoring_star_icon_area .scoring_star_icon.get_star .regular_star { display: none; }
-
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item { width: calc(100% - 55px); display: flex; align-items: center; border-radius: 0; margin: 10px 0; background-color: #faebd7; border-radius: 10px; position: relative; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_text { text-align: left; font-size: 17px; }
@@ -1077,7 +1051,7 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_ar
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_item_icon .answer_display_icon_area .answer_display_icon { margin: 5px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_item_icon .answer_display_icon_area .answer_display_icon.YourVoice { background-color: #375e1e; color: #fff; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_item_icon .answer_display_icon_area .answer_display_icon.YourVoice { background-color: #4169e1; color: #fff; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item .answer_display_item_icon .answer_display_icon_area .answer_display_icon.teacherVoice { background-color: #69379b; color: #fff; }
 
@@ -1087,7 +1061,7 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_ar
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon { margin: 0 10px 0 0; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon.YourVoice { background-color: #375e1e; color: #fff; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon.YourVoice { background-color: #4169e1; color: #fff; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item.answer_display_item_icon .answer_display_icon_area .answer_display_icon.teacherVoice { background-color: #69379b; color: #fff; }
 
@@ -1107,9 +1081,9 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item { 
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #b8e79a; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_text { color: #375e1e; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_text { color: #4169e1; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_icon { color: #375e1e; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_icon { color: #4169e1; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer { background-color: #efbad6; }
 
@@ -1122,6 +1096,36 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_icon { position: absolute; right: 5px; bottom: 5px; cursor: auto; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_icon .fa-volume-high { cursor: pointer; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; width: calc(100% - 20px); }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #fff; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_text { color: #4169e1; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_icon { color: #4169e1; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn { display: flex; align-items: center; justify-content: flex-end; margin: 15px 0 0; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn .answer_display_link { background-color: #8a43e4; color: #fff; display: flex; align-items: center; line-height: 1; padding: 0 10px; border-radius: 10px; margin: 0 auto 0 0; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn .answer_display_link svg { padding: 10px; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn .answer_display_link:hover { background-color: #6f1fd5; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn .answer_display_icon svg { color: #fff; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_icon { background-color: #f4c430; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_icon:hover { background-color: #e5b00c; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_text { text-align: left; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn { display: flex; align-items: center; justify-content: flex-end; margin: 15px 0 0; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon { position: relative; right: auto; bottom: auto; }
+
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon svg { display: flex; font-size: 20px; padding: 10px; border-radius: 10px; }
 
 main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto; }
 
