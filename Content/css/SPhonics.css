@@ -223,6 +223,8 @@ main .title_dot { position: relative; }
 
 main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 10px); background-image: url(../../Content/image/photo/title_dot.i,svg); width: 50px; height: 7px; }
 
+.input_area { flex-wrap: wrap; }
+
 .input_area .form-control.form-control-gender { display: flex; }
 
 .input_area .form-control.form-control-gender .radio-item { margin: 0 20px 0 0; }
@@ -258,6 +260,34 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 .input_area .form-control:focus { outline: none; border-color: #ed710e; border-radius: 5px; color: #ed710e; }
 
 .input_area .form-control:focus::placeholder { color: transparent; }
+
+.input_area .radio-inline { display: flex; align-items: center; color: #2e3233; font-weight: normal; position: relative; cursor: pointer; }
+
+.input_area .radio-inline:before { content: " "; display: inline-block; top: 0; margin: 0 8px 0 0; width: 16px; height: 16px; border-radius: 50%; position: relative; border: 2px solid #2e3233; }
+
+.input_area .radio-inline:has(input:checked) { color: #ed710e; }
+
+.input_area .radio-inline:has(input:checked):before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
+
+.input_area .radio-inline input[type="radio"] { display: none; }
+
+.input_area .radio-inline input[type="radio"]:checked:has(label) { color: #ed710e; }
+
+.input_area .radio-inline input[type="radio"]:checked:has(label):before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
+
+.level_introduction_btn { position: relative; margin: 0 0 0 10px; }
+
+.level_introduction_btn.form-control { display: flex; align-items: center; justify-content: space-between; width: 100%; color: #2e3233; }
+
+.level_introduction_btn.form-control.open ~ ul { display: block; }
+
+.level_introduction_btn.form-control.open svg { transform: rotate(180deg); transition: 0.3s; }
+
+.level_introduction_btn ~ ul { position: relative; transform: translate(0, 5px); z-index: 2; margin: 0 0 0 auto; width: 80%; display: none; border-radius: 5px; border: 1px solid #2e3233; background-color: #fff; overflow: hidden; cursor: pointer; }
+
+.level_introduction_btn ~ ul li { padding: 5px 10px; color: #2e3233; }
+
+.level_introduction_btn ~ ul li:hover, .level_introduction_btn ~ ul li.active { background-color: #ed710e; color: #fff; }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus { border: 1px solid #2e3233; -webkit-text-fill-color: #2e3233; -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; }
 
