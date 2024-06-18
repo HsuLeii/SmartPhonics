@@ -105,22 +105,21 @@
           <div class="input_area">
             <label class="input-group-label" for="question">題本</label>
             <button type="button" id="question" class="form-control level_introduction_btn">
-
               
-                <p id="searchBtn_text">all</p>
+                <p id="searchBtn_text">題本選擇</p>
                 <i class="fa-solid fa-chevron-down"></i>
 
+                <ul>
+                  <li class="dropdown_item_li dropdown_item_li_one active">1.字母發音</li>
+                  <li class="dropdown_item_li dropdown_item_li_two">2.母音（短 + 長）</li>
+                  <li class="dropdown_item_li dropdown_item_li_three">3.子音（字母 + 韻首 + 韻尾）</li>
+                  <li class="dropdown_item_li dropdown_item_li_four">4.複合子音</li>
+                  <li class="dropdown_item_li dropdown_item_li_five">5.複合母音 + 雙母音</li>
+                  <li class="dropdown_item_li dropdown_item_li_six">6.雙子音</li>
+                  <li class="dropdown_item_li dropdown_item_li_seven">7.受r控制的母音</li>
+                  <li class="dropdown_item_li dropdown_item_li_eight">8.特殊發音/複數-s發音</li>
+                </ul>
               </button>
-              <ul>
-                <li class="dropdown_item_li dropdown_item_li_one active">1.字母發音</li>
-                <li class="dropdown_item_li dropdown_item_li_two">2.母音（短 + 長）</li>
-                <li class="dropdown_item_li dropdown_item_li_three">3.子音（字母 + 韻首 + 韻尾）</li>
-                <li class="dropdown_item_li dropdown_item_li_four">4.複合子音</li>
-                <li class="dropdown_item_li dropdown_item_li_five">5.複合母音 + 雙母音</li>
-                <li class="dropdown_item_li dropdown_item_li_six">6.雙子音</li>
-                <li class="dropdown_item_li dropdown_item_li_seven">7.受r控制的母音</li>
-                <li class="dropdown_item_li dropdown_item_li_eight">8.特殊發音/複數-s發音</li>
-              </ul>
 
             
           </div>
@@ -162,10 +161,6 @@
     var dropdown_item_six = $(".dropdown_item_li_six").text();
     var dropdown_item_seven = $(".dropdown_item_li_seven").text();
     var dropdown_item_eight = $(".dropdown_item_li_eight").text();
-
-    $(".dropdown_item_li").click(function () {
-      $(".level_introduction_btn").removeClass("open");
-    });
 
     $(".dropdown_item_li_one").click(function () {
       document.getElementById('searchBtn_text').innerHTML = dropdown_item_one;

@@ -408,6 +408,7 @@ main {
 .level_introduction_btn {
     position: relative;
     margin: 0 0 0 10px;
+    flex-wrap: wrap;
 
     &.form-control {
             display: flex;
@@ -418,32 +419,34 @@ main {
         
 
         &.open {
-            &~ul {
-                display: block;
-            }
 
             svg{
                 transform: rotate(180deg);
                 transition: 0.3s;
             }
+
+            ul {
+                display: block;
+            }
         }
     }
 
-    &~ul {
+    ul {
         position: relative;
         transform: translate(0 , 5px);
         z-index: 2;
         margin: 0 0 0 auto;
-        width: 80%;
+        width: 100%;
         display: none;
         border-radius: 5px;
-        border: 1px solid $main_color_black;
+        // border: 1px solid $main_color_black;
         background-color: $white;
         overflow: hidden;
         cursor: pointer;
 
         li {
-            padding: 5px 10px;
+            text-align: left;
+            padding: 5px;
             color: $main_color_black;
 
             &:hover,
