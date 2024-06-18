@@ -283,9 +283,9 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 
 .level_introduction_btn.form-control.open ul { display: block; }
 
-.level_introduction_btn ul { position: relative; transform: translate(0, 5px); z-index: 2; margin: 0 0 0 auto; width: 100%; display: none; border-radius: 5px; background-color: #fff; overflow: hidden; cursor: pointer; }
+.level_introduction_btn ul { position: relative; transform: translate(0, 5px); z-index: 2; margin: 0 0 0 auto; width: 100%; display: none; background-color: #fff; overflow: hidden; cursor: pointer; }
 
-.level_introduction_btn ul li { text-align: left; padding: 5px; color: #2e3233; }
+.level_introduction_btn ul li { text-align: left; padding: 5px; border-radius: 5px; color: #2e3233; }
 
 .level_introduction_btn ul li:hover, .level_introduction_btn ul li.active { background-color: #ed710e; color: #fff; }
 
