@@ -1105,7 +1105,7 @@ main .test_end_area.test_end_answer { overflow: hidden; display: flex; flex-dire
 
 main .test_end_area.test_end_answer .pick_level_top .page_logo { display: block; width: 60%; max-width: 280px; margin: 0 auto; }
 
-main .test_end_area.test_end_answer .answer_display_area { width: 80%; max-width: 1200px; margin: 20px auto; display: flex; flex-wrap: wrap; justify-content: flex-start; max-width: none; margin: 20px auto 80px; }
+main .test_end_area.test_end_answer .answer_display_area { width: 80%; max-width: 1200px; margin: 20px auto; display: flex; flex-wrap: wrap; justify-content: flex-start; max-width: none; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 30px 15px; width: calc(100% - 20px); position: relative; margin: 10px 10px; border-radius: 10px; }
 
@@ -1159,7 +1159,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon svg { display: flex; font-size: 20px; padding: 10px; border-radius: 10px; }
 
-main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto; }
+main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto 80px; }
 
 main .test_end_area.test_end_answer .test_end_page .note_area { display: flex; align-items: center; justify-content: center; }
 
@@ -1175,15 +1175,17 @@ main .test_end_area.test_end_answer .test_end_page .page .pagination a:hover, ma
 
 main .test_end_area.test_end_answer .test_end_page .leave_next_btn { position: relative; right: 0; top: 50%; transform: translate(0%, -50%); }
 
-main .test_end_area.test_end_answer .icon_area { position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-between; padding: 15px 10%; background-color: #F9F8F3; border-radius: 10px 10px 0 0; }
+main .test_end_area.test_end_answer .icon_area { position: fixed; z-index: 1; bottom: 0; width: 100%; display: flex; justify-content: center; flex-wrap: wrap; padding: 15px 10%; background-color: #F9F8F3; border-radius: 10px 10px 0 0; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item { padding: 10px; border-radius: 10px; }
+main .test_end_area.test_end_answer .icon_area .icon_item { padding: 10px; border-radius: 10px; margin: 5px; }
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_correct { background-color: #fff; color: #4169e1; border: 1px solid #4169e1; }
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_wrong { background-color: #efbad6; color: #c82e7f; border: 1px solid #c82e7f; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { background-color: #f4c430; color: #fff; }
+main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { background-color: #f4c430; color: #fff; display: flex; align-items: center; }
+
+main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound svg { margin: 0 5px 0 0; }
 
 main .test_end_area .leave_link { width: 90%; margin: 0 auto; display: flex; justify-content: flex-end; }
 
@@ -1224,8 +1226,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 
 @media screen and (min-width: 992px) { main .test_end_area .animal_animation_area .gift_box { max-width: 200px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 20px; }
-  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 20px; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); } }
+  main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 20px; } }
 
 @media screen and (min-width: 1024px) { main .test_end_area.test_end_answer .test_end_page { flex-direction: row; position: relative; }
   main .test_end_area.test_end_answer .test_end_page .note_area { position: absolute; left: 0; top: 50%; transform: translate(0px, -50%); }
@@ -1235,7 +1236,9 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area.test_end_answer .test_end_page .leave_next_btn { position: absolute; margin: 0; }
   main .test_end_area.test_end_answer .answer_display_area { width: 70%; }
   main .test_end_area.test_end_answer .icon_area { right: 5px; width: calc(15% - 5px); padding: 10px 0%; border-radius: 10px 0 0 10px; flex-direction: column; max-width: 165px; }
-  main .test_end_area.test_end_answer .icon_area .icon_item { margin: 5px 0; text-align: center; } }
+  main .test_end_area.test_end_answer .icon_area .icon_item { margin: 5px 0; text-align: center; }
+  main .test_end_area.test_end_answer .icon_area.english { right: auto; width: 100%; max-width: none; flex-direction: row; }
+  main .test_end_area.test_end_answer .icon_area.english .icon_item { margin: 5px; } }
 
 @media screen and (min-width: 1200px) { main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img { width: 18%; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) { left: calc(46% / 2); transform: translate(-100%, -50%); }
@@ -1247,8 +1250,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 22px; }
   main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { font-size: 35px; }
   main .test_end_area.test_end_answer .answer_display_area { width: calc(80% - 82.5px - 20px); }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(25% - 20px); }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); } }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(25% - 20px); } }
 
 @media screen and (min-width: 1400px) { main .test_end_area .get_avatar_area { width: 45%; }
   main .test_end_area .animal_animation_area .gift_box { width: 80%; margin: 0 auto; max-width: 150px; }
@@ -1260,12 +1262,11 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(55% / 2 + 15%); transform: translate(0%, 100%); }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 23px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 23px; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 4 - 20px); } }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); } }
 
-@media screen and (min-width: 1700px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 5 - 20px); } }
+@media screen and (min-width: 1800px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 4 - 20px); } }
 
-@media screen and (min-width: 1920px) { main .test_end_area.test_end_answer .answer_display_area { width: 80%; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 6 - 20px); } }
+@media screen and (min-width: 1920px) { main .test_end_area.test_end_answer .answer_display_area { width: 80%; } }
 
 main .test_area.continue_challenge_area { display: flex; flex-direction: column; margin: 80px auto; }
 

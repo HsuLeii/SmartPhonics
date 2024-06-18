@@ -492,7 +492,7 @@ main {
 
                 //20240613新版
                 max-width: none;
-                margin: 20px auto 80px;
+                
                 .answer_display_item {
                     padding: 15px;
                     width: calc(100% - 20px);
@@ -589,7 +589,7 @@ main {
                 width: calc(80% - 20px);
                 max-width: calc(1200px - 20px);
                 padding: 0px 10px;
-                margin: 0 auto;
+                margin: 0 auto 80px;
 
                 .note_area {
                     display: flex;
@@ -641,10 +641,12 @@ main {
             //20240613新版
             .icon_area{
                 position: fixed;
+                z-index: 1;
                 bottom: 0;
                 width: 100%;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                flex-wrap: wrap;
                 padding: 15px 10%;
                 background-color: $body_bg;
                 border-radius: 10px 10px 0 0;
@@ -652,6 +654,7 @@ main {
                 .icon_item{
                     padding: 10px;
                     border-radius: 10px;
+                    margin: 5px;
 
                     &.icon_correct{
                         background-color: $white;
@@ -668,6 +671,11 @@ main {
                     &.icon_sound{
                         background-color: $answer_sound_bg;
                         color: $white;
+                        display: flex;
+                        align-items: center;
+                        svg{
+                            margin: 0 5px 0 0;
+                        }
                     }
                 }
             }
@@ -920,9 +928,9 @@ main {
                 .answer_display_area {
 
                     //20240613新版
-                    .answer_display_item {
-                        width: calc(100% / 3 - 20px);
-                    }
+                    // .answer_display_item {
+                    //     width: calc(100% / 3 - 20px);
+                    // }
                     //20240613新版
                 }
 
@@ -988,6 +996,17 @@ main {
                 .icon_item{
                     margin: 5px 0;
                     text-align: center;
+                }
+
+                &.english{
+                    right: auto;
+                    width: 100%;
+                    max-width: none;
+                    flex-direction: row;
+
+                    .icon_item{
+                        margin: 5px;
+                    }
                 }
             }
             //20240613新版
@@ -1075,9 +1094,9 @@ main {
 
                     //20240613新版
                     width: calc(80% - 82.5px - 20px);
-                    .answer_display_item {
-                        width: calc(100% / 3 - 20px);
-                    }
+                    // .answer_display_item {
+                    //     width: calc(100% / 3 - 20px);
+                    // }
                     //20240613新版
                 }
             }
@@ -1157,7 +1176,7 @@ main {
 
                     //20240613新版
                     .answer_display_item {
-                        width: calc(100% / 4 - 20px);
+                        width: calc(100% / 3 - 20px);
                     }
                     //20240613新版
                 }
@@ -1167,7 +1186,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1800px) {
     main {
         .test_end_area {
 
@@ -1176,7 +1195,7 @@ main {
 
                     //20240613新版
                     .answer_display_item {
-                        width: calc(100% / 5 - 20px);
+                        width: calc(100% / 4 - 20px);
                     }
                     //20240613新版
                 }
@@ -1195,9 +1214,9 @@ main {
 
                     //20240613新版
                     width: 80%;
-                    .answer_display_item {
-                        width: calc(100% / 6 - 20px);
-                    }
+                    // .answer_display_item {
+                    //     width: calc(100% / 5 - 20px);
+                    // }
                     //20240613新版
                 }
             }
