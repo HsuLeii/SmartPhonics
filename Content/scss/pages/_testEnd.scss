@@ -949,6 +949,7 @@ main {
                 .test_end_page {
                     flex-direction: row;
                     position: relative;
+                    margin: 0 auto;
 
                     .note_area {
                         position: absolute;
@@ -1003,6 +1004,8 @@ main {
                     width: 100%;
                     max-width: none;
                     flex-direction: row;
+                    background-color: transparent;
+                    justify-content: flex-end;
 
                     .icon_item{
                         margin: 5px;
