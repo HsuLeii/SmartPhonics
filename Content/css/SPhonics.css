@@ -1183,7 +1183,7 @@ main .test_end_area.test_end_answer .icon_area .icon_item.icon_correct { backgro
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_wrong { background-color: #efbad6; color: #c82e7f; border: 1px solid #c82e7f; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { background-color: #f4c430; color: #fff; display: flex; align-items: center; }
+main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { background-color: #f4c430; color: #fff; display: flex; align-items: center; justify-content: center; }
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound svg { margin: 0 5px 0 0; }
 
