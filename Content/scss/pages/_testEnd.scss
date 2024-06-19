@@ -514,10 +514,6 @@ main {
                         border: 1px solid $wrong_text;
 
                         .answer_display_item_btn {
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-end;
-                            margin: 15px 0 0;
 
                             .answer_display_link {
                                 background-color: $answer_display_link;
@@ -556,13 +552,15 @@ main {
 
                     .answer_display_text {
                         text-align: left;
+                        font-size: 35px;
+                        font-weight: bold;
                     }
 
                     .answer_display_item_btn {
                         display: flex;
-                        align-items: center;
-                        justify-content: flex-end;
-                        margin: 15px 0 0;
+                            align-items: center;
+                            justify-content: flex-end;
+                            margin: 15px 0 0;
 
                         .answer_display_icon {
                             position: relative;
@@ -872,6 +870,10 @@ main {
                     //20240613新版
                     .answer_display_item {
                         width: calc(100% / 2 - 20px);
+
+                        .answer_display_text {
+                            font-size: 40px;
+                        }
                     }
                     //20240613新版
                 }
@@ -1098,9 +1100,9 @@ main {
 
                     //20240613新版
                     width: calc(80% - 82.5px - 20px);
-                    // .answer_display_item {
-                    //     width: calc(100% / 3 - 20px);
-                    // }
+                    .answer_display_item {
+                        width: calc(100% / 2 - 20px);
+                    }
                     //20240613新版
                 }
             }
