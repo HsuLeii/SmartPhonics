@@ -1129,13 +1129,11 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; width: calc(100% - 20px); }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #fff; border: 1px solid #4169e1; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #e2eaff; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_text { color: #4169e1; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_icon { color: #4169e1; }
-
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer { border: 1px solid #c82e7f; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_item_btn .answer_display_link { background-color: #8a43e4; color: #fff; display: flex; align-items: center; line-height: 1; padding: 0 10px; border-radius: 10px; margin: 0 auto 0 0; }
 
@@ -1177,9 +1175,9 @@ main .test_end_area.test_end_answer .icon_area { position: fixed; z-index: 1; bo
 
 main .test_end_area.test_end_answer .icon_area .icon_item { padding: 10px; border-radius: 10px; margin: 5px; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item.icon_correct { background-color: #fff; color: #4169e1; border: 1px solid #4169e1; }
+main .test_end_area.test_end_answer .icon_area .icon_item.icon_correct { background-color: #e2eaff; color: #4169e1; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item.icon_wrong { background-color: #efbad6; color: #c82e7f; border: 1px solid #c82e7f; }
+main .test_end_area.test_end_answer .icon_area .icon_item.icon_wrong { background-color: #efbad6; color: #c82e7f; }
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { background-color: #f4c430; color: #fff; display: flex; align-items: center; justify-content: center; }
 

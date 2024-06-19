@@ -498,8 +498,8 @@ main {
                     width: calc(100% - 20px);
 
                     &.correct_answer {
-                        background-color: $white;
-                        border: 1px solid $correct_text;
+                        background-color: $correct_bg;
+                        // border: 1px solid $correct_text;
 
                         .answer_display_text {
                             color: $correct_text;
@@ -511,7 +511,7 @@ main {
                     }
 
                     &.wrong_answer {
-                        border: 1px solid $wrong_text;
+                        // border: 1px solid $wrong_text;
 
                         .answer_display_item_btn {
 
@@ -655,15 +655,15 @@ main {
                     margin: 5px;
 
                     &.icon_correct{
-                        background-color: $white;
+                        background-color: $correct_bg;
                         color: $correct_text;
-                        border: 1px solid $correct_text;
+                        // border: 1px solid $correct_text;
                     }
                     
                     &.icon_wrong{
                         background-color: $wrong_answer;
                         color: $wrong_text;
-                        border: 1px solid $wrong_text;
+                        // border: 1px solid $wrong_text;
                     }
 
                     &.icon_sound{
