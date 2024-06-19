@@ -1234,8 +1234,8 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area.test_end_answer .answer_display_area { width: 70%; }
   main .test_end_area.test_end_answer .icon_area { right: 5px; width: calc(15% - 5px); padding: 10px 0%; border-radius: 10px 0 0 10px; flex-direction: column; max-width: 165px; }
   main .test_end_area.test_end_answer .icon_area .icon_item { margin: 5px 0; text-align: center; }
-  main .test_end_area.test_end_answer .icon_area.english { right: auto; width: 100%; max-width: none; flex-direction: row; background-color: transparent; justify-content: flex-end; }
-  main .test_end_area.test_end_answer .icon_area.english .icon_item { margin: 5px; } }
+  main .test_end_area.test_end_answer .icon_area.icon_area_englishenglish { right: auto; width: 100%; max-width: none; flex-direction: row; background-color: transparent; justify-content: flex-end; }
+  main .test_end_area.test_end_answer .icon_area.icon_area_englishenglish .icon_item { margin: 5px; } }
 
 @media screen and (min-width: 1200px) { main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img { width: 18%; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) { left: calc(46% / 2); transform: translate(-100%, -50%); }
