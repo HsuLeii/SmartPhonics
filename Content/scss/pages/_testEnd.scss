@@ -507,6 +507,9 @@ main {
 
                         .answer_display_icon {
                             color: $correct_text;
+                            position: absolute;
+                            bottom: 15px;
+                            right: 15px;
                         }
                     }
 
@@ -514,19 +517,22 @@ main {
                         // border: 1px solid $wrong_text;
 
                         .answer_display_item_btn {
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
 
                             .answer_display_link {
+                                font-size: 15px;
                                 background-color: $answer_display_link;
                                 color: $white;
                                 display: flex;
                                 align-items: center;
                                 line-height: 1;
-                                padding: 0 10px;
+                                padding: 10px;
                                 border-radius: 10px;
-                                margin: 0 auto 0 0;
+                                margin: 10px 5px 0 0;
 
                                 svg {
-                                    padding: 10px;
+                                    margin: 0 5px 0 0;
                                 }
 
                                 &:hover {
@@ -563,10 +569,12 @@ main {
                             margin: 15px 0 0;
 
                         .answer_display_icon {
+                            font-size: 15px;
                             position: relative;
                             right: auto;
                             bottom: auto;
                             width: 40px;
+                            margin: 10px 0 0 0;
 
                             svg {
                                 display: flex;
@@ -931,9 +939,9 @@ main {
                 .answer_display_area {
 
                     //20240613新版
-                    // .answer_display_item {
-                    //     width: calc(100% / 3 - 20px);
-                    // }
+                    .answer_display_item {
+                        width: calc(100% / 3 - 20px);
+                    }
                     //20240613新版
                 }
 
@@ -984,14 +992,14 @@ main {
 
                 .answer_display_area {
                     //20240613新版
-                    width: 70%;
+                    // width: 70%;
                     //20240613新版
                 }
 
                 //20240613新版
             .icon_area{
                 right: 5px;
-                width: calc(15% - 5px);
+                // width: calc(15% - 5px);
                 padding: 10px 0%;
                 border-radius: 10px 0 0 10px;
                 flex-direction: column;
@@ -1101,7 +1109,7 @@ main {
                     //20240613新版
                     width: calc(80% - 82.5px - 20px);
                     .answer_display_item {
-                        width: calc(100% / 2 - 20px);
+                        width: calc(100% / 3 - 20px);
                     }
                     //20240613新版
                 }
@@ -1192,7 +1200,7 @@ main {
     }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1501px) {
     main {
         .test_end_area {
 
@@ -1219,10 +1227,10 @@ main {
                 .answer_display_area {
 
                     //20240613新版
-                    width: 80%;
-                    // .answer_display_item {
-                    //     width: calc(100% / 5 - 20px);
-                    // }
+                    // width: 80%;
+                    .answer_display_item {
+                        width: calc(100% / 5 - 20px);
+                    }
                     //20240613新版
                 }
             }
