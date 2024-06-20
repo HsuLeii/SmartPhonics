@@ -277,6 +277,8 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 
 .level_introduction_btn { position: relative; margin: 0 0 0 10px; flex-wrap: wrap; }
 
+.level_introduction_btn p { text-align: left; width: calc(100% - 25px); }
+
 .level_introduction_btn.form-control { display: flex; align-items: center; justify-content: space-between; width: 100%; color: #2e3233; }
 
 .level_introduction_btn.form-control.open svg { transform: rotate(180deg); transition: 0.3s; }
@@ -288,6 +290,10 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 .level_introduction_btn ul li { text-align: left; padding: 5px; border-radius: 5px; color: #2e3233; }
 
 .level_introduction_btn ul li:hover, .level_introduction_btn ul li.active { background-color: #ed710e; color: #fff; }
+
+.level_introduction_btn ul:hover li.active { background-color: transparent; color: #2e3233; }
+
+.level_introduction_btn ul:hover li.active:hover { background-color: #ed710e; color: #fff; }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus { border: 1px solid #2e3233; -webkit-text-fill-color: #2e3233; -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; }
 
