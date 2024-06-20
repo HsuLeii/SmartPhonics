@@ -1267,3 +1267,20 @@ main {
         }
     }
 }
+
+@media screen and (min-width: 1920px) {
+    main {
+        .test_end_area {
+
+            &.test_end_answer {
+                //20240613新版
+            .icon_area {
+                max-width: 165px;
+            }
+
+            //20240613新版
+            }
+
+        }
+    }
+}

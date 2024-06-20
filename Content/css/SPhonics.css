@@ -1269,6 +1269,8 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 
 @media screen and (min-width: 1700px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 255px * 5) / 10); } }
 
+@media screen and (min-width: 1920px) { main .test_end_area.test_end_answer .icon_area { max-width: 165px; } }
+
 main .test_area.continue_challenge_area { display: flex; flex-direction: column; margin: 80px auto; }
 
 main .test_area.continue_challenge_area .continue_challenge_item_area { background-color: #fff; border: 1.5px solid #ed710e; width: 80%; max-width: 1200px; margin: 0 auto; padding: 40px 5%; border-radius: 10px; position: relative; }
