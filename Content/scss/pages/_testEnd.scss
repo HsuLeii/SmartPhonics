@@ -211,15 +211,14 @@ main {
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
-                    width: 80%;
+                    width: 95%;
                     max-width: 1200px;
                     margin: 20px auto;
-
 
                     .rainbowBar {
                         display: flex;
                         width: 100%;
-                        max-width: 600px;
+                        max-width: 800px;
 
                         .rainbow_item {
                             display: flex;
@@ -241,6 +240,10 @@ main {
                             .rainbow_text {
                                 display: flex;
                                 justify-content: center;
+                                
+                                p{
+                                    font-size: 9px;
+                                }
                             }
 
                             &.level_one {
@@ -496,8 +499,8 @@ main {
                 .answer_display_item {
                     padding: 15px;
                     width: calc(100% - 20px);
-                    width: 255px;
-                    margin: 10px calc((100% - 255px * 1) / 2);
+                    width: 215px;
+                    margin: 10px calc((100% - 215px * 1) / 2);
 
                     &.correct_answer {
                         background-color: $correct_bg;
@@ -716,6 +719,29 @@ main {
     }
 }
 
+@media screen and (min-width: 500px){
+    main {
+        .test_end_area {
+            .sky_answer_display_area {
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 11px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 576px) {
     main {
         .test_end_area {
@@ -747,6 +773,23 @@ main {
                 }
             }
 
+            .sky_answer_display_area {
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
             &.test_end_answer {
                 .answer_display_area {
                     .answer_display_item {
@@ -756,7 +799,8 @@ main {
                     //20240613新版
                     .answer_display_item {
                         width: calc(100% / 2 - 20px);
-                        width: 255px;
+                        width: 215px;
+                        margin: 10px calc((100% - 215px * 2) / 4);
                     }
 
                     //20240613新版
@@ -778,23 +822,6 @@ main {
     }
 }
 
-@media screen and (min-width: 700px) {
-    main {
-        .test_end_area {
-            &.test_end_answer {
-                .answer_display_area {
-
-                    //20240613新版
-                    .answer_display_item {
-                        margin: 10px calc((100% - 255px * 2) / 4);
-                    }
-
-                    //20240613新版
-                }
-            }
-        }
-    }
-}
 
 @media screen and (min-width: 768px) {
     main {
@@ -871,6 +898,21 @@ main {
                     justify-content: flex-start;
                 }
 
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
@@ -904,8 +946,8 @@ main {
                     //20240613新版
                     .answer_display_item {
                         width: calc(100% / 2 - 20px);
-                        width: 255px;
-                        margin: 10px calc((100% - 255px * 2) / 4);
+                        width: 215px;
+                        margin: 10px calc((100% - 215px * 2) / 4);
 
                         .answer_display_text {
                             font-size: 40px;
@@ -939,6 +981,22 @@ main {
     }
 }
 
+@media screen and (min-width: 850px) {
+    main {
+        .test_end_area {
+            &.test_end_answer {
+                .answer_display_area {
+                    //20240613新版
+                    .answer_display_item {
+                        margin: 10px calc((100% - 215px * 3) / 6);
+                    }
+                    //20240613新版
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
     main {
         .test_end_area {
@@ -949,6 +1007,21 @@ main {
             }
 
             .sky_answer_display_area {
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 17px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
@@ -970,13 +1043,11 @@ main {
                     //20240613新版
                     .answer_display_item {
                         width: calc(100% / 3 - 20px);
-                        width: 255px;
+                        width: 215px;
                     }
 
                     //20240613新版
                 }
-
-
             }
         }
     }
@@ -1025,7 +1096,7 @@ main {
 
                     //20240613新版
                     .answer_display_item {
-                        margin: 10px calc((100% - 255px * 3) / 6);
+                        margin: 10px calc((100% - 215px * 3) / 6);
                     }
 
                     //20240613新版
@@ -1109,6 +1180,21 @@ main {
             }
 
             .sky_answer_display_area {
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 19px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
@@ -1141,13 +1227,14 @@ main {
                 .answer_display_area {
                     .answer_display_item {
                         width: calc(25% - 20px);
+                        margin: 10px calc((100% - 215px * 4) / 8);
                     }
 
                     //20240613新版
                     // width: calc(80% - 82.5px - 20px);
                     .answer_display_item {
                         // width: calc(100% / 3 - 20px);
-                        width: 255px;
+                        width: 215px;
                     }
 
                     //20240613新版
@@ -1216,6 +1303,21 @@ main {
             }
 
             .sky_answer_display_area {
+                .sky_test_filter {
+                    .scoring_area {
+                        .rainbowBar {
+                            .rainbow_item {
+                                .rainbow_text {
+                                    
+                                    p{
+                                        font-size: 20px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .answer_display_area {
                     &.sky_sentence {
                         .answer_display_item {
@@ -1237,7 +1339,7 @@ main {
                     //20240613新版
                     .answer_display_item {
                         // width: calc(100% / 3 - 20px);
-                        margin: 10px calc((100% - 255px * 4) / 8);
+                        margin: 10px calc((100% - 215px * 5) / 10);
                     }
 
                     //20240613新版
@@ -1257,7 +1359,7 @@ main {
 
                     //20240613新版
                     .answer_display_item {
-                        margin: 10px calc((100% - 255px * 5) / 10);
+                        margin: 10px calc((100% - 215px * 6) / 12);
                     }
 
                     //20240613新版

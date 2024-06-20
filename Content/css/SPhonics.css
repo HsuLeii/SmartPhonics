@@ -1037,9 +1037,9 @@ main .test_end_area .sky_answer_display_area .sky_test_filter { flex-direction: 
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .test_end_text { margin: 20px auto 0px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 80%; max-width: 1200px; margin: 20px auto; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 95%; max-width: 1200px; margin: 20px auto; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar { display: flex; width: 100%; max-width: 600px; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar { display: flex; width: 100%; max-width: 800px; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item { display: flex; flex-direction: column; align-items: center; width: 20%; }
 
@@ -1048,6 +1048,8 @@ main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rai
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_block { height: 30px; width: 100%; margin: 5px 0; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text { display: flex; justify-content: center; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 9px; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_one .rainbow_block { background-color: #00b050; }
 
@@ -1127,7 +1129,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_icon .fa-volume-high { cursor: pointer; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; width: calc(100% - 20px); width: 255px; margin: 10px calc((100% - 255px * 1) / 2); }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; width: calc(100% - 20px); width: 215px; margin: 10px calc((100% - 215px * 1) / 2); }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #e2eaff; }
 
@@ -1191,16 +1193,17 @@ main .test_end_area .leave_link a { color: #fff; background-color: #ed710e; padd
 
 main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 
+@media screen and (min-width: 500px) { main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 11px; } }
+
 @media screen and (min-width: 576px) { main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) { transform: translate(-50%, -50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) { transform: translate(-50%, -50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { transform: translate(-25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { transform: translate(25%, 50%); }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 14px; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(50% - 20px); }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 2 - 20px); width: 255px; }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 2 - 20px); width: 215px; margin: 10px calc((100% - 215px * 2) / 4); }
   main .test_end_area.test_end_answer .test_end_page { margin: 0 auto 80px; }
   main .test_end_area.test_end_answer .icon_area { justify-content: center; } }
-
-@media screen and (min-width: 700px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 255px * 2) / 4); } }
 
 @media screen and (min-width: 768px) { main .test_end_area .test_end_text .fireworks { width: 120px; }
   main .test_end_area .test_end_text .fireworks.fireworks_right { max-width: 80px; }
@@ -1215,20 +1218,24 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(40% / 2 + 40%); transform: translate(25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(40% / 2 + 20%); transform: translate(0%, 100%); }
   main .test_end_area .sky_answer_display_area .sky_answer_selection { justify-content: flex-start; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 15px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 18px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 18px; }
   main .test_end_area.test_end_answer .pick_level_top .page_logo { position: relative; left: auto; top: auto; transform: translate(0, 0); }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(33% - 20px); }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 2 - 20px); width: 255px; margin: 10px calc((100% - 255px * 2) / 4); }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 2 - 20px); width: 215px; margin: 10px calc((100% - 215px * 2) / 4); }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_text { font-size: 40px; }
   main .test_end_area.test_end_answer .test_end_page .page { margin: 40px auto; }
   main .test_end_area.test_end_answer .test_end_page .page .pagination a, main .test_end_area.test_end_answer .test_end_page .page .pagination span { padding: 5px 0.5rem; margin: 0px 5px; }
   main .test_end_area.test_end_answer .test_end_page .leave_next_btn { margin: 30px auto; } }
 
+@media screen and (min-width: 850px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 3) / 6); } }
+
 @media screen and (min-width: 992px) { main .test_end_area .animal_animation_area .gift_box { max-width: 200px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 17px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 20px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 20px; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); width: 255px; } }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); width: 215px; } }
 
 @media screen and (min-width: 1024px) { main .test_end_area.test_end_answer .test_end_page { flex-direction: row; position: relative; }
   main .test_end_area.test_end_answer .test_end_page .note_area { position: absolute; left: 0; top: 50%; transform: translate(0px, -50%); }
@@ -1236,7 +1243,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area.test_end_answer .test_end_page .page { width: calc(100% - 171px* 2); }
   main .test_end_area.test_end_answer .test_end_page .page .pagination { display: flex; flex-wrap: wrap; }
   main .test_end_area.test_end_answer .test_end_page .leave_next_btn { position: absolute; margin: 0; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 255px * 3) / 6); }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 3) / 6); }
   main .test_end_area.test_end_answer .icon_area { right: 5px; padding: 10px 0%; border-radius: 10px 0 0 10px; flex-direction: column; max-width: 95px; background-color: transparent; }
   main .test_end_area.test_end_answer .icon_area .icon_item { margin: 5px 0; text-align: center; flex-wrap: wrap; }
   main .test_end_area.test_end_answer .icon_area.icon_area_english { right: auto; width: 100%; max-width: none; flex-direction: row; justify-content: flex-end; }
@@ -1248,11 +1255,12 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { left: calc(46% / 2); transform: translate(-25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(46% / 2 + 36%); transform: translate(25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(46% / 2 + 18%); transform: translate(0%, 100%); }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 19px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 22px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 22px; }
   main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { font-size: 35px; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(25% - 20px); }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: 255px; }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(25% - 20px); margin: 10px calc((100% - 215px * 4) / 8); }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: 215px; }
   main .test_end_area.test_end_answer .icon_area { max-width: 120px; } }
 
 @media screen and (min-width: 1400px) { main .test_end_area .get_avatar_area { width: 45%; }
@@ -1263,11 +1271,12 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { left: calc(55% / 2); transform: translate(-20%, 100%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(55% / 2 + 30%); transform: translate(20%, 100%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(55% / 2 + 15%); transform: translate(0%, 100%); }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 20px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 23px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 23px; }
-  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 255px * 4) / 8); } }
+  main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 5) / 10); } }
 
-@media screen and (min-width: 1700px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 255px * 5) / 10); } }
+@media screen and (min-width: 1700px) { main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 6) / 12); } }
 
 @media screen and (min-width: 1920px) { main .test_end_area.test_end_answer .icon_area { max-width: 165px; } }
 
