@@ -243,6 +243,16 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 
 .input_area .form-control.form-control-birthday i, .input_area .form-control.form-control-birthday svg { position: absolute; right: 15px; top: 50%; transform: translate(0, -50%); color: #2e3233; }
 
+.input_area .form-control.form-control-birthday:valid { border: 0; }
+
+.input_area .form-control.form-control-birthday:required:invalid::-webkit-datetime-edit { color: transparent; }
+
+.input_area .form-control.form-control-birthday::-webkit-calendar-picker-indicator { position: absolute; top: 0; left: 0; opacity: 0; width: 100%; height: 100%; cursor: pointer; }
+
+.input_area .form-control.form-control-birthday:focus ~ i, .input_area .form-control.form-control-birthday:focus ~ svg { color: #ed710e; }
+
+.input_area .form-control.form-control-birthday:focus::-webkit-datetime-edit-text, .input_area .form-control.form-control-birthday:focus::-webkit-datetime-edit-day-field, .input_area .form-control.form-control-birthday:focus::-webkit-datetime-edit-month-field, .input_area .form-control.form-control-birthday:focus::-webkit-datetime-edit-year-field { background-color: #ed710e; color: #fff; }
+
 .input_area .form-control.form-control-birthday .birthday_input { color: #2e3233; width: 100%; outline: 0; background-color: transparent; position: relative; z-index: 1; }
 
 .input_area .form-control.form-control-birthday .birthday_input:valid { border: 0; }
