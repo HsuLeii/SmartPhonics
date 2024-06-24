@@ -47,31 +47,31 @@
 
           <div class="input_area">
             <label class="input-group-label" for="schoolName">學校名稱</label>
-            <input type="text" id="schoolName" class="form-control" placeholder="請輸入學校名稱">
+            <input type="text" id="schoolName" class="form-control" value="NTNU" placeholder="請輸入學校名稱" readonly>
           </div>
 
           <div class="input_area">
             <label class="input-group-label" for="className">班級名稱</label>
-            <input type="text" id="className" class="form-control" placeholder="請輸入班級名稱">
+            <input type="text" id="className" class="form-control" value="G4" placeholder="請輸入班級名稱" readonly>
           </div>
 
           <div class="input_area">
             <label class="input-group-label" for="studentNumber">學生號碼</label>
-            <input type="text" id="studentNumber" class="form-control" placeholder="請輸入學生號碼">
+            <input type="text" id="studentNumber" class="form-control" value="4" placeholder="請輸入學生號碼" readonly>
           </div>
 
           <div class="input_area">
             <label class="input-group-label" for="studentName">學生姓名</label>
-            <input type="text" id="studentName" class="form-control" placeholder="請輸入學生姓名">
+            <input type="text" id="studentName" class="form-control" value="NTNU" placeholder="請輸入學生姓名" readonly>
           </div>
 
           <div class="input_area">
             <label class="input-group-label" for="Gender">Gender</label>
             <label class="radio-inline col-md-2">
-              <input id="gender1" type="radio" value="0" name="Gender">Male
+              <input id="gender1" type="radio" value="0" name="Gender" checked>Male
             </label>
             <label class="radio-inline col-md-2">
-              <input id="gender2" type="radio" value="1" name="Gender">Female
+              <input id="gender2" type="radio" value="1" name="Gender" disabled>Female
             </label>
             <span class="text-danger field-validation-valid" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
           </div>
@@ -93,14 +93,20 @@
 
           </div> -->
 
-          <div class="input_area">
+          <!-- <div class="input_area">
             <label class="input-group-label" for="birthday">生日</label>
             <div class="form-control form-control-birthday icon icon-regular">
               <input type="date" id="birthday" value="2023-06-19" placeholder="請輸入學生姓名" name="birthday"
-                class="birthday_input">
+                class="birthday_input" readonly>
               <i class="fa-regular fa-calendar"></i>
             </div>
-          </div>
+          </div> -->
+
+          <div class="input_area">
+            <label class="input-group-label" for="Birthday">生日</label>
+            <input id="birthday" class="form-control" type="date" value="2023-01-01" name="Birthday" readonly="">
+            <span class="text-danger field-validation-valid" data-valmsg-for="Birthday" data-valmsg-replace="true"></span>
+        </div>
 
           <!-- <div class="input_area">
             <label class="input-group-label" for="question">題本</label>

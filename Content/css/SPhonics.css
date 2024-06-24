@@ -275,26 +275,6 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 
 .input_area .radio-inline input[type="radio"]:checked:has(label):before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
 
-.level_introduction_btn { position: relative; margin: 0 0 0 10px; flex-wrap: wrap; }
-
-.level_introduction_btn p { text-align: left; width: calc(100% - 25px); }
-
-.level_introduction_btn.form-control { display: flex; align-items: center; justify-content: space-between; width: 100%; color: #2e3233; }
-
-.level_introduction_btn.form-control.open svg { transform: rotate(180deg); transition: 0.3s; }
-
-.level_introduction_btn.form-control.open ul { display: block; }
-
-.level_introduction_btn ul { position: relative; transform: translate(0, 5px); z-index: 2; margin: 0 0 0 auto; width: 100%; display: none; background-color: #fff; overflow: hidden; cursor: pointer; }
-
-.level_introduction_btn ul li { text-align: left; padding: 5px; border-radius: 5px; color: #2e3233; }
-
-.level_introduction_btn ul li:hover, .level_introduction_btn ul li.active { background-color: #ed710e; color: #fff; }
-
-.level_introduction_btn ul:hover li.active { background-color: transparent; color: #2e3233; }
-
-.level_introduction_btn ul:hover li.active:hover { background-color: #ed710e; color: #fff; }
-
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus { border: 1px solid #2e3233; -webkit-text-fill-color: #2e3233; -webkit-box-shadow: 0 0 0px 1000px #fff inset !important; }
 
 .slide { margin: 40px 20px; }
@@ -1399,7 +1379,31 @@ main .information_area .input_area { margin: 30px auto; display: flex; align-ite
 
 main .information_area .input_area .input-group-label { padding: 10px 15px; color: #2e3233; width: 100%; }
 
-main .information_area .input_area .form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border-color: #2e3233; color: #2e3233; width: 100%; }
+main .information_area .input_area .form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border: 1px solid #2e3233; color: #2e3233; width: 100%; }
+
+main .information_area .input_area .form-control:read-only { color: grey; background-color: transparent; border: 0px; border-bottom: 1px solid grey; border-radius: 0px !important; }
+
+main .information_area .input_area .form-control:read-only:focus { box-shadow: none; }
+
+main .information_area .input_area .form-control.level_introduction_btn { position: relative; margin: 0 0 0 10px; flex-wrap: wrap; display: flex; align-items: center; justify-content: space-between; color: #2e3233; }
+
+main .information_area .input_area .form-control.level_introduction_btn p { text-align: left; width: calc(100% - 25px); }
+
+main .information_area .input_area .form-control.level_introduction_btn.form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border: 1px solid #2e3233; color: #2e3233; }
+
+main .information_area .input_area .form-control.level_introduction_btn.form-control.open svg { transform: rotate(180deg); transition: 0.3s; }
+
+main .information_area .input_area .form-control.level_introduction_btn.form-control.open ul { display: block; }
+
+main .information_area .input_area .form-control.level_introduction_btn ul { position: relative; transform: translate(0, 5px); z-index: 2; margin: 0 0 0 auto; width: 100%; display: none; background-color: #fff; overflow: hidden; cursor: pointer; }
+
+main .information_area .input_area .form-control.level_introduction_btn ul li { text-align: left; padding: 5px; border-radius: 5px; color: #2e3233; }
+
+main .information_area .input_area .form-control.level_introduction_btn ul li:hover, main .information_area .input_area .form-control.level_introduction_btn ul li.active { background-color: #ed710e; color: #fff; }
+
+main .information_area .input_area .form-control.level_introduction_btn ul:hover li.active { background-color: transparent; color: #2e3233; }
+
+main .information_area .input_area .form-control.level_introduction_btn ul:hover li.active:hover { background-color: #ed710e; color: #fff; }
 
 main .information_area .input_area.input-group-submit { display: flex; justify-content: center; align-items: center; margin: 60px auto 30px; }
 
