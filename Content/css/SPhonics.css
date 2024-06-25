@@ -639,9 +639,12 @@ main .pick_level_area .swiper-pagination .swiper-pagination-bullet-active { back
 
 @media screen and (min-width: 992px) { main .pick_level_area .swiper { height: calc(90vh - 89.81px - 200px); } }
 
-@media screen and (min-width: 1200px) { main .pick_level_area .pick_level_main { margin: 40px auto; }
-  main .pick_level_area .pick_level_main .level_options { width: 28%; margin: 0px 2.5% 20px; }
+@media screen and (min-width: 1200px) { main .pick_level_area .pick_level_main { width: 95%; margin: 40px auto; }
+  main .pick_level_area .pick_level_main .level_options { width: 31%; margin: 0px 1% 20px; }
+  main .pick_level_area .pick_level_main .level_options .level_name { padding: 5px 15px; }
   main .pick_level_area .pick_level_main .level_options .button_level { margin: 20px auto 0px; } }
+
+@media screen and (min-width: 1400px) { main .pick_level_area .pick_level_main { width: 90%; } }
 
 main .sound_test_area { width: 80%; max-width: 1200px; margin: 40px auto; padding: 20px 5%; background-color: #fff; border-radius: 10px; }
 

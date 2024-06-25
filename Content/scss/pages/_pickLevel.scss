@@ -344,12 +344,16 @@ main {
         .pick_level_area {
 
             .pick_level_main {
-
+                width: 95%;
                 margin: 40px auto;
     
                 .level_options {
-                    width: 28%;
-                    margin: 0px 2.5% 20px;
+                    width: 31%;
+                    margin: 0px 1% 20px;
+
+                    .level_name{
+                        padding: 5px 15px;
+                    }
 
                     .button_level{
                         margin: 20px auto 0px;
@@ -360,4 +364,13 @@ main {
     }
 }
 
-@media screen and (min-width: 1400px) {}
+@media screen and (min-width: 1400px) {
+    main {
+        .pick_level_area {
+
+            .pick_level_main {
+                width: 90%;
+            }
+        }
+    }
+}
