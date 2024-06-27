@@ -70,8 +70,8 @@
             <label class="radio-inline col-md-2">
               <input id="gender1" type="radio" value="0" name="Gender" checked>Male
             </label>
-            <label class="radio-inline col-md-2">
-              <input id="gender2" type="radio" value="1" name="Gender" disabled>Female
+            <label class="radio-inline col-md-2" >
+              <input id="gender2" type="radio" value="1" name="Gender" disabled readonly>Female
             </label>
             <span class="text-danger field-validation-valid" data-valmsg-for="Gender" data-valmsg-replace="true"></span>
           </div>
@@ -151,6 +151,36 @@
 
             
           </div>
+
+          <div class="input_area">
+            <label class="input-group-label" for="Paper">Paper</label>
+            <select id="paper" class="form-control" name="Paper">
+                <option value="1">Alphabet</option>
+                <option value="2">Vowels</option>
+                <option value="3">Consonants</option>
+                <option value="4">Consonant Digraphs</option>
+                <option value="5">Vowel Digraphs + Vowel Blends</option>
+                <option value="6">Consonant Blends</option>
+                <option value="7">Murmuring Vowels</option>
+                <option value="8">Other Rules + Endings</option>
+            </select>
+        </div>
+
+        <div class="input_area">
+          <label class="input-group-label" for="Paper">Paper</label>
+          <select id="paper" class="form-control level_introduction_btn" name="Paper" size="1" required="">
+              <option value="1">Alphabet</option>
+              <option value="2">Vowels</option>
+              <option value="3">Consonants</option>
+              <option value="4">Consonant Digraphs</option>
+              <option value="5">Vowel Digraphs + Vowel Blends</option>
+              <option value="6">Consonant Blends</option>
+              <option value="7">Murmuring Vowels</option>
+              <option value="8">Other Rules + Endings</option>
+            </select>
+        </div>
+
+        
 
           <div class="input_area input-group-submit">
             <button class="input-group-submit-btn" type="submit">

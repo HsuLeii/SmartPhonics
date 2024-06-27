@@ -415,6 +415,14 @@ main {
             border: 2px solid $main_color_black;
         }
 
+        &:has(input:read-only) {
+            color: $grey;
+
+            &:before {
+                border: 2px solid $grey;
+            }
+        }
+
         &:has(input:checked) {
             color: $main_color;
 
@@ -437,6 +445,14 @@ main {
                     }
                 }
             }
+
+            // &:has(:read-only) {
+            //     color: $grey;
+    
+            //     &:before {
+            //         border: 2px solid $grey;
+            //     }
+            // }
         }
     }
 

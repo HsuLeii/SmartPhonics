@@ -498,6 +498,7 @@ main {
 
                 .answer_display_item {
                     padding: 15px;
+                    padding: 3px;
                     width: calc(100% - 20px);
                     width: 215px;
                     margin: 10px calc((100% - 215px * 1) / 2);
@@ -708,6 +709,7 @@ main {
                 color: $white;
                 background-color: $main_color;
                 padding: 10px 15px;
+                padding: 3px;
                 border-radius: 10px;
 
                 &:hover {
