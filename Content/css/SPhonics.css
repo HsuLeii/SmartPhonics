@@ -1454,7 +1454,7 @@ main .information_area .input_area .form-control.level_introduction_btn:focus-wi
 
 main .information_area .input_area .form-control.level_introduction_btn:focus-within .select_icon { transform: rotate(180deg); }
 
-main .information_area .input_area .select_icon { position: absolute; right: 12px; top: 10px; transform: translate(0, 0%); z-index: 11; pointer-events: none; user-select: none; transition: 0.3s; color: #2e3233; }
+main .information_area .input_area .select_icon { position: absolute; right: 12px; top: 30px; transform: translate(0, -50%); z-index: 11; pointer-events: none; user-select: none; transition: 0.3s; color: #2e3233; }
 
 main .information_area .input_area.input-group-submit { display: flex; justify-content: center; align-items: center; margin: 60px auto 30px; }
 
