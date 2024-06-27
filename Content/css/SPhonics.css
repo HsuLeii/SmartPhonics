@@ -1180,7 +1180,7 @@ main .test_end_area.test_end_answer .test_end_page .leave_next_btn { position: r
 
 main .test_end_area.test_end_answer .icon_area { position: fixed; z-index: 1; bottom: 0; width: 100%; display: flex; justify-content: center; flex-wrap: wrap; padding: 15px 10%; background-color: #F9F8F3; border-radius: 10px 10px 0 0; }
 
-main .test_end_area.test_end_answer .icon_area .icon_item { padding: 10px; border-radius: 10px; margin: 5px; }
+main .test_end_area.test_end_answer .icon_area .icon_item { padding: 10px; padding: 3px; border-radius: 10px; margin: 5px; }
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_correct { background-color: #e2eaff; color: #4169e1; }
 
