@@ -275,11 +275,11 @@ main .title_dot::after { content: ""; position: absolute; bottom: 0; left: 50%; 
 
 .input_area .radio-inline:before { content: " "; display: inline-block; top: 0; margin: 0 8px 0 0; width: 16px; height: 16px; border-radius: 50%; position: relative; border: 2px solid #2e3233; }
 
-.input_area .radio-inline:has(input:read-only) { color: grey; }
+.input_area .radio-inline:has(input:read-only) { color: grey; cursor: auto; }
 
 .input_area .radio-inline:has(input:read-only):before { border: 2px solid grey; }
 
-.input_area .radio-inline:has(input:checked) { color: #ed710e; }
+.input_area .radio-inline:has(input:checked) { color: #ed710e; cursor: pointer; }
 
 .input_area .radio-inline:has(input:checked):before { border: 2px solid #ed710e; background: radial-gradient(#ed710e 0%, #ed710e 40%, transparent 50%, transparent); }
 

@@ -417,6 +417,7 @@ main {
 
         &:has(input:read-only) {
             color: $grey;
+            cursor: auto;
 
             &:before {
                 border: 2px solid $grey;
@@ -425,6 +426,7 @@ main {
 
         &:has(input:checked) {
             color: $main_color;
+            cursor: pointer;
 
             &:before {
                 border: 2px solid $main_color;
