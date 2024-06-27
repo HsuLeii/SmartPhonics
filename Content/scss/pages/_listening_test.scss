@@ -1,6 +1,7 @@
 main {
     .information_area{
         .input_area {
+            position: relative;
             margin: 30px auto;
             display: flex;
             align-items: flex-start;
@@ -40,6 +41,9 @@ main {
                         align-items: center;
                         justify-content: space-between;
                         color: $main_color_black;
+                        appearance: none;
+                        overflow: hidden;
+                        cursor: pointer;
                 
                     p {
                         text-align: left;
@@ -49,7 +53,7 @@ main {
                     &.form-control {
                         border-radius: 5px !important;
                         margin-left: 0px !important;
-                        padding: 10px 15px;
+                        padding: 10px 40px 10px 15px;
                         border: 1px solid $main_color_black;
                         color: $main_color_black;
                         &.open {
@@ -104,7 +108,108 @@ main {
                             }
                         }
                     }
+
+
+                    option {
+                        color: $main_color_black;
+                        padding: 5px 40px 5px 10px;
+                        
+                        &:checked {
+                            box-shadow: 0 0 0px 100px $main_color inset !important;
+                        }
+
+                        &:hover {
+                            background: lighten($main_color, 15%) !important;
+
+                            &:checked {
+                                box-shadow: 0 0 0px 100px transparent inset;
+                            }
+
+                            &:checked {
+                                box-shadow: 0 0 0px 100px lighten($main_color, 15%) inset;
+                                color: red;
+                            }
+                        }
+                    }
+
+                    &:focus {
+                        outline: none;
+                        border-color: $main_color;
+                        border-radius: 5px;
+                    }
+                
+                    &:disabled{
+                        border: 1px solid $grey !important;
+                        cursor: auto;
+                        color: $grey;
+                
+                        &~.select_icon{
+                            i{
+                            color: $grey;
+                        }
+                    }
+                    }
+                
+                    &:has(.form-select:focus){
+                        z-index: 12;
+                      }
+                
+                    &:focus-within {
+                        .form-select {
+                            border-radius: 50%;
+                            position: relative;
+                            right: 0;
+                            width: 100%;
+                            z-index: 10;
+                            overflow: scroll;
+                            overflow-x: hidden;
+                
+                            &::-webkit-scrollbar-track {
+                                border-radius: 5px;
+                                background: transparent;
+                            }
+                
+                            &::-webkit-scrollbar {
+                                background: transparent;
+                                width: 5px;
+                            }
+                
+                            &::-webkit-scrollbar-thumb {
+                                border: none;
+                                box-shadow: none;
+                                background: $main_color;
+                                min-height: 8px;
+                                border-radius: 5px;
+                            }
+                
+                
+                            option {
+                                color: $main_color_black;
+                                padding: 5px 10px;
+                
+                                &:disabled {
+                                    display: none;
+                                }
+                            }
+                        }
+                
+                        .select_icon {
+                            transform: rotate(180deg);
+                        }
+                    }
                 }
+            }
+
+            .select_icon {
+                position: absolute;
+                right: 12px;
+                top: 10px;
+                transform: translate(0, 0%);
+                z-index: 11;
+                pointer-events: none;
+                user-select: none;
+                transition: 0.3s;
+                color: $main_color_black;
             }
     
             &.input-group-submit{
@@ -127,6 +232,101 @@ main {
         }
     }
 }
+
+// select{
+//     appearance: none;
+
+//     option {
+//         color: $main_color_black;
+//         padding: 5px 10px;
+
+//         &:hover {
+//             background: lighten($main_color, 15%) !important;
+//         }
+
+//         &:checked {
+//             box-shadow: 0 0 0px 100px $main_color inset;
+//         }
+//     }
+
+//     &:focus {
+//         outline: none;
+//         border-color: $main_color;
+//         border-radius: 5px;
+//     }
+
+//     &:disabled{
+//         border: 1px solid $grey !important;
+//         cursor: auto;
+//         color: $grey;
+
+//         &~.select_icon{
+//             i{
+//             color: $grey;
+//         }
+//     }
+//     }
+
+//     &:has(.form-select:focus){
+//         z-index: 12;
+//       }
+
+//     &:focus-within {
+//         .form-select {
+//             border-radius: 50%;
+//             position: relative;
+//             right: 0;
+//             width: 100%;
+//             z-index: 10;
+//             overflow: scroll;
+//             overflow-x: hidden;
+
+//             &::-webkit-scrollbar-track {
+//                 border-radius: 5px;
+//                 background: transparent;
+//             }
+
+//             &::-webkit-scrollbar {
+//                 background: transparent;
+//                 width: 5px;
+//             }
+
+//             &::-webkit-scrollbar-thumb {
+//                 border: none;
+//                 box-shadow: none;
+//                 background: $main_color;
+//                 min-height: 8px;
+//                 border-radius: 5px;
+//             }
+
+
+//             option {
+//                 color: $main_color_black;
+//                 padding: 5px 10px;
+
+//                 &:disabled {
+//                     display: none;
+//                 }
+//             }
+//         }
+
+//         .select_icon {
+//             transform: rotate(180deg);
+//         }
+//     }
+// }
+
+// .select_icon {
+//     position: absolute;
+//     right: 12px;
+//     top: 10px;
+//     transform: translate(0, 0%);
+//     z-index: 11;
+//     pointer-events: none;
+//     user-select: none;
+//     transition: 0.3s;
+//     color: $main_color_black;
+// }
 
 @media screen and (min-width: 576px) {}
 

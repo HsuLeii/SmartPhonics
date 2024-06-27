@@ -130,7 +130,7 @@
             
           </div> -->
 
-          <div class="input_area">
+          <!-- <div class="input_area">
             <label class="input-group-label" for="question">題本</label>
             <button type="button" id="question" class="form-control level_introduction_btn">
               
@@ -148,13 +148,11 @@
                   <li class="dropdown_item_li dropdown_item_li_eight">8.Other Rules + Endings</li>
                 </ul>
               </button>
-
-            
-          </div>
+          </div> -->
 
           <div class="input_area">
             <label class="input-group-label" for="Paper">Paper</label>
-            <select id="paper" class="form-control" name="Paper">
+            <select id="paper"  name="Paper" class="form-control level_introduction_btn"  onchange="LoadSchool()">
                 <option value="1">Alphabet</option>
                 <option value="2">Vowels</option>
                 <option value="3">Consonants</option>
@@ -164,11 +162,14 @@
                 <option value="7">Murmuring Vowels</option>
                 <option value="8">Other Rules + Endings</option>
             </select>
+            <div class="select_icon">
+              <i class="fa-solid fa-chevron-down"></i>
+          </div>
         </div>
 
         <div class="input_area">
           <label class="input-group-label" for="Paper">Paper</label>
-          <select id="paper" class="form-control level_introduction_btn" name="Paper" size="1" required="">
+          <select id="paper" name="Paper" class="form-control level_introduction_btn" style="border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border: 1px solid #2e3233; color: #2e3233; font-size: 20px; width: 80%;">
               <option value="1">Alphabet</option>
               <option value="2">Vowels</option>
               <option value="3">Consonants</option>
@@ -206,7 +207,7 @@
   <script src="../Content/js/all.js"></script>
 
   <!-- 書本搜尋 -->
-  <script>
+  <!-- <script>
     $(".level_introduction_btn").click(function () {
       $(".level_introduction_btn").toggleClass("open");
     });
@@ -267,7 +268,55 @@
       $(".dropdown_item_li").removeClass("active");
       $(this).addClass("active");
     });
-  </script>
+  </script> -->
+
+
+<script>
+  $(document).ready(function () {
+      paper();
+  });
+  
+  function paper() {
+              var paper_arr = $("#paper").children();
+              
+              //調整下拉選單size
+              if (paper_arr.length > 10) {
+                  $("#paper").on({
+                      "change": function () {
+                          $(this).blur();
+                      },
+                      'focus': function () {
+                          $(this).attr('size', 10);
+                      },
+                      "blur": function () {
+                          $(this).attr('size', 1);
+                      },
+                      "keyup": function (e) {
+                          if (e.keyCode == 27)
+                              $(this).attr('size', 10);
+                      }
+                  });
+              } else {
+                  $("#paper").on({
+                      "change": function () {
+                          $(this).blur();
+                      },
+                      'focus': function () {
+                          $(this).attr('size', paper_arr.length);
+                      },
+                      "blur": function () {
+                          $(this).attr('size', 1);
+                      },
+                      "keyup": function (e) {
+                          if (e.keyCode == 27)
+                              $(this).attr('size', paper_arr.length);
+                      }
+                  });
+              }
+  }
+
+
+</script>
 
 </body>
 

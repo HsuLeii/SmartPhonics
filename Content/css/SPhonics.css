@@ -1392,7 +1392,7 @@ main .level_selection_area .level_selection_item_area:hover .level_selection_ite
 @media screen and (min-width: 768px) { main .level_selection_area { width: 100%; flex-direction: row; justify-content: space-around; align-items: center; margin: 0; }
   main .level_selection_area .level_selection_item_area { width: 40%; } }
 
-main .information_area .input_area { margin: 30px auto; display: flex; align-items: flex-start; flex-direction: column; }
+main .information_area .input_area { position: relative; margin: 30px auto; display: flex; align-items: flex-start; flex-direction: column; }
 
 main .information_area .input_area .input-group-label { padding: 10px 15px; color: #2e3233; width: 100%; }
 
@@ -1402,11 +1402,11 @@ main .information_area .input_area .form-control:read-only { color: grey; backgr
 
 main .information_area .input_area .form-control:read-only:focus { box-shadow: none; }
 
-main .information_area .input_area .form-control.level_introduction_btn { position: relative; margin: 0 0 0 10px; flex-wrap: wrap; display: flex; align-items: center; justify-content: space-between; color: #2e3233; }
+main .information_area .input_area .form-control.level_introduction_btn { position: relative; margin: 0 0 0 10px; flex-wrap: wrap; display: flex; align-items: center; justify-content: space-between; color: #2e3233; appearance: none; overflow: hidden; cursor: pointer; }
 
 main .information_area .input_area .form-control.level_introduction_btn p { text-align: left; width: calc(100% - 25px); }
 
-main .information_area .input_area .form-control.level_introduction_btn.form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 15px; border: 1px solid #2e3233; color: #2e3233; }
+main .information_area .input_area .form-control.level_introduction_btn.form-control { border-radius: 5px !important; margin-left: 0px !important; padding: 10px 40px 10px 15px; border: 1px solid #2e3233; color: #2e3233; }
 
 main .information_area .input_area .form-control.level_introduction_btn.form-control.open svg { transform: rotate(180deg); transition: 0.3s; }
 
@@ -1421,6 +1421,40 @@ main .information_area .input_area .form-control.level_introduction_btn ul li:ho
 main .information_area .input_area .form-control.level_introduction_btn ul:hover li.active { background-color: transparent; color: #2e3233; }
 
 main .information_area .input_area .form-control.level_introduction_btn ul:hover li.active:hover { background-color: #ed710e; color: #fff; }
+
+main .information_area .input_area .form-control.level_introduction_btn option { color: #2e3233; padding: 5px 40px 5px 10px; }
+
+main .information_area .input_area .form-control.level_introduction_btn option:checked { box-shadow: 0 0 0px 100px #ed710e inset !important; }
+
+main .information_area .input_area .form-control.level_introduction_btn option:hover { background: #f59b53 !important; }
+
+main .information_area .input_area .form-control.level_introduction_btn option:hover:checked { box-shadow: 0 0 0px 100px transparent inset; }
+
+main .information_area .input_area .form-control.level_introduction_btn option:hover:checked { box-shadow: 0 0 0px 100px #f59b53 inset; color: red; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus { outline: none; border-color: #ed710e; border-radius: 5px; }
+
+main .information_area .input_area .form-control.level_introduction_btn:disabled { border: 1px solid grey !important; cursor: auto; color: grey; }
+
+main .information_area .input_area .form-control.level_introduction_btn:disabled ~ .select_icon i { color: grey; }
+
+main .information_area .input_area .form-control.level_introduction_btn:has(.form-select:focus) { z-index: 12; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select { border-radius: 50%; position: relative; right: 0; width: 100%; z-index: 10; overflow: scroll; overflow-x: hidden; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select::-webkit-scrollbar-track { border-radius: 5px; background: transparent; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select::-webkit-scrollbar { background: transparent; width: 5px; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select::-webkit-scrollbar-thumb { border: none; box-shadow: none; background: #ed710e; min-height: 8px; border-radius: 5px; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select option { color: #2e3233; padding: 5px 10px; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .form-select option:disabled { display: none; }
+
+main .information_area .input_area .form-control.level_introduction_btn:focus-within .select_icon { transform: rotate(180deg); }
+
+main .information_area .input_area .select_icon { position: absolute; right: 12px; top: 10px; transform: translate(0, 0%); z-index: 11; pointer-events: none; user-select: none; transition: 0.3s; color: #2e3233; }
 
 main .information_area .input_area.input-group-submit { display: flex; justify-content: center; align-items: center; margin: 60px auto 30px; }
 
