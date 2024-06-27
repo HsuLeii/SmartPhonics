@@ -1132,7 +1132,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_icon .fa-volume-high { cursor: pointer; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; padding: 3px; width: calc(100% - 20px); width: 215px; margin: 10px calc((100% - 215px * 1) / 2); }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 15px; padding: 3px 5px; width: calc(100% - 20px); width: 215px; margin: 10px calc((100% - 215px * 1) / 2); }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #e2eaff; }
 
