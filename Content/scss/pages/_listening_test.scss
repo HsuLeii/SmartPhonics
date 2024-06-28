@@ -204,6 +204,7 @@ main {
                 position: absolute;
                 right: 12px;
                 top: 30px;
+                top: 68.8px;
                 transform: translate(0, -50%);
                 z-index: 11;
                 pointer-events: none;
@@ -345,6 +346,10 @@ main {
                 .form-control {
                     width: 80%;
                 }
+
+                .select_icon {
+                    top: 25px;
+                }
     
                 &.input-group-submit{
                     margin: 90px auto 45px;
@@ -357,6 +362,18 @@ main {
 
 @media screen and (min-width: 992px) {}
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    main {
+
+        .information_area{
+            .input_area {
+                .select_icon {
+                    top: 30px;
+                }
+            }
+        }
+        
+    }
+}
 
 @media screen and (min-width: 1400px) {}
