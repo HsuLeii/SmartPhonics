@@ -1455,6 +1455,16 @@ main .information_area .input_area .form-control.level_introduction_btn:focus-wi
 
 main .information_area .input_area .form-control.level_introduction_btn:focus-within .select_icon { transform: rotate(180deg); }
 
+main .information_area .input_area .form-control.level_introduction_area { display: flex; flex-wrap: wrap; border: 0; }
+
+main .information_area .input_area .form-control.level_introduction_area .level_introduction_item { width: 45%; margin: 10px 2.5%; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; }
+
+main .information_area .input_area .form-control.level_introduction_area .level_introduction_item img { margin: 5px auto; padding: 5px; transform: scale(0.9); }
+
+main .information_area .input_area .form-control.level_introduction_area .level_introduction_item p { color: #2e3233; }
+
+main .information_area .input_area .form-control.level_introduction_area .level_introduction_item:hover img { border: 1px solid #ed710e; border-radius: 50%; transform: scale(1); }
+
 main .information_area .input_area .select_icon { position: absolute; right: 12px; top: 30px; top: 68.8px; transform: translate(0, -50%); z-index: 11; pointer-events: none; user-select: none; transition: 0.3s; color: #2e3233; }
 
 main .information_area .input_area.input-group-submit { display: flex; justify-content: center; align-items: center; margin: 60px auto 30px; }
