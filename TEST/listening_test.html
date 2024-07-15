@@ -166,61 +166,115 @@
               <i class="fa-solid fa-chevron-down"></i>
           </div>
 
-
           <div class="input_area">
             <label class="input-group-label" for="Paper">Paper</label>
             <div class="form-control level_introduction_area">
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/land_g1.png" alt="">
                 <p>
-                  字母冒險者
+                  1.字母冒險者
                 </p>
               </div>
               
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/land_g2.png" alt="">
                 <p>
-                  字母冒險者
+                  2.母音航行者
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/land_g3.png" alt="">
                 <p>
-                  字母冒險者
+                  3.子音冠軍
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/land_g4.png" alt="">
                 <p>
-                  字母冒險者
+                  4.混合挑戰者
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/land_g5.png" alt="">
                 <p>
-                  字母冒險者
+                  5.雙母音探索者
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/ocean_g1.png" alt="">
                 <p>
-                  字母冒險者
+                  6.音群小英雄
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/ocean_g2.png" alt="">
                 <p>
-                  字母冒險者
+                  7.受R控制的遊俠
                 </p>
               </div>
               <div class="level_introduction_item">
                 <img src="../TEST/Content/image/photo/avatar/color/sky_g1.png" alt="">
                 <p>
-                  字母冒險者
+                  8.前往未知的小勇士
                 </p>
               </div>
             </div>
         </div>
+
+        <div class="input_area">
+          <label class="input-group-label" for="Paper">Paper</label>
+          <div class="form-control level_introduction_area">
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/land_g1.png" alt="">
+              <p>
+                1.Alphabet Adventurers
+              </p>
+            </div>
+            
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/land_g2.png" alt="">
+              <p>
+                2.Vowel Voyagers
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/land_g3.png" alt="">
+              <p>
+                3.Consonant Champions
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/land_g4.png" alt="">
+              <p>
+                4.Blend Busters
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/land_g5.png" alt="">
+              <p>
+                5.Diphthong Dynamos
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/ocean_g1.png" alt="">
+              <p>
+                6.Cluster Crusaders
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/ocean_g2.png" alt="">
+              <p>
+                7.R-Controlled Rangers
+              </p>
+            </div>
+            <div class="level_introduction_item">
+              <img src="../TEST/Content/image/photo/avatar/color/sky_g1.png" alt="">
+              <p>
+                8.Wildcard Wonderers
+              </p>
+            </div>
+          </div>
+      </div>
         
           <div class="input_area input-group-submit">
             <button class="input-group-submit-btn" type="submit">
@@ -244,6 +298,13 @@
   <script src="../Content/js/fontawesome-free-6.1.1.min.js"></script>
 
   <script src="../Content/js/all.js"></script>
+
+  <script>
+    $(".level_introduction_item").click(function () {
+      $(this).addClass("active");
+      $(this).siblings().removeClass("active");
+    });
+  </script>
 
   <!-- 書本搜尋 -->
   <!-- <script>
@@ -310,10 +371,11 @@
   </script> -->
 
 
-<script>
+<!-- <script>
   $(document).ready(function () {
       paper();
   });
+
   
   function paper() {
               var paper_arr = $("#paper").children();
@@ -353,9 +415,7 @@
                   });
               }
   }
-
-
-</script>
+</script> -->
 
 </body>
 

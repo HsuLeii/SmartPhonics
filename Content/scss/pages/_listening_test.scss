@@ -200,8 +200,10 @@ main {
                 }
 
                 &.level_introduction_area{
+                    width: 100%;
                     display: flex;
                     flex-wrap: wrap;
+                    align-items: flex-start;
                     border: 0;
 
                     .level_introduction_item{
@@ -217,6 +219,7 @@ main {
                             margin: 5px auto;
                             padding: 5px;
                             transform: scale(0.9);
+                            max-width: 150px;
                         }
 
                         p{
@@ -229,6 +232,18 @@ main {
                                 border: 1px solid $main_color;
                                 border-radius: 50%;
                                 transform: scale(1);
+                            }
+                        }
+
+                        &.active{
+                            img{
+                                border: 1px solid $main_color;
+                                border-radius: 50%;
+                                transform: scale(1);
+                            }
+
+                            p{
+                                color: $main_color;
                             }
                         }
                     }
@@ -364,7 +379,21 @@ main {
 //     color: $main_color_black;
 // }
 
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    main {
+        .information_area{
+            .input_area {
+                .form-control {
+                    &.level_introduction_area{
+                        .level_introduction_item{
+                            width: 28%;
+                        }
+                    }
+                }
+                }
+                }
+                }
+}
 
 @media screen and (min-width: 768px) {
     main {
@@ -404,6 +433,14 @@ main {
             .input_area {
                 .select_icon {
                     top: 30px;
+                }
+
+                .form-control {
+                    &.level_introduction_area{
+                        .level_introduction_item{
+                            width: 20%;
+                        }
+                    }
                 }
             }
         }
