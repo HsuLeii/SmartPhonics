@@ -4,6 +4,41 @@ main {
         padding: 20px 0 0;
         position: relative;
 
+        // 20240715增加
+        width: 100%;
+        margin: 0px auto;
+        padding: 20px 0;
+        // height: calc(100% - 84.58px);
+        // min-height: calc(100vh - 84.58px);
+        padding: 0px 0px 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        // flex-wrap: wrap;
+        position: relative;
+
+        .test_area_bg {
+            width: 100%;
+            height: 100%;
+            height: 100vh;
+            position: absolute;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            // filter:saturate(1.5);
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        // 20240715增加
+
         .sky_test_filter {
             &.filterDiv {
                 display: none !important;
@@ -169,6 +204,14 @@ main {
             flex-direction: column;
             justify-content: center;
 
+            // 20240715增加
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+            background-color: $QA_area;
+            border-radius: 10px;
+            // 20240715增加
+
             .sky_answer_selection {
                 width: 80%;
                 max-width: 1200px;
@@ -214,6 +257,12 @@ main {
                     width: 95%;
                     max-width: 1200px;
                     margin: 20px auto;
+
+                    .scoring_text{
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
 
                     .rainbowBar {
                         display: flex;
@@ -445,6 +494,10 @@ main {
                 flex-wrap: wrap;
                 justify-content: flex-start;
 
+                // 20240715增加
+                width: 100%;
+            // 20240715增加
+
                 .answer_display_item {
                     padding: 30px 15px;
                     width: calc(100% - 20px);
@@ -604,6 +657,10 @@ main {
                 padding: 0px 10px;
                 margin: 0 auto 140px;
 
+                // 20240715增加
+                margin: 0 auto;
+                // 20240715增加
+
                 .note_area {
                     display: flex;
                     align-items: center;
@@ -655,6 +712,7 @@ main {
             .icon_area {
                 position: fixed;
                 z-index: 1;
+                right: 0;
                 bottom: 0;
                 width: 100%;
                 display: flex;
@@ -749,6 +807,11 @@ main {
     main {
         .test_end_area {
 
+            // 20240715增加
+            height: calc(100% - 93.05px);
+            min-height: calc(100vh - 93.05px);
+            // 20240715增加
+
             .animal_animation_area {
 
                 .animal_area {
@@ -812,6 +875,10 @@ main {
                 //20240613新版
                 .test_end_page {
                     margin: 0 auto 80px;
+
+                    // 20240715增加
+                    margin: 0 auto;
+                    // 20240715增加
                 }
 
                 .icon_area {
@@ -1003,6 +1070,13 @@ main {
 @media screen and (min-width: 992px) {
     main {
         .test_end_area {
+
+            // 20240715增加
+            height: calc(100% - 114.97px);
+            min-height: calc(100vh - 114.97px);
+            padding: 0px 0px 40px;
+            // 20240715增加
+
             .animal_animation_area {
                 .gift_box {
                     max-width: 200px;
@@ -1144,6 +1218,10 @@ main {
 @media screen and (min-width: 1200px) {
     main {
         .test_end_area {
+
+            // 20240715增加
+            padding: 40px 0px;
+            // 20240715增加
 
             .animal_animation_area {
 
@@ -1389,3 +1467,38 @@ main {
         }
     }
 }
+
+// 20240715增加
+@media screen and (orientation:portrait) {
+    main {
+        .test_end_area {
+            .animal_area {
+                margin: 0 auto 70px;
+            }
+        }
+    }
+}
+
+@media all and (orientation:landscape){
+    main {
+        .test_end_area {
+            .animal_area {
+                z-index: -1;
+
+                .animal_img {
+                    position: fixed;
+                    width: 10%;
+
+                    &.animal_one {
+                        left: 0;
+                    }
+
+                    &.animal_two {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+// 20240715增加
