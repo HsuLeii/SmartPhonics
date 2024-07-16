@@ -7,6 +7,7 @@ body { font-family: 'Lexend', 'Noto Sans SC', 'Noto Sans TC'; }
 /*other*/
 /*STUDY*/
 /*MAP*/
+/*test_end_answer*/
 main .main_publicity .main_publicity_content, .input_area .form-control:focus, main .login_area, main .test_area.continue_challenge_area .continue_challenge_item_area, main .main_publicity .main_publicity_content .about_content_area .about_content_item, main .main_publicity .main_publicity_content .about_test_contact_button .about_test_contact_button_area a { box-shadow: 5px 5px 10px 3px #ed710e40; }
 
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, figure { margin: 0; padding: 0; list-style: none; }
@@ -1045,41 +1046,49 @@ main .test_end_area .sky_answer_display_area .sky_test_filter { flex-direction: 
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .test_end_text { margin: 20px auto 0px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: 95%; max-width: 1200px; margin: 20px auto; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top { display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px auto; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .scoring_text { width: 100%; display: flex; justify-content: center; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_avatar { width: 50px; margin: 0 0 15px 0; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar { display: flex; width: 100%; max-width: 800px; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; width: calc(95% - 0px); max-width: 800px; padding: 5px; background-color: #f2f1f1d6; position: relative; z-index: 1; border-radius: 10px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item { display: flex; flex-direction: column; align-items: center; width: 20%; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { content: ""; position: absolute; z-index: -1; border-width: 0px 8px 8px 8px; top: -8px; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 8px solid #ed710e; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_icon { font-size: 30px; color: transparent; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { content: ""; position: absolute; z-index: -1; width: calc(100% + 5px); height: 100%; border-radius: 10px; background-color: #fff; border: 1.5px solid #ed710e; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_block { height: 30px; width: 100%; margin: 5px 0; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .scoring_text { width: 100%; display: flex; justify-content: center; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text { display: flex; justify-content: center; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar { display: flex; width: 100%; max-width: 800px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 9px; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item { display: flex; flex-direction: column; align-items: center; width: 20%; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_one .rainbow_block { background-color: #00b050; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_icon { font-size: 30px; color: transparent; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_two .rainbow_block { background-color: #66ff33; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_block { height: 30px; width: 100%; margin: 5px 0; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_three .rainbow_block { background-color: #f3e11e; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text { display: flex; justify-content: center; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_four .rainbow_block { background-color: #ffc000; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 9px; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.level_five .rainbow_block { background-color: #ff0000; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.level_one .rainbow_block { background-color: #00b050; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_one .rainbow_icon { color: #00b050; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.level_two .rainbow_block { background-color: #66ff33; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_two .rainbow_icon { color: #66ff33; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.level_three .rainbow_block { background-color: #f3e11e; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_three .rainbow_icon { color: #f3e11e; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.level_four .rainbow_block { background-color: #ffc000; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_four .rainbow_icon { color: #ffc000; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.level_five .rainbow_block { background-color: #ff0000; }
 
-main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item.thisLevel.level_five .rainbow_icon { color: #ff0000; }
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.thisLevel.level_one .rainbow_icon { color: #00b050; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.thisLevel.level_two .rainbow_icon { color: #66ff33; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.thisLevel.level_three .rainbow_icon { color: #f3e11e; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.thisLevel.level_four .rainbow_icon { color: #ffc000; }
+
+main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item.thisLevel.level_five .rainbow_icon { color: #ff0000; }
 
 main .test_end_area .sky_answer_display_area .sky_test_filter .answer_display_area.sky_sentence .answer_display_item { width: calc(100% - 55px); display: flex; align-items: center; border-radius: 0; margin: 10px 0; background-color: #faebd7; border-radius: 10px; position: relative; }
 
@@ -1197,20 +1206,52 @@ main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound { backgroun
 
 main .test_end_area.test_end_answer .icon_area .icon_item.icon_sound svg { margin: 0 5px 0 0; }
 
+main .test_end_area.test_end_one .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #c7dc63; }
+
+main .test_end_area.test_end_one .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #c7dc63; }
+
+main .test_end_area.test_end_two .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #dae286; }
+
+main .test_end_area.test_end_two .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #dae286; }
+
+main .test_end_area.test_end_three .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #866238; }
+
+main .test_end_area.test_end_three .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #866238; }
+
+main .test_end_area.test_end_four .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #deb472; }
+
+main .test_end_area.test_end_four .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #deb472; }
+
+main .test_end_area.test_end_five .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #b2d9e8; }
+
+main .test_end_area.test_end_five .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #b2d9e8; }
+
+main .test_end_area.test_end_six .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #8cd1e2; }
+
+main .test_end_area.test_end_six .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #8cd1e2; }
+
+main .test_end_area.test_end_seven .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #5f9ac8; }
+
+main .test_end_area.test_end_seven .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #5f9ac8; }
+
+main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #183854; }
+
+main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #183854; }
+
 main .test_end_area .leave_link { width: 90%; margin: 0 auto; display: flex; justify-content: flex-end; }
 
 main .test_end_area .leave_link a { color: #fff; background-color: #ed710e; padding: 10px 15px; padding: 3px; border-radius: 10px; }
 
 main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 
-@media screen and (min-width: 500px) { main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 11px; } }
+@media screen and (min-width: 500px) { main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 11px; } }
 
 @media screen and (min-width: 576px) { main .test_end_area { height: calc(100% - 93.05px); min-height: calc(100vh - 93.05px); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(1) { transform: translate(-50%, -50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(2) { transform: translate(-50%, -50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { transform: translate(-25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { transform: translate(25%, 50%); }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 14px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 13px; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(50% - 20px); }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 2 - 20px); width: 215px; margin: 10px calc((100% - 215px * 2) / 4); }
   main .test_end_area.test_end_answer .test_end_page { margin: 0 auto 80px; margin: 0 auto; }
@@ -1229,7 +1270,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(40% / 2 + 40%); transform: translate(25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(40% / 2 + 20%); transform: translate(0%, 100%); }
   main .test_end_area .sky_answer_display_area .sky_answer_selection { justify-content: flex-start; }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 15px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 15px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 18px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 18px; }
   main .test_end_area.test_end_answer .pick_level_top .page_logo { position: relative; left: auto; top: auto; transform: translate(0, 0); }
@@ -1244,7 +1285,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 
 @media screen and (min-width: 992px) { main .test_end_area { height: calc(100% - 114.97px); min-height: calc(100vh - 114.97px); padding: 0px 0px 40px; }
   main .test_end_area .animal_animation_area .gift_box { max-width: 200px; }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 17px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 17px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 20px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 20px; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(100% / 3 - 20px); width: 215px; } }
@@ -1268,13 +1309,25 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { left: calc(46% / 2); transform: translate(-25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(46% / 2 + 36%); transform: translate(25%, 50%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(46% / 2 + 18%); transform: translate(0%, 100%); }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 19px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top { flex-direction: row; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_avatar { width: 100px; margin: 0 25px 0 0; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area { width: calc(95% - 125px); }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-width: 12px 0px 12px 12px; top: auto; left: -25px; border-right: 12px solid #fff; border-left: 12px solid transparent; border-bottom: 12px solid transparent; border-top: 12px solid transparent; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 19px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 22px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 22px; }
   main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { font-size: 35px; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: calc(25% - 20px); margin: 10px calc((100% - 215px * 4) / 8); }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { width: 215px; }
-  main .test_end_area.test_end_answer .icon_area { max-width: 120px; } }
+  main .test_end_area.test_end_answer .icon_area { max-width: 120px; }
+  main .test_end_area.test_end_one .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #c7dc63; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_two .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #dae286; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_three .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #866238; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_four .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #deb472; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_five .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #b2d9e8; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_six .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #8cd1e2; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_seven .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #5f9ac8; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #183854; border-bottom: 12px solid transparent; } }
 
 @media screen and (min-width: 1400px) { main .test_end_area .get_avatar_area { width: 45%; }
   main .test_end_area .animal_animation_area .gift_box { width: 80%; margin: 0 auto; max-width: 150px; }
@@ -1284,7 +1337,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(3) { left: calc(55% / 2); transform: translate(-20%, 100%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(4) { left: calc(55% / 2 + 30%); transform: translate(20%, 100%); }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(55% / 2 + 15%); transform: translate(0%, 100%); }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 20px; }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 20px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 23px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text span { font-size: 23px; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 5) / 10); } }
@@ -1298,10 +1351,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 @media all and (orientation: landscape) { main .test_end_area .animal_area { z-index: -1; }
   main .test_end_area .animal_area .animal_img { position: fixed; width: 10%; }
   main .test_end_area .animal_area .animal_img.animal_one { left: 0; }
-  main .test_end_area .animal_area .animal_img.animal_one.animal_hipopo { top: calc(100% - 70px); }
-  main .test_end_area .animal_area .animal_img.animal_one.animal_camel { transform: translate(0%, -100%); }
-  main .test_end_area .animal_area .animal_img.animal_two { right: 0; }
-  main .test_end_area .animal_area .animal_img.animal_two.animal_hipopo { top: calc(100% - 70px); } }
+  main .test_end_area .animal_area .animal_img.animal_two { right: 0; bottom: 70px; top: auto; } }
 
 main .test_area.continue_challenge_area { display: flex; flex-direction: column; margin: 80px auto; }
 

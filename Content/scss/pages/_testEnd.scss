@@ -208,7 +208,7 @@ main {
             width: 80%;
             margin: 20px auto 70px;
             padding: 20px 0;
-            background-color: #f2f1f1d6;
+            background-color: $test_end_bg;
             border-radius: 10px;
             // 20240715增加
 
@@ -249,110 +249,149 @@ main {
                     margin: 20px auto 0px;
                 }
 
-                .scoring_area {
+                .feedback_top{
                     display: flex;
-                    align-items: center;
                     justify-content: center;
-                    flex-wrap: wrap;
-                    width: 95%;
-                    max-width: 1200px;
+                    align-items: center;
+                    flex-direction: column;
                     margin: 20px auto;
 
-                    .scoring_text{
-                        width: 100%;
-                        display: flex;
-                        justify-content: center;
+                    .scoring_avatar{
+                        width: 50px;
+                        margin: 0 0 15px 0;
                     }
 
-                    .rainbowBar {
+                    .scoring_area {
                         display: flex;
-                        width: 100%;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        width: calc(95% - 0px);
                         max-width: 800px;
+                        padding: 5px;
+                        background-color: $test_end_bg;
+                        position: relative;
+                        z-index: 1;
+                        border-radius: 10px;
 
-                        .rainbow_item {
+                        &::before{
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            border-width: 0px 8px 8px 8px;
+                            top: -8px;
+                            border-left: 8px solid transparent;
+                            border-right: 8px solid transparent;
+                            border-bottom: 8px solid $main_color;
+                        }
+
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            z-index: -1;
+                            width: calc(100% + 5px);
+                            height: 100%;
+                            border-radius: 10px;
+                            background-color: $white;
+                            border: 1.5px solid $main_color;
+                        }
+    
+                        .scoring_text{
+                            width: 100%;
                             display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            width: 20%;
-
-                            .rainbow_icon {
-                                font-size: 30px;
-                                color: transparent;
-                            }
-
-                            .rainbow_block {
-                                height: 30px;
-                                width: 100%;
-                                margin: 5px 0;
-                            }
-
-                            .rainbow_text {
+                            justify-content: center;
+                        }
+    
+                        .rainbowBar {
+                            display: flex;
+                            width: 100%;
+                            max-width: 800px;
+    
+                            .rainbow_item {
                                 display: flex;
-                                justify-content: center;
-                                
-                                p{
-                                    font-size: 9px;
+                                flex-direction: column;
+                                align-items: center;
+                                width: 20%;
+    
+                                .rainbow_icon {
+                                    font-size: 30px;
+                                    color: transparent;
                                 }
-                            }
-
-                            &.level_one {
+    
                                 .rainbow_block {
-                                    background-color: $rainbow_item_one;
+                                    height: 30px;
+                                    width: 100%;
+                                    margin: 5px 0;
                                 }
-                            }
-
-                            &.level_two {
-                                .rainbow_block {
-                                    background-color: $rainbow_item_two;
+    
+                                .rainbow_text {
+                                    display: flex;
+                                    justify-content: center;
+                                    
+                                    p{
+                                        font-size: 9px;
+                                    }
                                 }
-                            }
-
-                            &.level_three {
-                                .rainbow_block {
-                                    background-color: $rainbow_item_three;
-                                }
-                            }
-
-                            &.level_four {
-                                .rainbow_block {
-                                    background-color: $rainbow_item_four;
-                                }
-                            }
-
-                            &.level_five {
-                                .rainbow_block {
-                                    background-color: $rainbow_item_five;
-                                }
-                            }
-
-                            &.thisLevel {
+    
                                 &.level_one {
-                                    .rainbow_icon {
-                                        color: $rainbow_item_one;
+                                    .rainbow_block {
+                                        background-color: $rainbow_item_one;
                                     }
                                 }
-
+    
                                 &.level_two {
-                                    .rainbow_icon {
-                                        color: $rainbow_item_two;
+                                    .rainbow_block {
+                                        background-color: $rainbow_item_two;
                                     }
                                 }
-
+    
                                 &.level_three {
-                                    .rainbow_icon {
-                                        color: $rainbow_item_three;
+                                    .rainbow_block {
+                                        background-color: $rainbow_item_three;
                                     }
                                 }
-
+    
                                 &.level_four {
-                                    .rainbow_icon {
-                                        color: $rainbow_item_four;
+                                    .rainbow_block {
+                                        background-color: $rainbow_item_four;
                                     }
                                 }
-
+    
                                 &.level_five {
-                                    .rainbow_icon {
-                                        color: $rainbow_item_five;
+                                    .rainbow_block {
+                                        background-color: $rainbow_item_five;
+                                    }
+                                }
+    
+                                &.thisLevel {
+                                    &.level_one {
+                                        .rainbow_icon {
+                                            color: $rainbow_item_one;
+                                        }
+                                    }
+    
+                                    &.level_two {
+                                        .rainbow_icon {
+                                            color: $rainbow_item_two;
+                                        }
+                                    }
+    
+                                    &.level_three {
+                                        .rainbow_icon {
+                                            color: $rainbow_item_three;
+                                        }
+                                    }
+    
+                                    &.level_four {
+                                        .rainbow_icon {
+                                            color: $rainbow_item_four;
+                                        }
+                                    }
+    
+                                    &.level_five {
+                                        .rainbow_icon {
+                                            color: $rainbow_item_five;
+                                        }
                                     }
                                 }
                             }
@@ -763,6 +802,145 @@ main {
             //20240613新版
         }
 
+        // 20240715增加
+        &.test_end_one{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_one;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_one;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_two{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_two;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_two;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_three{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_three;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_three;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_four{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_four;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_four;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_five{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_five;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_five;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_six{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_six;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_six;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_seven{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_seven;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_seven;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_eight{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_eight;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_eight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 20240715增加
+
         //20240613新版
         .leave_link {
             width: 90%;
@@ -791,13 +969,14 @@ main {
         .test_end_area {
             .sky_answer_display_area {
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 11px;
+                    .feedback_top{
+                        .scoring_area {
+                            .rainbowBar {
+                                .rainbow_item {
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 11px;
+                                        }
                                     }
                                 }
                             }
@@ -847,13 +1026,14 @@ main {
 
             .sky_answer_display_area {
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 14px;
+                    .feedback_top{
+                        .scoring_area {
+                            .rainbowBar {
+                                .rainbow_item {
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 13px;
+                                        }
                                     }
                                 }
                             }
@@ -975,13 +1155,14 @@ main {
                 }
 
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 15px;
+                    .feedback_top{
+                        .scoring_area {
+                            .rainbowBar {
+                                .rainbow_item {
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 15px;
+                                        }
                                     }
                                 }
                             }
@@ -1091,13 +1272,14 @@ main {
 
             .sky_answer_display_area {
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 17px;
+                    .feedback_top{
+                        .scoring_area {
+                            .rainbowBar {
+                                .rainbow_item {
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 17px;
+                                        }
                                     }
                                 }
                             }
@@ -1272,13 +1454,35 @@ main {
 
             .sky_answer_display_area {
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 19px;
+
+                    .feedback_top{
+                        flex-direction: row;
+    
+                        .scoring_avatar{
+                            width: 100px;
+                            margin: 0 25px 0 0;
+                        }
+    
+                        .scoring_area {
+                            width: calc(95% - 125px);
+    
+                            &::before{
+                                border-width: 12px 0px 12px 12px;
+                                top: auto;
+                                left: -25px;
+                                border-right: 12px solid $white;
+                                border-left: 12px solid transparent;
+                                border-bottom: 12px solid transparent;
+                                border-top: 12px solid transparent;
+                            }
+                            .rainbowBar {
+        
+                                .rainbow_item {
+        
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 19px;
+                                        }
                                     }
                                 }
                             }
@@ -1339,6 +1543,121 @@ main {
                 //20240613新版
             }
 
+            // 20240715增加
+        &.test_end_one{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_one;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_two{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_two;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_three{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_three;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_four{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_four;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_five{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_five;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_six{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_six;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_seven{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_seven;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_eight{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_eight;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // 20240715增加
+
         }
     }
 }
@@ -1395,13 +1714,14 @@ main {
 
             .sky_answer_display_area {
                 .sky_test_filter {
-                    .scoring_area {
-                        .rainbowBar {
-                            .rainbow_item {
-                                .rainbow_text {
-                                    
-                                    p{
-                                        font-size: 20px;
+                    .feedback_top{
+                        .scoring_area {
+                            .rainbowBar {
+                                .rainbow_item {
+                                    .rainbow_text {
+                                        p{
+                                            font-size: 20px;
+                                        }
                                     }
                                 }
                             }
@@ -1492,6 +1812,34 @@ main {
 @media all and (orientation:landscape){
     main {
         .test_end_area {
+            &.test_end_two{
+                .animal_area {
+                    .animal_img {
+                        // &.animal_one {
+                        //         top: calc(100% - 70px);
+    
+                        //     &.animal_camel{
+                        //         transform: translate(0% , -100%);
+                        //     }
+                        // }
+    
+                        // &.animal_two {
+                        //         top: calc(100% - 70px);
+                        // }
+                    }
+                }
+            }
+
+            &.test_end_four{
+                .animal_area {
+                    .animal_img {
+                        // &.animal_one {
+                        //     transform: translate(0% , -100%);
+                        // }
+                    }
+                }
+            }
+
             .animal_area {
                 z-index: -1;
 
@@ -1501,22 +1849,12 @@ main {
 
                     &.animal_one {
                         left: 0;
-
-                        &.animal_hipopo{
-                            top: calc(100% - 70px);
-                        }
-
-                        &.animal_camel{
-                            transform: translate(0% , -100%);
-                        }
                     }
 
                     &.animal_two {
                         right: 0;
-
-                        &.animal_hipopo{
-                            top: calc(100% - 70px);
-                        }
+                        bottom: 70px;
+                        top: auto;
                     }
                 }
             }
