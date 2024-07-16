@@ -1311,7 +1311,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area .animal_animation_area .animal_area.land_animal_area .animal_img:nth-child(5) { left: calc(46% / 2 + 18%); transform: translate(0%, 100%); }
   main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top { flex-direction: row; }
   main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_avatar { width: 100px; margin: 0 25px 0 0; }
-  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area { width: calc(95% - 125px); }
+  main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area { width: calc(95% - 125px); padding: 10px; }
   main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-width: 12px 0px 12px 12px; top: auto; left: -25px; border-right: 12px solid #fff; border-left: 12px solid transparent; border-bottom: 12px solid transparent; border-top: 12px solid transparent; }
   main .test_end_area .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area .rainbowBar .rainbow_item .rainbow_text p { font-size: 19px; }
   main .test_end_area .sky_answer_display_area .answer_display_area.sky_sentence .answer_display_item .answer_display_text { font-size: 22px; }

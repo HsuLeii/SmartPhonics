@@ -1465,6 +1465,7 @@ main {
     
                         .scoring_area {
                             width: calc(95% - 125px);
+                            padding: 10px;
     
                             &::before{
                                 border-width: 12px 0px 12px 12px;
