@@ -1121,13 +1121,13 @@ main .test_end_area.test_end_answer .answer_display_area { width: 80%; max-width
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item { padding: 30px 15px; width: calc(100% - 20px); position: relative; margin: 10px 10px; border-radius: 10px; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #b8e79a; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer { background-color: #b8e79a; border: 1.5px solid #4169e1; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_text { color: #4169e1; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.correct_answer .answer_display_icon { color: #4169e1; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer { background-color: #efbad6; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer { background-color: #efbad6; border: 1.5px solid #c82e7f; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item.wrong_answer .answer_display_text { color: #c82e7f; }
 

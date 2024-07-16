@@ -507,6 +507,7 @@ main {
 
                     &.correct_answer {
                         background-color: $correct_answer;
+                        border: 1.5px solid $correct_text;
 
                         .answer_display_text {
                             color: $correct_text;
@@ -519,6 +520,7 @@ main {
 
                     &.wrong_answer {
                         background-color: $wrong_answer;
+                        border: 1.5px solid $wrong_text;
 
                         .answer_display_text {
                             color: $wrong_text;
