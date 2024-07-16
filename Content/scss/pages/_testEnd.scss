@@ -658,7 +658,6 @@ main {
                 margin: 0 auto 140px;
 
                 // 20240715增加
-                width: auto;
                 margin: 0 auto;
                 // 20240715增加
 
@@ -690,6 +689,10 @@ main {
                             border-radius: 10px;
                             margin: 0px 2px;
                             color: $grey;
+
+                            // 20240715增加
+                            color: $main_color_black;
+                // 20240715增加
 
                             &:hover,
                             &:active,
@@ -1157,6 +1160,10 @@ main {
 
                     .page {
                         width: calc(100% - 171px* 2);
+
+                        // 20240715增加
+                width: auto;
+                // 20240715增加
 
                         .pagination {
                             display: flex;

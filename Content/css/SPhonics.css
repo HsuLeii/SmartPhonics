@@ -1169,7 +1169,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon svg { display: flex; font-size: 20px; padding: 10px; border-radius: 10px; }
 
-main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto 140px; width: auto; margin: 0 auto; }
+main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto 140px; margin: 0 auto; }
 
 main .test_end_area.test_end_answer .test_end_page .note_area { display: flex; align-items: center; justify-content: center; }
 
@@ -1179,7 +1179,7 @@ main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { col
 
 main .test_end_area.test_end_answer .test_end_page .page { display: flex; justify-content: center; margin: 20px auto; }
 
-main .test_end_area.test_end_answer .test_end_page .page .pagination a, main .test_end_area.test_end_answer .test_end_page .page .pagination span { padding: 5px 0.4rem; border-radius: 10px; margin: 0px 2px; color: grey; }
+main .test_end_area.test_end_answer .test_end_page .page .pagination a, main .test_end_area.test_end_answer .test_end_page .page .pagination span { padding: 5px 0.4rem; border-radius: 10px; margin: 0px 2px; color: grey; color: #2e3233; }
 
 main .test_end_area.test_end_answer .test_end_page .page .pagination a:hover, main .test_end_area.test_end_answer .test_end_page .page .pagination a:active, main .test_end_area.test_end_answer .test_end_page .page .pagination a.active, main .test_end_area.test_end_answer .test_end_page .page .pagination span:hover, main .test_end_area.test_end_answer .test_end_page .page .pagination span:active, main .test_end_area.test_end_answer .test_end_page .page .pagination span.active { background-color: #ed710e; color: #fff; }
 
@@ -1252,7 +1252,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 @media screen and (min-width: 1024px) { main .test_end_area.test_end_answer .test_end_page { flex-direction: row; position: relative; }
   main .test_end_area.test_end_answer .test_end_page .note_area { position: absolute; left: 0; top: 50%; transform: translate(0px, -50%); }
   main .test_end_area.test_end_answer .test_end_page .note_area .note_icon i { font-size: 25px; }
-  main .test_end_area.test_end_answer .test_end_page .page { width: calc(100% - 171px* 2); }
+  main .test_end_area.test_end_answer .test_end_page .page { width: calc(100% - 171px* 2); width: auto; }
   main .test_end_area.test_end_answer .test_end_page .page .pagination { display: flex; flex-wrap: wrap; }
   main .test_end_area.test_end_answer .test_end_page .leave_next_btn { position: absolute; margin: 0; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 3) / 6); }
