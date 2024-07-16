@@ -206,7 +206,7 @@ main {
 
             // 20240715增加
             width: 80%;
-            margin: 0 auto;
+            margin: 20px auto 70px;
             padding: 20px 0;
             background-color: $QA_area;
             border-radius: 10px;
@@ -658,6 +658,7 @@ main {
                 margin: 0 auto 140px;
 
                 // 20240715增加
+                width: auto;
                 margin: 0 auto;
                 // 20240715增加
 
@@ -1196,7 +1197,7 @@ main {
                     }
 
                     &.icon_area_english {
-                        right: auto;
+                        // right: auto;
                         width: 100%;
                         max-width: none;
                         flex-direction: row;
@@ -1491,10 +1492,22 @@ main {
 
                     &.animal_one {
                         left: 0;
+
+                        &.animal_hipopo{
+                            top: calc(100% - 70px);
+                        }
+
+                        &.animal_camel{
+                            transform: translate(0% , -100%);
+                        }
                     }
 
                     &.animal_two {
                         right: 0;
+
+                        &.animal_hipopo{
+                            top: calc(100% - 70px);
+                        }
                     }
                 }
             }

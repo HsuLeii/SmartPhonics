@@ -1029,7 +1029,7 @@ main .test_end_area .leave_next_btn .score_btn { padding: 10px 0px; background-c
 
 main .test_end_area .leave_next_btn .score_btn:hover { background-color: #ed710e; border: 1px solid #fff; }
 
-main .test_end_area .sky_answer_display_area { display: flex; flex-direction: column; justify-content: center; width: 80%; margin: 0 auto; padding: 20px 0; background-color: #f2f1f199; border-radius: 10px; }
+main .test_end_area .sky_answer_display_area { display: flex; flex-direction: column; justify-content: center; width: 80%; margin: 20px auto 70px; padding: 20px 0; background-color: #f2f1f199; border-radius: 10px; }
 
 main .test_end_area .sky_answer_display_area .sky_answer_selection { width: 80%; max-width: 1200px; margin: 20px auto 0px; display: flex; justify-content: center; }
 
@@ -1169,7 +1169,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon svg { display: flex; font-size: 20px; padding: 10px; border-radius: 10px; }
 
-main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto 140px; margin: 0 auto; }
+main .test_end_area.test_end_answer .test_end_page { position: relative; display: flex; flex-direction: column; width: calc(80% - 20px); max-width: calc(1200px - 20px); padding: 0px 10px; margin: 0 auto 140px; width: auto; margin: 0 auto; }
 
 main .test_end_area.test_end_answer .test_end_page .note_area { display: flex; align-items: center; justify-content: center; }
 
@@ -1258,7 +1258,7 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area.test_end_answer .answer_display_area .answer_display_item { margin: 10px calc((100% - 215px * 3) / 6); }
   main .test_end_area.test_end_answer .icon_area { right: 5px; padding: 10px 0%; border-radius: 10px 0 0 10px; flex-direction: column; max-width: 95px; background-color: transparent; }
   main .test_end_area.test_end_answer .icon_area .icon_item { margin: 5px 0; text-align: center; flex-wrap: wrap; }
-  main .test_end_area.test_end_answer .icon_area.icon_area_english { right: auto; width: 100%; max-width: none; flex-direction: row; justify-content: flex-end; }
+  main .test_end_area.test_end_answer .icon_area.icon_area_english { width: 100%; max-width: none; flex-direction: row; justify-content: flex-end; }
   main .test_end_area.test_end_answer .icon_area.icon_area_english .icon_item { margin: 5px; } }
 
 @media screen and (min-width: 1200px) { main .test_end_area { padding: 40px 0px; }
@@ -1298,7 +1298,10 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
 @media all and (orientation: landscape) { main .test_end_area .animal_area { z-index: -1; }
   main .test_end_area .animal_area .animal_img { position: fixed; width: 10%; }
   main .test_end_area .animal_area .animal_img.animal_one { left: 0; }
-  main .test_end_area .animal_area .animal_img.animal_two { right: 0; } }
+  main .test_end_area .animal_area .animal_img.animal_one.animal_hipopo { top: calc(100% - 70px); }
+  main .test_end_area .animal_area .animal_img.animal_one.animal_camel { transform: translate(0%, -100%); }
+  main .test_end_area .animal_area .animal_img.animal_two { right: 0; }
+  main .test_end_area .animal_area .animal_img.animal_two.animal_hipopo { top: calc(100% - 70px); } }
 
 main .test_area.continue_challenge_area { display: flex; flex-direction: column; margin: 80px auto; }
 
