@@ -1029,7 +1029,7 @@ main .test_end_area .leave_next_btn .score_btn { padding: 10px 0px; background-c
 
 main .test_end_area .leave_next_btn .score_btn:hover { background-color: #ed710e; border: 1px solid #fff; }
 
-main .test_end_area .sky_answer_display_area { display: flex; flex-direction: column; justify-content: center; width: 80%; margin: 20px auto 70px; padding: 20px 0; background-color: #f2f1f199; border-radius: 10px; }
+main .test_end_area .sky_answer_display_area { display: flex; flex-direction: column; justify-content: center; width: 80%; margin: 20px auto 70px; padding: 20px 0; background-color: #f2f1f1d6; border-radius: 10px; }
 
 main .test_end_area .sky_answer_display_area .sky_answer_selection { width: 80%; max-width: 1200px; margin: 20px auto 0px; display: flex; justify-content: center; }
 
