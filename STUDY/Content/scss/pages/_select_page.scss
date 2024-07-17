@@ -544,12 +544,29 @@ main {
           }
 
           .balloon_item {
-            transform: scale(0.9);
+            display: flex;
+            align-items: flex-end;
+            a{
+              transform: scale(0.9);
 
             &:hover {
               transform: scale(0.95);
-              ;
+            }
+            }
 
+            .sound_icon{
+              padding: 5px;
+              background-color: $main_color;
+              border-radius: 10px;
+              line-height: 1;
+
+              svg{
+                color: $white;
+              }
+
+              &:hover{
+                background-color: darken($main_color, 5%);
+              }
             }
           }
 
@@ -782,13 +799,6 @@ main {
 
           }
         }
-
-        .select_page_content {
-
-          .select_page_content_item {
-            width: 15%;
-          }
-        }
       }
     }
   }
@@ -813,6 +823,7 @@ main {
             
           }
         }
+
         .select_page_head {
           .ticket_bg {
             .ticket_area {
@@ -847,6 +858,12 @@ main {
             }
 
 
+          }
+        }
+
+        .select_page_content {
+          .select_page_content_item {
+            width: 15%;
           }
         }
       }

@@ -43,9 +43,60 @@
         </div>
         <div class="study_area exercises_area unit2_area">
             <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
-            <div class="pagination_main_area pagination_main_img_area letter_AN">
-                <div class="pagination_main pagination_main_img">
-                    <img src="../../Content/image/photo/unit/unit03/gif/AN4.gif" />
+            <div class="pagination_main_area pagination_main_drag_area letter_AN">
+                <div class="pagination_main pagination_main_drag">
+                    <div class="pagination_main_drag_item">
+                        <div class="drag_cloze_topic_area">
+                            <div class="drag_area_img">
+                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/AN2.png" alt="">
+                            </div>
+                        </div>
+
+                        <div class="drag_cloze_answer_area">
+                            <div class="drag_cloze_area">
+                                <div class="drag_cloze_item">
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
+                                        <p class="alphabet">
+
+                                        </p>
+                                    </div>
+
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
+                                        <p class="alphabet">
+
+                                        </p>
+                                    </div>
+
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
+                                        <p class="alphabet">
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="drag_cloze_item">
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag1" draggable="true">
+                                        p
+                                    </p>
+                                </button>
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag2" draggable="true">
+                                        a
+                                    </p>
+                                </button>
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag3" draggable="true">
+                                        n
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -53,11 +104,11 @@
                 <div class="progress_area">
                     <div class="progress">
                         <div id="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                            class="progress_bar" style="width: 80%;"></div>
+                            class="progress_bar" style="width: 50%;"></div>
                     </div>
                     <div class="number_page">
                         <p>
-                            4/5
+                            4/8
                         </p>
                     </div>
 
@@ -96,6 +147,11 @@
                     <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100">
                 </div>
             </div>
+        </div>
+
+        <!-- 拖曳提示手勢 -->
+        <div id="drag_pointer" class="drag_pointer" style="display: none;">
+            <i class="fa-regular fa-hand-pointer"></i>
         </div>
     </main>
 
@@ -198,6 +254,73 @@
         }
 
         soundRange.addEventListener("input", updateSoundRangeProperty);
+    </script>
+
+    <!-- 拖曳效果 -->
+    <script>
+        $(".drag").on({
+            "dragstart": function (event) {
+                event.originalEvent.dataTransfer.setData('text', event.target.id)
+            },
+            "dragend": function () {
+                $(".target").removeClass("active");
+            }
+        })
+
+        $(".target").on({
+            "dragenter": function (event) {
+                event.preventDefault();
+                $(this).addClass("active");
+            },
+            "dragover": function (event) {
+                event.preventDefault();
+            },
+            "dragleave": function () {
+                $(this).removeClass("active");
+            },
+            "drop": function (event) {
+                event.preventDefault();
+                // event.stopPropagation(); //停止事件氣泡現象
+                let id = event.originalEvent.dataTransfer.getData('text/plain');
+                $("#" + id).appendTo(event.target);
+
+                // 字母拖曳成功把png圖檔換成對應gif檔
+                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/AN2.gif");
+                $(this).addClass("done");
+            }
+        });
+    </script>
+
+    <!-- 拖曳提示手勢效果 -->
+    <script>
+        setInterval(function () {
+            var dragTopic = $("#dragTopic").offset();
+            var dragAnswer = $("#dragAnswer").offset();
+            var headerHeight = $(".drag_cloze").height();
+
+            $("#drag_pointer").css({
+                left: dragTopic.left,
+                top: dragTopic.top + headerHeight / 2
+            });
+
+            function dragPointer() {
+                $("#drag_pointer").animate({
+                    left: dragAnswer.left,
+                    top: dragAnswer.top + headerHeight / 2,
+                }, 1500);
+                $('#drag_pointer').animate({
+                    left: dragTopic.left,
+                    top: dragTopic.top + headerHeight / 2,
+                }, 0);
+            }
+            var myInterval = setInterval(dragPointer, 1000);
+
+            $("body").mousedown(function () {
+                clearInterval(myInterval);
+                $('#drag_pointer').hide();
+            });
+
+        }, 1000);
     </script>
 
     <!-- 聽聽看Listen 10秒後隱藏 -->
