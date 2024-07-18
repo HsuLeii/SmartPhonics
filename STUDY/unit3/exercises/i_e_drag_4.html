@@ -48,28 +48,31 @@
                     <div class="pagination_main_drag_item">
                         <div class="drag_cloze_topic_area">
                             <div class="drag_area_img">
-                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/i_e4.png" alt="">
+                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/i_e2.png" alt="">
                             </div>
                         </div>
 
                         <div class="drag_cloze_answer_area">
                             <div class="drag_cloze_area">
                                 <div class="drag_cloze_item">
-                                    <div class="drag_cloze">
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
                                         <p class="alphabet">
-                                            b
+
                                         </p>
                                     </div>
 
-                                    <div class="drag_cloze">
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
                                         <p class="alphabet">
-                                            i
+
                                         </p>
                                     </div>
 
-                                    <div class="drag_cloze">
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
                                         <p class="alphabet">
-                                            t
+
                                         </p>
                                     </div>
 
@@ -85,17 +88,22 @@
                             <div class="drag_cloze_item">
                                 <button class="drag_cloze drag">
                                     <p class="alphabet" id="drag1" draggable="true">
+                                        p
+                                    </p>
+                                </button>
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag2" draggable="true">
                                         i
                                     </p>
                                 </button>
                                 <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag2" draggable="true">
-                                        e
+                                    <p class="alphabet" id="drag3" draggable="true">
+                                        n
                                     </p>
                                 </button>
                                 <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag2" draggable="true">
-                                        a
+                                    <p class="alphabet" id="drag4" draggable="true">
+                                        e
                                     </p>
                                 </button>
                             </div>
@@ -108,11 +116,11 @@
                 <div class="progress_area">
                     <div class="progress">
                         <div id="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                            class="progress_bar" style="width: 66.66664%;"></div>
+                            class="progress_bar" style="width: calc(100% / 12 * 4);"></div>
                     </div>
                     <div class="number_page">
                         <p>
-                            4/6
+                            4/12
                         </p>
                     </div>
 
@@ -289,7 +297,7 @@
                 $("#" + id).appendTo(event.target);
 
                 // 字母拖曳成功把png圖檔換成對應gif檔
-                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/i_e4.gif");
+                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/i_e2.gif");
                 $(this).addClass("done");
             }
         });

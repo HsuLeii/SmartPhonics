@@ -48,19 +48,13 @@
                     <div class="pagination_main_drag_item">
                         <div class="drag_cloze_topic_area">
                             <div class="drag_area_img">
-                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/a_e5.png" alt="">
+                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/a_e3.png" alt="">
                             </div>
                         </div>
 
                         <div class="drag_cloze_answer_area">
                             <div class="drag_cloze_area">
                                 <div class="drag_cloze_item">
-                                    <div class="drag_cloze">
-                                        <p class="alphabet">
-                                            t
-                                        </p>
-                                    </div>
-
                                     <div id="dragAnswer" class="drag_cloze target" droppable="true"
                                         style="position: static;">
                                         <p class="alphabet">
@@ -70,7 +64,14 @@
 
                                     <div class="drag_cloze">
                                         <p class="alphabet">
-                                            p
+                                            a
+                                        </p>
+                                    </div>
+
+                                    <div id="dragAnswer" class="drag_cloze target" droppable="true"
+                                        style="position: static;">
+                                        <p class="alphabet">
+
                                         </p>
                                     </div>
                                 </div>
@@ -79,12 +80,17 @@
                             <div class="drag_cloze_item">
                                 <button class="drag_cloze drag">
                                     <p class="alphabet" id="drag1" draggable="true">
-                                        a
+                                        m
                                     </p>
                                 </button>
                                 <button class="drag_cloze drag">
                                     <p class="alphabet" id="drag2" draggable="true">
-                                        e
+                                        a
+                                    </p>
+                                </button>
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag3" draggable="true">
+                                        t
                                     </p>
                                 </button>
                             </div>
@@ -97,11 +103,11 @@
                 <div class="progress_area">
                     <div class="progress">
                         <div id="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                            class="progress_bar" style="width: 83.3333%;"></div>
+                            class="progress_bar" style="width: calc(100% / 12 * 5);"></div>
                     </div>
                     <div class="number_page">
                         <p>
-                            5/6
+                            5/12
                         </p>
                     </div>
 
@@ -278,7 +284,7 @@
                 $("#" + id).appendTo(event.target);
 
                 // 字母拖曳成功把png圖檔換成對應gif檔
-                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/a_e5.gif");
+                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/a_e3.gif");
                 $(this).addClass("done");
                 $("#dragAnswer").children().children("#drag1").text("a");
                 $("#dragAnswer").children().children("#drag2").text("e");
