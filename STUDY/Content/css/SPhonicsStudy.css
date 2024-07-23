@@ -348,7 +348,9 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.drag:disabled { border: 1px solid #ed710e !important; background-color: transparent !important; opacity: 1; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area { display: flex; justify-content: center; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area { display: flex; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item { justify-content: flex-start; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 5px 3px; border: 1px solid #ed710e; background-color: #ed710e; padding: 15px 5px; }
 
@@ -455,6 +457,20 @@ main .study_area.exercises_area.unit2_area .pagination_main_area.letter_i_e { co
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_o_e { color: #1a07a0; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_u_e { color: #3a4875; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_sh { color: #2a91c3; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ch { color: #349238; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ph { color: #df8d84; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_wh { color: #b297c6; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_th { color: #f4ba1c; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ck { color: #eaaa38; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ng { color: #92c384; }
 
 main .study_area.exercises_area.unit2_area .play_area { display: flex; justify-content: center; flex-wrap: wrap; margin: 10px auto; padding: 10px 0; width: 100%; position: relative; }
 

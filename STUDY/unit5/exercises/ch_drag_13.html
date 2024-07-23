@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SmartPhonics英語字母拼讀</title>
+    <meta name="description" content="SmartPhonics英語字母拼讀" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SmartPhonics英語字母拼讀" />
+    <meta property="og:site_name" content="SmartPhonics英語字母拼讀" />
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <!-- 之後改成正式網址的連結 -->
+    <meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="SmartPhonics英語字母拼讀" />
+    <!-- 之後改成正式網址的連結 -->
+    <meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+    <meta itemprop="name" content="SmartPhonics英語字母拼讀">
+    <!-- 之後改成正式網址的連結 -->
+    <meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+    <link rel="shortcut icon" type="image/x-icon" href="../../Content/image/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../../Content/css/bootstrap-5.1.1.min.css" />
+
+    <!-- this page widgets CSS -->
+
+    <!-- my core CSS -->
+    <link rel="stylesheet" href="../../Content/css/SPhonicsStudy.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+    <!-- ------- ------- ------- ------- ------- ------- ------- -->
+    <main>
+        <!-- 最後一頁直接關閉 不是最後一頁跳出Modal確認離開彈跳視窗 -->
+        <div class="navbar-close">
+            <a href="" data-bs-toggle="modal" data-bs-target="#ModalStar">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </a>
+        </div>
+        <div class="study_area exercises_area unit2_area">
+            <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
+            <div class="pagination_main_area pagination_main_img_area letter_ch">
+                <div class="pagination_main pagination_main_img">
+                    <img src="../../Content/image/photo/unit/unit05/gif/ch7.gif" />
+                </div>
+            </div>
+
+            <div class="play_area">
+                <div class="progress_area">
+                    <div class="progress">
+                        <div id="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
+                            class="progress_bar" style="width: calc(100% / 14 * 13);"></div>
+                    </div>
+                    <div class="number_page">
+                        <p>
+                            13/14
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="play_area_btn">
+                    <div class="play_btn_item prev_btn">
+                        <a href="ch_drag_12.html">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </a>
+                    </div>
+
+                    <div class="play_btn_item play_btn">
+                        <div class="listen_hint">
+                            <p>
+                                聽聽看<br />
+                                Listen
+                            </p>
+                        </div>
+                        <a href="">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </a>
+                    </div>
+
+                    <div class="play_btn_item next_btn">
+                        <a href="ch_drag_14.html">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sound_area">
+                    <i class="fa-solid fa-volume-high icon_volume"></i>
+                    <label for="soundRange" class="form-label">
+                    </label>
+                    <input type="range" id="soundRange" name="soundRange" min="0" max="100" value="100">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal確認離開彈跳視窗 -->
+    <div class="modal" id="ModalStar" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-dismiss="modal" aria-label="Close">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_body_text">
+                        <div class="modal_body_leave">
+                            <p>
+                                確定要離開嗎?<br />
+                                離開後，不能獲得一顆 <i class="fa-solid fa-star"></i>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="modal_body_link leave_link">
+                        <a href="" data-bs-dismiss="modal" aria-label="Close">
+                            繼續學習
+                        </a>
+                        <a href="javascript:window.close();">
+                            離開
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------- ------- ------- ------- ------- ------- ------- -->
+    <!-- ------- ------- ------- ------- ------- ------- ------- -->
+
+    <!-- this page widgets CSS -->
+
+    <script src="../../Content/js/jquery-3.5.1.min.js"></script>
+    <script src="../../Content/js/bootstrap-5.1.1.min.js"></script>
+    <script src="../../Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
+
+    <!-- 最終挑戰選擇器 -->
+    <script>
+        $(document).ready(function () {
+            //nowPage (此頁必留)
+            $('header').load('../../header.html', function () {
+                $('.navTab-Index').addClass('nowPage'); //nowPage
+            });
+        });
+    </script>
+
+    <script>
+        //取得聲音range
+        var soundRange = document.getElementById("soundRange");
+
+        //取得聲音距離
+        var soundRangeWidth = (value) => {
+            document.documentElement.style.setProperty("--soundRange", 100 - value + "%");
+            if (value < 1) {
+                $(".icon_volume").removeClass("fa-volume-high");
+                $(".icon_volume").removeClass("fa-volume-low");
+                $(".icon_volume").addClass("fa-volume-xmark");
+
+            } else if (value < 45) {
+                $(".icon_volume").removeClass("fa-volume-xmark");
+                $(".icon_volume").removeClass("fa-volume-high");
+                $(".icon_volume").addClass(" fa-volume-low");
+
+            } else {
+                $(".icon_volume").removeClass("fa-volume-low");
+                $(".icon_volume").removeClass("fa-volume-xmark");
+                $(".icon_volume").addClass("fa-volume-high");
+            }
+        }
+
+        //更改播放距離顏色
+
+        function updateSoundRangeProperty() {
+            soundRangeWidth(soundRange.value);
+        }
+
+        soundRange.addEventListener("input", updateSoundRangeProperty);
+    </script>
+
+    <!-- 聽聽看Listen 10秒後隱藏 -->
+    <script>
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".listen_hint").fadeOut();
+            }, 10000);
+        });
+    </script>
+
+</body>
+
+</html>

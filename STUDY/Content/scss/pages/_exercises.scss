@@ -161,8 +161,6 @@ main {
                                         .drag_cloze {
                                             display: flex;
                                             margin: 5px 3px;
-                                            
-                                            
                                             max-width: 100%;
                                             min-width: calc(30px* 1.7);
                                             min-height: calc(30px* 1.7);
@@ -205,8 +203,8 @@ main {
 
                                     .drag_cloze_area{
                                         display: flex;
-                                        justify-content: center;
                                         .drag_cloze_item{
+                                            justify-content: flex-start;
                                             .drag_cloze{
                                                 margin: 5px 3px;
                                                 border: 1px solid $main_color;
@@ -400,6 +398,29 @@ main {
                     }
                     &.letter_u_e{
                         color: $letter_D;
+                    }
+
+                    // unit5
+                    &.letter_sh{
+                        color: $letter_SH;
+                    }
+                    &.letter_ch{
+                        color: $letter_CH;
+                    }
+                    &.letter_ph{
+                        color: $letter_PH;
+                    }
+                    &.letter_wh{
+                        color: $letter_WH;
+                    }
+                    &.letter_th{
+                        color: $letter_TH;
+                    }
+                    &.letter_ck{
+                        color: $letter_CK;
+                    }
+                    &.letter_ng{
+                        color: $letter_NG;
                     }
                 }
 
