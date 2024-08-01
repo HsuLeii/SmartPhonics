@@ -1174,7 +1174,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn { display: flex; align-items: center; justify-content: flex-end; margin: 15px 0 0; }
 
-main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon { font-size: 15px; position: relative; right: auto; bottom: auto; width: 40px; margin: 10px 0 0 0; }
+main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon { font-size: 15px; position: relative; right: auto; bottom: auto; width: 40px; margin: 10px 0 0 0; color: #fff; }
 
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item .answer_display_item_btn .answer_display_icon svg { display: flex; font-size: 20px; padding: 10px; border-radius: 10px; }
 

@@ -348,7 +348,9 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.drag:disabled { border: 1px solid #ed710e !important; background-color: transparent !important; opacity: 1; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area { display: flex; justify-content: center; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area { display: flex; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item { justify-content: flex-start; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 5px 3px; border: 1px solid #ed710e; background-color: #ed710e; padding: 15px 5px; }
 
@@ -455,6 +457,20 @@ main .study_area.exercises_area.unit2_area .pagination_main_area.letter_i_e { co
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_o_e { color: #1a07a0; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_u_e { color: #3a4875; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_sh { color: #2a91c3; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ch { color: #349238; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ph { color: #df8d84; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_wh { color: #b297c6; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_th { color: #f4ba1c; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ck { color: #eaaa38; }
+
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ng { color: #92c384; }
 
 main .study_area.exercises_area.unit2_area .play_area { display: flex; justify-content: center; flex-wrap: wrap; margin: 10px auto; padding: 10px 0; width: 100%; position: relative; }
 
@@ -907,9 +923,17 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 
 main .study_area.select_page_area .select_page_content .select_page_content_item .star_item .notget_star { display: block; }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item { transform: scale(0.9); }
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item { display: flex; align-items: flex-end; }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item:hover { transform: scale(0.95); }
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item a { transform: scale(0.9); }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item a:hover { transform: scale(0.95); }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon svg { color: #fff; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon:hover { background-color: #d5660d; }
 
 main .study_area.select_page_area .select_page_content .select_page_content_item.get .get_star { display: block; }
 
@@ -945,15 +969,15 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap.star_area .star_item.star_img svg { font-size: 40px; }
   main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 8.5 - 16px); }
   main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 8.5 - 16px) * 1.3); }
-  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::before { width: 60px; height: 60px; }
-  main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::before { width: 60px; height: 60px; } }
 
 @media screen and (min-width: 992px) { main .study_area.select_page_area .map_slide .map_slide_arrow .slide_arrow_item svg { width: 17px; }
   main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap { width: calc((100% - 200px) / 3); }
   main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap.star_area { width: 200px; }
   main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link { width: calc(100% / 10.5 - 16px); }
   main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link.active { width: calc((100% / 10.5 - 16px) * 1.3); }
-  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::after { width: calc(100% + 18px); height: calc(100% + 18px); } }
+  main .study_area.select_page_area .select_page_head .unit_link_btn .unit_link .unit_link_marker .unit_link_marker_inner::after { width: calc(100% + 18px); height: calc(100% + 18px); }
+  main .study_area.select_page_area .select_page_content .select_page_content_item { width: 15%; } }
 
 @media screen and (min-width: 1200px) { main .study_area.select_page_area .map_slide .map_slide_arrow .slide_arrow_item svg { width: 19px; }
   main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .ticket_wrap { width: calc((100% - 215px) / 3); }
