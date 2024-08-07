@@ -510,6 +510,10 @@ main .study_area.exercises_area.unit2_area .play_area .sound_area { position: ab
 
 main .study_area.exercises_area.unit2_area .play_area .sound_area .icon_volume { margin-right: 10px; color: #ed710e; }
 
+main .study_area.exercises_area.connect_test { position: initial; }
+
+main .study_area.exercises_area.connect_test .pagination_main_area { position: initial; }
+
 main .study_area.exercises_area .exercises_area_img { margin: 40px auto; }
 
 main .study_area.exercises_area .exercises_area_img .exercises_area_img_left { width: 100%; }
@@ -651,6 +655,36 @@ main .study_area.exercises_area .exercises_arrow svg:hover { color: #ed710e; }
 main .drag_pointer { position: absolute; transform: translate(calc(53px / 2 - 50%), 0); }
 
 main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
+
+main .connect_area { width: 100%; }
+
+main .connect_area .topic { display: flex; align-items: center; }
+
+main .connect_area .topic .topic_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; margin: 0 10px 0 0; }
+
+main .connect_area .topic .topic_icon svg { color: #fff; }
+
+main .connect_area .connect { position: relative; z-index: 2; width: 95%; }
+
+main .connect_area .connect tr { display: block; margin: 20px auto; }
+
+main .connect_area .connect tr td { position: relative; display: inline-block; }
+
+main .connect_area .connect tr td.connect_icon { width: 15px; }
+
+main .connect_area .connect tr td.connect_num { width: 10px; }
+
+main .connect_area .connect tr td.connect_topic { width: calc(85% / 4 - 25px / 4); }
+
+main .connect_area .connect tr td.connect_space { width: 5%; }
+
+main .connect_area .connect tr td .connect_topic .sound_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; }
+
+main .connect_area .connect tr td .connect_topic .sound_icon svg { color: #fff; }
+
+main .connect_area .connect tr td .connect_topic .sound_icon:hover { background-color: #d5660d; }
+
+main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-index: 1; display: block; }
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_leave { margin: 10px auto; }
 

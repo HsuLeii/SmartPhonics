@@ -572,6 +572,14 @@ main {
                 }
             }
 
+            &.connect_test{
+                position: initial;
+
+                .pagination_main_area{
+                    position: initial;
+                }
+            }
+
             .exercises_area_img {
                 margin: 40px auto;
 
@@ -1000,6 +1008,90 @@ main {
 
     .button_animate {
         animation: btnAnimate 1s infinite ease-in-out;
+    }
+
+
+    .connect_area {
+        width: 100%;
+
+        .topic{
+            display: flex;
+            align-items: center;
+
+            .topic_icon{
+                padding: 5px;
+                background-color: $main_color;
+                border-radius: 10px;
+                line-height: 1;
+                margin: 0 10px 0 0;
+
+                svg{
+                    color: $white;
+                }
+            }
+        }
+
+        .connect {
+            position: relative;
+            z-index: 2;
+            width: 95%;
+
+            tr {
+                display: block;
+                margin: 20px auto;
+
+                td {
+                    
+                    position: relative;
+                    display: inline-block;
+
+                    &.connect_icon{
+                        width: 15px;
+                    }
+
+                    &.connect_num{
+                        width: 10px;
+                    }
+
+                    &.connect_topic{
+                        width: calc(85% / 4 - 25px / 4);
+                    }
+
+                    &.connect_space{
+                        width: 5%;
+                    }
+
+                    .connect_topic {
+                        .sound_icon{
+                            padding: 5px;
+                            background-color: $main_color;
+                            border-radius: 10px;
+                            line-height: 1;
+              
+                            svg{
+                              color: $white;
+                            }
+              
+                            &:hover{
+                              background-color: darken($main_color, 5%);
+                            }
+                          }
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    canvas {
+        border: 0px solid gray;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        // width: 100%;
+        display: block;
     }
 }
 
