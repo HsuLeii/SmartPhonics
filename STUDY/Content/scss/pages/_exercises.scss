@@ -570,6 +570,89 @@ main {
                         }
                     }
                 }
+
+                .test{
+                    .topic{
+                        display: flex;
+                        align-items: center;
+                        margin: 20px auto;
+            
+                        .topic_icon{
+                            padding: 5px;
+                            background-color: $main_color;
+                            border-radius: 10px;
+                            line-height: 1;
+                            margin: 0 10px 0 0;
+            
+                            svg{
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    .test_topic_area{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 20px auto;
+
+                        .test_topic_item{
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            margin: 20px auto;
+
+                            .test_icon{
+                                width: 30px;
+                                margin: 0 5px 0 0;
+                            }
+
+                            .test_num{
+                                width: 30px;
+                                margin: 0 5px 0 0;
+                            }
+
+                            .test_answer_item{
+                                margin: 0 10px;
+                                button{
+                                    padding: 10px 20px;
+                                    background-color: $drag_cloze;
+                                    
+                                    p{
+                                        font-size: 30px;
+                                        color: $white;
+                                    }
+                                }
+                            }
+                        }
+
+                        
+
+                        .connect_icon{
+                            width: 15px;
+                        }
+    
+                        .connect_num{
+                            width: 10px;
+                        }
+
+                        .sound_icon{
+                            padding: 5px;
+                            background-color: $main_color;
+                            border-radius: 10px;
+                            line-height: 1;
+              
+                            svg{
+                              color: $white;
+                            }
+              
+                            &:hover{
+                              background-color: darken($main_color, 5%);
+                            }
+                          }
+                    }
+
+                    
+                }
             }
 
             &.connect_test{
@@ -577,6 +660,10 @@ main {
 
                 .pagination_main_area{
                     position: initial;
+
+                    .pagination_main{
+                        width: 100%;
+                    }
                 }
             }
 
@@ -1014,22 +1101,7 @@ main {
     .connect_area {
         width: 100%;
 
-        .topic{
-            display: flex;
-            align-items: center;
-
-            .topic_icon{
-                padding: 5px;
-                background-color: $main_color;
-                border-radius: 10px;
-                line-height: 1;
-                margin: 0 10px 0 0;
-
-                svg{
-                    color: $white;
-                }
-            }
-        }
+        
 
         .connect {
             position: relative;
@@ -1045,37 +1117,18 @@ main {
                     position: relative;
                     display: inline-block;
 
-                    &.connect_icon{
-                        width: 15px;
-                    }
-
-                    &.connect_num{
-                        width: 10px;
-                    }
+                    
 
                     &.connect_topic{
-                        width: calc(85% / 4 - 25px / 4);
+                        width: calc(20% - 55px / 4);
                     }
 
                     &.connect_space{
-                        width: 5%;
+                        width: 15px;
                     }
 
-                    .connect_topic {
-                        .sound_icon{
-                            padding: 5px;
-                            background-color: $main_color;
-                            border-radius: 10px;
-                            line-height: 1;
-              
-                            svg{
-                              color: $white;
-                            }
-              
-                            &:hover{
-                              background-color: darken($main_color, 5%);
-                            }
-                          }
+                    &.connect_topic {
+                        
                     }
                 }
             }
@@ -1121,6 +1174,29 @@ main {
                     &.leave_link {
                         a {
                             margin: 0 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 500px){
+    main {
+        .study_area {
+            &.exercises_area {
+                &.unit2_area {
+                    .test{
+                        .test_topic_area{
+                            .test_topic_item{
+                                .test_answer_item{
+                                    button{
+                                        margin: 0 10px;
+                                        padding: 10px 30px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

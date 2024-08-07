@@ -510,9 +510,41 @@ main .study_area.exercises_area.unit2_area .play_area .sound_area { position: ab
 
 main .study_area.exercises_area.unit2_area .play_area .sound_area .icon_volume { margin-right: 10px; color: #ed710e; }
 
+main .study_area.exercises_area.unit2_area .test .topic { display: flex; align-items: center; margin: 20px auto; }
+
+main .study_area.exercises_area.unit2_area .test .topic .topic_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; margin: 0 10px 0 0; }
+
+main .study_area.exercises_area.unit2_area .test .topic .topic_icon svg { color: #fff; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area { display: flex; flex-wrap: wrap; margin: 20px auto; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item { width: 100%; display: flex; align-items: center; margin: 20px auto; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_icon { width: 30px; margin: 0 5px 0 0; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_num { width: 30px; margin: 0 5px 0 0; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_answer_item { margin: 0 10px; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_answer_item button { padding: 10px 20px; background-color: #70ace3; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_answer_item button p { font-size: 30px; color: #fff; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .connect_icon { width: 15px; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .connect_num { width: 10px; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .sound_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .sound_icon svg { color: #fff; }
+
+main .study_area.exercises_area.unit2_area .test .test_topic_area .sound_icon:hover { background-color: #d5660d; }
+
 main .study_area.exercises_area.connect_test { position: initial; }
 
 main .study_area.exercises_area.connect_test .pagination_main_area { position: initial; }
+
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main { width: 100%; }
 
 main .study_area.exercises_area .exercises_area_img { margin: 40px auto; }
 
@@ -658,31 +690,15 @@ main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
 
 main .connect_area { width: 100%; }
 
-main .connect_area .topic { display: flex; align-items: center; }
-
-main .connect_area .topic .topic_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; margin: 0 10px 0 0; }
-
-main .connect_area .topic .topic_icon svg { color: #fff; }
-
 main .connect_area .connect { position: relative; z-index: 2; width: 95%; }
 
 main .connect_area .connect tr { display: block; margin: 20px auto; }
 
 main .connect_area .connect tr td { position: relative; display: inline-block; }
 
-main .connect_area .connect tr td.connect_icon { width: 15px; }
+main .connect_area .connect tr td.connect_topic { width: calc(20% - 55px / 4); }
 
-main .connect_area .connect tr td.connect_num { width: 10px; }
-
-main .connect_area .connect tr td.connect_topic { width: calc(85% / 4 - 25px / 4); }
-
-main .connect_area .connect tr td.connect_space { width: 5%; }
-
-main .connect_area .connect tr td .connect_topic .sound_icon { padding: 5px; background-color: #ed710e; border-radius: 10px; line-height: 1; }
-
-main .connect_area .connect tr td .connect_topic .sound_icon svg { color: #fff; }
-
-main .connect_area .connect tr td .connect_topic .sound_icon:hover { background-color: #d5660d; }
+main .connect_area .connect tr td.connect_space { width: 15px; }
 
 main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-index: 1; display: block; }
 
@@ -691,6 +707,8 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_leave p svg { color: #f7b62d; }
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_link.leave_link a { margin: 0 5px; }
+
+@media screen and (min-width: 500px) { main .study_area.exercises_area.unit2_area .test .test_topic_area .test_topic_item .test_answer_item button { margin: 0 10px; padding: 10px 30px; } }
 
 @media screen and (min-width: 576px) { main .study_area.exercises_area { max-width: 1200px; }
   main .study_area.exercises_area.unit2_area { height: calc(100vh - 93.05px - 68.42px - 31px); }
