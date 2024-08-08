@@ -166,6 +166,7 @@ main {
                                             min-height: calc(30px* 1.7);
                                             text-align: center;
                                             cursor: default;
+                                            transform: scale(0.95);
     
                                             .alphabet {
                                                 font-size: 30px;
@@ -197,6 +198,10 @@ main {
                                                     background-color: transparent !important;
                                                     opacity: 1;
                                                 }
+                                            }
+
+                                            &:hover{
+                                                transform: scale(1);
                                             }
                                         }
                                     }
@@ -571,87 +576,159 @@ main {
                     }
                 }
 
-                .test{
-                    .topic{
-                        display: flex;
-                        align-items: center;
-                        margin: 20px auto;
-            
-                        .topic_icon{
-                            padding: 5px;
-                            background-color: $main_color;
-                            border-radius: 10px;
-                            line-height: 1;
-                            margin: 0 10px 0 0;
-            
-                            svg{
-                                color: $white;
+                &.test_form_content{
+                    height: auto;
+                }
+
+                .test_area{
+                    border-color: $main_color;
+
+                    .pagination_main{
+                        padding: 20px;
+
+                        .test_tittle{
+                            width: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            margin: 40px auto;
+
+                            .tittle_img{
+                                max-width: 100px;
+                                margin: 0 0 20px 0;
                             }
                         }
-                    }
 
-                    .test_topic_area{
-                        display: flex;
-                        flex-wrap: wrap;
-                        margin: 20px auto;
-
-                        .test_topic_item{
-                            width: 100%;
+                        .topic{
                             display: flex;
                             align-items: center;
                             margin: 20px auto;
 
-                            .test_icon{
-                                width: 30px;
-                                margin: 0 5px 0 0;
+                            .topic_text{
+                                p{
+                                    font-weight: bold;
+                                }
+                            }
+                
+                            .topic_icon{
+                                padding: 5px;
+                                background-color: $main_color;
+                                border-radius: 10px;
+                                line-height: 1;
+                                margin: 0 10px 0 0;
+                
+                                svg{
+                                    color: $white;
+                                }
                             }
 
-                            .test_num{
-                                width: 30px;
-                                margin: 0 5px 0 0;
+                            .topic_text{
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                            }
+                        }
+    
+                        .test_topic_area{
+                            display: flex;
+                            flex-wrap: wrap;
+                            margin: 20px auto;
+    
+                            .test_topic_item{
+                                width: 100%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                flex-wrap: wrap;
+                                margin: 0 auto;
+                                padding: 15px 0;
+                                border-bottom: 1px dotted $grey;
+
+                                .test_topic_item_left{
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: center;
+                                    margin: 10px 0;
+
+                                    .test_icon{
+                                        width: 25px;
+                                        margin: 0 10px 0 0;
+                                    }
+        
+                                    .test_num{
+                                        width: 30px;
+                                        margin: 0 5px 0 0;
+                                    }
+
+                                    .sound_icon{
+                                        padding: 5px;
+                                        background-color: $main_color;
+                                        border-radius: 10px;
+                                        line-height: 1;
+                          
+                                        svg{
+                                          color: $white;
+                                        }
+                          
+                                        &:hover{
+                                          background-color: darken($main_color, 5%);
+                                        }
+                                      }
+                                }
+
+                                .test_topic_item_right{
+
+                                    .test_answer_item{
+                                        margin: 0 10px;
+                                        button{
+                                            padding: 10px 0px;
+                                            background-color: $drag_cloze;
+                                            transform: scale(0.95);
+                                            min-width: calc(30px* 1.7);
+    
+                                            &:hover{
+                                                transform: scale(1);
+                                            }
+    
+                                            &.active{
+                                                background-color: darken($drag_cloze, 10%);
+                                            }
+                                            
+                                            p{
+                                                font-size: 30px;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+    
+                                &:nth-last-child(1){
+                                    border-bottom: 0;
+                                }
                             }
 
-                            .test_answer_item{
-                                margin: 0 10px;
-                                button{
-                                    padding: 10px 20px;
-                                    background-color: $drag_cloze;
-                                    
-                                    p{
-                                        font-size: 30px;
-                                        color: $white;
+                            &.test_drag_area{
+                                .test_topic_item{
+                                    .test_topic_item_right{
+                                        width: 100%;
+                                        margin: 0 auto;
                                     }
                                 }
                             }
-                        }
 
-                        
 
-                        .connect_icon{
-                            width: 15px;
-                        }
+                            .connect_icon{
+                                width: 15px;
+                            }
+        
+                            .connect_num{
+                                width: 10px;
+                            }
     
-                        .connect_num{
-                            width: 10px;
+                            
                         }
-
-                        .sound_icon{
-                            padding: 5px;
-                            background-color: $main_color;
-                            border-radius: 10px;
-                            line-height: 1;
-              
-                            svg{
-                              color: $white;
-                            }
-              
-                            &:hover{
-                              background-color: darken($main_color, 5%);
-                            }
-                          }
                     }
-
-                    
                 }
             }
 
@@ -1088,6 +1165,22 @@ main {
         }
     }
 
+    .submit_btn{
+        display: block;
+        background-color: $main_color;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin: 40px auto;
+
+        p{
+            color: $white;
+        }
+
+        &:hover{
+            background-color: darken($main_color, 10%);
+        }
+    }
+
     .drag_pointer {
         position: absolute;
         transform: translate(calc(53px / 2 - 50%), 0);
@@ -1187,13 +1280,18 @@ main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
-                    .test{
-                        .test_topic_area{
-                            .test_topic_item{
-                                .test_answer_item{
-                                    button{
-                                        margin: 0 10px;
-                                        padding: 10px 30px;
+                    .test_area{
+                        .pagination_main{
+                            .test_topic_area{
+                                .test_topic_item{
+                                    .test_topic_item_right{
+                                        .test_answer_item{
+                                            button{
+                                                margin: 0 10px;
+                                                padding: 10px 30px;
+                                                min-width: calc(30px* 1.7 + 30px);
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -1258,6 +1356,12 @@ main {
                             .progress {
                                 margin: 15px 25px;
                             }
+                        }
+                    }
+
+                    .test_area{
+                        .pagination_main{
+                            padding: 20px;
                         }
                     }
                 }
@@ -1370,6 +1474,61 @@ main {
                             display: flex;
                         }
                     }
+
+                    .test_area{
+                        .pagination_main{
+
+                            .test_tittle{
+                                flex-direction: row;
+    
+                                .tittle_img{
+                                    margin: 0 20px 0 0;
+                                }
+                            }
+
+                            .topic{
+                                margin: 40px auto;
+                            }
+        
+                            .test_topic_area{
+        
+                                .test_topic_item{
+                                    width: 50%;
+                                    border-left: 1px dotted $grey;
+
+                                    &:nth-last-child(2){
+                                        border-bottom: 0;
+                                    }
+
+                                    &:nth-child(odd){
+                                        border-left:0px ;
+                                    }
+
+                                    .test_topic_item_right{
+                                        .test_answer_item{
+                                            button{
+                                                margin: 0;
+                                                padding: 10px 20px;
+                                                min-width: calc(30px* 1.7 + 20px);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.test_drag_area{
+                                    .test_topic_item{
+                                        width: 100%;
+                                        border-bottom: 1px dotted $grey;
+                                        border-left: 0;
+
+                                        &:nth-last-child(1){
+                                            border-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .exercises_area_img {
@@ -1388,6 +1547,10 @@ main {
                     }
                 }
             }
+        }
+
+        .submit_btn{
+            margin: 60px auto;
         }
 
         .drag_pointer {
@@ -1492,6 +1655,42 @@ main {
                             height: calc(100% - 134.64px);
                         }
                     }
+
+                    .test_area{
+                        .pagination_main{
+        
+                            .test_topic_area{
+        
+                                .test_topic_item{
+                                    .test_topic_item_right{
+                                        .test_answer_item{
+                                            button{
+                                                margin: 0 10px;
+                                                padding: 10px 30px;
+                                                min-width: calc(35px* 1.7 + 30px);
+    
+                                                p{
+                                                    font-size: 35px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                    
+                                }
+
+                                &.test_drag_area{
+                                    .test_topic_item{
+                                        .test_topic_item_right{
+                                            .drag_cloze_answer_area{
+                                                margin: 0 auto;
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
 
                 .exercises_area_img {
@@ -1548,6 +1747,76 @@ main {
 
                         &.pagination_main_img_area{
                             height: calc(100% - 135.05px);
+                        }
+                    }
+
+                    .test_area{
+                        .pagination_main{
+        
+                            .test_topic_area{
+
+                                &.test_drag_area{
+                                    .test_topic_item{
+                                        width: 50%;
+                                        border-left: 1px dotted $grey;
+
+                                        &:nth-last-child(2){
+                                            border-bottom: 0;
+                                        }
+
+                                        &:nth-child(odd){
+                                            border-left: 0;
+                                        }
+
+                                        &:nth-child(3n+1){
+                                            border-right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px){
+    main {
+        .study_area {
+            &.exercises_area {
+                &.unit2_area {
+                    .test_area{
+                        .pagination_main{
+                            .test_topic_area{
+                                .test_topic_item{
+                                    width: 33.33333%;
+                                    margin: 0;
+                                    border-left:0px ;
+
+                                    &:nth-last-child(2){
+                                        border-bottom: 1px dotted $grey;
+                                    }
+
+                                    &:nth-child(3n){
+                                        border-left: 1px dotted $grey;
+                                    }
+
+                                    &:nth-child(3n+1){
+                                        border-right: 1px dotted $grey;
+                                    }
+
+                                    .test_topic_item_right{
+                                        .test_answer_item{
+                                            button{
+                                                margin: 0 10px;
+                                                padding: 10px 30px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
