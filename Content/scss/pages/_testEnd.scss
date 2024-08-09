@@ -940,6 +940,40 @@ main {
                 }
             }
         }
+        &.test_end_nine{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_nine;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_nine;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_ten{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-bottom: 8px solid $test_end_ten;
+                            }
+
+                            &::after{
+                                border: 1.5px solid $test_end_ten;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         // 20240715增加
 
         //20240613新版
@@ -1651,6 +1685,34 @@ main {
                         .scoring_area{
                             &::before{
                                 border-right: 12px solid $test_end_eight;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_nine{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_nine;
+                                border-bottom: 12px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.test_end_ten{
+            .sky_answer_display_area {
+                .sky_test_filter{
+                    .feedback_top{
+                        .scoring_area{
+                            &::before{
+                                border-right: 12px solid $test_end_ten;
                                 border-bottom: 12px solid transparent;
                             }
                         }
