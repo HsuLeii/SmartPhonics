@@ -1238,6 +1238,14 @@ main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .fe
 
 main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #183854; }
 
+main .test_end_area.test_end_nine .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #b1cd31; }
+
+main .test_end_area.test_end_nine .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #b1cd31; }
+
+main .test_end_area.test_end_ten .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-bottom: 8px solid #64a9a5; }
+
+main .test_end_area.test_end_ten .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after { border: 1.5px solid #64a9a5; }
+
 main .test_end_area .leave_link { width: 90%; margin: 0 auto; display: flex; justify-content: flex-end; }
 
 main .test_end_area .leave_link a { color: #fff; background-color: #ed710e; padding: 10px 15px; padding: 3px; border-radius: 10px; }
@@ -1327,7 +1335,9 @@ main .test_end_area .leave_link a:hover { background-color: #d5660d; }
   main .test_end_area.test_end_five .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #b2d9e8; border-bottom: 12px solid transparent; }
   main .test_end_area.test_end_six .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #8cd1e2; border-bottom: 12px solid transparent; }
   main .test_end_area.test_end_seven .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #5f9ac8; border-bottom: 12px solid transparent; }
-  main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #183854; border-bottom: 12px solid transparent; } }
+  main .test_end_area.test_end_eight .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #183854; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_nine .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #b1cd31; border-bottom: 12px solid transparent; }
+  main .test_end_area.test_end_ten .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::before { border-right: 12px solid #64a9a5; border-bottom: 12px solid transparent; } }
 
 @media screen and (min-width: 1400px) { main .test_end_area .get_avatar_area { width: 45%; }
   main .test_end_area .animal_animation_area .gift_box { width: 80%; margin: 0 auto; max-width: 150px; }
