@@ -144,9 +144,9 @@ header .navbar .container-fluid .navbar-toggler .icon-bar + .icon-bar { margin-t
 
 header .navbar .container-fluid .navbar-toggler:hover .icon-bar { background-color: #fff; }
 
-header .navbar .container-fluid .navbar-collapse { justify-content: center; margin: 0; }
+header .navbar .container-fluid .navbar-collapse { margin: 0; display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start; }
 
-header .navbar .container-fluid .navbar-collapse .avatar_img { display: none; }
+header .navbar .container-fluid .navbar-collapse .avatar_img { display: flex; flex-direction: column; align-items: center; order: 1; margin: 0 0 40px; }
 
 header .navbar .container-fluid .navbar-collapse .avatar_img img { width: 70px; }
 
@@ -213,9 +213,9 @@ header .nav_name .nav_name_menu:hover:after { border-bottom: 7px solid #ed710e; 
 @media screen and (min-width: 992px) { header { padding: 15px 20px; }
   header .navbar .container-fluid .navbar-brand { padding: 0; }
   header .navbar .container-fluid .navbar-brand img { width: 260px; }
-  header .navbar .container-fluid .navbar-collapse { justify-content: flex-end; margin: 0; }
-  header .navbar .container-fluid .navbar-collapse .avatar_img { display: flex; }
-  header .navbar .container-fluid .navbar-collapse ul { margin: 0; }
+  header .navbar .container-fluid .navbar-collapse { flex-direction: row; align-items: center; justify-content: flex-end; margin: 0; }
+  header .navbar .container-fluid .navbar-collapse .avatar_img { display: flex; flex-direction: column; align-items: center; margin: 0 10px; }
+  header .navbar .container-fluid .navbar-collapse ul { margin: 0; order: 2; }
   header .navbar .container-fluid .navbar-collapse ul li { margin: 0 10px; padding: 0; }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link { font-size: 17px; }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item.dropdown:hover .nav-link ~ .dropdown-menu { opacity: 1; visibility: visible; }
@@ -354,7 +354,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item { justify-content: flex-start; }
 
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 5px 3px; border: 1px solid #ed710e; background-color: #ed710e; padding: 15px 5px; }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze { margin: 5px 3px; border: 1px solid #ed710e; background-color: #ed710e; }
 
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet { background-color: transparent; border: 0px; cursor: default; }
 
@@ -1106,6 +1106,16 @@ main .map_slide .map_slide_item_area { position: absolute; width: calc(100% - 35
 main .map_slide .map_slide_item_area .map_slide_item { position: absolute; z-index: 1; width: 16.66666%; }
 
 main .map_slide .map_slide_item_area .map_slide_item:hover { transform: scale(1.05); }
+
+main .map_slide .map_slide_item_area .map_slide_item.unopened { filter: grayscale(1); }
+
+main .map_slide .map_slide_item_area .map_slide_item.unopened:hover { transform: scale(1); }
+
+main .map_slide .map_slide_item_area .map_slide_item.unopened:hover .map_slide_item_text { display: flex; }
+
+main .map_slide .map_slide_item_area .map_slide_item.unopened .map_slide_item_link { cursor: auto; }
+
+main .map_slide .map_slide_item_area .map_slide_item.unopened .map_slide_item_text { display: none; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 100%; justify-content: center; background-color: #634218; color: #fff; border-radius: 10px; padding: 5px; }
 
 main .map_slide .map_slide_item_area .map_slide_item .map_slide_item_link { display: block; position: relative; height: 100%; }
 

@@ -23,6 +23,36 @@ main {
                     transform: scale(1.05);
                 }
 
+                &.unopened{
+                    filter: grayscale(1);
+
+                    &:hover{
+                        transform: scale(1);
+                        .map_slide_item_text{
+                            display: flex;
+                        }
+                    }
+
+                    .map_slide_item_link{
+                        cursor: auto;
+                    }
+
+                    .map_slide_item_text{
+                        display: none;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50% , -50%);
+                        width: 100%;
+                        justify-content: center;
+                        background-color: $brown;
+                        color: $white;
+                        border-radius: 10px;
+                        padding: 5px;
+                    }
+
+                }
+
                 .map_slide_item_link{
                     display: block;
                     position: relative;

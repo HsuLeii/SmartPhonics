@@ -1542,7 +1542,7 @@ main .information_area .input_area .form-control.level_introduction_area .level_
 
 main .information_area .input_area .form-control.level_introduction_area .level_introduction_item p { color: #2e3233; }
 
-main .information_area .input_area .form-control.level_introduction_area .level_introduction_item:hover img { border: 1px solid #ed710e; border-radius: 50%; transform: scale(1); }
+main .information_area .input_area .form-control.level_introduction_area .level_introduction_item:hover img { transform: scale(1); }
 
 main .information_area .input_area .form-control.level_introduction_area .level_introduction_item.active img { border: 1px solid #ed710e; border-radius: 50%; transform: scale(1); }
 
