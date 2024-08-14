@@ -66,73 +66,73 @@ main {
 
                             .pagination_main_drag_item {
                                 // 舊版
-                                .drag_cloze_area {
-                                    display: flex;
-                                    justify-content: center;
+                                // .drag_cloze_area {
+                                //     display: flex;
+                                //     justify-content: center;
 
-                                    .drag_cloze_item {
-                                        display: flex;
-                                        flex-wrap: wrap;
-                                        justify-content: flex-start;
+                                //     .drag_cloze_item {
+                                //         display: flex;
+                                //         flex-wrap: wrap;
+                                //         justify-content: flex-start;
 
-                                        .drag_cloze {
-                                            display: flex;
-                                            margin: 5px 3px;
-                                            border-radius: 10px;
-                                            border: 1px solid $main_color;
-                                            background-color: $main_color;
-                                            max-width: 100%;
-                                            min-width: calc(30px* 1.7);
-                                            min-height: calc(30px* 1.7);
-                                            text-align: center;
+                                //         .drag_cloze {
+                                //             display: flex;
+                                //             margin: 5px 3px;
+                                //             border-radius: 10px;
+                                //             border: 1px solid $main_color;
+                                //             background-color: $main_color;
+                                //             max-width: 100%;
+                                //             min-width: calc(30px* 1.7);
+                                //             min-height: calc(30px* 1.7);
+                                //             text-align: center;
 
-                                            .alphabet {
-                                                font-size: 30px;
-                                                min-width: calc(30px* 1.7);
-                                                min-height: calc(30px* 1.7);
-                                                color: $white;
-                                            }
+                                //             .alphabet {
+                                //                 font-size: 30px;
+                                //                 min-width: calc(30px* 1.7);
+                                //                 min-height: calc(30px* 1.7);
+                                //                 color: $white;
+                                //             }
 
-                                            &.target{
-                                                background-color: transparent;
+                                //             &.target{
+                                //                 background-color: transparent;
 
-                                                &.active{
-                                                    background-color: $main_color;
-                                                }
+                                //                 &.active{
+                                //                     background-color: $main_color;
+                                //                 }
 
-                                            }
+                                //             }
 
-                                            &.drag{
-                                                cursor: pointer;
+                                //             &.drag{
+                                //                 cursor: pointer;
 
-                                                &:disabled{
-                                                    border: 1px solid $main_color !important;
-                                                    background-color: transparent !important;
-                                                }
-                                            }
-                                        }
-                                    }
+                                //                 &:disabled{
+                                //                     border: 1px solid $main_color !important;
+                                //                     background-color: transparent !important;
+                                //                 }
+                                //             }
+                                //         }
+                                //     }
 
-                                    &.drag_cloze_topic_area {
-                                        justify-content: center;
-                                    }
-                                }
+                                //     &.drag_cloze_topic_area {
+                                //         justify-content: center;
+                                //     }
+                                // }
 
                                 // 舊版
-                                .drag_answer_area {
-                                    height: calc(100% - 63px);
+                                // .drag_answer_area {
+                                //     height: calc(100% - 63px);
 
-                                    .drag_answer_area_img {
-                                        margin: 0 auto;
-                                        padding: 10px 0;
-                                        height: calc(100% - 63px * 2);
+                                //     .drag_answer_area_img {
+                                //         margin: 0 auto;
+                                //         padding: 10px 0;
+                                //         height: calc(100% - 63px * 2);
 
-                                        img {
-                                            height: 100%;
-                                            object-fit: contain;
-                                        }
-                                    }
-                                }
+                                //         img {
+                                //             height: 100%;
+                                //             object-fit: contain;
+                                //         }
+                                //     }
+                                // }
 
                                 // 新版
                                 .drag_cloze_topic_area{
@@ -162,18 +162,15 @@ main {
                                             display: flex;
                                             margin: 5px 3px;
                                             max-width: 100%;
-                                            min-width: calc(30px* 1.7);
-                                            min-height: calc(30px* 1.7);
                                             text-align: center;
                                             cursor: default;
                                             transform: scale(0.95);
     
                                             .alphabet {
                                                 font-size: 30px;
-                                                min-width: calc(30px* 1.7);
+                                                min-width: calc(30px* 1.7 + 2px);
                                                 min-height: calc(30px* 1.7);
                                                 color: $white;
-
                                                 border-radius: 10px;
                                                 border: 1px solid $drag_cloze;
                                                 background-color: $drag_cloze;
@@ -210,12 +207,23 @@ main {
                                         display: flex;
                                         .drag_cloze_item{
                                             justify-content: flex-start;
+                                            margin: 0 auto;
                                             .drag_cloze{
                                                 margin: 5px 3px;
                                                 border: 1px solid $main_color;
                                                 background-color: $main_color;
+                                                min-width: calc(30px* 1.7 + 10px);
+                                                min-height: calc(30px* 1.7 + 30px);
+                                                transform: scale(1);
+                                                border-radius: 10px;
                                                 // padding: 15px 5px;
                                                 .alphabet {
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    font-size: 30px;
+                                                    min-width: calc(30px* 1.7 + 10px);
+                                                    min-height: calc(30px* 1.7 + 30px);
                                                     background-color: transparent;
                                                     border: 0px;
                                                     cursor: default;
@@ -1261,8 +1269,6 @@ main {
                     }
                 }
 
-
-
                 .modal_body_link {
                     &.leave_link {
                         a {
@@ -1332,12 +1338,12 @@ main {
                                 .pagination_main_drag_item {
 
                                     // 舊版
-                                    .drag_answer_area {
+                                    // .drag_answer_area {
 
-                                        .drag_answer_area_img {
-                                            padding: 20px 0;
-                                        }
-                                    }
+                                    //     .drag_answer_area_img {
+                                    //         padding: 20px 0;
+                                    //     }
+                                    // }
                                 }
 
                             }
@@ -1405,30 +1411,30 @@ main {
                                 .pagination_main_drag_item {
 
                                     // 舊版
-                                    .drag_cloze_area {
-                                        .drag_cloze_item {
-                                            // .drag_cloze {
-                                            //     margin: 10px 5px;
-                                            //     min-width: calc(40px* 1.7);
-                                            //     min-height: calc(40px* 1.7);
+                                    // .drag_cloze_area {
+                                    //     .drag_cloze_item {
+                                    //         .drag_cloze {
+                                    //             margin: 10px 5px;
+                                    //             min-width: calc(40px* 1.7);
+                                    //             min-height: calc(40px* 1.7);
 
-                                            //     .alphabet {
-                                            //         font-size: 40px;
-                                            //         min-width: calc(40px* 1.7);
-                                            //     }
-                                            // }
-                                        }
-                                    }
+                                    //             .alphabet {
+                                    //                 font-size: 40px;
+                                    //                 min-width: calc(40px* 1.7);
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 舊版
-                                    .drag_answer_area {
-                                        height: calc(100% - 90px);
-                                        width: calc(100% - 90px);
+                                    // .drag_answer_area {
+                                    //     height: calc(100% - 90px);
+                                    //     width: calc(100% - 90px);
 
-                                        .drag_answer_area_img {
-                                            height: calc(100% - 90px * 2);
-                                        }
-                                    }
+                                    //     .drag_answer_area_img {
+                                    //         height: calc(100% - 90px * 2);
+                                    //     }
+                                    // }
 
                                     // 新版
                                     .drag_cloze_topic_area{
@@ -1444,13 +1450,11 @@ main {
         
                                             .drag_cloze {
                                                 margin: 10px 5px;
-                                                min-width: calc(40px* 1.7);
-                                                min-height: calc(40px* 1.7);
 
-                                                .alphabet {
-                                                    font-size: 40px;
-                                                    min-width: calc(40px* 1.7);
-                                                    min-height: calc(40px* 1.7);
+                                                .alphabet{
+                                                    font-size: 35px;
+                                                    min-width: calc(35px* 1.7 + 2px);
+                                                    min-height: calc(35px* 1.7);
                                                 }
                                             }
                                         }
@@ -1590,39 +1594,43 @@ main {
 
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
-                                    // 舊版
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
+                                    
+                                    // 舊版
+                                    // display: flex;
+                                    // align-items: center;
+                                    // justify-content: center;
 
                                     // 舊版
-                                    .drag_cloze_area {
-                                        .drag_cloze_item {
-                                            .drag_cloze {
-                                                min-width: calc(50px* 1.7);
-                                                min-height: calc(50px* 1.7);
+                                    // .drag_cloze_area {
+                                    //     .drag_cloze_item {
+                                    //         .drag_cloze {
+                                    //             min-width: calc(50px* 1.7);
+                                    //             min-height: calc(50px* 1.7);
 
-                                                .alphabet {
-                                                    font-size: 50px;
-                                                    min-width: calc(50px* 1.7);
-                                                    min-height: calc(50px* 1.7);
-                                                }
-                                            }
-                                        }
-                                    }
+                                    //             .alphabet {
+                                    //                 font-size: 50px;
+                                    //                 min-width: calc(50px* 1.7);
+                                    //                 min-height: calc(50px* 1.7);
+                                    //             }
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 舊版
-                                    .drag_answer_area {
-                                        height: calc(100% - 107px);
+                                    // .drag_answer_area {
+                                    //     height: calc(100% - 107px);
 
-                                        .drag_answer_area_img {
-                                            height: calc(100% - 107px * 2);
-                                        }
-                                    }
+                                    //     .drag_answer_area_img {
+                                    //         height: calc(100% - 107px * 2);
+                                    //     }
+                                    // }
 
                                     // 新版
                                     .drag_cloze_topic_area{
-                                        width: 30%;
+                                        width: 20%;
 
                                         .drag_area_img{
                                             height: auto;
@@ -1631,17 +1639,15 @@ main {
 
                                     // 新版
                                     .drag_cloze_answer_area{
-                                        width: 65%;
+                                        width: 80%;
     
                                         .drag_cloze_item {
                                             .drag_cloze {
-                                                min-width: calc(50px* 1.7);
-                                                min-height: calc(50px* 1.7);
 
                                                 .alphabet {
-                                                    font-size: 50px;
-                                                    min-width: calc(50px* 1.7);
-                                                    min-height: calc(50px* 1.7);
+                                                    font-size: 40px;
+                                                    min-width: calc(40px* 1.7 + 2px);
+                                                    min-height: calc(40px* 1.7);
                                                 }
                                             }
                                         }
@@ -1732,6 +1738,39 @@ main {
     }
 }
 
+@media screen and (min-width: 1200px) {
+    main {
+
+        .study_area {
+            &.exercises_area {
+                &.unit2_area {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+                                    // 新版
+                                    .drag_cloze_topic_area{
+                                        width: 30%;
+                                    }
+
+                                    // 新版
+                                    .drag_cloze_answer_area{
+                                        width: 65%;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1400px) {
     main {
         .study_area {
@@ -1740,6 +1779,43 @@ main {
                 &.unit2_area {
                     .pagination_main_area {
                         min-height: calc(100% - 135.05px);
+
+                        .pagination_main{
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+
+                                    // 新版
+                                    .drag_cloze_answer_area{
+                                        .drag_cloze_item {
+                                            .drag_cloze {
+
+                                                .alphabet {
+                                                    font-size: 45px;
+                                                    min-width: calc(45px* 1.7 + 2px);
+                                                    min-height: calc(45px* 1.7);
+                                                }
+                                            }
+                                        }
+        
+                                        .drag_cloze_area{
+                                            .drag_cloze_item{
+                                                .drag_cloze{
+                                                        min-width: calc(35px* 1.7 + 10px);
+                                                        min-height: calc(35px* 1.7 + 30px);
+                                                    .alphabet {
+                                                        font-size: 35px;
+                                                        min-width: calc(35px* 1.7 + 10px);
+                                                        min-height: calc(35px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        
 
                         &.pagination_main_drag_area {
                             min-height: calc(100% - 135.05px);
@@ -1787,6 +1863,44 @@ main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
+                    .pagination_main_area {
+
+                        .pagination_main{
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+
+                                    // 新版
+                                    .drag_cloze_answer_area{
+                                        .drag_cloze_item {
+                                            .drag_cloze {
+
+                                                .alphabet {
+                                                    font-size: 50px;
+                                                    min-width: calc(50px* 1.7 + 2px);
+                                                    min-height: calc(50px* 1.7);
+                                                }
+                                            }
+                                        }
+        
+                                        .drag_cloze_area{
+                                            .drag_cloze_item{
+                                                .drag_cloze{
+                                                        min-width: calc(40px* 1.7 + 10px);
+                                                        min-height: calc(40px* 1.7 + 30px);
+                                                    .alphabet {
+                                                        font-size: 40px;
+                                                        min-width: calc(40px* 1.7 + 10px);
+                                                        min-height: calc(40px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     .test_area{
                         .pagination_main{
                             .test_topic_area{
@@ -1825,6 +1939,44 @@ main {
     }
 }
 
+@media screen and (min-width: 1920px){
+    main {
+        .study_area {
+            &.exercises_area {
+                &.unit2_area {
+                    .pagination_main_area {
+
+                        .pagination_main{
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+
+                                    // 新版
+                                    .drag_cloze_answer_area{
+        
+                                        .drag_cloze_area{
+                                            .drag_cloze_item{
+                                                .drag_cloze{
+                                                        min-width: calc(50px* 1.7 + 10px);
+                                                        min-height: calc(50px* 1.7 + 30px);
+                                                    .alphabet {
+                                                        font-size: 50px;
+                                                        min-width: calc(50px* 1.7 + 10px);
+                                                        min-height: calc(50px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (min-height: 1px) {
     main {
@@ -1840,15 +1992,15 @@ main {
 
                                 .pagination_main_drag_item {
                                     // 舊版
-                                    .drag_answer_area {
+                                    // .drag_answer_area {
 
-                                        .drag_answer_area_img {
+                                    //     .drag_answer_area_img {
 
-                                            img {
-                                                max-height: 120px;
-                                            }
-                                        }
-                                    }
+                                    //         img {
+                                    //             max-height: 120px;
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 新版
                                     .drag_cloze_topic_area{
@@ -1856,7 +2008,7 @@ main {
                                         .drag_area_img{
     
                                             img{
-                                                max-height: 120px;
+                                                max-height: 100px;
                                             }
                                         }
                                     }
@@ -1885,15 +2037,15 @@ main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
                                     // 舊版
-                                    .drag_answer_area {
+                                    // .drag_answer_area {
 
-                                        .drag_answer_area_img {
+                                    //     .drag_answer_area_img {
 
-                                            img {
-                                                max-height: 230px;
-                                            }
-                                        }
-                                    }
+                                    //         img {
+                                    //             max-height: 230px;
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 新版
                                     .drag_cloze_topic_area{
@@ -1931,15 +2083,15 @@ main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
                                     // 舊版
-                                    .drag_answer_area {
+                                    // .drag_answer_area {
 
-                                        .drag_answer_area_img {
+                                    //     .drag_answer_area_img {
 
-                                            img {
-                                                max-height: 270px;
-                                            }
-                                        }
-                                    }
+                                    //         img {
+                                    //             max-height: 270px;
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 新版
                                     .drag_cloze_topic_area{
@@ -1974,26 +2126,26 @@ main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
                                     // 舊版
-                                    .drag_answer_area {
+                                    // .drag_answer_area {
 
-                                        .drag_answer_area_img {
+                                    //     .drag_answer_area_img {
 
-                                            img {
-                                                max-height: 300px;
-                                            }
-                                        }
-                                    }
+                                    //         img {
+                                    //             max-height: 300px;
+                                    //         }
+                                    //     }
+                                    // }
 
                                     // 舊版
-                                    .drag_cloze_topic_area{
+                                    // .drag_cloze_topic_area{
     
-                                        .drag_area_img{
+                                    //     .drag_area_img{
     
-                                            img{
-                                                max-height: 300px;
-                                            }
-                                        }
-                                    }
+                                    //         img{
+                                    //             max-height: 300px;
+                                    //         }
+                                    //     }
+                                    // }
                                 }
                             }
                         }
@@ -2047,15 +2199,15 @@ main {
                                     .pagination_main_drag_item {
     
                                         // 舊版
-                                        .drag_cloze_topic_area{
+                                        // .drag_cloze_topic_area{
         
-                                            .drag_area_img{
+                                        //     .drag_area_img{
         
-                                                img{
-                                                    max-height: 300px;
-                                                }
-                                            }
-                                        }
+                                        //         img{
+                                        //             max-height: 300px;
+                                        //         }
+                                        //     }
+                                        // }
                                     }
                                 }
                             }
@@ -2138,15 +2290,15 @@ main {
                                     .pagination_main_drag_item {
     
                                         // 舊版
-                                        .drag_cloze_topic_area{
+                                        // .drag_cloze_topic_area{
         
-                                            .drag_area_img{
+                                        //     .drag_area_img{
         
-                                                img{
-                                                    max-height: 500px;
-                                                }
-                                            }
-                                        }
+                                        //         img{
+                                        //             max-height: 500px;
+                                        //         }
+                                        //     }
+                                        // }
                                     }
                                 }
                             }
