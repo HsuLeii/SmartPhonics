@@ -718,6 +718,14 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_link.leave_link a { margin: 0 5px; }
 
+.modal.modal_test { background-color: rgba(0, 0, 0, 0.85); }
+
+.modal.modal_test .modal-dialog { width: 95%; height: 100%; max-width: none; }
+
+.modal.modal_test .modal-dialog .modal-content { height: 90vh; }
+
+.modal.modal_test .modal-dialog .modal-content iframe { width: 100%; height: 100%; position: relative; z-index: 1; }
+
 @media screen and (min-width: 500px) { main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button { margin: 0 10px; padding: 10px 30px; min-width: calc(30px* 1.7 + 30px); } }
 
 @media screen and (min-width: 576px) { main .study_area.exercises_area { max-width: 1200px; }
