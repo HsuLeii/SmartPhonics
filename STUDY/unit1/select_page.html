@@ -467,16 +467,21 @@
                         <p>Review Aa-Mm</p>
                     </div>
                     <div class="balloon_item">
-                        <a href="http://" target="_blank">
+                        <a href="http://" data-bs-toggle="modal" data-bs-target="#ModalOpenTest">
                             <img src="../Content/image/photo/select_page/button/gift_box.png" alt="">
                         </a>
                     </div>
                     <div class="gift_text">
-                        <p>任務一</p>
+                        <p>挑戰任務</p>
+                    </div>
+                    <div class="gift_link">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#ModalScore">
+                            最新挑戰成績
+                        </a>
                     </div>
                     <div class="gift_hint">
                         <p>
-                            完成測驗且答對全部試題，可以獲得8顆星星喔。
+                            完成測驗且答對全部的試題，可以解鎖三張貼紙喔。
                         </p>
                     </div>
                 </div>
@@ -486,22 +491,247 @@
                         <p>Review Nn-Zz</p>
                     </div>
                     <div class="balloon_item">
-                        <a href="http://" target="_blank">
-                            <img src="../Content/image/photo/select_page/button/gift_box.png" alt="">
+                        <a href="http://" data-bs-toggle="modal" data-bs-target="#ModalGiftOpen">
+                            <img src="../Content/image/photo/select_page/button/gift_box_open.png" alt="">
                         </a>
                     </div>
                     <div class="gift_text">
-                        <p>任務二</p>
+                        <p>挑戰任務</p>
                     </div>
                     <div class="gift_hint">
                         <p>
-                            完成測驗且答對全部試題，可以獲得8顆星星喔。
+                            完成測驗且答對全部的試題，可以解鎖三張貼紙喔。
                         </p>
                     </div>
                 </div>
             </div>
 
         </div>
+
+
+        <!-- Modal前往測驗彈跳視窗 -->
+    <div class="modal" id="ModalOpenTest" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-dismiss="modal" aria-label="Close">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_body_img">
+                        <img src="../Content/image/photo/select_page/button/gift_box.png" alt="">
+                    </div>
+                    <div class="modal_body_text">
+                            <p>
+                                你確定要離開動物園，前往挑戰任務嗎?
+                            </p>
+                            <p class="notice_text">
+                                注意! 答對全部的題目，才能解鎖三張貼紙喔!
+                            </p>
+                    </div>
+
+                    <div class="modal_body_link leave_link">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#ModalTest">
+                            前往挑戰
+                        </a>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close">
+                            留在動物園
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal寶箱打開彈跳視窗 -->
+    <div class="modal" id="ModalGiftOpen" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-dismiss="modal" aria-label="Close">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_body_img">
+                        <img src="../Content/image/photo/select_page/button/gift_box_open.png" alt="">
+                    </div>
+                    <div class="modal_body_text">
+                            <p>
+                                你已經完成任務，本次將不重覆提供貼紙喔!
+                            </p>
+                    </div>
+
+                    <div class="modal_body_link leave_link">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#ModalTest">
+                            前往挑戰
+                        </a>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close">
+                            留在動物園
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Modal測驗iframe -->
+    <div class="modal modal_test" id="ModalTest" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-toggle="modal" data-bs-target="#ModalClose">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                    id=""
+                    title=""
+                    src="https://hsuleii.github.io/SmartPhonics/TEST/land_test_animation_g1.html">
+                  </iframe>
+                </div>
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal成績iframe -->
+    <div class="modal modal_test" id="ModalScore" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-toggle="modal">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe
+                    id=""
+                    title=""
+                    src="https://hsuleii.github.io/SmartPhonics/TEST/test_end_answer_E_1.html">
+                  </iframe>
+                </div>
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal確認離開測驗彈跳視窗 -->
+    <div class="modal" id="ModalClose" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="wood_frame">
+                    <div class="wood_grain wood_grain_top">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_top.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_left">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_left.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_right">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_right.svg" alt="">
+                    </div>
+                    <div class="wood_grain wood_grain_bottom">
+                        <img src="../../Content/image/photo/map/svg/wood_grain_bottom.svg" alt="">
+                    </div>
+                </div>
+                <div class="modal-header">
+                    <button type="button" class="modal_close" data-bs-dismiss="modal" aria-label="Close">
+                        <p>
+                            <i class="fa-regular fa-circle-xmark"></i>
+                        </p>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_body_text">
+                        <div class="modal_body_leave">
+                            <p>
+                                確定要離開嗎？離開後，要重新作答哦。
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="modal_body_link leave_link">
+                        <a href="" data-bs-toggle="modal" data-bs-target="#ModalTest">
+                            繼續挑戰
+                        </a>
+                        <a href="" data-bs-dismiss="modal" aria-label="Close">
+                            前往動物園
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
     </main>
 
     <!-- Modal星星兌換彈跳視窗 -->

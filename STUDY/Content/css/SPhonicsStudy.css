@@ -716,6 +716,8 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_leave p svg { color: #f7b62d; }
 
+.modal .modal-dialog .modal-content .modal-body .modal_body_text .notice_text { color: #db4a49; }
+
 .modal .modal-dialog .modal-content .modal-body .modal_body_link.leave_link a { margin: 0 5px; }
 
 .modal.modal_test { background-color: rgba(0, 0, 0, 0.85); }
@@ -1004,7 +1006,11 @@ main .study_area.select_page_area .select_page_content { width: 80%; max-width: 
 
 main .study_area.select_page_area .select_page_content .select_page_content_item { position: relative; width: 40%; margin: 20px 5%; }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item .star_item { display: flex; justify-content: center; margin: 0 auto 5px; }
+main .study_area.select_page_area .select_page_content .select_page_content_item .star_item { display: flex; justify-content: center; flex-wrap: wrap; margin: 0 auto 5px; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .star_item .star_item_icon.get .get_star { display: block; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .star_item .star_item_icon.get .notget_star { display: none; }
 
 main .study_area.select_page_area .select_page_content .select_page_content_item .star_item svg { color: #f7b62d; font-size: 20px; }
 
@@ -1030,7 +1036,11 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 
 main .study_area.select_page_area .select_page_content .select_page_content_item .gift_text { display: flex; justify-content: center; }
 
-main .study_area.select_page_area .select_page_content .select_page_content_item .gift_hint { display: none; justify-content: center; width: 100%; position: absolute; top: 100%; left: 50%; transform: translate(-50%, -20px); z-index: 1; transition: .5s; color: #fff; background-color: #634218; padding: 5px; border-radius: 10px; }
+main .study_area.select_page_area .select_page_content .select_page_content_item .gift_link { position: relative; z-index: 2; background-color: #ed710e; display: flex; justify-content: center; border-radius: 10px; margin: 10px auto; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .gift_link a { color: #fff; padding: 5px; }
+
+main .study_area.select_page_area .select_page_content .select_page_content_item .gift_hint { display: none; justify-content: center; width: 100%; position: absolute; top: 100%; left: 50%; transform: translate(-50%, 0); z-index: 1; transition: .5s; color: #fff; background-color: #634218; padding: 5px; border-radius: 10px; }
 
 main .study_area.select_page_area .select_page_content .select_page_content_item:hover .gift_hint { display: flex; }
 
