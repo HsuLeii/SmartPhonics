@@ -118,13 +118,10 @@
 
                             <table class="connect">
                                 <tr>
-                                    <td class="connect_icon">
-                                        <i class="fa-solid fa-ear-listen"></i>
-                                    </td>
                                     <td class="connect_num">
                                         <p>1</p>
                                     </td>
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="aa1">
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
@@ -138,7 +135,7 @@
                                         </div>
                                     </td>
                                     
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="cc1">
                                             <p>A</p>
                                         </div>
@@ -151,13 +148,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="connect_icon">
-                                        <i class="fa-solid fa-ear-listen"></i>
-                                    </td>
                                     <td class="connect_num">
                                         <p>2</p>
                                     </td>
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="aa2">
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
@@ -170,7 +164,7 @@
                                             <p>B</p>
                                         </div>
                                     </td>
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="cc2">
                                             <p>B</p>
                                         </div>
@@ -183,13 +177,10 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="connect_icon">
-                                        <i class="fa-solid fa-ear-listen"></i>
-                                    </td>
                                     <td class="connect_num">
                                         <p>3</p>
                                     </td>
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="aa3">
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
@@ -202,7 +193,7 @@
                                             <p>C</p>
                                         </div>
                                     </td>
-                                    <td class="connect_topic">
+                                    <td class="connect_topic connect_topic_left">
                                         <div id="cc3">
                                             <p>C</p>
                                         </div>
@@ -728,8 +719,8 @@ setborder()
                 context.lineWidth = "2";
                 context.beginPath();
 
-                context.moveTo(aa.offset().left + 7.5 + aa.width(), aa.offset().top + aa.height() / 2);
-                context.lineTo(bb.offset().left - 7.5, bb.offset().top + bb.height() / 2);
+                context.moveTo(aa.offset().left + aa.width() + 5 + 10 , aa.offset().top + aa.height() / 2);
+                context.lineTo(bb.offset().left - 5 - 10 , bb.offset().top + bb.height() / 2);
 
                 context.closePath();
                 context.stroke();
@@ -754,8 +745,8 @@ setborder()
                 context.lineWidth = "2";
                 context.beginPath();
 
-                context.moveTo(cc.offset().left + 7.5 + cc.width(), cc.offset().top + cc.height() / 2);
-                context.lineTo(dd.offset().left - 7.5, dd.offset().top + dd.height() / 2);
+                context.moveTo(cc.offset().left + 5 + 10 + cc.width(), cc.offset().top + cc.height() / 2);
+                context.lineTo(dd.offset().left - 5 - 10 , dd.offset().top + dd.height() / 2);
 
                 context.closePath();
                 context.stroke();
@@ -776,27 +767,27 @@ setborder()
 
                     var aa = $("#aa" + i)
                     context.beginPath();
-                    context.arc(aa.offset().left + aa.width() + 7.5, aa.offset().top + aa.height() / 2, 5,
+                    context.arc(aa.offset().left + aa.width() + 5 + 10 , aa.offset().top + aa.height() / 2, 5,
                         0, 360, false);
                     context.fill(); //畫實心圓
                     context.closePath();
 
                     var bb = $("#bb" + i)
                     context.beginPath();
-                    context.arc(bb.offset().left - 7.5, bb.offset().top + bb.height() / 2, 5, 0, 360, false);
+                    context.arc(bb.offset().left - 5 - 10 , bb.offset().top + bb.height() / 2, 5, 0, 360, false);
                     context.fill(); //畫實心圓
                     context.closePath();
 
                     var cc = $("#cc" + i)
                     context.beginPath();
-                    context.arc(cc.offset().left + cc.width() + 7.5, cc.offset().top + cc.height() / 2, 5,
+                    context.arc(cc.offset().left + cc.width() + 5 + 10 , cc.offset().top + cc.height() / 2, 5,
                         0, 360, false);
                     context.fill(); //畫實心圓
                     context.closePath();
 
                     var dd = $("#dd" + i)
                     context.beginPath();
-                    context.arc(dd.offset().left - 7.5, dd.offset().top + dd.height() / 2, 5, 0, 360, false);
+                    context.arc(dd.offset().left - 5 - 10 , dd.offset().top + dd.height() / 2, 5, 0, 360, false);
                     context.fill(); //畫實心圓
                     context.closePath();
 

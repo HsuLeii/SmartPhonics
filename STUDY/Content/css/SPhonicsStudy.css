@@ -700,15 +700,25 @@ main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
 
 main .connect_area { width: 100%; }
 
-main .connect_area .connect { position: relative; z-index: 2; width: 95%; }
+main .connect_area .topic { display: flex; }
 
-main .connect_area .connect tr { display: block; margin: 20px auto; }
+main .connect_area .connect { position: relative; z-index: 2; width: 100%; }
+
+main .connect_area .connect tr { display: block; margin: 20px auto; display: flex; justify-content: center; align-items: center; }
 
 main .connect_area .connect tr td { position: relative; display: inline-block; }
 
-main .connect_area .connect tr td.connect_topic { width: calc(20% - 55px / 4); }
+main .connect_area .connect tr td.connect_topic { width: calc(25% - 60px - 10px / 4); padding: 10px; }
 
-main .connect_area .connect tr td.connect_space { width: 15px; }
+main .connect_area .connect tr td.connect_topic.connect_topic_left { text-align: right; }
+
+main .connect_area .connect tr td.connect_space { width: 30px; }
+
+main .connect_area .connect tr td.connect_topic .sound_icon { background-color: #ed710e; padding: 5px; }
+
+main .connect_area .connect tr td.connect_topic .sound_icon svg { color: #fff; width: calc(14px * 1.7); }
+
+main .connect_area .connect tr td.connect_topic p { padding: 5px; }
 
 main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-index: 1; display: block; }
 

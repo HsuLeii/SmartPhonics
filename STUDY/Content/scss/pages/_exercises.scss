@@ -1202,34 +1202,53 @@ main {
     .connect_area {
         width: 100%;
 
-        
+        .topic{
+            display: flex;
+        }
 
         .connect {
             position: relative;
             z-index: 2;
-            width: 95%;
+            width: 100%;
 
             tr {
                 display: block;
                 margin: 20px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
                 td {
-                    
                     position: relative;
                     display: inline-block;
 
-                    
-
                     &.connect_topic{
-                        width: calc(20% - 55px / 4);
+                        width: calc(25% - 60px - 10px / 4);
+                        padding: 10px;
+
+                        &.connect_topic_left{
+                            text-align: right;
+                        }
                     }
 
                     &.connect_space{
-                        width: 15px;
+                        width: 30px;
                     }
 
                     &.connect_topic {
-                        
+                        .sound_icon{
+                            background-color: $main_color;
+                            padding: 5px;
+
+                            svg{
+                                color: $white;
+                                width: calc(14px * 1.7);
+                            }
+                        }
+
+                        p{
+                            padding: 5px;
+                        }
                     }
                 }
             }
