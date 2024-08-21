@@ -748,6 +748,134 @@ main {
 
                     .pagination_main{
                         width: 100%;
+
+                        .connect_area {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            max-width: 1200px;
+                            margin: 0 auto;
+                    
+                            .topic{
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin: 40px auto;
+                    
+                                .topic_icon{
+                                    margin: 0 10px;
+                                    svg{
+                                        font-size: 18px;
+                                    }
+                                }
+                    
+                                .topic_text{
+                                    width: auto;
+                                }
+                            }
+                    
+                            .connect {
+                                position: relative;
+                                z-index: 2;
+                                width: 100%;
+
+                                &:nth-child(2){
+                                    border-bottom: 1px dotted $grey;
+                                }
+                    
+                                tr {
+                                    display: block;
+                                    margin: 20px auto;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                    
+                                    td {
+                                        position: relative;
+                                        display: inline-block;
+                    
+                                        &.connect_topic{
+                                            width: calc(50% - 60px - 50px / 4);
+                                            padding: 10px;
+
+                                            .connect_topic_item{
+                                                border: 3px solid transparent;
+                                                display: flex;
+                                                justify-content: center;
+                                                cursor: pointer;
+                                                padding: 10px 0;
+
+                                                &.lock{
+                                                    .sound_icon,
+                                                    .connect_topic_text{
+                                                        border: 1.5px solid $main_color;
+                                                    }
+                                                }
+
+                                                &.done{
+                                                    .sound_icon,
+                                                    .connect_topic_text{
+                                                        border: 1.5px solid $grey;
+                                                    }
+                                                }
+
+                                                .sound_icon{
+                                                    line-height: 1;
+                                                    padding: 5px;
+                        
+                                                    svg{
+                                                        background-color: $main_color;
+                                                        color: $white;
+                                                        font-size: 30px;
+                                                        padding: 5px;
+                                                        border-radius: 10px;
+                                                        height: calc(30px * 1.7);
+                                                        width: calc(30px * 1.7);
+                                                    }
+
+                                                    &:hover{
+                                                        svg{
+                                                            background-color: darken($main_color, 5%);
+                                                        }
+                                                      }
+                                                }
+
+                                                .connect_topic_text{
+                                                    padding: 5px;
+                                                    border-radius: 10px;
+
+                                                    p{
+                                                        display: flex;
+                                                        justify-content: center;
+                                                        background-color: $drag_cloze;
+                                                        width: calc(30px * 1.7 + 10px);
+                                                        font-size: 30px;
+                                                        padding: 5px;
+                                                        border-radius: 10px;
+                                                        color: $white;
+                                                    }
+                                                }
+                                            }
+                    
+                                            &.connect_topic_left{
+                                                text-align: right;
+                                            }
+                                        }
+                    
+                                        &.connect_space{
+                                            width: 30px;
+                                        }
+
+                                        &.connect_icon{
+                                            width: 25px;
+                                            margin: 0 10px 0 0;
+                                        }
+                                    }
+                                }
+                            }
+                    
+                        }
                     }
                 }
             }
@@ -1169,11 +1297,12 @@ main {
 
             }
 
-            
         }
     }
 
     .submit_btn{
+        position: relative;
+        z-index: 2;
         display: block;
         background-color: $main_color;
         padding: 10px 20px;
@@ -1198,72 +1327,12 @@ main {
         animation: btnAnimate 1s infinite ease-in-out;
     }
 
-
-    .connect_area {
-        width: 100%;
-
-        .topic{
-            display: flex;
-        }
-
-        .connect {
-            position: relative;
-            z-index: 2;
-            width: 100%;
-
-            tr {
-                display: block;
-                margin: 20px auto;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                td {
-                    position: relative;
-                    display: inline-block;
-
-                    &.connect_topic{
-                        width: calc(25% - 60px - 10px / 4);
-                        padding: 10px;
-
-                        &.connect_topic_left{
-                            text-align: right;
-                        }
-                    }
-
-                    &.connect_space{
-                        width: 30px;
-                    }
-
-                    &.connect_topic {
-                        .sound_icon{
-                            background-color: $main_color;
-                            padding: 5px;
-
-                            svg{
-                                color: $white;
-                                width: calc(14px * 1.7);
-                            }
-                        }
-
-                        p{
-                            padding: 5px;
-                        }
-                    }
-                }
-            }
-        }
-
-    }
-
-
     canvas {
         border: 0px solid gray;
         position: absolute;
         left: 0;
         top: 0;
         z-index: 1;
-        // width: 100%;
         display: block;
     }
 }
@@ -1416,6 +1485,50 @@ main {
                     .test_area{
                         .pagination_main{
                             padding: 20px;
+                        }
+                    }
+                }
+
+                &.connect_test{
+    
+                    .pagination_main_area{
+    
+                        .pagination_main{
+    
+                            .connect_area {
+                        
+                                .connect {
+
+                                    tr {
+                        
+                                        td {
+                        
+                                            &.connect_topic{
+    
+                                                .connect_topic_item{
+    
+                                                    .sound_icon{
+                            
+                                                        svg{
+                                                            padding: 10px;
+                                                            height: calc(40px * 1.7);
+                                                            width: calc(40px * 1.7);
+                                                        }
+                                                    }
+    
+                                                    .connect_topic_text{
+                                                        p{
+                                                            width: calc(40px * 1.7 + 20px);
+                                                            font-size: 40px;
+                                                            padding: 10px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1575,6 +1688,49 @@ main {
 
                                         &:nth-last-child(1){
                                             border-bottom: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.connect_test{
+    
+                    .pagination_main_area{
+    
+                        .pagination_main{
+    
+                            .connect_area {
+                        
+                                .connect {
+
+                                    tr {
+                        
+                                        td {
+                        
+                                            &.connect_topic{
+    
+                                                .connect_topic_item{
+    
+                                                    .sound_icon{
+                            
+                                                        svg{
+                                                            padding: 10px;
+                                                            height: calc(45px * 1.7);
+                                                            width: calc(45px * 1.7);
+                                                        }
+                                                    }
+    
+                                                    .connect_topic_text{
+                                                        p{
+                                                            width: calc(45px * 1.7 + 20px);
+                                                            font-size: 45px;
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -1747,6 +1903,53 @@ main {
                     }
                 }
 
+                &.connect_test{
+    
+                    .pagination_main_area{
+    
+                        .pagination_main{
+    
+                            .connect_area {
+                        
+                                .connect {
+                                    width: 50%;
+
+                                    &:nth-child(2){
+                                        border-right: 1px dotted $grey;
+                                    }
+
+                                    tr {
+                        
+                                        td {
+                        
+                                            &.connect_topic{
+    
+                                                .connect_topic_item{
+    
+                                                    .sound_icon{
+                            
+                                                        svg{
+                                                            height: calc(50px * 1.7);
+                                                            width: calc(50px * 1.7);
+                                                        }
+                                                    }
+    
+                                                    .connect_topic_text{
+                                                        p{
+                                                            width: calc(50px * 1.7 + 10px);
+                                                            font-size: 50px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
                 .exercises_area_img {
                     // display: flex;
                     // align-items: center;
@@ -1894,6 +2097,48 @@ main {
 
                                         &:nth-child(3n+1){
                                             border-right: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.connect_test{
+    
+                    .pagination_main_area{
+    
+                        .pagination_main{
+    
+                            .connect_area {
+                        
+                                .connect {
+
+                                    tr {
+                        
+                                        td {
+                        
+                                            &.connect_topic{
+    
+                                                .connect_topic_item{
+    
+                                                    .sound_icon{
+                            
+                                                        svg{
+                                                            height: calc(65px * 1.7);
+                                                            width: calc(65px * 1.7);
+                                                        }
+                                                    }
+    
+                                                    .connect_topic_text{
+                                                        p{
+                                                            width: calc(65px * 1.7 + 10px);
+                                                            font-size: 65px;
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }

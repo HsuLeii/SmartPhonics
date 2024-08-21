@@ -52,6 +52,12 @@ h4 {
     font-weight: bold;
 }
 
+h5 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
 p,
 svg {
     font-size: 14px;
@@ -180,6 +186,10 @@ body {
         font-size: 21px;
     }
 
+    h5{
+        font-size: 19px;
+    }
+
     p,
 svg {
         font-size: 15px;
@@ -216,6 +226,10 @@ svg {
         font-size: 23px;
     }
 
+    h5{
+        font-size: 21px;
+    }
+
     p,
 svg {
         font-size: 17px;
@@ -239,6 +253,10 @@ svg {
 }
 
 @media screen and (min-width: 1200px) {
+
+    h5{
+        font-size: 23px;
+    }
 
     p,
 svg {
@@ -273,6 +291,10 @@ svg {
 
     h4 {
         font-size: 27px;
+    }
+
+    h5{
+        font-size: 24px;
     }
 
     p,
