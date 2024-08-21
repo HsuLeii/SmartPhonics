@@ -724,17 +724,6 @@ main {
                                     }
                                 }
                             }
-
-
-                            .connect_icon{
-                                width: 15px;
-                            }
-        
-                            .connect_num{
-                                width: 10px;
-                            }
-    
-                            
                         }
                     }
                 }
@@ -867,7 +856,7 @@ main {
                                             width: 30px;
                                         }
 
-                                        &.connect_icon{
+                                        &.test_icon{
                                             width: 25px;
                                             margin: 0 10px 0 0;
                                         }
@@ -1916,6 +1905,7 @@ main {
 
                                     &:nth-child(2){
                                         border-right: 1px dotted $grey;
+                                        border-bottom: 0px;
                                     }
 
                                     tr {
