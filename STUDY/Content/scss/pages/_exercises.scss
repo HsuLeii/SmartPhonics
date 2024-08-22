@@ -843,7 +843,7 @@ main {
                                         display: inline-block;
 
                                         &.connect_topic {
-                                            width: calc(50% - 30px - 50px / 4);
+                                            width: calc(50% - 30px - 50px / 2);
                                             padding: 10px;
 
                                             .connect_topic_item {
@@ -917,8 +917,9 @@ main {
                                         }
 
                                         &.test_icon {
+                                            position: absolute;
+                                            left: 0;
                                             width: 25px;
-                                            margin: 0 10px 0 0;
                                         }
                                     }
                                 }
@@ -1963,38 +1964,12 @@ main {
                             .connect_area {
 
                                 .connect {
-                                    width: 50%;
+                                    width: 47.5%;
+                                    margin: 0 auto;
 
                                     &:nth-child(2) {
                                         border-right: 1px dotted $grey;
                                         border-bottom: 0px;
-                                    }
-
-                                    tr {
-
-                                        td {
-
-                                            &.connect_topic {
-
-                                                .connect_topic_item {
-
-                                                    .sound_icon {
-
-                                                        svg {
-                                                            height: calc(50px * 1.7);
-                                                            width: calc(50px * 1.7);
-                                                        }
-                                                    }
-
-                                                    .connect_topic_text {
-                                                        p {
-                                                            width: calc(50px * 1.7 + 10px);
-                                                            font-size: 50px;
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
                                     }
                                 }
                             }
@@ -2041,6 +2016,8 @@ main {
     }
 }
 
+
+
 @media screen and (min-width: 1200px) {
     main {
 
@@ -2066,6 +2043,48 @@ main {
                                     }
                                 }
 
+                            }
+                        }
+                    }
+                }
+
+                &.connect_test {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
+                            .connect_area {
+
+                                .connect {
+
+                                    tr {
+
+                                        td {
+
+                                            &.connect_topic {
+
+                                                .connect_topic_item {
+
+                                                    .sound_icon {
+
+                                                        svg {
+                                                            height: calc(50px * 1.7);
+                                                            width: calc(50px * 1.7);
+                                                        }
+                                                    }
+
+                                                    .connect_topic_text {
+                                                        p {
+                                                            width: calc(50px * 1.7 + 20px);
+                                                            font-size: 50px;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }

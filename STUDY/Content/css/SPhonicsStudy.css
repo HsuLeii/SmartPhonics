@@ -570,7 +570,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td { position: relative; display: inline-block; }
 
-main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic { width: calc(50% - 30px - 50px / 4); padding: 10px; }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic { width: calc(50% - 30px - 50px / 2); padding: 10px; }
 
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item { border: 3px solid transparent; display: flex; justify-content: center; cursor: pointer; padding: 10px 0; }
 
@@ -592,7 +592,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_space { width: 30px; }
 
-main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.test_icon { width: 25px; margin: 0 10px 0 0; }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.test_icon { position: absolute; left: 0; width: 25px; }
 
 main .study_area.exercises_area .exercises_area_img { margin: 40px auto; }
 
@@ -814,16 +814,16 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button { margin: 0 10px; padding: 10px 30px; min-width: calc(35px* 1.7 + 30px); }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p { font-size: 35px; }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_drag_area .test_topic_item .test_topic_item_right .drag_cloze_answer_area { margin: 0 auto; width: 100%; }
-  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect { width: 50%; }
+  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect { width: 47.5%; margin: 0 auto; }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect:nth-child(2) { border-right: 1px dotted grey; border-bottom: 0px; }
-  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon svg { height: calc(50px * 1.7); width: calc(50px * 1.7); }
-  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p { width: calc(50px * 1.7 + 10px); font-size: 50px; }
   main .study_area.exercises_area .exercises_arrow { margin: 80px 20px; }
   main .study_area.exercises_area .exercises_arrow svg { font-size: 55px; }
   main .drag_pointer { transform: translate(calc(87px / 2 - 50%), 0); } }
 
 @media screen and (min-width: 1200px) { main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area { width: 30%; }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area { width: 65%; } }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area { width: 65%; }
+  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon svg { height: calc(50px * 1.7); width: calc(50px * 1.7); }
+  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p { width: calc(50px * 1.7 + 20px); font-size: 50px; } }
 
 @media screen and (min-width: 1400px) { main .study_area.exercises_area.unit2_area .pagination_main_area { min-height: calc(100% - 135.05px); }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet { font-size: 45px; min-width: calc(45px* 1.7 + 2px); min-height: calc(45px* 1.7); }
