@@ -290,7 +290,7 @@ header .nav_name .nav_name_menu:hover:after { border-bottom: 7px solid #ed710e; 
   .footer .footer_area .other_logo .other_logo_area .other_logo_img { margin: 10px 40px 10px 0; width: auto; max-width: 250px; }
   .footer .footer_area .footer_copyright { margin: 40px 0 0; } }
 
-main .navbar-close { padding: 15px; display: flex; justify-content: flex-end; }
+main .navbar-close { padding: 15px; display: flex; justify-content: flex-end; position: relative; z-index: 2; }
 
 main .navbar-close a svg { font-size: 35px; color: #2e3233; }
 
@@ -570,7 +570,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td { position: relative; display: inline-block; }
 
-main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic { width: calc(50% - 60px - 50px / 4); padding: 10px; }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic { width: calc(50% - 30px - 50px / 4); padding: 10px; }
 
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item { border: 3px solid transparent; display: flex; justify-content: center; cursor: pointer; padding: 10px 0; }
 
