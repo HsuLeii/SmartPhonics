@@ -3,6 +3,8 @@ main {
         padding: 15px;
         display: flex;
         justify-content: flex-end;
+        position: relative;
+        z-index: 2;
 
         a {
             svg {
@@ -53,10 +55,10 @@ main {
                     .pagination_main {
                         padding: 20px 10px;
 
-                        &.pagination_main_img{
+                        &.pagination_main_img {
                             height: 100%;
-                            
-                            img{
+
+                            img {
                                 height: 100%;
                                 object-fit: contain;
                             }
@@ -135,14 +137,14 @@ main {
                                 // }
 
                                 // 新版
-                                .drag_cloze_topic_area{
+                                .drag_cloze_topic_area {
                                     width: 100%;
                                     margin: 0 auto;
 
-                                    .drag_area_img{
+                                    .drag_area_img {
                                         height: calc(100% - 63px * 2);
 
-                                        img{
+                                        img {
                                             height: 100%;
                                             object-fit: contain;
                                         }
@@ -150,14 +152,14 @@ main {
                                 }
 
                                 // 新版
-                                .drag_cloze_answer_area{
+                                .drag_cloze_answer_area {
                                     width: 100%;
 
                                     .drag_cloze_item {
                                         display: flex;
                                         flex-wrap: wrap;
                                         justify-content: center;
-    
+
                                         .drag_cloze {
                                             display: flex;
                                             margin: 5px 3px;
@@ -165,7 +167,7 @@ main {
                                             text-align: center;
                                             cursor: default;
                                             transform: scale(0.95);
-    
+
                                             .alphabet {
                                                 font-size: 30px;
                                                 min-width: calc(30px* 1.7 + 2px);
@@ -177,38 +179,40 @@ main {
                                                 cursor: pointer;
                                             }
 
-                                            &.target{
-                                                
+                                            &.target {
+
                                                 background-color: transparent;
 
                                                 &.active,
-                                                &.done{
+                                                &.done {
                                                     background-color: $main_color;
                                                 }
 
                                             }
 
-                                            &.drag{
-                                                
-                                                &:disabled{
+                                            &.drag {
+
+                                                &:disabled {
                                                     border: 1px solid $main_color !important;
                                                     background-color: transparent !important;
                                                     opacity: 1;
                                                 }
                                             }
 
-                                            &:hover{
+                                            &:hover {
                                                 transform: scale(1);
                                             }
                                         }
                                     }
 
-                                    .drag_cloze_area{
+                                    .drag_cloze_area {
                                         display: flex;
-                                        .drag_cloze_item{
+
+                                        .drag_cloze_item {
                                             justify-content: flex-start;
                                             margin: 0 auto;
-                                            .drag_cloze{
+
+                                            .drag_cloze {
                                                 margin: 5px 3px;
                                                 border: 1px solid $main_color;
                                                 background-color: $main_color;
@@ -216,6 +220,7 @@ main {
                                                 min-height: calc(30px* 1.7 + 30px);
                                                 transform: scale(1);
                                                 border-radius: 10px;
+
                                                 // padding: 15px 5px;
                                                 .alphabet {
                                                     display: flex;
@@ -228,24 +233,25 @@ main {
                                                     border: 0px;
                                                     cursor: default;
                                                 }
-                                                &.target{
-                                                    
+
+                                                &.target {
+
                                                     background-color: #ed710e20;
-    
+
                                                     &.active,
-                                                    &.done{
+                                                    &.done {
                                                         background-color: $main_color;
                                                     }
-    
+
                                                 }
                                             }
                                         }
                                     }
 
-                                    &.long_vowels{
-                                        .drag_cloze_item{
-                                            .drag_cloze{
-                                                &.drag{
+                                    &.long_vowels {
+                                        .drag_cloze_item {
+                                            .drag_cloze {
+                                                &.drag {
                                                     padding: 0 10px;
                                                 }
                                             }
@@ -256,14 +262,14 @@ main {
                         }
                     }
 
-                    &.pagination_main_img_area{
+                    &.pagination_main_img_area {
                         height: calc(100% - 157.55px);
                         min-height: 300px;
 
-                        &.context{
+                        &.context {
                             .pagination_main {
-        
-                                &.pagination_main_img{
+
+                                &.pagination_main_img {
                                     height: 50%;
                                     padding: 20px 10px;
                                 }
@@ -272,167 +278,217 @@ main {
                     }
 
                     // unit1、unit2
-                    &.letter_a{
+                    &.letter_a {
                         border-color: $letter_A;
                     }
-                    &.letter_b{
+
+                    &.letter_b {
                         border-color: $letter_B;
                     }
-                    &.letter_c{
+
+                    &.letter_c {
                         border-color: $letter_C;
                     }
-                    &.letter_d{
+
+                    &.letter_d {
                         border-color: $letter_D;
                     }
-                    &.letter_e{
+
+                    &.letter_e {
                         border-color: $letter_E;
                     }
-                    &.letter_f{
+
+                    &.letter_f {
                         border-color: $letter_F;
                     }
-                    &.letter_g{
+
+                    &.letter_g {
                         border-color: $letter_G;
                     }
-                    &.letter_h{
+
+                    &.letter_h {
                         border-color: $letter_H;
                     }
-                    &.letter_i{
+
+                    &.letter_i {
                         border-color: $letter_I;
                     }
-                    &.letter_j{
+
+                    &.letter_j {
                         border-color: $letter_J;
                     }
-                    &.letter_k{
+
+                    &.letter_k {
                         border-color: $letter_K;
                     }
-                    &.letter_l{
+
+                    &.letter_l {
                         border-color: $letter_L;
                     }
-                    &.letter_m{
+
+                    &.letter_m {
                         border-color: $letter_M;
                     }
-                    &.letter_n{
+
+                    &.letter_n {
                         border-color: $letter_N;
                     }
-                    &.letter_o{
+
+                    &.letter_o {
                         border-color: $letter_O;
                     }
-                    &.letter_p{
+
+                    &.letter_p {
                         border-color: $letter_P;
                     }
-                    &.letter_q{
+
+                    &.letter_q {
                         border-color: $letter_Q;
                     }
-                    &.letter_r{
+
+                    &.letter_r {
                         border-color: $letter_R;
                     }
-                    &.letter_s{
+
+                    &.letter_s {
                         border-color: $letter_S;
                     }
-                    &.letter_t{
+
+                    &.letter_t {
                         border-color: $letter_T;
                     }
-                    &.letter_u{
+
+                    &.letter_u {
                         border-color: $letter_U;
                     }
-                    &.letter_v{
+
+                    &.letter_v {
                         border-color: $letter_V;
                     }
-                    &.letter_w{
+
+                    &.letter_w {
                         border-color: $letter_W;
                     }
-                    &.letter_x{
+
+                    &.letter_x {
                         border-color: $letter_X;
                     }
-                    &.letter_y{
+
+                    &.letter_y {
                         border-color: $letter_Y;
                     }
-                    &.letter_z{
+
+                    &.letter_z {
                         border-color: $letter_Z;
                     }
 
                     // unit3
-                    &.letter_AN{
+                    &.letter_AN {
                         color: $letter_A;
                     }
-                    &.letter_AP{
+
+                    &.letter_AP {
                         color: $letter_A;
                     }
-                    &.letter_AT{
+
+                    &.letter_AT {
                         color: $letter_A;
                     }
-                    &.letter_ED{
+
+                    &.letter_ED {
                         color: $letter_O;
                     }
-                    &.letter_EN{
+
+                    &.letter_EN {
                         color: $letter_O;
                     }
-                    &.letter_ET{
+
+                    &.letter_ET {
                         color: $letter_O;
                     }
-                    &.letter_IG{
+
+                    &.letter_IG {
                         color: $letter_H;
                     }
-                    &.letter_IN{
+
+                    &.letter_IN {
                         color: $letter_H;
                     }
-                    &.letter_IP{
+
+                    &.letter_IP {
                         color: $letter_H;
                     }
-                    &.letter_OP{
+
+                    &.letter_OP {
                         color: $letter_F;
                     }
-                    &.letter_OT{
+
+                    &.letter_OT {
                         color: $letter_F;
                     }
-                    &.letter_OX{
+
+                    &.letter_OX {
                         color: $letter_F;
                     }
-                    &.letter_UG{
+
+                    &.letter_UG {
                         color: $letter_UG
                     }
-                    &.letter_UN{
+
+                    &.letter_UN {
                         color: $letter_UG
                     }
-                    &.letter_UP{
+
+                    &.letter_UP {
                         color: $letter_UG
                     }
-                    &.letter_a_e{
+
+                    &.letter_a_e {
                         color: $letter_a_e;
                     }
-                    &.letter_e_e{
+
+                    &.letter_e_e {
                         color: $letter_e_e;
                     }
-                    &.letter_i_e{
+
+                    &.letter_i_e {
                         color: $letter_i_e;
                     }
-                    &.letter_o_e{
+
+                    &.letter_o_e {
                         color: $letter_o_e;
                     }
-                    &.letter_u_e{
+
+                    &.letter_u_e {
                         color: $letter_u_e;
                     }
 
                     // unit5
-                    &.letter_sh{
+                    &.letter_sh {
                         color: $letter_SH;
                     }
-                    &.letter_ch{
+
+                    &.letter_ch {
                         color: $letter_CH;
                     }
-                    &.letter_ph{
+
+                    &.letter_ph {
                         color: $letter_PH;
                     }
-                    &.letter_wh{
+
+                    &.letter_wh {
                         color: $letter_WH;
                     }
-                    &.letter_th{
+
+                    &.letter_th {
                         color: $letter_TH;
                     }
-                    &.letter_ck{
+
+                    &.letter_ck {
                         color: $letter_CK;
                     }
-                    &.letter_ng{
+
+                    &.letter_ng {
                         color: $letter_NG;
                     }
                 }
@@ -510,7 +566,7 @@ main {
                                     position: absolute;
                                     left: 50%;
                                     top: 0;
-                                    transform: translate(-50% , calc(-100% - 15px));
+                                    transform: translate(-50%, calc(-100% - 15px));
                                     background-color: $brown;
                                     padding: 5px 12px;
                                     border-radius: 10px;
@@ -584,17 +640,17 @@ main {
                     }
                 }
 
-                &.test_form_content{
+                &.test_form_content {
                     height: auto;
                 }
 
-                .test_area{
+                .test_area {
                     border-color: $main_color;
 
-                    .pagination_main{
+                    .pagination_main {
                         padding: 20px;
 
-                        .test_tittle{
+                        .test_tittle {
                             width: 100%;
                             display: flex;
                             justify-content: center;
@@ -602,48 +658,48 @@ main {
                             flex-direction: column;
                             margin: 40px auto;
 
-                            .tittle_img{
+                            .tittle_img {
                                 max-width: 100px;
                                 margin: 0 0 20px 0;
                             }
                         }
 
-                        .topic{
+                        .topic {
                             display: flex;
                             align-items: center;
                             margin: 20px auto;
 
-                            .topic_text{
-                                p{
+                            .topic_text {
+                                p {
                                     font-weight: bold;
                                 }
                             }
-                
-                            .topic_icon{
+
+                            .topic_icon {
                                 padding: 5px;
                                 background-color: $main_color;
                                 border-radius: 10px;
                                 line-height: 1;
                                 margin: 0 10px 0 0;
-                
-                                svg{
+
+                                svg {
                                     color: $white;
                                 }
                             }
 
-                            .topic_text{
+                            .topic_text {
                                 display: flex;
                                 justify-content: center;
                                 width: 100%;
                             }
                         }
-    
-                        .test_topic_area{
+
+                        .test_topic_area {
                             display: flex;
                             flex-wrap: wrap;
                             margin: 20px auto;
-    
-                            .test_topic_item{
+
+                            .test_topic_item {
                                 width: 100%;
                                 display: flex;
                                 justify-content: center;
@@ -653,72 +709,73 @@ main {
                                 padding: 15px 0;
                                 border-bottom: 1px dotted $grey;
 
-                                .test_topic_item_left{
+                                .test_topic_item_left {
                                     display: flex;
                                     justify-content: flex-start;
                                     align-items: center;
                                     margin: 10px 0;
 
-                                    .test_icon{
+                                    .test_icon {
                                         width: 25px;
                                         margin: 0 10px 0 0;
                                     }
-        
-                                    .test_num{
+
+                                    .test_num {
                                         width: 30px;
                                         margin: 0 5px 0 0;
                                     }
 
-                                    .sound_icon{
+                                    .sound_icon {
                                         padding: 5px;
                                         background-color: $main_color;
                                         border-radius: 10px;
                                         line-height: 1;
-                          
-                                        svg{
-                                          color: $white;
+
+                                        svg {
+                                            color: $white;
                                         }
-                          
-                                        &:hover{
-                                          background-color: darken($main_color, 5%);
+
+                                        &:hover {
+                                            background-color: darken($main_color, 5%);
                                         }
-                                      }
+                                    }
                                 }
 
-                                .test_topic_item_right{
+                                .test_topic_item_right {
 
-                                    .test_answer_item{
+                                    .test_answer_item {
                                         margin: 0 10px;
-                                        button{
+
+                                        button {
                                             padding: 10px 0px;
                                             background-color: $drag_cloze;
                                             transform: scale(0.95);
                                             min-width: calc(30px* 1.7);
-    
-                                            &:hover{
+
+                                            &:hover {
                                                 transform: scale(1);
                                             }
-    
-                                            &.active{
+
+                                            &.active {
                                                 background-color: darken($drag_cloze, 10%);
                                             }
-                                            
-                                            p{
+
+                                            p {
                                                 font-size: 30px;
                                                 color: $white;
                                             }
                                         }
                                     }
                                 }
-    
-                                &:nth-last-child(1){
+
+                                &:nth-last-child(1) {
                                     border-bottom: 0;
                                 }
                             }
 
-                            &.test_drag_area{
-                                .test_topic_item{
-                                    .test_topic_item_right{
+                            &.test_drag_area {
+                                .test_topic_item {
+                                    .test_topic_item_right {
                                         width: 100%;
                                         margin: 0 auto;
                                     }
@@ -729,13 +786,13 @@ main {
                 }
             }
 
-            &.connect_test{
+            &.connect_test {
                 position: initial;
 
-                .pagination_main_area{
+                .pagination_main_area {
                     position: initial;
 
-                    .pagination_main{
+                    .pagination_main {
                         width: 100%;
 
                         .connect_area {
@@ -744,76 +801,79 @@ main {
                             flex-wrap: wrap;
                             max-width: 1200px;
                             margin: 0 auto;
-                    
-                            .topic{
+
+                            .topic {
                                 width: 100%;
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
                                 margin: 40px auto;
-                    
-                                .topic_icon{
+
+                                .topic_icon {
                                     margin: 0 10px;
-                                    svg{
+
+                                    svg {
                                         font-size: 18px;
                                     }
                                 }
-                    
-                                .topic_text{
+
+                                .topic_text {
                                     width: auto;
                                 }
                             }
-                    
+
                             .connect {
                                 position: relative;
                                 z-index: 2;
                                 width: 100%;
 
-                                &:nth-child(2){
+                                &:nth-child(2) {
                                     border-bottom: 1px dotted $grey;
                                 }
-                    
+
                                 tr {
                                     display: block;
                                     margin: 20px auto;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                    
+
                                     td {
                                         position: relative;
                                         display: inline-block;
-                    
-                                        &.connect_topic{
+
+                                        &.connect_topic {
                                             width: calc(50% - 60px - 50px / 4);
                                             padding: 10px;
 
-                                            .connect_topic_item{
+                                            .connect_topic_item {
                                                 border: 3px solid transparent;
                                                 display: flex;
                                                 justify-content: center;
                                                 cursor: pointer;
                                                 padding: 10px 0;
 
-                                                &.lock{
+                                                &.lock {
+
                                                     .sound_icon,
-                                                    .connect_topic_text{
+                                                    .connect_topic_text {
                                                         border: 1.5px solid $main_color;
                                                     }
                                                 }
 
-                                                &.done{
+                                                &.done {
+
                                                     .sound_icon,
-                                                    .connect_topic_text{
+                                                    .connect_topic_text {
                                                         border: 1.5px solid $grey;
                                                     }
                                                 }
 
-                                                .sound_icon{
+                                                .sound_icon {
                                                     line-height: 1;
                                                     padding: 5px;
-                        
-                                                    svg{
+
+                                                    svg {
                                                         background-color: $main_color;
                                                         color: $white;
                                                         font-size: 30px;
@@ -823,18 +883,18 @@ main {
                                                         width: calc(30px * 1.7);
                                                     }
 
-                                                    &:hover{
-                                                        svg{
+                                                    &:hover {
+                                                        svg {
                                                             background-color: darken($main_color, 5%);
                                                         }
-                                                      }
+                                                    }
                                                 }
 
-                                                .connect_topic_text{
+                                                .connect_topic_text {
                                                     padding: 5px;
                                                     border-radius: 10px;
 
-                                                    p{
+                                                    p {
                                                         display: flex;
                                                         justify-content: center;
                                                         background-color: $drag_cloze;
@@ -846,24 +906,24 @@ main {
                                                     }
                                                 }
                                             }
-                    
-                                            &.connect_topic_left{
+
+                                            &.connect_topic_left {
                                                 text-align: right;
                                             }
                                         }
-                    
-                                        &.connect_space{
+
+                                        &.connect_space {
                                             width: 30px;
                                         }
 
-                                        &.test_icon{
+                                        &.test_icon {
                                             width: 25px;
                                             margin: 0 10px 0 0;
                                         }
                                     }
                                 }
                             }
-                    
+
                         }
                     }
                 }
@@ -1289,7 +1349,7 @@ main {
         }
     }
 
-    .submit_btn{
+    .submit_btn {
         position: relative;
         z-index: 2;
         display: block;
@@ -1298,11 +1358,11 @@ main {
         border-radius: 10px;
         margin: 40px auto;
 
-        p{
+        p {
             color: $white;
         }
 
-        &:hover{
+        &:hover {
             background-color: darken($main_color, 10%);
         }
     }
@@ -1345,7 +1405,7 @@ main {
                         }
                     }
 
-                    .notice_text{
+                    .notice_text {
                         color: $main_color_red;
                     }
                 }
@@ -1361,21 +1421,22 @@ main {
         }
     }
 
-    &.modal_test{
+    &.modal_test {
         background-color: rgba(0, 0, 0, 0.85);
-        .modal-dialog{
+
+        .modal-dialog {
             width: 95%;
             height: 100%;
             max-width: none;
 
-            .modal-content{
+            .modal-content {
                 height: 90vh;
 
                 // &::before{
                 //     background-color: transparent;
                 // }
 
-                iframe{
+                iframe {
                     width: 100%;
                     height: 100%;
                     position: relative;
@@ -1387,18 +1448,18 @@ main {
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
     main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
-                    .test_area{
-                        .pagination_main{
-                            .test_topic_area{
-                                .test_topic_item{
-                                    .test_topic_item_right{
-                                        .test_answer_item{
-                                            button{
+                    .test_area {
+                        .pagination_main {
+                            .test_topic_area {
+                                .test_topic_item {
+                                    .test_topic_item_right {
+                                        .test_answer_item {
+                                            button {
                                                 margin: 0 10px;
                                                 padding: 10px 30px;
                                                 min-width: calc(30px* 1.7 + 30px);
@@ -1455,7 +1516,7 @@ main {
                             }
                         }
 
-                        &.pagination_main_img_area{
+                        &.pagination_main_img_area {
                             height: calc(100% - 133.75px);
                         }
 
@@ -1471,42 +1532,42 @@ main {
                         }
                     }
 
-                    .test_area{
-                        .pagination_main{
+                    .test_area {
+                        .pagination_main {
                             padding: 20px;
                         }
                     }
                 }
 
-                &.connect_test{
-    
-                    .pagination_main_area{
-    
-                        .pagination_main{
-    
+                &.connect_test {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
                             .connect_area {
-                        
+
                                 .connect {
 
                                     tr {
-                        
+
                                         td {
-                        
-                                            &.connect_topic{
-    
-                                                .connect_topic_item{
-    
-                                                    .sound_icon{
-                            
-                                                        svg{
+
+                                            &.connect_topic {
+
+                                                .connect_topic_item {
+
+                                                    .sound_icon {
+
+                                                        svg {
                                                             padding: 10px;
                                                             height: calc(40px * 1.7);
                                                             width: calc(40px * 1.7);
                                                         }
                                                     }
-    
-                                                    .connect_topic_text{
-                                                        p{
+
+                                                    .connect_topic_text {
+                                                        p {
                                                             width: calc(40px * 1.7 + 20px);
                                                             font-size: 40px;
                                                             padding: 10px;
@@ -1553,6 +1614,7 @@ main {
             &.exercises_area {
                 &.unit2_area {
                     height: calc(100vh - 93.05px - 31px);
+
                     .pagination_main_area {
                         .pagination_main {
 
@@ -1587,31 +1649,31 @@ main {
                                     // }
 
                                     // 新版
-                                    .drag_cloze_topic_area{
-                                        .drag_area_img{
+                                    .drag_cloze_topic_area {
+                                        .drag_area_img {
                                             height: calc(100% - 70px * 2);
                                         }
                                     }
-    
+
                                     // 新版
-                                    .drag_cloze_answer_area{
-    
+                                    .drag_cloze_answer_area {
+
                                         .drag_cloze_item {
-        
+
                                             .drag_cloze {
                                                 margin: 10px 5px;
 
-                                                .alphabet{
+                                                .alphabet {
                                                     font-size: 35px;
                                                     min-width: calc(35px* 1.7 + 2px);
                                                     min-height: calc(35px* 1.7);
                                                 }
                                             }
                                         }
-    
-                                        .drag_cloze_area{
-                                            .drag_cloze_item{
-                                                .drag_cloze{
+
+                                        .drag_cloze_area {
+                                            .drag_cloze_item {
+                                                .drag_cloze {
                                                     margin: 10px 5px;
                                                 }
                                             }
@@ -1629,38 +1691,38 @@ main {
                         }
                     }
 
-                    .test_area{
-                        .pagination_main{
+                    .test_area {
+                        .pagination_main {
 
-                            .test_tittle{
+                            .test_tittle {
                                 flex-direction: row;
-    
-                                .tittle_img{
+
+                                .tittle_img {
                                     margin: 0 20px 0 0;
                                 }
                             }
 
-                            .topic{
+                            .topic {
                                 margin: 40px auto;
                             }
-        
-                            .test_topic_area{
-        
-                                .test_topic_item{
+
+                            .test_topic_area {
+
+                                .test_topic_item {
                                     width: 50%;
                                     border-left: 1px dotted $grey;
 
-                                    &:nth-last-child(2){
+                                    &:nth-last-child(2) {
                                         border-bottom: 0;
                                     }
 
-                                    &:nth-child(odd){
-                                        border-left:0px ;
+                                    &:nth-child(odd) {
+                                        border-left: 0px;
                                     }
 
-                                    .test_topic_item_right{
-                                        .test_answer_item{
-                                            button{
+                                    .test_topic_item_right {
+                                        .test_answer_item {
+                                            button {
                                                 margin: 0;
                                                 padding: 10px 20px;
                                                 min-width: calc(30px* 1.7 + 20px);
@@ -1669,13 +1731,13 @@ main {
                                     }
                                 }
 
-                                &.test_drag_area{
-                                    .test_topic_item{
+                                &.test_drag_area {
+                                    .test_topic_item {
                                         width: 100%;
                                         border-bottom: 1px dotted $grey;
                                         border-left: 0;
 
-                                        &:nth-last-child(1){
+                                        &:nth-last-child(1) {
                                             border-bottom: 0;
                                         }
                                     }
@@ -1685,35 +1747,35 @@ main {
                     }
                 }
 
-                &.connect_test{
-    
-                    .pagination_main_area{
-    
-                        .pagination_main{
-    
+                &.connect_test {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
                             .connect_area {
-                        
+
                                 .connect {
 
                                     tr {
-                        
+
                                         td {
-                        
-                                            &.connect_topic{
-    
-                                                .connect_topic_item{
-    
-                                                    .sound_icon{
-                            
-                                                        svg{
+
+                                            &.connect_topic {
+
+                                                .connect_topic_item {
+
+                                                    .sound_icon {
+
+                                                        svg {
                                                             padding: 10px;
                                                             height: calc(45px * 1.7);
                                                             width: calc(45px * 1.7);
                                                         }
                                                     }
-    
-                                                    .connect_topic_text{
-                                                        p{
+
+                                                    .connect_topic_text {
+                                                        p {
                                                             width: calc(45px * 1.7 + 20px);
                                                             font-size: 45px;
                                                         }
@@ -1746,7 +1808,7 @@ main {
             }
         }
 
-        .submit_btn{
+        .submit_btn {
             margin: 60px auto;
         }
 
@@ -1790,7 +1852,7 @@ main {
                                     display: flex;
                                     align-items: center;
                                     justify-content: center;
-                                    
+
                                     // 舊版
                                     // display: flex;
                                     // align-items: center;
@@ -1822,18 +1884,18 @@ main {
                                     // }
 
                                     // 新版
-                                    .drag_cloze_topic_area{
+                                    .drag_cloze_topic_area {
                                         width: 20%;
 
-                                        .drag_area_img{
+                                        .drag_area_img {
                                             height: auto;
                                         }
                                     }
 
                                     // 新版
-                                    .drag_cloze_answer_area{
+                                    .drag_cloze_answer_area {
                                         width: 80%;
-    
+
                                         .drag_cloze_item {
                                             .drag_cloze {
 
@@ -1850,37 +1912,37 @@ main {
                             }
                         }
 
-                        &.pagination_main_img_area{
+                        &.pagination_main_img_area {
                             height: calc(100% - 134.64px);
                         }
                     }
 
-                    .test_area{
-                        .pagination_main{
-        
-                            .test_topic_area{
-        
-                                .test_topic_item{
-                                    .test_topic_item_right{
-                                        .test_answer_item{
-                                            button{
+                    .test_area {
+                        .pagination_main {
+
+                            .test_topic_area {
+
+                                .test_topic_item {
+                                    .test_topic_item_right {
+                                        .test_answer_item {
+                                            button {
                                                 margin: 0 10px;
                                                 padding: 10px 30px;
                                                 min-width: calc(35px* 1.7 + 30px);
-    
-                                                p{
+
+                                                p {
                                                     font-size: 35px;
                                                 }
                                             }
                                         }
                                     }
-                                    
+
                                 }
 
-                                &.test_drag_area{
-                                    .test_topic_item{
-                                        .test_topic_item_right{
-                                            .drag_cloze_answer_area{
+                                &.test_drag_area {
+                                    .test_topic_item {
+                                        .test_topic_item_right {
+                                            .drag_cloze_answer_area {
                                                 margin: 0 auto;
                                                 width: 100%;
                                             }
@@ -1892,40 +1954,40 @@ main {
                     }
                 }
 
-                &.connect_test{
-    
-                    .pagination_main_area{
-    
-                        .pagination_main{
-    
+                &.connect_test {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
                             .connect_area {
-                        
+
                                 .connect {
                                     width: 50%;
 
-                                    &:nth-child(2){
+                                    &:nth-child(2) {
                                         border-right: 1px dotted $grey;
                                         border-bottom: 0px;
                                     }
 
                                     tr {
-                        
+
                                         td {
-                        
-                                            &.connect_topic{
-    
-                                                .connect_topic_item{
-    
-                                                    .sound_icon{
-                            
-                                                        svg{
+
+                                            &.connect_topic {
+
+                                                .connect_topic_item {
+
+                                                    .sound_icon {
+
+                                                        svg {
                                                             height: calc(50px * 1.7);
                                                             width: calc(50px * 1.7);
                                                         }
                                                     }
-    
-                                                    .connect_topic_text{
-                                                        p{
+
+                                                    .connect_topic_text {
+                                                        p {
                                                             width: calc(50px * 1.7 + 10px);
                                                             font-size: 50px;
                                                         }
@@ -1992,13 +2054,14 @@ main {
 
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
+
                                     // 新版
-                                    .drag_cloze_topic_area{
+                                    .drag_cloze_topic_area {
                                         width: 30%;
                                     }
 
                                     // 新版
-                                    .drag_cloze_answer_area{
+                                    .drag_cloze_answer_area {
                                         width: 65%;
                                     }
                                 }
@@ -2021,12 +2084,12 @@ main {
                     .pagination_main_area {
                         min-height: calc(100% - 135.05px);
 
-                        .pagination_main{
+                        .pagination_main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
 
                                     // 新版
-                                    .drag_cloze_answer_area{
+                                    .drag_cloze_answer_area {
                                         .drag_cloze_item {
                                             .drag_cloze {
 
@@ -2037,12 +2100,13 @@ main {
                                                 }
                                             }
                                         }
-        
-                                        .drag_cloze_area{
-                                            .drag_cloze_item{
-                                                .drag_cloze{
-                                                        min-width: calc(35px* 1.7 + 10px);
-                                                        min-height: calc(35px* 1.7 + 30px);
+
+                                        .drag_cloze_area {
+                                            .drag_cloze_item {
+                                                .drag_cloze {
+                                                    min-width: calc(35px* 1.7 + 10px);
+                                                    min-height: calc(35px* 1.7 + 30px);
+
                                                     .alphabet {
                                                         font-size: 35px;
                                                         min-width: calc(35px* 1.7 + 10px);
@@ -2056,36 +2120,36 @@ main {
                             }
                         }
 
-                        
+
 
                         &.pagination_main_drag_area {
                             min-height: calc(100% - 135.05px);
                         }
 
-                        &.pagination_main_img_area{
+                        &.pagination_main_img_area {
                             height: calc(100% - 135.05px);
                         }
                     }
 
-                    .test_area{
-                        .pagination_main{
-        
-                            .test_topic_area{
+                    .test_area {
+                        .pagination_main {
 
-                                &.test_drag_area{
-                                    .test_topic_item{
+                            .test_topic_area {
+
+                                &.test_drag_area {
+                                    .test_topic_item {
                                         width: 50%;
                                         border-left: 1px dotted $grey;
 
-                                        &:nth-last-child(2){
+                                        &:nth-last-child(2) {
                                             border-bottom: 0;
                                         }
 
-                                        &:nth-child(odd){
+                                        &:nth-child(odd) {
                                             border-left: 0;
                                         }
 
-                                        &:nth-child(3n+1){
+                                        &:nth-child(3n+1) {
                                             border-right: 0;
                                         }
                                     }
@@ -2095,34 +2159,34 @@ main {
                     }
                 }
 
-                &.connect_test{
-    
-                    .pagination_main_area{
-    
-                        .pagination_main{
-    
+                &.connect_test {
+
+                    .pagination_main_area {
+
+                        .pagination_main {
+
                             .connect_area {
-                        
+
                                 .connect {
 
                                     tr {
-                        
+
                                         td {
-                        
-                                            &.connect_topic{
-    
-                                                .connect_topic_item{
-    
-                                                    .sound_icon{
-                            
-                                                        svg{
+
+                                            &.connect_topic {
+
+                                                .connect_topic_item {
+
+                                                    .sound_icon {
+
+                                                        svg {
                                                             height: calc(65px * 1.7);
                                                             width: calc(65px * 1.7);
                                                         }
                                                     }
-    
-                                                    .connect_topic_text{
-                                                        p{
+
+                                                    .connect_topic_text {
+                                                        p {
                                                             width: calc(65px * 1.7 + 10px);
                                                             font-size: 65px;
                                                         }
@@ -2141,19 +2205,19 @@ main {
     }
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1600px) {
     main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
                     .pagination_main_area {
 
-                        .pagination_main{
+                        .pagination_main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
 
                                     // 新版
-                                    .drag_cloze_answer_area{
+                                    .drag_cloze_answer_area {
                                         .drag_cloze_item {
                                             .drag_cloze {
 
@@ -2164,12 +2228,13 @@ main {
                                                 }
                                             }
                                         }
-        
-                                        .drag_cloze_area{
-                                            .drag_cloze_item{
-                                                .drag_cloze{
-                                                        min-width: calc(40px* 1.7 + 10px);
-                                                        min-height: calc(40px* 1.7 + 30px);
+
+                                        .drag_cloze_area {
+                                            .drag_cloze_item {
+                                                .drag_cloze {
+                                                    min-width: calc(40px* 1.7 + 10px);
+                                                    min-height: calc(40px* 1.7 + 30px);
+
                                                     .alphabet {
                                                         font-size: 40px;
                                                         min-width: calc(40px* 1.7 + 10px);
@@ -2184,29 +2249,29 @@ main {
                         }
                     }
 
-                    .test_area{
-                        .pagination_main{
-                            .test_topic_area{
-                                .test_topic_item{
+                    .test_area {
+                        .pagination_main {
+                            .test_topic_area {
+                                .test_topic_item {
                                     width: 33.33333%;
                                     margin: 0;
-                                    border-left:0px ;
+                                    border-left: 0px;
 
-                                    &:nth-last-child(2){
+                                    &:nth-last-child(2) {
                                         border-bottom: 1px dotted $grey;
                                     }
 
-                                    &:nth-child(3n){
+                                    &:nth-child(3n) {
                                         border-left: 1px dotted $grey;
                                     }
 
-                                    &:nth-child(3n+1){
+                                    &:nth-child(3n+1) {
                                         border-right: 1px dotted $grey;
                                     }
 
-                                    .test_topic_item_right{
-                                        .test_answer_item{
-                                            button{
+                                    .test_topic_item_right {
+                                        .test_answer_item {
+                                            button {
                                                 margin: 0 10px;
                                                 padding: 10px 30px;
                                             }
@@ -2222,25 +2287,26 @@ main {
     }
 }
 
-@media screen and (min-width: 1920px){
+@media screen and (min-width: 1920px) {
     main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
                     .pagination_main_area {
 
-                        .pagination_main{
+                        .pagination_main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
 
                                     // 新版
-                                    .drag_cloze_answer_area{
-        
-                                        .drag_cloze_area{
-                                            .drag_cloze_item{
-                                                .drag_cloze{
-                                                        min-width: calc(50px* 1.7 + 10px);
-                                                        min-height: calc(50px* 1.7 + 30px);
+                                    .drag_cloze_answer_area {
+
+                                        .drag_cloze_area {
+                                            .drag_cloze_item {
+                                                .drag_cloze {
+                                                    min-width: calc(50px* 1.7 + 10px);
+                                                    min-height: calc(50px* 1.7 + 30px);
+
                                                     .alphabet {
                                                         font-size: 50px;
                                                         min-width: calc(50px* 1.7 + 10px);
@@ -2286,11 +2352,11 @@ main {
                                     // }
 
                                     // 新版
-                                    .drag_cloze_topic_area{
-    
-                                        .drag_area_img{
-    
-                                            img{
+                                    .drag_cloze_topic_area {
+
+                                        .drag_area_img {
+
+                                            img {
                                                 max-height: 100px;
                                             }
                                         }
@@ -2331,11 +2397,11 @@ main {
                                     // }
 
                                     // 新版
-                                    .drag_cloze_topic_area{
-    
-                                        .drag_area_img{
-    
-                                            img{
+                                    .drag_cloze_topic_area {
+
+                                        .drag_area_img {
+
+                                            img {
                                                 max-height: 230px;
                                             }
                                         }
@@ -2377,11 +2443,11 @@ main {
                                     // }
 
                                     // 新版
-                                    .drag_cloze_topic_area{
-    
-                                        .drag_area_img{
-    
-                                            img{
+                                    .drag_cloze_topic_area {
+
+                                        .drag_area_img {
+
+                                            img {
                                                 max-height: 270px;
                                             }
                                         }
@@ -2421,9 +2487,9 @@ main {
 
                                     // 舊版
                                     // .drag_cloze_topic_area{
-    
+
                                     //     .drag_area_img{
-    
+
                                     //         img{
                                     //             max-height: 300px;
                                     //         }
@@ -2444,18 +2510,19 @@ main {
     @media screen and (min-height: 300px) {
         main {
             .study_area {
-    
+
                 &.exercises_area {
                     &.unit2_area {
                         .pagination_main_area {
-                            &.pagination_main_img_area{
-    
-                                &.context{
+                            &.pagination_main_img_area {
+
+                                &.context {
                                     flex-direction: row;
                                     justify-content: center;
+
                                     .pagination_main {
-                
-                                        &.pagination_main_img{
+
+                                        &.pagination_main_img {
                                             height: 100%;
                                         }
                                     }
@@ -2471,21 +2538,21 @@ main {
     @media screen and (min-height: 500px) {
         main {
             .study_area {
-    
+
                 &.exercises_area {
                     &.unit2_area {
                         .pagination_main_area {
-    
+
                             .pagination_main {
-    
+
                                 &.pagination_main_drag {
                                     .pagination_main_drag_item {
-    
+
                                         // 舊版
                                         // .drag_cloze_topic_area{
-        
+
                                         //     .drag_area_img{
-        
+
                                         //         img{
                                         //             max-height: 300px;
                                         //         }
@@ -2534,19 +2601,19 @@ main {
 
                 &.exercises_area {
                     display: flex;
-                // align-items: flex-end;
+                    // align-items: flex-end;
 
                     .exercises_area_img {
                         display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 auto;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto;
 
                         .exercises_area_img_left {
                             margin: 80px 5% 80px 0;
                             flex-direction: column;
-                        width: 35%;
-                        margin: 0 5% 0 0;
+                            width: 35%;
+                            margin: 0 5% 0 0;
 
                             .exercises_left_item {
                                 width: 100%;
@@ -2555,8 +2622,8 @@ main {
 
                         .exercises_area_img_right {
                             width: 60%;
-                        max-width: 700px;
-                        margin: 80px 0;
+                            max-width: 700px;
+                            margin: 80px 0;
                         }
                     }
 
@@ -2566,17 +2633,17 @@ main {
 
                     &.unit2_area {
                         .pagination_main_area {
-    
+
                             .pagination_main {
-    
+
                                 &.pagination_main_drag {
                                     .pagination_main_drag_item {
-    
+
                                         // 舊版
                                         // .drag_cloze_topic_area{
-        
+
                                         //     .drag_area_img{
-        
+
                                         //         img{
                                         //             max-height: 500px;
                                         //         }
@@ -2600,28 +2667,28 @@ main {
         main {
             .study_area {
                 &.exercises_area {
-    
+
                     &.unit2_area {
-    
+
                         .pagination_main_area {
-    
+
                             .pagination_main {
-    
+
                                 &.pagination_main_drag {
                                     .pagination_main_drag_item {
                                         display: block;
-    
+
                                         // 新版
-                                        .drag_cloze_topic_area{
+                                        .drag_cloze_topic_area {
                                             width: 100%;
                                         }
-    
+
                                         // 新版
-                                        .drag_cloze_answer_area{
+                                        .drag_cloze_answer_area {
                                             width: 100%;
                                         }
                                     }
-    
+
                                 }
                             }
                         }
