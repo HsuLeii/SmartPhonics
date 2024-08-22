@@ -1391,6 +1391,34 @@ main {
     .modal-dialog {
 
         .modal-content {
+            .iframe_close{
+                position: absolute;
+                z-index: 1;
+                top: -1%;
+                right: -1%;
+                transform: translate(50% , -50%);
+                background-color: $map_slide_bg;
+                padding: 5px;
+                border-radius: 50%;
+                line-height: 1;
+      
+                .modal_close{
+                    p{
+                        line-height: 1;
+                        svg{
+                            color: $brown;
+                            font-size: 25px;
+                        }
+
+
+                        &:hover{
+                            svg{
+                                color: $main_color;
+                            }
+                        }
+                    }
+                }
+            }
 
             .modal-body {
 
@@ -1595,6 +1623,22 @@ main {
 
                     .exercises_area_img_right {
                         width: 80%;
+                    }
+                }
+            }
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .iframe_close{
+                    .modal_close{
+                        p{
+                            svg{
+                                font-size: 30px;
+                            }
+                        }
                     }
                 }
             }
@@ -1815,6 +1859,22 @@ main {
 
         .drag_pointer {
             transform: translate(calc(70px / 2 - 50%), 0);
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            .modal-content {
+                .iframe_close{
+                    .modal_close{
+                        p{
+                            svg{
+                                font-size: 40px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -744,6 +744,14 @@ main .button_animate { animation: btnAnimate 1s infinite ease-in-out; }
 
 main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-index: 1; display: block; }
 
+.modal .modal-dialog .modal-content .iframe_close { position: absolute; z-index: 1; top: -1%; right: -1%; transform: translate(50%, -50%); background-color: #fffbd4; padding: 5px; border-radius: 50%; line-height: 1; }
+
+.modal .modal-dialog .modal-content .iframe_close .modal_close p { line-height: 1; }
+
+.modal .modal-dialog .modal-content .iframe_close .modal_close p svg { color: #634218; font-size: 25px; }
+
+.modal .modal-dialog .modal-content .iframe_close .modal_close p:hover svg { color: #ed710e; }
+
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_leave { margin: 10px auto; }
 
 .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_leave p svg { color: #f7b62d; }
@@ -775,7 +783,8 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon svg { padding: 10px; height: calc(40px * 1.7); width: calc(40px * 1.7); }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p { width: calc(40px * 1.7 + 20px); font-size: 40px; padding: 10px; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 60%; }
-  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 80%; } }
+  main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 80%; }
+  .modal .modal-dialog .modal-content .iframe_close .modal_close p svg { font-size: 30px; } }
 
 @media screen and (min-width: 768px) { main .navbar-close { padding: 0; position: absolute; right: 15px; }
   main .study_area.exercises_area.unit2_area { height: calc(100vh - 93.05px - 31px); }
@@ -799,7 +808,8 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_left .exercises_left_item { width: 47.5%; margin: 40px auto; }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right { width: 100%; }
   main .submit_btn { margin: 60px auto; }
-  main .drag_pointer { transform: translate(calc(70px / 2 - 50%), 0); } }
+  main .drag_pointer { transform: translate(calc(70px / 2 - 50%), 0); }
+  .modal .modal-dialog .modal-content .iframe_close .modal_close p svg { font-size: 40px; } }
 
 @media screen and (min-width: 992px) { main .navbar-close a svg { font-size: 55px; }
   main .study_area.exercises_area.unit2_area { height: calc(100vh - 114.97px - 31px); display: block; }
