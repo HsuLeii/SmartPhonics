@@ -111,7 +111,7 @@
         </div>
       </div>
 
-      <div class="animal_area">
+      <div class="animal_area show">
         <div class="animal_img animal_one animal_zebra">
           <img src="Content/image/photo/animal/land_g1_1.png" alt="" />
         </div>
@@ -123,7 +123,7 @@
   </main>
 
   <!-- 逾時視窗 -->
-  <div class="timeout_area">
+  <div class="timeout_area show">
     <div class="timeout_content">
       <div class="timeout_area_header">
         <button type="button" class="timeout_area_close">
@@ -164,9 +164,14 @@
   <script src="../Content/js/all.js"></script>
 
   <script>
-    $(".timeout_area_close").click(function(){
+    $(".timeout_area_close").click(function () {
       $(".timeout_area").hide();
     });
+
+
+    if ($(".animal_area").hasClass("show")) {
+      $(".iframe_close").hide();
+    }
   </script>
 </body>
 

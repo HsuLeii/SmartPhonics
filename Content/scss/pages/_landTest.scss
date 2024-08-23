@@ -329,7 +329,6 @@ main {
     overflow-y: auto;
     outline: 0;
     background-color: rgba(0, 0, 0, 0.85);
-    display: flex;
     align-items: center;
     justify-content: center;
 
@@ -408,7 +407,9 @@ main {
 
     }
 
-    
+    &.show{
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 576px) {
