@@ -758,7 +758,7 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
 
 .modal.modal_test .modal-dialog .modal-content { height: 100vh; border-radius: 0px; }
 
-.modal.modal_test .modal-dialog .modal-content .iframe_close { position: absolute; z-index: 2; top: -15px; right: -15px; background-color: #fffbd4; padding: 5px; border-radius: 0 0 0 50%; line-height: 1; }
+.modal.modal_test .modal-dialog .modal-content .iframe_close { position: absolute; z-index: 2; top: 5px; right: 5px; background-color: #fffbd4; padding: 5px; border-radius: 50%; line-height: 1; }
 
 .modal.modal_test .modal-dialog .modal-content .iframe_close .modal_close p { line-height: 1; }
 
@@ -769,14 +769,6 @@ main canvas { border: 0px solid gray; position: absolute; left: 0; top: 0; z-ind
 .modal.modal_test .modal-dialog .modal-content .modal-body { padding: 0; }
 
 .modal.modal_test .modal-dialog .modal-content iframe { width: 100%; height: 100%; position: relative; z-index: 1; border-radius: 5px; }
-
-.modal.modal_test .modal-dialog .modal-content iframe html { height: 100%; }
-
-.modal.modal_test .modal-dialog .modal-content iframe html body { height: 100%; }
-
-.modal.modal_test .modal-dialog .modal-content iframe html body main { height: 100%; }
-
-.modal.modal_test .modal-dialog .modal-content iframe html body main .test_area { height: 100%; }
 
 @media screen and (min-width: 500px) { main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button { margin: 0 10px; padding: 10px 30px; min-width: calc(30px* 1.7 + 30px); } }
 

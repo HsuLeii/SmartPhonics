@@ -1392,7 +1392,6 @@ main {
 
         .modal-content {
             
-
             .modal-body {
 
                 .modal_body_text {
@@ -1442,11 +1441,11 @@ main {
                 .iframe_close{
                     position: absolute;
                     z-index: 2;
-                    top: -15px;
-                    right: -15px;
+                    top: 5px;
+                    right: 5px;
                     background-color: $map_slide_bg;
                     padding: 5px;
-                    border-radius: 0 0 0 50%;
+                    border-radius: 50%;
                     line-height: 1;
           
                     .modal_close{
@@ -1477,22 +1476,6 @@ main {
                     position: relative;
                     z-index: 1;
                     border-radius: 5px;
-
-                    html{
-                        height: 100%;
-                        
-                        body{
-                            height: 100%;
-
-                            main{
-                                height: 100%;
-
-                                .test_area{
-                                    height: 100%;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
