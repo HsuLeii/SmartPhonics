@@ -835,16 +835,48 @@ main .test_area .leave_next_btn { margin: 30px auto 0px; }
 
 main .test_area.iframe_test .test_area_bg { position: fixed; }
 
+.timeout_area { position: fixed; top: 0; left: 0; z-index: 1055; width: 100%; height: 100%; overflow-x: hidden; overflow-y: auto; outline: 0; background-color: rgba(0, 0, 0, 0.85); display: flex; align-items: center; justify-content: center; }
+
+.timeout_area .timeout_content { max-width: 500px; margin: 0 auto; background-color: #fff; border-radius: 5px; }
+
+.timeout_area .timeout_content .timeout_area_header { padding: 20px; border-radius: 5px 5px 0 0; position: relative; z-index: 1; border: 0; }
+
+.timeout_area .timeout_content .timeout_area_header .timeout_area_close { display: block; margin: 0 0 0 auto; }
+
+.timeout_area .timeout_content .timeout_area_header .timeout_area_close p { line-height: 1; }
+
+.timeout_area .timeout_content .timeout_area_header .timeout_area_close p svg { color: #514223; font-size: 25px; }
+
+.timeout_area .timeout_content .timeout_area_header .timeout_area_close p:hover svg { color: #ed710e; }
+
+.timeout_area .timeout_content .timeout_area_body { padding: 30px; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_logo { display: flex; justify-content: center; margin: 0 auto 40px; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_logo img { width: 80%; max-width: 300px; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_tittle { display: flex; justify-content: center; margin: 0 auto 20px; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_tittle h5 { color: #ed710e; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_text { display: flex; flex-direction: column; align-items: center; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_text .timeout_text_link { margin: 20px auto; border: 1px solid #ed710e; border-radius: 50px; padding: 10px 30px; color: #ed710e; }
+
+.timeout_area .timeout_content .timeout_area_body .timeout_text .timeout_text_link:hover { background-color: #ed710e; color: #fff; }
+
 @media screen and (min-width: 576px) { main .test_area { height: calc(100% - 93.05px); min-height: calc(100vh - 93.05px); }
   main .test_area .QA_area .topic_description_area { flex-direction: row; }
   main .test_area .QA_area .topic_description_area .description_avatar { width: 100px; margin: 0 8px 0 0; }
   main .test_area .QA_area .topic_description_area .description_text_area { width: calc(100% - 121px); align-items: flex-start; flex-direction: column; margin: 0 8px; }
   main .test_area .QA_area .topic_description_area .description_text_area .description_text { text-align: left; }
-  main .test_area .QA_area .topic_description_area .description_text_area::before { border-width: 8px 0px 8px 8px; top: auto; left: -16px; border-right: 8px solid #fff; border-bottom: 8px solid transparent; border-top: 8px solid transparent; } }
+  main .test_area .QA_area .topic_description_area .description_text_area::before { border-width: 8px 0px 8px 8px; top: auto; left: -16px; border-right: 8px solid #fff; border-bottom: 8px solid transparent; border-top: 8px solid transparent; }
+  .timeout_area .timeout_content .timeout_area_header .timeout_area_close p svg { font-size: 30px; } }
 
 @media screen and (min-width: 768px) { main .test_area .QA_area .topic_area .answer_area .answer_option { min-width: calc(40px * 1.7); min-height: calc(40px * 1.7); }
   main .test_area .QA_area .topic_area .answer_area .answer_option p { font-size: 40px; min-width: calc(40px * 1.7); }
-  main .test_area .QA_area .topic_area .answer_cloze p { font-size: 40px; min-width: calc(40px * 1.7); min-height: calc(40px * 1.7); } }
+  main .test_area .QA_area .topic_area .answer_cloze p { font-size: 40px; min-width: calc(40px * 1.7); min-height: calc(40px * 1.7); }
+  .timeout_area .timeout_content .timeout_area_header .timeout_area_close p svg { font-size: 40px; } }
 
 @media screen and (min-width: 992px) { main .test_area { height: calc(100% - 114.97px); min-height: calc(100vh - 114.97px); padding: 0px 0px 40px; }
   main .test_area .animal_area .animal_img { width: calc(35% / 2); max-width: 190px; }

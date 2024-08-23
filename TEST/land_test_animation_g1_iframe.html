@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="zh-tw">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SmartPhonics英語字母拼讀</title>
-    <meta name="description" content="SmartPhonics英語字母拼讀" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="SmartPhonics英語字母拼讀" />
-    <meta property="og:site_name" content="SmartPhonics英語字母拼讀"/>
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <!-- 之後改成正式網址的連結 -->
-    <meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
-    <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:title" content="SmartPhonics英語字母拼讀"/>
-    <!-- 之後改成正式網址的連結 -->
-    <meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg"/>
-    <meta itemprop="name" content="SmartPhonics英語字母拼讀">
-    <!-- 之後改成正式網址的連結 -->
-    <meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
-    <link rel="shortcut icon" type="image/x-icon" href="../Content/image/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="../Content/css/bootstrap-5.1.1.min.css" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SmartPhonics英語字母拼讀</title>
+  <meta name="description" content="SmartPhonics英語字母拼讀" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SmartPhonics英語字母拼讀" />
+  <meta property="og:site_name" content="SmartPhonics英語字母拼讀" />
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <!-- 之後改成正式網址的連結 -->
+  <meta property="og:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="SmartPhonics英語字母拼讀" />
+  <!-- 之後改成正式網址的連結 -->
+  <meta name="twitter:image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg" />
+  <meta itemprop="name" content="SmartPhonics英語字母拼讀">
+  <!-- 之後改成正式網址的連結 -->
+  <meta itemprop="image" content="https://hsuleii.github.io/SmartPhonics/Content/image/main/og_image.jpg">
+  <link rel="shortcut icon" type="image/x-icon" href="../Content/image/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="../Content/css/bootstrap-5.1.1.min.css" />
 
   <!-- this page widgets CSS -->
 
@@ -105,8 +105,8 @@
             <a href="land_test_g2_two_options.html">
               下一題&ensp;<i class="fa-solid fa-arrow-right-long"></i>
             </a>
-              <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
-              <i class="fa-solid fa-hand-point-right finger_icon" style="display: block"></i>
+            <!-- 點選答案後，如學生5秒後尚未點選「下一題」在顯示 -->
+            <i class="fa-solid fa-hand-point-right finger_icon" style="display: block"></i>
           </button>
         </div>
       </div>
@@ -122,6 +122,37 @@
     </div>
   </main>
 
+  <!-- 逾時視窗 -->
+  <div class="timeout_area">
+    <div class="timeout_content">
+      <div class="timeout_area_header">
+        <button type="button" class="timeout_area_close">
+          <p>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </p>
+        </button>
+      </div>
+      <div class="timeout_area_body">
+        <div class="timeout_logo">
+          <img src="../Content/image/logo/logo.svg" alt="">
+        </div>
+        <div class="timeout_tittle">
+          <h5>已自動登出</h5>
+        </div>
+        <div class="timeout_text">
+          <p>
+            你的閒置時間過久，網站已將你自動登出，請重新登入。
+          </p>
+          <a href="" class="timeout_text_link">
+            登入
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
   <!-- this page widgets CSS -->
   <script src="../Content/js/range.js"></script>
 
@@ -131,6 +162,12 @@
   <script src="../Content/js/fontawesome-free-6.1.1.min.js"></script>
 
   <script src="../Content/js/all.js"></script>
+
+  <script>
+    $(".timeout_area_close").click(function(){
+      $(".timeout_area").hide();
+    });
+  </script>
 </body>
 
 </html>
