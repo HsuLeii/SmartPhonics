@@ -1391,34 +1391,7 @@ main {
     .modal-dialog {
 
         .modal-content {
-            .iframe_close{
-                position: absolute;
-                z-index: 1;
-                top: -1%;
-                right: -1%;
-                transform: translate(50% , -50%);
-                background-color: $map_slide_bg;
-                padding: 5px;
-                border-radius: 50%;
-                line-height: 1;
-      
-                .modal_close{
-                    p{
-                        line-height: 1;
-                        svg{
-                            color: $brown;
-                            font-size: 25px;
-                        }
-
-
-                        &:hover{
-                            svg{
-                                color: $main_color;
-                            }
-                        }
-                    }
-                }
-            }
+            
 
             .modal-body {
 
@@ -1454,22 +1427,72 @@ main {
         background-color: rgba(0, 0, 0, 0.85);
 
         .modal-dialog {
-            width: 95%;
+            width: 100%;
             height: 100%;
             max-width: none;
 
             .modal-content {
-                height: 90vh;
+                height: 100vh;
+                border-radius: 0px;
 
                 // &::before{
                 //     background-color: transparent;
                 // }
+
+                .iframe_close{
+                    position: absolute;
+                    z-index: 2;
+                    top: -15px;
+                    right: -15px;
+                    background-color: $map_slide_bg;
+                    padding: 5px;
+                    border-radius: 0 0 0 50%;
+                    line-height: 1;
+          
+                    .modal_close{
+                        p{
+                            line-height: 1;
+                            svg{
+                                color: $brown;
+                                font-size: 25px;
+                            }
+    
+    
+                            &:hover{
+                                svg{
+                                    color: $main_color;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .modal-body{
+                    padding: 0;
+                }
 
                 iframe {
                     width: 100%;
                     height: 100%;
                     position: relative;
                     z-index: 1;
+                    border-radius: 5px;
+
+                    html{
+                        height: 100%;
+                        
+                        body{
+                            height: 100%;
+
+                            main{
+                                height: 100%;
+
+                                .test_area{
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1630,13 +1653,15 @@ main {
     }
 
     .modal {
-        .modal-dialog {
-            .modal-content {
-                .iframe_close{
-                    .modal_close{
-                        p{
-                            svg{
-                                font-size: 30px;
+        &.modal_test{
+            .modal-dialog {
+                .modal-content {
+                    .iframe_close{
+                        .modal_close{
+                            p{
+                                svg{
+                                    font-size: 30px;
+                                }
                             }
                         }
                     }
@@ -1863,13 +1888,15 @@ main {
     }
 
     .modal {
-        .modal-dialog {
-            .modal-content {
-                .iframe_close{
-                    .modal_close{
-                        p{
-                            svg{
-                                font-size: 40px;
+        &.modal_test{
+            .modal-dialog {
+                .modal-content {
+                    .iframe_close{
+                        .modal_close{
+                            p{
+                                svg{
+                                    font-size: 40px;
+                                }
                             }
                         }
                     }
