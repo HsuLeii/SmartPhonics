@@ -309,6 +309,12 @@ main {
         .leave_next_btn {
             margin: 30px auto 0px;
         }
+
+        &.iframe_test{
+            .test_area_bg{
+                position: fixed;
+            }
+        }
     }
 }
 
