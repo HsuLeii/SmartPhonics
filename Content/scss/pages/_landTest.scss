@@ -338,33 +338,6 @@ main {
         background-color: $white;
         border-radius: 5px;
 
-        .timeout_area_header{
-            padding: 20px;
-            border-radius: 5px 5px 0 0;
-            position: relative;
-            z-index: 1;
-            border: 0;
-    
-            .timeout_area_close{
-                display: block;
-                margin: 0 0 0 auto;
-                
-                p{
-                    line-height: 1;
-                    svg{
-                        color: $brown;
-                        font-size: 25px;
-                    }
-    
-                    &:hover{
-                        svg{
-                            color: $main_color;
-                        }
-                    }
-                }
-            }
-        }
-
         .timeout_area_body{
             padding: 30px;
             .timeout_logo{
@@ -450,21 +423,6 @@ main {
             }
         }
     }
-
-    .timeout_area{
-        .timeout_content{
-            .timeout_area_header{
-                .timeout_area_close{
-                    
-                    p{
-                        svg{
-                            font-size: 30px;
-                        }
-                    }
-                }
-            }
-        }
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -495,21 +453,6 @@ main {
                     }
                 }
 
-            }
-        }
-    }
-
-    .timeout_area{
-        .timeout_content{
-            .timeout_area_header{
-                .timeout_area_close{
-                    
-                    p{
-                        svg{
-                            font-size: 40px;
-                        }
-                    }
-                }
             }
         }
     }

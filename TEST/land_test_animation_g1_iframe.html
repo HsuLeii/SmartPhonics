@@ -125,27 +125,17 @@
   <!-- 逾時視窗 -->
   <div class="timeout_area show">
     <div class="timeout_content">
-      <div class="timeout_area_header">
-        <button type="button" class="timeout_area_close">
-          <p>
-            <i class="fa-regular fa-circle-xmark"></i>
-          </p>
-        </button>
-      </div>
       <div class="timeout_area_body">
         <div class="timeout_logo">
           <img src="../Content/image/logo/logo.svg" alt="">
         </div>
         <div class="timeout_tittle">
-          <h5>已自動登出</h5>
+          <h5>測驗中斷</h5>
         </div>
         <div class="timeout_text">
           <p>
-            你的閒置時間過久，網站已將你自動登出，請重新登入。
+            你的閒置時間過久，請重新進入測驗頁面。
           </p>
-          <a href="" class="timeout_text_link">
-            登入
-          </a>
         </div>
       </div>
     </div>
@@ -162,17 +152,6 @@
   <script src="../Content/js/fontawesome-free-6.1.1.min.js"></script>
 
   <script src="../Content/js/all.js"></script>
-
-  <script>
-    $(".timeout_area_close").click(function () {
-      $(".timeout_area").hide();
-    });
-
-
-    if ($(".timeout_area").hasClass("show")) {
-      $(".iframe_close").hide();
-    }
-  </script>
 </body>
 
 </html>
