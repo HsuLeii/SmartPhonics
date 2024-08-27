@@ -38,6 +38,44 @@ main {
         }
 
     }
+
+    .modal{
+
+        .modal-dialog {
+            &.modal-fullscreen{
+                .modal-content{
+                    .modal-header{
+                        padding: 20px 25px;
+                        .modal-title{
+                            width: 80%;
+                            max-width: 300px;
+                            margin: 0 auto;
+                        }
+                        .btn-close{
+                            display: none;
+                            color: $brown;
+                        }
+                    }
+
+                    .modal-footer{
+                        padding: 20px 25px;
+                        .btn-primary{
+                            background-color: $main_color;
+                            border: 0px;
+
+                            &:hover{
+                                background-color: darken($main_color, 5%);
+                            }
+
+                            &:focus{
+                                box-shadow: 0 0 0 .25rem rgba(237, 113, 14, .5);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 576px) {
