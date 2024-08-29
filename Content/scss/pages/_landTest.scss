@@ -76,7 +76,7 @@ main {
 
                 .description_avatar {
                     width: 60px;
-                    margin: 0 5px 15px 0;
+                    margin: 0 0 15px 0;
                 }
 
                 .description_text_area {
@@ -387,6 +387,56 @@ main {
     }
 }
 
+.container{
+    .d-flex{
+        .alert{
+            width: 90%;
+            height: auto !important;
+            max-width: 1200px;
+            padding: 20px 25px;
+            background-color: $body_bg;
+            border: 1px solid $main_color;
+
+            .flex-fill{
+                flex-direction: column;
+                font-size: 23px !important;
+
+                img{
+                    width: 60px !important;
+                    margin: 0 0 15px 0;
+                }
+
+                strong{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    margin: 0 5px;
+                    padding: 10px 15px;
+                    position: relative;
+                    background-color: $white;
+                    border-radius: 10px;
+                    color: $main_color_black;
+                    border: 1px solid $main_color;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        border-width: 0px 8px 8px 8px;
+                        left: 50%;
+                        transform: translate(-50%, 0px);
+                        top: -8px;
+                        border-left: 8px solid transparent;
+                        border-right: 8px solid transparent;
+                        border-bottom: 8px solid $main_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 576px) {
     main {
         .test_area {
@@ -425,6 +475,39 @@ main {
             }
         }
     }
+
+    .container{
+        .d-flex{
+            .alert{
+    
+                .flex-fill{
+                    flex-direction: row;
+    
+                    img{
+                        width: 100px !important;
+                        margin: 0 8px 0 0;
+                    }
+    
+                    strong{
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        margin: 0 8px;
+                        
+    
+                        &::before {
+                            border-width: 8px 0px 8px 8px;
+                            top: 50%;
+                            left: -16px;
+                            transform: translate(0, -50%);
+                            border-right: 8px solid $main_color;
+                            border-bottom: 8px solid transparent;
+                            border-top: 8px solid transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -455,6 +538,37 @@ main {
                     }
                 }
 
+            }
+        }
+    }
+
+    .container{
+        .d-flex{
+            .alert{
+                padding: 40px;
+                .flex-fill{
+                    font-size: 30px !important;
+    
+                    img{
+                        width: 120px !important;
+                        margin: 0 25px 0 0;
+                    }
+    
+                    strong{
+                        width: auto;
+                        padding: 25px;
+
+                        &::before {
+                            border-width: 15px 0px 15px 15px;
+                            top: 50%;
+                            left: -31px;
+                            transform: translate(0, -50%);
+                            border-right: 15px solid $main_color;
+                            border-bottom: 15px solid transparent;
+                            border-top: 15px solid transparent;
+                        }
+                    }
+                }
             }
         }
     }
@@ -531,6 +645,25 @@ main {
     main {
         .test_area {
             padding: 40px 0px;
+        }
+    }
+
+    .container{
+        .d-flex{
+            .alert{
+                padding: 50px;
+                .flex-fill{
+                    font-size: 40px !important;
+    
+                    img{
+                        margin: 0 30px 0 0;
+                    }
+    
+                    strong{
+                        padding: 35px;
+                    }
+                }
+            }
         }
     }
 }

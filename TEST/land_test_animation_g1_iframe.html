@@ -28,6 +28,38 @@
 
   <!-- my core CSS -->
   <link rel="stylesheet" href="../Content/css/SPhonics.css" />
+
+  <style>
+    .overlay {
+        position: fixed;
+        /* Sit on top of the page content */
+        display: none;
+        /* Hidden by default */
+        width: 100%;
+        /* Full width (cover the whole page) */
+        height: 100%;
+        /* Full height (cover the whole page) */
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.1);
+        /* Black background with opacity */
+        z-index: 2;
+        /* Specify a stack order in case you're using a different order for other elements */
+        cursor: pointer;
+        /* Add a pointer on hover */
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        border: 0px solid black;
+    }
+</style>
 </head>
 
 <body>
@@ -120,10 +152,23 @@
         </div>
       </div>
     </div>
+
+    <div class="container">
+      <div id="start" style="pointer-events: auto;">
+          <div class="d-flex justify-content-center align-items-center overlay">
+              <div class="alert alert-light alert-dismissible fade show  d-flex flex-column" role="alert" style="width: 90%; height: 25%;">
+                  <div class="flex-fill d-flex justify-content-center align-items-center" style="font-size: 2rem;">
+                      <img src="/Content/image/photo/avatar/color/land_g1.png" alt="" style="width: 10%; height: auto; min-width: 64px;">
+                      <strong>準備好了嗎？點擊開始。</strong>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
   </main>
 
   <!-- 逾時視窗 class加入show顯示-->
-  <div class="timeout_area show">
+  <div class="timeout_area">
     <div class="timeout_content">
       <div class="timeout_area_body">
         <div class="timeout_logo">
