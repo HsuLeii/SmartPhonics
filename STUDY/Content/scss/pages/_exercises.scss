@@ -1464,6 +1464,27 @@ main {
                             }
                         }
                     }
+
+                    .iframe_close_pointer{
+                        position: absolute;
+                        left: 50%;
+                        top: 100%;
+                        transform: translate(-50%, 0%);
+                        svg{
+                            font-size: 30px;
+                        }
+
+                        .close_pointer_one{
+                            color: $map_slide_bg;
+                        }
+
+                        .close_pointer_two{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            color: $brown;
+                        }
+                    }
                 }
 
                 .modal-body{
