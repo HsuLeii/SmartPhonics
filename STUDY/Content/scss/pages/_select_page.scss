@@ -655,12 +655,13 @@ main {
                 justify-content: center;
 
                 p {
-                  color: $white;
+                  color: $brown;
                   font-weight: bold;
                   line-height: 1;
                   background-color: $main_color_yellow;
                   padding: 5px 10px;
                   border-radius: 5px;
+                  border: 1.5px solid $brown;
                 }
               }
             }

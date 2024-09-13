@@ -2708,12 +2708,13 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   justify-content: center;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .star_item .star_num p {
-  color: #fff;
+  color: #634218;
   font-weight: bold;
   line-height: 1;
   background-color: #f7b62d;
   padding: 5px 10px;
   border-radius: 5px;
+  border: 1.5px solid #634218;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .balloon_item a {
   width: 100%;
