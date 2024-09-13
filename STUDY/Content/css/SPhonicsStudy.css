@@ -2642,6 +2642,13 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
 main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item a:hover {
   transform: scale(0.95);
 }
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item form {
+  transform: scale(0.9);
+  width: calc(100% - 30px);
+}
+main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item form:hover {
+  transform: scale(0.95);
+}
 main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon {
   padding: 5px;
   background-color: #ed710e;

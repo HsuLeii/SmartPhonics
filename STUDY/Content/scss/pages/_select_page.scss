@@ -572,6 +572,15 @@ main {
               }
             }
 
+            form {
+              transform: scale(0.9);
+              width: calc(100% - 30px);
+
+              &:hover {
+                transform: scale(0.95);
+              }
+            }
+
             .sound_icon {
               padding: 5px;
               background-color: $main_color;
