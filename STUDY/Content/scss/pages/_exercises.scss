@@ -1470,8 +1470,10 @@ main {
                         left: 50%;
                         top: 100%;
                         transform: translate(-50%, 0%);
+                        animation: closePointer 1000ms infinite;
+
                         svg{
-                            font-size: 30px;
+                            font-size: 25px;
                         }
 
                         .close_pointer_one{
@@ -1501,6 +1503,20 @@ main {
             }
         }
 
+    }
+}
+
+@keyframes closePointer {
+    0% {
+        transform: translate(-50%, 0px);
+    }
+
+    50% {
+        transform: translate(-50%, 15px);
+    }
+
+    100% {
+        transform: translate(-50%, 0px);
     }
 }
 
@@ -1901,6 +1917,12 @@ main {
                                 svg{
                                     font-size: 40px;
                                 }
+                            }
+                        }
+
+                        .iframe_close_pointer{
+                            svg{
+                                font-size: 30px;
                             }
                         }
                     }

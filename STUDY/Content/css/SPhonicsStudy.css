@@ -1773,9 +1773,10 @@ main canvas {
   left: 50%;
   top: 100%;
   transform: translate(-50%, 0%);
+  animation: closePointer 1000ms infinite;
 }
 .modal.modal_test .modal-dialog .modal-content .iframe_close .iframe_close_pointer svg {
-  font-size: 30px;
+  font-size: 25px;
 }
 .modal.modal_test .modal-dialog .modal-content .iframe_close .iframe_close_pointer .close_pointer_one {
   color: #fffbd4;
@@ -1797,6 +1798,17 @@ main canvas {
   border-radius: 5px;
 }
 
+@keyframes closePointer {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, 15px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
 @media screen and (min-width: 500px) {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 10px;
@@ -1942,6 +1954,9 @@ main canvas {
   }
   .modal.modal_test .modal-dialog .modal-content .iframe_close .modal_close p svg {
     font-size: 40px;
+  }
+  .modal.modal_test .modal-dialog .modal-content .iframe_close .iframe_close_pointer svg {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 992px) {
