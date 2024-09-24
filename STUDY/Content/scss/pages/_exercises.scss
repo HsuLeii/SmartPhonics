@@ -1606,7 +1606,7 @@ main {
 
                     .test_area {
                         .pagination_main {
-                            padding: 20px;
+                            // padding: 20px;
                         }
                     }
                 }
@@ -1963,9 +1963,6 @@ main {
 
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
 
                                     // 舊版
                                     // display: flex;
@@ -1999,7 +1996,7 @@ main {
 
                                     // 新版
                                     .drag_cloze_topic_area {
-                                        width: 20%;
+                                        // width: 20%;
 
                                         .drag_area_img {
                                             height: auto;
@@ -2008,7 +2005,7 @@ main {
 
                                     // 新版
                                     .drag_cloze_answer_area {
-                                        width: 80%;
+                                        // width: 80%;
 
                                         .drag_cloze_item {
                                             .drag_cloze {
@@ -2129,37 +2126,38 @@ main {
     }
 }
 
-
-
 @media screen and (min-width: 1200px) {
     main {
 
         .study_area {
             &.exercises_area {
-                &.unit2_area {
+                // &.unit2_area {
 
-                    .pagination_main_area {
+                //     .pagination_main_area {
 
-                        .pagination_main {
+                //         .pagination_main {
 
-                            &.pagination_main_drag {
-                                .pagination_main_drag_item {
+                //             &.pagination_main_drag {
+                //                 .pagination_main_drag_item {
+                //                     display: flex;
+                //                     align-items: center;
+                //                     justify-content: center;
 
-                                    // 新版
-                                    .drag_cloze_topic_area {
-                                        width: 30%;
-                                    }
+                //                     // 新版
+                //                     .drag_cloze_topic_area {
+                //                         width: 30%;
+                //                     }
 
-                                    // 新版
-                                    .drag_cloze_answer_area {
-                                        width: 65%;
-                                    }
-                                }
+                //                     // 新版
+                //                     .drag_cloze_answer_area {
+                //                         width: 65%;
+                //                     }
+                //                 }
 
-                            }
-                        }
-                    }
-                }
+                //             }
+                //         }
+                //     }
+                // }
 
                 &.connect_test {
 
@@ -2219,34 +2217,47 @@ main {
                         .pagination_main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    // 新版
+                                    .drag_cloze_topic_area {
+                                        width: 30%;
+                                    }
 
                                     // 新版
                                     .drag_cloze_answer_area {
-                                        .drag_cloze_item {
-                                            .drag_cloze {
+                                        width: 67.5%;
+                                    }
 
-                                                .alphabet {
-                                                    font-size: 45px;
-                                                    min-width: calc(45px* 1.7 + 2px);
-                                                    min-height: calc(45px* 1.7);
-                                                }
-                                            }
-                                        }
+                                    // 新版
+                                    .drag_cloze_answer_area {
+                                        // .drag_cloze_item {
+                                        //     .drag_cloze {
 
-                                        .drag_cloze_area {
-                                            .drag_cloze_item {
-                                                .drag_cloze {
-                                                    min-width: calc(35px* 1.7 + 10px);
-                                                    min-height: calc(35px* 1.7 + 30px);
+                                        //         .alphabet {
+                                        //             font-size: 45px;
+                                        //             min-width: calc(45px* 1.7 + 2px);
+                                        //             min-height: calc(45px* 1.7);
+                                        //         }
+                                        //     }
+                                        // }
 
-                                                    .alphabet {
-                                                        font-size: 35px;
-                                                        min-width: calc(35px* 1.7 + 10px);
-                                                        min-height: calc(35px* 1.7 + 30px);
-                                                    }
-                                                }
-                                            }
-                                        }
+                                        // .drag_cloze_area {
+                                        //     .drag_cloze_item {
+                                        //         .drag_cloze {
+                                        //             min-width: calc(35px* 1.7 + 10px);
+                                        //             min-height: calc(35px* 1.7 + 30px);
+
+                                        //             .alphabet {
+                                        //                 font-size: 35px;
+                                        //                 min-width: calc(35px* 1.7 + 10px);
+                                        //                 min-height: calc(35px* 1.7 + 30px);
+                                        //             }
+                                        //         }
+                                        //     }
+                                        // }
                                     }
                                 }
                             }
@@ -2354,9 +2365,9 @@ main {
                                             .drag_cloze {
 
                                                 .alphabet {
-                                                    font-size: 50px;
-                                                    min-width: calc(50px* 1.7 + 2px);
-                                                    min-height: calc(50px* 1.7);
+                                                    font-size: 45px;
+                                                    min-width: calc(45px* 1.7 + 2px);
+                                                    min-height: calc(45px* 1.7);
                                                 }
                                             }
                                         }
@@ -2364,13 +2375,13 @@ main {
                                         .drag_cloze_area {
                                             .drag_cloze_item {
                                                 .drag_cloze {
-                                                    min-width: calc(40px* 1.7 + 10px);
-                                                    min-height: calc(40px* 1.7 + 30px);
+                                                    min-width: calc(35px* 1.7 + 10px);
+                                                    min-height: calc(35px* 1.7 + 30px);
 
                                                     .alphabet {
-                                                        font-size: 40px;
-                                                        min-width: calc(40px* 1.7 + 10px);
-                                                        min-height: calc(40px* 1.7 + 30px);
+                                                        font-size: 35px;
+                                                        min-width: calc(35px* 1.7 + 10px);
+                                                        min-height: calc(35px* 1.7 + 30px);
                                                     }
                                                 }
                                             }

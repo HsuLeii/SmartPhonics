@@ -1846,9 +1846,6 @@ main canvas {
   main .study_area.exercises_area.unit2_area .play_area .progress_area .progress {
     margin: 15px 25px;
   }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main {
-    padding: 20px;
-  }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon svg {
     padding: 10px;
     height: 68px;
@@ -1973,19 +1970,8 @@ main canvas {
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_drag_area {
     min-height: calc(100% - 134.64px);
   }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
-    width: 20%;
-  }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img {
     height: auto;
-  }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
-    width: 80%;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
     font-size: 40px;
@@ -2026,12 +2012,6 @@ main canvas {
   }
 }
 @media screen and (min-width: 1200px) {
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
-    width: 30%;
-  }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
-    width: 65%;
-  }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon svg {
     height: 85px;
     width: 85px;
@@ -2045,19 +2025,16 @@ main canvas {
   main .study_area.exercises_area.unit2_area .pagination_main_area {
     min-height: calc(100% - 135.05px);
   }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 45px;
-    min-width: 78.5px;
-    min-height: 76.5px;
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 69.5px;
-    min-height: 89.5px;
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
+    width: 30%;
   }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 35px;
-    min-width: 69.5px;
-    min-height: 89.5px;
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
+    width: 67.5%;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_drag_area {
     min-height: calc(100% - 135.05px);
@@ -2089,18 +2066,18 @@ main canvas {
 }
 @media screen and (min-width: 1600px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 50px;
-    min-width: 87px;
-    min-height: 85px;
+    font-size: 45px;
+    min-width: 78.5px;
+    min-height: 76.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 78px;
-    min-height: 98px;
+    min-width: 69.5px;
+    min-height: 89.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 40px;
-    min-width: 78px;
-    min-height: 98px;
+    font-size: 35px;
+    min-width: 69.5px;
+    min-height: 89.5px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item {
     width: 33.33333%;
@@ -2710,18 +2687,15 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   width: 100%;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .star_item .star_num {
-  width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .star_item .star_num p {
-  color: #634218;
+  font-size: 20px;
+  color: #f7b62d;
   font-weight: bold;
   line-height: 1;
-  background-color: #f7b62d;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: 1.5px solid #634218;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .balloon_item a {
   width: 100%;
@@ -2769,6 +2743,9 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   }
   main .study_area.select_page_area .select_page_content .select_page_content_item .star_item svg {
     font-size: 30px;
+  }
+  main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .star_item .star_num p {
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2832,6 +2809,11 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   }
   main .study_area.select_page_area .select_page_content .select_page_content_item {
     width: 15%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main .study_area.select_page_area .select_page_content .select_page_content_item.select_page_item_box .star_item .star_num p {
+    font-size: 30px;
   }
 }
 @media screen and (min-width: 1200px) {

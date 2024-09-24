@@ -659,18 +659,15 @@ main {
               width: 100%;
 
               .star_num {
-                width: 100%;
                 display: flex;
                 justify-content: center;
+                align-items: center;
 
                 p {
-                  color: $brown;
+                  font-size: 20px;
+                  color: $main_color_yellow;
                   font-weight: bold;
                   line-height: 1;
-                  background-color: $main_color_yellow;
-                  padding: 5px 10px;
-                  border-radius: 5px;
-                  border: 1.5px solid $brown;
                 }
               }
             }
@@ -790,6 +787,16 @@ main {
             .star_item {
               svg {
                 font-size: 30px;
+              }
+            }
+
+            &.select_page_item_box {
+              .star_item {
+                .star_num {
+                  p{
+                    font-size: 25px;
+                  }
+                }
               }
             }
           }
@@ -961,7 +968,27 @@ main {
   }
 }
 
-@media screen and (min-width: 1024px) {}
+@media screen and (min-width: 1024px) {
+  main {
+    .study_area {
+      &.select_page_area {
+        .select_page_content {
+          .select_page_content_item {
+            &.select_page_item_box {
+              .star_item {
+                .star_num {
+                  p{
+                    font-size: 30px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 1200px) {
   main {
