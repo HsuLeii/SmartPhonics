@@ -888,7 +888,6 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
   display: flex;
-  margin: 5px 3px;
   max-width: 100%;
   text-align: center;
   cursor: default;
@@ -896,6 +895,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
   font-size: 30px;
+  margin: 5px 3px;
   min-width: 53px;
   min-height: 51px;
   color: #fff;
@@ -1120,6 +1120,39 @@ main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ck {
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ng {
   color: #92c384;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ai {
+  color: #E50B32;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ay {
+  color: #E50B32;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ea {
+  color: #349238;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ee {
+  color: #349238;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ey {
+  color: #349238;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ie {
+  color: #EAAA38;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_oa {
+  color: #036FB7;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_oe {
+  color: #036FB7;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ow {
+  color: #036FB7;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ue {
+  color: #132BA3;
+}
+main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ui {
+  color: #132BA3;
 }
 main .study_area.exercises_area.unit2_area .play_area {
   display: flex;
@@ -1878,11 +1911,9 @@ main canvas {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img {
     height: calc(100% - 140px);
   }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
-    margin: 10px 5px;
-  }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
     font-size: 35px;
+    margin: 10px 5px;
     min-width: 61.5px;
     min-height: 59.5px;
   }

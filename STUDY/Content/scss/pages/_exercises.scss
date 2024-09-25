@@ -162,7 +162,7 @@ main {
 
                                         .drag_cloze {
                                             display: flex;
-                                            margin: 5px 3px;
+                                            
                                             max-width: 100%;
                                             text-align: center;
                                             cursor: default;
@@ -170,6 +170,7 @@ main {
 
                                             .alphabet {
                                                 font-size: 30px;
+                                                margin: 5px 3px;
                                                 min-width: calc(30px* 1.7 + 2px);
                                                 min-height: calc(30px* 1.7);
                                                 color: $white;
@@ -490,6 +491,51 @@ main {
 
                     &.letter_ng {
                         color: $letter_NG;
+                    }
+
+                    // unit6
+                    &.letter_ai {
+                        color: $letter_ai;
+                    }
+
+                    &.letter_ay {
+                        color: $letter_ai;
+                    }
+
+                    &.letter_ea {
+                        color: $letter_ea;
+                    }
+
+                    &.letter_ee {
+                        color: $letter_ea;
+                    }
+
+                    &.letter_ey {
+                        color: $letter_ea;
+                    }
+
+                    &.letter_ie {
+                        color: $letter_ie;
+                    }
+
+                    &.letter_oa {
+                        color: $letter_oa;
+                    }
+
+                    &.letter_oe {
+                        color: $letter_oa;
+                    }
+
+                    &.letter_ow {
+                        color: $letter_oa;
+                    }
+
+                    &.letter_ue {
+                        color: $letter_ue;
+                    }
+
+                    &.letter_ui {
+                        color: $letter_ue;
                     }
                 }
 
@@ -1751,10 +1797,10 @@ main {
                                         .drag_cloze_item {
 
                                             .drag_cloze {
-                                                margin: 10px 5px;
-
+                                                
                                                 .alphabet {
                                                     font-size: 35px;
+                                                    margin: 10px 5px;
                                                     min-width: calc(35px* 1.7 + 2px);
                                                     min-height: calc(35px* 1.7);
                                                 }
