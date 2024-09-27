@@ -159,6 +159,7 @@ main {
                                         display: flex;
                                         flex-wrap: wrap;
                                         justify-content: center;
+                                        margin: 20px auto 0;
 
                                         .drag_cloze {
                                             display: flex;
@@ -227,9 +228,9 @@ main {
                                                     display: flex;
                                                     align-items: center;
                                                     justify-content: center;
-                                                    font-size: 30px;
-                                                    min-width: calc(30px* 1.7 + 10px);
-                                                    min-height: calc(30px* 1.7 + 30px);
+                                                    font-size: 28px;
+                                                    min-width: calc(28px* 1.7 + 10px);
+                                                    min-height: calc(28px* 1.7 + 30px);
                                                     background-color: transparent;
                                                     border: 0px;
                                                     cursor: default;
@@ -1794,26 +1795,17 @@ main {
                                     // 新版
                                     .drag_cloze_answer_area {
 
-                                        .drag_cloze_item {
-
-                                            .drag_cloze {
-                                                
-                                                .alphabet {
-                                                    font-size: 35px;
-                                                    margin: 10px 5px;
-                                                    min-width: calc(35px* 1.7 + 2px);
-                                                    min-height: calc(35px* 1.7);
-                                                }
-                                            }
-                                        }
-
-                                        .drag_cloze_area {
                                             .drag_cloze_item {
                                                 .drag_cloze {
-                                                    margin: 10px 5px;
+
+                                                    .alphabet {
+                                                        font-size: 35px;
+                                                        margin: 10px 5px;
+                                                        min-width: calc(35px* 1.7 + 2px);
+                                                        min-height: calc(35px* 1.7);
+                                                    }
                                                 }
                                             }
-                                        }
                                     }
                                 }
 
@@ -2051,18 +2043,6 @@ main {
 
                                     // 新版
                                     .drag_cloze_answer_area {
-                                        // width: 80%;
-
-                                        .drag_cloze_item {
-                                            .drag_cloze {
-
-                                                .alphabet {
-                                                    font-size: 40px;
-                                                    min-width: calc(40px* 1.7 + 2px);
-                                                    min-height: calc(40px* 1.7);
-                                                }
-                                            }
-                                        }
                                     }
                                 }
 
@@ -2269,12 +2249,12 @@ main {
 
                                     // 新版
                                     .drag_cloze_topic_area {
-                                        width: 30%;
+                                        width: 28%;
                                     }
 
                                     // 新版
                                     .drag_cloze_answer_area {
-                                        width: 67.5%;
+                                        width: 70%;
                                     }
 
                                     // 新版
@@ -2493,13 +2473,13 @@ main {
                                         .drag_cloze_area {
                                             .drag_cloze_item {
                                                 .drag_cloze {
-                                                    min-width: calc(50px* 1.7 + 10px);
-                                                    min-height: calc(50px* 1.7 + 30px);
+                                                    min-width: calc(45px* 1.7 + 10px);
+                                                    min-height: calc(45px* 1.7 + 30px);
 
                                                     .alphabet {
-                                                        font-size: 50px;
-                                                        min-width: calc(50px* 1.7 + 10px);
-                                                        min-height: calc(50px* 1.7 + 30px);
+                                                        font-size: 45px;
+                                                        min-width: calc(45px* 1.7 + 10px);
+                                                        min-height: calc(45px* 1.7 + 30px);
                                                     }
                                                 }
                                             }
