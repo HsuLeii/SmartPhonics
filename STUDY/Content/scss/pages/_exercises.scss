@@ -172,8 +172,8 @@ main {
                                             .alphabet {
                                                 font-size: 30px;
                                                 margin: 5px 3px;
-                                                min-width: calc(30px* 1.7 + 2px);
-                                                min-height: calc(30px* 1.7);
+                                                min-width: calc(32px* 1.7 + 2px);
+                                                min-height: calc(32px* 1.7 + 2px);
                                                 color: $white;
                                                 border-radius: 10px;
                                                 border: 1px solid $drag_cloze;
@@ -228,9 +228,9 @@ main {
                                                     display: flex;
                                                     align-items: center;
                                                     justify-content: center;
-                                                    font-size: 28px;
-                                                    min-width: calc(28px* 1.7 + 10px);
-                                                    min-height: calc(28px* 1.7 + 30px);
+                                                    font-size: 26px;
+                                                    min-width: calc(26px* 1.7 + 10px);
+                                                    min-height: calc(26px* 1.7 + 30px);
                                                     background-color: transparent;
                                                     border: 0px;
                                                     cursor: default;
@@ -1801,8 +1801,8 @@ main {
                                                     .alphabet {
                                                         font-size: 35px;
                                                         margin: 10px 5px;
-                                                        min-width: calc(35px* 1.7 + 2px);
-                                                        min-height: calc(35px* 1.7);
+                                                        min-width: calc(37px* 1.7 + 2px);
+                                                        min-height: calc(37px* 1.7 + 2px);
                                                     }
                                                 }
                                             }
