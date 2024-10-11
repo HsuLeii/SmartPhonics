@@ -714,12 +714,12 @@ main {
                         .topic {
                             display: flex;
                             align-items: center;
+                            flex-wrap: wrap;
                             margin: 20px auto;
 
-                            .topic_text {
-                                p {
-                                    font-weight: bold;
-                                }
+                            .topic_img{
+                                width: 50px;
+                                margin: 0 10px 0 0;
                             }
 
                             .topic_icon {
@@ -738,6 +738,21 @@ main {
                                 display: flex;
                                 justify-content: center;
                                 width: 100%;
+
+                                p {
+                                    font-weight: bold;
+                                }
+                            }
+
+                            .topic_caption{
+                                display: flex;
+                                justify-content: center;
+                                width: 100%;
+                                padding: 0 5%;
+                                margin: 25px auto;
+                                p{
+                                    color: $brown;
+                                }
                             }
                         }
 
@@ -857,7 +872,6 @@ main {
                                 margin: 40px auto;
 
                                 .topic_icon {
-                                    margin: 0 10px;
 
                                     svg {
                                         font-size: 18px;
@@ -923,11 +937,10 @@ main {
                                                     svg {
                                                         background-color: $main_color;
                                                         color: $white;
-                                                        font-size: 30px;
                                                         padding: 5px;
                                                         border-radius: 10px;
-                                                        height: calc(30px * 1.7);
-                                                        width: calc(30px * 1.7);
+                                                        height: calc(18px * 1.7);
+                                                        width: calc(18px * 1.7);
                                                     }
 
                                                     &:hover {
@@ -945,8 +958,8 @@ main {
                                                         display: flex;
                                                         justify-content: center;
                                                         background-color: $drag_cloze;
-                                                        width: calc(30px * 1.7 + 10px);
-                                                        font-size: 30px;
+                                                        width: calc(18px * 1.7 + 10px);
+                                                        font-size: 18px;
                                                         padding: 5px;
                                                         border-radius: 10px;
                                                         color: $white;
@@ -1653,7 +1666,11 @@ main {
 
                     .test_area {
                         .pagination_main {
-                            // padding: 20px;
+                            .topic {
+                                .topic_img{
+                                    width: 70px;
+                                }
+                            }
                         }
                     }
                 }
@@ -1665,7 +1682,6 @@ main {
                         .pagination_main {
 
                             .connect_area {
-
                                 .connect {
 
                                     tr {
@@ -2157,33 +2173,17 @@ main {
 
         .study_area {
             &.exercises_area {
-                // &.unit2_area {
-
-                //     .pagination_main_area {
-
-                //         .pagination_main {
-
-                //             &.pagination_main_drag {
-                //                 .pagination_main_drag_item {
-                //                     display: flex;
-                //                     align-items: center;
-                //                     justify-content: center;
-
-                //                     // 新版
-                //                     .drag_cloze_topic_area {
-                //                         width: 30%;
-                //                     }
-
-                //                     // 新版
-                //                     .drag_cloze_answer_area {
-                //                         width: 65%;
-                //                     }
-                //                 }
-
-                //             }
-                //         }
-                //     }
-                // }
+                &.unit2_area {
+                    .test_area {
+                        .pagination_main {
+                            .topic {
+                                .topic_img{
+                                    width: 90px;
+                                }
+                            }
+                        }
+                    }
+                }
 
                 &.connect_test {
 
