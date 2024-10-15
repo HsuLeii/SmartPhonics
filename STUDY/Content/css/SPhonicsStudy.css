@@ -1356,6 +1356,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   margin: 0 5px 0 0;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon {
+  position: relative;
   padding: 5px;
   background-color: #ed710e;
   border-radius: 10px;
@@ -1366,6 +1367,16 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon:hover {
   background-color: #d5660d;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon .sound_icon_drag {
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translate(100%, -50%);
+  animation: fingers 1000ms infinite;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon .sound_icon_drag svg {
+  color: #ed710e;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item {
   margin: 0 10px;
@@ -1380,7 +1391,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button.active {
-  background-color: #4593db;
+  background-color: #ed710e;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
   font-size: 30px;
@@ -1739,19 +1750,53 @@ main .study_area.exercises_area .exercises_arrow svg {
 main .study_area.exercises_area .exercises_arrow svg:hover {
   color: #ed710e;
 }
-main .submit_btn {
+main .test_end_page {
   position: relative;
   z-index: 2;
-  display: block;
-  background-color: #ed710e;
-  padding: 10px 20px;
-  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 1200px;
+  padding: 0px 10px;
   margin: 40px auto;
 }
-main .submit_btn p {
+main .test_end_page .page {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 100%;
+}
+main .test_end_page .page .pagination a,
+main .test_end_page .page .pagination span {
+  padding: 5px 0.4rem;
+  border-radius: 10px;
+  margin: 0px 2px;
+  color: #2e3233;
+}
+main .test_end_page .page .pagination a:hover,
+main .test_end_page .page .pagination span:hover {
+  background-color: #ed710e;
   color: #fff;
 }
-main .submit_btn:hover {
+main .test_end_page .page .pagination span.active {
+  background-color: #ed710e;
+  color: #fff;
+}
+main .test_end_page .test_end_btn {
+  display: flex;
+  justify-content: center;
+}
+main .test_end_page .test_end_btn .submit_btn, main .test_end_page .test_end_btn .close_btn {
+  background-color: #ed710e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+main .test_end_page .test_end_btn .submit_btn p, main .test_end_page .test_end_btn .close_btn p {
+  color: #fff;
+}
+main .test_end_page .test_end_btn .submit_btn:hover, main .test_end_page .test_end_btn .close_btn:hover {
   background-color: #bd5a0b;
 }
 main .drag_pointer {
@@ -1855,6 +1900,17 @@ main canvas {
     transform: translate(-50%, 0px);
   }
 }
+@keyframes fingers {
+  0% {
+    right: -15px;
+  }
+  50% {
+    right: -5px;
+  }
+  100% {
+    right: -15px;
+  }
+}
 @media screen and (min-width: 500px) {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 10px;
@@ -1907,6 +1963,11 @@ main canvas {
   }
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right {
     width: 80%;
+  }
+  main .test_end_page .page .pagination a,
+  main .test_end_page .page .pagination span {
+    padding: 5px 0.5rem;
+    margin: 0px 5px;
   }
   .modal.modal_test .modal-dialog .modal-content .iframe_close .modal_close p svg {
     font-size: 30px;
@@ -1983,8 +2044,22 @@ main canvas {
   main .study_area.exercises_area .exercises_area_img .exercises_area_img_right {
     width: 100%;
   }
-  main .submit_btn {
+  main .test_end_page {
     margin: 60px auto;
+  }
+  main .test_end_page .page {
+    margin: 40px auto;
+  }
+  main .test_end_page .page .pagination a,
+  main .test_end_page .page .pagination span {
+    padding: 5px 0.5rem;
+    margin: 0px 5px;
+  }
+  main .test_end_page .test_end_btn {
+    margin: 40px auto;
+  }
+  main .test_end_page .test_end_btn .submit_btn, main .test_end_page .test_end_btn .close_btn {
+    margin: 20px;
   }
   main .drag_pointer {
     transform: translate(calc(35px - 50%), 0);

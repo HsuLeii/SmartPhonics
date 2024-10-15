@@ -42,27 +42,30 @@
             </a>
         </div>
 
-        <form action="">
-
-            <div class="study_area exercises_area unit2_area test_form_content">
+            <div class="study_area exercises_area unit2_area test_form_content connect_test">
                 <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
                 <div class="pagination_main_area pagination_main_drag_area test_area">
                     <div class="pagination_main">
                         <!-- 題目連連看圖加字開始 -->
                         <div class="test_area_content connect_area">
-                            <div class="test_tittle">
-                                <div class="tittle_img">
+                            <div class="topic">
+                                <div class="topic_img">
                                     <img src="../../Content/image/photo/select_page/button/gift_box_open.png" alt="">
                                 </div>
-                                <h5>
-                                    Unit 2 : Review Aa-Zz
-                                </h5>
+                                <div class="topic_text">
+                                    <h5>
+                                        Unit 2：Review Aa-Zz
+                                    </h5>
+                                </div>
                             </div>
                             <div class="topic">
+                                <div class="topic_icon">
+                                    <i class="fa-solid fa-ear-listen"></i>
+                                </div>
                                 <div class="topic_text">
-                                    <p>
-                                        關卡二：聽聲音選出下列單字的開頭字母
-                                    </p>
+                                    <h5>
+                                        任務二：聽聲音，選出下列單字的開頭字母
+                                    </h5>
                                 </div>
                             </div>
 
@@ -86,7 +89,7 @@
                                                 <p>e</p>
                                             </button>
                                             <button>
-                                                <p>a</p>
+                                                <p>i</p>
                                             </button>
                                         </div>
                                     </div>
@@ -111,7 +114,7 @@
                                                 <p>o</p>
                                             </button>
                                             <button>
-                                                <p>a</p>
+                                                <p>e</p>
                                             </button>
                                         </div>
                                     </div>
@@ -133,7 +136,7 @@
                                     <div class="test_topic_item_right">
                                         <div class="test_answer_item">
                                             <button>
-                                                <p>e</p>
+                                                <p>b</p>
                                             </button>
                                             <button>
                                                 <p>i</p>
@@ -161,7 +164,7 @@
                                                 <p>u</p>
                                             </button>
                                             <button>
-                                                <p>o</p>
+                                                <p>k</p>
                                             </button>
                                         </div>
                                     </div>
@@ -183,7 +186,7 @@
                                     <div class="test_topic_item_right">
                                         <div class="test_answer_item">
                                             <button>
-                                                <p>i</p>
+                                                <p>j</p>
                                             </button>
                                             <button>
                                                 <p>e</p>
@@ -208,7 +211,7 @@
                                     <div class="test_topic_item_right">
                                         <div class="test_answer_item">
                                             <button>
-                                                <p>b</p>
+                                                <p>u</p>
                                             </button>
                                             <button>
                                                 <p>d</p>
@@ -236,7 +239,7 @@
                                                 <p>g</p>
                                             </button>
                                             <button>
-                                                <p>k</p>
+                                                <p>a</p>
                                             </button>
                                         </div>
                                     </div>
@@ -258,7 +261,7 @@
                                     <div class="test_topic_item_right">
                                         <div class="test_answer_item">
                                             <button>
-                                                <p>f</p>
+                                                <p>o</p>
                                             </button>
                                             <button>
                                                 <p>v</p>
@@ -283,7 +286,7 @@
                                     <div class="test_topic_item_right">
                                         <div class="test_answer_item">
                                             <button>
-                                                <p>j</p>
+                                                <p>q</p>
                                             </button>
                                             <button>
                                                 <p>h</p>
@@ -311,7 +314,7 @@
                                                 <p>q</p>
                                             </button>
                                             <button>
-                                                <p>p</p>
+                                                <p>v</p>
                                             </button>
                                         </div>
                                     </div>
@@ -324,12 +327,27 @@
                 </div>
             </div>
 
-            <button id="submit" class="submit_btn" type="button">
-                <p>送出答案</p>
-            </button>
-
-        </form>
-
+            <div class="test_end_page">
+                <div class="page">
+                    <span class="pagination">
+                        <a disabled="disabled" class="pagenumber firstnn">第一頁</a>
+                        <span class="active">1</span>
+                        <a class="pagenumber" href="">2</a>
+                        <a class="pagenumber" href="">3</a>
+                        <a class="pagenumber lastnn" href="">最後一頁</a>
+                    </span>
+                </div>
+    
+                <div class="test_end_btn">
+                    <button id="submit" class="submit_btn" type="button">
+                        <p>送出答案</p>
+                    </button>
+    
+                    <a href="javascript:window.close();" class="close_btn">
+                        離開
+                    </a>
+                </div>
+            </div>
     </main>
 
     <!-- Modal確認離開彈跳視窗 -->

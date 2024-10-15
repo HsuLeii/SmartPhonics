@@ -44,7 +44,7 @@
 
         <form action="">
 
-            <div class="study_area exercises_area unit2_area test_form_content">
+            <div class="study_area exercises_area unit2_area test_form_content connect_test">
                 <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
 
                 <div class="pagination_main_area pagination_main_drag_area test_area">
@@ -53,20 +53,21 @@
                         <div class="pagination_main_drag_item">
                             <!-- 題目連連看圖加字開始 -->
                             <div class="test_area_content connect_area">
-                                <div class="test_tittle">
-                                    <div class="tittle_img">
-                                        <img src="../../Content/image/photo/select_page/button/gift_box_open.png"
-                                            alt="">
+                                <div class="topic">
+                                    <div class="topic_img">
+                                        <img src="../../Content/image/photo/select_page/button/gift_box_open.png" alt="">
                                     </div>
-                                    <h5>
-                                        Unit 3 : Review short and long vowel
-                                    </h5>
+                                    <div class="topic_text">
+                                        <h5>
+                                            Unit 3: Review - Long and Short Vowels
+                                        </h5>
+                                    </div>
                                 </div>
                                 <div class="topic">
                                     <div class="topic_text">
-                                        <p>
+                                        <h5>
                                             關卡三：聽聲音，拼出對應單字
-                                        </p>
+                                        </h5>
                                     </div>
                                 </div>
 
@@ -81,6 +82,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -121,12 +126,12 @@
                                                 <div class="drag_cloze_item">
                                                     <button class="drag_cloze drag">
                                                         <p class="alphabet" id="drag1" draggable="true">
-                                                            t
+                                                            m
                                                         </p>
                                                     </button>
                                                     <button class="drag_cloze drag">
                                                         <p class="alphabet" id="drag2" draggable="true">
-                                                            p
+                                                            t
                                                         </p>
                                                     </button>
                                                     <button class="drag_cloze drag">
@@ -154,6 +159,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -215,6 +224,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -276,6 +289,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -349,6 +366,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -410,6 +431,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -483,6 +508,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -556,6 +585,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -617,6 +650,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -690,6 +727,10 @@
                                             </div>
                                             <button class="sound_icon">
                                                 <i class="fa-solid fa-volume-high"></i>
+
+                                                <div class="sound_icon_drag" style="">
+                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                </div>
                                             </button>
                                         </div>
 
@@ -749,12 +790,29 @@
 
             </div>
 
-            <button id="submit" class="submit_btn" type="button">
-                <p>送出答案</p>
-            </button>
+            <div class="test_end_page">
+                <div class="page">
+                    <span class="pagination">
+                        <a disabled="disabled" class="pagenumber firstnn">第一頁</a>
+                        <span class="active">1</span>
+                        <a class="pagenumber" href="">2</a>
+                        <a class="pagenumber" href="">3</a>
+                        <a class="pagenumber lastnn" href="">最後一頁</a>
+                    </span>
+                </div>
+    
+                <div class="test_end_btn">
+                    <button id="submit" class="submit_btn" type="button">
+                        <p>送出答案</p>
+                    </button>
+    
+                    <a href="javascript:window.close();" class="close_btn">
+                        離開
+                    </a>
+                </div>
+            </div>
 
         </form>
-
     </main>
 
     <!-- Modal確認離開彈跳視窗 -->
