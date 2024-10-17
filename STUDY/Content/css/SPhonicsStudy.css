@@ -893,10 +893,13 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
   text-align: center;
   cursor: default;
   transform: scale(0.95);
+  min-width: 56.4px;
+  min-height: 56.4px;
+  background-color: #70ace3;
+  margin: 5px 3px;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
   font-size: 30px;
-  margin: 5px 3px;
   min-width: 56.4px;
   min-height: 56.4px;
   color: #fff;
@@ -904,12 +907,6 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
   border: 1px solid #70ace3;
   background-color: #70ace3;
   cursor: pointer;
-}
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.target {
-  background-color: transparent;
-}
-main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.target.active, main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.target.done {
-  background-color: #ed710e;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.drag:disabled {
   border: 1px solid #ed710e !important;
@@ -945,6 +942,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
   background-color: transparent;
   border: 0px;
   cursor: default;
+  margin: 0 auto;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze.target {
   background-color: rgba(237, 113, 14, 0.1254901961);
@@ -1985,9 +1983,13 @@ main canvas {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img {
     height: calc(100% - 140px);
   }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
+    margin: 10px 5px;
+    min-width: 64.9px;
+    min-height: 64.9px;
+  }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
     font-size: 35px;
-    margin: 10px 5px;
     min-width: 64.9px;
     min-height: 64.9px;
   }
@@ -2169,6 +2171,10 @@ main canvas {
   }
 }
 @media screen and (min-width: 1600px) {
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
+    min-width: 78.5px;
+    min-height: 76.5px;
+  }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
     font-size: 45px;
     min-width: 78.5px;

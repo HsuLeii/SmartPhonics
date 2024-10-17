@@ -163,15 +163,17 @@ main {
 
                                         .drag_cloze {
                                             display: flex;
-
                                             max-width: 100%;
                                             text-align: center;
                                             cursor: default;
                                             transform: scale(0.95);
+                                            min-width: calc(32px* 1.7 + 2px);
+                                            min-height: calc(32px* 1.7 + 2px);
+                                            background-color: $drag_cloze;
+                                            margin: 5px 3px;
 
                                             .alphabet {
                                                 font-size: 30px;
-                                                margin: 5px 3px;
                                                 min-width: calc(32px* 1.7 + 2px);
                                                 min-height: calc(32px* 1.7 + 2px);
                                                 color: $white;
@@ -183,11 +185,11 @@ main {
 
                                             &.target {
 
-                                                background-color: transparent;
+                                                // background-color: transparent;
 
                                                 &.active,
                                                 &.done {
-                                                    background-color: $main_color;
+                                                    // background-color: $main_color;
                                                 }
 
                                             }
@@ -234,6 +236,7 @@ main {
                                                     background-color: transparent;
                                                     border: 0px;
                                                     cursor: default;
+                                                    margin: 0 auto;
                                                 }
 
                                                 &.target {
@@ -1896,10 +1899,12 @@ main {
 
                                         .drag_cloze_item {
                                             .drag_cloze {
+                                                margin: 10px 5px;
+                                                min-width: calc(37px* 1.7 + 2px);
+                                                min-height: calc(37px* 1.7 + 2px);
 
                                                 .alphabet {
                                                     font-size: 35px;
-                                                    margin: 10px 5px;
                                                     min-width: calc(37px* 1.7 + 2px);
                                                     min-height: calc(37px* 1.7 + 2px);
                                                 }
@@ -2485,6 +2490,8 @@ main {
                                     .drag_cloze_answer_area {
                                         .drag_cloze_item {
                                             .drag_cloze {
+                                                min-width: calc(45px* 1.7 + 2px);
+                                                    min-height: calc(45px* 1.7);
 
                                                 .alphabet {
                                                     font-size: 45px;
