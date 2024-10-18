@@ -779,8 +779,7 @@ main {
                                     display: flex;
                                     justify-content: flex-start;
                                     align-items: center;
-                                    margin: 10px 0;
-
+                                    
                                     .test_icon {
                                         width: 25px;
                                         margin: 0 10px 0 0;
@@ -791,19 +790,21 @@ main {
                                         margin: 0 5px 0 0;
                                     }
 
-                                    .sound_icon {
+                                    .sound_icon_area{
                                         position: relative;
-                                        padding: 5px;
-                                        background-color: $main_color;
-                                        border-radius: 10px;
-                                        line-height: 1;
 
-                                        svg {
-                                            color: $white;
-                                        }
-
-                                        &:hover {
-                                            background-color: darken($main_color, 5%);
+                                        .sound_icon {
+                                            padding: 5px;
+                                            background-color: $main_color;
+                                            border-radius: 10px;
+                                            line-height: 1;
+                                            svg {
+                                                color: $white;
+                                            }
+    
+                                            &:hover {
+                                                background-color: darken($main_color, 5%);
+                                            }
                                         }
 
                                         .sound_icon_drag{
@@ -818,9 +819,14 @@ main {
                                             }
                                         }
                                     }
+                                    
                                 }
 
                                 .test_topic_item_right {
+                                    width: 100%;
+                                    display: flex;
+                                    justify-content: center;
+                                    margin: 15px auto 0;
 
                                     .test_answer_item {
                                         margin: 0 10px;
@@ -854,6 +860,10 @@ main {
 
                             &.test_drag_area {
                                 .test_topic_item {
+                                    .test_topic_item_left {
+                                        height: auto;
+                                        margin: 10px 0;
+                                    }
                                     .test_topic_item_right {
                                         width: 100%;
                                         margin: 0 auto;
@@ -887,7 +897,7 @@ main {
                                 align-items: center;
                                 justify-content: center;
                                 margin: 0 auto;
-                                padding: 40px 0;
+                                padding: 20px 0;
                                 background-color: $drag_bg;
                                 position: relative;
                                 z-index: 1;
@@ -912,7 +922,6 @@ main {
                                 tr {
                                     display: block;
                                     margin: 0 auto;
-                                    padding: 10px 0;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
@@ -1470,6 +1479,7 @@ main {
         .test_end_btn{
             display: flex;
             justify-content: center;
+            margin: 10px auto;
             .submit_btn,.close_btn {
                 background-color: $main_color;
                 color: $white;
@@ -2040,9 +2050,7 @@ main {
         }
 
         .test_end_page {
-            margin: 60px auto;
             .page {
-                margin: 40px auto;
                 .pagination {
                     a,
                     span {
@@ -2053,7 +2061,6 @@ main {
             }
 
             .test_end_btn{
-                margin: 40px auto;
 
                 .submit_btn,.close_btn{
                     margin: 20px;
@@ -2182,10 +2189,19 @@ main {
                             .test_topic_area {
 
                                 .test_topic_item {
+                                    .test_topic_item_left{
+                                        height: 100%;
+                                        .test_num {
+                                            height: 100%;
+                                        }
+                                    }
+
                                     .test_topic_item_right {
+                                        width: auto;
+                                        margin: 0 0 0 25px;
                                         .test_answer_item {
                                             button {
-                                                margin: 0 10px;
+                                                margin: 0 5px;
                                                 padding: 10px 30px;
                                                 min-width: calc(35px* 1.7 + 30px);
 
@@ -2304,20 +2320,20 @@ main {
 
                                                 .connect_topic_item {
 
-                                                    .sound_icon {
+                                                    // .sound_icon {
 
-                                                        svg {
-                                                            height: calc(40px * 1.7);
-                                                            width: calc(40px * 1.7);
-                                                        }
-                                                    }
+                                                    //     svg {
+                                                    //         height: calc(40px * 1.7);
+                                                    //         width: calc(40px * 1.7);
+                                                    //     }
+                                                    // }
 
-                                                    .connect_topic_text {
-                                                        p {
-                                                            width: calc(40px * 1.7 + 20px);
-                                                            font-size: 40px;
-                                                        }
-                                                    }
+                                                    // .connect_topic_text {
+                                                    //     p {
+                                                    //         width: calc(40px * 1.7 + 20px);
+                                                    //         font-size: 40px;
+                                                    //     }
+                                                    // }
                                                 }
                                             }
                                         }
