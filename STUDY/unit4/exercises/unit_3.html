@@ -28,6 +28,11 @@
 
     <!-- my core CSS -->
     <link rel="stylesheet" href="../../Content/css/SPhonicsStudy.css" />
+
+
+
+
+    <link rel="stylesheet" href="https://apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
 </head>
 
 <body>
@@ -73,6 +78,7 @@
                                 </div>
 
                                 <div class="test_topic_area test_drag_area">
+                                    
                                     <div class="test_topic_item">
                                         <div class="test_topic_item_left">
                                             <div class="test_icon">
@@ -93,7 +99,7 @@
                                         </div>
 
                                         <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
+                                            <div id="drag_cloze_answer_area_one" class="drag_cloze_answer_area">
                                                 <div class="drag_cloze_area">
                                                     <div class="drag_cloze_item">
                                                         <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
@@ -111,11 +117,15 @@
                                                 </div>
 
                                                 <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag1" draggable="true">
-                                                            m
-                                                        </p>
-                                                    </button>
+                                                    <div class="drag_cloze" id="draggable123">
+                                                        <div class="alphabet" draggable="true"></div>
+                                                    </div>
+                                                    <div class="drag_cloze" id="draggable1">
+                                                            <p class="alphabet" id="drag1" draggable="true">
+                                                                m
+                                                            </p>
+                                                        
+                                                    </div>
                                                     <button class="drag_cloze target drag">
                                                         <p class="alphabet" id="drag2" draggable="true">
                                                             t
@@ -755,6 +765,10 @@
     <script src="../../Content/js/bootstrap-5.1.1.min.js"></script>
     <script src="../../Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
+
+    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
     <!-- 最終挑戰選擇器 -->
     <script>
         $(document).ready(function () {
@@ -822,6 +836,65 @@
         });
     </script>
 
+
+<script>
+    $(function() {
+       $( "#draggable1" ).draggable({ containment: "parent" }, {
+     create: function(event, ui) {
+       var parent1 = $(this).parent().parent().parent();
+       var top = $(this).offset().top;
+       var left = $(this).offset().left;
+       var width = $(this).width();
+       var height = $(this).height();
+       console.log(top+height);
+    if (left < parent1.offset().left){
+          $(this).offset({left: $(this).parent().offset().left});
+       }
+       if (top < parent1.offset().top){
+           $(this).offset({top: $(this).parent().offset().top});
+       }
+       if ((left + width > parent1.width()+parent1.offset().left)){
+            $(this).offset({left: ($(this).parent().offset().left+parent1.widhth()-width)});
+       }
+       if(top + height > parent1.height()+parent1.offset().top){
+            $(this).offset({top: ($(this).parent().offset().top+parent1.height()-height)});
+       }
+     
+       
+     }
+   });
+   
+     });
+   </script>
+   <script>
+    $(function() {
+       $( "#draggable123" ).draggable({ containment: "parent" }, {
+     create: function(event, ui) {
+       var parent1 = $(this).parent().parent().parent();
+       var top = $(this).offset().top;
+       var left = $(this).offset().left;
+       var width = $(this).width();
+       var height = $(this).height();
+       console.log(top+height);
+    if (left < parent1.offset().left){
+          $(this).offset({left: $(this).parent().parent().parent().offset().left});
+       }
+       if (top < parent1.offset().top){
+           $(this).offset({top: $(this).parent().parent().parent().offset().top});
+       }
+       if ((left + width > parent1.width()+parent1.offset().left)){
+            $(this).offset({left: ($(this).parent().parent().parent().offset().left+parent1.widhth()-width)});
+       }
+       if(top + height > parent1.height()+parent1.offset().top){
+            $(this).offset({top: ($(this).parent().parent().parent().offset().top+parent1.height()-height)});
+       }
+     
+       
+     }
+   });
+   
+     });
+   </script>
 </body>
 
 </html>

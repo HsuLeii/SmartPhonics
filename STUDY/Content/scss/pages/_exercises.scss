@@ -1639,6 +1639,14 @@ main {
     }
 }
 
+#draggable123 {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    left: 0px;
+    top: 0px;
+  }
+
 @keyframes closePointer {
     0% {
         transform: translate(-50%, 0px);
