@@ -117,20 +117,21 @@
                                                 </div>
 
                                                 <div class="drag_cloze_item">
-                                                    <div class="drag_cloze" id="draggable123">
-                                                        <div class="alphabet" draggable="true"></div>
-                                                    </div>
-                                                    <div class="drag_cloze" id="draggable1">
-                                                            <p class="alphabet" id="drag1" draggable="true">
+                                                    
+                                                    <div class="drag_cloze target dragger" id="drag1">
                                                                 m
-                                                            </p>
-                                                        
                                                     </div>
+
                                                     <button class="drag_cloze target drag">
                                                         <p class="alphabet" id="drag2" draggable="true">
                                                             t
                                                         </p>
                                                     </button>
+
+                                                    <div class="drag_cloze target dragger" id="draggable123" draggable="true">
+                                                        <div class="alphabet" draggable="true"></div>
+                                                    </div>
+
                                                     <button class="drag_cloze target drag">
                                                         <p class="alphabet" id="drag3" draggable="true">
                                                             e
@@ -792,9 +793,13 @@
 
     <!-- 拖曳效果 -->
     <script>
-        $(".drag").on({
+        $(".dragger").draggable({ 
+        containment: "#drag_cloze_answer_area_one", 
+    }); 
 
-            "dragstart": function (event) {
+    $(".drag").on({ 
+        
+      "dragstart": function (event) {
                 event.originalEvent.dataTransfer.setData('text', event.target.id)
             },
             "dragend": function () {
@@ -802,7 +807,8 @@
 
 
             }
-        })
+    }); 
+
 
         $(".target").on({
             "dragenter": function (event) {
@@ -837,7 +843,7 @@
     </script>
 
 
-<script>
+<!-- <script>
     $(function() {
        $( "#draggable1" ).draggable({ containment: "parent" }, {
      create: function(event, ui) {
@@ -846,7 +852,7 @@
        var left = $(this).offset().left;
        var width = $(this).width();
        var height = $(this).height();
-       console.log(top+height);
+    //    console.log(top+height);
     if (left < parent1.offset().left){
           $(this).offset({left: $(this).parent().offset().left});
        }
@@ -865,8 +871,8 @@
    });
    
      });
-   </script>
-   <script>
+   </script> -->
+   <!-- <script>
     $(function() {
        $( "#draggable123" ).draggable({ containment: "parent" }, {
      create: function(event, ui) {
@@ -875,7 +881,11 @@
        var left = $(this).offset().left;
        var width = $(this).width();
        var height = $(this).height();
-       console.log(top+height);
+       console.log(top);
+       console.log(height);
+
+       console.log(parent1.offset().left);
+       console.log(parent1.offset().top);
     if (left < parent1.offset().left){
           $(this).offset({left: $(this).parent().parent().parent().offset().left});
        }
@@ -883,7 +893,7 @@
            $(this).offset({top: $(this).parent().parent().parent().offset().top});
        }
        if ((left + width > parent1.width()+parent1.offset().left)){
-            $(this).offset({left: ($(this).parent().parent().parent().offset().left+parent1.widhth()-width)});
+            $(this).offset({left: ($(this).parent().parent().parent().offset().left+parent1.width()-width)});
        }
        if(top + height > parent1.height()+parent1.offset().top){
             $(this).offset({top: ($(this).parent().parent().parent().offset().top+parent1.height()-height)});
@@ -894,7 +904,7 @@
    });
    
      });
-   </script>
+   </script> -->
 </body>
 
 </html>
