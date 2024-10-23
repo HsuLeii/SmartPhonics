@@ -931,32 +931,32 @@ main {
                                         display: inline-block;
 
                                         &.connect_topic {
-                                            width: calc(50% - 40px - 50px / 2);
+                                            // width: calc((70% - 25px - 20px) / 2);
                                             padding: 10px;
+                                            
 
                                             .connect_topic_item {
-                                                border: 3px solid transparent;
-                                                display: flex;
-                                                justify-content: center;
+                                                // display: flex;
+                                                // justify-content: center;
                                                 cursor: pointer;
+                                                // width: calc(18px * 1.7 + 10px + 10px + 2px);
 
                                                 &.lock {
-
                                                     .sound_icon,
                                                     .connect_topic_text {
-                                                        border: 1.5px solid $main_color;
+                                                        border: 1px solid $main_color;
                                                     }
                                                 }
 
                                                 &.done {
-
                                                     .sound_icon,
                                                     .connect_topic_text {
-                                                        border: 1.5px solid $grey;
+                                                        border: 1px solid $grey;
                                                     }
                                                 }
 
                                                 .sound_icon {
+                                                    border: 1px solid transparent;
                                                     line-height: 1;
                                                     padding: 5px;
 
@@ -977,6 +977,7 @@ main {
                                                 }
 
                                                 .connect_topic_text {
+                                                    border: 1px solid transparent;
                                                     padding: 5px;
                                                     border-radius: 10px;
 
@@ -999,13 +1000,14 @@ main {
                                         }
 
                                         &.connect_space {
-                                            width: 30px;
+                                            width: calc(100%  - 50px - 20px - calc(18px * 1.7 + 10px + 10px + 20px + 4px) * 2);
                                         }
 
                                         &.test_icon {
                                             position: absolute;
                                             left: 0;
                                             width: 25px;
+                                            margin: 0 5px 0 0;
                                         }
                                     }
                                 }
@@ -1787,7 +1789,7 @@ main {
                                                     .sound_icon {
 
                                                         svg {
-                                                            padding: 10px;
+                                                            // padding: 10px;
                                                             height: calc(25px * 1.7);
                                                             width: calc(25px * 1.7);
                                                         }
@@ -1797,10 +1799,14 @@ main {
                                                         p {
                                                             width: calc(25px * 1.7 + 20px);
                                                             font-size: 25px;
-                                                            padding: 10px;
+                                                            // padding: 10px;
                                                         }
                                                     }
                                                 }
+                                            }
+
+                                            &.connect_space {
+                                                width: calc(100%  - 50px - 20px - calc(25px * 1.7 + 10px + 10px + 20px + 4px) * 2);
                                             }
                                         }
                                     }
@@ -2245,10 +2251,10 @@ main {
 
                             .connect_area {
 
-                                .connect {
-                                    width: 47.5%;
-                                    margin: 0 auto;
-                                }
+                                // .connect {
+                                //     width: 47.5%;
+                                //     margin: 0 auto;
+                                // }
                             }
                         }
                     }
