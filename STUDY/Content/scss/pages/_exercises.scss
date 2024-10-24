@@ -918,6 +918,8 @@ main {
                                 position: relative;
                                 z-index: 2;
                                 width: 100%;
+                                max-width: 950px;
+                                margin: 0 auto;
 
                                 tr {
                                     display: block;
@@ -932,7 +934,8 @@ main {
 
                                         &.connect_topic {
                                             // width: calc((70% - 25px - 20px) / 2);
-                                            padding: 10px;
+                                            // padding: 10px;
+                                            margin: 5px 0;
                                             
 
                                             .connect_topic_item {
@@ -1000,7 +1003,7 @@ main {
                                         }
 
                                         &.connect_space {
-                                            width: calc(100%  - 50px - 20px - calc(18px * 1.7 + 10px + 10px + 20px + 4px) * 2);
+                                            width: calc(100%  - 50px - 20px - calc(18px * 1.7 + 10px + 10px + 4px) * 2);
                                         }
 
                                         &.test_icon {
@@ -1806,7 +1809,7 @@ main {
                                             }
 
                                             &.connect_space {
-                                                width: calc(100%  - 50px - 20px - calc(25px * 1.7 + 10px + 10px + 20px + 4px) * 2);
+                                                width: calc(100%  - 50px - 20px - calc(25px * 1.7 + 10px + 10px + 4px) * 2);
                                             }
                                         }
                                     }
@@ -2031,11 +2034,15 @@ main {
 
                                                     .connect_topic_text {
                                                         p {
-                                                            width: calc(30px * 1.7 + 20px);
+                                                            width: calc(30px * 1.7 + 10px);
                                                             font-size: 30px;
                                                         }
                                                     }
                                                 }
+                                            }
+
+                                            &.connect_space {
+                                                width: calc(100%  - 50px - 20px - calc(30px * 1.7 + 10px + 10px + 4px) * 2);
                                             }
                                         }
                                     }
@@ -2141,7 +2148,6 @@ main {
                         }
 
                         .pagination_main {
-                            padding: 20px 0;
 
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
