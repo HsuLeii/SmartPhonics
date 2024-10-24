@@ -427,14 +427,14 @@
     </script>
 
     <!-- 送出答案顯示表情 -->
-    <script>
+    <!-- <script>
         $(document).ready(function () {
             $(".test_icon").hide();
             $(".submit_btn").click(function () {
                 $(".test_icon").show();
             })
         });
-    </script>
+    </script> -->
 
     <!-- 連連看效果 -->
     <script type="text/javascript">
@@ -597,6 +597,7 @@
 
             }
 
+            
             //畫點
             function drawpoint() {
 
@@ -606,7 +607,7 @@
 
                     var aa = $("#aa" + i)
                     context.beginPath();
-                    context.arc(aa.offset().left + aa.width() + 20 + 10, aa.offset().top + aa.height() / 2 + 20,
+                    context.arc(aa.offset().left + aa.width() + 20 + 20, aa.offset().top + aa.height() / 2 + 20,
                         5,
                         0, 360, false);
                     context.fill(); //畫實心圓
@@ -614,11 +615,12 @@
 
                     var bb = $("#bb" + i)
                     context.beginPath();
-                    context.arc(bb.offset().left + 20 - 10, bb.offset().top + bb.height() / 2 + 20, 5, 0, 360,
+                    context.arc(bb.offset().left + 20 - 20, bb.offset().top + bb.height() / 2 + 20, 5, 0, 360,
                         false);
                     context.fill(); //畫實心圓
                     context.closePath();
                 }
+
             }
 
             //預先畫線
@@ -649,6 +651,8 @@
                 drawline(5, 4);
                 drawline(5, 5);
             }
+
+            
         });
 
 

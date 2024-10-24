@@ -1360,6 +1360,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   background-color: #ed710e;
   border-radius: 10px;
   line-height: 1;
+  display: block;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon svg {
   color: #fff;
@@ -1455,7 +1456,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr {
   display: block;
-  margin: 0 auto;
+  margin: 0 20px 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1513,7 +1514,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   text-align: right;
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_space {
-  width: calc(100% - 50px - 20px - 109.2px);
+  width: calc(100% - 50px - 40px - 105.2px);
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.test_icon {
   position: absolute;

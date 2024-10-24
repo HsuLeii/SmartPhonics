@@ -798,6 +798,7 @@ main {
                                             background-color: $main_color;
                                             border-radius: 10px;
                                             line-height: 1;
+                                            display: block;
                                             svg {
                                                 color: $white;
                                             }
@@ -923,7 +924,7 @@ main {
 
                                 tr {
                                     display: block;
-                                    margin: 0 auto;
+                                    margin: 0 20px 0 auto;
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
@@ -1003,7 +1004,7 @@ main {
                                         }
 
                                         &.connect_space {
-                                            width: calc(100%  - 50px - 20px - calc(18px * 1.7 + 10px + 10px + 4px) * 2);
+                                            width: calc(100%  - 50px - 40px - calc(18px * 1.7 + 10px + 10px + 2px) * 2);
                                         }
 
                                         &.test_icon {
