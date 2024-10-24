@@ -973,6 +973,15 @@ main {
                                                         width: calc(18px * 1.7);
                                                     }
 
+                                                    img {
+                                                        background-color: $main_color;
+                                                        color: $white;
+                                                        padding: 5px;
+                                                        border-radius: 10px;
+                                                        height: calc(18px * 1.7 + 10px);
+                                                        width: calc(18px * 1.7 + 10px);
+                                                    }
+
                                                     &:hover {
                                                         svg {
                                                             background-color: darken($main_color, 5%);
@@ -988,10 +997,11 @@ main {
                                                     p {
                                                         display: flex;
                                                         justify-content: center;
+                                                        align-items: center;
                                                         background-color: $drag_cloze;
                                                         width: calc(18px * 1.7 + 10px);
+                                                        height: calc(18px * 1.7 + 10px);
                                                         font-size: 18px;
-                                                        padding: 5px;
                                                         border-radius: 10px;
                                                         color: $white;
                                                     }
@@ -1797,11 +1807,18 @@ main {
                                                             height: calc(25px * 1.7);
                                                             width: calc(25px * 1.7);
                                                         }
+
+                                                        img {
+                                                            // padding: 10px;
+                                                            height: calc(25px * 1.7 + 10px);
+                                                            width: calc(25px * 1.7 + 10px);
+                                                        }
                                                     }
 
                                                     .connect_topic_text {
                                                         p {
-                                                            width: calc(25px * 1.7 + 20px);
+                                                            width: calc(25px * 1.7 + 10px);
+                                                            height: calc(25px * 1.7 + 10px);
                                                             font-size: 25px;
                                                             // padding: 10px;
                                                         }
@@ -2031,11 +2048,17 @@ main {
                                                             height: calc(30px * 1.7);
                                                             width: calc(30px * 1.7);
                                                         }
+
+                                                        img {
+                                                            height: calc(30px * 1.7 + 10px);
+                                                            width: calc(30px * 1.7 + 10px);
+                                                        }
                                                     }
 
                                                     .connect_topic_text {
                                                         p {
                                                             width: calc(30px * 1.7 + 10px);
+                                                            height: calc(30px * 1.7 + 10px);
                                                             font-size: 30px;
                                                         }
                                                     }

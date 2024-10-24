@@ -140,9 +140,9 @@
                                     </td>
                                     <td class="connect_topic connect_topic_left">
                                         <div id="aa1" class="connect_topic_item">
-                                            <div class="connect_topic_text">
-                                                <p>A</p>
-                                            </div>
+                                            <button class="sound_icon">
+                                                <img src="../../Content/image/svg/sound.svg" alt="">
+                                            </button>
                                         </div>
                                     </td>
                                     <td class="connect_space"></td>
@@ -164,7 +164,7 @@
                                     <td class="connect_topic connect_topic_left">
                                         <div id="aa2" class="connect_topic_item">
                                             <button class="sound_icon">
-                                                <i class="fa-solid fa-volume-high"></i>
+                                                <img src="../../Content/image/svg/sound.svg" alt="">
                                             </button>
                                         </div>
                                     </td>
@@ -187,7 +187,7 @@
                                     <td class="connect_topic connect_topic_left">
                                         <div id="aa3" class="connect_topic_item">
                                             <button class="sound_icon">
-                                                <i class="fa-solid fa-volume-high"></i>
+                                                <img src="../../Content/image/svg/sound.svg" alt="">
                                             </button>
                                         </div>
                                     </td>
@@ -210,7 +210,7 @@
                                     <td class="connect_topic connect_topic_left">
                                         <div id="aa4" class="connect_topic_item">
                                             <button class="sound_icon">
-                                                <i class="fa-solid fa-volume-high"></i>
+                                                <img src="../../Content/image/svg/sound.svg" alt="">
                                             </button>
                                         </div>
                                     </td>
@@ -233,7 +233,7 @@
                                     <td class="connect_topic connect_topic_left">
                                         <div id="aa5" class="connect_topic_item">
                                             <button class="sound_icon">
-                                                <i class="fa-solid fa-volume-high"></i>
+                                                <img src="../../Content/image/svg/sound.svg" alt="">
                                             </button>
                                         </div>
                                     </td>
@@ -427,14 +427,14 @@
     </script>
 
     <!-- 送出答案顯示表情 -->
-    <!-- <script>
+    <script>
         $(document).ready(function () {
             $(".test_icon").hide();
             $(".submit_btn").click(function () {
                 $(".test_icon").show();
             })
         });
-    </script> -->
+    </script>
 
     <!-- 連連看效果 -->
     <script type="text/javascript">
@@ -584,8 +584,8 @@
                 context.lineWidth = "2";
                 context.beginPath();
 
-                context.moveTo(aa.offset().left + aa.width() + 20 + 10, aa.offset().top + aa.height() / 2 + 20);
-                context.lineTo(bb.offset().left + 20 - 10, bb.offset().top + bb.height() / 2 + 20);
+                context.moveTo(aa.offset().left + aa.width() + 5, aa.offset().top + aa.height() / 2 + 20 - 5);
+                context.lineTo(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 -5);
 
                 context.closePath();
                 context.stroke();
@@ -606,7 +606,7 @@
 
                     var aa = $("#aa" + i)
                     context.beginPath();
-                    context.arc(aa.offset().left + aa.width() + 0, aa.offset().top + aa.height() / 2 + 20,
+                    context.arc(aa.offset().left + aa.width() + 5, aa.offset().top + aa.height() / 2 + 20 - 5,
                         5,
                         0, 360, false);
                     context.fill(); //畫實心圓
@@ -614,7 +614,7 @@
 
                     var bb = $("#bb" + i)
                     context.beginPath();
-                    context.arc(bb.offset().left + 20 - 20, bb.offset().top + bb.height() / 2 + 20, 5, 0, 360,
+                    context.arc(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 - 5, 5, 0, 360,
                         false);
                     context.fill(); //畫實心圓
                     context.closePath();

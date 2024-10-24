@@ -1492,6 +1492,14 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   height: 30.6px;
   width: 30.6px;
 }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon img {
+  background-color: #ed710e;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  height: 40.6px;
+  width: 40.6px;
+}
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon:hover svg {
   background-color: #d5660d;
 }
@@ -1503,10 +1511,11 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #70ace3;
   width: 40.6px;
+  height: 40.6px;
   font-size: 18px;
-  padding: 5px;
   border-radius: 10px;
   color: #fff;
 }
@@ -1971,8 +1980,13 @@ main canvas {
     height: 42.5px;
     width: 42.5px;
   }
+  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon img {
+    height: 52.5px;
+    width: 52.5px;
+  }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p {
-    width: 62.5px;
+    width: 52.5px;
+    height: 52.5px;
     font-size: 25px;
   }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_space {
@@ -2054,8 +2068,13 @@ main canvas {
     height: 51px;
     width: 51px;
   }
+  main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .sound_icon img {
+    height: 61px;
+    width: 61px;
+  }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_topic .connect_topic_item .connect_topic_text p {
     width: 61px;
+    height: 61px;
     font-size: 30px;
   }
   main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .connect tr td.connect_space {
