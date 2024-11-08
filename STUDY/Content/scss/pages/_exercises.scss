@@ -1043,6 +1043,18 @@ main {
                                 width: 100%;
 
                                 .tab-pane {
+                                    width: 100%;
+                                    display: block;
+                                    position: absolute;
+
+                                    &.active{
+                                        z-index: 3;
+                                    }
+
+                                    &.tab-pane-three{
+                                        position: relative;
+                                        opacity: 0;
+                                    }
                                     .connect {
                                         position: relative;
                                         z-index: 2;

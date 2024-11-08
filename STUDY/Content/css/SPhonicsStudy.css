@@ -1540,6 +1540,18 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content {
   width: 100%;
 }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane.active {
+  z-index: 3;
+}
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane.tab-pane-three {
+  position: relative;
+  opacity: 0;
+}
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect {
   position: relative;
   z-index: 2;
