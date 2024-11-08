@@ -278,7 +278,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-        
+
                                             <td class="test_icon">
                                                 <img src="../../Content/image/svg/correct.svg" alt="">
                                             </td>
@@ -373,7 +373,7 @@
                                     </table>
                                 </div>
                             </div>
-                            
+
 
                             <div class="canvas_area">
                                 <canvas id="myCanvas"></canvas>
@@ -640,413 +640,280 @@
     <script type="text/javascript">
         $(function () {
 
-            //0 可選取 1選取中  2已鎖定
-
-            drawpoint()
-            drawllline()
-            drawlllineone()
             $("#aa1,#aa2,#aa3,#aa4,#aa5").click(function (e) {
-                if ($("#HsL").val() != "0" && $("#HsL").val() != this.id.substr(2, 1)) {
-                    //console.log("同一邊重選");
-                    //改選
-                    if ($("#L" + this.id).val() != "2") {
-                        $("#Laa" + $("#HsL").val()).val('0');
-                        $("#L" + this.id).val("1");
-                        $("#HsL").val(this.id.substr(2, 1));
-                    }
-                } else {
-                    if ($("#HsR").val() == "0") {
-                        //右邊沒有選取 只可以選左邊0可選取
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                            //右邊改未選 取消左邊的鎖定
-                            $("#HsR").val($("#T" + this.id).val()); //右邊已選取 為此項原本的連線目標
-                            $("#Lbb" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
-                            $("#L" + this.id).val('0') //左邊為未選取
-                            $("#Tbb" + $("#T" + this.id).val()).val("0");
-                            $("#T" + this.id).val('0')
-                            $("#Can" + this.id.substr(2, 1) + $("#HsR").val()).fadeOut();
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //取消選取
-                            $("#L" + this.id).val("0");
-                            $("#HsL").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取
-                            $("#L" + this.id).val("1");
-                            $("#HsL").val(this.id.substr(2, 1));
+                        if ($("#HsL").val() != "0" && $("#HsL").val() != this.id.substr(2, 1)) {
+                            //console.log("同一邊重選");
+                            //改選
+                            if ($("#L" + this.id).val() != "2") {
+                                $("#Laa" + $("#HsL").val()).val('0');
+                                $("#L" + this.id).val("1");
+                                $("#HsL").val(this.id.substr(2, 1));
+                            }
+                        } else {
+                            if ($("#HsR").val() == "0") {
+                                //右邊沒有選取 只可以選左邊0可選取
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                    //右邊改未選 取消左邊的鎖定
+                                    $("#HsR").val($("#T" + this.id).val()); //右邊已選取 為此項原本的連線目標
+                                    $("#Lbb" + $("#T" + this.id).val()).val(
+                                    "1"); //右邊連線目標 解除鎖定 為選取狀態
+                                    $("#L" + this.id).val('0') //左邊為未選取
+                                    $("#Tbb" + $("#T" + this.id).val()).val("0");
+                                    $("#T" + this.id).val('0')
+                                    $("#Can" + this.id.substr(2, 1) + $("#HsR").val())
+                                .fadeOut();
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //取消選取
+                                    $("#L" + this.id).val("0");
+                                    $("#HsL").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取
+                                    $("#L" + this.id).val("1");
+                                    $("#HsL").val(this.id.substr(2, 1));
+                                }
+                            } else {
+                                //右邊有選取 左邊選第二答案
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //已選取 但左邊理應未選 
+                                    //$("#L" + this.id).val("0");
+                                    //$("#HsL").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取 開始連線
+                                    $("#T" + this.id).val($("#HsR").val()); //儲存左邊目標
+                                    $("#Tbb" + $("#HsR").val()).val(this.id.substr(2,
+                                    1)); //儲存右邊目標
+                                    $("#L" + this.id).val("2");
+                                    $("#Lbb" + $("#HsR").val()).val("2");
+                                    $("#Can" + this.id.substr(2, 1) + $("#HsR").val()).show();
+                                    $("#HsL").val("0");
+                                    $("#HsR").val("0");
+                                }
+                            }
                         }
-                    } else {
-                        //右邊有選取 左邊選第二答案
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //已選取 但左邊理應未選 
-                            //$("#L" + this.id).val("0");
-                            //$("#HsL").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取 開始連線
-                            $("#T" + this.id).val($("#HsR").val()); //儲存左邊目標
-                            $("#Tbb" + $("#HsR").val()).val(this.id.substr(2, 1)); //儲存右邊目標
-                            $("#L" + this.id).val("2");
-                            $("#Lbb" + $("#HsR").val()).val("2");
-                            $("#Can" + this.id.substr(2, 1) + $("#HsR").val()).show();
-                            $("#HsL").val("0");
-                            $("#HsR").val("0");
-                        }
-                    }
-                }
-                setborder()
-            });
+                        setborder()
+                    });
 
-            $("#bb1,#bb2,#bb3,#bb4,#bb5").click(function (e) {
-                if ($("#HsR").val() != "0" && $("#HsR").val() != this.id.substr(2, 1)) {
-                    //console.log("同一邊重選");
-                    //改選
-                    if ($("#L" + this.id).val() != "2") {
-                        $("#Lbb" + $("#HsR").val()).val('0');
-                        $("#L" + this.id).val("1");
-                        $("#HsR").val(this.id.substr(2, 1));
-                    }
-                } else {
-                    if ($("#HsL").val() == "0") {
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                            //左邊改未選 取消右邊的鎖定
-                            $("#HsL").val($("#T" + this.id).val()); //左邊已選取 為此項原本的連線目標
-                            $("#Laa" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
-                            $("#L" + this.id).val('0') //左邊為未選取
-                            $("#Taa" + $("#T" + this.id).val()).val("0");
-                            $("#T" + this.id).val('0')
-                            $("#Can" + $("#HsL").val() + this.id.substr(2, 1)).fadeOut();
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //取消選取
-                            $("#L" + this.id).val("0");
-                            $("#HsR").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取
-                            $("#L" + this.id).val("1");
-                            $("#HsR").val(this.id.substr(2, 1));
-                        }
-                    } else {
-                        //右邊有選取 左邊選第二答案
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
+                    $("#bb1,#bb2,#bb3,#bb4,#bb5").click(function (e) {
+                        if ($("#HsR").val() != "0" && $("#HsR").val() != this.id.substr(2, 1)) {
+                            //console.log("同一邊重選");
+                            //改選
+                            if ($("#L" + this.id).val() != "2") {
+                                $("#Lbb" + $("#HsR").val()).val('0');
+                                $("#L" + this.id).val("1");
+                                $("#HsR").val(this.id.substr(2, 1));
+                            }
+                        } else {
+                            if ($("#HsL").val() == "0") {
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                    //左邊改未選 取消右邊的鎖定
+                                    $("#HsL").val($("#T" + this.id).val()); //左邊已選取 為此項原本的連線目標
+                                    $("#Laa" + $("#T" + this.id).val()).val(
+                                    "1"); //右邊連線目標 解除鎖定 為選取狀態
+                                    $("#L" + this.id).val('0') //左邊為未選取
+                                    $("#Taa" + $("#T" + this.id).val()).val("0");
+                                    $("#T" + this.id).val('0')
+                                    $("#Can" + $("#HsL").val() + this.id.substr(2, 1))
+                                .fadeOut();
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //取消選取
+                                    $("#L" + this.id).val("0");
+                                    $("#HsR").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取
+                                    $("#L" + this.id).val("1");
+                                    $("#HsR").val(this.id.substr(2, 1));
+                                }
+                            } else {
+                                //右邊有選取 左邊選第二答案
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
 
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //已選取 但左邊理應未選 
-                            //$("#L" + this.id).val("0");
-                            //$("#HsL").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取 開始連線
-                            $("#T" + this.id).val($("#HsL").val()); //儲存右邊目標
-                            $("#Taa" + $("#HsL").val()).val(this.id.substr(2, 1)); //儲存左邊目標
-                            $("#L" + this.id).val("2");
-                            $("#Laa" + $("#HsL").val()).val("2");
-                            // drawline(this.id.substr(2, 1), $("#HsR").val());
-                            $("#Can" + $("#HsL").val() + this.id.substr(2, 1)).show();
-                            $("#HsL").val("0");
-                            $("#HsR").val("0");
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //已選取 但左邊理應未選 
+                                    //$("#L" + this.id).val("0");
+                                    //$("#HsL").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取 開始連線
+                                    $("#T" + this.id).val($("#HsL").val()); //儲存右邊目標
+                                    $("#Taa" + $("#HsL").val()).val(this.id.substr(2,
+                                    1)); //儲存左邊目標
+                                    $("#L" + this.id).val("2");
+                                    $("#Laa" + $("#HsL").val()).val("2");
+                                    // drawline(this.id.substr(2, 1), $("#HsR").val());
+                                    $("#Can" + $("#HsL").val() + this.id.substr(2, 1)).show();
+                                    $("#HsL").val("0");
+                                    $("#HsR").val("0");
+                                }
+                            }
                         }
-                    }
-                }
-                setborder()
-            });
-
+                        setborder()
+                    });
 
             $("#dd1,#dd2,#dd3,#dd4,#dd5").click(function (e) {
-                if ($("#HsLOne").val() != "0" && $("#HsLOne").val() != this.id.substr(2, 1)) {
-                    //console.log("同一邊重選");
-                    //改選
-                    if ($("#L" + this.id).val() != "2") {
-                        $("#Ldd" + $("#HsLOne").val()).val('0');
-                        $("#L" + this.id).val("1");
-                        $("#HsLOne").val(this.id.substr(2, 1));
-                    }
-                } else {
-                    if ($("#HsROne").val() == "0") {
-                        //右邊沒有選取 只可以選左邊0可選取
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                            //右邊改未選 取消左邊的鎖定
-                            $("#HsROne").val($("#T" + this.id).val()); //右邊已選取 為此項原本的連線目標
-                            $("#Lee" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
-                            $("#L" + this.id).val('0') //左邊為未選取
-                            $("#Tee" + $("#T" + this.id).val()).val("0");
-                            $("#T" + this.id).val('0')
-                            $("#CanOne" + this.id.substr(2, 1) + $("#HsROne").val()).fadeOut();
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //取消選取
-                            $("#L" + this.id).val("0");
-                            $("#HsLOne").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取
-                            $("#L" + this.id).val("1");
-                            $("#HsLOne").val(this.id.substr(2, 1));
+                        if ($("#HsLOne").val() != "0" && $("#HsLOne").val() != this.id.substr(2,
+                                1)) {
+                            //console.log("同一邊重選");
+                            //改選
+                            if ($("#L" + this.id).val() != "2") {
+                                $("#Ldd" + $("#HsLOne").val()).val('0');
+                                $("#L" + this.id).val("1");
+                                $("#HsLOne").val(this.id.substr(2, 1));
+                            }
+                        } else {
+                            if ($("#HsROne").val() == "0") {
+                                //右邊沒有選取 只可以選左邊0可選取
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                    //右邊改未選 取消左邊的鎖定
+                                    $("#HsROne").val($("#T" + this.id)
+                                        .val()); //右邊已選取 為此項原本的連線目標
+                                    $("#Lee" + $("#T" + this.id).val()).val(
+                                        "1"); //右邊連線目標 解除鎖定 為選取狀態
+                                    $("#L" + this.id).val('0') //左邊為未選取
+                                    $("#Tee" + $("#T" + this.id).val()).val("0");
+                                    $("#T" + this.id).val('0')
+                                    $("#CanOne" + this.id.substr(2, 1) + $("#HsROne").val())
+                                        .fadeOut();
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //取消選取
+                                    $("#L" + this.id).val("0");
+                                    $("#HsLOne").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取
+                                    $("#L" + this.id).val("1");
+                                    $("#HsLOne").val(this.id.substr(2, 1));
+                                }
+                            } else {
+                                //右邊有選取 左邊選第二答案
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //已選取 但左邊理應未選 
+                                    //$("#L" + this.id).val("0");
+                                    //$("#HsLOne").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取 開始連線
+                                    $("#T" + this.id).val($("#HsROne").val()); //儲存左邊目標
+                                    $("#Tee" + $("#HsROne").val()).val(this.id.substr(2,
+                                        1)); //儲存右邊目標
+                                    $("#L" + this.id).val("2");
+                                    $("#Lee" + $("#HsROne").val()).val("2");
+                                    $("#CanOne" + this.id.substr(2, 1) + $("#HsROne").val())
+                                        .show();
+                                    $("#HsLOne").val("0");
+                                    $("#HsROne").val("0");
+                                }
+                            }
                         }
-                    } else {
-                        //右邊有選取 左邊選第二答案
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //已選取 但左邊理應未選 
-                            //$("#L" + this.id).val("0");
-                            //$("#HsLOne").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取 開始連線
-                            $("#T" + this.id).val($("#HsROne").val()); //儲存左邊目標
-                            $("#Tee" + $("#HsROne").val()).val(this.id.substr(2, 1)); //儲存右邊目標
-                            $("#L" + this.id).val("2");
-                            $("#Lee" + $("#HsROne").val()).val("2");
-                            $("#CanOne" + this.id.substr(2, 1) + $("#HsROne").val()).show();
-                            $("#HsLOne").val("0");
-                            $("#HsROne").val("0");
+                        setborderOne()
+                    });
+
+                    $("#ee1,#ee2,#ee3,#ee4,#ee5").click(function (e) {
+                        if ($("#HsROne").val() != "0" && $("#HsROne").val() != this.id.substr(2,
+                                1)) {
+                            //console.log("同一邊重選");
+                            //改選
+                            if ($("#L" + this.id).val() != "2") {
+                                $("#Lee" + $("#HsROne").val()).val('0');
+                                $("#L" + this.id).val("1");
+                                $("#HsROne").val(this.id.substr(2, 1));
+                            }
+                        } else {
+                            if ($("#HsLOne").val() == "0") {
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                    //左邊改未選 取消右邊的鎖定
+                                    $("#HsLOne").val($("#T" + this.id)
+                                        .val()); //左邊已選取 為此項原本的連線目標
+                                    $("#Ldd" + $("#T" + this.id).val()).val(
+                                        "1"); //右邊連線目標 解除鎖定 為選取狀態
+                                    $("#L" + this.id).val('0') //左邊為未選取
+                                    $("#Tdd" + $("#T" + this.id).val()).val("0");
+                                    $("#T" + this.id).val('0')
+                                    $("#CanOne" + $("#HsLOne").val() + this.id.substr(2, 1))
+                                        .fadeOut();
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //取消選取
+                                    $("#L" + this.id).val("0");
+                                    $("#HsROne").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取
+                                    $("#L" + this.id).val("1");
+                                    $("#HsROne").val(this.id.substr(2, 1));
+                                }
+                            } else {
+                                //右邊有選取 左邊選第二答案
+                                if ($("#L" + this.id).val() == "2") {
+                                    //此項不可選 不進行動作
+                                } else if ($("#L" + this.id).val() == "1") {
+                                    //已選取 但左邊理應未選 
+                                    //$("#L" + this.id).val("0");
+                                    //$("#HsLOne").val("0");
+                                } else if ($("#L" + this.id).val() == "0") {
+                                    //未選取狀態  標示選取 開始連線
+                                    $("#T" + this.id).val($("#HsLOne").val()); //儲存右邊目標
+                                    $("#Tdd" + $("#HsLOne").val()).val(this.id.substr(2,
+                                        1)); //儲存左邊目標
+                                    $("#L" + this.id).val("2");
+                                    $("#Ldd" + $("#HsLOne").val()).val("2");
+                                    // drawline(this.id.substr(2, 1), $("#HsROne").val());
+                                    $("#CanOne" + $("#HsLOne").val() + this.id.substr(2, 1))
+                                        .show();
+                                    $("#HsLOne").val("0");
+                                    $("#HsROne").val("0");
+                                }
+                            }
+                        }
+                        setborderOne()
+                    });
+
+
+                    function setborder() {
+                        for (var i = 1; i <= 5; i++) {
+                            if ($("#Laa" + i).val() == "1") {
+                                $("#aa" + i).addClass("lock");
+                            } else if ($("#Laa" + i).val() == "2") {
+                                $("#aa" + i).addClass("done").removeClass("lock");
+                            } else {
+                                $("#aa" + i).addClass("notSelected").removeClass("lock").removeClass(
+                                    "done");
+                            }
+                            if ($("#Lbb" + i).val() == "1") {
+                                $("#bb" + i).addClass("lock");
+                            } else if ($("#Lbb" + i).val() == "2") {
+                                $("#bb" + i).addClass("done").removeClass("lock");
+                            } else {
+                                $("#bb" + i).addClass("notSelected").removeClass("lock").removeClass(
+                                    "done");
+                            }
                         }
                     }
-                }
-                setborderOne()
-            });
 
-            $("#ee1,#ee2,#ee3,#ee4,#ee5").click(function (e) {
-                if ($("#HsROne").val() != "0" && $("#HsROne").val() != this.id.substr(2, 1)) {
-                    //console.log("同一邊重選");
-                    //改選
-                    if ($("#L" + this.id).val() != "2") {
-                        $("#Lee" + $("#HsROne").val()).val('0');
-                        $("#L" + this.id).val("1");
-                        $("#HsROne").val(this.id.substr(2, 1));
-                    }
-                } else {
-                    if ($("#HsLOne").val() == "0") {
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                            //左邊改未選 取消右邊的鎖定
-                            $("#HsLOne").val($("#T" + this.id).val()); //左邊已選取 為此項原本的連線目標
-                            $("#Ldd" + $("#T" + this.id).val()).val("1"); //右邊連線目標 解除鎖定 為選取狀態
-                            $("#L" + this.id).val('0') //左邊為未選取
-                            $("#Tdd" + $("#T" + this.id).val()).val("0");
-                            $("#T" + this.id).val('0')
-                            $("#CanOne" + $("#HsLOne").val() + this.id.substr(2, 1)).fadeOut();
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //取消選取
-                            $("#L" + this.id).val("0");
-                            $("#HsROne").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取
-                            $("#L" + this.id).val("1");
-                            $("#HsROne").val(this.id.substr(2, 1));
-                        }
-                    } else {
-                        //右邊有選取 左邊選第二答案
-                        if ($("#L" + this.id).val() == "2") {
-                            //此項不可選 不進行動作
-                        } else if ($("#L" + this.id).val() == "1") {
-                            //已選取 但左邊理應未選 
-                            //$("#L" + this.id).val("0");
-                            //$("#HsLOne").val("0");
-                        } else if ($("#L" + this.id).val() == "0") {
-                            //未選取狀態  標示選取 開始連線
-                            $("#T" + this.id).val($("#HsLOne").val()); //儲存右邊目標
-                            $("#Tdd" + $("#HsLOne").val()).val(this.id.substr(2, 1)); //儲存左邊目標
-                            $("#L" + this.id).val("2");
-                            $("#Ldd" + $("#HsLOne").val()).val("2");
-                            // drawline(this.id.substr(2, 1), $("#HsROne").val());
-                            $("#CanOne" + $("#HsLOne").val() + this.id.substr(2, 1)).show();
-                            $("#HsLOne").val("0");
-                            $("#HsROne").val("0");
+                    function setborderOne() {
+                        for (var i = 1; i <= 5; i++) {
+                            if ($("#Ldd" + i).val() == "1") {
+                                $("#dd" + i).addClass("lock");
+                            } else if ($("#Ldd" + i).val() == "2") {
+                                $("#dd" + i).addClass("done").removeClass("lock");
+                            } else {
+                                $("#dd" + i).addClass("notSelected").removeClass("lock").removeClass(
+                                    "done");
+                            }
+                            if ($("#Lee" + i).val() == "1") {
+                                $("#ee" + i).addClass("lock");
+                            } else if ($("#Lee" + i).val() == "2") {
+                                $("#ee" + i).addClass("done").removeClass("lock");
+                            } else {
+                                $("#ee" + i).addClass("notSelected").removeClass("lock").removeClass(
+                                    "done");
+                            }
                         }
                     }
-                }
-                setborderOne()
-            });
 
-
-            function setborder() {
-                for (var i = 1; i <= 5; i++) {
-                    if ($("#Laa" + i).val() == "1") {
-                        $("#aa" + i).addClass("lock");
-                    } else if ($("#Laa" + i).val() == "2") {
-                        $("#aa" + i).addClass("done").removeClass("lock");
-                    } else {
-                        $("#aa" + i).addClass("notSelected").removeClass("lock").removeClass("done");
-                    }
-                    if ($("#Lbb" + i).val() == "1") {
-                        $("#bb" + i).addClass("lock");
-                    } else if ($("#Lbb" + i).val() == "2") {
-                        $("#bb" + i).addClass("done").removeClass("lock");
-                    } else {
-                        $("#bb" + i).addClass("notSelected").removeClass("lock").removeClass("done");
-                    }
-                }
-            }
-
-            function setborderOne() {
-                for (var i = 1; i <= 5; i++) {
-                    if ($("#Ldd" + i).val() == "1") {
-                        $("#dd" + i).addClass("lock");
-                    } else if ($("#Ldd" + i).val() == "2") {
-                        $("#dd" + i).addClass("done").removeClass("lock");
-                    } else {
-                        $("#dd" + i).addClass("notSelected").removeClass("lock").removeClass("done");
-                    }
-                    if ($("#Lee" + i).val() == "1") {
-                        $("#ee" + i).addClass("lock");
-                    } else if ($("#Lee" + i).val() == "2") {
-                        $("#ee" + i).addClass("done").removeClass("lock");
-                    } else {
-                        $("#ee" + i).addClass("notSelected").removeClass("lock").removeClass("done");
-                    }
-                }
-            }
-
-            function drawline(a, b) {
-
-                var aa = $("#aa" + a)
-                var bb = $("#bb" + b)
-
-                var canvas = document.getElementById("Can" + a + b);
-                var context = canvas.getContext("2d");
-
-
-                context.strokeStyle = 'gray';
-                context.lineWidth = "2";
-                context.beginPath();
-
-                context.moveTo(aa.offset().left + aa.width() + 5, aa.offset().top + aa.height() / 2 + 20 - 5);
-                context.lineTo(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 - 5);
-
-                context.closePath();
-                context.stroke();
-
-                $("#Can" + a + b).hide();
-
-                //console.log(a);
-                //console.log(b);
-
-            }
-
-            function drawlineone(d, e) {
-
-                var dd = $("#dd" + d)
-                var ee = $("#ee" + e)
-
-                var canvas = document.getElementById("CanOne" + d + e);
-                var context = canvas.getContext("2d");
-
-
-                context.strokeStyle = 'gray';
-                context.lineWidth = "2";
-                context.beginPath();
-
-                context.moveTo(dd.offset().left + dd.width() + 5, dd.offset().top + dd.height() / 2 + 20 - 5);
-                context.lineTo(ee.offset().left - 5, ee.offset().top + ee.height() / 2 + 20 - 5);
-
-                context.closePath();
-                context.stroke();
-
-                $("#CanOne" + d + e).hide();
-
-                //console.log(a);
-                //console.log(b);
-
-            }
-
-            //畫點
-            function drawpoint() {
-
-                var canvas = document.getElementById("myCanvas");
-                var context = canvas.getContext("2d");
-                for (var i = 1; i <= 5; i++) {
-
-                    var aa = $("#aa" + i)
-                    context.beginPath();
-                    context.arc(aa.offset().left + aa.width() + 5, aa.offset().top + aa.height() / 2 + 20 - 5,
-                        5,
-                        0, 360, false);
-                    context.fill(); //畫實心圓
-                    context.closePath();
-
-                    var bb = $("#bb" + i)
-                    context.beginPath();
-                    context.arc(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 - 5, 5, 0, 360,
-                        false);
-                    context.fill(); //畫實心圓
-                    context.closePath();
-
-                    var dd = $("#dd" + i)
-                    context.beginPath();
-                    context.arc(dd.offset().left + dd.width() + 5, dd.offset().top + dd.height() / 2 + 20 - 5,
-                        5,
-                        0, 360, false);
-                    context.fill(); //畫實心圓
-                    context.closePath();
-
-                    var ee = $("#ee" + i)
-                    context.beginPath();
-                    context.arc(ee.offset().left - 5, ee.offset().top + ee.height() / 2 + 20 - 5, 5, 0, 360,
-                        false);
-                    context.fill(); //畫實心圓
-                    context.closePath();
-
-                }
-
-            }
-
-            //預先畫線
-            function drawllline() {
-                drawline(1, 1);
-                drawline(1, 2);
-                drawline(1, 3);
-                drawline(1, 4);
-                drawline(1, 5);
-                drawline(2, 1);
-                drawline(2, 2);
-                drawline(2, 3);
-                drawline(2, 4);
-                drawline(2, 5);
-                drawline(3, 1);
-                drawline(3, 2);
-                drawline(3, 3);
-                drawline(3, 4);
-                drawline(3, 5);
-                drawline(4, 1);
-                drawline(4, 2);
-                drawline(4, 3);
-                drawline(4, 4);
-                drawline(4, 5);
-                drawline(5, 1);
-                drawline(5, 2);
-                drawline(5, 3);
-                drawline(5, 4);
-                drawline(5, 5);
-            }
-
-            function drawlllineone() {
-                drawlineone(1, 1);
-                drawlineone(1, 2);
-                drawlineone(1, 3);
-                drawlineone(1, 4);
-                drawlineone(1, 5);
-                drawlineone(2, 1);
-                drawlineone(2, 2);
-                drawlineone(2, 3);
-                drawlineone(2, 4);
-                drawlineone(2, 5);
-                drawlineone(3, 1);
-                drawlineone(3, 2);
-                drawlineone(3, 3);
-                drawlineone(3, 4);
-                drawlineone(3, 5);
-                drawlineone(4, 1);
-                drawlineone(4, 2);
-                drawlineone(4, 3);
-                drawlineone(4, 4);
-                drawlineone(4, 5);
-                drawlineone(5, 1);
-                drawlineone(5, 2);
-                drawlineone(5, 3);
-                drawlineone(5, 4);
-                drawlineone(5, 5);
-            }
         });
 
 
@@ -1275,17 +1142,203 @@
     </script>
 
     <script>
-        $(function(){
-  var hash = window.location.hash;
-  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+        $(function () {
+            var hash = window.location.hash;
+            hash && $('ul.nav a[href="' + hash + '"]').tab('show');
 
-  $('.nav a').click(function (e) {
-    $(this).tab('show');
-    var scrollmem = $('body').scrollTop();
-    // window.location.hash = this.hash;
-    $('html,body').scrollTop(scrollmem);
-  });
-});
+            $('.nav a').click(function (e) {
+                $(this).tab('show');
+                var scrollmem = $('body').scrollTop();
+                // window.location.hash = this.hash;
+                $('html,body').scrollTop(scrollmem);
+
+                if ($("#tab2").hasClass("active")) {
+
+                    drawpoint()
+                    drawlllineone()
+
+                    
+                    function drawlineone(d, e) {
+
+                        var dd = $("#dd" + d)
+                        var ee = $("#ee" + e)
+
+                        var canvas = document.getElementById("CanOne" + d + e);
+                        var context = canvas.getContext("2d");
+
+
+                        context.strokeStyle = 'red';
+                        context.lineWidth = "2";
+                        context.beginPath();
+
+                        context.moveTo(dd.offset().left + dd.width() + 5, dd.offset().top + dd
+                            .height() / 2 + 20 - 5);
+                        context.lineTo(ee.offset().left - 5, ee.offset().top + ee.height() / 2 + 20 -
+                            5);
+
+                        context.closePath();
+                        context.stroke();
+
+                        $("#CanOne" + d + e).hide();
+
+                        //console.log(a);
+                        //console.log(b);
+
+                    }
+
+                    //畫點
+                    function drawpoint() {
+
+                        var canvas = document.getElementById("myCanvas");
+                        var context = canvas.getContext("2d");
+                        for (var i = 1; i <= 5; i++) {
+
+                            var dd = $("#dd" + i)
+                            context.beginPath();
+                            context.arc(dd.offset().left + dd.width() + 5, dd.offset().top + dd
+                                .height() / 2 + 20 - 5,
+                                5,
+                                0, 360, false);
+                            context.fill(); //畫實心圓
+                            context.closePath();
+
+                            var ee = $("#ee" + i)
+                            context.beginPath();
+                            context.arc(ee.offset().left - 5, ee.offset().top + ee.height() / 2 + 20 -
+                                5, 5, 0, 360,
+                                false);
+                            context.fill(); //畫實心圓
+                            context.closePath();
+
+                        }
+
+                    }
+
+                    //預先畫線
+                    function drawlllineone() {
+                        drawlineone(1, 1);
+                        drawlineone(1, 2);
+                        drawlineone(1, 3);
+                        drawlineone(1, 4);
+                        drawlineone(1, 5);
+                        drawlineone(2, 1);
+                        drawlineone(2, 2);
+                        drawlineone(2, 3);
+                        drawlineone(2, 4);
+                        drawlineone(2, 5);
+                        drawlineone(3, 1);
+                        drawlineone(3, 2);
+                        drawlineone(3, 3);
+                        drawlineone(3, 4);
+                        drawlineone(3, 5);
+                        drawlineone(4, 1);
+                        drawlineone(4, 2);
+                        drawlineone(4, 3);
+                        drawlineone(4, 4);
+                        drawlineone(4, 5);
+                        drawlineone(5, 1);
+                        drawlineone(5, 2);
+                        drawlineone(5, 3);
+                        drawlineone(5, 4);
+                        drawlineone(5, 5);
+                    }
+
+
+                } else if ($("#tab1").hasClass("active")) {
+
+                    drawpoint()
+                    drawllline()
+
+                    function drawline(a, b) {
+
+                        var aa = $("#aa" + a)
+                        var bb = $("#bb" + b)
+
+                        var canvas = document.getElementById("Can" + a + b);
+                        var context = canvas.getContext("2d");
+
+
+                        context.strokeStyle = 'gray';
+                        context.lineWidth = "2";
+                        context.beginPath();
+
+                        context.moveTo(aa.offset().left + aa.width() + 5, aa.offset().top + aa
+                        .height() / 2 + 20 - 5);
+                        context.lineTo(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 -
+                        5);
+
+                        context.closePath();
+                        context.stroke();
+
+                        $("#Can" + a + b).hide();
+
+                        //console.log(a);
+                        //console.log(b);
+
+                    }
+
+
+                    //畫點
+                    function drawpoint() {
+
+                        var canvas = document.getElementById("myCanvas");
+                        var context = canvas.getContext("2d");
+                        for (var i = 1; i <= 5; i++) {
+
+                            var aa = $("#aa" + i)
+                            context.beginPath();
+                            context.arc(aa.offset().left + aa.width() + 5, aa.offset().top + aa
+                            .height() / 2 + 20 - 5,
+                                5,
+                                0, 360, false);
+                            context.fill(); //畫實心圓
+                            context.closePath();
+
+                            var bb = $("#bb" + i)
+                            context.beginPath();
+                            context.arc(bb.offset().left - 5, bb.offset().top + bb.height() / 2 + 20 -
+                                5, 5, 0, 360,
+                                false);
+                            context.fill(); //畫實心圓
+                            context.closePath();
+
+                        }
+
+                    }
+
+                    //預先畫線
+                    function drawllline() {
+                        drawline(1, 1);
+                        drawline(1, 2);
+                        drawline(1, 3);
+                        drawline(1, 4);
+                        drawline(1, 5);
+                        drawline(2, 1);
+                        drawline(2, 2);
+                        drawline(2, 3);
+                        drawline(2, 4);
+                        drawline(2, 5);
+                        drawline(3, 1);
+                        drawline(3, 2);
+                        drawline(3, 3);
+                        drawline(3, 4);
+                        drawline(3, 5);
+                        drawline(4, 1);
+                        drawline(4, 2);
+                        drawline(4, 3);
+                        drawline(4, 4);
+                        drawline(4, 5);
+                        drawline(5, 1);
+                        drawline(5, 2);
+                        drawline(5, 3);
+                        drawline(5, 4);
+                        drawline(5, 5);
+                    }
+
+
+                }
+            });
+        });
     </script>
 
 
