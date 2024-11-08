@@ -546,66 +546,87 @@ main {
                     &.letter_bl {
                         color: $letter_bl;
                     }
+
                     &.letter_br {
                         color: $letter_bl;
                     }
+
                     &.letter_pl {
                         color: $letter_pl;
                     }
+
                     &.letter_pr {
                         color: $letter_pl;
                     }
+
                     &.letter_cl {
                         color: $letter_cl;
                     }
+
                     &.letter_cr {
                         color: $letter_cl;
                     }
+
                     &.letter_gl {
                         color: $letter_gl;
                     }
+
                     &.letter_gr {
                         color: $letter_gl;
                     }
+
                     &.letter_dr {
                         color: $letter_dr;
                     }
+
                     &.letter_tr {
                         color: $letter_dr;
                     }
+
                     &.letter_sw {
                         color: $letter_sw;
                     }
+
                     &.letter_tw {
                         color: $letter_sw;
                     }
+
                     &.letter_fl {
                         color: $letter_fl;
                     }
+
                     &.letter_fr {
                         color: $letter_fl;
                     }
+
                     &.letter_sm {
                         color: $letter_sm;
                     }
+
                     &.letter_sn {
                         color: $letter_sm;
                     }
+
                     &.letter_sk {
                         color: $letter_sk;
                     }
+
                     &.letter_sl {
                         color: $letter_sk;
                     }
+
                     &.letter_sp {
                         color: $letter_sp;
                     }
+
                     &.letter_spr {
                         color: $letter_sp;
                     }
+
                     &.letter_st {
                         color: $letter_st;
                     }
+
                     &.letter_str {
                         color: $letter_st;
                     }
@@ -614,24 +635,31 @@ main {
                     &.letter_au {
                         color: $letter_au;
                     }
+
                     &.letter_aw {
                         color: $letter_au;
                     }
+
                     &.letter_ou {
                         color: $letter_ou;
                     }
+
                     &.letter_ow {
                         color: $letter_ou;
                     }
+
                     &.letter_oi {
                         color: $letter_oi;
                     }
+
                     &.letter_oy {
                         color: $letter_oi;
                     }
+
                     &.letter_oo1 {
                         color: $letter_oo1;
                     }
+
                     &.letter_oo2 {
                         color: $letter_oo2;
                     }
@@ -873,7 +901,7 @@ main {
                                     display: flex;
                                     justify-content: flex-start;
                                     align-items: center;
-                                    
+
                                     .test_icon {
                                         width: 25px;
                                         margin: 0 10px 0 0;
@@ -884,7 +912,7 @@ main {
                                         margin: 0 5px 0 0;
                                     }
 
-                                    .sound_icon_area{
+                                    .sound_icon_area {
                                         position: relative;
 
                                         .sound_icon {
@@ -893,28 +921,29 @@ main {
                                             border-radius: 10px;
                                             line-height: 1;
                                             display: block;
+
                                             svg {
                                                 color: $white;
                                             }
-    
+
                                             &:hover {
                                                 background-color: darken($main_color, 5%);
                                             }
                                         }
 
-                                        .sound_icon_drag{
+                                        .sound_icon_drag {
                                             position: absolute;
                                             right: -15px;
                                             top: 50%;
                                             transform: translate(100%, -50%);
                                             animation: fingers 1000ms infinite;
 
-                                            svg{
+                                            svg {
                                                 color: $main_color;
                                             }
                                         }
                                     }
-                                    
+
                                 }
 
                                 .test_topic_item_right {
@@ -959,6 +988,7 @@ main {
                                         height: auto;
                                         margin: 10px 0;
                                     }
+
                                     .test_topic_item_right {
                                         width: 100%;
                                         margin: 0 auto;
@@ -1009,118 +1039,125 @@ main {
                                 }
                             }
 
-                            .connect {
-                                position: relative;
-                                z-index: 2;
+                            .tab-content {
                                 width: 100%;
-                                max-width: 950px;
-                                margin: 0 auto;
 
-                                tr {
-                                    display: block;
-                                    margin: 0 20px 0 auto;
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-
-                                    td {
+                                .tab-pane {
+                                    .connect {
                                         position: relative;
-                                        display: inline-block;
+                                        z-index: 2;
+                                        width: 100%;
+                                        max-width: 950px;
+                                        margin: 0 auto;
 
-                                        &.connect_topic {
-                                            // width: calc((70% - 25px - 20px) / 2);
-                                            // padding: 10px;
-                                            margin: 5px 0;
-                                            
+                                        tr {
+                                            display: block;
+                                            margin: 0 20px 0 auto;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
 
-                                            .connect_topic_item {
-                                                // display: flex;
-                                                // justify-content: center;
-                                                cursor: pointer;
-                                                // width: calc(18px * 1.7 + 10px + 10px + 2px);
+                                            td {
+                                                position: relative;
+                                                display: inline-block;
 
-                                                &.lock {
-                                                    .sound_icon,
-                                                    .connect_topic_text {
-                                                        border: 1px solid $main_color;
-                                                    }
-                                                }
+                                                &.connect_topic {
+                                                    // width: calc((70% - 25px - 20px) / 2);
+                                                    // padding: 10px;
+                                                    margin: 5px 0;
 
-                                                &.done {
-                                                    .sound_icon,
-                                                    .connect_topic_text {
-                                                        border: 1px solid $grey;
-                                                    }
-                                                }
 
-                                                .sound_icon {
-                                                    border: 1px solid transparent;
-                                                    line-height: 1;
-                                                    padding: 5px;
+                                                    .connect_topic_item {
+                                                        // display: flex;
+                                                        // justify-content: center;
+                                                        cursor: pointer;
+                                                        // width: calc(18px * 1.7 + 10px + 10px + 2px);
 
-                                                    svg {
-                                                        background-color: $main_color;
-                                                        color: $white;
-                                                        padding: 5px;
-                                                        border-radius: 10px;
-                                                        height: calc(18px * 1.7);
-                                                        width: calc(18px * 1.7);
-                                                    }
+                                                        &.lock {
 
-                                                    img {
-                                                        background-color: $main_color;
-                                                        color: $white;
-                                                        padding: 5px;
-                                                        border-radius: 10px;
-                                                        height: calc(18px * 1.7 + 10px);
-                                                        width: calc(18px * 1.7 + 10px);
-                                                    }
+                                                            .sound_icon,
+                                                            .connect_topic_text {
+                                                                border: 1px solid $main_color;
+                                                            }
+                                                        }
 
-                                                    &:hover {
-                                                        svg {
-                                                            background-color: darken($main_color, 5%);
+                                                        &.done {
+
+                                                            .sound_icon,
+                                                            .connect_topic_text {
+                                                                border: 1px solid $grey;
+                                                            }
+                                                        }
+
+                                                        .sound_icon {
+                                                            border: 1px solid transparent;
+                                                            line-height: 1;
+                                                            padding: 5px;
+
+                                                            svg {
+                                                                background-color: $main_color;
+                                                                color: $white;
+                                                                padding: 5px;
+                                                                border-radius: 10px;
+                                                                height: calc(18px * 1.7);
+                                                                width: calc(18px * 1.7);
+                                                            }
+
+                                                            img {
+                                                                background-color: $main_color;
+                                                                color: $white;
+                                                                padding: 5px;
+                                                                border-radius: 10px;
+                                                                height: calc(18px * 1.7 + 10px);
+                                                                width: calc(18px * 1.7 + 10px);
+                                                            }
+
+                                                            &:hover {
+                                                                svg {
+                                                                    background-color: darken($main_color, 5%);
+                                                                }
+                                                            }
+                                                        }
+
+                                                        .connect_topic_text {
+                                                            border: 1px solid transparent;
+                                                            padding: 5px;
+                                                            border-radius: 10px;
+
+                                                            p {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                                align-items: center;
+                                                                background-color: $drag_cloze;
+                                                                width: calc(18px * 1.7 + 10px);
+                                                                height: calc(18px * 1.7 + 10px);
+                                                                font-size: 18px;
+                                                                border-radius: 10px;
+                                                                color: $white;
+                                                            }
                                                         }
                                                     }
-                                                }
 
-                                                .connect_topic_text {
-                                                    border: 1px solid transparent;
-                                                    padding: 5px;
-                                                    border-radius: 10px;
-
-                                                    p {
-                                                        display: flex;
-                                                        justify-content: center;
-                                                        align-items: center;
-                                                        background-color: $drag_cloze;
-                                                        width: calc(18px * 1.7 + 10px);
-                                                        height: calc(18px * 1.7 + 10px);
-                                                        font-size: 18px;
-                                                        border-radius: 10px;
-                                                        color: $white;
+                                                    &.connect_topic_left {
+                                                        text-align: right;
                                                     }
                                                 }
+
+                                                &.connect_space {
+                                                    width: calc(100% - 50px - 40px - calc(18px * 1.7 + 10px + 10px + 2px) * 2);
+                                                }
+
+                                                &.test_icon {
+                                                    position: absolute;
+                                                    left: 0;
+                                                    width: 25px;
+                                                    margin: 0 5px 0 0;
+                                                }
                                             }
-
-                                            &.connect_topic_left {
-                                                text-align: right;
-                                            }
-                                        }
-
-                                        &.connect_space {
-                                            width: calc(100%  - 50px - 40px - calc(18px * 1.7 + 10px + 10px + 2px) * 2);
-                                        }
-
-                                        &.test_icon {
-                                            position: absolute;
-                                            left: 0;
-                                            width: 25px;
-                                            margin: 0 5px 0 0;
                                         }
                                     }
                                 }
                             }
-
                         }
                     }
                 }
@@ -1571,13 +1608,17 @@ main {
                     margin: 0px 2px;
                     color: $main_color_black;
 
-                    &:hover{
+                    &:hover {
                         background-color: $main_color;
                         color: $white;
                     }
                 }
 
-                span {
+                li{
+                    display: flex;
+                }
+
+                .pagenumber{
                     &.active {
                         background-color: $main_color;
                         color: $white;
@@ -1586,28 +1627,30 @@ main {
             }
         }
 
-        .test_end_btn{
+        .test_end_btn {
             display: flex;
             justify-content: center;
             margin: 10px auto;
-            .submit_btn,.close_btn {
+
+            .submit_btn,
+            .close_btn {
                 background-color: $main_color;
                 color: $white;
                 padding: 10px 20px;
                 border-radius: 10px;
                 margin: 20px 10px;
-        
-                p{
+
+                p {
                     color: $white;
                 }
-        
+
                 &:hover {
                     background-color: darken($main_color, 10%);
                 }
             }
         }
 
-        
+
     }
 
     .drag_pointer {
@@ -1749,17 +1792,9 @@ main {
     }
 }
 
-.test_end_page{
+.test_end_page {
     display: none;
 }
-
-#draggable123 {
-    width: 30px;
-    height: 30px;
-    background-color: blue;
-    left: 0px;
-    top: 0px;
-  }
 
 @keyframes closePointer {
     0% {
@@ -1779,13 +1814,15 @@ main {
     0% {
         right: -15px;
     }
+
     50% {
         right: -5px;
     }
+
     100% {
         right: -15px;
     }
-  }
+}
 
 @media screen and (min-width: 500px) {
     main {
@@ -1888,48 +1925,53 @@ main {
                         .pagination_main {
 
                             .connect_area {
-                                .connect {
+                                .tab-content {
+                                    .tab-pane {
+                                        .connect {
 
-                                    tr {
+                                            tr {
 
-                                        td {
+                                                td {
 
-                                            &.connect_topic {
+                                                    &.connect_topic {
 
-                                                .connect_topic_item {
+                                                        .connect_topic_item {
 
-                                                    .sound_icon {
+                                                            .sound_icon {
 
-                                                        svg {
-                                                            // padding: 10px;
-                                                            height: calc(25px * 1.7);
-                                                            width: calc(25px * 1.7);
-                                                        }
+                                                                svg {
+                                                                    // padding: 10px;
+                                                                    height: calc(25px * 1.7);
+                                                                    width: calc(25px * 1.7);
+                                                                }
 
-                                                        img {
-                                                            // padding: 10px;
-                                                            height: calc(25px * 1.7 + 10px);
-                                                            width: calc(25px * 1.7 + 10px);
+                                                                img {
+                                                                    // padding: 10px;
+                                                                    height: calc(25px * 1.7 + 10px);
+                                                                    width: calc(25px * 1.7 + 10px);
+                                                                }
+                                                            }
+
+                                                            .connect_topic_text {
+                                                                p {
+                                                                    width: calc(25px * 1.7 + 10px);
+                                                                    height: calc(25px * 1.7 + 10px);
+                                                                    font-size: 25px;
+                                                                    // padding: 10px;
+                                                                }
+                                                            }
                                                         }
                                                     }
 
-                                                    .connect_topic_text {
-                                                        p {
-                                                            width: calc(25px * 1.7 + 10px);
-                                                            height: calc(25px * 1.7 + 10px);
-                                                            font-size: 25px;
-                                                            // padding: 10px;
-                                                        }
+                                                    &.connect_space {
+                                                        width: calc(100% - 50px - 20px - calc(25px * 1.7 + 10px + 10px + 4px) * 2);
                                                     }
                                                 }
-                                            }
-
-                                            &.connect_space {
-                                                width: calc(100%  - 50px - 20px - calc(25px * 1.7 + 10px + 10px + 4px) * 2);
                                             }
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
@@ -1954,6 +1996,7 @@ main {
         .test_end_page {
             .page {
                 .pagination {
+
                     a,
                     span {
                         padding: 5px 0.5rem;
@@ -2130,45 +2173,50 @@ main {
 
                             .connect_area {
 
-                                .connect {
+                                .tab-content {
+                                    .tab-pane {
+                                        .connect {
 
-                                    tr {
+                                            tr {
 
-                                        td {
+                                                td {
 
-                                            &.connect_topic {
+                                                    &.connect_topic {
 
-                                                .connect_topic_item {
+                                                        .connect_topic_item {
 
-                                                    .sound_icon {
+                                                            .sound_icon {
 
-                                                        svg {
-                                                            height: calc(30px * 1.7);
-                                                            width: calc(30px * 1.7);
-                                                        }
+                                                                svg {
+                                                                    height: calc(30px * 1.7);
+                                                                    width: calc(30px * 1.7);
+                                                                }
 
-                                                        img {
-                                                            height: calc(30px * 1.7 + 10px);
-                                                            width: calc(30px * 1.7 + 10px);
+                                                                img {
+                                                                    height: calc(30px * 1.7 + 10px);
+                                                                    width: calc(30px * 1.7 + 10px);
+                                                                }
+                                                            }
+
+                                                            .connect_topic_text {
+                                                                p {
+                                                                    width: calc(30px * 1.7 + 10px);
+                                                                    height: calc(30px * 1.7 + 10px);
+                                                                    font-size: 30px;
+                                                                }
+                                                            }
                                                         }
                                                     }
 
-                                                    .connect_topic_text {
-                                                        p {
-                                                            width: calc(30px * 1.7 + 10px);
-                                                            height: calc(30px * 1.7 + 10px);
-                                                            font-size: 30px;
-                                                        }
+                                                    &.connect_space {
+                                                        width: calc(100% - 50px - 20px - calc(30px * 1.7 + 10px + 10px + 4px) * 2);
                                                     }
                                                 }
-                                            }
-
-                                            &.connect_space {
-                                                width: calc(100%  - 50px - 20px - calc(30px * 1.7 + 10px + 10px + 4px) * 2);
                                             }
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
@@ -2195,6 +2243,7 @@ main {
         .test_end_page {
             .page {
                 .pagination {
+
                     a,
                     span {
                         padding: 5px 0.5rem;
@@ -2203,9 +2252,10 @@ main {
                 }
             }
 
-            .test_end_btn{
+            .test_end_btn {
 
-                .submit_btn,.close_btn{
+                .submit_btn,
+                .close_btn {
                     margin: 20px;
                 }
             }
@@ -2331,8 +2381,9 @@ main {
                             .test_topic_area {
 
                                 .test_topic_item {
-                                    .test_topic_item_left{
+                                    .test_topic_item_left {
                                         height: 100%;
+
                                         .test_num {
                                             height: 100%;
                                         }
@@ -2341,6 +2392,7 @@ main {
                                     .test_topic_item_right {
                                         width: auto;
                                         margin: 0 0 0 25px;
+
                                         .test_answer_item {
                                             button {
                                                 margin: 0 5px;
@@ -2452,35 +2504,40 @@ main {
 
                             .connect_area {
 
-                                .connect {
+                                .tab-content {
+                                    .tab-pane {
+                                        .connect {
 
-                                    tr {
+                                            tr {
 
-                                        td {
+                                                td {
 
-                                            &.connect_topic {
+                                                    &.connect_topic {
 
-                                                .connect_topic_item {
+                                                        .connect_topic_item {
 
-                                                    // .sound_icon {
+                                                            // .sound_icon {
 
-                                                    //     svg {
-                                                    //         height: calc(40px * 1.7);
-                                                    //         width: calc(40px * 1.7);
-                                                    //     }
-                                                    // }
+                                                            //     svg {
+                                                            //         height: calc(40px * 1.7);
+                                                            //         width: calc(40px * 1.7);
+                                                            //     }
+                                                            // }
 
-                                                    // .connect_topic_text {
-                                                    //     p {
-                                                    //         width: calc(40px * 1.7 + 20px);
-                                                    //         font-size: 40px;
-                                                    //     }
-                                                    // }
+                                                            // .connect_topic_text {
+                                                            //     p {
+                                                            //         width: calc(40px * 1.7 + 20px);
+                                                            //         font-size: 40px;
+                                                            //     }
+                                                            // }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
@@ -2595,35 +2652,40 @@ main {
 
                             .connect_area {
 
-                                .connect {
+                                .tab-content {
+                                    .tab-pane {
+                                        .connect {
 
-                                    tr {
+                                            tr {
 
-                                        td {
+                                                td {
 
-                                            &.connect_topic {
+                                                    &.connect_topic {
 
-                                                .connect_topic_item {
+                                                        .connect_topic_item {
 
-                                                    // .sound_icon {
+                                                            // .sound_icon {
 
-                                                    //     svg {
-                                                    //         height: calc(65px * 1.7);
-                                                    //         width: calc(65px * 1.7);
-                                                    //     }
-                                                    // }
+                                                            //     svg {
+                                                            //         height: calc(65px * 1.7);
+                                                            //         width: calc(65px * 1.7);
+                                                            //     }
+                                                            // }
 
-                                                    // .connect_topic_text {
-                                                    //     p {
-                                                    //         width: calc(65px * 1.7 + 10px);
-                                                    //         font-size: 65px;
-                                                    //     }
-                                                    // }
+                                                            // .connect_topic_text {
+                                                            //     p {
+                                                            //         width: calc(65px * 1.7 + 10px);
+                                                            //         font-size: 65px;
+                                                            //     }
+                                                            // }
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
                                     }
                                 }
+
                             }
                         }
                     }
@@ -2649,7 +2711,7 @@ main {
                                         .drag_cloze_item {
                                             .drag_cloze {
                                                 min-width: calc(45px* 1.7 + 2px);
-                                                    min-height: calc(45px* 1.7);
+                                                min-height: calc(45px* 1.7);
 
                                                 .alphabet {
                                                     font-size: 45px;

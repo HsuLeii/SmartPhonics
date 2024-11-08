@@ -132,7 +132,7 @@
                             </div>
 
                             <div class="tab-content">
-                                <div id="tab1" class="tab-pane">
+                                <div id="tab1" class="tab-pane active">
                                     <table class="connect">
                                         <tr>
                                             <td class="test_icon">
@@ -251,7 +251,8 @@
                                         </tr>
                                     </table>
                                 </div>
-                                <div id="tab2" class="connect tab-pane">
+                                
+                                <div id="tab2" class="tab-pane">
                                     <table class="connect">
                                         <tr>
                                             <td class="test_icon">
@@ -371,9 +372,6 @@
                                         </tr>
                                     </table>
                                 </div>
-                                
-    
-                                
                             </div>
                             
 
@@ -540,13 +538,8 @@
         <div class="test_end_page">
             <div class="page">
                 <ul class="pagination nav">
-                    <a disabled="disabled" class="pagenumber firstnn">第一頁</a>
-                    <span class="active">1</span>
-                    <a class="pagenumber" href="unit_1_1.html">2</a>
-                    <a class="pagenumber lastnn" href="unit_1_1.html">最後一頁</a>
-                
                     <li>
-                        <a class="pagenumber" href="#tab1" data-toggle="tab">1</a>
+                        <a class="pagenumber active" href="#tab1" data-toggle="tab">1</a>
                     </li>
                     <li>
                         <a class="pagenumber" href="#tab2" data-toggle="tab">2</a>
@@ -564,31 +557,6 @@
                 </a>
             </div>
         </div>
-
-            <ul class="nav nav-tabs" style="position: relative; z-index: 1;">
-                <li>
-                    <a href="#tab1" data-toggle="tab">Section 1</a>
-                </li>
-                <li>
-                    <a href="#tab2" data-toggle="tab">Section 2</a>
-                </li>
-                <li>
-                    <a href="#tab3" data-toggle="tab">Section 3</a>
-                </li>
-            </ul>
-
-            <div class="tab-content">
-              <div class="tab-pane active" id="tab1">
-                <p>I'm in Section 1.</p>
-              </div>
-              <div class="tab-pane" id="tab2">
-                <p>I'm in Section 2.</p>
-              </div>
-              <div class="tab-pane" id="tab3">
-                <p>I'm in Section 3.</p>
-              </div>
-            </div>
-
     </main>
 
     <!-- Modal確認離開彈跳視窗 -->
@@ -1305,18 +1273,6 @@
         // canvas63.height = document.body.scrollHeight + testDiv[0].offsetTop;
         // canvas63.width = $("body").width();
     </script>
-
-    <!-- <script>
-        var hash = window.location.hash;
-  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-
-  $('.pagenumber').click(function (e) {
-    $(this).tab('show');
-    var scrollmem = $('body').scrollTop();
-    window.location.hash = this.hash;
-    $('html,body').scrollTop(scrollmem);
-  });
-    </script> -->
 
     <script>
         $(function(){
