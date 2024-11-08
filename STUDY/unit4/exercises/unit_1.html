@@ -278,7 +278,7 @@
                                             </td>
                                         </tr>
                                         <tr>
-        
+
                                             <td class="test_icon">
                                                 <img src="../../Content/image/svg/correct.svg" alt="">
                                             </td>
@@ -372,8 +372,130 @@
                                         </tr>
                                     </table>
                                 </div>
+
+                                <!-- 撐開空間用的 -->
+                                <div id="tab3" class="tab-pane tab-pane-three">
+                                    <table class="connect">
+                                        <tr>
+                                            <td class="test_icon">
+                                                <img src="../../Content/image/svg/correct.svg" alt="">
+                                            </td>
+                                            <td class="connect_num">
+                                                <p>1.</p>
+                                            </td>
+                                            <td class="connect_topic connect_topic_left">
+                                                <div class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>A</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="connect_space"></td>
+                                            <td class="connect_topic">
+                                                <div class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>a</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="test_icon">
+                                                <img src="../../Content/image/svg/correct.svg" alt="">
+                                            </td>
+                                            <td class="connect_num">
+                                                <p>2.</p>
+                                            </td>
+                                            <td class="connect_topic connect_topic_left">
+                                                <div class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>B</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="connect_space"></td>
+                                            <td class="connect_topic">
+                                                <div class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>b</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="test_icon">
+                                                <img src="../../Content/image/svg/wrong.svg" alt="">
+                                            </td>
+                                            <td class="connect_num">
+                                                <p>3.</p>
+                                            </td>
+                                            <td class="connect_topic connect_topic_left">
+                                                <div id="dd3" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>C</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="connect_space"></td>
+                                            <td class="connect_topic">
+                                                <div id="ee3" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>c</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="test_icon">
+                                                <img src="../../Content/image/svg/wrong.svg" alt="">
+                                            </td>
+                                            <td class="connect_num">
+                                                <p>4.</p>
+                                            </td>
+                                            <td class="connect_topic connect_topic_left">
+                                                <div id="dd4" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>D</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="connect_space"></td>
+                                            <td class="connect_topic">
+                                                <div id="ee4" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>d</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="test_icon">
+                                                <img src="../../Content/image/svg/wrong.svg" alt="">
+                                            </td>
+                                            <td class="connect_num">
+                                                <p>5.</p>
+                                            </td>
+                                            <td class="connect_topic connect_topic_left">
+                                                <div id="dd5" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>E</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td class="connect_space"></td>
+                                            <td class="connect_topic">
+                                                <div id="ee5" class="connect_topic_item">
+                                                    <div class="connect_topic_text">
+                                                        <p>e</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
-                            
+
 
                             <div class="canvas_area">
                                 <canvas id="myCanvas"></canvas>
@@ -539,7 +661,7 @@
             <div class="page">
                 <ul class="pagination nav">
                     <li>
-                        <a class="pagenumber active" href="#tab1" data-toggle="tab">1</a>
+                        <a class="pagenumber active" id="tabLink" href="#tab1" data-toggle="tab">1</a>
                     </li>
                     <li>
                         <a class="pagenumber" href="#tab2" data-toggle="tab">2</a>
@@ -620,9 +742,7 @@
     <script>
         $(document).ready(function () {
             //nowPage (此頁必留)
-            $('header').load('../../header.html', function () {
-                $('.navTab-Index').addClass('nowPage'); //nowPage
-            });
+            $("header").load("../header.html");
         });
     </script>
 
@@ -645,6 +765,7 @@
             drawpoint()
             drawllline()
             drawlllineone()
+            
             $("#aa1,#aa2,#aa3,#aa4,#aa5").click(function (e) {
                 if ($("#HsL").val() != "0" && $("#HsL").val() != this.id.substr(2, 1)) {
                     //console.log("同一邊重選");
@@ -933,7 +1054,7 @@
                 var context = canvas.getContext("2d");
 
 
-                context.strokeStyle = 'gray';
+                context.strokeStyle = 'red';
                 context.lineWidth = "2";
                 context.beginPath();
 
@@ -1260,34 +1381,22 @@
         let canvasOne55 = document.getElementById("CanOne55");
         canvasOne55.height = document.body.scrollHeight + testDiv[0].offsetTop;
         canvasOne55.width = $("body").width();
-
-        // let canvas61 = document.getElementById("CanOne31");
-        // canvas61.height = document.body.scrollHeight + testDiv[0].offsetTop;
-        // canvas61.width = $("body").width();
-
-        // let canvas62 = document.getElementById("CanOne32");
-        // canvas62.height = document.body.scrollHeight + testDiv[0].offsetTop;
-        // canvas62.width = $("body").width();
-
-        // let canvas63 = document.getElementById("CanOne33");
-        // canvas63.height = document.body.scrollHeight + testDiv[0].offsetTop;
-        // canvas63.width = $("body").width();
     </script>
 
     <script>
-        $(function(){
-  var hash = window.location.hash;
-  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+        $(function () {
 
-  $('.nav a').click(function (e) {
-    $(this).tab('show');
-    var scrollmem = $('body').scrollTop();
-    // window.location.hash = this.hash;
-    $('html,body').scrollTop(scrollmem);
-  });
-});
+            $('.pagenumber').click(function (e) {
+                $(this).tab('show');
+                // if ($("#tab1").hasClass("active")) {
+                //     $("#tab2").hide();
+                //     $("#tab1").show();
+                // }else{
+                //     $("#tab1").hide();
+                // }
+            });
+        });
     </script>
-
 
 </body>
 
