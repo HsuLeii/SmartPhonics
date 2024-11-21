@@ -2421,7 +2421,7 @@ main canvas {
 }
 @media screen and (min-height: 850px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img img {
-    max-height: 270px;
+    max-height: 310px;
   }
 }
 @media screen and (orientation: landscape) and (min-height: 300px) {
