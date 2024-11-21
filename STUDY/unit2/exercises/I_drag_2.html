@@ -42,17 +42,30 @@
             </a>
         </div>
         <div class="study_area exercises_area unit2_area">
-            <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
-            <div class="pagination_main_area pagination_main_drag_area letter_AN">
+            <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit2 依照字母加letter_a / 情境頁加 context -->
+            <div class="pagination_main_area pagination_main_drag_area letter_i">
                 <div class="pagination_main pagination_main_drag">
                     <div class="pagination_main_drag_item">
                         <div class="drag_cloze_topic_area">
                             <div class="drag_area_img">
-                                <img class="dragImg" src="../../Content/image/photo/unit/unit03/png/AN1.png" alt="">
+                                <img class="dragImg" src="../../Content/image/photo/unit/object/i2.png" alt="">
                             </div>
                         </div>
 
                         <div class="drag_cloze_answer_area">
+                            <div class="drag_cloze_item">
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag1" draggable="true">
+                                        f
+                                    </p>
+                                </button>
+                                <button class="drag_cloze drag">
+                                    <p class="alphabet" id="drag2" draggable="true">
+                                        i
+                                    </p>
+                                </button>
+                            </div>
+
                             <div class="drag_cloze_area">
                                 <div class="drag_cloze_item">
                                     <div id="dragAnswer" class="drag_cloze target" droppable="true"
@@ -61,39 +74,34 @@
 
                                     <div class="drag_cloze">
                                         <p class="alphabet">
-                                            a
-                                        </p>
-                                    </div>
-
-                                    <div id="dragAnswer" class="drag_cloze">
-                                        <p class="alphabet">
                                             n
                                         </p>
                                     </div>
-                                </div>
-                            </div>
 
-                            <div class="drag_cloze_item">
-                                <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag1" draggable="true">
-                                        m
-                                    </p>
-                                </button>
-                                <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag2" draggable="true">
-                                        n
-                                    </p>
-                                </button>
-                                <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag3" draggable="true">
-                                        f
-                                    </p>
-                                </button>
-                                <button class="drag_cloze drag">
-                                    <p class="alphabet" id="drag4" draggable="true">
-                                        v
-                                    </p>
-                                </button>
+                                    <div class="drag_cloze">
+                                        <p class="alphabet">
+                                            s
+                                        </p>
+                                    </div>
+
+                                    <div class="drag_cloze">
+                                        <p class="alphabet">
+                                            e
+                                        </p>
+                                    </div>
+
+                                    <div class="drag_cloze">
+                                        <p class="alphabet">
+                                            c
+                                        </p>
+                                    </div>
+
+                                    <div class="drag_cloze">
+                                        <p class="alphabet">
+                                            t
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -103,20 +111,20 @@
             <div class="play_area">
                 <div class="progress_area">
                     <div class="progress">
-                        <div id="progress" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"
-                            class="progress_bar" style="width: calc(100% / 8 * 1);"></div>
+                        <div id="progress" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
+                            class="progress_bar" style="width: 40%;"></div>
                     </div>
                     <div class="number_page">
                         <p>
-                            1/8
+                            2/5
                         </p>
                     </div>
 
                 </div>
 
                 <div class="play_area_btn">
-                    <div class="play_btn_item prev_btn disabled">
-                        <a href="">
+                    <div class="play_btn_item prev_btn">
+                        <a href="I_drag_1.html">
                             <i class="fa-solid fa-caret-left"></i>
                         </a>
                     </div>
@@ -134,7 +142,7 @@
                     </div>
 
                     <div class="play_btn_item next_btn">
-                        <a href="AN_drag_2.html">
+                        <a href="I_drag_3.html">
                             <i class="fa-solid fa-caret-right"></i>
                         </a>
                     </div>
@@ -285,12 +293,12 @@
                 $("#" + id).appendTo(event.target);
 
                 // 字母拖曳成功把png圖檔換成對應gif檔
-                $(".dragImg").attr("src", "../../Content/image/photo/unit/unit03/gif/AN1.gif");
+                $(".dragImg").attr("src", "../../Content/image/photo/unit/object/i2.gif");
                 $(this).addClass("done");
             }
         });
     </script>
-
+    
     <!-- 拖曳提示手勢效果 -->
     <script>
         setInterval(function () {

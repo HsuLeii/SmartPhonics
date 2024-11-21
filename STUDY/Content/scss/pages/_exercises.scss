@@ -1047,14 +1047,15 @@ main {
                                     display: block;
                                     position: absolute;
 
-                                    &.active{
+                                    &.active {
                                         z-index: 3;
                                     }
 
-                                    &.tab-pane-three{
+                                    &.tab-pane-three {
                                         position: relative;
                                         opacity: 0;
                                     }
+
                                     .connect {
                                         position: relative;
                                         z-index: 2;
@@ -1626,11 +1627,11 @@ main {
                     }
                 }
 
-                li{
+                li {
                     display: flex;
                 }
 
-                .pagenumber{
+                .pagenumber {
                     &.active {
                         background-color: $main_color;
                         color: $white;
@@ -2108,6 +2109,23 @@ main {
                                                 }
                                             }
                                         }
+
+                                        .drag_cloze_area {
+    
+                                            .drag_cloze_item {
+    
+                                                .drag_cloze {
+                                                    min-width: calc(32px* 1.7 + 10px);
+                                                    min-height: calc(32px* 1.7 + 30px);
+
+                                                    .alphabet {
+                                                        font-size: 28px;
+                                                        min-width: calc(28px* 1.7 + 10px);
+                                                        min-height: calc(28px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 }
 
@@ -2491,12 +2509,97 @@ main {
     }
 }
 
+@media screen and (min-width: 1024px) {
+    main {
+        .study_area {
+            &.exercises_area {
+
+                &.unit2_area {
+                    .pagination_main_area {
+                        min-height: calc(100% - 135.05px);
+
+                        .pagination_main {
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+
+                                    // 新版
+                                    .drag_cloze_topic_area {
+                                        width: 28%;
+                                    }
+
+                                    // 新版
+                                    .drag_cloze_answer_area {
+                                        width: 70%;
+
+                                        .drag_cloze_area {
+    
+                                            .drag_cloze_item {
+    
+                                                .drag_cloze {
+                                                    min-width: calc(30px* 1.7 + 10px);
+                                                    min-height: calc(30px* 1.7 + 30px);
+
+                                                    .alphabet {
+                                                        font-size: 26px;
+                                                        min-width: calc(26px* 1.7 + 10px);
+                                                        min-height: calc(26px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 1200px) {
     main {
 
         .study_area {
             &.exercises_area {
                 &.unit2_area {
+                    .pagination_main_area{
+                        .pagination_main {
+                            &.pagination_main_drag {
+                                .pagination_main_drag_item {
+
+                                    // 新版
+                                    .drag_cloze_topic_area {
+                                    }
+
+                                    // 新版
+                                    .drag_cloze_answer_area {
+
+                                        .drag_cloze_area {
+    
+                                            .drag_cloze_item {
+    
+                                                .drag_cloze {
+                                                    min-width: calc(34px* 1.7 + 10px);
+                                                    min-height: calc(34px* 1.7 + 30px);
+
+                                                    .alphabet {
+                                                        font-size: 30px;
+                                                        min-width: calc(30px* 1.7 + 10px);
+                                                        min-height: calc(30px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                     .test_area {
                         .pagination_main {
                             .topic {
@@ -2583,6 +2686,23 @@ main {
                                     // 新版
                                     .drag_cloze_answer_area {
                                         width: 70%;
+
+                                        .drag_cloze_area {
+    
+                                            .drag_cloze_item {
+    
+                                                .drag_cloze {
+                                                    min-width: calc(36px* 1.7 + 10px);
+                                                    min-height: calc(36px* 1.7 + 30px);
+
+                                                    .alphabet {
+                                                        font-size: 32px;
+                                                        min-width: calc(32px* 1.7 + 10px);
+                                                        min-height: calc(32px* 1.7 + 30px);
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
 
                                     // 新版

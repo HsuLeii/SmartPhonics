@@ -2136,6 +2136,15 @@ main canvas {
     min-width: 64.9px;
     min-height: 64.9px;
   }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
+    min-width: 64.4px;
+    min-height: 84.4px;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
+    font-size: 28px;
+    min-width: 57.6px;
+    min-height: 77.6px;
+  }
   main .study_area.exercises_area.unit2_area .play_area .sound_area {
     display: flex;
   }
@@ -2268,7 +2277,41 @@ main canvas {
     transform: translate(calc(43.5px - 50%), 0);
   }
 }
+@media screen and (min-width: 1024px) {
+  main .study_area.exercises_area.unit2_area .pagination_main_area {
+    min-height: calc(100% - 135.05px);
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
+    width: 28%;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
+    width: 70%;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
+    min-width: 61px;
+    min-height: 81px;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
+    font-size: 26px;
+    min-width: 54.2px;
+    min-height: 74.2px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
+    min-width: 67.8px;
+    min-height: 87.8px;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
+    font-size: 30px;
+    min-width: 61px;
+    min-height: 81px;
+  }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .topic_img {
     width: 90px;
   }
@@ -2287,6 +2330,15 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
     width: 70%;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
+    min-width: 71.2px;
+    min-height: 91.2px;
+  }
+  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
+    font-size: 32px;
+    min-width: 64.4px;
+    min-height: 84.4px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area.pagination_main_drag_area {
     min-height: calc(100% - 135.05px);
