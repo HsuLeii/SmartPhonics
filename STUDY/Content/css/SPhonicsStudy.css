@@ -1262,7 +1262,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area.letter_or2 {
   color: #652D8F;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_ur {
-  color: #652D8F;
+  color: #2A91C3;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area.letter_air {
   color: #E50B32;
@@ -2423,8 +2423,8 @@ main canvas {
     margin: 0;
     border-left: 0px;
   }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2) {
-    border-bottom: 1px dotted grey;
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2), main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(3) {
+    border-bottom: 0px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(3n) {
     border-left: 1px dotted grey;

@@ -2924,8 +2924,9 @@ main {
                                     margin: 0;
                                     border-left: 0px;
 
-                                    &:nth-last-child(2) {
-                                        border-bottom: 1px dotted $grey;
+                                    &:nth-last-child(2),
+                                    &:nth-last-child(3) {
+                                        border-bottom: 0px;
                                     }
 
                                     &:nth-child(3n) {
