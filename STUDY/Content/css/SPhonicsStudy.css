@@ -916,6 +916,9 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze:hover {
   transform: scale(1);
 }
+main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze.orange {
+  background-color: rgba(237, 113, 14, 0.1254901961);
+}
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area {
   display: flex;
 }
@@ -1527,6 +1530,8 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button.active {
   background-color: #ed710e;
+  background-color: #70ace3;
+  background-color: #277ac6;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
   font-size: 30px;

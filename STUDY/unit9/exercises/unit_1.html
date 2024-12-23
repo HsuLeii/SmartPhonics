@@ -1021,11 +1021,10 @@
             },
             "dragover": function (event) {
                 event.preventDefault();
+                $(this).addClass("orange");
             },
             "dragleave": function () {
                 $(this).removeClass("active");
-
-
 
             },
             "drop": function (event) {
