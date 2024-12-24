@@ -893,7 +893,7 @@ main {
                             align-items: center;
                             justify-content: center;
                             margin: 0 auto;
-                            padding: 20px 0;
+                            padding: 20px 0 30px;
                             background-color: #fffdf1;
                             position: relative;
                             z-index: 1;
@@ -959,7 +959,11 @@ main {
                         .test_topic_area {
                             display: flex;
                             flex-wrap: wrap;
-                            margin: 20px auto;
+
+                            .test_topic_item_area{
+                                display: flex;
+                            flex-wrap: wrap;
+                            }
 
                             .test_topic_item {
                                 width: 100%;

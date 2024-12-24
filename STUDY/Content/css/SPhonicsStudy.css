@@ -1424,7 +1424,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 0 30px;
   background-color: #fffdf1;
   position: relative;
   z-index: 1;
@@ -1477,7 +1477,10 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_are
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px auto;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item_area {
+  display: flex;
+  flex-wrap: wrap;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item {
   width: 100%;
