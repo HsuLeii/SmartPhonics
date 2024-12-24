@@ -49,7 +49,7 @@
 
         <form action="">
 
-            <div class="study_area exercises_area unit2_area test_form_content connect_test">
+            <div class="study_area exercises_area unit2_area test_form_content">
                 <!-- 單純圖片加 pagination_main_img_area / 拖曳版型加 pagination_main_drag_area / unit3 依照字母加letter_a / 情境頁加 context -->
 
                 <div class="pagination_main_area pagination_main_drag_area test_area">
@@ -57,7 +57,7 @@
 
                         <div class="pagination_main_drag_item">
                             <!-- 題目連連看圖加字開始 -->
-                            <div class="test_area_content connect_area">
+                            <div class="test_area_content">
                                 <div class="topic">
                                     <div class="topic_img">
                                         <img src="../../Content/image/photo/select_page/button/gift_box_open.png"
@@ -65,7 +65,7 @@
                                     </div>
                                     <div class="topic_text">
                                         <h5>
-                                            Unit 4: Review Consonant Digraphs
+                                            複習Unit 4:Consonant digraphs(複合子音)                                            
                                         </h5>
                                     </div>
                                 </div>
@@ -77,808 +77,658 @@
                                     </div>
                                 </div>
 
-                                <div class="test_topic_area test_drag_area">
-                                    
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/correct.svg" alt="">
+                                <div class="tab-content" style="position: relative;">
+                                    <div id="tab1" class="test_topic_area test_sound_area tab-pane active">
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/correct.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>1.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="test_num">
-                                                <p>1.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
 
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-                                            </div>
-                                            
-                                            <div id="drag_cloze_answer_area_one" class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>2.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
 
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag1" draggable="true">
-                                                            p
-                                                        </p>
-                                                        
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
                                                     </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag2" draggable="true">
-                                                            c
-                                                        </p>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
                                                     </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag3" draggable="true">
-                                                            i
-                                                        </p>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/correct.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>3.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
                                                     </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag4" draggable="true">
-                                                            h
-                                                        </p>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>4.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/correct.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>5.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
+                                                </div>
+                                                <div class="test_num">
+                                                    <p>6.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+                                                </div>
+
+                                                <div class="sound_icon_area sound_icon_answer">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>2.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                    <div id="tab2" class="test_topic_area test_drag_area tab-pane">
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/correct.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>7.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag5" draggable="true">
-                                                            i
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag6" draggable="true">
-                                                            e
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag7" draggable="true">
-                                                            t
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag8" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag9" draggable="true">
-                                                            w
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/correct.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>3.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+                                                            <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
+                                                                style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
+                                                                style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
+                                                                style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
+                                                                style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
+                                                                style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
                                                     <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag1" draggable="true">
+                                                                b
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag2" draggable="true">
+                                                                c
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag3" draggable="true">
+                                                                e
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag4" draggable="true">
+                                                                h
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag5" draggable="true">
+                                                                n
+                                                            </p>
+                                                        </button>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag10" draggable="true">
-                                                            c
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag11" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag12" draggable="true">
-                                                            k
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag13" draggable="true">
-                                                            i
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag14" draggable="true">
-                                                            t
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>4.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>8.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag15" draggable="true">
-                                                            g
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag16" draggable="true">
-                                                            i
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag17" draggable="true">
-                                                            k
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag18" draggable="true">
-                                                            n
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/correct.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>5.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
                                                     <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag6" draggable="true">
+                                                                i
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag7" draggable="true">
+                                                                f
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag8" draggable="true">
+                                                                s
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag9" draggable="true">
+                                                                h
+                                                            </p>
+                                                        </button>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag19" draggable="true">
-                                                            s
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag20" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag21" draggable="true">
-                                                            i
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag22" draggable="true">
-                                                            f
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>6.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/correct.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>9.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag23" draggable="true">
-                                                            o
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag24" draggable="true">
-                                                            e
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag25" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag26" draggable="true">
-                                                            n
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag27" draggable="true">
-                                                            p
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
 
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/correct.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>7.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
                                                     <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag" droppable="true"
-                                                            style="position: static;"></div>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag10" draggable="true">
+                                                                c
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag11" draggable="true">
+                                                                h
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag12" draggable="true">
+                                                                k
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag13" draggable="true">
+                                                                i
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag14" draggable="true">
+                                                                t
+                                                            </p>
+                                                        </button>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag28" draggable="true">
-                                                            b
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag29" draggable="true">
-                                                            c
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag30" draggable="true">
-                                                            e
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag31" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag32" draggable="true">
-                                                            n
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>8.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>10.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag33" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag34" draggable="true">
-                                                            s
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag35" draggable="true">
-                                                            p
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag36" draggable="true">
-                                                            o
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/correct.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>9.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div id="drag_cloze" class="drag_cloze_item">
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag15" draggable="true">
+                                                                g
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag16" draggable="true">
+                                                                i
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag17" draggable="true">
+                                                                k
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag18" draggable="true">
+                                                                n
+                                                            </p>
+                                                        </button>
                                                     </div>
                                                 </div>
-
-                                                <div class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag37" draggable="true">
-                                                            k
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag38" draggable="true">
-                                                            d
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag39" draggable="true">
-                                                            c
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag40" draggable="true">
-                                                            u
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>10.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>11.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
-
-                                                <div id="drag_cloze" class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag41" draggable="true">
-                                                            a
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag42" draggable="true">
-                                                            g
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag43" draggable="true">
-                                                            p
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag44" draggable="true">
-                                                            r
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag45" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
 
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>11.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div id="drag_cloze" class="drag_cloze_item">
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag19" draggable="true">
+                                                                a
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag20" draggable="true">
+                                                                g
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag21" draggable="true">
+                                                                p
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag22" draggable="true">
+                                                                r
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag23" draggable="true">
+                                                                h
+                                                            </p>
+                                                        </button>
                                                     </div>
                                                 </div>
-
-                                                <div id="drag_cloze" class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag46" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag47" draggable="true">
-                                                            a
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag48" draggable="true">
-                                                            b
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag49" draggable="true">
-                                                            t
-                                                        </p>
-                                                    </button>
-                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="test_topic_item">
-                                        <div class="test_topic_item_left">
-                                            <div class="test_icon">
-                                                <img src="../../Content/image/svg/wrong.svg" alt="">
-                                            </div>
-                                            <div class="test_num">
-                                                <p>12.</p>
-                                            </div>
-                                            <div class="sound_icon_area">
-                                                <button class="sound_icon">
-                                                    <i class="fa-solid fa-volume-high"></i>
-                                                </button>
-
-                                                <div class="sound_icon_drag" style="">
-                                                    <i class="fa-solid fa-hand-point-left"></i>
+    
+                                        <div class="test_topic_item">
+                                            <div class="test_topic_item_left">
+                                                <div class="test_icon">
+                                                    <img src="../../Content/image/svg/wrong.svg" alt="">
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="test_topic_item_right">
-                                            <div class="drag_cloze_answer_area">
-                                                <div class="drag_cloze_area">
-                                                    <div class="drag_cloze_item">
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
-
-                                                        <div id="dragAnswer" class="drag_cloze target drag"
-                                                            droppable="true" style="position: static;"></div>
+                                                <div class="test_num">
+                                                    <p>12.</p>
+                                                </div>
+                                                <div class="sound_icon_area">
+                                                    <button class="sound_icon">
+                                                        <i class="fa-solid fa-volume-high"></i>
+                                                    </button>
+    
+                                                    <div class="sound_icon_drag" style="">
+                                                        <i class="fa-solid fa-hand-point-left"></i>
                                                     </div>
                                                 </div>
+                                            </div>
+    
+                                            <div class="test_topic_item_right">
+                                                <div class="drag_cloze_answer_area">
+                                                    <div class="drag_cloze_area">
+                                                        <div class="drag_cloze_item">
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+    
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
 
-                                                <div id="drag_cloze" class="drag_cloze_item">
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag50" draggable="true">
-                                                            t
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag51" draggable="true">
-                                                            w
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag52" draggable="true">
-                                                            a
-                                                        </p>
-                                                    </button>
-                                                    <button class="drag_cloze target drag">
-                                                        <p class="alphabet" id="drag53" draggable="true">
-                                                            h
-                                                        </p>
-                                                    </button>
+                                                            <div id="dragAnswer" class="drag_cloze target drag"
+                                                                droppable="true" style="position: static;"></div>
+                                                        </div>
+                                                    </div>
+    
+                                                    <div id="drag_cloze" class="drag_cloze_item">
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag24" draggable="true">
+                                                                t
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag25" draggable="true">
+                                                                w
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag26" draggable="true">
+                                                                i
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag27" draggable="true">
+                                                                h
+                                                            </p>
+                                                        </button>
+                                                        <button class="drag_cloze target drag">
+                                                            <p class="alphabet" id="drag28" draggable="true">
+                                                                e
+                                                            </p>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -894,20 +744,21 @@
 
             <div class="test_end_page">
                 <div class="page">
-                    <span class="pagination">
-                        <a disabled="disabled" class="pagenumber firstnn">第一頁</a>
-                        <span class="active">1</span>
-                        <a class="pagenumber" href="">2</a>
-                        <a class="pagenumber" href="">3</a>
-                        <a class="pagenumber lastnn" href="">最後一頁</a>
-                    </span>
+                    <ul class="pagination nav">
+                        <li>
+                            <a class="pagenumber active" id="tabLink" href="#tab1" data-toggle="tab">1</a>
+                        </li>
+                        <li>
+                            <a class="pagenumber" href="#tab2" data-toggle="tab">2</a>
+                        </li>
+                    </ul>
                 </div>
-
+    
                 <div class="test_end_btn">
                     <button id="submit" class="submit_btn" type="button">
                         <p>送出答案</p>
                     </button>
-
+    
                     <a href="javascript:window.close();" class="close_btn">
                         離開
                     </a>
@@ -975,10 +826,6 @@
     <script src="../../Content/js/bootstrap-5.1.1.min.js"></script>
     <script src="../../Content/js/fontawesome-free-6.1.1.min.js" crossorigin="anonymous"></script>
 
-
-    <script src="https://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="https://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
     <!-- 最終挑戰選擇器 -->
     <script>
         $(document).ready(function () {
@@ -1003,14 +850,11 @@
     <!-- 拖曳效果 -->
     <script>
         $(".drag").on({
-
             "dragstart": function (event) {
                 event.originalEvent.dataTransfer.setData('text', event.target.id)
             },
             "dragend": function () {
                 $(".target").removeClass("active");
-
-
             }
         })
 
@@ -1025,14 +869,12 @@
             },
             "dragleave": function () {
                 $(this).removeClass("active");
-
             },
             "drop": function (event) {
                 event.preventDefault();
                 // event.stopPropagation(); //停止事件氣泡現象
                 let id = event.originalEvent.dataTransfer.getData('text/plain');
                 $("#" + id).appendTo(event.target);
-
 
                 document.querySelectorAll('#dragAnswer').forEach(el => {
                     if (el.hasChildNodes()) {
@@ -1044,6 +886,24 @@
             },
         });
     </script>
+
+    <!-- 選取答案加active -->
+    <script>
+        $(document).ready(function () {
+            $(".sound_icon_answer button").click(function () {
+                $(this).toggleClass("active");
+                $(this).parents().siblings().children("button").removeClass("active");
+            })
+        });
+    </script>
+
+<script>
+    $(function () {
+        $('.pagenumber').click(function (e) {
+            $(this).tab('show');
+        });
+    });
+</script>
 
 </body>
 

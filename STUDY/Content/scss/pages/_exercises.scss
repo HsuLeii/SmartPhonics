@@ -183,17 +183,6 @@ main {
                                                 cursor: pointer;
                                             }
 
-                                            &.target {
-
-                                                // background-color: transparent;
-
-                                                &.active,
-                                                &.done {
-                                                    // background-color: $main_color;
-                                                }
-
-                                            }
-
                                             &.drag {
 
                                                 &:disabled {
@@ -207,7 +196,7 @@ main {
                                                 transform: scale(1);
                                             }
 
-                                            &.orange{
+                                            &.orange {
                                                 background-color: #ed710e20;
                                             }
                                         }
@@ -676,36 +665,47 @@ main {
                     &.letter_ar {
                         color: $letter_ar;
                     }
+
                     &.letter_er1 {
                         color: $letter_er1;
                     }
+
                     &.letter_er2 {
                         color: $letter_er2;
                     }
+
                     &.letter_ir {
                         color: $letter_ir;
                     }
+
                     &.letter_or1 {
                         color: $letter_or1;
                     }
+
                     &.letter_or2 {
                         color: $letter_or2;
                     }
+
                     &.letter_ur {
                         color: $letter_ur;
                     }
+
                     &.letter_air {
                         color: $letter_air;
                     }
+
                     &.letter_ear {
                         color: $letter_ear;
                     }
+
                     &.letter_ire {
                         color: $letter_ire;
                     }
+
                     &.letter_ore {
                         color: $letter_ore;
                     }
+
                     &.letter_our {
                         color: $letter_our;
                     }
@@ -888,10 +888,15 @@ main {
                         }
 
                         .topic {
+                            width: 100%;
                             display: flex;
                             align-items: center;
-                            flex-wrap: wrap;
-                            margin: 20px auto;
+                            justify-content: center;
+                            margin: 0 auto;
+                            padding: 20px 0;
+                            background-color: #fffdf1;
+                            position: relative;
+                            z-index: 1;
 
                             .topic_img {
                                 width: 50px;
@@ -913,7 +918,7 @@ main {
                             .topic_text {
                                 display: flex;
                                 justify-content: center;
-                                width: 100%;
+                                width: auto;
 
                                 p {
                                     font-weight: bold;
@@ -929,6 +934,24 @@ main {
 
                                 p {
                                     color: $brown;
+                                }
+                            }
+                        }
+
+                        .test_area_content {
+                            width: 100%;
+                            display: flex;
+                            flex-wrap: wrap;
+                            max-width: 1200px;
+                            margin: 0 auto;
+
+                            .tab-content {
+                                .test_topic_area {
+                                    display: none;
+
+                                    &.active {
+                                        display: flex;
+                                    }
                                 }
                             }
                         }
@@ -994,7 +1017,6 @@ main {
                                             }
                                         }
                                     }
-
                                 }
 
                                 .test_topic_item_right {
@@ -1017,8 +1039,6 @@ main {
                                             }
 
                                             &.active {
-                                                background-color: $main_color;
-                                                background-color: $drag_cloze;
                                                 background-color: darken($drag_cloze, 20%);
                                             }
 
@@ -1048,6 +1068,63 @@ main {
                                     }
                                 }
                             }
+
+                            &.test_sound_area {
+                                .test_topic_item {
+                                    .sound_icon_area {
+
+                                        .sound_icon {
+                                            color: $white;
+                                            padding: 5px;
+                                            border-radius: 10px;
+                                            line-height: 1;
+                                            display: block;
+                                        }
+                                    }
+
+                                    .test_topic_item_left {
+                                        .sound_icon_area {
+                                            .sound_icon {
+                                                padding: 5px;
+                                                background-color: $main_color;
+                                                border-radius: 10px;
+                                                line-height: 1;
+                                                display: block;
+
+                                                &:hover {
+                                                    background-color: darken($main_color, 5%);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    .test_topic_item_right {
+                                        .sound_icon_area {
+                                            margin: 0 10px;
+
+                                            .sound_icon {
+                                                background-color: $drag_cloze;
+                                                padding: 10px 0px;
+                                                transform: scale(0.95);
+                                                min-width: calc(30px* 1.7);
+
+                                                i,
+                                                svg {
+                                                    font-size: 30px;
+                                                }
+
+                                                &:hover {
+                                                    transform: scale(1);
+                                                }
+
+                                                &.active {
+                                                    background-color: darken($drag_cloze, 20%);
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -1063,11 +1140,6 @@ main {
                         width: 100%;
 
                         .connect_area {
-                            width: 100%;
-                            display: flex;
-                            flex-wrap: wrap;
-                            max-width: 1200px;
-                            margin: 0 auto;
 
                             .topic {
                                 width: 100%;
@@ -1094,6 +1166,7 @@ main {
 
                             .tab-content {
                                 width: 100%;
+                                position: relative;
 
                                 .tab-pane {
                                     width: 100%;
@@ -1221,6 +1294,10 @@ main {
                                                 }
                                             }
                                         }
+                                    }
+
+                                    &.test_topic_area {
+                                        position: relative;
                                     }
                                 }
                             }
@@ -1902,9 +1979,19 @@ main {
                                     .test_topic_item_right {
                                         .test_answer_item {
                                             button {
-                                                margin: 0 10px;
                                                 padding: 10px 30px;
                                                 min-width: calc(30px* 1.7 + 30px);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                &.test_sound_area {
+                                    .test_topic_item {
+
+                                        .test_topic_item_right {
+                                            .sound_icon_area {
+                                                .sound_icon {}
                                             }
                                         }
                                     }
@@ -2164,9 +2251,9 @@ main {
                                         }
 
                                         .drag_cloze_area {
-    
+
                                             .drag_cloze_item {
-    
+
                                                 .drag_cloze {
                                                     min-width: calc(32px* 1.7 + 10px);
                                                     min-height: calc(32px* 1.7 + 30px);
@@ -2201,10 +2288,6 @@ main {
                                 .tittle_img {
                                     margin: 0 20px 0 0;
                                 }
-                            }
-
-                            .topic {
-                                margin: 40px auto;
                             }
 
                             .test_topic_area {
@@ -2588,9 +2671,9 @@ main {
                                         width: 70%;
 
                                         .drag_cloze_area {
-    
+
                                             .drag_cloze_item {
-    
+
                                                 .drag_cloze {
                                                     min-width: calc(30px* 1.7 + 10px);
                                                     min-height: calc(30px* 1.7 + 30px);
@@ -2620,22 +2703,21 @@ main {
         .study_area {
             &.exercises_area {
                 &.unit2_area {
-                    .pagination_main_area{
+                    .pagination_main_area {
                         .pagination_main {
                             &.pagination_main_drag {
                                 .pagination_main_drag_item {
 
                                     // 新版
-                                    .drag_cloze_topic_area {
-                                    }
+                                    .drag_cloze_topic_area {}
 
                                     // 新版
                                     .drag_cloze_answer_area {
 
                                         .drag_cloze_area {
-    
+
                                             .drag_cloze_item {
-    
+
                                                 .drag_cloze {
                                                     min-width: calc(34px* 1.7 + 10px);
                                                     min-height: calc(34px* 1.7 + 30px);
@@ -2653,6 +2735,7 @@ main {
                             }
                         }
                     }
+
                     .test_area {
                         .pagination_main {
                             .topic {
@@ -2741,9 +2824,9 @@ main {
                                         width: 70%;
 
                                         .drag_cloze_area {
-    
+
                                             .drag_cloze_item {
-    
+
                                                 .drag_cloze {
                                                     min-width: calc(36px* 1.7 + 10px);
                                                     min-height: calc(36px* 1.7 + 30px);
@@ -2934,8 +3017,7 @@ main {
                                     margin: 0;
                                     border-left: 0px;
 
-                                    &:nth-last-child(2),
-                                    &:nth-last-child(3) {
+                                    &:nth-last-child(2) {
                                         border-bottom: 0px;
                                     }
 
@@ -2953,6 +3035,25 @@ main {
                                                 margin: 0 10px;
                                                 padding: 10px 30px;
                                             }
+                                        }
+                                    }
+                                }
+
+                                &.test_sound_area {
+                                    .test_topic_item {
+                                        width: 50%;
+                                        border-left: 1px dotted $grey;
+
+                                        &:nth-child(3n+1) {
+                                            border-right: 0px dotted $grey;
+                                        }
+
+                                        &:nth-last-child(3) {
+                                            border-bottom: 1px dotted $grey;
+                                        }
+
+                                        &:nth-child(odd) {
+                                            border-left: 0px;
                                         }
                                     }
                                 }

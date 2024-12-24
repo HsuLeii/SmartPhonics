@@ -1419,10 +1419,15 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_tit
   margin: 0 0 20px 0;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic {
+  width: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 20px auto;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px 0;
+  background-color: #fffdf1;
+  position: relative;
+  z-index: 1;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .topic_img {
   width: 50px;
@@ -1441,7 +1446,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .t
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .topic_text {
   display: flex;
   justify-content: center;
-  width: 100%;
+  width: auto;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .topic_text p {
   font-weight: bold;
@@ -1455,6 +1460,19 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .t
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic .topic_caption p {
   color: #634218;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_area_content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_area_content .tab-content .test_topic_area {
+  display: none;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_area_content .tab-content .test_topic_area.active {
+  display: flex;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area {
   display: flex;
@@ -1529,8 +1547,6 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button.active {
-  background-color: #ed710e;
-  background-color: #70ace3;
   background-color: #277ac6;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
@@ -1548,6 +1564,42 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   width: 100%;
   margin: 0 auto;
 }
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .sound_icon_area .sound_icon {
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  line-height: 1;
+  display: block;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon {
+  padding: 5px;
+  background-color: #ed710e;
+  border-radius: 10px;
+  line-height: 1;
+  display: block;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon:hover {
+  background-color: #d5660d;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area {
+  margin: 0 10px;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon {
+  background-color: #70ace3;
+  padding: 10px 0px;
+  transform: scale(0.95);
+  min-width: 51px;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon i,
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon svg {
+  font-size: 30px;
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon:hover {
+  transform: scale(1);
+}
+main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon.active {
+  background-color: #277ac6;
+}
 main .study_area.exercises_area.connect_test {
   position: initial;
 }
@@ -1556,13 +1608,6 @@ main .study_area.exercises_area.connect_test .pagination_main_area {
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main {
   width: 100%;
-}
-main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .topic {
   width: 100%;
@@ -1583,6 +1628,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content {
   width: 100%;
+  position: relative;
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane {
   width: 100%;
@@ -1679,6 +1725,9 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   left: 0;
   width: 25px;
   margin: 0 5px 0 0;
+}
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane.test_topic_area {
+  position: relative;
 }
 main .study_area.exercises_area .exercises_area_img {
   margin: 40px auto;
@@ -2092,7 +2141,6 @@ main canvas {
 }
 @media screen and (min-width: 500px) {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
-    margin: 0 10px;
     padding: 10px 30px;
     min-width: 81px;
   }
@@ -2197,9 +2245,6 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_tittle .tittle_img {
     margin: 0 20px 0 0;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .topic {
-    margin: 40px auto;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item {
     width: 50%;
@@ -2428,7 +2473,7 @@ main canvas {
     margin: 0;
     border-left: 0px;
   }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2), main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(3) {
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2) {
     border-bottom: 0px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(3n) {
@@ -2440,6 +2485,19 @@ main canvas {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 10px;
     padding: 10px 30px;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item {
+    width: 50%;
+    border-left: 1px dotted grey;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-child(3n+1) {
+    border-right: 0px dotted grey;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-last-child(3) {
+    border-bottom: 1px dotted grey;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-child(odd) {
+    border-left: 0px;
   }
 }
 @media screen and (min-width: 1920px) {
