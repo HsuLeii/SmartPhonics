@@ -790,14 +790,11 @@
     <!-- 拖曳效果 -->
     <script>
         $(".drag").on({
-
             "dragstart": function (event) {
                 event.originalEvent.dataTransfer.setData('text', event.target.id)
             },
             "dragend": function () {
                 $(".target").removeClass("active");
-
-
             }
         })
 
@@ -808,19 +805,16 @@
             },
             "dragover": function (event) {
                 event.preventDefault();
+                $(this).addClass("orange");
             },
             "dragleave": function () {
                 $(this).removeClass("active");
-
-
-
             },
             "drop": function (event) {
                 event.preventDefault();
                 // event.stopPropagation(); //停止事件氣泡現象
                 let id = event.originalEvent.dataTransfer.getData('text/plain');
                 $("#" + id).appendTo(event.target);
-
 
                 document.querySelectorAll('#dragAnswer').forEach(el => {
                     if (el.hasChildNodes()) {
