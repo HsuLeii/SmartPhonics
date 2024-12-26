@@ -1984,8 +1984,8 @@ main {
                                     .test_topic_item_right {
                                         .test_answer_item {
                                             button {
-                                                padding: 10px 30px;
-                                                min-width: calc(60px* 1.7 + 30px);
+                                                padding: 10px 15px;
+                                                min-width: calc(60px* 1.7);
                                             }
                                         }
                                     }
@@ -2313,8 +2313,7 @@ main {
                                         .test_answer_item {
                                             button {
                                                 margin: 0 5px;
-                                                padding: 10px 30px;
-                                                min-width: calc(70px* 1.7 + 30px);
+                                                min-width: calc(70px* 1.7);
 
                                                 p {
                                                     font-size: 35px;
@@ -2338,8 +2337,6 @@ main {
 
                                 &.test_sound_area {
                                     .test_topic_item {
-    
-    
                                         .test_topic_item_right {
                                             .sound_icon_area {
                                                 .sound_icon {
@@ -3033,7 +3030,11 @@ main {
                                         .test_answer_item {
                                             button {
                                                 margin: 0 10px;
-                                                padding: 10px 30px;
+                                                min-width: calc(90px* 1.7);
+
+                                                p {
+                                                    font-size: 45px;
+                                                }
                                             }
                                         }
                                     }
@@ -3054,6 +3055,19 @@ main {
 
                                         &:nth-child(odd) {
                                             border-left: 0px;
+                                        }
+
+                                        .test_topic_item_right {
+                                            .sound_icon_area {
+                                                .sound_icon {
+                                                    min-width: calc(45px* 1.7);
+    
+                                                    i,
+                                                    svg {
+                                                        font-size: 45px;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }

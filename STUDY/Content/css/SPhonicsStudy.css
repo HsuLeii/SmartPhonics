@@ -2145,8 +2145,8 @@ main canvas {
 }
 @media screen and (min-width: 500px) {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
-    padding: 10px 30px;
-    min-width: 132px;
+    padding: 10px 15px;
+    min-width: 102px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -2262,8 +2262,7 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 5px;
-    padding: 10px 30px;
-    min-width: 149px;
+    min-width: 119px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
     font-size: 35px;
@@ -2480,7 +2479,10 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 10px;
-    padding: 10px 30px;
+    min-width: 153px;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
+    font-size: 45px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item {
     width: 50%;
@@ -2494,6 +2496,13 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-child(odd) {
     border-left: 0px;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon {
+    min-width: 76.5px;
+  }
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon i,
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon svg {
+    font-size: 45px;
   }
 }
 @media screen and (min-width: 1920px) {
