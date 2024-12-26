@@ -159,7 +159,6 @@ main {
                                         display: flex;
                                         flex-wrap: wrap;
                                         justify-content: center;
-                                        margin: 20px auto 0;
 
                                         .drag_cloze {
                                             display: flex;
@@ -892,6 +891,7 @@ main {
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            flex-wrap: wrap;
                             margin: 0 auto;
                             padding: 20px 0 30px;
                             background-color: #fffdf1;
@@ -972,7 +972,7 @@ main {
                                 align-items: center;
                                 flex-wrap: wrap;
                                 margin: 0 auto;
-                                padding: 15px 0;
+                                padding: 35px 0 20px;
                                 border-bottom: 1px dotted $grey;
 
                                 .test_topic_item_left {
@@ -988,6 +988,7 @@ main {
                                     .test_num {
                                         width: 30px;
                                         margin: 0 5px 0 0;
+                                        transform: translate(0, -50%);
                                     }
 
                                     .sound_icon_area {
@@ -1034,9 +1035,10 @@ main {
 
                                         button {
                                             padding: 10px 0px;
+                                            margin: 5px;
                                             background-color: $drag_cloze;
                                             transform: scale(0.95);
-                                            min-width: calc(30px* 1.7);
+                                            min-width: calc(60px* 1.7);
 
                                             &:hover {
                                                 transform: scale(1);
@@ -1062,7 +1064,6 @@ main {
                             &.test_drag_area {
                                 .test_topic_item {
                                     .test_topic_item_left {
-                                        height: auto;
                                         margin: 10px 0;
                                     }
 
@@ -1076,7 +1077,6 @@ main {
                             &.test_sound_area {
                                 .test_topic_item {
                                     .sound_icon_area {
-
                                         .sound_icon {
                                             color: $white;
                                             padding: 5px;
@@ -1087,6 +1087,7 @@ main {
                                     }
 
                                     .test_topic_item_left {
+
                                         .sound_icon_area {
                                             .sound_icon {
                                                 padding: 5px;
@@ -1984,7 +1985,7 @@ main {
                                         .test_answer_item {
                                             button {
                                                 padding: 10px 30px;
-                                                min-width: calc(30px* 1.7 + 30px);
+                                                min-width: calc(60px* 1.7 + 30px);
                                             }
                                         }
                                     }
@@ -2311,9 +2312,13 @@ main {
                                     .test_topic_item_right {
                                         .test_answer_item {
                                             button {
-                                                margin: 0;
-                                                padding: 10px 20px;
-                                                min-width: calc(30px* 1.7 + 20px);
+                                                margin: 0 5px;
+                                                padding: 10px 30px;
+                                                min-width: calc(70px* 1.7 + 30px);
+
+                                                p {
+                                                    font-size: 35px;
+                                                }
                                             }
                                         }
                                     }
@@ -2327,6 +2332,25 @@ main {
 
                                         &:nth-last-child(1) {
                                             border-bottom: 0;
+                                        }
+                                    }
+                                }
+
+                                &.test_sound_area {
+                                    .test_topic_item {
+    
+    
+                                        .test_topic_item_right {
+                                            .sound_icon_area {
+                                                .sound_icon {
+                                                    min-width: calc(35px* 1.7);
+    
+                                                    i,
+                                                    svg {
+                                                        font-size: 35px;
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                 }
@@ -2549,34 +2573,6 @@ main {
                         .pagination_main {
 
                             .test_topic_area {
-
-                                .test_topic_item {
-                                    .test_topic_item_left {
-                                        height: 100%;
-
-                                        .test_num {
-                                            height: 100%;
-                                        }
-                                    }
-
-                                    .test_topic_item_right {
-                                        width: auto;
-                                        margin: 0 0 0 25px;
-
-                                        .test_answer_item {
-                                            button {
-                                                margin: 0 5px;
-                                                padding: 10px 30px;
-                                                min-width: calc(35px* 1.7 + 30px);
-
-                                                p {
-                                                    font-size: 35px;
-                                                }
-                                            }
-                                        }
-                                    }
-
-                                }
 
                                 &.test_drag_area {
                                     .test_topic_item {
