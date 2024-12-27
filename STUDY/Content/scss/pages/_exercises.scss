@@ -1297,6 +1297,10 @@ main {
                                                     width: 25px;
                                                     margin: 0 5px 0 0;
                                                 }
+
+                                                &.connect_num{
+                                                    transform: translate(0, -50%);
+                                                }
                                             }
                                         }
                                     }

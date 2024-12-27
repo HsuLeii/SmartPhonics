@@ -1730,6 +1730,9 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   width: 25px;
   margin: 0 5px 0 0;
 }
+main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect tr td.connect_num {
+  transform: translate(0, -50%);
+}
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane.test_topic_area {
   position: relative;
 }
