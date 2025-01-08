@@ -1016,7 +1016,6 @@ main {
                                 justify-content: center;
                                 align-items: center;
                                 flex-wrap: wrap;
-                                margin: 0 auto;
                                 padding: 35px 0 20px;
                                 border-bottom: 1px dotted $grey;
 
@@ -2348,14 +2347,15 @@ main {
 
                                 .test_topic_item {
                                     width: 50%;
-                                    border-left: 1px dotted $grey;
+                                    border-right: 1px dotted $grey;
+                                    transform: translate(0, -1px);
 
                                     &:nth-last-child(2) {
                                         border-bottom: 0;
                                     }
 
-                                    &:nth-child(odd) {
-                                        border-left: 0px;
+                                    &:nth-child(even) {
+                                        border-right: 0px;
                                     }
 
                                     .test_topic_item_right {
@@ -2376,7 +2376,7 @@ main {
                                     .test_topic_item {
                                         width: 100%;
                                         border-bottom: 1px dotted $grey;
-                                        border-left: 0;
+                                        border-right: 0;
 
                                         &:nth-last-child(1) {
                                             border-bottom: 0;
@@ -3059,21 +3059,6 @@ main {
                         .pagination_main {
                             .test_topic_area {
                                 .test_topic_item {
-                                    width: 33.33333%;
-                                    margin: 0;
-                                    border-left: 0px;
-
-                                    &:nth-last-child(2) {
-                                        border-bottom: 0px;
-                                    }
-
-                                    &:nth-child(3n) {
-                                        border-left: 1px dotted $grey;
-                                    }
-
-                                    &:nth-child(3n+1) {
-                                        border-right: 1px dotted $grey;
-                                    }
 
                                     .test_topic_item_right {
                                         .test_answer_item {
@@ -3091,20 +3076,6 @@ main {
 
                                 &.test_sound_area {
                                     .test_topic_item {
-                                        width: 50%;
-                                        border-left: 1px dotted $grey;
-
-                                        &:nth-child(3n+1) {
-                                            border-right: 0px dotted $grey;
-                                        }
-
-                                        &:nth-last-child(3) {
-                                            border-bottom: 1px dotted $grey;
-                                        }
-
-                                        &:nth-child(odd) {
-                                            border-left: 0px;
-                                        }
 
                                         .test_topic_item_right {
                                             .sound_icon_area {

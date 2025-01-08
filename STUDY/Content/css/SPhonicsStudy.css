@@ -1521,7 +1521,6 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
   padding: 35px 0 20px;
   border-bottom: 1px dotted grey;
 }
@@ -2288,13 +2287,14 @@ main canvas {
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item {
     width: 50%;
-    border-left: 1px dotted grey;
+    border-right: 1px dotted grey;
+    transform: translate(0, -1px);
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2) {
     border-bottom: 0;
   }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(odd) {
-    border-left: 0px;
+  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(even) {
+    border-right: 0px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 5px;
@@ -2306,7 +2306,7 @@ main canvas {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_drag_area .test_topic_item {
     width: 100%;
     border-bottom: 1px dotted grey;
-    border-left: 0;
+    border-right: 0;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_drag_area .test_topic_item:nth-last-child(1) {
     border-bottom: 0;
@@ -2499,39 +2499,12 @@ main canvas {
     min-width: 69.5px;
     min-height: 89.5px;
   }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item {
-    width: 33.33333%;
-    margin: 0;
-    border-left: 0px;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-last-child(2) {
-    border-bottom: 0px;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(3n) {
-    border-left: 1px dotted grey;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item:nth-child(3n+1) {
-    border-right: 1px dotted grey;
-  }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button {
     margin: 0 10px;
     min-width: 153px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
     font-size: 45px;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item {
-    width: 50%;
-    border-left: 1px dotted grey;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-child(3n+1) {
-    border-right: 0px dotted grey;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-last-child(3) {
-    border-bottom: 1px dotted grey;
-  }
-  main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item:nth-child(odd) {
-    border-left: 0px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon {
     min-width: 76.5px;
