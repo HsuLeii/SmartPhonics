@@ -1016,7 +1016,7 @@ main {
                                 justify-content: center;
                                 align-items: center;
                                 flex-wrap: wrap;
-                                padding: 35px 0 20px;
+                                padding: 35px 10px 20px;
                                 border-bottom: 1px dotted $grey;
 
                                 .test_topic_item_left {
@@ -2348,7 +2348,6 @@ main {
                                 .test_topic_item {
                                     width: 50%;
                                     border-right: 1px dotted $grey;
-                                    transform: translate(0, -1px);
 
                                     &:nth-last-child(2) {
                                         border-bottom: 0;
@@ -2938,17 +2937,13 @@ main {
                                 &.test_drag_area {
                                     .test_topic_item {
                                         width: 50%;
-                                        border-left: 1px dotted $grey;
+                                        border-right: 1px dotted $grey;
 
                                         &:nth-last-child(2) {
                                             border-bottom: 0;
                                         }
 
-                                        &:nth-child(odd) {
-                                            border-left: 0;
-                                        }
-
-                                        &:nth-child(3n+1) {
+                                        &:nth-child(even) {
                                             border-right: 0;
                                         }
                                     }
