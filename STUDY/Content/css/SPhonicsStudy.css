@@ -2478,13 +2478,13 @@ main canvas {
 }
 @media screen and (min-width: 1600px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
-    min-width: 78.5px;
-    min-height: 76.5px;
+    min-width: 70px;
+    min-height: 68px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 45px;
-    min-width: 78.5px;
-    min-height: 76.5px;
+    font-size: 40px;
+    min-width: 70px;
+    min-height: 68px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
     min-width: 69.5px;
@@ -2500,25 +2500,25 @@ main canvas {
     min-width: 153px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
-    font-size: 45px;
+    font-size: 40px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon {
-    min-width: 76.5px;
+    min-width: 68px;
   }
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon i,
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon svg {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media screen and (min-width: 1920px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 86.5px;
-    min-height: 106.5px;
+    min-width: 78px;
+    min-height: 98px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 45px;
-    min-width: 86.5px;
-    min-height: 106.5px;
+    font-size: 40px;
+    min-width: 78px;
+    min-height: 98px;
   }
 }
 @media screen and (min-height: 1px) {
