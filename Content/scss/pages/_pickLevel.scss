@@ -131,6 +131,19 @@ main {
                             color: $main_color_black;
                         }
                     }
+
+                    &.disabled{
+                        background-color: $grey !important;
+                        transform: scale(0.95);
+
+                        a{
+                            color: $white;
+                        }
+
+                        &.button-animate {
+                            animation: none;
+                        }
+                    }
                 }
             }
         }

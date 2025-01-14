@@ -1591,6 +1591,16 @@ main .pick_level_area .pick_level_main .level_options .button_level.button_score
 main .pick_level_area .pick_level_main .level_options .button_level.button_score a {
   color: #2e3233;
 }
+main .pick_level_area .pick_level_main .level_options .button_level.disabled {
+  background-color: grey !important;
+  transform: scale(0.95);
+}
+main .pick_level_area .pick_level_main .level_options .button_level.disabled a {
+  color: #fff;
+}
+main .pick_level_area .pick_level_main .level_options .button_level.disabled.button-animate {
+  animation: none;
+}
 main .pick_level_area .swiper {
   width: 100%;
   height: calc(90vh - 64.7px - 140px);
