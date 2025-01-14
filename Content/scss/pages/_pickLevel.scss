@@ -89,6 +89,7 @@ main {
                         }
                     }
                 }
+
                 .level_name{
                     width: calc(100% - 10px);
                     padding: 5px 20px;
@@ -133,6 +134,43 @@ main {
                     }
 
                     &.disabled{
+                        background-color: $grey !important;
+                        transform: scale(0.95);
+
+                        a{
+                            color: $white;
+                        }
+
+                        &.button-animate {
+                            animation: none;
+                        }
+                    }
+                }
+
+                &.disabled{
+                    .level_img {
+                        background: linear-gradient(135deg,
+                        $white 0% 5%, $grey 5% 10%,
+                        $white 10% 15%, $grey 15% 20%,
+                        $white 20% 25%, $grey 25% 30%,
+                        $white 30% 35%, $grey 35% 40%,
+                        $white 40% 45%, $grey 45% 50%,
+                        $white 50% 55%, $grey 55% 60%,
+                        $white 60% 65%, $grey 65% 70%,
+                        $white 70% 75%, $grey 75% 80%,
+                        $white 80% 85%, $grey 85% 90%,
+                        $white 90% 95%, $grey 95% 100%);
+
+                        img{
+                            filter: grayscale(100%);
+                        }
+                    }
+
+                    .level_name{
+                        color: $grey;
+                    }
+
+                    .button_level{
                         background-color: $grey !important;
                         transform: scale(0.95);
 

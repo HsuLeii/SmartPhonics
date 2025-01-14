@@ -1601,6 +1601,25 @@ main .pick_level_area .pick_level_main .level_options .button_level.disabled a {
 main .pick_level_area .pick_level_main .level_options .button_level.disabled.button-animate {
   animation: none;
 }
+main .pick_level_area .pick_level_main .level_options.disabled .level_img {
+  background: linear-gradient(135deg, #fff 0% 5%, grey 5% 10%, #fff 10% 15%, grey 15% 20%, #fff 20% 25%, grey 25% 30%, #fff 30% 35%, grey 35% 40%, #fff 40% 45%, grey 45% 50%, #fff 50% 55%, grey 55% 60%, #fff 60% 65%, grey 65% 70%, #fff 70% 75%, grey 75% 80%, #fff 80% 85%, grey 85% 90%, #fff 90% 95%, grey 95% 100%);
+}
+main .pick_level_area .pick_level_main .level_options.disabled .level_img img {
+  filter: grayscale(100%);
+}
+main .pick_level_area .pick_level_main .level_options.disabled .level_name {
+  color: grey;
+}
+main .pick_level_area .pick_level_main .level_options.disabled .button_level {
+  background-color: grey !important;
+  transform: scale(0.95);
+}
+main .pick_level_area .pick_level_main .level_options.disabled .button_level a {
+  color: #fff;
+}
+main .pick_level_area .pick_level_main .level_options.disabled .button_level.button-animate {
+  animation: none;
+}
 main .pick_level_area .swiper {
   width: 100%;
   height: calc(90vh - 64.7px - 140px);
