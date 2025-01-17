@@ -592,7 +592,7 @@ main {
 
                 .answer_display_item {
                     padding: 15px;
-                    padding: 3px 5px;
+                    padding: 5px 8px;
                     width: calc(100% - 20px);
                     width: 215px;
                     margin: 10px calc((100% - 215px * 1) / 2);
@@ -978,20 +978,44 @@ main {
 
         //20240613新版
         .leave_link {
-            width: 90%;
-            margin: 0 auto;
-            display: flex;
-            justify-content: flex-end;
+            
 
             a {
                 color: $white;
                 background-color: $main_color;
                 padding: 10px 15px;
-                padding: 3px;
+                padding: 5px 10px;
                 border-radius: 10px;
 
                 &:hover {
                     background-color: darken($main_color, 5%);
+                }
+            }
+        }
+
+        .level_information{
+            width: 90%;
+            margin: 20px auto;
+            display: flex;
+            justify-content: space-between;
+
+            .level_name{
+                h5{
+                    color: $brown;
+                    font-weight: bold;
+                }
+            }
+
+            .leave_link {
+                a {
+                    color: $white;
+                    background-color: $main_color;
+                    padding: 10px 15px;
+                    border-radius: 10px;
+    
+                    &:hover {
+                        background-color: darken($main_color, 5%);
+                    }
                 }
             }
         }

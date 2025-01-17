@@ -3415,7 +3415,7 @@ main .test_end_area.test_end_answer .answer_display_area .answer_display_item .a
 }
 main .test_end_area.test_end_answer .answer_display_area .answer_display_item {
   padding: 15px;
-  padding: 3px 5px;
+  padding: 5px 8px;
   width: calc(100% - 20px);
   width: 215px;
   margin: 10px calc((100% - 215px) / 2);
@@ -3633,20 +3633,33 @@ main .test_end_area.test_end_ten .sky_answer_display_area .sky_test_filter .feed
 main .test_end_area.test_end_ten .sky_answer_display_area .sky_test_filter .feedback_top .scoring_area::after {
   border: 1.5px solid #64a9a5;
 }
-main .test_end_area .leave_link {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-}
 main .test_end_area .leave_link a {
   color: #fff;
   background-color: #ed710e;
   padding: 10px 15px;
-  padding: 3px;
+  padding: 5px 10px;
   border-radius: 10px;
 }
 main .test_end_area .leave_link a:hover {
+  background-color: #d5660d;
+}
+main .test_end_area .level_information {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+main .test_end_area .level_information .level_name h5 {
+  color: #514223;
+  font-weight: bold;
+}
+main .test_end_area .level_information .leave_link a {
+  color: #fff;
+  background-color: #ed710e;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+main .test_end_area .level_information .leave_link a:hover {
   background-color: #d5660d;
 }
 
