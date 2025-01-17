@@ -4196,25 +4196,43 @@ main .page .pagination span.active {
 }
 
 @media screen and (min-width: 576px) {
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content:nth-child(1) {
+    width: 33.33333%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content:nth-child(2) {
+    width: 33.33333%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content:nth-child(3) {
+    width: 33.33333%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content.item_box_content_link {
+    width: 100%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content.item_box_content_link a {
+    width: auto;
+  }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
     display: flex;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
     flex-direction: row;
-    width: 100%;
+    margin: 10px auto;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content {
     justify-content: center;
     margin: 0;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(1) {
-    width: 100px;
+    width: 20%;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(2) {
-    width: calc(100% - 200px);
+    width: 20%;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(3) {
-    width: 100px;
+    width: 30%;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(4) {
+    width: 30%;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
     width: 100%;
@@ -4239,22 +4257,14 @@ main .page .pagination span.active {
     align-items: center;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
-    width: calc(90% - 110px);
     justify-content: flex-start;
     margin: 0;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .continue_challenge_text {
     margin: 40px auto;
   }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
-    width: calc(90% - 110px);
-  }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content {
     margin: 0;
-  }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
-    width: 110px;
-    margin: 0 auto;
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content .quiz_progress {
     width: 90px;
@@ -4268,24 +4278,16 @@ main .page .pagination span.active {
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
     width: auto;
   }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
-    width: auto;
-  }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(2) {
-    width: 200px;
-  }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content:nth-child(3) {
-    width: 200px;
-  }
-  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
-    width: calc(100% - 520px);
-  }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link a {
     width: auto;
     padding: 10px 20px;
   }
 }
 @media screen and (min-width: 1400px) {
+  main .test_area.continue_challenge_area .continue_challenge_item_area.reportSelector .item_box .item_box_content.item_box_content_link {
+    width: 350px;
+    margin: 0;
+  }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box {
     justify-content: center;
     padding: 30px 10px;
@@ -4293,6 +4295,9 @@ main .page .pagination span.active {
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box.item_box_title {
     margin: 0 350px 0 0;
     justify-content: center;
+  }
+  main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content_area {
+    width: calc(100% - 350px);
   }
   main .test_area.continue_challenge_area .continue_challenge_item_area .item_box .item_box_content.item_box_content_link {
     width: 350px;

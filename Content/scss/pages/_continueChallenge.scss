@@ -198,6 +198,34 @@ main {
 
                 .continue_challenge_item_area {
 
+                    &.reportSelector{
+                        .item_box{
+                            .item_box_content {
+    
+                                &:nth-child(1) {
+                                    width: 33.33333%;
+                                }
+    
+                                &:nth-child(2) {
+                                    width: 33.33333%;
+                                }
+    
+                                &:nth-child(3) {
+                                    width: 33.33333%;
+                                }
+
+                                &.item_box_content_link {
+                                    width: 100%;
+    
+                                    a {
+                                        width: auto;
+                                    }
+                                }
+                            }
+                        }
+                        
+                    }
+
                     .item_box {
                         // &:nth-child(3) {
                         //     border-top: 1px solid $main_color_black;
@@ -209,7 +237,7 @@ main {
 
                         .item_box_content_area {
                             flex-direction: row;
-                            width: 100%;
+                            margin: 10px auto;
                         }
 
                         .item_box_content {
@@ -217,15 +245,19 @@ main {
                             margin: 0;
 
                             &:nth-child(1) {
-                                width: 100px;
+                                width: 20%;
                             }
 
                             &:nth-child(2) {
-                                width: calc(100% - 200px);
+                                width: 20%;
                             }
 
                             &:nth-child(3) {
-                                width: 100px;
+                                width: 30%;
+                            }
+
+                            &:nth-child(4) {
+                                width: 30%;
                             }
 
                             &.item_box_content_link {
@@ -275,7 +307,6 @@ main {
                         align-items: center;
 
                         &.item_box_title {
-                            width: calc(90% - 110px);
                             justify-content: flex-start;
                             margin: 0;
                         }
@@ -285,16 +316,10 @@ main {
                         }
 
                         .item_box_content_area {
-                            width: calc(90% - 110px);
                         }
 
                         .item_box_content {
                             margin: 0;
-
-                            &.item_box_content_link {
-                                width: 110px;
-                                margin: 0 auto;
-                            }
 
                             .quiz_progress {
                                 width: 90px;
@@ -325,22 +350,9 @@ main {
                             width: auto;
                         }
 
-                        .item_box_content_area {
-                            width: auto;
-                        }
-
                         .item_box_content {
 
-                            &:nth-child(2) {
-                                width: 200px;
-                            }
-
-                            &:nth-child(3) {
-                                width: 200px;
-                            }
-
                             &.item_box_content_link {
-                                width: calc(100% - 520px);
 
                                 a {
                                     width: auto;
@@ -362,6 +374,18 @@ main {
 
                 .continue_challenge_item_area {
 
+                    &.reportSelector{
+                        .item_box{
+                            .item_box_content {
+                                &.item_box_content_link {
+                                    width: 350px;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                        
+                    }
+
                     .item_box {
                         justify-content: center;
                         padding: 30px 10px;
@@ -369,6 +393,11 @@ main {
                         &.item_box_title {
                             margin: 0 350px 0 0;
                             justify-content: center;
+                        }
+
+                        
+                        .item_box_content_area {
+                            width: calc(100% - 350px);
                         }
 
                         .item_box_content {
