@@ -2478,13 +2478,13 @@ main canvas {
 }
 @media screen and (min-width: 1600px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
-    min-width: 70px;
-    min-height: 68px;
+    min-width: 61.5px;
+    min-height: 59.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 40px;
-    min-width: 70px;
-    min-height: 68px;
+    font-size: 35px;
+    min-width: 61.5px;
+    min-height: 59.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
     min-width: 69.5px;
