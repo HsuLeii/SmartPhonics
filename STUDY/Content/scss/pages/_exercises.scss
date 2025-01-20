@@ -3095,44 +3095,6 @@ main {
     }
 }
 
-@media screen and (min-width: 1920px) {
-    main {
-        .study_area {
-            &.exercises_area {
-                &.unit2_area {
-                    .pagination_main_area {
-
-                        .pagination_main {
-                            &.pagination_main_drag {
-                                .pagination_main_drag_item {
-
-                                    // 新版
-                                    .drag_cloze_answer_area {
-
-                                        .drag_cloze_area {
-                                            .drag_cloze_item {
-                                                .drag_cloze {
-                                                    min-width: calc(40px* 1.7 + 10px);
-                                                    min-height: calc(40px* 1.7 + 30px);
-
-                                                    .alphabet {
-                                                        font-size: 40px;
-                                                        min-width: calc(40px* 1.7 + 10px);
-                                                        min-height: calc(40px* 1.7 + 30px);
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
 
 @media screen and (min-height: 1px) {

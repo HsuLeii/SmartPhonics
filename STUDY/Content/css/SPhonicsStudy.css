@@ -2510,17 +2510,6 @@ main canvas {
     font-size: 40px;
   }
 }
-@media screen and (min-width: 1920px) {
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 78px;
-    min-height: 98px;
-  }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 40px;
-    min-width: 78px;
-    min-height: 98px;
-  }
-}
 @media screen and (min-height: 1px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img img {
     max-height: 100px;
