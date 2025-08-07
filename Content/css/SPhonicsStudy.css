@@ -173,11 +173,6 @@ body {
   text-align: center;
 }
 
-::-moz-selection {
-  background: #ed710e;
-  color: #fff;
-}
-
 ::selection {
   background: #ed710e;
   color: #fff;
@@ -309,7 +304,7 @@ input[type=range] {
   /* input range 原點樣式 */
 }
 input[type=range]:focus::-webkit-slider-thumb {
-  background-color: #bd5a0b;
+  background-color: rgb(188.8446215139, 90.0398406375, 11.1553784861);
 }
 input[type=range]::-webkit-slider-thumb {
   width: 15px;
@@ -320,7 +315,6 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #ed710e;
   z-index: 1;
   position: relative;
-  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   transform: translate(0%, -50%);
   top: 50%;
@@ -863,8 +857,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_img img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
   width: 100%;
@@ -875,8 +868,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
   width: 100%;
@@ -1552,7 +1544,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   color: #fff;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon_drag {
   position: absolute;
@@ -1584,7 +1576,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button.active {
-  background-color: #277ac6;
+  background-color: rgb(38.8070175439, 121.9649122807, 198.1929824561);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
   font-size: 30px;
@@ -1615,7 +1607,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   display: block;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area {
   margin: 0 10px;
@@ -1634,7 +1626,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon.active {
-  background-color: #277ac6;
+  background-color: rgb(38.8070175439, 121.9649122807, 198.1929824561);
 }
 main .study_area.exercises_area.connect_test {
   position: initial;
@@ -1732,7 +1724,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   width: 40.6px;
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect tr td.connect_topic .connect_topic_item .sound_icon:hover svg {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect tr td.connect_topic .connect_topic_item .connect_topic_text {
   border: 1px solid transparent;
@@ -2060,7 +2052,7 @@ main .test_end_page .test_end_btn .close_btn p {
 }
 main .test_end_page .test_end_btn .submit_btn:hover,
 main .test_end_page .test_end_btn .close_btn:hover {
-  background-color: #bd5a0b;
+  background-color: rgb(188.8446215139, 90.0398406375, 11.1553784861);
 }
 main .drag_pointer {
   position: absolute;
@@ -2258,14 +2250,14 @@ main canvas {
     height: calc(100% - 140px);
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
-    margin: 10px 5px;
-    min-width: 64.9px;
-    min-height: 64.9px;
+    margin: 10px 4px;
+    min-width: 56.4px;
+    min-height: 56.4px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 35px;
-    min-width: 64.9px;
-    min-height: 64.9px;
+    font-size: 32px;
+    min-width: 56.4px;
+    min-height: 56.4px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
     min-width: 64.4px;
@@ -2451,8 +2443,8 @@ main canvas {
     width: 70%;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 71.2px;
-    min-height: 91.2px;
+    min-width: 64.4px;
+    min-height: 84.4px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
     font-size: 32px;
@@ -2478,13 +2470,13 @@ main canvas {
 }
 @media screen and (min-width: 1600px) {
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze {
-    min-width: 70px;
-    min-height: 68px;
+    min-width: 61.5px;
+    min-height: 59.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 40px;
-    min-width: 70px;
-    min-height: 68px;
+    font-size: 35px;
+    min-width: 61.5px;
+    min-height: 59.5px;
   }
   main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
     min-width: 69.5px;
@@ -2508,17 +2500,6 @@ main canvas {
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon i,
   main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon svg {
     font-size: 40px;
-  }
-}
-@media screen and (min-width: 1920px) {
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze {
-    min-width: 78px;
-    min-height: 98px;
-  }
-  main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area .drag_cloze_area .drag_cloze_item .drag_cloze .alphabet {
-    font-size: 40px;
-    min-width: 78px;
-    min-height: 98px;
   }
 }
 @media screen and (min-height: 1px) {
@@ -2701,6 +2682,7 @@ main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .tic
   height: auto;
   opacity: 0;
   z-index: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
   background-color: #634218;
@@ -3052,7 +3034,7 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   color: #fff;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.get .get_star {
   display: block;
@@ -3086,6 +3068,7 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
   background-color: #634218;
@@ -3554,8 +3537,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 }
 .modal .modal-dialog .modal-content .wood_frame .wood_grain img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .modal .modal-dialog .modal-content::before {
   content: "";

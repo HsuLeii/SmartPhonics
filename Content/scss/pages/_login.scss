@@ -1,4 +1,110 @@
 main {
+    .main_publicity {
+        &.login {
+            padding: 0;
+        }
+    }
+
+    .map_slide {
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $body_bg;
+            z-index: 1;
+            opacity: 0.35;
+        }
+        .map_slide_bg {
+            display: none;
+        }
+    }
+
+    .map_slide_item_area {
+        position: absolute;
+        width: calc(100% - 35px);
+        height: calc(100% + 0px);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .map_slide_item {
+            position: absolute;
+            z-index: 1;
+            width: 16.66666%;
+
+            .map_slide_item_link {
+                display: block;
+                position: relative;
+                height: 100%;
+            }
+
+            &.map_slide_item_eleven {
+                top: 9.19841%;
+            }
+
+            &.map_slide_item_ten {
+                top: 34.36719%;
+            }
+
+            &.map_slide_item_nine {
+                top: 72.18141%;
+            }
+
+            &.map_slide_item_twelve {
+                top: 23.80765%;
+                left: 17.14593%;
+            }
+
+            &.map_slide_item_eight {
+                top: 53.00568%;
+                left: 17.14593%;
+            }
+
+            &.map_slide_item_thirteen {
+                top: 3.53101%;
+                left: 33.07859%;
+            }
+
+            &.map_slide_item_six {
+                top: 35.9%;
+                left: 35.96155%;
+            }
+
+            &.map_slide_item_seven {
+                top: 70.56579%;
+                left: 33.07859%;
+            }
+
+            &.map_slide_item_five {
+                top: 60.90074%;
+                left: 48.88148%;
+            }
+
+            &.map_slide_item_one {
+                top: 38.60446%;
+                left: 64.62619%;
+            }
+
+            &.map_slide_item_four {
+                top: 67.23438%;
+                left: 64.62619%;
+            }
+
+            &.map_slide_item_two {
+                top: 25.75532%;
+                left: 80.42909%;
+            }
+
+            &.map_slide_item_three {
+                top: 55.69440%;
+                left: 80.42909%;
+            }
+        }
+    }
+
     .login_area {
         background-color: $white;
         margin: 40px auto;
@@ -9,6 +115,7 @@ main {
         border-radius: 50px;
         @extend %boxShadow;
         border-color: $main_color_40;
+        z-index: 2;
 
         .login_title {
             position: absolute;
@@ -47,7 +154,8 @@ main {
                     justify-content: center;
                 }
 
-                i,svg {
+                i,
+                svg {
                     color: $white;
                 }
             }
@@ -59,6 +167,7 @@ main {
 
                 &.form-control {
                     width: calc(100% - 60px);
+
                     &:focus {
                         box-shadow: 0 0 6px 2px $main_color_25;
                         border-color: $main_color_40;
@@ -73,7 +182,8 @@ main {
 
             .forget_psw {
                 color: $main-color;
-                &:hover{
+
+                &:hover {
                     border-bottom: 1px solid $main-color;
                 }
             }
@@ -142,6 +252,14 @@ main {
     }
 }
 
+@media screen and (min-width: 500px) {
+    main {
+        .login_area {
+            transform: translate(0, -10%);
+        }
+    }
+}
+
 @media screen and (min-width: 576px) {
     main {
         .login_area {
@@ -155,13 +273,49 @@ main {
 @media screen and (min-width: 768px) {
     main {
         .login_area {
+            transform: translate(0, -20%);
             padding: 50px 40px;
         }
     }
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    main {
+        .main_publicity {
+            &.login {
+                position: relative;
+            }
+        }
 
-@media screen and (min-width: 1200px) {}
+        .map_entrance_bg {
+            display: none;
+        }
+
+        .map_slide {
+            position: relative;
+
+            .map_slide_bg {
+                display: block;
+            }
+        }
+
+        .login_area {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 12.5px auto;
+            padding: 50px 40px 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        .login_area {
+            margin: 0 auto;
+        }
+    }
+}
 
 @media screen and (min-width: 1400px) {}
