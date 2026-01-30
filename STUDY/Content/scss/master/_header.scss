@@ -40,6 +40,7 @@ header {
                 top: 31px;
                 transform: translate(0px, -50%);
                 z-index: 5;
+                border: 0px;
 
                 span {
                     position: absolute;
@@ -57,6 +58,7 @@ header {
                     &::after {
                         content: " ";
                         position: absolute;
+                        left: 0;
                         width: 100%;
                         height: 3px;
                         background: $main_color;
@@ -66,7 +68,6 @@ header {
                     &::before {
                         margin: -10px 0 0 0;
                     }
-
 
                     &::after {
                         margin: 10px 0 0 0;
@@ -107,6 +108,10 @@ header {
                         background-color: $white;
                     }
                 }
+
+                &:focus {
+                    box-shadow: none;
+                }
             }
 
             .navbar-collapse {
@@ -122,7 +127,8 @@ header {
                     align-items: center;
                     order: 1;
                     margin: 0 0 40px;
-                    img{
+
+                    img {
                         width: 70px;
                     }
                 }
@@ -212,7 +218,7 @@ header {
                     }
                 }
 
-                &.show{
+                &.show {
                     display: flex;
                 }
             }
@@ -297,10 +303,7 @@ header {
             }
         }
     }
-
 }
-
-
 
 @media screen and (min-width: 576px) {
     header {
@@ -349,19 +352,53 @@ header {
 
 @media screen and (min-width: 992px) {
     header {
+        .navbar {
+            .container-fluid {
+                display: block;
+
+                .navbar-toggler {
+                    display: block;
+                }
+
+                .navbar-collapse {
+                    display: none !important;
+
+                    &.show {
+                        display: flex !important;
+                    }
+
+                    ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
         padding: 15px 20px;
 
         .navbar {
             .container-fluid {
+                display: flex;
+
                 .navbar-brand {
                     padding: 0;
+                    margin: 0 5px 0 0;
 
                     img {
-                        width: 260px;
+                        width: 180px;
                     }
                 }
 
+                .navbar-toggler {
+                    display: none;
+                }
+
                 .navbar-collapse {
+                    display: flex !important;
                     flex-direction: row;
                     align-items: center;
                     justify-content: flex-end;
@@ -371,15 +408,16 @@ header {
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        margin: 0 10px;
+                        margin: 0 5px;
                     }
 
                     ul {
+                        display: flex;
                         margin: 0;
                         order: 2;
 
                         li {
-                            margin: 0 10px;
+                            margin: 0 5px;
                             padding: 0;
 
                             &.nav-item {
@@ -397,7 +435,6 @@ header {
                                             }
                                         }
                                     }
-
 
                                     .dropdown-menu {
                                         position: absolute;
@@ -436,6 +473,11 @@ header {
     header {
         .navbar {
             .container-fluid {
+                .navbar-brand {
+                    img {
+                        width: 220px;
+                    }
+                }
 
                 .navbar-collapse {
                     ul {

@@ -393,6 +393,7 @@ header .navbar .container-fluid .navbar-toggler {
   top: 31px;
   transform: translate(0px, -50%);
   z-index: 5;
+  border: 0px;
 }
 header .navbar .container-fluid .navbar-toggler span {
   position: absolute;
@@ -409,6 +410,7 @@ header .navbar .container-fluid .navbar-toggler span {
 header .navbar .container-fluid .navbar-toggler span::before, header .navbar .container-fluid .navbar-toggler span::after {
   content: " ";
   position: absolute;
+  left: 0;
   width: 100%;
   height: 3px;
   background: #ed710e;
@@ -443,6 +445,9 @@ header .navbar .container-fluid .navbar-toggler .icon-bar + .icon-bar {
 }
 header .navbar .container-fluid .navbar-toggler:hover .icon-bar {
   background-color: #fff;
+}
+header .navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
 }
 header .navbar .container-fluid .navbar-collapse {
   margin: 0;
@@ -600,16 +605,41 @@ header .nav_name .nav_name_menu:hover:after {
   }
 }
 @media screen and (min-width: 992px) {
+  header .navbar .container-fluid {
+    display: block;
+  }
+  header .navbar .container-fluid .navbar-toggler {
+    display: block;
+  }
+  header .navbar .container-fluid .navbar-collapse {
+    display: none !important;
+  }
+  header .navbar .container-fluid .navbar-collapse.show {
+    display: flex !important;
+  }
+  header .navbar .container-fluid .navbar-collapse ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
   header {
     padding: 15px 20px;
   }
+  header .navbar .container-fluid {
+    display: flex;
+  }
   header .navbar .container-fluid .navbar-brand {
     padding: 0;
+    margin: 0 5px 0 0;
   }
   header .navbar .container-fluid .navbar-brand img {
-    width: 260px;
+    width: 180px;
+  }
+  header .navbar .container-fluid .navbar-toggler {
+    display: none;
   }
   header .navbar .container-fluid .navbar-collapse {
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -619,14 +649,15 @@ header .nav_name .nav_name_menu:hover:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 5px;
   }
   header .navbar .container-fluid .navbar-collapse ul {
+    display: flex;
     margin: 0;
     order: 2;
   }
   header .navbar .container-fluid .navbar-collapse ul li {
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 0;
   }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
@@ -657,6 +688,9 @@ header .nav_name .nav_name_menu:hover:after {
   }
 }
 @media screen and (min-width: 1200px) {
+  header .navbar .container-fluid .navbar-brand img {
+    width: 220px;
+  }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
     font-size: 20px;
   }
@@ -3915,4 +3949,4 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
   .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_name p .modal_body_text_span_one {
     min-width: 78px;
   }
-}/*# sourceMappingURL=SPhonicsStudy.css.map */
+}

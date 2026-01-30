@@ -8,23 +8,26 @@ header {
     z-index: 3;
     border-bottom: 2px solid $main_color_orangeLight;
 
-    .header_decorate{
+    .header_decorate {
         position: absolute;
         left: 0;
         top: 100%;
         fill: $header_bg;
     }
+
     .navbar {
         padding: 0;
         width: 100%;
         display: flex;
         justify-content: space-between;
+
         .container-fluid {
             padding: 0;
             margin: 0;
 
             .navbar-brand {
                 padding: 10px 0;
+
                 img {
                     width: 120px;
                 }
@@ -39,49 +42,48 @@ header {
                 z-index: 5;
                 border: 0px;
 
-                span{
+                span {
                     position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 30px;
-                height: 3px;
-                margin: 0px;
-                background: $main_color;
-                transition: 350ms ease all;
-                z-index: 5;
-            
-                &::before,
-                &::after{
-                    content: " ";
-                    position: absolute;
-                    left: 0;
-                    width: 100%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 30px;
                     height: 3px;
+                    margin: 0px;
                     background: $main_color;
                     transition: 350ms ease all;
+                    z-index: 5;
+
+                    &::before,
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        left: 0;
+                        width: 100%;
+                        height: 3px;
+                        background: $main_color;
+                        transition: 350ms ease all;
+                    }
+
+                    &::before {
+                        margin: -10px 0 0 0;
+                    }
+
+                    &::after {
+                        margin: 10px 0 0 0;
+                    }
                 }
-            
-                &::before{
-                    margin: -10px 0 0 0;
-                }
-            
-                
-                &::after{
-                    margin: 10px 0 0 0;
-                }
-                }
-            
+
                 &.open {
-                    span{
+                    span {
                         background-color: rgba(0, 0, 0, 0);
-                
-                        &::before{
+
+                        &::before {
                             transform: rotate(45deg);
                             margin: 0;
                         }
-                
-                        &::after{
+
+                        &::after {
                             transform: rotate(-45deg);
                             margin: 0;
                         }
@@ -107,20 +109,36 @@ header {
                     }
                 }
 
-                &:focus{
+                &:focus {
                     box-shadow: none;
                 }
             }
 
             .navbar-collapse {
-                justify-content: center;
                 margin: 0;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                transition: 0s;
+
+                .avatar_img {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    order: 1;
+                    margin: 0 0 40px;
+
+                    img {
+                        width: 70px;
+                    }
+                }
 
                 ul {
                     margin: 40px 0;
+
                     li {
                         &.nav-item {
-                            
+
                             &.nowPage,
                             &:hover {
                                 color: $main_color;
@@ -129,12 +147,12 @@ header {
                                     color: $main_color;
                                 }
 
-                                p{
+                                p {
                                     &.nav-link {
                                         color: $main_color_black;
                                     }
                                 }
-                                
+
                             }
 
                             .nav-link {
@@ -142,21 +160,21 @@ header {
                                 padding: 15px 10px;
                                 font-size: 16px;
 
-                                &.dropdown-toggle{
-                                    &::after{
+                                &.dropdown-toggle {
+                                    &::after {
                                         display: none;
                                     }
                                 }
                             }
 
-                            &.dropdown{
-                                .nav-link{
-                                    &.show{
+                            &.dropdown {
+                                .nav-link {
+                                    &.show {
                                         color: $main-color;
                                     }
                                 }
-    
-                                .dropdown-menu{
+
+                                .dropdown-menu {
                                     display: none;
                                     opacity: 0;
                                     visibility: hidden;
@@ -165,28 +183,32 @@ header {
                                     padding: 0;
                                     position: relative;
                                     background-color: transparent;
-                                    li{
+
+                                    li {
                                         padding: 0;
                                     }
-                                    &.show{
+
+                                    &.show {
                                         display: block;
                                         opacity: 1;
                                         visibility: visible;
                                         margin-top: 0;
                                     }
-                                    .dropdown-item{
+
+                                    .dropdown-item {
                                         font-size: 16px;
+
                                         &:focus,
-                                        &:hover{
+                                        &:hover {
                                             color: $main-color;
-                                            background-color:transparent;
+                                            background-color: transparent;
                                         }
 
-                                        &.nowPage{
+                                        &.nowPage {
                                             color: $main-color;
                                         }
 
-                                        &.check{
+                                        &.check {
                                             color: $main-color;
                                         }
                                     }
@@ -195,16 +217,21 @@ header {
                         }
                     }
                 }
+
+                &.show {
+                    display: flex;
+                }
             }
 
-            .navbar-close{
-                a{
+            .navbar-close {
+                a {
                     line-height: 1;
-                    svg{
+
+                    svg {
                         font-size: 25px;
                         color: $main_color_black;
 
-                        &:hover{
+                        &:hover {
                             color: $main-color;
                         }
                     }
@@ -216,12 +243,14 @@ header {
     .nav_name {
         position: relative;
         padding: 5px 0px;
+
         .nav_name_link {
             padding: 5px 15px;
             background-color: $main_color;
             border-radius: 50px;
             color: $white;
         }
+
         .nav_name_menu {
             position: absolute;
             top: 100%;
@@ -232,16 +261,19 @@ header {
             border-radius: 10px;
             border: 1px solid $main_color;
             display: none;
-            a{
+
+            a {
                 color: $main_color;
             }
+
             &:before,
-            &:after{
+            &:after {
                 position: absolute;
                 content: "";
                 left: 50%;
                 transform: translate(-50%, 0px);
             }
+
             &:before {
                 border-width: 0px 8px 8px 8px;
                 top: -8px;
@@ -249,6 +281,7 @@ header {
                 border-right: 8px solid transparent;
                 border-bottom: 8px solid $main_color;
             }
+
             &:after {
                 border-width: 0px 7px 7px 7px;
                 top: -7px;
@@ -256,21 +289,21 @@ header {
                 border-right: 7px solid transparent;
                 border-bottom: 7px solid $white;
             }
-            &:hover{
+
+            &:hover {
                 background-color: $main_color;
-                a{
+
+                a {
                     color: $white;
                 }
+
                 &:after {
                     border-bottom: 7px solid $main_color;
                 }
             }
         }
     }
-
 }
-
-
 
 @media screen and (min-width: 576px) {
     header {
@@ -284,19 +317,19 @@ header {
 
                 .navbar-toggler {
                     top: 35px;
-            }
+                }
 
-            .navbar-close{
-                a{
-                    svg{
-                        font-size: 30px;
+                .navbar-close {
+                    a {
+                        svg {
+                            font-size: 30px;
+                        }
                     }
                 }
             }
         }
-    }
 
-}
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -304,57 +337,106 @@ header {
         .navbar {
             .container-fluid {
 
-            .navbar-close{
-                a{
-                    svg{
-                        font-size: 40px;
+                .navbar-close {
+                    a {
+                        svg {
+                            font-size: 40px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        .navbar {
+            .container-fluid {
+                display: block;
+
+                .navbar-toggler {
+                    display: block;
+                }
+
+                .navbar-collapse {
+                    display: none !important;
+
+                    &.show {
+                        display: flex !important;
+                    }
+
+                    ul {
+                        display: block;
                     }
                 }
             }
         }
     }
-
-}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
     header {
         padding: 15px 20px;
 
         .navbar {
             .container-fluid {
+                display: flex;
+
                 .navbar-brand {
                     padding: 0;
+                    margin: 0 5px 0 0;
+
                     img {
-                        width: 260px;
+                        width: 180px;
                     }
                 }
 
+                .navbar-toggler {
+                    display: none;
+                }
+
                 .navbar-collapse {
+                    display: flex !important;
+                    flex-direction: row;
+                    align-items: center;
                     justify-content: flex-end;
                     margin: 0;
+
+                    .avatar_img {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 5px;
+                    }
+
                     ul {
+                        display: flex;
                         margin: 0;
+                        order: 2;
+
                         li {
-                            margin: 0 10px ;
+                            margin: 0 5px;
                             padding: 0;
-                            &.nav-item{
+
+                            &.nav-item {
                                 .nav-link {
                                     font-size: 17px;
                                 }
-                                &.dropdown{
-                                    
-                                    &:hover{
-                                        .nav-link{
-                                        &~.dropdown-menu{
-                                            opacity: 1;
-                                            visibility: visible;
+
+                                &.dropdown {
+
+                                    &:hover {
+                                        .nav-link {
+                                            &~.dropdown-menu {
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
                                         }
                                     }
-                                }
-                                
-        
-                                    .dropdown-menu{
+
+                                    .dropdown-menu {
                                         position: absolute;
                                         display: block;
                                         background-color: $white;
@@ -362,15 +444,18 @@ header {
                                         top: auto;
                                         left: auto;
                                         padding: 10px 5px;
+
                                         li {
-                                            margin: 0 ;
+                                            margin: 0;
                                         }
-                                        .dropdown-item{
+
+                                        .dropdown-item {
                                             font-size: 17px;
+
                                             &:focus,
-                                            &:hover{
+                                            &:hover {
                                                 color: $main-color;
-                                                background-color:transparent;
+                                                background-color: transparent;
                                             }
                                         }
                                     }
@@ -388,25 +473,30 @@ header {
     header {
         .navbar {
             .container-fluid {
+                .navbar-brand {
+                    img {
+                        width: 220px;
+                    }
+                }
 
                 .navbar-collapse {
                     ul {
                         li {
-                            &.nav-item{
+                            &.nav-item {
                                 .nav-link {
                                     font-size: 20px;
                                 }
 
-                                &.dropdown{
-                                
-                                    .dropdown-menu{
-                                        .dropdown-item{
+                                &.dropdown {
+
+                                    .dropdown-menu {
+                                        .dropdown-item {
                                             font-size: 20px;
                                         }
                                     }
                                 }
                             }
-                            
+
                         }
                     }
                 }

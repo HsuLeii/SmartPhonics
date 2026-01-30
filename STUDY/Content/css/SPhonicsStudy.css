@@ -173,11 +173,6 @@ body {
   text-align: center;
 }
 
-::-moz-selection {
-  background: #ed710e;
-  color: #fff;
-}
-
 ::selection {
   background: #ed710e;
   color: #fff;
@@ -309,7 +304,7 @@ input[type=range] {
   /* input range 原點樣式 */
 }
 input[type=range]:focus::-webkit-slider-thumb {
-  background-color: #bd5a0b;
+  background-color: rgb(188.8446215139, 90.0398406375, 11.1553784861);
 }
 input[type=range]::-webkit-slider-thumb {
   width: 15px;
@@ -320,7 +315,6 @@ input[type=range]::-webkit-slider-thumb {
   background-color: #ed710e;
   z-index: 1;
   position: relative;
-  -webkit-transition: 0.5s all ease;
   transition: 0.5s all ease;
   transform: translate(0%, -50%);
   top: 50%;
@@ -399,6 +393,7 @@ header .navbar .container-fluid .navbar-toggler {
   top: 31px;
   transform: translate(0px, -50%);
   z-index: 5;
+  border: 0px;
 }
 header .navbar .container-fluid .navbar-toggler span {
   position: absolute;
@@ -415,6 +410,7 @@ header .navbar .container-fluid .navbar-toggler span {
 header .navbar .container-fluid .navbar-toggler span::before, header .navbar .container-fluid .navbar-toggler span::after {
   content: " ";
   position: absolute;
+  left: 0;
   width: 100%;
   height: 3px;
   background: #ed710e;
@@ -449,6 +445,9 @@ header .navbar .container-fluid .navbar-toggler .icon-bar + .icon-bar {
 }
 header .navbar .container-fluid .navbar-toggler:hover .icon-bar {
   background-color: #fff;
+}
+header .navbar .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
 }
 header .navbar .container-fluid .navbar-collapse {
   margin: 0;
@@ -606,16 +605,41 @@ header .nav_name .nav_name_menu:hover:after {
   }
 }
 @media screen and (min-width: 992px) {
+  header .navbar .container-fluid {
+    display: block;
+  }
+  header .navbar .container-fluid .navbar-toggler {
+    display: block;
+  }
+  header .navbar .container-fluid .navbar-collapse {
+    display: none !important;
+  }
+  header .navbar .container-fluid .navbar-collapse.show {
+    display: flex !important;
+  }
+  header .navbar .container-fluid .navbar-collapse ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
   header {
     padding: 15px 20px;
   }
+  header .navbar .container-fluid {
+    display: flex;
+  }
   header .navbar .container-fluid .navbar-brand {
     padding: 0;
+    margin: 0 5px 0 0;
   }
   header .navbar .container-fluid .navbar-brand img {
-    width: 260px;
+    width: 180px;
+  }
+  header .navbar .container-fluid .navbar-toggler {
+    display: none;
   }
   header .navbar .container-fluid .navbar-collapse {
+    display: flex !important;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -625,14 +649,15 @@ header .nav_name .nav_name_menu:hover:after {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 10px;
+    margin: 0 5px;
   }
   header .navbar .container-fluid .navbar-collapse ul {
+    display: flex;
     margin: 0;
     order: 2;
   }
   header .navbar .container-fluid .navbar-collapse ul li {
-    margin: 0 10px;
+    margin: 0 5px;
     padding: 0;
   }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
@@ -663,6 +688,9 @@ header .nav_name .nav_name_menu:hover:after {
   }
 }
 @media screen and (min-width: 1200px) {
+  header .navbar .container-fluid .navbar-brand img {
+    width: 220px;
+  }
   header .navbar .container-fluid .navbar-collapse ul li.nav-item .nav-link {
     font-size: 20px;
   }
@@ -863,8 +891,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_img img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area {
   width: 100%;
@@ -875,8 +902,7 @@ main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_mai
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_topic_area .drag_area_img img {
   height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 main .study_area.exercises_area.unit2_area .pagination_main_area .pagination_main.pagination_main_drag .pagination_main_drag_item .drag_cloze_answer_area {
   width: 100%;
@@ -1552,7 +1578,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   color: #fff;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon_drag {
   position: absolute;
@@ -1584,7 +1610,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button.active {
-  background-color: #277ac6;
+  background-color: rgb(38.8070175439, 121.9649122807, 198.1929824561);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area .test_topic_item .test_topic_item_right .test_answer_item button p {
   font-size: 30px;
@@ -1615,7 +1641,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   display: block;
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_left .sound_icon_area .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area {
   margin: 0 10px;
@@ -1634,7 +1660,7 @@ main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_top
   transform: scale(1);
 }
 main .study_area.exercises_area.unit2_area .test_area .pagination_main .test_topic_area.test_sound_area .test_topic_item .test_topic_item_right .sound_icon_area .sound_icon.active {
-  background-color: #277ac6;
+  background-color: rgb(38.8070175439, 121.9649122807, 198.1929824561);
 }
 main .study_area.exercises_area.connect_test {
   position: initial;
@@ -1732,7 +1758,7 @@ main .study_area.exercises_area.connect_test .pagination_main_area .pagination_m
   width: 40.6px;
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect tr td.connect_topic .connect_topic_item .sound_icon:hover svg {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.exercises_area.connect_test .pagination_main_area .pagination_main .connect_area .tab-content .tab-pane .connect tr td.connect_topic .connect_topic_item .connect_topic_text {
   border: 1px solid transparent;
@@ -2060,7 +2086,7 @@ main .test_end_page .test_end_btn .close_btn p {
 }
 main .test_end_page .test_end_btn .submit_btn:hover,
 main .test_end_page .test_end_btn .close_btn:hover {
-  background-color: #bd5a0b;
+  background-color: rgb(188.8446215139, 90.0398406375, 11.1553784861);
 }
 main .drag_pointer {
   position: absolute;
@@ -2690,6 +2716,7 @@ main .study_area.select_page_area .select_page_head .ticket_bg .ticket_area .tic
   height: auto;
   opacity: 0;
   z-index: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
   background-color: #634218;
@@ -3041,7 +3068,7 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   color: #fff;
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item .balloon_item .sound_icon:hover {
-  background-color: #d5660d;
+  background-color: rgb(212.922310757, 101.5199203187, 12.577689243);
 }
 main .study_area.select_page_area .select_page_content .select_page_content_item.get .get_star {
   display: block;
@@ -3075,6 +3102,7 @@ main .study_area.select_page_area .select_page_content .select_page_content_item
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 1;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
   background-color: #634218;
@@ -3543,8 +3571,7 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
 }
 .modal .modal-dialog .modal-content .wood_frame .wood_grain img {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .modal .modal-dialog .modal-content::before {
   content: "";
@@ -3922,4 +3949,4 @@ main .map_road .map_route_item .map_item_project.item_project_thirteen .map_rout
   .modal .modal-dialog .modal-content .modal-body .modal_body_text .modal_body_name p .modal_body_text_span_one {
     min-width: 78px;
   }
-}/*# sourceMappingURL=SPhonicsStudy.css.map */
+}
