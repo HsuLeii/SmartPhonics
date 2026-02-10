@@ -33,6 +33,10 @@ main {
                         &.color_red {
                             background-color: $main_color_red;
                         }
+
+                        &.color_yellow {
+                            background-color: $main_color_yellow;
+                        }
                     }
 
                     img {
@@ -42,9 +46,10 @@ main {
                     }
 
                     .feature_content_tittle {
-                        margin: 0 0 5px 0;
+                        margin: 10px 0;
                         color: $main-color;
                         font-weight: bold;
+                        text-align: center;
                     }
 
                     p {

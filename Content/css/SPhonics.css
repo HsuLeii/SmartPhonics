@@ -4816,15 +4816,19 @@ main .main_publicity .main_publicity_content .feature .feature_content .feature_
 main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_red {
   background-color: #db4a49;
 }
+main .main_publicity .main_publicity_content .feature .feature_content .feature_content_step.color_yellow {
+  background-color: #f7b62d;
+}
 main .main_publicity .main_publicity_content .feature .feature_content img {
   display: block;
   margin: 0 auto 20px;
   width: 80%;
 }
 main .main_publicity .main_publicity_content .feature .feature_content .feature_content_tittle {
-  margin: 0 0 5px 0;
+  margin: 10px 0;
   color: #ed710e;
   font-weight: bold;
+  text-align: center;
 }
 main .main_publicity .main_publicity_content .feature .feature_content p {
   text-align: center;
