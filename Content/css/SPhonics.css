@@ -4866,19 +4866,15 @@ main .main_publicity .main_publicity_content .contact_box .login_button .login_b
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: #fff;
-  color: #ed710e;
+  color: #fff;
   border-radius: 50%;
 }
 main .main_publicity .main_publicity_content .contact_box .login_button p {
   color: #fff;
 }
 main .main_publicity .main_publicity_content .contact_box .login_button:hover {
-  background-color: transparent;
-  border: 1.5px solid #ed710e;
-}
-main .main_publicity .main_publicity_content .contact_box .login_button:hover p {
-  color: #ed710e;
+  background-color: #514223;
+  border: 1.5px solid #514223;
 }
 main .main_publicity .main_publicity_content .contact_box .login_button:hover .login_button_icon {
   background-color: transparent;
@@ -4908,11 +4904,6 @@ main .main_publicity .main_publicity_content .contact_box .login_button:hover .l
     width: auto;
     padding: 10px 100px;
     margin: 0 0 0 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  main .main_publicity .main_publicity_content .feature .feature_content {
-    width: 30%;
   }
 }
 main .main_publicity .main_publicity_content .item_question_selection {
