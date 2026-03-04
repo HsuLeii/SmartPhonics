@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .information_area{
         .input_area {
@@ -9,7 +12,7 @@ main {
 
             .input-group-label {
                 padding: 10px 15px;
-                color: $main_color_black;
+                color: base_color.$main_color_black;
                 width: 100%;
             }
         
@@ -17,15 +20,15 @@ main {
                 border-radius: 5px !important;
                 margin-left: 0px !important;
                 padding: 10px 15px;
-                border: 1px solid $main_color_black;
-                color: $main_color_black;
+                border: 1px solid base_color.$main_color_black;
+                color: base_color.$main_color_black;
                 width: 100%;
 
                 &:read-only {
-                    color: $grey;
+                    color: base_color.$grey;
                     background-color: transparent;
                     border: 0px;
-                    border-bottom: 1px solid $grey;
+                    border-bottom: 1px solid base_color.$grey;
                     border-radius: 0px !important;
 
                     &:focus{
@@ -40,7 +43,7 @@ main {
                     display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        color: $main_color_black;
+                        color: base_color.$main_color_black;
                         appearance: none;
                         overflow: hidden;
                         cursor: pointer;
@@ -54,8 +57,8 @@ main {
                         border-radius: 5px !important;
                         margin-left: 0px !important;
                         padding: 10px 40px 10px 15px;
-                        border: 1px solid $main_color_black;
-                        color: $main_color_black;
+                        border: 1px solid base_color.$main_color_black;
+                        color: base_color.$main_color_black;
                         &.open {
                 
                             svg {
@@ -76,8 +79,8 @@ main {
                         margin: 0 0 0 auto;
                         width: 100%;
                         display: none;
-                        // border: 1px solid $main_color_black;
-                        background-color: $white;
+                        // border: 1px solid base_color.$main_color_black;
+                        background-color: base_color.$white;
                         overflow: hidden;
                         cursor: pointer;
                 
@@ -85,12 +88,12 @@ main {
                             text-align: left;
                             padding: 5px;
                             border-radius: 5px;
-                            color: $main_color_black;
+                            color: base_color.$main_color_black;
                 
                             &:hover,
                             &.active {
-                                background-color: $main_color;
-                                color: $white;
+                                background-color: base_color.$main_color;
+                                color: base_color.$white;
                             }
                         }
                 
@@ -98,11 +101,11 @@ main {
                             li {
                                 &.active {
                                     background-color: transparent;
-                                    color: $main_color_black;
+                                    color: base_color.$main_color_black;
                 
                                     &:hover {
-                                        background-color: $main_color;
-                                        color: $white;
+                                        background-color: base_color.$main_color;
+                                        color: base_color.$white;
                                     }
                                 }
                             }
@@ -111,22 +114,22 @@ main {
 
 
                     option {
-                        color: $main_color_black;
+                        color: base_color.$main_color_black;
                         padding: 5px 40px 5px 10px;
                         
                         &:checked {
-                            box-shadow: 0 0 0px 100px $main_color inset !important;
+                            box-shadow: 0 0 0px 100px base_color.$main_color inset !important;
                         }
 
                         &:hover {
-                            background: lighten($main_color, 15%) !important;
+                            background: color.adjust(base_color.$main_color, $lightness: 15%) !important;
 
                             &:checked {
                                 box-shadow: 0 0 0px 100px transparent inset;
                             }
 
                             &:checked {
-                                box-shadow: 0 0 0px 100px lighten($main_color, 15%) inset;
+                                box-shadow: 0 0 0px 100px color.adjust(base_color.$main_color, $lightness: 15%) inset;
                                 color: red;
                             }
                         }
@@ -134,18 +137,18 @@ main {
 
                     &:focus {
                         outline: none;
-                        border-color: $main_color;
+                        border-color: base_color.$main_color;
                         border-radius: 5px;
                     }
                 
                     &:disabled{
-                        border: 1px solid $grey !important;
+                        border: 1px solid base_color.$grey !important;
                         cursor: auto;
-                        color: $grey;
+                        color: base_color.$grey;
                 
                         &~.select_icon{
                             i{
-                            color: $grey;
+                            color: base_color.$grey;
                         }
                     }
                     }
@@ -177,14 +180,14 @@ main {
                             &::-webkit-scrollbar-thumb {
                                 border: none;
                                 box-shadow: none;
-                                background: $main_color;
+                                background: base_color.$main_color;
                                 min-height: 8px;
                                 border-radius: 5px;
                             }
                 
                 
                             option {
-                                color: $main_color_black;
+                                color: base_color.$main_color_black;
                                 padding: 5px 10px;
                 
                                 &:disabled {
@@ -223,7 +226,7 @@ main {
                         }
 
                         p{
-                            color: $main_color_black;
+                            color: base_color.$main_color_black;
                         }
 
                         &:hover{
@@ -235,13 +238,13 @@ main {
 
                         &.active{
                             img{
-                                border: 1px solid $main_color;
+                                border: 1px solid base_color.$main_color;
                                 border-radius: 50%;
                                 transform: scale(1);
                             }
 
                             p{
-                                color: $main_color;
+                                color: base_color.$main_color;
                             }
                         }
                     }
@@ -258,7 +261,7 @@ main {
                 pointer-events: none;
                 user-select: none;
                 transition: 0.3s;
-                color: $main_color_black;
+                color: base_color.$main_color_black;
             }
     
             &.input-group-submit{
@@ -269,12 +272,12 @@ main {
                 .input-group-submit-btn{
                     padding: 8px 30px;
                     border-radius: 50px;
-                    border: 1px solid $main_color;
-                    color: $main_color;
+                    border: 1px solid base_color.$main_color;
+                    color: base_color.$main_color;
     
                     &:hover{
-                        background-color: $main_color;
-                        color: $white;
+                        background-color: base_color.$main_color;
+                        color: base_color.$white;
                     }
                 }
             }
@@ -286,32 +289,32 @@ main {
 //     appearance: none;
 
 //     option {
-//         color: $main_color_black;
+//         color: base_color.$main_color_black;
 //         padding: 5px 10px;
 
 //         &:hover {
-//             background: lighten($main_color, 15%) !important;
+//             background: color.adjust(base_color.$main_color, $lightness: 15%) !important;
 //         }
 
 //         &:checked {
-//             box-shadow: 0 0 0px 100px $main_color inset;
+//             box-shadow: 0 0 0px 100px base_color.$main_color inset;
 //         }
 //     }
 
 //     &:focus {
 //         outline: none;
-//         border-color: $main_color;
+//         border-color: base_color.$main_color;
 //         border-radius: 5px;
 //     }
 
 //     &:disabled{
-//         border: 1px solid $grey !important;
+//         border: 1px solid base_color.$grey !important;
 //         cursor: auto;
-//         color: $grey;
+//         color: base_color.$grey;
 
 //         &~.select_icon{
 //             i{
-//             color: $grey;
+//             color: base_color.$grey;
 //         }
 //     }
 //     }
@@ -343,14 +346,14 @@ main {
 //             &::-webkit-scrollbar-thumb {
 //                 border: none;
 //                 box-shadow: none;
-//                 background: $main_color;
+//                 background: base_color.$main_color;
 //                 min-height: 8px;
 //                 border-radius: 5px;
 //             }
 
 
 //             option {
-//                 color: $main_color_black;
+//                 color: base_color.$main_color_black;
 //                 padding: 5px 10px;
 
 //                 &:disabled {
@@ -374,7 +377,7 @@ main {
 //     pointer-events: none;
 //     user-select: none;
 //     transition: 0.3s;
-//     color: $main_color_black;
+//     color: base_color.$main_color_black;
 // }
 
 @media screen and (min-width: 576px) {

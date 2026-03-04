@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .test_area {
 
@@ -21,7 +24,7 @@ main {
                                 margin: 10px 0px;
                                 width: 100%;
                                 padding: 0px 5px 10px;
-                                border-bottom: 1px dotted $white;
+                                border-bottom: 1px dotted base_color.$white;
                                 &:nth-last-child(1){
                                     border-bottom: 0px;
                                 }
@@ -52,18 +55,18 @@ main {
                         }
                         .btn-close{
                             display: none;
-                            color: $brown;
+                            color: base_color.$brown;
                         }
                     }
 
                     .modal-footer{
                         padding: 20px 25px;
                         .btn-primary{
-                            background-color: $main_color;
+                            background-color: base_color.$main_color;
                             border: 0px;
 
                             &:hover{
-                                background-color: darken($main_color, 5%);
+                                background-color: color.adjust(base_color.$main_color, $lightness: -5%);
                             }
 
                             &:focus{
@@ -119,7 +122,7 @@ main {
                                     margin: 20px 0px 10px;
                                     padding: 10px;
                                     flex-direction: column;
-                                    border-right: 1px dotted $white;
+                                    border-right: 1px dotted base_color.$white;
                                     border-bottom: 0px;
 
                                     &:nth-last-child(1){

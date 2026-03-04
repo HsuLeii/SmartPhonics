@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
 
     .pick_level_area {
@@ -15,25 +18,25 @@ main {
                 &.level_land{
                     .level_img {
                         background: linear-gradient(135deg,
-                                $white 0% 5%, $main_color_green 5% 10%,
-                                $white 10% 15%, $main_color_green 15% 20%,
-                                $white 20% 25%, $main_color_green 25% 30%,
-                                $white 30% 35%, $main_color_green 35% 40%,
-                                $white 40% 45%, $main_color_green 45% 50%,
-                                $white 50% 55%, $main_color_green 55% 60%,
-                                $white 60% 65%, $main_color_green 65% 70%,
-                                $white 70% 75%, $main_color_green 75% 80%,
-                                $white 80% 85%, $main_color_green 85% 90%,
-                                $white 90% 95%, $main_color_green 95% 100%);
+                                base_color.$white 0% 5%, base_color.$main_color_green 5% 10%,
+                                base_color.$white 10% 15%, base_color.$main_color_green 15% 20%,
+                                base_color.$white 20% 25%, base_color.$main_color_green 25% 30%,
+                                base_color.$white 30% 35%, base_color.$main_color_green 35% 40%,
+                                base_color.$white 40% 45%, base_color.$main_color_green 45% 50%,
+                                base_color.$white 50% 55%, base_color.$main_color_green 55% 60%,
+                                base_color.$white 60% 65%, base_color.$main_color_green 65% 70%,
+                                base_color.$white 70% 75%, base_color.$main_color_green 75% 80%,
+                                base_color.$white 80% 85%, base_color.$main_color_green 85% 90%,
+                                base_color.$white 90% 95%, base_color.$main_color_green 95% 100%);
                     }
                     .level_name{
-                        color: $main_color_green_70;
+                        color: base_color.$main_color_green_70;
                     }
                     .button_level {
-                        background-color: lighten($main_color_green, 5%);
+                        background-color: color.adjust(base_color.$main_color_green, $lightness: 5%);
 
                         &.button_try{
-                            background-color: darken($main_color_green, 10%);
+                            background-color: color.adjust(base_color.$main_color_green , $lightness: -10%);
                         }
                     }
                 }
@@ -41,25 +44,25 @@ main {
                 &.level_ocean {
                     .level_img {
                         background: linear-gradient(135deg,
-                                $white 0% 5%, $main_color_blue 5% 10%,
-                                $white 10% 15%, $main_color_blue 15% 20%,
-                                $white 20% 25%, $main_color_blue 25% 30%,
-                                $white 30% 35%, $main_color_blue 35% 40%,
-                                $white 40% 45%, $main_color_blue 45% 50%,
-                                $white 50% 55%, $main_color_blue 55% 60%,
-                                $white 60% 65%, $main_color_blue 65% 70%,
-                                $white 70% 75%, $main_color_blue 75% 80%,
-                                $white 80% 85%, $main_color_blue 85% 90%,
-                                $white 90% 95%, $main_color_blue 95% 100%);
+                                base_color.$white 0% 5%, base_color.$main_color_blue 5% 10%,
+                                base_color.$white 10% 15%, base_color.$main_color_blue 15% 20%,
+                                base_color.$white 20% 25%, base_color.$main_color_blue 25% 30%,
+                                base_color.$white 30% 35%, base_color.$main_color_blue 35% 40%,
+                                base_color.$white 40% 45%, base_color.$main_color_blue 45% 50%,
+                                base_color.$white 50% 55%, base_color.$main_color_blue 55% 60%,
+                                base_color.$white 60% 65%, base_color.$main_color_blue 65% 70%,
+                                base_color.$white 70% 75%, base_color.$main_color_blue 75% 80%,
+                                base_color.$white 80% 85%, base_color.$main_color_blue 85% 90%,
+                                base_color.$white 90% 95%, base_color.$main_color_blue 95% 100%);
                     }
                     .level_name{
-                        color: $main_color_blue_70;
+                        color: base_color.$main_color_blue_70;
                     }
                     .button_level {
-                        background-color: lighten($main_color_blue, 5%);
+                        background-color: color.adjust(base_color.$main_color_blue, $lightness: 5%);
 
                         &.button_try{
-                            background-color: darken($main_color_blue, 10%);
+                            background-color: color.adjust(base_color.$main_color_blue ,$lightness: -10%);
                         }
                     }
                 }
@@ -67,25 +70,25 @@ main {
                 &.level_sky {
                     .level_img {
                         background: linear-gradient(135deg,
-                                $white 0% 5%, $main_color_red 5% 10%,
-                                $white 10% 15%, $main_color_red 15% 20%,
-                                $white 20% 25%, $main_color_red 25% 30%,
-                                $white 30% 35%, $main_color_red 35% 40%,
-                                $white 40% 45%, $main_color_red 45% 50%,
-                                $white 50% 55%, $main_color_red 55% 60%,
-                                $white 60% 65%, $main_color_red 65% 70%,
-                                $white 70% 75%, $main_color_red 75% 80%,
-                                $white 80% 85%, $main_color_red 85% 90%,
-                                $white 90% 95%, $main_color_red 95% 100%);
+                                base_color.$white 0% 5%, base_color.$main_color_red 5% 10%,
+                                base_color.$white 10% 15%, base_color.$main_color_red 15% 20%,
+                                base_color.$white 20% 25%, base_color.$main_color_red 25% 30%,
+                                base_color.$white 30% 35%, base_color.$main_color_red 35% 40%,
+                                base_color.$white 40% 45%, base_color.$main_color_red 45% 50%,
+                                base_color.$white 50% 55%, base_color.$main_color_red 55% 60%,
+                                base_color.$white 60% 65%, base_color.$main_color_red 65% 70%,
+                                base_color.$white 70% 75%, base_color.$main_color_red 75% 80%,
+                                base_color.$white 80% 85%, base_color.$main_color_red 85% 90%,
+                                base_color.$white 90% 95%, base_color.$main_color_red 95% 100%);
                     }
                     .level_name{
-                        color: $main_color_red_70;
+                        color: base_color.$main_color_red_70;
                     }
                     .button_level {
-                        background-color: lighten($main_color_red, 5%);
+                        background-color: color.adjust(base_color.$main_color_red,  $lightness: 5%);
 
                         &.button_try{
-                            background-color: darken($main_color_red, 10%);
+                            background-color: color.adjust(base_color.$main_color_red, $lightness: -10%);
                         }
                     }
                 }
@@ -93,7 +96,7 @@ main {
                 .level_name{
                     width: calc(100% - 10px);
                     padding: 5px 20px;
-                    color: $main_color_black;
+                    color: base_color.$main_color_black;
                     margin: 5px;
                 }
 
@@ -108,37 +111,37 @@ main {
 
                 .button_level {
                     padding: 5px 10px;
-                    background-color: $main_color;
+                    background-color: base_color.$main_color;
                     margin: 15px auto 0px;
-                    color: $white;
+                    color: base_color.$white;
                     border-radius: 50px;
                     transform: scale(0.8);
 
                     a {
                         display: block;
                         width: 100%;
-                        color: $white;
+                        color: base_color.$white;
                         padding: 0px 30px;
                     }
 
                     &.button_finish{
-                        background-color: $main_color !important;
+                        background-color: base_color.$main_color !important;
                     }
 
                     &.button_score{
-                        background-color: $main_color_yellow !important;
+                        background-color: base_color.$main_color_yellow !important;
 
                         a{
-                            color: $main_color_black;
+                            color: base_color.$main_color_black;
                         }
                     }
 
                     &.disabled{
-                        background-color: $grey !important;
+                        background-color: base_color.$grey !important;
                         transform: scale(0.95);
 
                         a{
-                            color: $white;
+                            color: base_color.$white;
                         }
 
                         &.button-animate {
@@ -150,16 +153,16 @@ main {
                 &.disabled{
                     .level_img {
                         background: linear-gradient(135deg,
-                        $white 0% 5%, $grey 5% 10%,
-                        $white 10% 15%, $grey 15% 20%,
-                        $white 20% 25%, $grey 25% 30%,
-                        $white 30% 35%, $grey 35% 40%,
-                        $white 40% 45%, $grey 45% 50%,
-                        $white 50% 55%, $grey 55% 60%,
-                        $white 60% 65%, $grey 65% 70%,
-                        $white 70% 75%, $grey 75% 80%,
-                        $white 80% 85%, $grey 85% 90%,
-                        $white 90% 95%, $grey 95% 100%);
+                        base_color.$white 0% 5%, base_color.$grey 5% 10%,
+                        base_color.$white 10% 15%, base_color.$grey 15% 20%,
+                        base_color.$white 20% 25%, base_color.$grey 25% 30%,
+                        base_color.$white 30% 35%, base_color.$grey 35% 40%,
+                        base_color.$white 40% 45%, base_color.$grey 45% 50%,
+                        base_color.$white 50% 55%, base_color.$grey 55% 60%,
+                        base_color.$white 60% 65%, base_color.$grey 65% 70%,
+                        base_color.$white 70% 75%, base_color.$grey 75% 80%,
+                        base_color.$white 80% 85%, base_color.$grey 85% 90%,
+                        base_color.$white 90% 95%, base_color.$grey 95% 100%);
 
                         img{
                             filter: grayscale(100%);
@@ -167,15 +170,15 @@ main {
                     }
 
                     .level_name{
-                        color: $grey;
+                        color: base_color.$grey;
                     }
 
                     .button_level{
-                        background-color: $grey !important;
+                        background-color: base_color.$grey !important;
                         transform: scale(0.95);
 
                         a{
-                            color: $white;
+                            color: base_color.$white;
                         }
 
                         &.button-animate {
@@ -216,14 +219,14 @@ main {
 
                     .button_level {
                         padding: 5px 10px;
-                        background-color: $main_color;
+                        background-color: base_color.$main_color;
                         margin: 20px auto;
-                        color: $white;
+                        color: base_color.$white;
                         border-radius: 50px;
                         transform: scale(0.8);
 
                         a {
-                            color: $white;
+                            color: base_color.$white;
                             padding: 5px 30px;
                         }
                     }
@@ -231,20 +234,20 @@ main {
                     &.level_land {
                         .level_img {
                             background: linear-gradient(135deg,
-                                    $white 0% 5%, $main_color_green 5% 10%,
-                                    $white 10% 15%, $main_color_green 15% 20%,
-                                    $white 20% 25%, $main_color_green 25% 30%,
-                                    $white 30% 35%, $main_color_green 35% 40%,
-                                    $white 40% 45%, $main_color_green 45% 50%,
-                                    $white 50% 55%, $main_color_green 55% 60%,
-                                    $white 60% 65%, $main_color_green 65% 70%,
-                                    $white 70% 75%, $main_color_green 75% 80%,
-                                    $white 80% 85%, $main_color_green 85% 90%,
-                                    $white 90% 95%, $main_color_green 95% 100%);
+                                    base_color.$white 0% 5%, base_color.$main_color_green 5% 10%,
+                                    base_color.$white 10% 15%, base_color.$main_color_green 15% 20%,
+                                    base_color.$white 20% 25%, base_color.$main_color_green 25% 30%,
+                                    base_color.$white 30% 35%, base_color.$main_color_green 35% 40%,
+                                    base_color.$white 40% 45%, base_color.$main_color_green 45% 50%,
+                                    base_color.$white 50% 55%, base_color.$main_color_green 55% 60%,
+                                    base_color.$white 60% 65%, base_color.$main_color_green 65% 70%,
+                                    base_color.$white 70% 75%, base_color.$main_color_green 75% 80%,
+                                    base_color.$white 80% 85%, base_color.$main_color_green 85% 90%,
+                                    base_color.$white 90% 95%, base_color.$main_color_green 95% 100%);
                         }
 
                         .button_level {
-                            background-color: $main_color_green;
+                            background-color: base_color.$main_color_green;
                         }
 
                     }
@@ -252,20 +255,20 @@ main {
                     &.level_ocean {
                         .level_img {
                             background: linear-gradient(135deg,
-                                    $white 0% 5%, $main_color_blue 5% 10%,
-                                    $white 10% 15%, $main_color_blue 15% 20%,
-                                    $white 20% 25%, $main_color_blue 25% 30%,
-                                    $white 30% 35%, $main_color_blue 35% 40%,
-                                    $white 40% 45%, $main_color_blue 45% 50%,
-                                    $white 50% 55%, $main_color_blue 55% 60%,
-                                    $white 60% 65%, $main_color_blue 65% 70%,
-                                    $white 70% 75%, $main_color_blue 75% 80%,
-                                    $white 80% 85%, $main_color_blue 85% 90%,
-                                    $white 90% 95%, $main_color_blue 95% 100%);
+                                    base_color.$white 0% 5%, base_color.$main_color_blue 5% 10%,
+                                    base_color.$white 10% 15%, base_color.$main_color_blue 15% 20%,
+                                    base_color.$white 20% 25%, base_color.$main_color_blue 25% 30%,
+                                    base_color.$white 30% 35%, base_color.$main_color_blue 35% 40%,
+                                    base_color.$white 40% 45%, base_color.$main_color_blue 45% 50%,
+                                    base_color.$white 50% 55%, base_color.$main_color_blue 55% 60%,
+                                    base_color.$white 60% 65%, base_color.$main_color_blue 65% 70%,
+                                    base_color.$white 70% 75%, base_color.$main_color_blue 75% 80%,
+                                    base_color.$white 80% 85%, base_color.$main_color_blue 85% 90%,
+                                    base_color.$white 90% 95%, base_color.$main_color_blue 95% 100%);
                         }
 
                         .button_level {
-                            background-color: $main_color_blue;
+                            background-color: base_color.$main_color_blue;
                         }
 
                     }
@@ -273,20 +276,20 @@ main {
                     &.level_sky {
                         .level_img {
                             background: linear-gradient(135deg,
-                                    $white 0% 5%, $main_color_red 5% 10%,
-                                    $white 10% 15%, $main_color_red 15% 20%,
-                                    $white 20% 25%, $main_color_red 25% 30%,
-                                    $white 30% 35%, $main_color_red 35% 40%,
-                                    $white 40% 45%, $main_color_red 45% 50%,
-                                    $white 50% 55%, $main_color_red 55% 60%,
-                                    $white 60% 65%, $main_color_red 65% 70%,
-                                    $white 70% 75%, $main_color_red 75% 80%,
-                                    $white 80% 85%, $main_color_red 85% 90%,
-                                    $white 90% 95%, $main_color_red 95% 100%);
+                                    base_color.$white 0% 5%, base_color.$main_color_red 5% 10%,
+                                    base_color.$white 10% 15%, base_color.$main_color_red 15% 20%,
+                                    base_color.$white 20% 25%, base_color.$main_color_red 25% 30%,
+                                    base_color.$white 30% 35%, base_color.$main_color_red 35% 40%,
+                                    base_color.$white 40% 45%, base_color.$main_color_red 45% 50%,
+                                    base_color.$white 50% 55%, base_color.$main_color_red 55% 60%,
+                                    base_color.$white 60% 65%, base_color.$main_color_red 65% 70%,
+                                    base_color.$white 70% 75%, base_color.$main_color_red 75% 80%,
+                                    base_color.$white 80% 85%, base_color.$main_color_red 85% 90%,
+                                    base_color.$white 90% 95%, base_color.$main_color_red 95% 100%);
                         }
 
                         .button_level {
-                            background-color: $main_color_red;
+                            background-color: base_color.$main_color_red;
                         }
 
                     }
@@ -301,11 +304,11 @@ main {
             transform: translate3d(50%, 100%, 0);
 
             .swiper-pagination-bullet {
-                background: $main_color;
+                background: base_color.$main_color;
             }
 
             .swiper-pagination-bullet-active {
-                background-color: $main_color;
+                background-color: base_color.$main_color;
             }
         }
     }

@@ -1,3 +1,6 @@
+@use "sass:color"; // 
+@use "color"as base_color;
+
  /* input range 主體樣式 */
  input[type="range"] {
      -webkit-appearance: none;
@@ -9,7 +12,7 @@
      /* input range 原點focus */
      &:focus {
          &::-webkit-slider-thumb {
-             background-color: darken($main_color, 10%);
+             background-color: color.adjust(base_color.$main_color, $lightness: -10%);
          }
      }
 
@@ -20,7 +23,7 @@
          border-radius: 100%;
          border: none;
          -webkit-appearance: none;
-         background-color: $main_color;
+         background-color: base_color.$main_color;
          z-index: 1;
          position: relative;
          transition: 0.5s all ease;
@@ -33,12 +36,12 @@
 
          /* input range 線條樣式 */
          &::-webkit-slider-runnable-track {
-             background-color: $grey;
+             background-color: base_color.$grey;
          }
 
          /* input range 原點樣式 */
          &::-webkit-slider-thumb {
-             background-color: $grey;
+             background-color: base_color.$grey;
          }
      }
  }
@@ -57,7 +60,7 @@
          content: "";
          width: var(--soundRange);
          height: 100%;
-         background-color: $white;
+         background-color: base_color.$white;
          border-radius: 10px;
          right: 0;
          height: 5px;
@@ -65,7 +68,7 @@
 
      /* input range 線條樣式 */
      &::-webkit-slider-runnable-track {
-         background-color: $main_color;
+         background-color: base_color.$main_color;
          height: 5px;
          border-radius: 10px;
      }

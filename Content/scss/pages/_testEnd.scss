@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .test_end_area {
         margin: 20px auto;
@@ -58,13 +61,13 @@ main {
 
             h3 {
                 margin: 0px 5px;
-                color: $main-color;
+                color: base_color.$main-color;
             }
 
             .sound_icon {
-                background-color: $main-color;
+                background-color: base_color.$main-color;
                 border-radius: 50%;
-                color: $white;
+                color: base_color.$white;
                 padding: 2px 4px;
                 margin: 0px 5px;
 
@@ -109,12 +112,12 @@ main {
 
                 .star_item {
                     i {
-                        color: $main_color_black;
+                        color: base_color.$main_color_black;
                     }
 
                     &.get_star {
                         i {
-                            color: $main_color_yellow;
+                            color: base_color.$main_color_yellow;
                         }
                     }
                 }
@@ -188,12 +191,12 @@ main {
 
             .score_btn {
                 padding: 10px 0px;
-                background-color: $white;
-                border: 1px solid $main-color;
+                background-color: base_color.$white;
+                border: 1px solid base_color.$main-color;
 
                 &:hover {
-                    background-color: $main-color;
-                    border: 1px solid $white;
+                    background-color: base_color.$main-color;
+                    border: 1px solid base_color.$white;
                 }
             }
 
@@ -208,7 +211,7 @@ main {
             width: 80%;
             margin: 20px auto 70px;
             padding: 20px 0;
-            background-color: $test_end_bg;
+            background-color: base_color.$test_end_bg;
             border-radius: 10px;
             // 20240715增加
 
@@ -220,23 +223,23 @@ main {
                 justify-content: center;
 
                 .sky_answer_btn {
-                    border: 1px solid $main-color;
+                    border: 1px solid base_color.$main-color;
                     border-radius: 10px;
-                    background-color: $white;
+                    background-color: base_color.$white;
                     margin: 0px 10px;
                     padding: 5px 10px;
 
                     p {
-                        color: $main-color;
+                        color: base_color.$main-color;
                         font-weight: normal;
                     }
 
                     &:hover,
                     &.active {
-                        background-color: $main-color;
+                        background-color: base_color.$main-color;
 
                         p {
-                            color: $white;
+                            color: base_color.$white;
                         }
                     }
                 }
@@ -269,7 +272,7 @@ main {
                         width: calc(95% - 0px);
                         max-width: 800px;
                         padding: 5px;
-                        background-color: $test_end_bg;
+                        background-color: base_color.$test_end_bg;
                         position: relative;
                         z-index: 1;
                         border-radius: 10px;
@@ -282,7 +285,7 @@ main {
                             top: -8px;
                             border-left: 8px solid transparent;
                             border-right: 8px solid transparent;
-                            border-bottom: 8px solid $main_color;
+                            border-bottom: 8px solid base_color.$main_color;
                         }
 
                         &::after{
@@ -292,8 +295,8 @@ main {
                             width: calc(100% + 5px);
                             height: 100%;
                             border-radius: 10px;
-                            background-color: $white;
-                            border: 1.5px solid $main_color;
+                            background-color: base_color.$white;
+                            border: 1.5px solid base_color.$main_color;
                         }
     
                         .scoring_text{
@@ -335,62 +338,62 @@ main {
     
                                 &.level_one {
                                     .rainbow_block {
-                                        background-color: $rainbow_item_one;
+                                        background-color: base_color.$rainbow_item_one;
                                     }
                                 }
     
                                 &.level_two {
                                     .rainbow_block {
-                                        background-color: $rainbow_item_two;
+                                        background-color: base_color.$rainbow_item_two;
                                     }
                                 }
     
                                 &.level_three {
                                     .rainbow_block {
-                                        background-color: $rainbow_item_three;
+                                        background-color: base_color.$rainbow_item_three;
                                     }
                                 }
     
                                 &.level_four {
                                     .rainbow_block {
-                                        background-color: $rainbow_item_four;
+                                        background-color: base_color.$rainbow_item_four;
                                     }
                                 }
     
                                 &.level_five {
                                     .rainbow_block {
-                                        background-color: $rainbow_item_five;
+                                        background-color: base_color.$rainbow_item_five;
                                     }
                                 }
     
                                 &.thisLevel {
                                     &.level_one {
                                         .rainbow_icon {
-                                            color: $rainbow_item_one;
+                                            color: base_color.$rainbow_item_one;
                                         }
                                     }
     
                                     &.level_two {
                                         .rainbow_icon {
-                                            color: $rainbow_item_two;
+                                            color: base_color.$rainbow_item_two;
                                         }
                                     }
     
                                     &.level_three {
                                         .rainbow_icon {
-                                            color: $rainbow_item_three;
+                                            color: base_color.$rainbow_item_three;
                                         }
                                     }
     
                                     &.level_four {
                                         .rainbow_icon {
-                                            color: $rainbow_item_four;
+                                            color: base_color.$rainbow_item_four;
                                         }
                                     }
     
                                     &.level_five {
                                         .rainbow_icon {
-                                            color: $rainbow_item_five;
+                                            color: base_color.$rainbow_item_five;
                                         }
                                     }
                                 }
@@ -408,7 +411,7 @@ main {
                             align-items: center;
                             border-radius: 0;
                             margin: 10px 0;
-                            background-color: $sentenceBg;
+                            background-color: base_color.$sentenceBg;
                             border-radius: 10px;
                             position: relative;
 
@@ -418,7 +421,7 @@ main {
 
                                 span {
                                     font-size: 17px;
-                                    color: $wrong_text;
+                                    color: base_color.$wrong_text;
                                 }
                             }
 
@@ -443,13 +446,13 @@ main {
                                         margin: 5px;
 
                                         &.YourVoice {
-                                            background-color: $correct_text;
-                                            color: $white;
+                                            background-color: base_color.$correct_text;
+                                            color: base_color.$white;
                                         }
 
                                         &.teacherVoice {
-                                            background-color: $teacherVoice;
-                                            color: $white;
+                                            background-color: base_color.$teacherVoice;
+                                            color: base_color.$white;
                                         }
                                     }
                                 }
@@ -468,13 +471,13 @@ main {
                                         margin: 0 10px 0 0;
 
                                         &.YourVoice {
-                                            background-color: $correct_text;
-                                            color: $white;
+                                            background-color: base_color.$correct_text;
+                                            color: base_color.$white;
                                         }
 
                                         &.teacherVoice {
-                                            background-color: $teacherVoice;
-                                            color: $white;
+                                            background-color: base_color.$teacherVoice;
+                                            color: base_color.$white;
                                         }
 
                                     }
@@ -484,7 +487,7 @@ main {
                                     margin: 10px 50px 10px 0;
 
                                     p {
-                                        color: $wrong_text;
+                                        color: base_color.$wrong_text;
                                     }
                                 }
                             }
@@ -494,11 +497,11 @@ main {
 
                                 .answer_display_text {
                                     // span {
-                                    //     color: $main_color_red;
+                                    //     color: base_color.$main_color_red;
                                     // }
 
                                     &~.answer_display_icon {
-                                        background-color: $main_color_red;
+                                        background-color: base_color.$main_color_red;
                                     }
                                 }
 
@@ -545,28 +548,28 @@ main {
                     border-radius: 10px;
 
                     &.correct_answer {
-                        background-color: $correct_answer;
-                        border: 1.5px solid $correct_text;
+                        background-color: base_color.$correct_answer;
+                        border: 1.5px solid base_color.$correct_text;
 
                         .answer_display_text {
-                            color: $correct_text;
+                            color: base_color.$correct_text;
                         }
 
                         .answer_display_icon {
-                            color: $correct_text;
+                            color: base_color.$correct_text;
                         }
                     }
 
                     &.wrong_answer {
-                        background-color: $wrong_answer;
-                        border: 1.5px solid $wrong_text;
+                        background-color: base_color.$wrong_answer;
+                        border: 1.5px solid base_color.$wrong_text;
 
                         .answer_display_text {
-                            color: $wrong_text;
+                            color: base_color.$wrong_text;
                         }
 
                         .answer_display_icon {
-                            color: $wrong_text;
+                            color: base_color.$wrong_text;
                         }
                     }
 
@@ -598,15 +601,15 @@ main {
                     margin: 10px calc((100% - 215px * 1) / 2);
 
                     &.correct_answer {
-                        background-color: $correct_bg;
-                        // border: 1px solid $correct_text;
+                        background-color: base_color.$correct_bg;
+                        // border: 1px solid base_color.$correct_text;
 
                         .answer_display_text {
-                            color: $correct_text;
+                            color: base_color.$correct_text;
                         }
 
                         .answer_display_icon {
-                            color: $correct_text;
+                            color: base_color.$correct_text;
                             position: absolute;
                             bottom: 15px;
                             right: 15px;
@@ -614,7 +617,7 @@ main {
                     }
 
                     &.wrong_answer {
-                        // border: 1px solid $wrong_text;
+                        // border: 1px solid base_color.$wrong_text;
 
                         .answer_display_item_btn {
                             justify-content: space-between;
@@ -622,8 +625,8 @@ main {
 
                             .answer_display_link {
                                 font-size: 15px;
-                                background-color: $answer_display_link;
-                                color: $white;
+                                background-color: base_color.$answer_display_link;
+                                color: base_color.$white;
                                 display: flex;
                                 align-items: center;
                                 line-height: 1;
@@ -636,22 +639,22 @@ main {
                                 }
 
                                 &:hover {
-                                    background-color: darken($answer_display_link, 10%);
+                                    background-color: color.adjust(base_color.$answer_display_link,$lightness: -10%);
                                 }
                             }
 
                             .answer_display_icon {
                                 svg {
-                                    color: $white;
+                                    color: base_color.$white;
                                 }
                             }
                         }
 
                         .answer_display_icon {
-                            background-color: $answer_sound_bg;
+                            background-color: base_color.$answer_sound_bg;
 
                             &:hover {
-                                background-color: darken($answer_sound_bg, 10%);
+                                background-color: color.adjust(base_color.$answer_sound_bg,$lightness: -10%);
                             }
                         }
                     }
@@ -675,7 +678,7 @@ main {
                             bottom: auto;
                             width: 40px;
                             margin: 10px 0 0 0;
-                            color: $white;
+                            color: base_color.$white;
 
                             svg {
                                 display: flex;
@@ -712,7 +715,7 @@ main {
                         margin: 0px 5px 0px 0px;
 
                         i {
-                            color: $main_color_yellow;
+                            color: base_color.$main_color_yellow;
                             font-size: 30px;
                         }
                     }
@@ -730,17 +733,17 @@ main {
                             padding: 5px 0.4rem;
                             border-radius: 10px;
                             margin: 0px 2px;
-                            color: $grey;
+                            color: base_color.$grey;
 
                             // 20240715增加
-                            color: $main_color_black;
+                            color: base_color.$main_color_black;
                 // 20240715增加
 
                             &:hover,
                             &:active,
                             &.active {
-                                background-color: $main-color;
-                                color: $white;
+                                background-color: base_color.$main-color;
+                                color: base_color.$white;
                             }
                         }
                     }
@@ -765,7 +768,7 @@ main {
                 justify-content: center;
                 flex-wrap: wrap;
                 padding: 15px 10%;
-                background-color: $body_bg;
+                background-color: base_color.$body_bg;
                 border-radius: 10px 10px 0 0;
 
                 .icon_item {
@@ -775,20 +778,20 @@ main {
                     margin: 5px;
 
                     &.icon_correct {
-                        background-color: $correct_bg;
-                        color: $correct_text;
-                        // border: 1px solid $correct_text;
+                        background-color: base_color.$correct_bg;
+                        color: base_color.$correct_text;
+                        // border: 1px solid base_color.$correct_text;
                     }
 
                     &.icon_wrong {
-                        background-color: $wrong_answer;
-                        color: $wrong_text;
-                        // border: 1px solid $wrong_text;
+                        background-color: base_color.$wrong_answer;
+                        color: base_color.$wrong_text;
+                        // border: 1px solid base_color.$wrong_text;
                     }
 
                     &.icon_sound {
-                        background-color: $answer_sound_bg;
-                        color: $white;
+                        background-color: base_color.$answer_sound_bg;
+                        color: base_color.$white;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -810,11 +813,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_one;
+                                border-bottom: 8px solid base_color.$test_end_one;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_one;
+                                border: 1.5px solid base_color.$test_end_one;
                             }
                         }
                     }
@@ -827,11 +830,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_two;
+                                border-bottom: 8px solid base_color.$test_end_two;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_two;
+                                border: 1.5px solid base_color.$test_end_two;
                             }
                         }
                     }
@@ -844,11 +847,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_three;
+                                border-bottom: 8px solid base_color.$test_end_three;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_three;
+                                border: 1.5px solid base_color.$test_end_three;
                             }
                         }
                     }
@@ -861,11 +864,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_four;
+                                border-bottom: 8px solid base_color.$test_end_four;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_four;
+                                border: 1.5px solid base_color.$test_end_four;
                             }
                         }
                     }
@@ -878,11 +881,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_five;
+                                border-bottom: 8px solid base_color.$test_end_five;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_five;
+                                border: 1.5px solid base_color.$test_end_five;
                             }
                         }
                     }
@@ -895,11 +898,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_six;
+                                border-bottom: 8px solid base_color.$test_end_six;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_six;
+                                border: 1.5px solid base_color.$test_end_six;
                             }
                         }
                     }
@@ -912,11 +915,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_seven;
+                                border-bottom: 8px solid base_color.$test_end_seven;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_seven;
+                                border: 1.5px solid base_color.$test_end_seven;
                             }
                         }
                     }
@@ -929,11 +932,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_eight;
+                                border-bottom: 8px solid base_color.$test_end_eight;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_eight;
+                                border: 1.5px solid base_color.$test_end_eight;
                             }
                         }
                     }
@@ -946,11 +949,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_nine;
+                                border-bottom: 8px solid base_color.$test_end_nine;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_nine;
+                                border: 1.5px solid base_color.$test_end_nine;
                             }
                         }
                     }
@@ -963,11 +966,11 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-bottom: 8px solid $test_end_ten;
+                                border-bottom: 8px solid base_color.$test_end_ten;
                             }
 
                             &::after{
-                                border: 1.5px solid $test_end_ten;
+                                border: 1.5px solid base_color.$test_end_ten;
                             }
                         }
                     }
@@ -981,14 +984,14 @@ main {
             
 
             a {
-                color: $white;
-                background-color: $main_color;
+                color: base_color.$white;
+                background-color: base_color.$main_color;
                 padding: 10px 15px;
                 padding: 5px 10px;
                 border-radius: 10px;
 
                 &:hover {
-                    background-color: darken($main_color, 5%);
+                    background-color: color.adjust(base_color.$main_color,$lightness: -5%);
                 }
             }
         }
@@ -1001,20 +1004,20 @@ main {
 
             .level_name{
                 h5{
-                    color: $brown;
+                    color: base_color.$brown;
                     font-weight: bold;
                 }
             }
 
             .leave_link {
                 a {
-                    color: $white;
-                    background-color: $main_color;
+                    color: base_color.$white;
+                    background-color: base_color.$main_color;
                     padding: 10px 15px;
                     border-radius: 10px;
     
                     &:hover {
-                        background-color: darken($main_color, 5%);
+                        background-color: color.adjust(base_color.$main_color,$lightness: -5%);
                     }
                 }
             }
@@ -1530,7 +1533,7 @@ main {
                                 border-width: 12px 0px 12px 12px;
                                 top: auto;
                                 left: -25px;
-                                border-right: 12px solid $white;
+                                border-right: 12px solid base_color.$white;
                                 border-left: 12px solid transparent;
                                 border-bottom: 12px solid transparent;
                                 border-top: 12px solid transparent;
@@ -1610,7 +1613,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_one;
+                                border-right: 12px solid base_color.$test_end_one;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1624,7 +1627,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_two;
+                                border-right: 12px solid base_color.$test_end_two;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1638,7 +1641,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_three;
+                                border-right: 12px solid base_color.$test_end_three;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1652,7 +1655,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_four;
+                                border-right: 12px solid base_color.$test_end_four;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1666,7 +1669,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_five;
+                                border-right: 12px solid base_color.$test_end_five;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1680,7 +1683,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_six;
+                                border-right: 12px solid base_color.$test_end_six;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1694,7 +1697,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_seven;
+                                border-right: 12px solid base_color.$test_end_seven;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1708,7 +1711,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_eight;
+                                border-right: 12px solid base_color.$test_end_eight;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1722,7 +1725,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_nine;
+                                border-right: 12px solid base_color.$test_end_nine;
                                 border-bottom: 12px solid transparent;
                             }
                         }
@@ -1736,7 +1739,7 @@ main {
                     .feedback_top{
                         .scoring_area{
                             &::before{
-                                border-right: 12px solid $test_end_ten;
+                                border-right: 12px solid base_color.$test_end_ten;
                                 border-bottom: 12px solid transparent;
                             }
                         }

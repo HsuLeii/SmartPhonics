@@ -1,6 +1,9 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 .footer{
     padding: 40px 10%;
-    background-color: $footer_bg;
+    background-color: base_color.$footer_bg;
     position: relative;
 
     // .footer_decorate{
@@ -8,7 +11,7 @@
     //     left: 0;
     //     top: 0;
     //     transform: translate(0 , -100%);
-    //     fill: $footer_bg;
+    //     fill: base_color.$footer_bg;
     // }
 
     .footer_area{
@@ -26,15 +29,15 @@
                     p{
                         display: flex;
                         align-items: flex-start;
-                        color: $white;
+                        color: base_color.$white;
                         .connection_icon{
                             width: 22px;
                         }
                         .connection_link{
                             word-break: break-all;
-                            color: $white;
+                            color: base_color.$white;
                             &:hover{
-                                color: $main-color;
+                                color: base_color.$main-color;
                                 border-bottom: 1px solid;
                             }
                         }
@@ -52,7 +55,7 @@
                 .other_logo_tittle{
                     margin: 0 0 20px;
                     width: 100%;
-                    color: $white;
+                    color: base_color.$white;
                     
                 }
                 .other_logo_img{
@@ -66,7 +69,7 @@
             width: 100%;
             p{
                 font-size: 13px;
-                color: $white;
+                color: base_color.$white;
             }
         }
     }

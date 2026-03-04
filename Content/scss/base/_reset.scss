@@ -1,6 +1,9 @@
+@use "sass:color"; // 
+@use "color"as base_color;
+
 %boxShadow {
     // box-shadow: 2px 9px 46px 0px #00000014;
-    box-shadow: 5px 5px 10px 3px $main_color_40;
+    box-shadow: 5px 5px 10px 3px base_color.$main_color_40;
 }
 
 body,
@@ -111,13 +114,13 @@ button {
 }
 
 button:disabled {
-    background-color: $grey !important;
-    border: 1px solid $grey !important;
+    background-color: base_color.$grey !important;
+    border: 1px solid base_color.$grey !important;
     opacity: 0.5;
     cursor: auto !important;
 
     a {
-        color: $white !important;
+        color: base_color.$white !important;
         cursor: auto;
     }
 }
@@ -133,7 +136,7 @@ body {
 }
 
 body {
-    background-color: $body_bg;
+    background-color: base_color.$body_bg;
 }
 
 
@@ -170,8 +173,8 @@ body {
 }
 
 ::selection {
-    background: $main-color;
-    color: $white;
+    background: base_color.$main-color;
+    color: base_color.$white;
 }
 
 @media screen and (min-width: 576px) {}

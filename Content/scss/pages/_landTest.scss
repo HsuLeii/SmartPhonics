@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .test_area {
         width: 100%;
@@ -30,7 +33,7 @@ main {
         }
 
         .QA_area {
-            background-color: $QA_area;
+            background-color: base_color.$QA_area;
             width: 60%;
             max-width: 800px;
             margin: 0 auto;
@@ -46,19 +49,19 @@ main {
 
                 .drag_line {
                     .line {
-                        background: $main_color;
+                        background: base_color.$main_color;
                     }
                 }
 
                 .drag_line {
                     width: 100%;
                     height: 10px;
-                    background: $white;
+                    background: base_color.$white;
                     border-radius: 10px;
                     margin: 0 auto;
 
                     .line {
-                        background: $main_color;
+                        background: base_color.$main_color;
                         border-radius: 10px;
                         margin-top: 0px;
                         margin-left: 0px;
@@ -88,7 +91,7 @@ main {
                     margin: 0 5px;
                     padding: 10px;
                     position: relative;
-                    background-color: $white;
+                    background-color: base_color.$white;
                     border-radius: 10px;
 
                     &::before {
@@ -98,7 +101,7 @@ main {
                         top: -8px;
                         border-left: 8px solid transparent;
                         border-right: 8px solid transparent;
-                        border-bottom: 8px solid $white;
+                        border-bottom: 8px solid base_color.$white;
                     }
 
                     .animal_name_area {
@@ -106,15 +109,15 @@ main {
                         align-items: center;
 
                         .animal_name {
-                            color: $main_color;
+                            color: base_color.$main_color;
                         }
 
                         .sound_button_area{
                             margin: 0 auto;
                             .sound_icon {
-                                background-color: $main_color;
+                                background-color: base_color.$main_color;
                                 border-radius: 50%;
-                                color: $white;
+                                color: base_color.$white;
                                 position: relative;
                                 padding: 2px 4px;
 
@@ -133,7 +136,7 @@ main {
                                     transform: translate(0px, calc(-100% - 16px));
                                     padding: 5px 10px;
                                     border-radius: 10px;
-                                    background-color: $main_color;
+                                    background-color: base_color.$main_color;
                                     display: none;
     
                                     &::before {
@@ -146,7 +149,7 @@ main {
                                         border-right: 8px solid transparent;
                                         border-left: 8px solid transparent;
                                         border-bottom: 8px solid transparent;
-                                        border-top: 8px solid $main_color;
+                                        border-top: 8px solid base_color.$main_color;
                                     }
                                 }
     
@@ -179,8 +182,8 @@ main {
                     .answer_option {
                         margin: 10px;
                         border-radius: 10px;
-                        border: 1px solid $main_color_blue;
-                        background-color: $main_color_blue;
+                        border: 1px solid base_color.$main_color_blue;
+                        background-color: base_color.$main_color_blue;
                         max-width: 100%;
                         min-width: calc(30px * 1.7);
                         min-height: calc(30px * 1.7);
@@ -190,18 +193,18 @@ main {
                             text-align: center;
                             padding: 0 10px;
                             border-radius: 10px;
-                            color: $white;
+                            color: base_color.$white;
                             word-wrap: break-word;
                             min-width: calc(30px * 1.7);
                         }
 
                         &:hover {
-                            background-color: darken($main_color_blue, 10%);
+                            background-color: color.adjust(base_color.$main_color_blue, $lightness: -10%);
                         }
 
                         &.active {
-                            border: 1px dashed darken($main_color_blue, 10%);
-                            background-color: darken($main_color_blue, 10%);
+                            border: 1px dashed color.adjust(base_color.$main_color_blue, $lightness: -10%);
+                            background-color: color.adjust(base_color.$main_color_blue, $lightness: -10%);
                             position: relative;
 
                             &::before{
@@ -213,7 +216,7 @@ main {
                                 transform: translate(-50% , -50%);
                                 width: calc(100% + 12px);
                                 height: calc(100% + 12px);
-                                border: 2px dotted $main_color_blue;
+                                border: 2px dotted base_color.$main_color_blue;
                                 border-radius: 10px;
                             }
                         }
@@ -222,8 +225,8 @@ main {
                     .answer_cloze{
                         margin: 10px;
                         border-radius: 10px;
-                        border: 1px solid $main_color_blue;
-                        background-color: $main_color_blue;
+                        border: 1px solid base_color.$main_color_blue;
+                        background-color: base_color.$main_color_blue;
                         max-width: 100%;
                         min-width: calc(30px * 1.7);
                         min-height: calc(30px * 1.7);
@@ -232,17 +235,17 @@ main {
                             text-align: center;
                             // padding: 0 10px;
                             border-radius: 10px;
-                            color: $white;
+                            color: base_color.$white;
                             word-wrap: break-word;
                         }
 
                         &.answer_cloze_area{
                             position: relative;
-                            background-color: $main_color_blue;
+                            background-color: base_color.$main_color_blue;
                             border: 0px;
 
                             p {
-                                background-color: $main_color_blue;
+                                background-color: base_color.$main_color_blue;
                             }
 
                             &::before{
@@ -254,7 +257,7 @@ main {
                                 transform: translate(-50% , -50%);
                                 width: calc(100% + 12px);
                                 height: calc(100% + 12px);
-                                border: 2px dotted $main_color_blue;
+                                border: 2px dotted base_color.$main_color_blue;
                                 border-radius: 10px;
                             }
                         }
@@ -271,7 +274,7 @@ main {
             .sound_adjustment_area {
                 display: flex;
                 align-items: center;
-                background-color: lighten($main-color, 40%);
+                background-color: color.adjust(base_color.$main-color,$lightness: 40%);
                 padding: 5px 10px;
                 border-radius: 10px;
                 margin: 30px auto 0px;
@@ -283,7 +286,7 @@ main {
                     width: 25px;
 
                     i,svg {
-                        color: $main-color;
+                        color: base_color.$main-color;
                     }
                 }
 
@@ -298,7 +301,7 @@ main {
                         cursor: auto;
 
                         i,svg {
-                            color: $grey;
+                            color: base_color.$grey;
                         }
                     }
                 }
@@ -337,7 +340,7 @@ main {
         width: 80%;
         max-width: 500px;
         margin: 0 auto;
-        background-color: $white;
+        background-color: base_color.$white;
         border-radius: 5px;
 
         .timeout_area_body{
@@ -357,7 +360,7 @@ main {
                 justify-content: center;
                 margin: 0 auto 20px;
                 h5{
-                    color: $main_color;
+                    color: base_color.$main_color;
                 }
             }
 
@@ -367,14 +370,14 @@ main {
                 align-items: center;
                 .timeout_text_link{
                     margin: 20px auto;
-                    border: 1px solid $main_color;
+                    border: 1px solid base_color.$main_color;
                     border-radius: 50px;
                     padding: 10px 30px;
-                    color: $main_color;
+                    color: base_color.$main_color;
 
                     &:hover{
-                        background-color: $main_color;
-                        color: $white;
+                        background-color: base_color.$main_color;
+                        color: base_color.$white;
                     }
                 }
             }
@@ -394,8 +397,8 @@ main {
             height: auto !important;
             max-width: 1200px;
             padding: 20px 25px;
-            background-color: $body_bg;
-            border: 1px solid $main_color;
+            background-color: base_color.$body_bg;
+            border: 1px solid base_color.$main_color;
 
             .flex-fill{
                 flex-direction: column;
@@ -415,10 +418,10 @@ main {
                     margin: 0 5px;
                     padding: 10px 15px;
                     position: relative;
-                    background-color: $white;
+                    background-color: base_color.$white;
                     border-radius: 10px;
-                    color: $main_color_black;
-                    border: 1px solid $main_color;
+                    color: base_color.$main_color_black;
+                    border: 1px solid base_color.$main_color;
 
                     &::before {
                         content: "";
@@ -429,7 +432,7 @@ main {
                         top: -8px;
                         border-left: 8px solid transparent;
                         border-right: 8px solid transparent;
-                        border-bottom: 8px solid $main_color;
+                        border-bottom: 8px solid base_color.$main_color;
                     }
                 }
             }
@@ -466,7 +469,7 @@ main {
                             border-width: 8px 0px 8px 8px;
                             top: auto;
                             left: -16px;
-                            border-right: 8px solid $white;
+                            border-right: 8px solid base_color.$white;
                             border-bottom: 8px solid transparent;
                             border-top: 8px solid transparent;
                         }
@@ -499,7 +502,7 @@ main {
                             top: 50%;
                             left: -16px;
                             transform: translate(0, -50%);
-                            border-right: 8px solid $main_color;
+                            border-right: 8px solid base_color.$main_color;
                             border-bottom: 8px solid transparent;
                             border-top: 8px solid transparent;
                         }
@@ -563,7 +566,7 @@ main {
                             top: 50%;
                             left: -31px;
                             transform: translate(0, -50%);
-                            border-right: 15px solid $main_color;
+                            border-right: 15px solid base_color.$main_color;
                             border-bottom: 15px solid transparent;
                             border-top: 15px solid transparent;
                         }

@@ -1,18 +1,21 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: $header_bg;
+    background-color: base_color.$header_bg;
     padding: 10px 15px;
     position: relative;
     z-index: 3;
-    border-bottom: 2px solid $main_color_orangeLight;
+    border-bottom: 2px solid base_color.$main_color_orangeLight;
 
     .header_decorate {
         position: absolute;
         left: 0;
         top: 100%;
-        fill: $header_bg;
+        fill: base_color.$header_bg;
     }
 
     .navbar {
@@ -50,7 +53,7 @@ header {
                     width: 30px;
                     height: 3px;
                     margin: 0px;
-                    background: $main_color;
+                    background: base_color.$main_color;
                     transition: 350ms ease all;
                     z-index: 5;
 
@@ -61,7 +64,7 @@ header {
                         left: 0;
                         width: 100%;
                         height: 3px;
-                        background: $main_color;
+                        background: base_color.$main_color;
                         transition: 350ms ease all;
                     }
 
@@ -95,7 +98,7 @@ header {
                     width: 22px;
                     height: 2px;
                     border-radius: 1px;
-                    background-color: $main_color;
+                    background-color: base_color.$main_color;
 
                     &+.icon-bar {
                         margin-top: 4px;
@@ -105,7 +108,7 @@ header {
                 &:hover {
 
                     .icon-bar {
-                        background-color: $white;
+                        background-color: base_color.$white;
                     }
                 }
 
@@ -141,22 +144,22 @@ header {
 
                             &.nowPage,
                             &:hover {
-                                color: $main_color;
+                                color: base_color.$main_color;
 
                                 .nav-link {
-                                    color: $main_color;
+                                    color: base_color.$main_color;
                                 }
 
                                 p {
                                     &.nav-link {
-                                        color: $main_color_black;
+                                        color: base_color.$main_color_black;
                                     }
                                 }
 
                             }
 
                             .nav-link {
-                                color: $main_color_black;
+                                color: base_color.$main_color_black;
                                 padding: 15px 10px;
                                 font-size: 16px;
 
@@ -170,7 +173,7 @@ header {
                             &.dropdown {
                                 .nav-link {
                                     &.show {
-                                        color: $main-color;
+                                        color: base_color.$main-color;
                                     }
                                 }
 
@@ -200,16 +203,16 @@ header {
 
                                         &:focus,
                                         &:hover {
-                                            color: $main-color;
+                                            color: base_color.$main-color;
                                             background-color: transparent;
                                         }
 
                                         &.nowPage {
-                                            color: $main-color;
+                                            color: base_color.$main-color;
                                         }
 
                                         &.check {
-                                            color: $main-color;
+                                            color: base_color.$main-color;
                                         }
                                     }
                                 }
@@ -229,10 +232,10 @@ header {
 
                     svg {
                         font-size: 25px;
-                        color: $main_color_black;
+                        color: base_color.$main_color_black;
 
                         &:hover {
-                            color: $main-color;
+                            color: base_color.$main-color;
                         }
                     }
                 }
@@ -246,9 +249,9 @@ header {
 
         .nav_name_link {
             padding: 5px 15px;
-            background-color: $main_color;
+            background-color: base_color.$main_color;
             border-radius: 50px;
-            color: $white;
+            color: base_color.$white;
         }
 
         .nav_name_menu {
@@ -257,13 +260,13 @@ header {
             left: 50%;
             transform: translate(-50%, 7px);
             width: 75%;
-            background-color: $white;
+            background-color: base_color.$white;
             border-radius: 10px;
-            border: 1px solid $main_color;
+            border: 1px solid base_color.$main_color;
             display: none;
 
             a {
-                color: $main_color;
+                color: base_color.$main_color;
             }
 
             &:before,
@@ -279,7 +282,7 @@ header {
                 top: -8px;
                 border-left: 8px solid transparent;
                 border-right: 8px solid transparent;
-                border-bottom: 8px solid $main_color;
+                border-bottom: 8px solid base_color.$main_color;
             }
 
             &:after {
@@ -287,18 +290,18 @@ header {
                 top: -7px;
                 border-left: 7px solid transparent;
                 border-right: 7px solid transparent;
-                border-bottom: 7px solid $white;
+                border-bottom: 7px solid base_color.$white;
             }
 
             &:hover {
-                background-color: $main_color;
+                background-color: base_color.$main_color;
 
                 a {
-                    color: $white;
+                    color: base_color.$white;
                 }
 
                 &:after {
-                    border-bottom: 7px solid $main_color;
+                    border-bottom: 7px solid base_color.$main_color;
                 }
             }
         }
@@ -439,7 +442,7 @@ header {
                                     .dropdown-menu {
                                         position: absolute;
                                         display: block;
-                                        background-color: $white;
+                                        background-color: base_color.$white;
                                         right: 0;
                                         top: auto;
                                         left: auto;
@@ -454,7 +457,7 @@ header {
 
                                             &:focus,
                                             &:hover {
-                                                color: $main-color;
+                                                color: base_color.$main-color;
                                                 background-color: transparent;
                                             }
                                         }

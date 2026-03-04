@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "reset";
+@use "../base/color"as base_color;
+
 main {
     .main_publicity{
         .main_publicity_content{
@@ -9,7 +13,7 @@ main {
                     display: flex;
                     align-items: flex-start;
                     flex-direction: column;
-                    background-color: $white;
+                    background-color: base_color.$white;
                     border-radius: 5px;
                     border: 1px solid;
                     @extend %boxShadow;
@@ -18,14 +22,14 @@ main {
                             font-size: 45px;
                             padding: 0 15px 0 0;
                             border-right: 1px solid;    
-                            color: $main-color;
+                            color: base_color.$main-color;
                         }
                     }
         
                     .about_content_body{
                         margin: 25px 0 0;
                         .about_content_tittle{
-                            color: $main-color;
+                            color: base_color.$main-color;
                         }
                         .about_content_text{
                             margin: 15px 0 0;
@@ -41,7 +45,7 @@ main {
                         .swiper-slide{
                             transform: scale(0.95);
                             padding: 10px;
-                            background-color: $white;
+                            background-color: base_color.$white;
                             border-radius: 10px;
                             
                         }
@@ -56,7 +60,7 @@ main {
                     margin: 0 0 40px;
                     display: flex;
                     justify-content: center;
-                    color: $main_color_black;
+                    color: base_color.$main_color_black;
                 }
                 .three_features_item{
                     margin: 0 auto 30px;
@@ -68,10 +72,10 @@ main {
                         h4{
                             text-align: center;
                             margin: 0 0 10px;
-                            color: $main_color;
+                            color: base_color.$main_color;
 
                             i{
-                                color: $main_color_yellow;
+                                color: base_color.$main_color_yellow;
                             }
                         }
                     }
@@ -86,16 +90,16 @@ main {
                     a{
                         padding: 20px 40px;
                         border-radius: 50px;
-                        color: $white;
-                        background-color: $main_color;
-                        border: 1px solid $main_color;
+                        color: base_color.$white;
+                        background-color: base_color.$main_color;
+                        border: 1px solid base_color.$main_color;
                         @extend %boxShadow;
                     }
 
                     &:hover{
                             a{
-                                color: $main_color;
-                                background-color: $white;
+                                color: base_color.$main_color;
+                                background-color: base_color.$white;
                             }
                     }
                 }
@@ -228,7 +232,7 @@ main {
                                 transform: scale(0.85);
                                 &.swiper-slide-next{
                                     transform: scale(1);
-                                    box-shadow: 5px 5px 10px 3px $main_color_40;
+                                    box-shadow: 5px 5px 10px 3px base_color.$main_color_40;
                                 }
                             }
                         }

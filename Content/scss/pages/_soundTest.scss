@@ -1,10 +1,13 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .sound_test_area {
         width: 80%;
         max-width: 1200px;
         margin: 40px auto;
         padding: 20px 5%;
-        background-color: $white;
+        background-color: base_color.$white;
         border-radius: 10px;
 
         .sound_test_text {
@@ -26,7 +29,7 @@ main {
             }
 
             .bar {
-                background-color: $main_color_blue;
+                background-color: base_color.$main_color_blue;
                 height: 0px;
                 width: 3px;
                 margin: 0px 1px;
@@ -77,7 +80,7 @@ main {
             .sound_area{
                 &.finger_btn{
                     .finger_icon{
-                        color: $main_color_blue !important;
+                        color: base_color.$main_color_blue !important;
                     }
                 }
             } 
@@ -89,13 +92,13 @@ main {
         margin: 40px auto 0px;
 
         .sound_area {
-            background-color: $main_color_blue;
+            background-color: base_color.$main_color_blue;
             display: block;
             margin: 0 auto;
 
             i,svg {
                 font-size: 40px;
-                color: $white;
+                color: base_color.$white;
                 padding: 10px;
                 border-radius: 10px;
             }
@@ -110,13 +113,13 @@ main {
         .recording_area,
         .stop_area,
         .play_area {
-            background-color: $main-color;
+            background-color: base_color.$main-color;
             display: block;
             margin: 0 auto;
 
             i,svg {
                 font-size: 40px;
-                color: $white;
+                color: base_color.$white;
                 padding: 10px;
                 border-radius: 10px;
             }
@@ -135,7 +138,7 @@ main {
                 border: 1px solid transparent !important;
 
                 p{
-                    color: $grey;
+                    color: base_color.$grey;
                 }
             }
         }
@@ -155,11 +158,11 @@ main {
     .recording_button_area {
 
         .recording_area {
-            background-color: $main_color_blue;
+            background-color: base_color.$main_color_blue;
 
             &.finger_btn {
                 .finger_icon {
-                        color: $main_color_blue !important;
+                        color: base_color.$main_color_blue !important;
                 }
             }
         }
@@ -170,7 +173,7 @@ main {
 
         .button_text {
             p {
-                color: $main_color_blue;
+                color: base_color.$main_color_blue;
             }
         }
 
@@ -179,12 +182,12 @@ main {
     .stop_button_area {
 
         .stop_area {
-            background-color: $main_color_red;
+            background-color: base_color.$main_color_red;
         }
 
         .button_text {
             p {
-                color: $main_color_red;
+                color: base_color.$main_color_red;
             }
         }
 
@@ -193,7 +196,7 @@ main {
     .play_button_area {
 
         .play_area {
-            background-color: $main_color_green;
+            background-color: base_color.$main_color_green;
         }
 
         .recording_button_animate {
@@ -202,7 +205,7 @@ main {
 
         .button_text {
             p {
-                color: $main_color_green;
+                color: base_color.$main_color_green;
             }
         }
 
@@ -214,7 +217,7 @@ main {
 
             &.finger_btn {
                 .finger_icon {
-                        color: $main_color_yellow !important;
+                        color: base_color.$main_color_yellow !important;
                 }
             }
         }
@@ -225,7 +228,7 @@ main {
 
         .button_text {
             p {
-                color: $main_color_yellow;
+                color: base_color.$main_color_yellow;
             }
         }
 
@@ -264,7 +267,7 @@ main {
 
             .sound_button_area{
                 .sound_area{
-                    background-color: $main_color_yellow;
+                    background-color: base_color.$main_color_yellow;
                 }
             }
         }

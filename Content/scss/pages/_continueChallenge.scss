@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "../base/reset";
+@use "../base/color"as base_color;
+
 main {
     .test_area {
         &.continue_challenge_area {
@@ -6,8 +10,8 @@ main {
             margin: 80px auto;
 
             .continue_challenge_item_area {
-                background-color: $white;
-                border: 1.5px solid $main-color;
+                background-color: base_color.$white;
+                border: 1.5px solid base_color.$main-color;
                 width: 80%;
                 max-width: 1200px;
                 margin: 0 auto;
@@ -21,13 +25,13 @@ main {
                     left: 50%;
                     top: 0%;
                     transform: translate(-50%, -50%);
-                    background-color: $main-color;
+                    background-color: base_color.$main-color;
                     width: 60%;
                     margin: 0;
                     border-radius: 50px;
 
                     h3 {
-                        color: $white;
+                        color: base_color.$white;
                         text-align: center;
                     }
                 }
@@ -39,7 +43,7 @@ main {
                         text-align: center;
 
                         span {
-                            color: $main-color;
+                            color: base_color.$main-color;
                             font-weight: bold;
                         }
                     }
@@ -51,7 +55,7 @@ main {
                     flex-wrap: wrap;
                     margin: 0 auto;
                     padding: 20px 10px;
-                    border-top: 1px solid $main_color_black;
+                    border-top: 1px solid base_color.$main_color_black;
 
                     &:nth-child(1),
                     &:nth-child(2),
@@ -68,7 +72,7 @@ main {
                     }
 
                     &:hover {
-                        background-color: $body_bg;
+                        background-color: base_color.$body_bg;
                     }
 
                     .item_box_content_area {
@@ -89,8 +93,8 @@ main {
 
                             a {
                                 display: block;
-                                color: $white;
-                                background-color: $main-color;
+                                color: base_color.$white;
+                                background-color: base_color.$main-color;
                                 border-radius: 10px;
                                 padding: 10px 20px;
                                 width: 100%;
@@ -98,7 +102,7 @@ main {
 
                             &:hover {
                                 a {
-                                    background-color: darken($main-color, 5%);
+                                    background-color: color.adjust(base_color.$main-color, $lightness: -5%);
                                 }
                             }
                         }
@@ -129,13 +133,13 @@ main {
 
                                 .quiz_progress_background {
                                     fill: none;
-                                    stroke: $main_color_orangeLight;
+                                    stroke: base_color.$main_color_orangeLight;
                                     stroke-width: 3px;
                                 }
 
                                 .quiz_progress_bar {
                                     fill: none;
-                                    stroke: $main-color;
+                                    stroke: base_color.$main-color;
                                     stroke-dasharray: 100 100;
                                     stroke-dashoffset: 100;
                                     stroke-dashoffset: 0px;
@@ -178,13 +182,13 @@ main {
                 padding: 5px 0.2rem;
                 border-radius: 10px;
                 margin: 0px 2px;
-                color: $main-color;
+                color: base_color.$main-color;
 
                 &:hover,
                 &:active,
                 &.active {
-                    background-color: $main-color;
-                    color: $white;
+                    background-color: base_color.$main-color;
+                    color: base_color.$white;
                 }
             }
         }
@@ -228,7 +232,7 @@ main {
 
                     .item_box {
                         // &:nth-child(3) {
-                        //     border-top: 1px solid $main_color_black;
+                        //     border-top: 1px solid base_color.$main_color_black;
                         // }
 
                         &.item_box_title {

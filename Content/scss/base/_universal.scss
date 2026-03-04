@@ -1,3 +1,7 @@
+@use "sass:color";
+@use "reset";
+@use "color"as base_color;
+
 main {
     position: relative;
 
@@ -13,12 +17,12 @@ main {
         margin: 20px auto 0px;
 
         h4 {
-            color: $white;
+            color: base_color.$white;
             word-break: keep-all;
         }
 
         h3 {
-            color: $main_color;
+            color: base_color.$main_color;
         }
     }
 
@@ -53,15 +57,15 @@ main {
                 left: 50%;
                 transform: translate(-50%, 15px);
                 width: 85%;
-                background-color: $white;
+                background-color: base_color.$white;
                 border-radius: 10px;
-                border: 1px solid $main_color;
+                border: 1px solid base_color.$main_color;
                 padding: 5px 12px;
                 display: none;
                 z-index: 1;
 
                 p {
-                    color: $main_color;
+                    color: base_color.$main_color;
                 }
 
                 &:before,
@@ -75,7 +79,7 @@ main {
                     top: -8px;
                     border-left: 8px solid transparent;
                     border-right: 8px solid transparent;
-                    border-bottom: 8px solid $main_color;
+                    border-bottom: 8px solid base_color.$main_color;
                     left: 5%;
 
                 }
@@ -85,7 +89,7 @@ main {
                     top: -7px;
                     border-left: 7px solid transparent;
                     border-right: 7px solid transparent;
-                    border-bottom: 7px solid $white;
+                    border-bottom: 7px solid base_color.$white;
                     left: calc(5% + 1px);
 
                 }
@@ -95,7 +99,7 @@ main {
         .pick_level_title {
 
             p {
-                color: $main_color;
+                color: base_color.$main_color;
             }
         }
 
@@ -111,19 +115,19 @@ main {
 
         button {
             padding: 5px 0px;
-            background-color: $white;
-            border: 1px solid $main-color;
+            background-color: base_color.$white;
+            border: 1px solid base_color.$main-color;
 
             a {
-                color: $main-color;
+                color: base_color.$main-color;
                 padding: 10px 15px;
             }
 
             &:hover {
-                background-color: $main_color;
+                background-color: base_color.$main_color;
 
                 a {
-                    color: $white;
+                    color: base_color.$white;
                 }
             }
         }
@@ -146,7 +150,7 @@ main {
             top: 50%;
             transform: translate(0%, -50%);
             animation: fingers 1000ms infinite;
-            color: $main-color;
+            color: base_color.$main-color;
             font-size: 30px !important;
             padding: 0px 5px 0px 0px !important;
 
@@ -162,13 +166,13 @@ main {
             width: 80%;
             display: flex;
             justify-content: center;
-            color: $main_color_black;
+            color: base_color.$main_color_black;
             margin: 0 auto 40px;
         }
 
         .main_publicity_content {
             padding: 25px;
-            background-color: $white;
+            background-color: base_color.$white;
             border-radius: 5px;
             @extend %boxShadow;
 
@@ -184,7 +188,7 @@ main {
 
                 &.body_bg_two {
                     padding: 40px 0;
-                    background-color: $body_bg_two;
+                    background-color: base_color.$body_bg_two;
                 }
 
                 .main_section_area {
@@ -198,7 +202,7 @@ main {
 
 
     .shape_area {
-        background-color: $shape_color;
+        background-color: base_color.$shape_color;
         max-height: 20%;
         height: 200px;
         position: absolute;
@@ -210,7 +214,7 @@ main {
             transform: translate(0, -99%);
 
             .shape_svg_polygon {
-                fill: $shape_color;
+                fill: base_color.$shape_color;
 
             }
         }
@@ -232,6 +236,15 @@ main {
     }
 }
 
+.logo_owl{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 1;
+    width: 20%;
+    max-width: 125px;
+}
+
 .input_area {
     flex-wrap: wrap;
 
@@ -245,7 +258,7 @@ main {
                 label {
                     display: flex;
                     align-items: center;
-                    color: $main_color_black;
+                    color: base_color.$main_color_black;
                     font-weight: normal;
                     position: relative;
                     cursor: pointer;
@@ -259,7 +272,7 @@ main {
                         height: 16px;
                         border-radius: 50%;
                         position: relative;
-                        border: 2px solid $main_color_black;
+                        border: 2px solid base_color.$main_color_black;
                     }
                 }
 
@@ -268,11 +281,11 @@ main {
 
                     &:checked {
                         &+label {
-                            color: $main_color;
+                            color: base_color.$main_color;
 
                             &:before {
-                                border: 2px solid $main_color;
-                                background: radial-gradient($main_color 0%, $main_color 40%, transparent 50%, transparent);
+                                border: 2px solid base_color.$main_color;
+                                background: radial-gradient(base_color.$main_color 0%, base_color.$main_color 40%, transparent 50%, transparent);
                             }
                         }
                     }
@@ -289,7 +302,7 @@ main {
                 right: 15px;
                 top: 50%;
                 transform: translate(0, -50%);
-                color: $main_color_black;
+                color: base_color.$main_color_black;
             }
 
             &:valid {
@@ -316,20 +329,20 @@ main {
 
                 &~i,
                 &~svg {
-                    color: $main_color;
+                    color: base_color.$main_color;
                 }
 
                 &::-webkit-datetime-edit-text,
                 &::-webkit-datetime-edit-day-field,
                 &::-webkit-datetime-edit-month-field,
                 &::-webkit-datetime-edit-year-field {
-                    background-color: $main_color;
-                    color: $white;
+                    background-color: base_color.$main_color;
+                    color: base_color.$white;
                 }
             }
 
             .birthday_input {
-                color: $main_color_black;
+                color: base_color.$main_color_black;
                 width: 100%;
                 outline: 0;
                 background-color: transparent;
@@ -360,15 +373,15 @@ main {
 
                     &~i,
                     &~svg {
-                        color: $main_color;
+                        color: base_color.$main_color;
                     }
 
                     &::-webkit-datetime-edit-text,
                     &::-webkit-datetime-edit-day-field,
                     &::-webkit-datetime-edit-month-field,
                     &::-webkit-datetime-edit-year-field {
-                        background-color: $main_color;
-                        color: $white;
+                        background-color: base_color.$main_color;
+                        color: base_color.$white;
                     }
                 }
 
@@ -377,15 +390,15 @@ main {
         }
 
         &::placeholder {
-            color: $main_color_black;
+            color: base_color.$main_color_black;
         }
 
         &:focus {
             outline: none;
-            border-color: $main_color;
+            border-color: base_color.$main_color;
             @extend %boxShadow;
             border-radius: 5px;
-            color: $main_color;
+            color: base_color.$main_color;
 
             &::placeholder {
                 color: transparent;
@@ -397,7 +410,7 @@ main {
     .radio-inline {
         display: flex;
         align-items: center;
-        color: $main_color_black;
+        color: base_color.$main_color_black;
         font-weight: normal;
         position: relative;
         cursor: pointer;
@@ -412,25 +425,25 @@ main {
             height: 16px;
             border-radius: 50%;
             position: relative;
-            border: 2px solid $main_color_black;
+            border: 2px solid base_color.$main_color_black;
         }
 
         &:has(input:read-only) {
-            color: $grey;
+            color: base_color.$grey;
             cursor: auto;
 
             &:before {
-                border: 2px solid $grey;
+                border: 2px solid base_color.$grey;
             }
         }
 
         &:has(input:checked) {
-            color: $main_color;
+            color: base_color.$main_color;
             cursor: pointer;
 
             &:before {
-                border: 2px solid $main_color;
-                background: radial-gradient($main_color 0%, $main_color 40%, transparent 50%, transparent);
+                border: 2px solid base_color.$main_color;
+                background: radial-gradient(base_color.$main_color 0%, base_color.$main_color 40%, transparent 50%, transparent);
             }
         }
 
@@ -439,20 +452,20 @@ main {
 
             &:checked {
                 &:has(label) {
-                    color: $main_color;
+                    color: base_color.$main_color;
 
                     &:before {
-                        border: 2px solid $main_color;
-                        background: radial-gradient($main_color 0%, $main_color 40%, transparent 50%, transparent);
+                        border: 2px solid base_color.$main_color;
+                        background: radial-gradient(base_color.$main_color 0%, base_color.$main_color 40%, transparent 50%, transparent);
                     }
                 }
             }
 
             // &:has(:read-only) {
-            //     color: $grey;
+            //     color: base_color.$grey;
     
             //     &:before {
-            //         border: 2px solid $grey;
+            //         border: 2px solid base_color.$grey;
             //     }
             // }
         }
@@ -465,9 +478,9 @@ main {
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-    border: 1px solid $main_color_black;
-    -webkit-text-fill-color: $main_color_black;
-    -webkit-box-shadow: 0 0 0px 1000px $white inset !important;
+    border: 1px solid base_color.$main_color_black;
+    -webkit-text-fill-color: base_color.$main_color_black;
+    -webkit-box-shadow: 0 0 0px 1000px base_color.$white inset !important;
 }
 
 
@@ -649,18 +662,18 @@ input:-webkit-autofill:focus {
 
 @keyframes glowing {
     0% {
-        box-shadow: 0 0 0px $glow_color;
+        box-shadow: 0 0 0px base_color.$glow_color;
     }
 
     40% {
-        box-shadow: 0 0 20px $glow_color;
+        box-shadow: 0 0 20px base_color.$glow_color;
     }
 
     60% {
-        box-shadow: 0 0 20px $glow_color;
+        box-shadow: 0 0 20px base_color.$glow_color;
     }
 
     100% {
-        box-shadow: 0 0 0px $glow_color;
+        box-shadow: 0 0 0px base_color.$glow_color;
     }
 }

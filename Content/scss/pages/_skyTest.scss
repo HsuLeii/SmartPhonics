@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "../base/color"as base_color;
+
 main {
     .test_area {
 
@@ -37,13 +40,13 @@ main {
 
                             .quiz_progress_background {
                                 fill: none;
-                                stroke: $white;
+                                stroke: base_color.$white;
                                 stroke-width: 3px;
                             }
 
                             .quiz_progress_bar {
                                 fill: none;
-                                stroke: $main-color;
+                                stroke: base_color.$main-color;
                                 stroke-dasharray: 100 100;
                                 stroke-dashoffset: 100;
                                 stroke-dashoffset: 0px;
@@ -69,12 +72,12 @@ main {
                                 }
                                 .sky_topic_item{
                                     margin: 15px 5px 0px 5px;
-                                    background-color: $white;
+                                    background-color: base_color.$white;
                                     .topic_item_content{
                                         padding: 15px 10px;
-                                        border: 2px solid $main-color;
+                                        border: 2px solid base_color.$main-color;
                                         font-size: 30px;
-                                        color: $main-color;
+                                        color: base_color.$main-color;
                                         line-height: 1;
 
                                         &.alphabet{
@@ -90,7 +93,7 @@ main {
                                     &.topic_item_sentence{
                                         width: 100%;
                                         margin: -2px 5px 0px;
-                                        border: 2px solid $main-color;
+                                        border: 2px solid base_color.$main-color;
                                         &:nth-child(2){
                                             margin: 0px 5px;
                                         }
@@ -113,7 +116,7 @@ main {
                                 margin: 10px 0px;
                                 width: 100%;
                                 padding: 0px 5px 10px;
-                                border-bottom: 1px dotted $white;
+                                border-bottom: 1px dotted base_color.$white;
                                 &:nth-last-child(1){
                                     border-bottom: 0px;
                                 }

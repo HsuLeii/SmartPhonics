@@ -1,3 +1,6 @@
+@use "sass:color"; // 
+@use "color"as base_color;
+
 .swiper_area {
     position: relative;
 
@@ -34,7 +37,7 @@
             .about_test_slide_arrow {
                 i,svg {
                     .arrow {
-                        fill: $main_color;
+                        fill: base_color.$main_color;
                     }
                 }
             }
@@ -55,7 +58,7 @@
     }
     circle {
         fill: transparent;
-        stroke: $main_color;
+        stroke: base_color.$main_color;
         stroke-width: 2;
         transform-origin: center center;
         stroke-dasharray: 0 214;
@@ -69,7 +72,7 @@
     i,svg {
         width: 100%;
         .arrow {
-            fill: $main_color_black;
+            fill: base_color.$main_color_black;
         }
     }
 }

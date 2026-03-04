@@ -1,29 +1,29 @@
 @charset "UTF-8";
 
-@import "base/lang";
-@import "base/color";
-@import "base/reset";
-@import "base/resetSwiper";
-@import "base/range";
-@import "base/universal";
+@use "base/lang";
+@use "base/color";
+@use "base/reset";
+@use "base/resetSwiper";
+@use "base/range";
+@use "base/universal";
 
 
-@import "master/header";
-@import "master/footer";
+@use "master/header";
+@use "master/footer";
 
-@import "pages/login";
-@import "pages/pickLevel";
-@import "pages/soundTest";
-@import "pages/landTest";
-@import "pages/oceanTest";
-@import "pages/skyTest";
-@import "pages/testEnd";
-@import "pages/continueChallenge";
-@import "pages/ocean_choose";
-@import "pages/listening_test";
+@use "pages/login";
+@use "pages/pickLevel";
+@use "pages/soundTest";
+@use "pages/landTest";
+@use "pages/oceanTest";
+@use "pages/skyTest";
+@use "pages/testEnd";
+@use "pages/continueChallenge";
+@use "pages/ocean_choose";
+@use "pages/listening_test";
 
 // 登入前
-@import "pages/index";
-@import "pages/faq";
-// @import "pages/about_test";
-@import "pages/about_smartphonics";
+@use "pages/index";
+@use "pages/faq";
+// @use "pages/about_test";
+@use "pages/about_smartphonics";
