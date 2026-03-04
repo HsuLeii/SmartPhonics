@@ -4865,9 +4865,6 @@ main .main_publicity .main_publicity_content .feature .feature_content .feature_
   font-weight: bold;
   text-align: center;
 }
-main .main_publicity .main_publicity_content .feature .feature_content p {
-  text-align: center;
-}
 main .main_publicity .main_publicity_content .contact_box {
   padding: 20px 0px;
   margin: 40px 0 0;
