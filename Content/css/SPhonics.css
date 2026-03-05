@@ -4808,19 +4808,22 @@ main .information_area .input_area.input-group-submit .input-group-submit-btn:ho
 }
 .slide_area .slide_text_area {
   position: absolute;
-  top: 82%;
-  left: 0px;
+  bottom: 0;
+  left: 5px;
   width: calc(100% - 10px);
-  transform: translate(0px, -50%);
+  min-height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .slide_area .slide_text_area .slide_text h3 {
   color: #fff;
-  background-color: #f7b62d;
+  background-color: #ea9416;
   display: inline-block;
   line-height: 1.5;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   font-size: 10px;
-  border-radius: 0 50px 50px 0;
+  border-radius: 50px 50px;
 }
 
 main .main_publicity .main_publicity_content .feature {
@@ -4915,6 +4918,7 @@ main .main_publicity .main_publicity_content .contact_box .login_button:hover .l
 @media screen and (min-width: 500px) {
   .slide_area .slide_text_area .slide_text h3 {
     font-size: 12px;
+    padding: 5px 15px;
   }
 }
 @media screen and (min-width: 576px) {
@@ -4932,9 +4936,13 @@ main .main_publicity .main_publicity_content .contact_box .login_button:hover .l
   }
 }
 @media screen and (min-width: 768px) {
+  .slide_area .slide_text_area {
+    width: calc(100% - 30px);
+    left: 15px;
+  }
   .slide_area .slide_text_area .slide_text h3 {
-    font-size: 23px;
-    padding: 5px 30px 5px 20px;
+    font-size: 20px;
+    padding: 10px 20px;
   }
   main .main_publicity .main_publicity_content .feature .feature_content {
     margin: 0 0 80px 0;
@@ -4951,30 +4959,29 @@ main .main_publicity .main_publicity_content .contact_box .login_button:hover .l
   }
 }
 @media screen and (min-width: 1024px) {
-  .slide_area .slide_text_area {
-    width: calc(100% - 20px);
-  }
   .slide_area .slide_text_area .slide_text h3 {
-    font-size: 30px;
+    font-size: 25px;
+    padding: 10px 25px;
   }
 }
 @media screen and (min-width: 1200px) {
   .slide_area .slide_text_area {
     width: calc(100% - 40px);
+    left: 20px;
   }
   .slide_area .slide_text_area .slide_text h3 {
-    font-size: 35px;
-    padding: 15px 40px 15px 20px;
+    font-size: 30px;
+    padding: 10px 40px;
   }
 }
 @media screen and (min-width: 1400px) {
   .slide_area .slide_text_area .slide_text h3 {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 @media screen and (min-width: 1600px) {
   .slide_area .slide_text_area .slide_text h3 {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 main .main_publicity .main_publicity_content .item_question_selection {
